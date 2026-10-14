@@ -2,7 +2,16 @@
 
 Usage:
     python3 scripts/longitudinal.py ~/work/pilot pilot
-    python3 scripts/longitudinal.py ~/work/full  full  [--k 5] [--tmp ~/work/agent-c]
+    python3 scripts/longitudinal.py ~/work/full_body full --sens ~/work/full --sens-label alltext
+        [--k 5] [--tmp ~/work/agent-c]
+
+The primary input for the full analysis is the body-only run (text before the
+first reference-list marker), because the appendix share of text grew from ~7%
+(2017) to ~47% (2027); the all-text run is the sensitivity input (--sens).
+If the input has ngrams_n{n}_by_stratum.parquet / totals_by_stratum.csv, an
+under-review-only sensitivity (stratum == "under_review", i.e. submission
+versions, in-sample only) is added, because 2027 is ~94% submission versions
+while 2017-2026 are ~60-72%.
 
 Reads a count_ngrams.py output directory (totals.csv, ngrams_n{1,2,3}.parquet)
 and writes to results/<name>/longitudinal/ (figures in .../figures/).
@@ -27,6 +36,12 @@ changes_{content|raw}_bigrams_{contrast}.csv
 cw_vs_yb_{content|raw}_bigrams_{contrast}.csv
     N-grams in the top 100 risers/fallers under one weighting whose rank under
     the other weighting is > 300, or whose cw and yb log2 ratios differ by >= 1.
+denominator_diagnostics.csv
+    Per year: share of unigram positions that are <num>, single letters,
+    stopwords; per-million of common function bigrams (a baseline: if these
+    move, every per-million comparison across those years shares the shift).
+    Change tables also carry log2_27_vs_24_26 / spike_2027 (2027 rate >= 8x
+    the 2024-2026 rate: 2027-specific text such as a new template statement).
 nonmonotonic_n{1,2}.csv
     Peak/trough trajectories over non-tiny years (see find_nonmonotonic).
 yoy_jumps.csv
@@ -35,6 +50,9 @@ prevalence_ci_top30_risers.csv
     Per-year prevalence with 95% Wilson intervals for the top 30 content risers.
 watchlist_evaluation.csv
     Pre-registered predictions vs observed cohort change.
+timeseries_under_review.csv
+    Same long format, stratum == under_review only, for the watchlist and the
+    top 30 content risers/fallers (main contrast).
 cohorts.csv, method.json
 
 Method
@@ -53,10 +71,14 @@ prevalence (sum df / sum docs) >= 1% and sum df >= 20 (this is at least as
 strict as the QA rule "prevalence >= 1% in at least one cohort, df >= 20 in the
 higher cohort"; for fallers it requires the early cohort to clear both).
 Single-paper concentration (one paper contributing > 20% of a count) cannot
-be checked from aggregates; the df >= 20 floor is the only guard. With
---body, change tables also carry log2_cw_body (same score on body-only counts,
-i.e. text before the first reference-list marker) and body_share_r (share of
-recent-cohort occurrences that fall in the body). Tiny years (< 200 docs:
+be checked from aggregates; the df >= 20 floor is the only guard.
+Sensitivity columns in change tables: log2_cw_ur (same score, under-review
+versions only), log2_cw_<sens-label> (same score on the --sens input) and
+share_r_of_<sens-label> (primary recent-cohort count / sens count; for body vs
+all text = share of occurrences that are in the body). In yoy_jumps.csv,
+holds_in_under_review = the under-review-only log2 change keeps >= 50% of
+the all-version log2 change (same sign) and |log2_ur| >= 0.5; 2026->2027 jumps without it are treated as confounded by
+the version mix. Tiny years (< 200 docs:
 ICLR 2013, 2014) are excluded from all rankings and cohorts; they appear in the
 time series flagged tiny_year.
 
@@ -67,7 +89,8 @@ duplicates across venues, and per-paper burstiness of counts, so they are
 lower bounds on real uncertainty and say nothing about per_million variance.
 
 Pre-registered watchlist (written before running on the full data; the pilot
-watchlist values had not been computed either). Direction = predicted change
+watchlist values had not been computed either; predictions were not changed
+after the pilot run). Direction = predicted change
 of the corpus-weighted per-million rate from the early cohort (2017-2021) to
 the recent cohort (2025-2027): "up"  log2 ratio >= +0.5, "down" <= -0.5,
 "flat" |log2| < 0.5, "peak" = rises then falls (assessed as: max year is
@@ -177,13 +200,15 @@ CONTRASTS = {
     "sens_27": ((2017, 2021), (2027, 2027)),
 }
 TINY_DOCS = 200
-PARTIAL_YEARS = (2025, 2026)  # extraction coverage ~53% / ~26% (corpus agent)
+PARTIAL_YEARS = (2025, 2026)  # 2025: id-stratum subset only; 2026: ~26% extraction
 SUBMISSION_YEAR = 2027  # under review, written in 2026
 # Approximate extraction coverage reported by the corpus agent; annotation only.
+# 2025: year-level tables hold only the unbiased id stratum (4,781 papers).
 COVERAGE = {2017: 0.98, 2018: 0.98, 2019: 0.98, 2020: 0.98, 2021: 0.98, 2022: 0.98,
-            2023: 0.97, 2024: 0.83, 2025: 0.53, 2026: 0.26, 2027: 0.998}
+            2023: 0.97, 2024: 0.83, 2026: 0.26, 2027: 0.998}
 MIN_PREV, MIN_DF = 0.01, 20
 TOPK = 100
+K = 5.0  # pseudo-count default; overwritten by --k
 
 
 def wilson(x, n, z=1.96):
@@ -197,14 +222,19 @@ def wilson(x, n, z=1.96):
 
 
 class Data:
-    def __init__(self, src, tmp):
+    def __init__(self, src, tmp, stratum=None):
         self.src = src
+        self.stratum = stratum
         os.makedirs(tmp, exist_ok=True)
         self.con = duckdb.connect(os.path.join(tmp, "longitudinal.duckdb"))
         self.con.execute("SET threads TO 3")
         self.con.execute(f"SET temp_directory='{os.path.join(tmp, 'duck_tmp')}'")
         self.con.execute("SET memory_limit='6GB'")
-        self.totals = pd.read_csv(os.path.join(src, "totals.csv"))
+        if stratum:
+            ts = pd.read_csv(os.path.join(src, "totals_by_stratum.csv"))
+            self.totals = ts[ts.stratum == stratum].drop(columns="stratum")
+        else:
+            self.totals = pd.read_csv(os.path.join(src, "totals.csv"))
         self.years = sorted(self.totals.year.unique())
         d1 = self.totals[self.totals.n == 1].set_index("year")["docs"]
         self.tiny = [y for y in self.years if d1[y] < TINY_DOCS]
@@ -218,6 +248,14 @@ class Data:
     def path(self, n):
         return os.path.join(self.src, f"ngrams_n{n}.parquet")
 
+    def rel(self, n):
+        """SQL relation with columns year, ngram, count, df, docs, positions, per_million, prevalence."""
+        if not self.stratum:
+            return f"'{self.path(n)}'"
+        sp = os.path.join(self.src, f"ngrams_n{n}_by_stratum.parquet")
+        return (f"(SELECT year, ngram, count, df, docs, positions, 1e6 * count / positions AS per_million, "
+                f"df / docs AS prevalence FROM '{sp}' WHERE stratum = '{self.stratum}')")
+
     def tot(self, n):
         return self.totals[self.totals.n == n].set_index("year")
 
@@ -227,7 +265,7 @@ class Data:
             return pd.DataFrame()
         self.con.register("wanted", pd.DataFrame({"ngram": list(ngrams)}))
         t = self.con.execute(
-            f"SELECT g.* FROM '{self.path(n)}' g JOIN wanted USING (ngram)").df()
+            f"SELECT g.* FROM {self.rel(n)} g JOIN wanted USING (ngram)").df()
         self.con.unregister("wanted")
         tot = self.tot(n)
         grid = pd.MultiIndex.from_product([list(ngrams), self.years], names=["ngram", "year"]).to_frame(index=False)
@@ -247,15 +285,16 @@ class Data:
     def top_pooled(self, n, view, k=TOPK):
         ys = ",".join(map(str, self.rank_years))
         lim = k * 6 if view == "content" else k
-        q = (f"SELECT ngram, sum(per_million)/{len(self.rank_years)} AS pm_yb FROM '{self.path(n)}' "
+        q = (f"SELECT ngram, sum(per_million)/{len(self.rank_years)} AS pm_yb FROM {self.rel(n)} "
              f"WHERE year IN ({ys}) GROUP BY ngram ORDER BY pm_yb DESC LIMIT {lim if view == 'raw' else 20000}")
         t = self.con.execute(q).df()
         if view == "content":
             t = t[t.ngram.map(is_content)]
         return t.head(k).ngram.tolist()
 
-    def cohort_table(self, n, early, recent):
-        """Per-ngram cohort aggregates for one contrast (prefiltered: df>=MIN_DF in a cohort)."""
+    def cohort_table(self, n, early, recent, wanted=None):
+        """Per-ngram cohort aggregates for one contrast (prefiltered: df>=MIN_DF in a
+        cohort), or, with `wanted`, exactly those n-grams (no prefilter)."""
         tot = self.tot(n)
         cols = []
         info = {}
@@ -267,10 +306,53 @@ class Data:
                 sum(CASE WHEN year IN ({ys}) THEN prevalence ELSE 0 END)/{len(yrs)} AS prevyb_{lab}""")
             info[lab] = (tot.loc[list(yrs), "positions"].sum(), tot.loc[list(yrs), "docs"].sum())
         ys_all = ",".join(map(str, sorted(set(early) | set(recent))))
-        q = (f"SELECT ngram, {', '.join(cols)} FROM '{self.path(n)}' WHERE year IN ({ys_all}) "
-             f"GROUP BY ngram HAVING df_e >= {MIN_DF} OR df_r >= {MIN_DF}")
+        if wanted is None:
+            q = (f"SELECT ngram, {', '.join(cols)} FROM {self.rel(n)} WHERE year IN ({ys_all}) "
+                 f"GROUP BY ngram HAVING df_e >= {MIN_DF} OR df_r >= {MIN_DF}")
+        else:
+            self.con.register("wanted_c", pd.DataFrame({"ngram": list(wanted)}))
+            q = (f"SELECT ngram, {', '.join(cols)} FROM {self.rel(n)} JOIN wanted_c USING (ngram) "
+                 f"WHERE year IN ({ys_all}) GROUP BY ngram")
         t = self.con.execute(q).df()
+        if wanted is not None:
+            self.con.unregister("wanted_c")
+            t = pd.DataFrame({"ngram": list(wanted)}).merge(t, on="ngram", how="left").fillna(0)
         return t, info
+
+    def pair_counts(self, n, y0, y1, wanted=None):
+        """Counts in two years; prefiltered to df >= MIN_DF in one year unless `wanted`."""
+        if y0 not in self.years or y1 not in self.years:
+            return None
+        if wanted is not None:
+            self.con.register("wanted_p", pd.DataFrame({"ngram": list(wanted)}))
+            filt = "WHERE ngram IN (SELECT ngram FROM wanted_p)"
+        else:
+            filt = f"WHERE greatest(coalesce(a.df,0), coalesce(b.df,0)) >= {MIN_DF}"
+        q = (f"SELECT ngram, coalesce(a.count,0) c0, coalesce(b.count,0) c1, coalesce(a.df,0) df0, "
+             f"coalesce(b.df,0) df1 FROM (SELECT * FROM {self.rel(n)} WHERE year={y0}) a FULL OUTER JOIN "
+             f"(SELECT * FROM {self.rel(n)} WHERE year={y1}) b USING (ngram) {filt}")
+        t = self.con.execute(q).df()
+        if wanted is not None:
+            self.con.unregister("wanted_p")
+        tot = self.tot(n)
+        t["pm0"] = 1e6 * t.c0 / tot.loc[y0, "positions"]
+        t["pm1"] = 1e6 * t.c1 / tot.loc[y1, "positions"]
+        t["log2"] = np.log2(((t.c1 + K) / tot.loc[y1, "positions"]) / ((t.c0 + K) / tot.loc[y0, "positions"]))
+        t["prev0"] = t.df0 / tot.loc[y0, "docs"]
+        t["prev1"] = t.df1 / tot.loc[y1, "docs"]
+        return t
+
+
+def sens_log2(D, n, early, recent, wanted, k):
+    """log2_cw of `wanted` n-grams on another Data source (same cohorts where present)."""
+    e = [y for y in early if y in D.years]
+    r = [y for y in recent if y in D.years]
+    if not e or not r:
+        return None
+    t, info = D.cohort_table(n, e, r, wanted=wanted)
+    (pe, _), (pr, _) = info["e"], info["r"]
+    t["log2"] = np.log2(((t.cnt_r + k) / pr) / ((t.cnt_e + k) / pe))
+    return t.set_index("ngram")
 
 
 def changes(t, info, k):
@@ -375,7 +457,7 @@ def plot_series(ax, g, field, color, tiny, ci=None):
         ax.fill_between(g.year[m], lo[m], hi[m], color=color, alpha=0.18, lw=0, zorder=2)
 
 
-def small_multiples(ts, items, title, path, tiny, years, color):
+def small_multiples(ts, items, title, path, tiny, years, color, ur=None):
     import matplotlib.pyplot as plt
     ncol = 5
     nrow = math.ceil(len(items) / ncol)
@@ -383,6 +465,9 @@ def small_multiples(ts, items, title, path, tiny, years, color):
     for ax, ng in zip(axes.flat, items):
         g = ts[ts.ngram == ng].sort_values("year")
         plot_series(ax, g, "per_million", color, tiny)
+        if ur is not None:
+            u = ur[(ur.ngram == ng) & (ur.set == "watchlist") & ~ur.year.isin(tiny)].sort_values("year")
+            ax.plot(u.year, u.per_million, color=C_INK2, lw=0.9, ls=(0, (3, 2)), zorder=3)
         mark_years(ax, years)
         style_axes(ax)
         ax.set_title(ng, fontsize=9, color=C_INK, loc="left")
@@ -393,7 +478,8 @@ def small_multiples(ts, items, title, path, tiny, years, color):
     fig.suptitle(title, x=0.01, ha="left", fontsize=11, color=C_INK)
     fig.text(0.01, 0.005,
              "y: occurrences per million n-gram positions (own scale per panel, from 0). Shaded: 2025-2026 partial text "
-             "extraction (~53%, ~26%). Open diamond: 2027 submissions under review. x: tiny years (<200 papers).",
+             "extraction (2026 ~26%; 2025 = unbiased id stratum only). Open diamond: 2027 (submissions under review). "
+             "x: tiny years (<200 papers)." + (" Dashed gray: under-review versions only." if ur is not None else ""),
              fontsize=7, color=C_INK2)
     fig.tight_layout(rect=(0, 0.025, 1, 0.97))
     fig.savefig(path, dpi=150)
@@ -405,16 +491,21 @@ def main():
     ap.add_argument("src")
     ap.add_argument("name")
     ap.add_argument("--k", type=float, default=5.0)
-    ap.add_argument("--body", default=None,
-                    help="optional --body-only count dir: adds body-only log2_cw columns to change tables")
+    ap.add_argument("--sens", default=None, help="optional second count dir (e.g. all-text run) for sensitivity columns")
+    ap.add_argument("--sens-label", default="alltext")
+    ap.add_argument("--outroot", default=None, help="default: <repo>/results")
     ap.add_argument("--tmp", default=os.path.expanduser("~/work/agent-c"))
     a = ap.parse_args()
-    out = os.path.join(REPO, "results", a.name, "longitudinal")
+    out = os.path.join(a.outroot or os.path.join(REPO, "results"), a.name, "longitudinal")
     figdir = os.path.join(out, "figures")
     os.makedirs(figdir, exist_ok=True)
     d = Data(os.path.expanduser(a.src), os.path.join(a.tmp, a.name))
-    db = Data(os.path.expanduser(a.body), os.path.join(a.tmp, a.name + "_body")) if a.body else None
-    k = a.k
+    ds = Data(os.path.expanduser(a.sens), os.path.join(a.tmp, a.name + "_sens")) if a.sens else None
+    has_strata = os.path.exists(os.path.join(d.src, "totals_by_stratum.csv"))
+    dur = Data(d.src, os.path.join(a.tmp, a.name + "_ur"), stratum="under_review") if has_strata else None
+    lab_s = a.sens_label
+    global K
+    K = k = a.k
     print("years", d.years, "tiny", d.tiny)
 
     # ---- 1. time series
@@ -444,16 +535,30 @@ def main():
         t, info = d.cohort_table(2, early, recent)
         t["content"] = t.ngram.map(is_content)
         c = changes(t, info, k)
-        if db is not None:
-            eb = [y for y in early if y in db.years]
-            rb = [y for y in recent if y in db.years]
-            tb, ib = db.cohort_table(2, eb, rb)
-            (peb, _), (prb, _) = ib["e"], ib["r"]
-            tb = tb.set_index("ngram")
-            for col in ("cnt_e", "cnt_r"):
-                c[col + "_body"] = c.ngram.map(tb[col]).fillna(0)
-            c["log2_cw_body"] = np.log2((1e6 * (c.cnt_r_body + k) / prb) / (1e6 * (c.cnt_e_body + k) / peb))
-            c["body_share_r"] = c.cnt_r_body / c.cnt_r.where(c.cnt_r > 0)
+        sens_cols = []
+        # sensitivity only for n-grams that make any top list (cheap); filled after ranking
+        listed = set()
+        for view in ("content", "raw"):
+            v = c[c.content] if view == "content" else c
+            for col in ("rise_cw", "rise_yb", "fall_cw", "fall_yb", "rise_pp", "fall_pp"):
+                listed |= set(v.nsmallest(TOPK, f"rank_{col}").ngram)
+        listed = sorted(listed)
+        if 2027 in d.rank_years and any(2024 <= y <= 2026 for y in d.rank_years):
+            s27 = sens_log2(d, 2, [y for y in d.rank_years if 2024 <= y <= 2026], [2027], listed, k)
+            c["log2_27_vs_24_26"] = c.ngram.map(s27["log2"])
+            c["spike_2027"] = c.log2_27_vs_24_26 >= 3
+            sens_cols += ["log2_27_vs_24_26", "spike_2027"]
+        if dur is not None:
+            su = sens_log2(dur, 2, early, recent, listed, k)
+            if su is not None:
+                c["log2_cw_ur"] = c.ngram.map(su["log2"])
+                sens_cols.append("log2_cw_ur")
+        if ds is not None:
+            ss = sens_log2(ds, 2, early, recent, listed, k)
+            if ss is not None:
+                c[f"log2_cw_{lab_s}"] = c.ngram.map(ss["log2"])
+                c[f"share_r_of_{lab_s}"] = c.cnt_r / c.ngram.map(ss["cnt_r"]).where(lambda x: x > 0)
+                sens_cols += [f"log2_cw_{lab_s}", f"share_r_of_{lab_s}"]
         for lab, yrs in (("early", early), ("recent", recent)):
             p, dd = info[lab[0]]
             cohort_rows.append({"contrast": cname, "cohort": lab, "years": " ".join(map(str, yrs)),
@@ -478,8 +583,7 @@ def main():
             keep = ["list", "rank", "ngram", "cnt_e", "cnt_r", "df_e", "df_r", "pm_cw_e", "pm_cw_r", "pm_yb_e",
                     "pm_yb_r", "prev_cw_e", "prev_cw_r", "log2_cw", "log2_yb", "pp_cw", "pp_yb",
                     "rank_rise_cw", "rank_rise_yb", "rank_fall_cw", "rank_fall_yb", "per_million_by_year"]
-            if db is not None:
-                keep[-1:-1] = ["log2_cw_body", "body_share_r"]
+            keep[-1:-1] = sens_cols
             L[keep].to_csv(os.path.join(out, f"changes_{view}_bigrams_{cname}.csv"), index=False, float_format="%.5g")
             # disagreement between weightings
             dis = []
@@ -494,11 +598,29 @@ def main():
                                           index=False, float_format="%.5g")
     pd.DataFrame(cohort_rows).to_csv(os.path.join(out, "cohorts.csv"), index=False)
 
+    # ---- denominator diagnostics: how much of each year's positions go to
+    # numbers, single letters, stopwords and the most common function bigrams
+    from mlngrams.filters import STOPWORDS
+    sw = ",".join("'" + w.replace("'", "''") + "'" for w in STOPWORDS)
+    t1 = d.tot(1)
+    dg = d.con.execute(
+        f"SELECT year, sum(CASE WHEN ngram = '<num>' THEN count ELSE 0 END) AS num, "
+        f"sum(CASE WHEN length(ngram) = 1 THEN count ELSE 0 END) AS single_letter, "
+        f"sum(CASE WHEN ngram IN ({sw}) THEN count ELSE 0 END) AS stopword FROM {d.rel(1)} GROUP BY year ORDER BY year").df()
+    for c_ in ("num", "single_letter", "stopword"):
+        dg[f"share_{c_}"] = dg[c_] / dg.year.map(t1["positions"])
+    fb = ["of the", "in the", "to the", "on the", "for the", "and the", "is a", "can be", "we use", "et al"]
+    fs = d.series(fb, 2).pivot(index="year", columns="ngram", values="per_million")
+    dg = dg.merge(fs.add_prefix("pm_").reset_index(), on="year", how="left")
+    dg["docs"] = dg.year.map(t1["docs"])
+    dg["tokens_per_doc"] = dg.year.map(t1["tokens"] / t1["docs"])
+    dg.to_csv(os.path.join(out, "denominator_diagnostics.csv"), index=False, float_format="%.5g")
+
     # ---- 3. non-monotonic + year-over-year jumps
     ys = ",".join(map(str, d.rank_years))
     nm_all = []
     for n in (1, 2):
-        q = (f"WITH t AS (SELECT * FROM '{d.path(n)}' WHERE year IN ({ys})) "
+        q = (f"WITH t AS (SELECT * FROM {d.rel(n)} WHERE year IN ({ys})) "
              f"SELECT t.ngram, year, prevalence, per_million FROM t JOIN "
              f"(SELECT ngram FROM t GROUP BY ngram HAVING max(prevalence) >= 0.02) USING (ngram)")
         t = d.con.execute(q).df()
@@ -522,20 +644,10 @@ def main():
 
     yoy = []
     for y0, y1 in ((2023, 2024), (2026, 2027)):
-        if y0 not in d.years or y1 not in d.years:
-            continue
         for n in (1, 2):
-            tot = d.tot(n)
-            p0, p1 = tot.loc[y0, "positions"], tot.loc[y1, "positions"]
-            q = (f"SELECT ngram, coalesce(a.count,0) c0, coalesce(b.count,0) c1, coalesce(a.df,0) df0, coalesce(b.df,0) df1 "
-                 f"FROM (SELECT * FROM '{d.path(n)}' WHERE year={y0}) a FULL OUTER JOIN "
-                 f"(SELECT * FROM '{d.path(n)}' WHERE year={y1}) b USING (ngram)")
-            t = d.con.execute(q).df()
-            t["pm0"] = 1e6 * (t.c0 + k) / p0
-            t["pm1"] = 1e6 * (t.c1 + k) / p1
-            t["prev0"] = t.df0 / tot.loc[y0, "docs"]
-            t["prev1"] = t.df1 / tot.loc[y1, "docs"]
-            t["log2"] = np.log2(t.pm1 / t.pm0)
+            t = d.pair_counts(n, y0, y1)
+            if t is None:
+                continue
             up = t.pm1 >= t.pm0
             t = t[(np.where(up, t.prev1, t.prev0) >= MIN_PREV) & (np.where(up, t.df1, t.df0) >= MIN_DF)].copy()
             t["content"] = t.ngram.map(is_content)
@@ -550,7 +662,25 @@ def main():
                     x.insert(4, "rank", range(1, len(x) + 1))
                     yoy.append(x)
     if yoy:
-        pd.concat(yoy).drop(columns="content").to_csv(os.path.join(out, "yoy_jumps.csv"), index=False, float_format="%.5g")
+        Y = pd.concat(yoy).drop(columns="content")
+        if dur is not None:
+            parts = []
+            for (pair, n), g in Y.groupby(["pair", "n"]):
+                y0, y1 = map(int, pair.split("->"))
+                u = dur.pair_counts(n, y0, y1, wanted=g.ngram.unique().tolist())
+                if u is None:
+                    continue
+                u = u.set_index("ngram")
+                g = g.copy()
+                g["log2_ur"] = g.ngram.map(u["log2"])
+                g["df0_ur"] = g.ngram.map(u["df0"])
+                g["df1_ur"] = g.ngram.map(u["df1"])
+                parts.append(g)
+            Y = pd.concat(parts)
+            Y["ur_fraction"] = Y.log2_ur / Y.log2
+            Y["holds_in_under_review"] = (Y.ur_fraction >= 0.5) & (Y.log2_ur.abs() >= 0.5)
+            Y = Y.sort_values(["pair", "n", "view", "direction", "rank"])
+        Y.to_csv(os.path.join(out, "yoy_jumps.csv"), index=False, float_format="%.5g")
 
     # ---- 4. uncertainty for top 30 content risers (main contrast)
     main_c = allchg[("main", "content")]
@@ -561,9 +691,36 @@ def main():
     s.sort_values(["rise_rank", "year"]).to_csv(os.path.join(out, "prevalence_ci_top30_risers.csv"),
                                                  index=False, float_format="%.5g")
 
-    # ---- watchlist evaluation (main contrast, computed from the series)
+    # ---- under-review-only series: watchlist + top 30 content risers/fallers
+    fall30 = main_c.nsmallest(30, "rank_fall_cw").ngram.tolist()
     early = [y for y in d.rank_years if 2017 <= y <= 2021]
     recent = [y for y in d.rank_years if 2025 <= y <= 2027]
+    wsens = {}
+    uts = None
+    if dur is not None:
+        parts = []
+        for setname, items in (("watchlist", wl[["ngram", "n"]].values.tolist()),
+                               ("top30_content_risers_main", [(g, 2) for g in top30]),
+                               ("top30_content_fallers_main", [(g, 2) for g in fall30])):
+            for n in (1, 2, 3):
+                ngs = [g for g, nn in items if nn == n]
+                if ngs:
+                    x = dur.series(ngs, n)
+                    x.insert(0, "set", setname)
+                    parts.append(x)
+        uts = pd.concat(parts)
+        uts.insert(1, "stratum", "under_review")
+        uts.to_csv(os.path.join(out, "timeseries_under_review.csv"), index=False, float_format="%.6g")
+    for lab, D in (("ur", dur), (lab_s, ds)):
+        if D is None:
+            continue
+        col = {}
+        for n in (1, 2, 3):
+            ngs = wl[wl.n == n].ngram.tolist()
+            r = sens_log2(D, n, early, recent, ngs, k)
+            if r is not None:
+                col.update(r["log2"].to_dict())
+        wsens[f"log2_cw_{lab}"] = col
     ev = []
     for (ng, grp, pred), g in wts.groupby(["ngram", "group", "predicted"]):
         e, r = g[g.year.isin(early)], g[g.year.isin(recent)]
@@ -580,13 +737,17 @@ def main():
                    "log2_cw": lcw, "log2_yb": lyb, "peak_shape": peak, "max_year": int(gm.year.values[imax]),
                    "prev_early": e.df.sum() / e.docs.sum(), "prev_recent": r.df.sum() / r.docs.sum(),
                    "per_million_by_year": "|".join(f"{y % 100:02d}:{v:.3g}" for y, v in zip(gm.year, pm))})
-    ev = pd.DataFrame(ev).sort_values(["group", "log2_cw"], ascending=[False, False])
+    ev = pd.DataFrame(ev)
+    for c_, m in wsens.items():
+        ev.insert(ev.columns.get_loc("log2_yb") + 1, c_, ev.ngram.map(m))
+    ev = ev.sort_values(["group", "log2_cw"], ascending=[False, False])
     ev.to_csv(os.path.join(out, "watchlist_evaluation.csv"), index=False, float_format="%.4g")
 
     json.dump({"src": a.src, "years": [int(y) for y in d.years], "tiny_years": [int(y) for y in d.tiny],
                "k_pseudocounts": k, "min_prevalence_higher_cohort": MIN_PREV, "min_df_higher_cohort": MIN_DF,
                "contrasts": CONTRASTS, "min_df_input": d.min_df, "missing_row_is_true_zero": d.missing_is_zero,
-               "input_run": d.run, "body_src": a.body, "filter": FILTER_VERSION,
+               "input_run": d.run, "sens_src": a.sens, "sens_label": lab_s,
+               "under_review_sensitivity": dur is not None, "filter": FILTER_VERSION,
                "coverage_annotation_only": COVERAGE},
               open(os.path.join(out, "method.json"), "w"), indent=1)
 
@@ -599,9 +760,9 @@ def main():
     topical = [w[0] for w in WATCHLIST if w[1] in ("topical", "control")]
     styl = [w[0] for w in WATCHLIST if w[1] == "stylistic"]
     small_multiples(wts, topical, "Watchlist: topical controls (and 'of the')",
-                    os.path.join(figdir, "fig1_watchlist_topical.png"), d.tiny, years, C_BLUE)
+                    os.path.join(figdir, "fig1_watchlist_topical.png"), d.tiny, years, C_BLUE, uts)
     small_multiples(wts, styl, "Watchlist: stylistic / rhetorical phrases",
-                    os.path.join(figdir, "fig2_watchlist_stylistic.png"), d.tiny, years, C_ORANGE)
+                    os.path.join(figdir, "fig2_watchlist_stylistic.png"), d.tiny, years, C_ORANGE, uts)
 
     # fig3: dot plot risers / fallers (content bigrams, main contrast)
     fig, axes = plt.subplots(1, 2, figsize=(11, 6.5))
@@ -683,7 +844,7 @@ def main():
     cols = [C_GRAY if y in d.tiny else ("#9fc3ef" if y in PARTIAL_YEARS else C_BLUE) for y in t1.index]
     ax.bar(t1.index, t1.docs, color=cols, width=0.7)
     for y, v in t1.docs.items():
-        lab = f"{v:,}" + (f"\n{COVERAGE[y]:.0%}" if y in COVERAGE else "")
+        lab = f"{v:,}" + ("\nid stratum" if y == 2025 else f"\n{COVERAGE[y]:.0%}" if y in COVERAGE else "")
         ax.text(y, v, lab, ha="center", va="bottom", fontsize=6.5, color=C_INK2)
     ax.set_yscale("log")
     ax.set_ylabel("papers counted (log scale)", fontsize=8)

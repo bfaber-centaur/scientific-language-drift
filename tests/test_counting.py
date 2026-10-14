@@ -131,3 +131,12 @@ def test_statement_heading_must_be_whole_line():
 
     text = "Our ethics statement is in the appendix.\nAcknowledgments to all.\nmore prose"
     assert strip_statements(text) == (text, 0)
+
+
+def test_ai_use_statement_variants_removed():
+    from mlngrams.sections import strip_statements
+
+    for h in ("AI USE STATEMENT", "AI-USE STATEMENT", "AI DISCLOSURE", "USE OF AI TOOLS",
+              "STATEMENT ON THE USE OF LARGE LANGUAGE MODELS", "AI ASSISTANCE DISCLOSURE"):
+        out, removed = strip_statements(f"prose here.\n{h}\nGenerative AI tools were used.\nA\nAPPENDIX")
+        assert "Generative" not in out and removed > 0, h

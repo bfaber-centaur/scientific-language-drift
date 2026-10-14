@@ -17,12 +17,14 @@ from __future__ import annotations
 
 import re
 
-SECTIONS_VERSION = "v1"
+SECTIONS_VERSION = "v2"  # v2: ICLR 2027 "AI use statement" and AI-disclosure variants
 MAX_CHARS = 5000
 
 _NAMES = (
-    r"(?:the\s+)?(?:use|usage) of (?:large language models?|llms?)(?:\s*\(llms?\))?(?: statement| disclosure)?"
-    r"|(?:llms?|large language models?) (?:usage|use)(?: statement| disclosure| declaration)?"
+    r"(?:statement on )?(?:the\s+)?(?:use|usage) of (?:generative )?(?:ai(?: tools)?|large language models?|llms?)"
+    r"(?:\s*\(llms?\))?(?: statement| disclosure)?"
+    r"|(?:generative )?(?:ai|llms?|large language models?)[- ](?:usage|use|assistance)(?: statement| disclosure| declaration)?"
+    r"|(?:generative )?ai disclosure"
     r"|llm statement"
     r"|reproducibility(?: statement| information)?"
     r"|ethics(?: statement)?|ethical (?:statement|considerations)"
