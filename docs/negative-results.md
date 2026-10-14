@@ -83,12 +83,16 @@ The pre-registered function-phrase control moved: 8,784 → 3,338 per million (2
 per-million comparison of 2026/2027 with earlier years shares this shift (finding 4). Claims are made in
 prevalence where possible.
 
-## N11. Hypothesis weakened: "the 2027 shift is a cohort-wide editing pass"
+## N11. Overclaim corrected: "the 2027 shift sits in newly written papers"
 
-If every 2027 paper had been run through the same rewriting, resubmitted papers would move with the
-cohort. In 55 ICLR 2026 → 2027 resubmission pairs, "we propose" stays at 78% → 76% (cohort: 80% → 51%)
-and stopword share barely moves (0.343 → 0.340). Caveat: pairs are matched by near-identical abstracts,
-so heavily rewritten resubmissions are missed (`results/resubmission_summary.csv`).
+The first draft of finding 3 read the resubmission test as showing that resubmitted papers keep their old
+register, hence the change is in new papers. Review (`docs/review_findings.md`) showed this was wrong as
+written: the 55 ICLR 2026 → 2027 pairs move fully on "underscores" (−13 vs cohort −12 pp), partly on
+"notably", "a novel", "leverage", and barely on "we propose" (−2 vs −32 pp); and the 2025 → 2026 control
+pairs drift *more* in stopword share than the 2026 → 2027 pairs, so "controls show no comparable drops"
+was false for function words. Pair matching also selects lightly revised papers, and the pair measure used
+prefix matching while the cohort used exact n-grams. The test cannot separate a new population from an
+editing pass; the draft conclusion was deleted.
 
 ## N12. Operational: a sensitivity run silently did not happen
 
@@ -96,8 +100,11 @@ The first all-text sensitivity run crashed at startup (the background shell lost
 and the analysis agent reported its sensitivity columns as empty. Runs are now launched with absolute
 paths, and each run's completion is checked via its `run.json` before use.
 
-## N13. AI-use classifier: "no AI use" class is nearly empty
+## N13. AI-disclosure gradient withdrawn: the classifier was ~50% accurate
 
-Keyword classes of 2027 AI-use statements put only 42 of 12,000 papers in "none"; many statements that
-deny substantive use also contain "we used ... for grammar". The "none" contrast is therefore not usable
-without hand labels.
+A keyword classifier of ICLR 2027 AI-use statements (drafting / polish / other / none) showed papers
+reporting AI drafting help using "we propose" less (43% vs 58% for polish-only) and "test whether"/"held
+fixed" more. Hand-labelling 40 statements gave ~50% agreement; only 5 of 12 "drafting" labels were right,
+because the rule fires on the standard ICLR 2027 disclaimer lists ("we have not used ... to assist in the
+writing of proofs"), and the "none" class held 42 of 12,000 papers. The gradient is not reported as a
+finding; `scripts/ai_disclosure_strata.py` and its output are kept as a record of the failed attempt.

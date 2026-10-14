@@ -76,13 +76,14 @@ def measure(args):
 
 
 def sample_texts(year, n, allowed, seed):
-    pf = pq.ParquetFile(fetch("omissions", "iclr", year))
-    rows = []
-    for b in pf.iter_batches(batch_size=500, columns=["paper_id", "text"]):
-        rows += [(r["paper_id"], r["text"]) for r in b.to_pylist() if r["paper_id"] in allowed and r["text"]]
+    path = fetch("omissions", "iclr", year)
+    ids = [i for i in pq.read_table(path, columns=["paper_id"]).column(0).to_pylist() if i in allowed]
     rng = np.random.default_rng(seed)
-    idx = rng.choice(len(rows), size=min(n, len(rows)), replace=False)
-    return [rows[i] for i in idx]
+    pick = set(rng.choice(ids, size=min(n, len(ids)), replace=False).tolist())
+    rows = []
+    for b in pq.ParquetFile(path).iter_batches(batch_size=200, columns=["paper_id", "text"]):
+        rows += [(r["paper_id"], r["text"]) for r in b.to_pylist() if r["paper_id"] in pick and r["text"]]
+    return rows
 
 
 def show_statements(k):

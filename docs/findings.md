@@ -32,7 +32,10 @@ word vectors, GAN training/objective, Penn Treebank, Titan Xp. "neural network" 
 papers and 7% of 2027 papers; "language models" goes from 9% to 52% (2026).
 (`results/full/longitudinal/changes_content_bigrams_main.csv`, `fig1_watchlist_topical.png`.)
 
-**Interpretation.** Most of the large lexical change is what the field works on, not how it writes.
+**Interpretation.** The largest *relative* changes (log2 ratios, which favour n-grams starting near
+zero) are topical: what the field works on. The largest changes in *paper share* are mostly reporting and
+rhetorical phrases instead (experimental setup +22 pp, percentage points +19, test whether +16, across
+diverse +15, held fixed +10; list `riser_pp_cw`), which is why findings 3 and 5 exist.
 
 **Confounders / alternatives.** Affiliation n-grams (Google Brain, Facebook AI) also fall because
 camera-ready versions (with author blocks) are rarer in 2027; within submissions only the drop is smaller.
@@ -52,7 +55,8 @@ camera-ready versions (with author blocks) are rarer in 2027; within submissions
 | showcasing | ≤1.2% | 1.2% | 9.8% | **13.1%** | 5.0% | 0.4% |
 | realm | ≤1.2% | 1.0% | **9.9%** | 6.1% | 0.9% | 0.3% |
 
-The jump is a step between 2023 and 2024 (10× in one year), after six flat years. The same 2024 peak and
+The jump is a step between 2023 and 2024 (8–27× in one year, depending on the word), after seven flat
+years (2017–2023). The same 2024 peak and
 2025 decline of "delve" appear in NeurIPS (6.5% in 2024 → 1.8% in 2025), TMLR (9.6% → 4.9% → 2.7%) and
 COLM (11.7% → 1.9%) (`results/style_shift_checks.csv`, samples of ≤800 papers). Different words peak in
 different years: delve/realm in 2024, underscores/showcasing in 2025.
@@ -65,12 +69,15 @@ is consistent with authors or tools dropping words once they became notorious, b
 **Confounders.** ICLR 2025/2026 are partial samples (2026: 26% of submissions, by id order, plausibly
 random); topic mix (LLM papers may use the words more for reasons of subject matter).
 
-**Tests.** (a) Within-topic: compute prevalence separately for papers with and without "language
-model(s)" in the abstract; if the 2024 step survives in non-LLM papers it is not topical. (b) Use the
+**Done: within-topic test.** In papers whose abstract does not mention language models or LLMs, the
+step survives: delve 0.7% → 10.1%, intricate 2.8% → 14.6%, pivotal 1.6% → 12.2% (2023 → 2024;
+`scripts/qa_findings.py`, `docs/review_findings.md`). So it is not a topical effect of LLM papers.
+
+**Further tests.** (b) Use the
 OpenReview submission vs camera-ready versions of the same 2024 papers: does wording change between
 them? (c) Compare against a pre-2023 frozen corpus (arXiv 2021–22) to fix the baseline.
 
-## 3. ICLR 2027 breaks with every earlier year, and it is the new papers that are different
+## 3. ICLR 2027 breaks with every earlier year
 
 **Facts.** Share of papers containing the phrase (main body; submissions-only values in brackets):
 
@@ -78,7 +85,7 @@ them? (c) Compare against a pre-2023 frozen corpus (arXiv 2021–22) to fix the 
 |---|---|---|---|---|
 | we propose | 80.2% | 81.8% | 79.8% [80.8%] | **50.7%** [51.3%] |
 | a novel | 48.0% | 60.8% | 53.6% [55.4%] | **8.7%** [8.7%] |
-| in this paper (per million) | 397 | 290 | 190 | **77** |
+| in this paper (per million) | 397 | 293 | 187 | **77** |
 | test whether | 2.4% | 2.4% | 4.8% [4.8%] | **22.9%** [22.7%] |
 | held fixed | 0.4% | 0.1% | 0.8% | **12.9%** |
 | results support | 1.1% | 1.0% | 1.8% | **16.5%** |
@@ -87,35 +94,38 @@ them? (c) Compare against a pre-2023 frozen corpus (arXiv 2021–22) to fix the 
 "leverage", "notably" and "furthermore" also fall to their lowest level of the decade
 (e.g. notably 54.6% → 16.1%). The shift is visible in the raw PDF text layer (`direct` config), not only in
 the cleaned text, and it holds within submission versions, so it is not the camera-ready/submission mix.
+It is not driven by a topic or a shared template either: the four 2027 markers (test whether, held fixed,
+results support, percentage points) have similar rates in LLM and non-LLM papers, only 3.9% of 2027
+papers contain three or more of them (2.4% expected if independent), and within-2027 near-duplicates are
+negligible (28 pairs).
 
 **Paired resubmission test** (`scripts/resubmission_test.py`, `results/resubmission_summary.csv`). 55
-papers rejected or withdrawn from ICLR 2026 and resubmitted to 2027 (matched by near-identical
-abstracts). Their 2027 versions keep "we propose" (78% → 76%) and their stopword share (0.343 → 0.340),
-while the cohort moved to 51%. They do drop some words: underscores 15% → 2%, notably 56% → 42%,
-a novel 49% → 38%. Control pairs (2024→2025, 2025→2026) show no comparable drops.
-
-**Self-reported AI use** (`scripts/ai_disclosure_strata.py`, 12,000 sampled 2027 papers, crude keyword
-classes of the paper's own AI-use statement). Papers whose statement mentions AI help with *drafting*
-text (n=4,452) use "we propose" in 43%, "test whether" in 25%, "held fixed" in 15%; those reporting
-*language polish only* (n=5,011): 58%, 21%, 12%; the 42 statements classified as *no AI use*: 71%, 17%,
-0%. (`results/ai_disclosure_strata_2027.csv`.)
+papers from ICLR 2026 resubmitted to 2027 (matched by near-identical abstracts). They move only part of
+the way with the cohort (change in share of papers, pairs vs cohort): underscores −13 vs −12 pp,
+notably −15 vs −38, a novel −11 vs −45, leverage −11 vs −53, we propose −2 vs −32. Their stopword share
+drifts (−0.003), but 2025→2026 control pairs drift more (−0.007), so resubmissions make roughly a quarter
+of the cohort's function-word change in both transitions. Two caveats: matching selects lightly revised
+papers, and the pair measure uses prefix matching ("leverage" also counts "leveraging") while the cohort
+figures are exact n-grams.
 
 **Interpretation (tentative).** The 2027 cohort (42k submissions, double 2026) is written in a
-recognisably different register: fewer formulaic claims of novelty, more hypothesis-test phrasing.
-Resubmitted papers mostly keep their old register, so the change sits in newly written papers rather
-than in a cohort-wide editing pass. The gradient with self-reported drafting help is consistent with a
-new generation of writing tools carrying a new style, but it is an association in self-reports with crude
-classification, and the "no AI" group is tiny.
+recognisably different register: fewer formulaic novelty claims, more hypothesis-test phrasing.
+Resubmitted papers move partly (fully on "underscores", barely on "we propose"). This cannot separate a
+new population of papers and authors from an editing pass that light revisions only partly reflect.
+Nothing in these data points to writing tools specifically rather than a new population or new guidance.
 
 **Alternatives.** (1) A new population of submitters (the cohort doubled). (2) Author guidance or
-reviewer incentives specific to ICLR 2027 (e.g. discouraging novelty claims) — not checked.
+reviewer incentives specific to ICLR 2027 (e.g. discouraging novelty claims), not checked.
 (3) Resubmission matching only finds lightly revised papers, so it under-represents rewrites.
 (4) 2027 is a submission snapshot; earlier years mix in later revisions of the PDF.
 
 **Tests.** (a) Check ICLR 2027 author/reviewer guidelines for wording advice. (b) Repeat on a venue with
 2026-written papers, e.g. TMLR 2026 later in the year or ICML 2026 when extracted. (c) Fuzzy-match more
-resubmissions (title + first page) to enlarge the paired sample. (d) Hand-label 100 AI-use statements to
-measure the keyword classifier's error before reading anything into the gradient.
+resubmissions (title + first page) to enlarge the paired sample, including heavily revised ones.
+(d) Self-reported AI use: a first keyword classifier of 2027 AI-use statements agreed with hand labels on
+only ~50% of 40 statements (it reads disclaimer lists as positive use), so its gradient is not reported
+(`docs/negative-results.md` N13). A negation-aware classifier validated on ~100 hand-labelled statements
+would make the comparison usable; it would still be self-report and associational.
 
 ## 4. Function words are thinning out, across venues, since well before LLMs
 
@@ -135,9 +145,14 @@ measure the keyword classifier's error before reading anything into the gradient
 base, so content-bigram rates are inflated slightly in those years. Prevalence (share of papers) is less
 affected; the findings above are stated in prevalence where possible.
 
-**Alternatives.** More bullet lists, tables-as-text and inline lists in recent papers (fragments with few
-function words); extraction differences in newer LaTeX templates. **Test.** Restrict to sentences of
-≥15 tokens ending in a period and recompute; if the decline persists, it is in running prose.
+**Done: running-prose test.** In segments of ≥15 tokens only, stopword share is 0.416 / 0.392 / 0.349
+/ 0.338 (2017 / 2024 / 2026 / 2027) and "of the" falls from 9,721 to 3,591 per million. Short fragments do
+grow (the long-segment token share drops from 0.68 to 0.60 in 2027) but do not explain the trend. The
+biggest single-year step is 2025 → 2026 (−2.8 points of stopword share vs −1.1 for 2026 → 2027), so 2027
+is not special on this measure. (`docs/review_findings.md`.)
+
+**Alternatives.** Extraction differences in newer LaTeX templates (partly ruled out by the raw-layer
+check); a shift in paper genre (more empirical/benchmark papers) within ML.
 
 ## 5. The "across" construction
 
@@ -148,8 +163,9 @@ rise in prevalence by 9–18 percentage points between the early and recent coho
 
 **Interpretation.** Partly evaluation practice (multi-benchmark, multi-model evaluation became standard),
 partly a phrasing fashion ("across diverse" behaves like the words in finding 2 and drops in 2027).
-**Test.** Count "across" + number + noun versus "across diverse/various": the first should track the
-number of benchmarks reported; the second should not.
+**Partial test.** The two uses already separate in 2027: "across diverse" falls (34.1% → 13.8%) while
+"across three/four/five" keep rising (15.3 → 19.4%, 9.7 → 14.0%, 6.7 → 11.1%, 2026 → 2027). Next: relate
+"across <number>" to the number of benchmarks reported per paper.
 
 ## Limitations
 
