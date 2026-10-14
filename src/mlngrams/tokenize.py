@@ -20,6 +20,12 @@ Rules (v1):
     are replaced with a segment boundary (v1.1).
   * URLs (http(s)://..., www....) and e-mail addresses are replaced with a
     segment boundary (v1.2).
+  * v1.3 (fixes from the QA review, docs/qa.md): diacritics folded ("naïve" ->
+    "naive"); decimals stay one number ("0.5" -> <num>); abbreviations e.g., i.e.,
+    w.r.t., et al., Fig., Eq., Sec., Tab., vs., cf., ... do not end a segment
+    (e.g. -> "eg"); heading lines with no lowercase letters are their own segment;
+    parenthetical acronyms "(LLMs)" are boundaries; "state-of-the-\\nart" keeps
+    its hyphen.
 """
 from __future__ import annotations
 
@@ -28,9 +34,25 @@ import unicodedata
 from dataclasses import dataclass
 from typing import Iterator
 
-TOKENIZER_VERSION = "v1.2"  # v1.1: omission markers are boundaries; v1.2: URLs/emails are boundaries
+TOKENIZER_VERSION = "v1.3"  # v1.1 omission markers; v1.2 URLs/emails; v1.3 QA fixes D1-D6 (docs/qa.md)
 
 _HYPHEN_BREAK = re.compile(r"(\w)-\s*\n\s*(\w)")
+# A line-end hyphen inside an already-hyphenated compound is a real hyphen: "state-of-the-\nart".
+_COMPOUND_BREAK = re.compile(r"((?:\w+-)+\w+)-\s*\n\s*(\w)")
+# Heading lines: no lowercase letter, at least two capitals, short ("1 INTRODUCTION", "A.1 PROOFS").
+_HEADING_LINE = re.compile(r"^(?=[^\n]*[A-Z][^\n]*[A-Z])[^a-z\n]{2,80}$", re.M)
+# Parenthetical acronyms "(LLMs)", "(RL)", "(GPT-4)": dropping only the parentheses would
+# create bigrams like "models llms", so the whole parenthetical becomes a boundary.
+_PAREN_ACRONYM = re.compile(r"\(\s*[A-Z][\w-]*[A-Z][\w-]*\s*\)")
+# Abbreviations whose periods must not end a segment (applied after lowercasing).
+_ABBREV = [
+    (re.compile(r"\be\.\s?g\.,?"), "eg"),
+    (re.compile(r"\bi\.\s?e\.,?"), "ie"),
+    (re.compile(r"\bw\.r\.t\."), "wrt"),
+    (re.compile(r"\bet al\.,?"), "et al"),
+    (re.compile(r"\b(figs?|eqs?|secs?|tabs?|vs|cf|resp|approx|refs?|thm|lem|alg|def|prop|app)\."), r"\1"),
+]
+_DECIMAL_POINT = re.compile(r"(?<=\d)\.(?=\d)")
 _BLANK_LINE = re.compile(r"\n\s*\n")
 # Placeholders inserted by the dataset's `omissions` config, e.g. "⟦equation omitted⟧",
 # "⟦math⟧". They stand for removed non-prose and must never form or join n-grams.
@@ -52,9 +74,19 @@ class TokenizerConfig:
     strip_citations: bool = True
 
 
+def fold_diacritics(text: str) -> str:
+    """NFKC, then strip combining marks: "naïve" -> "naive"."""
+    text = unicodedata.normalize("NFD", unicodedata.normalize("NFKC", text))
+    return unicodedata.normalize("NFC", "".join(ch for ch in text if unicodedata.category(ch) != "Mn"))
+
+
 def normalize(text: str) -> str:
-    text = unicodedata.normalize("NFKC", text)
+    text = fold_diacritics(text)
+    text = _COMPOUND_BREAK.sub(r"\1-\2", text)
     text = _HYPHEN_BREAK.sub(r"\1\2", text)
+    # Case-sensitive rules run before lowercasing.
+    text = _HEADING_LINE.sub(lambda m: BOUNDARY + m.group(0) + BOUNDARY, text)
+    text = _PAREN_ACRONYM.sub(BOUNDARY, text)
     return text.lower()
 
 
@@ -65,6 +97,9 @@ def segments(text: str, cfg: TokenizerConfig = TokenizerConfig()) -> Iterator[st
     if cfg.strip_citations:
         text = _CITE_PAREN.sub(BOUNDARY, text)
         text = _CITE_BRACKET.sub(BOUNDARY, text)
+    for pat, rep in _ABBREV:
+        text = pat.sub(rep, text)
+    text = _DECIMAL_POINT.sub("", text)
     text = _SEGMENT_BREAK.sub(BOUNDARY, text)
     for seg in _BLANK_LINE.split(text):
         if seg.strip():

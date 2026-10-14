@@ -111,3 +111,23 @@ def test_urls_and_emails_are_boundaries():
 def test_citation_residue_not_content():
     assert not is_content("wang et")
     assert not is_content("et al")
+
+
+def test_statement_sections_removed_until_next_heading():
+    from mlngrams.sections import strip_statements
+
+    text = (
+        "we conclude here.\nREPRODUCIBILITY STATEMENT\nWe release code to ensure reproducibility.\n"
+        "LLM USAGE STATEMENT\nLLMs polished the writing.\n⟦references omitted⟧\nA\nAPPENDIX PROOFS\nproof text"
+    )
+    out, removed = strip_statements(text)
+    assert "reproducibility" not in out.lower() and "polished" not in out
+    assert out.startswith("we conclude here.") and out.endswith("⟦references omitted⟧\nA\nAPPENDIX PROOFS\nproof text")
+    assert removed > 0
+
+
+def test_statement_heading_must_be_whole_line():
+    from mlngrams.sections import strip_statements
+
+    text = "Our ethics statement is in the appendix.\nAcknowledgments to all.\nmore prose"
+    assert strip_statements(text) == (text, 0)

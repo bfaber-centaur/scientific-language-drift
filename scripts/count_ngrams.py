@@ -4,8 +4,8 @@ Usage:
     python3 scripts/count_ngrams.py --years 2018 2020 2024 2026 --out data/pilot
     python3 scripts/count_ngrams.py --years 2017-2027 --out data/full
 Options: --config omissions|clean, --body-only (drop text after the first
-reference-list marker, i.e. appendices), --min-df (pruning of the per-year
-tables only; totals are never pruned), --workers.
+reference-list marker, i.e. appendices), --keep-statements (do not cut template
+statement sections, see mlngrams.sections), --min-df, --workers.
 
 Outputs in --out:
     docs.parquet          one row per counted paper: ids, year, tokens, positions per n
@@ -13,7 +13,9 @@ Outputs in --out:
                           and listed in duplicates.csv.
     totals.csv            docs / tokens / positions / distinct n-grams per (year, n)
     ngrams_n{n}.parquet   year, ngram, count, df, docs, positions, per_million, prevalence
-                          for n-grams with df >= min_df in that year
+                          for every n-gram with df >= min_df in AT LEAST ONE year; its
+                          rows for the other years are exact (unpruned), and a missing
+                          (year, ngram) row means a true count of 0.
     run.json              arguments, dataset revision, tokenizer and filter versions
 
 Exact counting: workers count chunks of papers; partial counts are written as
@@ -34,7 +36,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 import pandas as pd  # noqa: E402
 
-from mlngrams import filters, tokenize  # noqa: E402
+from mlngrams import filters, sections, tokenize  # noqa: E402
 from mlngrams.count import ngrams_of  # noqa: E402
 from mlngrams.load import REVISION, iter_docs, main_body  # noqa: E402
 
@@ -53,15 +55,21 @@ def parse_years(spec: list[str]) -> list[int]:
 
 
 def count_chunk(args):
-    docs, body_only = args
+    docs, body_only, keep_statements = args
     counts = {n: Counter() for n in NS}
     dfs = {n: Counter() for n in NS}
     rows = []
     for d in docs:
-        text = main_body(d["text"]) if body_only else d["text"]
+        text = d["text"]
+        removed = 0
+        if not keep_statements:
+            text, removed = sections.strip_statements(text)
+        if body_only:
+            text = main_body(text)
         segs = tokenize.tokenize(text)
         row = {k: d[k] for k in ("doc_id", "venue", "year", "pdf_sha256", "text_sha256")}
         row["chars"] = len(text)
+        row["statement_chars"] = removed
         row["tokens"] = sum(len(s) for s in segs)
         for n in NS:
             c = Counter(ngrams_of(segs, n))
@@ -83,12 +91,26 @@ def chunks(it, size):
         yield buf
 
 
+def bounded_map(ex, fn, jobs, window):
+    """Like ex.map, but only `window` chunks are in flight, so texts are not all read up front."""
+    from collections import deque
+
+    pending = deque()
+    for job in jobs:
+        pending.append(ex.submit(fn, job))
+        if len(pending) >= window:
+            yield pending.popleft().result()
+    while pending:
+        yield pending.popleft().result()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--venue", default="iclr")
     ap.add_argument("--years", nargs="+", required=True)
     ap.add_argument("--config", default="omissions")
     ap.add_argument("--body-only", action="store_true")
+    ap.add_argument("--keep-statements", action="store_true")
     ap.add_argument("--min-df", type=int, default=3)
     ap.add_argument("--chunk", type=int, default=400)
     ap.add_argument("--workers", type=int, default=os.cpu_count())
@@ -96,6 +118,9 @@ def main():
     a = ap.parse_args()
     years = parse_years(a.years)
     os.makedirs(a.out, exist_ok=True)
+    for f in os.listdir(a.out):  # never leave outputs of an earlier run next to this one
+        if f.endswith((".parquet", ".csv", ".json")):
+            os.remove(os.path.join(a.out, f))
     part_dir = os.path.join(a.out, "_parts")
     shutil.rmtree(part_dir, ignore_errors=True)
     os.makedirs(part_dir)
@@ -120,8 +145,8 @@ def main():
     part = 0
     with ProcessPoolExecutor(a.workers) as ex:
         for year in years:
-            jobs = ((c, a.body_only) for c in chunks(unique_docs(year), a.chunk))
-            for rows, counts, dfs in ex.map(count_chunk, jobs):
+            jobs = ((c, a.body_only, a.keep_statements) for c in chunks(unique_docs(year), a.chunk))
+            for rows, counts, dfs in bounded_map(ex, count_chunk, jobs, 2 * a.workers):
                 doc_rows += rows
                 for n in NS:
                     pd.DataFrame(
@@ -172,7 +197,7 @@ def main():
                      1e6 * g.count / t.positions AS per_million, g.df / t.docs AS prevalence
               FROM g JOIN (SELECT year, COUNT(*) AS docs, SUM(positions_{n}) AS positions
                            FROM docs GROUP BY year) t USING (year)
-              WHERE g.df >= {a.min_df}
+              WHERE g.ngram IN (SELECT ngram FROM g WHERE df >= {a.min_df})
               ORDER BY g.year, g.count DESC, g.ngram
             ) TO '{os.path.join(a.out, f"ngrams_n{n}.parquet")}' (FORMAT parquet)
             """
@@ -187,6 +212,8 @@ def main():
             "years": years,
             "config": a.config,
             "body_only": a.body_only,
+            "keep_statements": a.keep_statements,
+            "sections": sections.SECTIONS_VERSION,
             "min_df": a.min_df,
             "revision": REVISION,
             "tokenizer": tokenize.TOKENIZER_VERSION,

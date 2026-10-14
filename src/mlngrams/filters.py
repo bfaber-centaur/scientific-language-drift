@@ -15,7 +15,7 @@ Raw tables are always kept; this filter only produces an additional view.
 """
 from __future__ import annotations
 
-FILTER_VERSION = "v1.1"  # v1.1: rule 4 (citation residue et/al)
+FILTER_VERSION = "v1.2"  # v1.1: rule 4 (et/al); v1.2: abbreviation tokens, QA boilerplate additions
 
 STOPWORDS = frozenset(
     """i me my myself we our ours ourselves you you're you've you'll you'd your
@@ -40,12 +40,32 @@ ARTIFACT_NGRAMS = frozenset(
         "et al",
         "arxiv preprint",
         "preprint arxiv",
-        "conference paper",  # ICLR running header "published as a conference paper at iclr"
+        "conference paper",  # ICLR running header; already removed upstream (QA: 0% of papers)
+        # Added 2026-10-14 from the QA review (docs/qa.md): workshop-track header and
+        # reference-list residue (venue names) that survive outside the omitted list.
+        "workshop track",
+        "track iclr",
+        "international conference",
+        "information processing",
+        "neural information",
+        "processing systems",
+        # Template statement headings; the sections themselves are removed by
+        # mlngrams.sections.strip_statements, these catch in-text mentions.
+        "reproducibility statement",
+        "ethics statement",
+        "llm usage",
+        "impact statement",
+        "broader impact",
+        "iclr code",
     }
 )  # v1 seed list; extended only after inspecting real text, with each addition noted
 
 
-CITATION_TOKENS = frozenset({"et", "al"})
+# Citation residue and abbreviation tokens produced by tokenizer v1.3 ("e.g." -> "eg").
+CITATION_TOKENS = frozenset(
+    {"et", "al", "eg", "ie", "wrt", "fig", "figs", "eq", "eqs", "sec", "secs", "tab", "tabs",
+     "vs", "cf", "resp", "approx", "ref", "refs", "thm", "lem", "alg", "def", "prop", "app"}
+)
 
 
 def is_content(ngram: str) -> bool:
