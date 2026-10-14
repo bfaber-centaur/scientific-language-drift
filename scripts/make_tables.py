@@ -5,8 +5,10 @@ Usage: python3 scripts/make_tables.py data/full results/full [--k 100]
 Writes, for n in 1, 2, 3:
     top{k}_n{n}_raw_by_year.csv        rank, year, ngram, count, df, per_million, prevalence
     top{k}_n{n}_content_by_year.csv    same, content-bearing filter (filters.is_content)
-    top{k}_n{n}_raw_pooled.csv         all years pooled (corpus-weighted) plus the
-    top{k}_n{n}_content_pooled.csv     year-balanced mean per_million / prevalence
+    top{k}_n{n}_{view}_pooled_cw.csv   all years pooled, ranked by pooled count (corpus-
+                                       weighted: dominated by the largest years)
+    top{k}_n{n}_{view}_pooled_yb.csv   ranked by year-balanced mean per_million (each
+                                       year weighs the same); both files carry both measures
 and corpus_totals.csv (copy of totals.csv).
 
 Pooled values sum the per-year tables, which were pruned at df >= min_df per
@@ -52,9 +54,11 @@ def main():
             by_year = sub.sort_values(["year", "count"], ascending=[True, False]).groupby("year").head(k).copy()
             by_year["rank"] = by_year.groupby("year").cumcount() + 1
             by_year[cols].to_csv(os.path.join(out, f"top{k}_n{n}_{view}_by_year.csv"), index=False, float_format="%.4g")
-            p = pooled(sub, tot_n).head(k)
-            p.insert(0, "rank", range(1, len(p) + 1))
-            p.to_csv(os.path.join(out, f"top{k}_n{n}_{view}_pooled.csv"), index=False, float_format="%.4g")
+            full = pooled(sub, tot_n)
+            for tag, key in (("cw", "count"), ("yb", "per_million_year_balanced")):
+                p = full.sort_values(key, ascending=False).head(k).copy()
+                p.insert(0, "rank", range(1, len(p) + 1))
+                p.to_csv(os.path.join(out, f"top{k}_n{n}_{view}_pooled_{tag}.csv"), index=False, float_format="%.4g")
 
 
 if __name__ == "__main__":
