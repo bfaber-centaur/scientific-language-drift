@@ -9,6 +9,10 @@ study: code, derived tables, methods, findings, and the results that turned out 
 It is not an AI-text detector. Nothing here is evidence about who or what wrote any paper, and
 linguistic correlations are not treated as evidence that AI use caused a change.
 
+**Start here:** [`docs/note-for-woog.md`](docs/note-for-woog.md) (one-page summary) →
+[`docs/findings.md`](docs/findings.md) → [`docs/negative-results.md`](docs/negative-results.md) →
+[`docs/handoff.md`](docs/handoff.md).
+
 ## Research questions
 
 1. What are the most common word n-grams in ML papers, and how have their frequencies changed over time?

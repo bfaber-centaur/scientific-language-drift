@@ -10,7 +10,7 @@ _Last updated 2026-10-14 (repository setup). Read this first if you are picking 
 | 1. Pilot (ICLR 2018/2020/2024/2026) | Done. Superseded by the full run after QA fixes. |
 | 2. Full ICLR 2017–2027 longitudinal analysis | Done: main-body text (75,118 papers, n = 1–3) and all-text sensitivity (n = 1, 2; trigram merge for all text exceeded the container disk and was skipped). |
 | 3. Exploratory findings | Five findings written and adversarially reviewed (`docs/findings.md`, `docs/review_findings.md`); overclaims corrected (negative results N11, N13). Subgroup analysis of the 2027 shift done (finding 3, finding 4). |
-| 4. Deliverable | Not started beyond this repository. |
+| 4. Deliverable | Done: this repository and `docs/note-for-woog.md` ("here are your bigrams; also, look at this"). |
 
 Settled parameters (change only with new evidence, and bump the version): dataset revision
 `cb5553e0c192c31c562a2822668c7f4ebbb9437a`, config `omissions`, tokenizer v1.3, content filter v1.2,
@@ -54,7 +54,7 @@ them in `run.json`; the longitudinal run in `results/full/longitudinal/method.js
 
 Work happens in the project's research thread ("N-gram study, continued"), which writes to the working
 copy at `/mnt/project-files/ml-ngrams` (branch `main`, tracking this repository). Nothing is running
-now; remaining work is Gate 4 (the note for woog) and the next steps below.
+now; remaining work is the next steps below (P3, comparison with AI-generated prose, is still out of scope).
 
 ## Blockers and risks
 
@@ -73,7 +73,6 @@ now; remaining work is Gate 4 (the note for woog) and the next steps below.
    papers when extracted; enlarge the resubmission sample by fuzzy title matching; build a
    negation-aware AI-use classifier validated on ~100 hand-labelled statements.
 3. Finding 5: relate "across <number>" to the number of benchmarks reported per paper.
-4. Gate 4: a short report for woog ("here are your bigrams; also, look at this").
 
 ## Reproducibility check done at repository setup
 
