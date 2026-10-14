@@ -75,7 +75,7 @@ predicted flat or up that came out down, because their 2027 rates collapse; the 
 *of the*, predicted flat, fell by about 1 bit. Excluding 2027 (2024–26 contrast): 30 of 36 held; misses:
 *a novel* and *novel approach* (up, predicted flat), *furthermore* and *robust* (flat, predicted up),
 *graph neural* (flat, peaked 2021), *generative adversarial* (steady decline, not a peak).
-(`results/full/longitudinal/watchlist_evaluation.csv`; numbers from the first run, recheck after rerun.)
+(`results/full/longitudinal/watchlist_evaluation.csv`; main-contrast count confirmed on the rerun after N1.)
 
 ## N10. "of the" is not a stable baseline
 
