@@ -12,11 +12,13 @@ Outputs
 timeseries_top100_content_bigrams.csv, timeseries_top100_raw_bigrams.csv,
 timeseries_watchlist.csv
     Long format: set, ngram, n, year, count, df, docs, positions, per_million,
-    prevalence, pruned, tiny_year. "Top 100 pooled" is ranked by the
+    prevalence, absent_row, tiny_year. "Top 100 pooled" is ranked by the
     YEAR-BALANCED mean per_million over non-tiny years (missing year = 0), so the
     42k-paper 2027 cohort does not dominate the selection.
-    pruned=True: the n-gram is absent from that year's table, i.e. df < min_df
-    (3) in that year; count/df are then written as 0 but are really 0..2 papers.
+    absent_row=True: no (year, ngram) row in the input. With tokenizer >= v1.3
+    count files (every n-gram with df >= 3 in at least one year, exact rows for
+    all other years) this is a true 0. With older files (pruned per year at
+    df >= 3) it means 0..2 papers; method.json records which applies.
 changes_{content|raw}_bigrams_{contrast}.csv
     Cohort comparisons (contrasts below). Lists (column `list`, top 100 each):
     riser/faller by log2 ratio of corpus-weighted rates (log2_cw), by log2 ratio
@@ -47,7 +49,14 @@ pseudo-counts per cohort, default). Year-balanced rate = mean over cohort years
 of per-year per_million (missing year = 0) + 1e6 * k / sum positions, i.e. the
 same pseudo-count spread proportionally over years. Ratios are log2(recent /
 early). Eligibility: in the cohort where the corpus-weighted rate is higher,
-prevalence (sum df / sum docs) >= 1% and sum df >= 20. Tiny years (< 200 docs:
+prevalence (sum df / sum docs) >= 1% and sum df >= 20 (this is at least as
+strict as the QA rule "prevalence >= 1% in at least one cohort, df >= 20 in the
+higher cohort"; for fallers it requires the early cohort to clear both).
+Single-paper concentration (one paper contributing > 20% of a count) cannot
+be checked from aggregates; the df >= 20 floor is the only guard. With
+--body, change tables also carry log2_cw_body (same score on body-only counts,
+i.e. text before the first reference-list marker) and body_share_r (share of
+recent-cohort occurrences that fall in the body). Tiny years (< 200 docs:
 ICLR 2013, 2014) are excluded from all rankings and cohorts; they appear in the
 time series flagged tiny_year.
 
@@ -202,6 +211,9 @@ class Data:
         self.rank_years = [y for y in self.years if y not in self.tiny]
         run = json.load(open(os.path.join(src, "run.json")))
         self.min_df = run.get("min_df", 3)
+        self.run = run
+        tv = str(run.get("tokenizer", "v0")).lstrip("v").split(".")
+        self.missing_is_zero = tuple(map(int, tv[:2])) >= (1, 3)
 
     def path(self, n):
         return os.path.join(self.src, f"ngrams_n{n}.parquet")
@@ -210,7 +222,7 @@ class Data:
         return self.totals[self.totals.n == n].set_index("year")
 
     def series(self, ngrams, n):
-        """Full year grid for given n-grams (missing years filled, pruned=True)."""
+        """Full year grid for given n-grams (missing years filled, absent_row=True)."""
         if not ngrams:
             return pd.DataFrame()
         self.con.register("wanted", pd.DataFrame({"ngram": list(ngrams)}))
@@ -220,7 +232,7 @@ class Data:
         tot = self.tot(n)
         grid = pd.MultiIndex.from_product([list(ngrams), self.years], names=["ngram", "year"]).to_frame(index=False)
         g = grid.merge(t, on=["ngram", "year"], how="left")
-        g["pruned"] = g["count"].isna()
+        g["absent_row"] = g["count"].isna()
         g["docs"] = g["year"].map(tot["docs"])
         g["positions"] = g["year"].map(tot["positions"])
         for c in ("count", "df"):
@@ -230,7 +242,7 @@ class Data:
         g["n"] = n
         g["tiny_year"] = g["year"].isin(self.tiny)
         return g[["ngram", "n", "year", "count", "df", "docs", "positions", "per_million",
-                  "prevalence", "pruned", "tiny_year"]]
+                  "prevalence", "absent_row", "tiny_year"]]
 
     def top_pooled(self, n, view, k=TOPK):
         ys = ",".join(map(str, self.rank_years))
@@ -393,12 +405,15 @@ def main():
     ap.add_argument("src")
     ap.add_argument("name")
     ap.add_argument("--k", type=float, default=5.0)
+    ap.add_argument("--body", default=None,
+                    help="optional --body-only count dir: adds body-only log2_cw columns to change tables")
     ap.add_argument("--tmp", default=os.path.expanduser("~/work/agent-c"))
     a = ap.parse_args()
     out = os.path.join(REPO, "results", a.name, "longitudinal")
     figdir = os.path.join(out, "figures")
     os.makedirs(figdir, exist_ok=True)
     d = Data(os.path.expanduser(a.src), os.path.join(a.tmp, a.name))
+    db = Data(os.path.expanduser(a.body), os.path.join(a.tmp, a.name + "_body")) if a.body else None
     k = a.k
     print("years", d.years, "tiny", d.tiny)
 
@@ -429,6 +444,16 @@ def main():
         t, info = d.cohort_table(2, early, recent)
         t["content"] = t.ngram.map(is_content)
         c = changes(t, info, k)
+        if db is not None:
+            eb = [y for y in early if y in db.years]
+            rb = [y for y in recent if y in db.years]
+            tb, ib = db.cohort_table(2, eb, rb)
+            (peb, _), (prb, _) = ib["e"], ib["r"]
+            tb = tb.set_index("ngram")
+            for col in ("cnt_e", "cnt_r"):
+                c[col + "_body"] = c.ngram.map(tb[col]).fillna(0)
+            c["log2_cw_body"] = np.log2((1e6 * (c.cnt_r_body + k) / prb) / (1e6 * (c.cnt_e_body + k) / peb))
+            c["body_share_r"] = c.cnt_r_body / c.cnt_r.where(c.cnt_r > 0)
         for lab, yrs in (("early", early), ("recent", recent)):
             p, dd = info[lab[0]]
             cohort_rows.append({"contrast": cname, "cohort": lab, "years": " ".join(map(str, yrs)),
@@ -453,6 +478,8 @@ def main():
             keep = ["list", "rank", "ngram", "cnt_e", "cnt_r", "df_e", "df_r", "pm_cw_e", "pm_cw_r", "pm_yb_e",
                     "pm_yb_r", "prev_cw_e", "prev_cw_r", "log2_cw", "log2_yb", "pp_cw", "pp_yb",
                     "rank_rise_cw", "rank_rise_yb", "rank_fall_cw", "rank_fall_yb", "per_million_by_year"]
+            if db is not None:
+                keep[-1:-1] = ["log2_cw_body", "body_share_r"]
             L[keep].to_csv(os.path.join(out, f"changes_{view}_bigrams_{cname}.csv"), index=False, float_format="%.5g")
             # disagreement between weightings
             dis = []
@@ -558,7 +585,8 @@ def main():
 
     json.dump({"src": a.src, "years": [int(y) for y in d.years], "tiny_years": [int(y) for y in d.tiny],
                "k_pseudocounts": k, "min_prevalence_higher_cohort": MIN_PREV, "min_df_higher_cohort": MIN_DF,
-               "contrasts": CONTRASTS, "min_df_pruning_input": d.min_df, "filter": FILTER_VERSION,
+               "contrasts": CONTRASTS, "min_df_input": d.min_df, "missing_row_is_true_zero": d.missing_is_zero,
+               "input_run": d.run, "body_src": a.body, "filter": FILTER_VERSION,
                "coverage_annotation_only": COVERAGE},
               open(os.path.join(out, "method.json"), "w"), indent=1)
 

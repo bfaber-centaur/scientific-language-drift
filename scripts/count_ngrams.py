@@ -12,11 +12,21 @@ Outputs in --out:
                           (no text). Exact duplicates (same text_sha256) are skipped
                           and listed in duplicates.csv.
     totals.csv            docs / tokens / positions / distinct n-grams per (year, n)
+    totals_by_stratum.csv the same per (year, stratum, n)
+    ngrams_n{n}_by_stratum.parquet  year, stratum, ngram, count, df, docs, positions
+                          for the same n-grams as ngrams_n{n}.parquet
     ngrams_n{n}.parquet   year, ngram, count, df, docs, positions, per_million, prevalence
                           for every n-gram with df >= min_df in AT LEAST ONE year; its
                           rows for the other years are exact (unpruned), and a missing
                           (year, ngram) row means a true count of 0.
     run.json              arguments, dataset revision, tokenizer and filter versions
+
+Strata and exclusions come from results/paper_flags_iclr.csv (scripts/paper_flags.py):
+stratum = version (published | under_review | unknown), with suffix "|offsample" for
+papers whose in_sample flag is False (biased part of ICLR 2025). Year-level tables
+and totals use in-sample papers only; stratified tables keep every stratum. Papers
+with a non-empty `exclude` flag (short, template) are skipped and listed in
+duplicates.csv with that reason. --flags none disables flags (stratum "all").
 
 Exact counting: workers count chunks of papers; partial counts are written as
 parquet and merged with DuckDB (which spills to disk), so memory stays bounded.
@@ -70,6 +80,7 @@ def count_chunk(args):
         row = {k: d[k] for k in ("doc_id", "venue", "year", "pdf_sha256", "text_sha256")}
         row["chars"] = len(text)
         row["statement_chars"] = removed
+        row["stratum"] = d.get("stratum", "all")
         row["tokens"] = sum(len(s) for s in segs)
         for n in NS:
             c = Counter(ngrams_of(segs, n))
@@ -89,6 +100,17 @@ def chunks(it, size):
             buf = []
     if buf:
         yield buf
+
+
+def chunks_by_stratum(it, size):
+    """Chunks whose documents all share one stratum."""
+    bufs: dict[str, list] = {}
+    for x in it:
+        b = bufs.setdefault(x["stratum"], [])
+        b.append(x)
+        if len(b) == size:
+            yield bufs.pop(x["stratum"])
+    yield from (b for b in bufs.values() if b)
 
 
 def bounded_map(ex, fn, jobs, window):
@@ -115,6 +137,7 @@ def main():
     ap.add_argument("--chunk", type=int, default=400)
     ap.add_argument("--workers", type=int, default=os.cpu_count())
     ap.add_argument("--out", required=True)
+    ap.add_argument("--flags", default=os.path.join(os.path.dirname(__file__), "..", "results", "paper_flags_iclr.csv"))
     a = ap.parse_args()
     years = parse_years(a.years)
     os.makedirs(a.out, exist_ok=True)
@@ -125,6 +148,11 @@ def main():
     shutil.rmtree(part_dir, ignore_errors=True)
     os.makedirs(part_dir)
 
+    flags = {}
+    if a.flags != "none" and os.path.exists(a.flags):
+        f = pd.read_csv(a.flags, keep_default_na=False)
+        flags = {(int(r.year), r.doc_id): r for r in f.itertuples()}
+
     seen: dict[str, str] = {}
     dups = []
     doc_rows = []
@@ -133,6 +161,16 @@ def main():
     def unique_docs(year):
         for d in iter_docs(a.config, a.venue, year):
             h = d["text_sha256"]
+            fl = flags.get((year, d["doc_id"]))
+            if fl is not None and fl.exclude:
+                dups.append({"doc_id": d["doc_id"], "year": year, "reason": fl.exclude, "same_as": ""})
+                continue
+            if not flags:
+                d["stratum"] = "all"
+            elif fl is None:
+                d["stratum"] = "unknown"
+            else:
+                d["stratum"] = fl.version + ("" if str(fl.in_sample) == "True" else "|offsample")
             if not d["text"] or not d["text"].strip():
                 dups.append({"doc_id": d["doc_id"], "year": year, "reason": "empty_text", "same_as": ""})
                 continue
@@ -145,13 +183,14 @@ def main():
     part = 0
     with ProcessPoolExecutor(a.workers) as ex:
         for year in years:
-            jobs = ((c, a.body_only, a.keep_statements) for c in chunks(unique_docs(year), a.chunk))
+            jobs = ((c, a.body_only, a.keep_statements) for c in chunks_by_stratum(unique_docs(year), a.chunk))
             for rows, counts, dfs in bounded_map(ex, count_chunk, jobs, 2 * a.workers):
                 doc_rows += rows
                 for n in NS:
                     pd.DataFrame(
                         {
                             "year": year,
+                            "stratum": rows[0]["stratum"],
                             "ngram": list(counts[n].keys()),
                             "count": list(counts[n].values()),
                             "df": [dfs[n][k] for k in counts[n]],
@@ -171,14 +210,43 @@ def main():
     con = duckdb.connect()
     con.execute(f"SET temp_directory='{os.path.join(a.out, '_duck')}'")
     con.execute("SET memory_limit='8GB'")
-    con.register("docs", docs)
-    tot_rows = []
+    con.register("docs_all", docs)
+    con.execute("CREATE TABLE docs AS SELECT * FROM docs_all WHERE stratum NOT LIKE '%|offsample'")
+    tot_rows, strat_rows = [], []
     for n in NS:
         con.execute(
             f"""
+            CREATE OR REPLACE TABLE gs AS
+            SELECT year, stratum, ngram, SUM(count)::BIGINT AS count, SUM(df)::BIGINT AS df
+            FROM read_parquet('{part_dir}/n{n}_*.parquet') GROUP BY year, stratum, ngram
+            """
+        )
+        con.execute(
+            """
             CREATE OR REPLACE TABLE g AS
             SELECT year, ngram, SUM(count)::BIGINT AS count, SUM(df)::BIGINT AS df
-            FROM read_parquet('{part_dir}/n{n}_*.parquet') GROUP BY year, ngram
+            FROM gs WHERE stratum NOT LIKE '%|offsample' GROUP BY year, ngram
+            """
+        )
+        con.execute(f"CREATE OR REPLACE TABLE keep AS SELECT DISTINCT ngram FROM g WHERE df >= {a.min_df}")
+        strat_rows.append(
+            con.execute(
+                f"""
+                SELECT year, stratum, {n} AS n, COUNT(*) AS docs, SUM(tokens) AS tokens,
+                       SUM(positions_{n}) AS positions
+                FROM docs_all GROUP BY year, stratum ORDER BY year, stratum
+                """
+            ).df()
+        )
+        con.execute(
+            f"""
+            COPY (
+              SELECT gs.year, gs.stratum, gs.ngram, gs.count, gs.df, t.docs, t.positions
+              FROM gs JOIN (SELECT year, stratum, COUNT(*) AS docs, SUM(positions_{n}) AS positions
+                            FROM docs_all GROUP BY year, stratum) t USING (year, stratum)
+              WHERE gs.ngram IN (SELECT ngram FROM keep)
+              ORDER BY gs.year, gs.stratum, gs.count DESC, gs.ngram
+            ) TO '{os.path.join(a.out, f"ngrams_n{n}_by_stratum.parquet")}' (FORMAT parquet)
             """
         )
         t = con.execute(
@@ -197,13 +265,14 @@ def main():
                      1e6 * g.count / t.positions AS per_million, g.df / t.docs AS prevalence
               FROM g JOIN (SELECT year, COUNT(*) AS docs, SUM(positions_{n}) AS positions
                            FROM docs GROUP BY year) t USING (year)
-              WHERE g.ngram IN (SELECT ngram FROM g WHERE df >= {a.min_df})
+              WHERE g.ngram IN (SELECT ngram FROM keep)
               ORDER BY g.year, g.count DESC, g.ngram
             ) TO '{os.path.join(a.out, f"ngrams_n{n}.parquet")}' (FORMAT parquet)
             """
         )
         print(f"n={n}: merged, {time.time() - t0:.0f}s", flush=True)
     pd.concat(tot_rows).to_csv(os.path.join(a.out, "totals.csv"), index=False)
+    pd.concat(strat_rows).to_csv(os.path.join(a.out, "totals_by_stratum.csv"), index=False)
     shutil.rmtree(part_dir)
     shutil.rmtree(os.path.join(a.out, "_duck"), ignore_errors=True)
     json.dump(
@@ -215,10 +284,12 @@ def main():
             "keep_statements": a.keep_statements,
             "sections": sections.SECTIONS_VERSION,
             "min_df": a.min_df,
+            "flags": a.flags if flags else "none",
             "revision": REVISION,
             "tokenizer": tokenize.TOKENIZER_VERSION,
             "filter": filters.FILTER_VERSION,
             "docs": len(docs),
+            "docs_in_sample": int(con.execute("SELECT COUNT(*) FROM docs").fetchone()[0]),
             "skipped": len(dups),
             "seconds": round(time.time() - t0),
         },
