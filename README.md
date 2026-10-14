@@ -1,15 +1,60 @@
-# A Decade of Language in ML Papers: n-gram baseline
+# Scientific language drift: a decade of n-grams in ML papers
 
-Exploratory corpus analysis of word n-grams in ML papers from
+A longitudinal, observational study of word n-grams in ML papers from
 [`woog/open-text-detector-papers`](https://huggingface.co/datasets/woog/open-text-detector-papers)
-(pinned revision `cb5553e0c192c31c562a2822668c7f4ebbb9437a`), with ICLR 2017–2027 as the longitudinal corpus.
-Question: what are the most common n-grams, and how have their frequencies changed over time?
-This is not an AI-text detector and makes no authorship claims about any paper.
+(pinned revision `cb5553e0c192c31c562a2822668c7f4ebbb9437a`), with ICLR 2017–2027 as the primary corpus
+and NeurIPS, TMLR, COLM, ICML and EMNLP as cross-checks. This repository is the durable record of the
+study: code, derived tables, methods, findings, and the results that turned out to be wrong.
 
-- **Findings:** [`docs/findings.md`](docs/findings.md) (facts / interpretations / hypotheses, kept apart)
-- **Corpus, coverage and caveats:** [`docs/corpus.md`](docs/corpus.md)
-- **QA review:** [`docs/qa.md`](docs/qa.md), [`docs/review_findings.md`](docs/review_findings.md)
-- **Status and next experiments:** [`docs/handoff.md`](docs/handoff.md)
+It is not an AI-text detector. Nothing here is evidence about who or what wrote any paper, and
+linguistic correlations are not treated as evidence that AI use caused a change.
+
+## Research questions
+
+1. What are the most common word n-grams in ML papers, and how have their frequencies changed over time?
+2. Which changes are topic turnover (what the field studies) and which are changes in how papers are written?
+3. Are there abrupt or non-monotonic shifts in phrasing, and do they survive corpus artifacts
+   (template text, appendix growth, version mix, partial coverage, extraction)?
+
+**Scope:** frequencies, prevalence and their change, with explicit confounders and cheap falsification
+tests. **Out of scope** for now: authorship attribution, AI-text classifiers, causal claims.
+
+## Current status (2026-10-14)
+
+| Result | Status | Where |
+|---|---|---|
+| Reproducible uni/bi/trigram counts, per-million rates and paper prevalence, ICLR 2017–2027 | **Validated**: 34 synthetic tests, hand-checked papers, independent QA (`docs/qa.md`) | `results/full/body/` |
+| F1. Topic turnover drives the largest movers | **Validated (descriptive)**: holds corpus-weighted, year-balanced and in submissions only | `docs/findings.md` §1 |
+| F2. 2024 burst of rhetorical words (*delve*, *underscores*, *intricate*), fading by 2027 | **Validated (descriptive)** in ICLR, raw PDF text, NeurIPS, TMLR, COLM, and in non-LLM papers; cause untested | §2 |
+| F3. ICLR 2027 breaks with earlier years (*a novel*, *we propose* fall; *test whether*, *held fixed* rise) | **Validated (descriptive), cause unknown**: holds in submissions only, raw text, LLM and non-LLM papers, after the contamination fix; resubmission evidence is ambiguous; full-text recount and subgroup analysis in progress | §3 |
+| F4. Function words thinning since before 2023, accelerating from 2024 | **Validated (descriptive)** across venues, the raw text layer and long running-prose segments | §4 |
+| F5. The "across" construction | **Preliminary** | §5 |
+| "2027 surge of AI vocabulary" (*generative ai*, *ai use*, *ai tools*) | **Invalid**: template contamination from the required ICLR 2027 AI-use statement | `docs/negative-results.md` N1 |
+| 2027 phrasing tracks self-reported AI drafting help | **Withdrawn**: keyword classifier agreed with hand labels on ~50% of statements | N13 |
+
+Active work, blockers and next steps: [`docs/handoff.md`](docs/handoff.md).
+
+## Documents
+
+- [`docs/methodology.md`](docs/methodology.md): corpus selection, tokenization, normalization, statistics
+- [`docs/corpus.md`](docs/corpus.md): provenance, pinned revision, venue/year coverage, extraction limits
+- [`docs/findings.md`](docs/findings.md): observations with evidence, facts / interpretations / hypotheses kept apart
+- [`docs/negative-results.md`](docs/negative-results.md): false leads, failed predictions, corrections
+- [`docs/qa.md`](docs/qa.md), [`docs/review_findings.md`](docs/review_findings.md): independent QA of the pipeline and adversarial review of the findings
+- [`docs/handoff.md`](docs/handoff.md): current state, history, how to resume
+
+## Quickstart
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 -m pytest                       # 34 synthetic counting / tokenization / normalization tests
+# Smallest real run: one ICLR year, main body only (downloads one parquet to ~/.cache/mlngrams)
+python3 scripts/count_ngrams.py --years 2018 --body-only --out data/demo
+python3 scripts/make_tables.py data/demo data/demo_tables   # data/ is git-ignored
+```
+
+The full reproduction sequence for every published table and figure is under
+[Setup and reproduction](#setup-and-reproduction).
 
 ## Results layout
 
