@@ -137,16 +137,26 @@ def main():
     ap.add_argument("--chunk", type=int, default=400)
     ap.add_argument("--workers", type=int, default=os.cpu_count())
     ap.add_argument("--out", required=True)
+    ap.add_argument("--ns", type=int, nargs="+", default=list(NS), help="n-gram orders to merge and write")
+    ap.add_argument("--merge-only", action="store_true",
+                    help="skip counting; merge existing --out/_parts and docs.parquet (after a failed merge)")
     ap.add_argument("--flags", default=os.path.join(os.path.dirname(__file__), "..", "results", "paper_flags_iclr.csv"))
     a = ap.parse_args()
     years = parse_years(a.years)
     os.makedirs(a.out, exist_ok=True)
-    for f in os.listdir(a.out):  # never leave outputs of an earlier run next to this one
-        if f.endswith((".parquet", ".csv", ".json")):
-            os.remove(os.path.join(a.out, f))
     part_dir = os.path.join(a.out, "_parts")
-    shutil.rmtree(part_dir, ignore_errors=True)
-    os.makedirs(part_dir)
+    if a.merge_only:
+        for n in a.ns:
+            for suffix in ("", "_by_stratum"):
+                f = os.path.join(a.out, f"ngrams_n{n}{suffix}.parquet")
+                if os.path.exists(f):
+                    os.remove(f)
+    else:
+        for f in os.listdir(a.out):  # never leave outputs of an earlier run next to this one
+            if f.endswith((".parquet", ".csv", ".json")):
+                os.remove(os.path.join(a.out, f))
+        shutil.rmtree(part_dir, ignore_errors=True)
+        os.makedirs(part_dir)
 
     flags = {}
     if a.flags != "none" and os.path.exists(a.flags):
@@ -182,7 +192,7 @@ def main():
 
     part = 0
     with ProcessPoolExecutor(a.workers) as ex:
-        for year in years:
+        for year in [] if a.merge_only else years:
             jobs = ((c, a.body_only, a.keep_statements) for c in chunks_by_stratum(unique_docs(year), a.chunk))
             for rows, counts, dfs in bounded_map(ex, count_chunk, jobs, 2 * a.workers):
                 doc_rows += rows
@@ -199,21 +209,26 @@ def main():
                 part += 1
             print(f"{year}: done, {len(doc_rows)} docs total, {time.time() - t0:.0f}s", flush=True)
 
-    docs = pd.DataFrame(doc_rows)
-    docs.to_parquet(os.path.join(a.out, "docs.parquet"), index=False)
-    pd.DataFrame(dups, columns=["doc_id", "year", "reason", "same_as"]).to_csv(
-        os.path.join(a.out, "duplicates.csv"), index=False
-    )
+    if a.merge_only:
+        docs = pd.read_parquet(os.path.join(a.out, "docs.parquet"))
+        dups = pd.read_csv(os.path.join(a.out, "duplicates.csv")).to_dict("records")
+    else:
+        docs = pd.DataFrame(doc_rows)
+        docs.to_parquet(os.path.join(a.out, "docs.parquet"), index=False)
+        pd.DataFrame(dups, columns=["doc_id", "year", "reason", "same_as"]).to_csv(
+            os.path.join(a.out, "duplicates.csv"), index=False
+        )
 
     import duckdb
 
     con = duckdb.connect()
     con.execute(f"SET temp_directory='{os.path.join(a.out, '_duck')}'")
     con.execute("SET memory_limit='8GB'")
+    con.execute("SET preserve_insertion_order=false")
     con.register("docs_all", docs)
     con.execute("CREATE TABLE docs AS SELECT * FROM docs_all WHERE stratum NOT LIKE '%|offsample'")
     tot_rows, strat_rows = [], []
-    for n in NS:
+    for n in a.ns:
         con.execute(
             f"""
             CREATE OR REPLACE TABLE gs AS
@@ -284,6 +299,7 @@ def main():
             "keep_statements": a.keep_statements,
             "sections": sections.SECTIONS_VERSION,
             "min_df": a.min_df,
+            "ns": a.ns,
             "flags": a.flags if flags else "none",
             "revision": REVISION,
             "tokenizer": tokenize.TOKENIZER_VERSION,

@@ -8,8 +8,8 @@ _Last updated 2026-10-14 (repository setup). Read this first if you are picking 
 | Gate | State |
 |---|---|
 | 1. Pilot (ICLR 2018/2020/2024/2026) | Done. Superseded by the full run after QA fixes. |
-| 2. Full ICLR 2017–2027 longitudinal analysis | Done for main-body text (75,118 papers). Full-text (appendices included) recount still running as a sensitivity check. |
-| 3. Exploratory findings | Five findings written and adversarially reviewed (`docs/findings.md`, `docs/review_findings.md`); overclaims corrected (negative results N11, N13). Subgroup analysis of the 2027 shift in progress. |
+| 2. Full ICLR 2017–2027 longitudinal analysis | Done: main-body text (75,118 papers, n = 1–3) and all-text sensitivity (n = 1, 2; trigram merge for all text exceeded the container disk and was skipped). |
+| 3. Exploratory findings | Five findings written and adversarially reviewed (`docs/findings.md`, `docs/review_findings.md`); overclaims corrected (negative results N11, N13). Subgroup analysis of the 2027 shift done (finding 3, finding 4). |
 | 4. Deliverable | Not started beyond this repository. |
 
 Settled parameters (change only with new evidence, and bump the version): dataset revision
@@ -44,18 +44,17 @@ them in `run.json`; the longitudinal run in `results/full/longitudinal/method.js
    part of the way with the cohort, which cannot separate a new population from a partial editing pass.
    An early association with self-reported AI drafting help was withdrawn after the keyword classifier
    matched hand labels on only ~50% of statements (N13). No causal claim is made.
-6. **In progress now.** Full-text recount (sensitivity to appendix growth) and subgroup analysis of
-   whether the 2027 shift is uniform across papers or concentrated in a subgroup. The adversarial review
-   of the five findings is done (`docs/review_findings.md`).
+6. **Recount and subgroups (done).** The all-text recount agrees with the main-body results (top-100
+   change rankings: Spearman 0.78–0.99, no riser or faller changes sign; `docs/findings.md`,
+   "Sensitivity"). The trigram merge for all text ran out of container disk and was skipped; rerun
+   with `--merge-only --ns 3` on a larger disk if needed. Subgroups: the 2027 shift moves the whole
+   per-paper distribution, holds within submissions and in LLM and non-LLM papers.
 
 ## Active experiments and owners
 
 Work happens in the project's research thread ("N-gram study, continued"), which writes to the working
-copy at `/mnt/project-files/ml-ngrams` and should commit each milestone here.
-
-- Full-text recount: `scripts/count_ngrams.py --years 2013 2014 2017-2027 --out data/full`, then
-  `scripts/longitudinal.py ... --sens data/full`.
-- Subgroup analysis of the 2027 shift (per-paper distribution, topic, version stratum).
+copy at `/mnt/project-files/ml-ngrams` (branch `main`, tracking this repository). Nothing is running
+now; remaining work is Gate 4 (the note for woog) and the next steps below.
 
 ## Blockers and risks
 

@@ -717,6 +717,8 @@ def main():
         col = {}
         for n in (1, 2, 3):
             ngs = wl[wl.n == n].ngram.tolist()
+            if D.tot(n).empty:  # order not merged in this input (all-text run: n = 1, 2 only)
+                continue
             r = sens_log2(D, n, early, recent, ngs, k)
             if r is not None:
                 col.update(r["log2"].to_dict())

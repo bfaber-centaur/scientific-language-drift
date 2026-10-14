@@ -167,6 +167,23 @@ partly a phrasing fashion ("across diverse" behaves like the words in finding 2 
 "across three/four/five" keep rising (15.3 → 19.4%, 9.7 → 14.0%, 6.7 → 11.1%, 2026 → 2027). Next: relate
 "across <number>" to the number of benchmarks reported per paper.
 
+## Sensitivity: appendices included
+
+The all-text run (`results/full/alltext/`, change columns `log2_cw_alltext` in
+`results/full/longitudinal/changes_*.csv`) gives the same picture: for the top-100 risers, fallers and
+paper-share risers, Spearman correlation of the log2 changes between body-only and all text is 0.78 / 0.87
+/ 0.99, median absolute difference 0.3 bits, and no riser or faller changes sign. Two paper-share risers
+flip sign when appendices are included: *related work* and *ablation study*, which move between the main
+text and the appendix over time (`docs/negative-results.md` N5).
+
+## Subgroups of the 2027 shift
+
+The 2027 shift is population-wide rather than carried by a subgroup: the per-paper stopword-share
+distribution moves as a whole (finding 4); the new markers are similar in LLM and non-LLM papers and
+rarely co-occur (finding 3); it holds within submission versions; resubmitted papers move partly
+(finding 3). Not yet split: by research area beyond LLM/non-LLM, by paper length, or by first-time vs
+returning authors (author identities are anonymous in 2027).
+
 ## Limitations
 
 - Observational; no claims about authorship of any paper. Papers are not verified human-only text.

@@ -80,7 +80,7 @@
   "skipped": 77,
   "seconds": 1049
  },
- "sens_src": null,
+ "sens_src": "/root/work/full",
  "sens_label": "alltext",
  "under_review_sensitivity": true,
  "filter": "v1.2",

@@ -47,7 +47,10 @@ def main():
     shutil.copy(os.path.join(src, "totals.csv"), os.path.join(out, "corpus_totals.csv"))
     cols = ["rank", "year", "ngram", "count", "df", "per_million", "prevalence"]
     for n in (1, 2, 3):
-        t = pd.read_parquet(os.path.join(src, f"ngrams_n{n}.parquet"))
+        path = os.path.join(src, f"ngrams_n{n}.parquet")
+        if not os.path.exists(path):  # e.g. the all-text run merges n = 1, 2 only (disk)
+            continue
+        t = pd.read_parquet(path)
         t["content"] = t["ngram"].map(is_content)
         tot_n = totals[totals.n == n]
         for view, sub in (("raw", t), ("content", t[t.content])):
