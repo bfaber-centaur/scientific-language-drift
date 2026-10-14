@@ -16,6 +16,10 @@ Rules (v1):
   * Optional citation stripping (on by default): parenthetical author-year
     citations "(Smith et al., 2020; Doe, 2019)" and numeric brackets "[3, 12]"
     are removed and replaced with a segment boundary.
+  * Omission markers from the `omissions` config ("⟦table omitted⟧", "⟦math⟧", ...)
+    are replaced with a segment boundary (v1.1).
+  * URLs (http(s)://..., www....) and e-mail addresses are replaced with a
+    segment boundary (v1.2).
 """
 from __future__ import annotations
 
@@ -24,10 +28,15 @@ import unicodedata
 from dataclasses import dataclass
 from typing import Iterator
 
-TOKENIZER_VERSION = "v1"
+TOKENIZER_VERSION = "v1.2"  # v1.1: omission markers are boundaries; v1.2: URLs/emails are boundaries
 
 _HYPHEN_BREAK = re.compile(r"(\w)-\s*\n\s*(\w)")
 _BLANK_LINE = re.compile(r"\n\s*\n")
+# Placeholders inserted by the dataset's `omissions` config, e.g. "⟦equation omitted⟧",
+# "⟦math⟧". They stand for removed non-prose and must never form or join n-grams.
+_OMISSION_MARKER = re.compile(r"⟦[^⟧]{0,80}⟧")
+# URLs and e-mail addresses (code links, footnotes, author blocks) are not prose.
+_URL = re.compile(r"(?:https?://|www\.)\S+|\S+@\S+\.\w+")
 _SEGMENT_BREAK = re.compile(r"[.!?;:=+\\{}^_$|<>~*/#•·]")
 # Parenthetical containing a 4-digit year (optionally with suffix letter) and
 # something name-like, e.g. "(Vaswani et al., 2017)" or "(see Doe 2019a; Roe, 2020)".
@@ -51,6 +60,8 @@ def normalize(text: str) -> str:
 
 def segments(text: str, cfg: TokenizerConfig = TokenizerConfig()) -> Iterator[str]:
     text = normalize(text)
+    text = _OMISSION_MARKER.sub(BOUNDARY, text)
+    text = _URL.sub(BOUNDARY, text)
     if cfg.strip_citations:
         text = _CITE_PAREN.sub(BOUNDARY, text)
         text = _CITE_BRACKET.sub(BOUNDARY, text)

@@ -4,7 +4,9 @@ An n-gram is content-bearing iff EVERY token
   1. is not in STOPWORDS (the NLTK English list, frozen here for reproducibility),
   2. is not the number placeholder <num>,
   3. has at least 2 characters (single letters are almost always math
-     variables or broken abbreviations such as "e g", "i e", "et al").
+     variables or broken abbreviations such as "e g", "i e", "et al"),
+  4. is not "et" or "al": residue of textual citations "Wang et al. (2023)",
+     which the tokenizer does not strip ("wang et" ranked in the 2026 pilot).
 Additionally the n-gram must not be in ARTIFACT_NGRAMS, a short hand-curated
 list of non-prose boilerplate (e.g. "et al", "arxiv preprint") that is
 reported separately rather than silently dropped.
@@ -13,7 +15,7 @@ Raw tables are always kept; this filter only produces an additional view.
 """
 from __future__ import annotations
 
-FILTER_VERSION = "v1"
+FILTER_VERSION = "v1.1"  # v1.1: rule 4 (citation residue et/al)
 
 STOPWORDS = frozenset(
     """i me my myself we our ours ourselves you you're you've you'll you'd your
@@ -43,10 +45,13 @@ ARTIFACT_NGRAMS = frozenset(
 )  # v1 seed list; extended only after inspecting real text, with each addition noted
 
 
+CITATION_TOKENS = frozenset({"et", "al"})
+
+
 def is_content(ngram: str) -> bool:
     if ngram in ARTIFACT_NGRAMS:
         return False
     for tok in ngram.split(" "):
-        if tok in STOPWORDS or tok == "<num>" or len(tok) < 2:
+        if tok in STOPWORDS or tok in CITATION_TOKENS or tok == "<num>" or len(tok) < 2:
             return False
     return True

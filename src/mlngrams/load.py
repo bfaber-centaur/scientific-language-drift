@@ -2,73 +2,86 @@
 
 Shared data contract: every analysis consumes `iter_docs()`, which yields
 dicts with exactly these keys:
-    doc_id : str   stable identifier from the dataset
-    venue  : str   e.g. "ICLR"
-    year   : int   conference year as labelled in the dataset
-    text   : str   extracted full text
-Column names in the source are mapped in COLUMN_MAP. They are UNCONFIRMED
-until the repository has been inspected (scripts/recon.py); update them and
-docs/corpus.md together.
+    doc_id     : str   OpenReview forum id (`paper_id`)
+    venue      : str   lowercase conference, e.g. "iclr"
+    year       : int   conference year as labelled in the dataset
+    pdf_sha256 : str   row key; joins across configs
+    text_sha256: str   hash of the text, for exact-duplicate detection
+    text       : str   extracted text of the chosen config
+Schema confirmed against revision REVISION (see docs/corpus.md).
 
-Files are fetched with huggingface_hub into a local cache outside the repo and
-read in record batches with pyarrow, so memory stays bounded by batch size.
+Configs: "omissions" (primary for lexical analysis: tables, equations, inline
+math, figure text and reference lists replaced by ⟦...⟧ markers), "clean"
+(sensitivity check), "direct" (raw text layer, not used).
+
+Files are one parquet per `<venue>-<year>`; they are downloaded once into
+CACHE_DIR/<config>/ (outside the repo) and read in record batches, so memory
+stays bounded by batch size.
 """
 from __future__ import annotations
 
 import hashlib
 import os
+import urllib.request
 from typing import Iterator
 
 REPO_ID = "woog/open-text-detector-papers"
-REVISION = os.environ.get("MLNGRAMS_REVISION", "UNPINNED")  # set to a commit sha in docs/corpus.md
+# Pinned 2026-10-14. The dataset is actively growing; change only together with docs/corpus.md.
+REVISION = os.environ.get("MLNGRAMS_REVISION", "cb5553e0c192c31c562a2822668c7f4ebbb9437a")
 CACHE_DIR = os.environ.get("MLNGRAMS_CACHE", os.path.expanduser("~/.cache/mlngrams"))
 
-COLUMN_MAP = {  # source column -> contract key (UNCONFIRMED)
-    "id": "doc_id",
-    "venue": "venue",
+COLUMN_MAP = {  # source column -> contract key (confirmed at REVISION)
+    "paper_id": "doc_id",
+    "conference": "venue",
     "year": "year",
+    "pdf_sha256": "pdf_sha256",
+    "text_sha256": "text_sha256",
     "text": "text",
 }
 
 
-def list_data_files(revision: str = REVISION, config: str | None = None) -> list[str]:
-    from huggingface_hub import HfApi
-
-    files = HfApi().list_repo_files(REPO_ID, repo_type="dataset", revision=revision)
-    files = [f for f in files if f.endswith(".parquet")]
-    if config:
-        files = [f for f in files if f.split("/")[0] == config or f"/{config}/" in f or f.startswith(f"{config}-")]
-    return sorted(files)
+def file_name(venue: str, year: int) -> str:
+    return f"{venue.lower()}-{year}.parquet"
 
 
-def fetch(path: str, revision: str = REVISION) -> str:
-    from huggingface_hub import hf_hub_download
-
-    return hf_hub_download(REPO_ID, path, repo_type="dataset", revision=revision, cache_dir=CACHE_DIR)
+def fetch(config: str, venue: str, year: int, revision: str = REVISION) -> str:
+    """Return a local path to <config>/<venue>-<year>.parquet, downloading it if absent."""
+    rel = f"{config}/{file_name(venue, year)}"
+    path = os.path.join(CACHE_DIR, rel)
+    if not os.path.exists(path):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        url = f"https://huggingface.co/datasets/{REPO_ID}/resolve/{revision}/{rel}"
+        tmp = path + ".part"
+        urllib.request.urlretrieve(url, tmp)
+        os.replace(tmp, path)
+    return path
 
 
 def iter_docs(
-    files: list[str],
+    config: str,
+    venue: str,
+    year: int,
     revision: str = REVISION,
-    venues: set[str] | None = None,
-    years: set[int] | None = None,
     batch_size: int = 256,
+    with_text: bool = True,
 ) -> Iterator[dict]:
     import pyarrow.parquet as pq
 
-    for f in files:
-        pf = pq.ParquetFile(fetch(f, revision))
-        cols = [c for c in COLUMN_MAP if c in pf.schema_arrow.names]
-        for batch in pf.iter_batches(batch_size=batch_size, columns=cols):
-            for row in batch.to_pylist():
-                doc = {COLUMN_MAP[k]: v for k, v in row.items()}
-                if venues and doc.get("venue") not in venues:
-                    continue
-                if years and doc.get("year") is not None and int(doc["year"]) not in years:
-                    continue
-                yield doc
+    pf = pq.ParquetFile(fetch(config, venue, year, revision))
+    cols = [c for c in COLUMN_MAP if with_text or c != "text"]
+    for batch in pf.iter_batches(batch_size=batch_size, columns=cols):
+        for row in batch.to_pylist():
+            doc = {COLUMN_MAP[k]: v for k, v in row.items()}
+            doc["year"] = int(doc["year"])
+            yield doc
+
+
+def main_body(text: str, marker: str = "⟦references omitted⟧") -> str:
+    """Text before the first reference-list marker (drops appendices). Omissions config only."""
+    i = text.find(marker)
+    return text if i < 0 else text[:i]
 
 
 def text_hash(text: str) -> str:
-    """Hash of whitespace-collapsed lowercase text, for exact-duplicate detection."""
+    """Hash of whitespace-collapsed lowercase text, for near-exact duplicate detection."""
     return hashlib.sha1(" ".join((text or "").lower().split()).encode()).hexdigest()

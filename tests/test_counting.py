@@ -96,3 +96,18 @@ def test_content_filter():
     assert not is_content("<num> epochs")
     assert not is_content("x y")
     assert not is_content("et al")
+
+
+def test_omission_markers_are_boundaries_not_tokens():
+    text = "the loss is ⟦math⟧ minimized by\n⟦equation omitted⟧\nwhere we"
+    assert tokenize(text) == [["the", "loss", "is"], ["minimized", "by"], ["where", "we"]]
+
+
+def test_urls_and_emails_are_boundaries():
+    text = "code at https://github.com/a/b-c.git is public. mail me@x.org now"
+    assert tokenize(text) == [["code", "at"], ["is", "public"], ["mail"], ["now"]]
+
+
+def test_citation_residue_not_content():
+    assert not is_content("wang et")
+    assert not is_content("et al")
