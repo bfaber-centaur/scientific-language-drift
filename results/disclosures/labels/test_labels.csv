@@ -1,0 +1,181 @@
+doc_id,labels,flags,note,stratum
+lsHk1WsZPD,other;coding,negated_list,proof writing; method implementation,negation_heavy
+z0nQAdCOH0,coding;other,negated_list,"implementation, theory, hypotheses, methodology, interpretation, figures",template_heavy
+CkDok4kcqX,coding;drafting;polish;other,negated_list,"code; drafting, polishing and formatting manuscript",drafting_cue
+53STjMynES,other;polish,negated_list,ablation design feedback; agent applied author feedback for readability,random
+lVOXog73rC,literature;other;coding;polish;drafting,,broad list incl. manuscript drafting and translation,random
+k4H9VTRUNW,polish,negated_list,language editing only,tool_named
+pDqwEXUMWc,other;coding;polish;literature,negated_list,"methodology, implementation, figures, readability, literature, references",template_heavy
+NlRc4ndSBD,drafting;literature;coding,,drafting and editing (rule 1); benchmark construction; LLM evaluator,coding_cue
+u4fTQtMTTF,drafting;polish;other;coding;literature,negated_list,drafting and polishing prose; LaTeX; scripts; citation suggestions,drafting_cue
+MDFWR3rc6r,coding;polish;other,negated_list,LLM-assisted extraction as method; copy-editing; LaTeX; scaffolding code,long
+HeZhwTKnd5,coding;other;drafting;literature,negated_list,agents across research; drafted and edited paper (rule 1),drafting_cue
+cwssRhVpsI,polish;coding;other,negated_list,readability; code; checking analysis correctness (check -> other),negation_heavy
+BGWfUNxgAg,literature;polish;other;coding,,"literature, editing, math analysis, code, interpretation",short
+1cqFoIup4m,drafting;literature;coding;other,,"drafting, restructuring, code, audits, derivations, simulated reviews",literature_cue
+NgFdiRBPFe,other;coding;literature,negated_list,"proofs, implementation, artifacts, references, literature",template_heavy
+ZIhrnkI9L4,other;coding;literature;drafting;polish,negated_list,"framing and methodology feedback, interpretation, drafting, readability",global_none
+v4Fb6JeHUe,drafting;polish;coding;literature,negated_list,drafting and polishing; debugging; related literature; reproducibility text leaked,negation_heavy
+0YFlLZMJLv,polish;literature;other;drafting,writing_unspecified,aid or polish writing; retrieval; ideation-or-execution unspecified -> other; drafts,drafting_cue
+CUUoqxUY1o,polish;coding;literature;other,negated_list,"polishing, code, scripts, literature, derivation clarity, design exploration",coding_cue
+1uKiakJHan,other;coding;drafting;literature;polish,negated_list,long pasted recommended list incl. drafting parts,negation_heavy
+be3fTom0Tt,polish,,polishing only,random
+eGQbFlkOuQ,literature;drafting;coding,,"literature, drafting and editing, analysis and visualization",drafting_cue
+7xKDZJKich,other;coding;literature,negated_list,proof writing; code; literature,random
+77vdC6WPII,polish;literature;other,writing_unspecified,"writing (unspecified), translation, literature, reference formatting",short
+ki2lre0LFt,polish;literature;drafting,negated_list,translation and editing; related work; drafting limited portions,global_none
+oauW9dlXcI,polish;coding,negated_list,readability; code; none of required tasks,coding_cue
+rd5YwUVnWm,other;coding;drafting;polish;literature,negated_list,"methodology review, code, qualitative analysis, synthetic data, drafting",random
+AbSPLOF19a,polish;other;coding,,"translation, polishing, formatting, code, reviewing outputs",short
+3z0Fu8sf5R,polish;other,,grammar; LaTeX formatting,short
+OuBszJGxpl,polish;other;coding,,polish; proof ideas; codebase,suspect_tier
+q7gKctvQzh,polish;coding,writing_unspecified;negated_list,aid and polish writing; synthetic datasets,global_none
+9dnx1Dixlv,coding;literature;other,writing_unspecified,"software, orchestration, literature, illustration, manuscript preparation (unspecified)",coding_cue
+AcdNDic47i,other;literature;polish;coding,negated_list,"math claims, proofs, images, related work, grammar, rewording, code",long
+NVKUgJTxdI,other;coding;literature;drafting,,"critique, code, analysis, literature, drafting/editing",drafting_cue
+C17OyHaMmA,drafting;coding,negated_list,drafting and editing text; code; experiments,drafting_cue
+lVD5zB9ktS,polish;coding,negated_list,"proofreading, terminology; Copilot code; LLM analysis as method",literature_cue
+Lg8k37mN0e,coding;drafting,negated_list,kernel implementation; drafting and editing,long
+H7OXejmO6G,coding;polish,,code; readability; reproducibility text leaked,tool_named
+DCp7Nqno3n,coding;other;polish,,"code, analysis, figure generation (rule 8), manuscript refinement",random
+CSzOe9d6Uo,polish;literature,,polishing and literature retrieval only,short
+a1Om8ScQkB,coding;other;literature;drafting;polish,negated_list,"code, design feedback, proof text revision, drafting and editing for readability",negation_heavy
+iizvKiY6w4,polish,,"wording, grammar",short
+Nd1UxCaWZU,other;coding;literature;polish,negated_list,"methodology, implementation, dataset cleaning, math claims, figures, readability",negation_heavy
+T2skAE4WPM,polish,writing_unspecified,aid or polish writing,random
+x0AUmBoA9I,polish,negated_list,readability only; required tasks denied,template_heavy
+e19GBW2mzb,drafting;other,negated_list,"restructuring, condensing, reorganizing; formatting",random
+ffSls6532u,polish;coding,,refine language; code; run experiments,coding_cue
+ZV2MeCjkLt,polish;coding,negated_list,editing and polishing; code,random
+zPn6IgCKMs,polish,negated_list,polish wording only,random
+qyUfylErZ1,coding;other;literature;polish,negated_list,"running experiments, proof polishing, references, plots (rule 8), readability",template_heavy
+01Ys8jhpLK,other;coding;polish,negated_list,"proof ingredients, implementation, code, readability",template_heavy
+iclhiABCZH,other;coding;drafting;polish;literature,negated_list,"methodology, implementation, interpretation, drafting, literature, title",negation_heavy
+jpvGkZB40s,coding;polish,negated_list,code; grammar,literature_cue
+rBEpni7TZq,coding;drafting;other,negated_list,model-labelled data and audits; code; draft and edit prose; figure layouts,drafting_cue
+u5o84zeMEb,other;polish,,"figures, proof checking, proofreading",template_heavy
+JppQ7ADPjg,coding;polish;other,negated_list,"code, translation, readability, brainstorming",literature_cue
+ThfEaWmVLR,coding;other;polish,negated_list,"codebase, preprocessing, figures, grammar",long
+H7gWOcdqWj,polish;literature;other;coding,negated_list,"wording, related work, bibliographic checks, plot/table code",negation_heavy
+dOyc2zb868,polish;coding,negated_list,polishing the draft; coding,drafting_cue
+XsN675Y0Vj,other;drafting,writing_unspecified,feedback; manuscript revision (unspecified); drafting disclosure statements,literature_cue
+vlZYTXRSag,drafting;coding,,drafting and revision; code; organizing analyses,suspect_tier
+S4R2zYtFhs,coding;other,writing_unspecified,manuscript revision (unspecified); analysis and figure code; math arguments,short
+Hd9iWzHCv5,polish;drafting;coding;other,negated_list,polish prose; draft portions; code; LaTeX; LLM components,global_none
+tlOX9rrXZX,other;coding;polish;literature;drafting,negated_list,"ideas, proofs, code, translation, literature, editing and restructuring",long
+zNolMfwGC7,coding;other;literature,negated_list,"experimental models, prompts, code, design feedback, images, literature; no text writing",random
+Iy3DQo9XQH,coding;other;drafting;polish,negated_list,"implementation, data cleaning, hypotheses, figures, draft text from outline, readability",negation_heavy
+qGrKeEXSzT,polish;other,,clarity and phrasing; LaTeX formatting,random
+oCmJZhsyz2,polish;literature;other;coding,,"polishing, retrieval, ideation, implementation, synthetic data",suspect_tier
+NWdtgkZjpb,other;coding;drafting;polish,negated_list,"ideation, code, drafting and polishing",literature_cue
+7QZdomYFXD,literature;other;coding;drafting,negated_list,"understanding prior work, proof structure, implementation, figures (rule 8), draft/edit/structure",long
+HEIqsXlTGu,literature;other;coding;drafting;polish,negated_list,"literature, hypotheses, code, qualitative analysis, drafting, readability, translation",global_none
+ZGjTOADXIu,other;coding;literature;drafting;polish,,"checking derivations and proofs, code, parameters, literature, restructuring and polishing",tool_named
+kR6cB30nIY,literature;other;coding,writing_unspecified,"literature, design feedback, interpretation, implementation, manuscript preparation (unspecified); ethics text leaked",random
+xJcUIBSxEE,polish,,language editing and polishing,short
+F6WGuNJR9A,polish;other;coding,,"edit prose, consistency, diagrams, diagnostic code",short
+rXyjnKiH9d,drafting;literature;other,negated_list,"drafting, literature organization, arithmetic checks, typesetting",drafting_cue
+Az3Hokilli,other;coding;polish;literature,negated_list,"methodology feedback, implementation, LLM judge, artifacts, literature, readability",long
+PmF3CeFamy,polish,negated_list,polishing and proofreading only,global_none
+XOELT3GRtB,polish;coding,negated_list,"language refinement, debugging, synthetic data, evaluation support",random
+xxXQDZAF8y,coding,writing_unspecified,coding; manuscript writing (unspecified),negation_heavy
+8VmNtvOoml,polish,writing_unspecified;negated_list,aid and polish writing only,random
+7bU1NeWB7k,polish;literature;other;coding,,"language editing, literature, research discussions, code",literature_cue
+dKIRXk4dWQ,polish;other;literature,negated_list;template_only,"template with bracketed list items: translation, proofs, search, title",drafting_cue
+z4MHaB6wyC,drafting;coding,,"drafting and editing, appendix writing, figure code",drafting_cue
+ODFL7DgcmW,polish;other;literature,writing_unspecified;negated_list,"aid and polish writing, LaTeX, literature, reference management",global_none
+qp444S4MBN,polish,negated_list,polish writing of introduction,template_heavy
+7oe1G8wKqA,coding;drafting;other,negated_list,"code, dataset reformatting, draft and edit text, images",drafting_cue
+xcs1pgDcMN,coding;other;polish,negated_list,experiment code incl. design feedback; fluency and grammar,template_heavy
+MnN0WKt0RI,coding;polish,negated_list,analysis in research pipeline; polishing and sentence rewriting (rule 2),tool_named
+rM2eQio3e3,coding;other;literature;drafting,negated_list,"code, methodology, hypotheses, task generation, literature, figures, drafting and editing",coding_cue
+7Nccdqg0BW,drafting;polish;literature;other;coding,,"drafting, polishing, organization, literature, proofs, implementation",random
+xegYeHU23i,polish;other;coding,negated_list,"polishing, draft feedback, environment setup, baselines, plot scripts",literature_cue
+QwAZ48DJhW,coding;polish,negated_list,dataset cleaning; grammar and polish writing,template_heavy
+S9Vfr6Xaag,polish;drafting;literature;coding,writing_unspecified;negated_list,"aid and polish, draft portions, literature, research execution",literature_cue
+ZkDoKsCCMH,literature;other;polish,,"literature, proof development, numerical verification, editing",random
+H2M8AUwPNi,coding;other;polish,negated_list,"implementation, methodology feedback, data cleaning, figures, artifacts, readability",negation_heavy
+urlGJH4Aq8,polish,,polish and readability only,short
+c27yDWbjPa,coding;literature,negated_list,"code, synthetic data, qualitative analysis, figure code, literature; long negated recommended list",long
+mLUAHA3mLf,polish;other,negated_list,language editing; figure styling and LaTeX tables (rule 8),random
+uV9AroqT3W,drafting;coding,,drafting and editing; code,random
+7opyZph0FW,polish,writing_unspecified,polish writing only,tool_named
+NuMp7Nshtn,other;coding;polish,negated_list,"organization (rule 3), implementation, language editing, LaTeX, proof expansion",drafting_cue
+2qVCj3Jfhx,other;coding;literature;polish,,"ideation, design, implementation, interpretation, literature, editing, teaser image; references leaked",long
+LvejZgL4de,polish;other,,"language editing, wording, LaTeX, consistency; ethics text leaked",tool_named
+Okzb5CIpgH,literature;coding;polish,,"literature, coding, manuscript editing",short
+29c4ZlBv3g,other;coding;drafting;literature;polish,negated_list,nearly every listed task,random
+KhOmTmNkdj,polish,,polishing and readability,random
+5hyFrR2IsR,coding;polish,,implementation and polishing,short
+53DcN4OkMM,polish,negated_list,polishing only; reference text leaked,suspect_tier
+U5T7bpZuxX,polish;literature;coding,writing_unspecified,"aid and polish, related work, execution, synthetic data",random
+uLdRQaZwO0,coding;literature;other;polish,negated_list,"code, statistics, related work, ideation, error flagging, phrasing and grammar",long
+M0U0oFBtCG,polish;other;coding,,"editing prose, LaTeX, scripts, method components",tool_named
+wvk6f9bAAD,polish;other;literature;coding,negated_list,"translation and polishing, LaTeX, literature, methodology feedback, interpretations",long
+gukj2QE0ia,none,,no AI used,short
+S9bOsGKCkd,coding;drafting;other,negated_list,"implementation, analysis, drafting and revising, figures, controls, interpretation",negation_heavy
+QzvTscsiCZ,other;coding;polish;drafting,negated_list,"design feedback, interpretation, debugging, clarity edits, drafting, tables, error checks",suspect_tier
+wng401PWZP,polish,writing_unspecified;negated_list;template_only,aid or polish writing; 2026-style template,template_heavy
+lIixEDs4CS,polish;drafting,negated_list,"language editing, polishing, drafting portions",coding_cue
+nGGQqjReDV,drafting;polish;other;coding,,"organization and drafting, language revision, LaTeX, explanations, interpretation, executing code",coding_cue
+nnAeKb70z8,coding;other;polish,writing_unspecified;negated_list,"implementation, design feedback, data cleaning, interpretation, clarity and grammar",long
+J8bLePxnBR,coding;other;drafting,negated_list,"implementation, scripts, framing feedback, presenting results, draft and edit text, LaTeX",drafting_cue
+DDHEqVUKTi,other;literature;drafting,,"proof sketches and derivations by GPT, references, drafting",tool_named
+ml0HUTBJsl,coding;other;literature;polish,,"LM components, task design, derivation review, citation search, editing",literature_cue
+RCGUN3UYRy,other;coding;literature;polish,,"formalising and drafting proofs, implemented and ran pipeline, literature, figures, readability",global_none
+FvibEbI0Ar,polish;other,negated_list,grammar and polishing; missing-content feedback; appendix outline (rule 3),negation_heavy
+LIRjNnhgK1,literature;other;drafting;polish;coding,negated_list,"literature, ideation, drafting, polishing, code",drafting_cue
+KEPSftEkjy,polish;literature;other;coding,negated_list,"polish, related work, proof review, scripts, icons",negation_heavy
+3lAmCjIdZ5,coding;polish;literature;other,negated_list,"code, polishing, literature, AI-assisted derivation",coding_cue
+8Qwuk9XbF4,drafting,,drafting and editing (rule 1),coding_cue
+kbXAX8Ig9G,polish;drafting;literature;other;coding,negated_list,"polish, drafted parts, retrieval, ideation and execution, scripts",global_none
+FY283zxwCY,ambiguous,,"extraction error: bibliography text, no disclosure",suspect_tier
+0Ue24iW30R,polish;coding,negated_list,grammar and phrasing; supporting code; no required tasks,global_none
+R6FkOoXBnp,polish;coding,negated_list,refining sentences and paragraphs; coding and debugging,coding_cue
+BXUnpS9Y2b,coding;polish;other,negated_list,"partial code, polishing, grammar, LaTeX",template_heavy
+232UDhxjV2,coding;other;polish;literature,negated_list,"implementation, figure elements, polishing, literature, brainstorming, running experiments",literature_cue
+J99AInECr2,coding;other;literature;drafting,,"generative components, refinement, implementation, literature, figures, drafting and editing",random
+7Epp8coUBr,polish;other;coding;literature,negated_list,"polishing, formatting, translation, code, literature, proof writing",global_none
+aJaH5Dwqed,polish;coding,,language editing; LLM-assisted annotation; ethics text leaked,negation_heavy
+zeW7c6yTGU,polish,negated_list,polishing only; LLMs part of method described as not assistance,random
+nwcUf3uik4,polish;drafting;coding;other,,"polishing, reorganizing material, code, proofs restructured",long
+CXMg1fT34J,polish;drafting;coding,,"language, organization (rule 3), implementation, analysis",random
+O0eayhNGip,coding;literature;other;polish,negated_list,"code, literature, theoretical models, table formatting, typos",negation_heavy
+mQShushYq9,other;coding;literature;polish,negated_list,"proofs, hypotheses, theory, methodology, implementation, figures, readability",global_none
+vfsu2Y9gRC,polish,,language editing,short
+sgTcnExISy,literature;other;polish,,"literature, data verification (check), polishing",coding_cue
+6Sx77AXwvi,other;coding;drafting,negated_list,"methodology, coding agents, drafting parts",negation_heavy
+WRo5FrFDq4,polish,,polish only,short
+xLsnnr3UkJ,coding;drafting;polish,,"code, drafting, polishing",drafting_cue
+WgS714mXKL,polish,negated_list,language editing only,global_none
+zZTxv5Sv9h,other;coding,negated_list,"bracketed template: math claims, proofs, design, implementation, interpretation, code",negation_heavy
+cGIuLtBNt3,coding;polish,negated_list,synthetic concept lists; typos,template_heavy
+n3gnTqGOnP,other;coding;drafting;literature,negated_list,"design, implementation, cleaning, interpretation, drafting, literature",long
+6QqOOmOCTe,drafting;polish;other;coding,,"drafting and revising, polishing, ideation and execution, checks",random
+PGMj7nN0Lf,other;coding;polish;literature,negated_list,"framework, design, implementation, translation, literature, readability",coding_cue
+Ozl2QtZgxL,other;coding;literature;drafting,negated_list,"hypotheses, methodology, implementation, interpretation, literature, figures, drafting",literature_cue
+8WqGlncZzQ,drafting,negated_list,drafting and revising prose only,literature_cue
+GB3nw4JISt,drafting;polish;other;literature,,"drafting, polishing, LaTeX, literature",drafting_cue
+bCbhbH5Xrv,coding;other;polish;literature,negated_list,"synthetic data, feedback, implementation, translation, figures from data (rule 8), readability",coding_cue
+NOyl3310Xa,coding;polish;other,negated_list,"debugging, polishing presentation of text, LaTeX",global_none
+7x4AAlYBDM,polish;literature;other;coding,negated_list,"clarity and grammar, literature, derivations, code",long
+NyptcfFtqY,polish,negated_list,polishing and proofreading only,template_heavy
+quRLM3NGMJ,coding;drafting,,LLMs as components; drafting and revising text,drafting_cue
+7e6xHwtaBM,polish,negated_list,polishing only,random
+4xMDSzCFTX,drafting;other;coding,,"language drafting and revision, LaTeX, figure code, consistency",drafting_cue
+Mu84EVClyD,coding;other;drafting;polish,negated_list,"synthetic data, cleaning, feedback, implementation, qualitative coding, sentences from key phrases, polish",negation_heavy
+TBMiIGaznJ,other;polish,,"organization (rule 3), language revision, citation format, figure ideation, layout",suspect_tier
+CDCbGzutM3,polish;other;literature,,"language refinement, LaTeX, related work, flow feedback, terminology",coding_cue
+i9xU6OsWan,coding,negated_list,code; data downloading and organizing,suspect_tier
+WMtfpBzuVb,drafting;other,,"organizing description, drafting text, LaTeX, illustrations",random
+wmiDWFwsFh,coding;polish;other,negated_list,reward models and judges; polish; formatting check,global_none
+SrOV8zNnVl,literature;other;coding;drafting,,"literature, design, code, experiments, interpretation, draft and edit",suspect_tier
+MPcVmW4NXX,polish;coding,,language editing; debugging and scripts,tool_named
+YUdZ9WVSJ5,polish,,language editing only,random
+VzpCr9i3I7,literature;other;coding;drafting,,"retrieval, design feedback, implementation, synthetic data, figures, proofs, drafting",literature_cue
+Y0u8xe3pst,literature;polish;drafting,,"related work, polish, drafting portions",suspect_tier
+eukruDKTdw,polish,negated_list,"grammar, wording, readability only",negation_heavy
+cfjgk1urWf,coding;other,writing_unspecified,"coding, writing assistance (unspecified), math reasoning",template_heavy
+UsvykdHclf,coding;polish,,implementation; polishing,tool_named
+YP4r4SXdm4,polish,negated_list,clarity and grammar only,random
+A6ElQ5Rm6E,polish;literature;other;coding,negated_list,"polishing, literature, LaTeX, code",literature_cue

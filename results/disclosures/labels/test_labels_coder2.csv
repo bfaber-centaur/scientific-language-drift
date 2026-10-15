@@ -1,0 +1,181 @@
+doc_id,labels,flags,note
+lsHk1WsZPD,coding;other,negated_list,proofs=other; implementation=coding
+z0nQAdCOH0,coding;other,negated_list,theory/hypotheses/figures=other
+CkDok4kcqX,coding;drafting;other;polish,negated_list,formatting=other
+53STjMynES,other;polish,negated_list,AI applied author edits for readability
+lVOXog73rC,coding;drafting;literature;other;polish,,translation=polish
+k4H9VTRUNW,polish,negated_list,
+pDqwEXUMWc,coding;literature;other;polish,negated_list,"references, figures, surveys=other"
+NlRc4ndSBD,coding;drafting;literature,,LLM evaluator and benchmark generation=coding
+u4fTQtMTTF,coding;drafting;literature;other;polish,negated_list,citation suggestions=literature; LaTeX=other
+MDFWR3rc6r,coding;other;polish,negated_list,LLM extraction as method=coding
+HeZhwTKnd5,coding;drafting;literature;other,negated_list,drafted and edited paper; title=other
+cwssRhVpsI,coding;other;polish,negated_list,checking analysis correctness=other
+BGWfUNxgAg,coding;literature;other;polish,,manuscript editing=polish; math checks=other
+1cqFoIup4m,coding;drafting;literature;other,,restructuring=drafting; simulated reviews=other
+NgFdiRBPFe,coding;literature;other,negated_list,"proofs, references=other"
+ZIhrnkI9L4,coding;drafting;literature;other;polish,negated_list,
+v4Fb6JeHUe,coding;drafting;literature;polish,negated_list,
+0YFlLZMJLv,drafting;literature;other;polish,writing_unspecified,research ideation/execution category=other
+CUUoqxUY1o,coding;literature;other;polish,negated_list,
+1uKiakJHan,coding;drafting;literature;other;polish,negated_list,
+be3fTom0Tt,polish,,only for
+eGQbFlkOuQ,coding;drafting;literature,,drafting and editing=drafting
+7xKDZJKich,coding;literature;other,negated_list,proofs=other
+77vdC6WPII,literature;other;polish,writing_unspecified,writing unspecified; translation=polish
+ki2lre0LFt,drafting;literature;polish,negated_list,
+oauW9dlXcI,coding;polish,negated_list,
+rd5YwUVnWm,coding;drafting;literature;other;polish,negated_list,plots via code=coding
+AbSPLOF19a,coding;other;polish,,reviewing outputs=coding; formatting=other
+3z0Fu8sf5R,other;polish,,LaTeX formatting=other
+OuBszJGxpl,coding;other;polish,,proof ideas=other
+q7gKctvQzh,coding;polish,negated_list;writing_unspecified,aid and polish writing; synthetic data=coding
+9dnx1Dixlv,coding;literature;other,writing_unspecified,manuscript preparation unspecified; illustration=other
+AcdNDic47i,coding;literature;other;polish,negated_list,error listing=other; rewording=polish
+NVKUgJTxdI,coding;drafting;literature;other,,
+C17OyHaMmA,coding;drafting,negated_list,
+lVD5zB9ktS,coding;polish,negated_list,LLM analysis as method=coding
+Lg8k37mN0e,coding;drafting,negated_list,
+H7OXejmO6G,coding;polish,,
+DCp7Nqno3n,coding;other;polish,,figure generation no code=other; refinement=polish
+CSzOe9d6Uo,literature;polish,,
+a1Om8ScQkB,coding;drafting;literature;other;polish,negated_list,proof revision=other; figures no code=other
+iizvKiY6w4,polish,,
+Nd1UxCaWZU,coding;literature;other;polish,negated_list,sourcing information=literature
+T2skAE4WPM,polish,writing_unspecified,aid or polish writing
+x0AUmBoA9I,polish,negated_list,
+e19GBW2mzb,drafting;other,negated_list,restructuring/condensing=drafting; formatting=other
+ffSls6532u,coding;polish,,
+ZV2MeCjkLt,coding;polish,negated_list,
+zPn6IgCKMs,polish,negated_list,only for
+qyUfylErZ1,coding;literature;other;polish,negated_list,"proof polishing, RL recursion=other"
+01Ys8jhpLK,coding;other;polish,negated_list,proofs=other
+iclhiABCZH,coding;drafting;literature;other;polish,negated_list,
+jpvGkZB40s,coding;polish,negated_list,
+rBEpni7TZq,coding;drafting;other,,"LLM labelling/audit=coding; figure layouts, adversarial readers=other"
+u5o84zeMEb,other;polish,,"figures without code, proof checking=other"
+JppQ7ADPjg,coding;other;polish,negated_list,translation=polish; brainstorming=other
+ThfEaWmVLR,coding;other;polish,negated_list,figures no code=other
+H7gWOcdqWj,coding;literature;other;polish,negated_list,plot code=coding; bib checking=other
+dOyc2zb868,coding;polish,negated_list,
+XsN675Y0Vj,drafting;other,writing_unspecified,manuscript revision unspecified; disclosure drafting=drafting
+vlZYTXRSag,coding;drafting,,
+S4R2zYtFhs,coding;other,writing_unspecified,manuscript revision unspecified
+Hd9iWzHCv5,coding;drafting;other;polish,negated_list,LLM method components=coding
+tlOX9rrXZX,coding;drafting;literature;other;polish,negated_list,restructuring=drafting; translation=polish
+zNolMfwGC7,coding;literature;other,negated_list,TikZ images=other; synthetic prompts=coding
+Iy3DQo9XQH,coding;drafting;other;polish,negated_list,
+qGrKeEXSzT,other;polish,,LaTeX formatting=other
+oCmJZhsyz2,coding;literature;other;polish,,
+NWdtgkZjpb,coding;drafting;other;polish,negated_list,
+7QZdomYFXD,coding;drafting;literature;other,negated_list,understanding prior work=literature; proof structure=other
+HEIqsXlTGu,coding;drafting;literature;other;polish,negated_list,translation=polish; hypotheses=other
+ZGjTOADXIu,coding;drafting;literature;other;polish,,restructuring=drafting; math checking=other
+kR6cB30nIY,coding;literature;other,writing_unspecified,manuscript preparation unspecified
+xJcUIBSxEE,polish,,
+F6WGuNJR9A,coding;other;polish,,"consistency checks, diagrams=other"
+rXyjnKiH9d,drafting;literature;other,negated_list,"arithmetic checks, typesetting=other"
+Az3Hokilli,coding;literature;other;polish,negated_list,LLM judge=coding
+PmF3CeFamy,polish,negated_list,
+XOELT3GRtB,coding;polish,negated_list,"synthetic data, evaluation=coding"
+xxXQDZAF8y,coding,writing_unspecified,manuscript writing unspecified
+8VmNtvOoml,polish,negated_list;writing_unspecified,aid and polish writing
+7bU1NeWB7k,coding;literature;other;polish,,research discussions=other
+dKIRXk4dWQ,literature;other;polish,negated_list,"filled brackets, not placeholders; translation=polish"
+z4MHaB6wyC,coding;drafting,,figure code=coding
+ODFL7DgcmW,literature;other;polish,negated_list;writing_unspecified,aid and polish writing; LaTeX=other
+qp444S4MBN,polish,negated_list,
+7oe1G8wKqA,coding;drafting;other,negated_list,generated images=other
+xcs1pgDcMN,coding;other;polish,negated_list,
+MnN0WKt0RI,coding;polish,negated_list,pipeline component=coding; sentence rewriting=polish
+rM2eQio3e3,coding;drafting;literature;other,negated_list,figure creation no code=other
+7Nccdqg0BW,coding;drafting;literature;other;polish,,
+xegYeHU23i,coding;other;polish,negated_list,draft feedback=other
+QwAZ48DJhW,coding;polish,negated_list,
+S9Vfr6Xaag,coding;drafting;literature;polish,negated_list;writing_unspecified,
+ZkDoKsCCMH,coding;literature;other;polish,,editing=polish; numerical verification=coding
+H2M8AUwPNi,coding;other;polish,negated_list,"figures, artifacts=other"
+urlGJH4Aq8,polish,,
+c27yDWbjPa,coding;literature,negated_list,figure code=coding
+mLUAHA3mLf,other;polish,negated_list,"figure styling, no code stated=other"
+uV9AroqT3W,coding;drafting,,
+7opyZph0FW,polish,,
+NuMp7Nshtn,coding;other;polish,,"organization suggestions=other; LaTeX, proofs=other"
+2qVCj3Jfhx,coding;literature;other;polish,,manuscript editing=polish; trailing references extraneous
+LvejZgL4de,other;polish,,"LaTeX, consistency checks=other"
+Okzb5CIpgH,coding;literature;polish,,manuscript editing=polish
+29c4ZlBv3g,coding;drafting;literature;other;polish,negated_list,
+KhOmTmNkdj,polish,,
+5hyFrR2IsR,coding;polish,,
+53DcN4OkMM,polish,negated_list,trailing reference extraneous
+U5T7bpZuxX,coding;literature;polish,writing_unspecified,aid and polish writing
+uLdRQaZwO0,coding;literature;other;polish,negated_list,
+M0U0oFBtCG,coding;other;polish,,LLM drafted continuations as method=coding
+wvk6f9bAAD,coding;literature;other;polish,negated_list,discussing interpretations=coding
+gukj2QE0ia,none,,
+S9bOsGKCkd,coding;drafting;other,negated_list,figures no code=other
+QzvTscsiCZ,coding;drafting;other;polish,negated_list,
+wng401PWZP,polish,negated_list;writing_unspecified,aid or polish writing
+lIixEDs4CS,drafting;polish,negated_list,
+nGGQqjReDV,coding;drafting;other;polish,,organization and drafting=drafting
+nnAeKb70z8,coding;other;polish,negated_list;writing_unspecified,
+J8bLePxnBR,coding;drafting;other,negated_list,"framing feedback, LaTeX=other"
+DDHEqVUKTi,drafting;literature;other,,proofs and reference checking=other
+ml0HUTBJsl,coding;literature;other;polish,,LM components=coding; manuscript editing=polish
+RCGUN3UYRy,coding;literature;other;polish,,TikZ/PGFPlots figures=coding; proofs=other
+FvibEbI0Ar,other;polish,negated_list,initial appendix structure=suggestion only
+LIRjNnhgK1,coding;drafting;literature;other;polish,negated_list,
+KEPSftEkjy,coding;literature;other;polish,negated_list,"proof review, icons=other"
+3lAmCjIdZ5,coding;literature;other;polish,negated_list,math derivation=other
+8Qwuk9XbF4,drafting,,drafting and editing=drafting
+kbXAX8Ig9G,coding;drafting;literature;other;polish,negated_list,research ideation claimed=other
+FY283zxwCY,ambiguous,,extraction error: reference list only
+0Ue24iW30R,coding;polish,negated_list,
+R6FkOoXBnp,coding;polish,negated_list,refining sentences/paragraphs framed as polishing
+BXUnpS9Y2b,coding;other;polish,negated_list,LaTeX=other
+232UDhxjV2,coding;literature;other;polish,negated_list,"visual elements, brainstorming=other"
+J99AInECr2,coding;drafting;literature;other,,generative components=coding
+7Epp8coUBr,coding;literature;other;polish,negated_list,"proofs, formatting checks=other"
+aJaH5Dwqed,coding;polish,,LLM annotation=coding
+zeW7c6yTGU,coding;polish,negated_list,LLM as method component=coding
+nwcUf3uik4,coding;drafting;other;polish,,reorganizing material=drafting; proofs=other
+CXMg1fT34J,coding;polish,,organization improvement not clearly rewriting
+O0eayhNGip,coding;literature;other;polish,negated_list,"typos=polish; theory, tables=other"
+mQShushYq9,coding;literature;other;polish,negated_list,
+vfsu2Y9gRC,polish,,
+sgTcnExISy,literature;other;polish,,data verification=other
+6Sx77AXwvi,coding;drafting;other,negated_list,
+WRo5FrFDq4,polish,,
+xLsnnr3UkJ,coding;drafting;polish,,
+WgS714mXKL,polish,negated_list,
+zZTxv5Sv9h,coding;other,negated_list,filled brackets; proofs=other
+cGIuLtBNt3,coding;polish,negated_list,concept lists=synthetic data; typos=polish
+n3gnTqGOnP,coding;drafting;literature;other,negated_list,
+6QqOOmOCTe,coding;drafting;other;polish,,proof/notation checks=other
+PGMj7nN0Lf,coding;literature;other;polish,negated_list,translation=polish
+Ozl2QtZgxL,coding;drafting;literature;other,negated_list,"citation verification, figure prep=other"
+8WqGlncZzQ,drafting,negated_list,writing assistance specified as drafting and revising
+GB3nw4JISt,drafting;literature;other;polish,,LaTeX=other
+bCbhbH5Xrv,coding;literature;other;polish,negated_list,figures from data=coding; title=other
+NOyl3310Xa,coding;other;polish,negated_list,LaTeX=other
+7x4AAlYBDM,coding;literature;other;polish,negated_list,math derivations=other
+NyptcfFtqY,polish,negated_list,
+quRLM3NGMJ,coding;drafting,,LLM data generation for benchmark=coding
+7e6xHwtaBM,polish,negated_list,
+4xMDSzCFTX,coding;drafting;other,,"figure code=coding; LaTeX, consistency=other"
+Mu84EVClyD,coding;drafting;other;polish,negated_list,key phrases to sentences=drafting
+TBMiIGaznJ,other;polish,,"organization unclear=other; citation formatting, figure ideation=other"
+CDCbGzutM3,literature;other;polish,,"manuscript feedback, LaTeX=other"
+i9xU6OsWan,coding,negated_list,data organization=coding
+WMtfpBzuVb,drafting;other,,"conceptual illustrations, LaTeX=other"
+wmiDWFwsFh,coding;other;polish,negated_list,reward models/judges=coding; formatting check=other
+SrOV8zNnVl,coding;drafting;literature;other,,
+MPcVmW4NXX,coding;polish,,
+YUdZ9WVSJ5,polish,,
+VzpCr9i3I7,coding;drafting;literature;other,,
+Y0u8xe3pst,drafting;literature;polish,,
+eukruDKTdw,polish,negated_list,
+cfjgk1urWf,coding;other,writing_unspecified,writing assistance unspecified; math reasoning=other
+UsvykdHclf,coding;polish,,
+YP4r4SXdm4,polish,negated_list,
+A6ElQ5Rm6E,coding;literature;other;polish,negated_list,LaTeX=other
