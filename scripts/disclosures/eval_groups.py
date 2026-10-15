@@ -48,14 +48,17 @@ def group(labels: set[str]) -> str:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", default="test")
+    ap.add_argument("--labels", help="reference label file (default: {set}_labels.csv)")
+    ap.add_argument("--tag", help="output suffix (default: the set name)")
     args = ap.parse_args()
-    lab = pd.read_csv(os.path.join(ROOT, "results", "disclosures", "labels", f"{args.set}_labels.csv"))
+    lab = pd.read_csv(args.labels or os.path.join(ROOT, "results", "disclosures", "labels", f"{args.set}_labels.csv"))
+    tag = args.tag or args.set
     data = pd.read_parquet(os.path.join(ROOT, "data", "disclosures", "iclr2027.parquet"), columns=["doc_id", "text_clean"])
     lab = lab.merge(data, on="doc_id")
     lab["gold"] = lab.labels.map(lambda s: group(parse(s)))
     lab["pred"] = lab.text_clean.map(lambda t: group(classify(t)["labels"]))
     conf = pd.crosstab(lab.gold, lab.pred).reindex(index=GROUPS, columns=GROUPS, fill_value=0)
-    conf.to_csv(os.path.join(ROOT, "results", "disclosures", "labels", f"confusion_groups_{args.set}.csv"))
+    conf.to_csv(os.path.join(ROOT, "results", "disclosures", "labels", f"confusion_groups_{tag}.csv"))
     rows = []
     for g in GROUPS:
         tp = int(((lab.gold == g) & (lab.pred == g)).sum())
@@ -65,7 +68,7 @@ def main() -> None:
                      "recall": round(tp / ngold, 3) if ngold else None, "recall_ci": wilson(tp, ngold)})
     out = pd.DataFrame(rows)
     ok = all(((out.group == g) & (out.precision >= 0.85) & (out.recall >= 0.80)).any() for g in ("drafting", "polish_only"))
-    out.to_csv(os.path.join(ROOT, "results", "disclosures", "labels", f"eval_groups_{args.set}.csv"), index=False)
+    out.to_csv(os.path.join(ROOT, "results", "disclosures", "labels", f"eval_groups_{tag}.csv"), index=False)
     print(conf.to_string(), "\n", out.to_string(), "\nGate 3 drafting-vs-polish_only:", "PASS" if ok else "FAIL")
 
 

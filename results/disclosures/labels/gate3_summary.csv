@@ -1,0 +1,5 @@
+classifier,set,reference,drafting_precision,drafting_recall,polish_only_precision,polish_only_recall,exact_match
+v1,test,coder1,0.843,0.937,1.0,0.833,0.667
+v1,test2,coder1,0.786,0.863,0.933,0.778,0.567
+v2,test2,coder1,0.863,0.863,0.938,0.833,0.667
+v2,test2,coder2,0.882,0.865,0.938,0.833,0.667
