@@ -97,8 +97,9 @@ _Figure 3 (visualization 3). Pooled rates per thousand letter tokens; bands are 
 cohorts with ≥ 100 papers. Data: `fig3_trajectories.csv`._
 
 - **Within-venue trajectories agree in direction and timing.** Levels differ by venue (CoRL is lower in
-  "of"; ICML abstracts have far fewer "we", in every year and in the same papers, which is a venue or
-  layout effect), so only trajectories are compared, as Gate 0 advised.
+  "of"; ICML abstracts have far fewer "we", which §7 shows is an extraction-region artifact: arXiv
+  abstracts of the same ICML papers have normal "we" rates), so only trajectories are compared, as
+  Gate 0 advised.
 - **ICML is the main independent venue.** ICML camera-ready prose "of": 29,413 (2023), 29,069 (2024),
   26,508 (2025), 19,860 (2026). Removing the 833 papers whose title also appears at ICLR changes 2026 to
   19,578 (`nonclr_overlap_sensitivity.csv`; the 1,022 excluded papers are the union of exact-title
@@ -227,11 +228,25 @@ not a hash-matched one.
 | 2026 | 55 | 2025-10-02 | 0.97 | 20,885 | 20,996 [17,938, 24,170] | 16,653 / 14,782 | 12,789 / 12,805 | 27,693 / 28,999 |
 | 2027 | 32 | 2026-09-25 | 0.97 | 12,270 | 12,587 [10,176, 15,023] | 8,784 / 10,312 | 11,573 / 12,436 | 28,723 / 28,207 |
 
+Outside ICLR (same design):
+
+| cohort | matched | median arXiv v1 date | similarity (median) | "of": dataset | "of": arXiv [95% CI] | "we": dataset / arXiv |
+|---|---:|---|---:|---:|---:|---|
+| ICML 2023 | 84 | 2023-02-27 | 0.53 | 30,215 | 32,289 [29,164, 35,526] | 11,689 / 18,904 |
+| ICML 2026 | 71 | 2026-02-16 | 0.54 | 16,932 | 16,437 [14,112, 18,847] | 9,309 / 15,628 |
+| COLM 2026 | 96 | 2026-04-06 | 0.97 | 16,796 | 17,374 [15,258, 19,367] | 12,856 / 13,531 |
+
+ICML arXiv abstracts fall from 32,289 to 16,437 (−49%) between papers posted in early 2023 and early 2026.
+COLM 2026 agrees with the dataset as closely as ICLR does. The low ICML similarity confirms that the
+extracted ICML abstract region is often not the abstract (C-N2 in `docs/v2-negative-results.md`); the
+arXiv abstracts give ICML a normal "we" rate, so ICML's low abstract "we" in the dataset is a region
+artifact, not a venue style.
+
 Restricting to pairs with similarity ≥ 0.9 (37 / 43 / 43 / 23 papers), "of" is 24,172 vs 24,181 (2024),
 21,119 vs 21,339 (2026) and 12,656 vs 12,595 (2027).
 
 **Facts.** The abstracts authors posted to arXiv carry the same low function-word rates as the dataset's
-extracted abstracts, year by year. The arXiv-posted 2027 papers are a minority (32 of 120 sampled) and
+extracted abstracts, year by year, and the decline appears in ICML's and COLM's arXiv abstracts too. The arXiv-posted 2027 papers are a minority (32 of 120 sampled) and
 were posted around the ICLR deadline.
 
 **Interpretation.** In abstracts, the decline is in the text the authors wrote, not in the dataset's PDF

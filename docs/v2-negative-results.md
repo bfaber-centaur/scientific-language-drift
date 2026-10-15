@@ -20,12 +20,14 @@ _Shared by the V2 lanes. Each lane edits only its own labeled section._
 
 - **C-N1. The ICLR → ICML abstract drop is not a 2026 signal.** Same-paper ICML abstracts have about 8%
   fewer "of" than the ICLR versions in 2024, 2025 and 2026 alike, and about 40% fewer "we" in every
-  year. It belongs to the ICLR→ICML revision cycle and ICML's layout, not to 2026 writing. Main-body
+  year (the "we" gap is mostly the region artifact in C-N2). It belongs to the ICLR→ICML revision cycle and ICML's layout, not to 2026 writing. Main-body
   prose of the same pairs does not move. `docs/v2-function-words.md` §6.
 - **C-N2. ICML abstracts are partly contaminated by column interleaving.** In ICML's two-column
   layout the extracted abstract region sometimes carries introduction text, and abstracts are found
   for only 82–90% of ICML papers (`region_coverage.csv`). Do not compare ICML abstract levels with
-  other venues; use main-body prose.
+  other venues; use main-body prose. arXiv abstracts of the same ICML papers have about 60% more "we"
+  than the extracted region (18.9k vs 11.7k per million, ICML 2023), so the low ICML abstract "we" is
+  this artifact, and C-N1's "we" figure for ICML abstracts should not be read as venue style.
 - **C-N3. The resubmission design cannot isolate the 2027 step.** ICLR 2026 → 2027 pairs move −10% in
   prose "of", the same as the 2025 → 2026 control pairs (−10%), although the cohort step is larger
   (−32% vs −19%). Pairs move in proportion to how much their abstracts were rewritten in both years.
