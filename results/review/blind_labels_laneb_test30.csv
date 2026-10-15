@@ -1,0 +1,31 @@
+doc_id,set,stratum,reviewer_labels,note
+QzvTscsiCZ,test,suspect_tier,polish drafting coding other,
+2qVCj3Jfhx,test,long,polish coding literature other,extraction overrun into bibliography; 'manuscript editing' read as polish
+k4H9VTRUNW,test,tool_named,polish,
+S9bOsGKCkd,test,negation_heavy,coding drafting other,
+TBMiIGaznJ,test,suspect_tier,polish other,'manuscript organization' read as suggestions (other)
+53STjMynES,test,random,polish other,AI applied author-written revision feedback; read as polish
+e19GBW2mzb,test,random,drafting other,
+WMtfpBzuVb,test,random,drafting other,
+CUUoqxUY1o,test,coding_cue,polish coding literature other,
+sgTcnExISy,test,coding_cue,polish coding literature,'data verification' read as coding (uncertain)
+UsvykdHclf,test,tool_named,polish coding,
+NOyl3310Xa,test,global_none,polish coding other,
+7oe1G8wKqA,test,drafting_cue,polish drafting coding other,
+QwAZ48DJhW,test,template_heavy,polish coding,
+53DcN4OkMM,test,suspect_tier,polish,bibliography overrun
+ml0HUTBJsl,test,literature_cue,polish coding literature other,
+LIRjNnhgK1,test,drafting_cue,polish drafting coding literature other,
+NyptcfFtqY,test,template_heavy,polish,
+lVD5zB9ktS,test,literature_cue,polish coding,
+01Ys8jhpLK,test,template_heavy,polish coding other,
+uLdRQaZwO0,test,long,polish coding literature other,
+aJaH5Dwqed,test,negation_heavy,polish coding,overrun into ethics statement; LLM annotation as method -> coding (rule 7)
+cwssRhVpsI,test,negation_heavy,polish coding,
+WRo5FrFDq4,test,short,polish,
+H7OXejmO6G,test,tool_named,polish coding,overrun into appendix overview prose
+NWdtgkZjpb,test,literature_cue,polish drafting coding other,
+0Ue24iW30R,test,global_none,polish coding,
+8Qwuk9XbF4,test,coding_cue,drafting,rule 1: drafting and editing -> drafting
+Okzb5CIpgH,test,short,polish coding literature,'manuscript editing' read as polish
+dKIRXk4dWQ,test,drafting_cue,polish literature other,translation of author text -> polish
