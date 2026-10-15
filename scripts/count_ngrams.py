@@ -21,7 +21,9 @@ Outputs in --out:
                           (year, ngram) row means a true count of 0.
     run.json              arguments, dataset revision, tokenizer and filter versions
 
-Strata and exclusions come from results/paper_flags_iclr.csv (scripts/paper_flags.py):
+Strata and exclusions come from results/paper_flags_iclr.csv (scripts/paper_flags.py), or from
+a V2 flags file with a `stratum` column (scripts/v2/replication_flags.py), whose strata are used
+as given (V2 views are built from them by scripts/v2/replication_views.py):
 stratum = version (published | under_review | unknown), with suffix "|offsample" for
 papers whose in_sample flag is False (biased part of ICLR 2025). Year-level tables
 and totals use in-sample papers only; stratified tables keep every stratum. Papers
@@ -161,6 +163,8 @@ def main():
     flags = {}
     if a.flags != "none" and os.path.exists(a.flags):
         f = pd.read_csv(a.flags, keep_default_na=False)
+        if "venue" in f.columns:  # V2 flags cover every venue (scripts/v2/replication_flags.py)
+            f = f[f.venue == a.venue]
         flags = {(int(r.year), r.doc_id): r for r in f.itertuples()}
 
     seen: dict[str, str] = {}
@@ -179,6 +183,8 @@ def main():
                 d["stratum"] = "all"
             elif fl is None:
                 d["stratum"] = "unknown"
+            elif hasattr(fl, "stratum"):  # V2 flags carry a precomputed composite stratum
+                d["stratum"] = fl.stratum
             else:
                 d["stratum"] = fl.version + ("" if str(fl.in_sample) == "True" else "|offsample")
             if not d["text"] or not d["text"].strip():
