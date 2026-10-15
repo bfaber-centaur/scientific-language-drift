@@ -1,0 +1,161 @@
+cohort,frame,count,distinct_fillers,type_token,top_fillers
+iclr-2026,take full * for,1412,2,0.001416,responsibility 100%; accountability 0%
+iclr-2026,the preparation * this,1275,1,0.0007843,of 100%
+iclr-2026,full responsibility * the,1222,2,0.001637,for 100%; of 0%
+iclr-2026,in the * of,1007,78,0.07746,preparation 58%; writing 5%; process 4%; conception 4%; development 4%
+iclr-2026,the authors * full,991,13,0.01312,take 81%; bear 5%; retain 5%; assume 5%; accept 2%
+iclr-2026,a large * model,990,1,0.00101,language 100%
+iclr-2026,authors take * responsibility,828,2,0.002415,full 100%; complete 0%
+iclr-2026,preparation of * manuscript,810,2,0.002469,this 98%; the 2%
+iclr-2026,responsibility for * content,798,4,0.005013,the 55%; all 43%; its 2%; final 0%
+iclr-2026,during the * of,778,19,0.02442,preparation 83%; writing 9%; development 3%; construction 1%; implementation 1%
+iclr-2026,used large * models,769,1,0.0013,language 100%
+iclr-2026,the llm * not,737,6,0.008141,was 52%; did 37%; is 8%; does 3%; should 0%
+iclr-2026,we used * language,709,4,0.005642,large 100%; advanced 0%; a 0%; gpt-based 0%
+iclr-2026,did not * to,685,4,0.005839,contribute 96%; extend 3%; rise 1%; help 0%
+iclr-2026,<num> <num> * <num>,669,29,0.04335,<num> 76%; e 9%; and 4%; b 3%; b-a 2%
+iclr-2026,for the * of,649,49,0.0755,content 55%; purpose 19%; contents 4%; entirety 4%; preparation 2%
+iclr-2026,llms were * to,552,16,0.02899,used 59%; employed 31%; utilized 5%; applied 1%; consulted 1%
+iclr-2026,research ideation * design,551,14,0.02541,experimental 62%; methodological 10%; experiment 9%; methodology 9%; algorithm 5%
+iclr-2026,clarity and * of,549,31,0.05647,readability 50%; fluency 15%; conciseness 5%; flow 5%; style 4%
+iclr-2026,of large * models,511,2,0.003914,language 100%; pre-trained 0%
+iclr-2026,in this * we,487,13,0.02669,work 43%; paper 36%; section 9%; study 4%; research 2%
+iclr-2026,work of * authors,483,2,0.004141,the 100%; human 0%
+iclr-2026,of this * we,456,11,0.02412,manuscript 58%; paper 29%; work 10%; research 1%; document 1%
+iclr-2026,experimental design * analysis,446,9,0.02018,data 66%; and 13%; or 8%; implementation 7%; result 2%
+iclr-2026,presented in * paper,439,2,0.004556,this 91%; the 9%
+iclr-2026,were used * for,427,12,0.0281,solely 48%; only 28%; exclusively 19%; primarily 1%; sparingly 1%
+iclr-2026,verified by * authors,427,2,0.004684,the 100%; all 0%
+iclr-2026,use of * language,426,3,0.007042,large 100%; advanced 0%; the 0%
+iclr-2026,full responsibility * all,424,2,0.004717,for 100%; of 0%
+iclr-2026,large language * were,423,1,0.002364,models 100%
+iclr-2026,were not * in,413,6,0.01453,involved 88%; used 7%; employed 4%; engaged 0%; born 0%
+iclr-2026,llms were * used,397,18,0.04534,not 66%; only 14%; also 11%; occasionally 3%; primarily 2%
+iclr-2026,and verified * the,394,2,0.005076,by 100%; all 0%
+iclr-2026,the writing * this,390,3,0.007692,of 90%; in 9%; throughout 1%
+iclr-2026,content of * paper,388,3,0.007732,this 66%; the 34%; our 0%
+iclr-2026,reviewed and * by,387,27,0.06977,edited 26%; verified 25%; revised 12%; approved 11%; validated 9%
+iclr-2026,writing of * paper,374,3,0.008021,this 76%; the 23%; our 2%
+iclr-2026,used a * language,374,1,0.002674,large 100%
+iclr-2026,for the * content,363,14,0.03857,final 53%; entire 20%; paper's 7%; scientific 6%; manuscript's 3%
+iclr-2026,we used * large,363,8,0.02204,a 94%; the 4%; general-purpose 1%; commercial 1%; existing 0%
+iclr-2027,used generative * tools,29566,5,0.0001691,ai 100%; al 0%; video 0%; artificial-intelligence 0%; language 0%
+iclr-2027,responsibility for * final,24144,3,0.0001243,the 100%; all 0%; its 0%
+iclr-2027,we used * ai,22532,15,0.0006657,generative 100%; an 0%; the 0%; llm-based 0%; general-purpose 0%
+iclr-2027,for the * content,21073,21,0.0009965,final 97%; paper's 1%; scientific 1%; entire 0%; complete 0%
+iclr-2027,the final * of,18492,39,0.002109,content 99%; version 0%; contents 0%; interpretation 0%; selection 0%
+iclr-2027,final content * this,17204,3,0.0001744,of 100%; for 0%; in 0%
+iclr-2027,take responsibility * the,17188,2,0.0001164,for 100%; of 0%
+iclr-2027,content of * work,16851,4,0.0002374,this 99%; the 1%; our 0%; prior 0%
+iclr-2027,generative ai * to,16510,24,0.001454,tools 99%; assistants 0%; tool 0%; assistant 0%; models 0%
+iclr-2027,of this * including,14467,10,0.0006912,work 93%; paper 5%; manuscript 1%; submission 0%; study 0%
+iclr-2027,generative ai * for,13591,19,0.001398,tools 99%; assistants 0%; assistance 0%; assistant 0%; tool 0%
+iclr-2027,with the * of,13307,86,0.006463,aid 86%; assistance 8%; implementation 1%; help 1%; interpretation 0%
+iclr-2027,take full * for,12633,3,0.0002375,responsibility 100%; accountability 0%; responsability 0%
+iclr-2027,in this * we,12499,12,0.0009601,work 99%; paper 1%; study 0%; article 0%; research 0%
+iclr-2027,full responsibility * the,12402,4,0.0003225,for 100%; of 0%; in 0%; over 0%
+iclr-2027,this work * used,11758,4,0.0003402,we 100%; authors 0%; i 0%; were 0%
+iclr-2027,artifacts produced * the,11363,4,0.000352,with 100%; by 0%; within 0%; without 0%
+iclr-2027,the aid * generative,11344,1,8.815e-05,of 100%
+iclr-2027,produced with * aid,11342,4,0.0003527,the 100%; its 0%; their 0%; ai 0%
+iclr-2027,work we * generative,11310,9,0.0007958,used 99%; use 1%; employed 0%; utilized 0%; disclose 0%
+iclr-2027,we take * for,10961,2,0.0001825,responsibility 100%; responsibiliyt 0%
+iclr-2027,aid of * ai,10778,1,9.278e-05,generative 100%
+iclr-2027,text claims * artifacts,10511,7,0.000666,or 65%; and 34%; code 0%; implementation 0%; benchmark 0%
+iclr-2027,this work * text,9653,4,0.0004144,including 100%; the 0%; indicating 0%; studies 0%
+iclr-2027,work including * claims,9568,8,0.0008361,text 98%; all 2%; its 0%; texts 0%; the 0%
+iclr-2027,reviewed all * work,8280,11,0.001329,ai-assisted 98%; aiassisted 2%; llm-assisted 0%; al-assisted 0%; assisted 0%
+iclr-2027,generative ai * were,8261,11,0.001332,tools 97%; models 1%; assistants 1%; systems 0%; outputs 0%
+iclr-2027,ai tools * used,7612,7,0.0009196,were 99%; are 1%; was 0%; we 0%; and 0%
+iclr-2027,we have * all,7535,12,0.001593,reviewed 100%; verified 0%; checked 0%; read 0%; proofread 0%
+iclr-2027,have reviewed * ai-assisted,7382,4,0.0005419,all 99%; the 1%; every 0%; our 0%
+iclr-2027,or artifacts * with,7041,7,0.0009942,produced 100%; prepared 0%; generated 0%; developed 0%; created 0%
+iclr-2027,claims or * produced,6925,8,0.001155,artifacts 99%; artefacts 1%; code 0%; content 0%; results 0%
+iclr-2027,we have * used,6725,6,0.0008922,not 99%; also 1%; only 0%; neither 0%; additionally 0%
+iclr-2027,including text * or,6662,5,0.0007505,claims 100%; produced 0%; generated 0%; code 0%; translated 0%
+iclr-2027,not used * ai,6554,2,0.0003052,generative 100%; any 0%
+iclr-2027,have not * generative,6550,3,0.000458,used 100%; use 0%; utilized 0%
+iclr-2027,reviewed and * by,6368,54,0.00848,verified 51%; revised 22%; tested 10%; edited 7%; validated 4%
+iclr-2027,verified by * authors,5931,8,0.001349,the 99%; two 1%; <num> 0%; human 0%; three 0%
+iclr-2027,all ai-assisted * and,5326,61,0.01145,work 30%; text 27%; content 15%; code 7%; edits 5%
+iclr-2027,applicable to * work,5219,3,0.0005748,this 100%; our 0%; the 0%
+colm-2026,llms were * to,28,4,0.1429,used 86%; employed 7%; prompted 4%; utilized 4%
+colm-2026,full responsibility * the,26,1,0.03846,for 100%
+colm-2026,take full * for,25,1,0.04,responsibility 100%
+colm-2026,verified by * authors,20,1,0.05,the 100%
+colm-2026,used to * with,20,2,0.1,assist 90%; aid 10%
+colm-2026,llms were * used,18,3,0.1667,not 50%; also 44%; additionally 6%
+colm-2026,the preparation * this,17,1,0.05882,of 100%
+colm-2026,and verified * the,16,1,0.0625,by 100%
+colm-2026,reviewed and * by,15,4,0.2667,verified 53%; validated 20%; edited 13%; revised 13%
+colm-2026,large language * were,15,1,0.06667,models 100%
+colm-2026,language models * used,15,1,0.06667,were 100%
+colm-2026,used large * models,15,1,0.06667,language 100%
+colm-2026,llms were * for,14,2,0.1429,used 93%; employed 7%
+colm-2026,by the * who,12,1,0.08333,authors 100%
+colm-2026,were used * assist,12,1,0.08333,to 100%
+colm-2026,in the * of,12,5,0.4167,preparation 67%; implementation 8%; generation 8%; refinement 8%; development 8%
+colm-2026,we used * to,12,4,0.3333,llms 75%; clibib 8%; llm 8%; claude 8%
+colm-2026,used to * the,11,6,0.5455,polish 27%; originate 27%; write 18%; generate 9%; improve 9%
+colm-2026,assist with * and,11,6,0.5455,drafting 55%; editing 9%; running 9%; edits 9%; grammar 9%
+colm-2026,during the * of,11,2,0.1818,preparation 82%; development 18%
+colm-2026,we used * language,11,1,0.09091,large 100%
+colm-2026,the authors * full,11,2,0.1818,take 91%; maintain 9%
+colm-2026,were not * to,11,1,0.09091,used 100%
+colm-2026,of large * models,10,1,0.1,language 100%
+colm-2026,responsibility for * content,10,2,0.2,the 70%; all 30%
+colm-2026,for the * of,10,3,0.3,content 60%; contents 20%; purpose 20%
+colm-2026,used to * research,10,3,0.3,originate 70%; generate 20%; brainstorm 10%
+colm-2026,authors take * responsibility,10,1,0.1,full 100%
+colm-2026,research ideas * design,10,1,0.1,experimental 100%
+colm-2026,and take * responsibility,9,1,0.1111,full 100%
+colm-2026,we used * <num>,9,2,0.2222,gpt 89%; gemini-pro 11%
+colm-2026,to originate * ideas,9,1,0.1111,research 100%
+colm-2026,in the * and,9,8,0.8889,appendix 22%; implementation 11%; drafting 11%; appendices 11%; morning 11%
+colm-2026,all research * experimental,9,2,0.2222,ideas 89%; questions 11%
+colm-2026,authors who * full,8,4,0.5,take 50%; retain 25%; assume 12%; bear 12%
+colm-2026,responsibility for * final,8,2,0.25,the 88%; all 12%
+colm-2026,validated by * authors,8,1,0.125,the 100%
+colm-2026,preparation of * manuscript,8,1,0.125,this 100%
+colm-2026,qwen <num> * b,8,1,0.125,<num> 100%
+colm-2026,described in * <num>,8,2,0.25,sections 50%; section 50%
+icml-2026,the preparation * this,37,1,0.02703,of 100%
+icml-2026,take full * for,30,1,0.03333,responsibility 100%
+icml-2026,a large * model,28,1,0.03571,language 100%
+icml-2026,full responsibility * the,26,1,0.03846,for 100%
+icml-2026,used large * models,26,1,0.03846,language 100%
+icml-2026,we used * language,25,1,0.04,large 100%
+icml-2026,in the * of,24,9,0.375,preparation 58%; design 8%; development 8%; derivation 4%; process 4%
+icml-2026,preparation of * manuscript,23,1,0.04348,this 100%
+icml-2026,during the * of,21,2,0.09524,preparation 95%; writing 5%
+icml-2026,in this * we,19,5,0.2632,section 53%; paper 21%; appendix 11%; work 11%; submission 5%
+icml-2026,llms were * used,19,4,0.2105,not 58%; also 21%; only 16%; directly 5%
+icml-2026,clarity and * of,18,5,0.2778,readability 67%; presentation 17%; flow 6%; fluency 6%; expression 6%
+icml-2026,for the * of,18,6,0.3333,content 61%; purpose 11%; training 11%; clarity 6%; evaluation 6%
+icml-2026,of this * we,17,3,0.1765,manuscript 71%; paper 18%; work 12%
+icml-2026,shown in * <num>,16,3,0.1875,table 44%; figure 44%; fig 12%
+icml-2026,the authors * full,16,4,0.25,take 81%; maintained 6%; retained 6%; retain 6%
+icml-2026,and verified * the,16,1,0.0625,by 100%
+icml-2026,verified by * authors,16,1,0.0625,the 100%
+icml-2026,work of * authors,15,1,0.06667,the 100%
+icml-2026,responsibility for * content,15,2,0.1333,the 73%; all 27%
+icml-2026,<num> <num> * <num>,15,7,0.4667,<num> 53%; b-a 13%; and 7%; b-instruct 7%; vs 7%
+icml-2026,experimental design * analysis,14,3,0.2143,data 71%; or 14%; and 14%
+icml-2026,content of * paper,14,2,0.1429,this 71%; the 29%
+icml-2026,as a * assistant,14,5,0.3571,writing 64%; general-purpose 14%; domain-expert 7%; coding 7%; research 7%
+icml-2026,the llm * not,13,4,0.3077,was 54%; did 31%; does 8%; is 8%
+icml-2026,authors take * responsibility,13,1,0.07692,full 100%
+icml-2026,presented in * paper,13,2,0.1538,this 77%; the 23%
+icml-2026,we used * large,13,2,0.1538,a 92%; commercial 8%
+icml-2026,used a * language,13,1,0.07692,large 100%
+icml-2026,the work * the,12,2,0.1667,of 92%; including 8%
+icml-2026,<num> and * <num>,12,10,0.8333,figure 17%; c 17%; y 8%; l 8%; llamar 8%
+icml-2026,to ensure * and,11,5,0.4545,accuracy 64%; consistent 9%; originality 9%; correctness 9%; reproducibility 9%
+icml-2026,authors who * full,11,1,0.09091,take 100%
+icml-2026,who take * responsibility,11,1,0.09091,full 100%
+icml-2026,on the * of,11,10,0.9091,distribution 18%; optimization 9%; effect 9%; definition 9%; size 9%
+icml-2026,used to * the,11,7,0.6364,polish 36%; improve 18%; review 9%; organize 9%; train 9%
+icml-2026,llms were * to,11,3,0.2727,used 64%; employed 27%; utilized 9%
+icml-2026,used to * with,11,1,0.09091,assist 100%
+icml-2026,did not * to,11,1,0.09091,contribute 100%
+icml-2026,to the * of,10,9,0.9,generation 20%; development 10%; uses 10%; formalization 10%; lack 10%

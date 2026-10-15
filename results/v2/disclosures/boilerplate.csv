@@ -1,0 +1,5 @@
+cohort,statements,stock_df,share_ge50pct_template_or_stock,share_ge90pct_template_or_stock,share_exact_copy,share_in_near_copy_cluster,author_tokens_p25,author_tokens_p50,author_tokens_p75,share_ge20_author_tokens,boilerplate_share
+iclr-2026,10069,13,0.1183,0.02096,0.1407,0.1556,20,36,62,0.7611,0.2294
+iclr-2027,39893,51,0.3731,0.02562,0.09754,0.1163,25,43,71,0.8201,0.4239
+colm-2026,213,5,0.004695,0,0.01878,0.01878,32,53,85,0.9343,0.02347
+icml-2026,292,5,0,0,0.0137,0.0137,37,64,203,0.9075,0.0137

@@ -1,0 +1,5 @@
+pair,n_pairs,median_main_change,median_main_change_ci,median_appx_change,median_appx_change_ci,share_appx_grew,share_main_grew,median_appx_pages_change,median_main_pages_change
+iclr2026->icml2026,868,336.5,"[299.5, 372.0125]",636.5,"[552.0, 694.0]",0.7846,0.8053,1,-1
+iclr2025->icml2025,423,128,"[103.0, 172.0]",473,"[360.0, 580.0]",0.7352,0.6596,1,-1
+iclr2026->iclr2027,237,-166,"[-250.0, -114.0]",913,"[680.0, 1092.0]",0.7848,0.2911,2,0
+iclr2025->iclr2026,152,-172,"[-267.5, -105.0]",1120,"[708.5, 1349.0]",0.8355,0.3224,3,-0.5

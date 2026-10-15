@@ -1,0 +1,11 @@
+measure,v1_5,v2
+papers,42344.0,42344
+disclosure_found,41006.0,41005
+tier_clean,39351.0,39343
+tier_suspect,1655.0,1662
+toc_skipped,,30
+group_drafting,11766,11773
+group_other_use,21437,21444
+group_polish_only,5358,5358
+group_unknown,537,515
+group_none,253,253

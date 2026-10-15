@@ -1,0 +1,16 @@
+measure,group,papers,own,matched,random,enrichment_own_minus_matched,ci_lo,ci_hi,topic_effect_matched_minus_random,share_own_gt_matched
+author word types (all),ALL,38549,0.35665,0.29978,0.28764,0.05687,0.05565,0.0579,0.01214,0.67224
+author word types (all),drafting,11715,0.35873,0.29925,0.28575,0.05948,0.0577,0.06133,0.01349,0.70141
+author word types (all),polish_only,4883,0.32414,0.29055,0.28441,0.03359,0.03045,0.03699,0.00613,0.58632
+author word types (all),polish_plus,18116,0.3549,0.30028,0.28825,0.05462,0.05299,0.05613,0.01203,0.66527
+author word types in >=5% of bodies,ALL,38508,0.45182,0.39602,0.38117,0.0558,0.05442,0.05711,0.01485,0.65903
+author word types in >=5% of bodies,drafting,11709,0.45114,0.39446,0.3783,0.05669,0.05464,0.05895,0.01616,0.68272
+author word types in >=5% of bodies,polish_only,4863,0.43594,0.39878,0.3898,0.03716,0.03238,0.04192,0.00897,0.58297
+author word types in >=5% of bodies,polish_plus,18101,0.44996,0.39574,0.38108,0.05422,0.05228,0.05602,0.01466,0.65344
+stopword-profile cosine,ALL,38549,0.74923,0.73914,0.7354,0.01008,0.00958,0.01053,0.00374,0.61159
+stopword-profile cosine,drafting,11715,0.76863,0.75896,0.75637,0.00967,0.00883,0.01056,0.00259,0.59531
+stopword-profile cosine,polish_only,4883,0.71377,0.70729,0.70211,0.00648,0.00521,0.00778,0.00519,0.60127
+stopword-profile cosine,polish_plus,18116,0.75251,0.74203,0.73772,0.01047,0.00982,0.01111,0.00431,0.61984
+author word types (all),drafting minus polish_only,16598,,,,0.02589,0.02207,0.02946,,
+author word types in >=5% of bodies,drafting minus polish_only,16572,,,,0.01952,0.0143,0.02452,,
+stopword-profile cosine,drafting minus polish_only,16598,,,,0.00319,0.00165,0.00468,,

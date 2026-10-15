@@ -1,0 +1,321 @@
+pair,side,ngram,count_x,count_y,log_odds,z
+iclr-2026 vs iclr-2027,more_in_iclr-2026,llms,6996,3761,2.367,117.1
+iclr-2026 vs iclr-2027,more_in_iclr-2026,<num>,14390,26860,1.124,108.8
+iclr-2026 vs iclr-2027,more_in_iclr-2026,large,5500,4348,1.98,97.6
+iclr-2026 vs iclr-2027,more_in_iclr-2026,large language,5394,4226,1.989,96.85
+iclr-2026 vs iclr-2027,more_in_iclr-2026,llm,4367,3122,2.081,88.78
+iclr-2026 vs iclr-2027,more_in_iclr-2026,large language models,4138,3249,1.987,84.76
+iclr-2026 vs iclr-2027,more_in_iclr-2026,language models,4229,4280,1.733,79.93
+iclr-2026 vs iclr-2027,more_in_iclr-2026,language,8294,18083,0.9664,72.88
+iclr-2026 vs iclr-2027,more_in_iclr-2026,grammar,4239,5974,1.402,69.8
+iclr-2026 vs iclr-2027,more_in_iclr-2026,llms were,2275,1010,2.556,67.61
+iclr-2026 vs iclr-2027,more_in_iclr-2026,solely,2591,2243,1.888,65.48
+iclr-2026 vs iclr-2027,more_in_iclr-2026,the llm,2215,508,3.216,65.39
+iclr-2026 vs iclr-2027,more_in_iclr-2026,a,6379,13899,0.9664,63.91
+iclr-2026 vs iclr-2027,more_in_iclr-2026,employed,1967,450,3.219,61.61
+iclr-2026 vs iclr-2027,more_in_iclr-2026,contributions,1855,1082,2.283,59.68
+iclr-2026 vs iclr-2027,more_in_iclr-2026,models,5290,11424,0.9749,58.63
+iclr-2026 vs iclr-2027,more_in_iclr-2026,as,5586,14257,0.8078,51.18
+iclr-2026 vs iclr-2027,more_in_iclr-2026,model,2867,5051,1.178,50.37
+iclr-2026 vs iclr-2027,more_in_iclr-2026,clarity,3414,6947,1.034,49.47
+iclr-2026 vs iclr-2027,more_in_iclr-2026,entirely,1209,568,2.499,49.13
+iclr-2026 vs iclr-2027,more_in_iclr-2026,use of,1295,875,2.136,48.8
+iclr-2026 vs iclr-2027,more_in_iclr-2026,figure <num>,1161,503,2.58,48.33
+iclr-2026 vs iclr-2027,more_in_iclr-2026,limited,1475,1485,1.737,47.25
+iclr-2026 vs iclr-2027,more_in_iclr-2026,preparation of this,1285,1009,1.985,47.2
+iclr-2026 vs iclr-2027,more_in_iclr-2026,large language model,1254,942,2.03,47.08
+iclr-2026 vs iclr-2027,more_in_iclr-2026,the preparation of,1296,1075,1.93,46.8
+iclr-2026 vs iclr-2027,more_in_iclr-2026,writing,5722,15983,0.7175,46.58
+iclr-2026 vs iclr-2027,more_in_iclr-2026,utilized,1065,368,2.806,46.41
+iclr-2026 vs iclr-2027,more_in_iclr-2026,the preparation,1301,1161,1.857,46.01
+iclr-2026 vs iclr-2027,more_in_iclr-2026,llm was,1077,247,3.216,45.59
+iclr-2026 vs iclr-2027,more_in_iclr-2026,this manuscript,1540,1842,1.565,45.31
+iclr-2026 vs iclr-2027,more_in_iclr-2026,as a,1374,1419,1.711,45.22
+iclr-2026 vs iclr-2027,more_in_iclr-2026,llms were used,1040,542,2.395,45.21
+iclr-2026 vs iclr-2027,more_in_iclr-2026,in,12526,45564,0.4544,45.04
+iclr-2026 vs iclr-2027,more_in_iclr-2026,specifically,1494,1766,1.576,44.85
+iclr-2026 vs iclr-2027,more_in_iclr-2026,a large,1006,519,2.405,44.51
+iclr-2026 vs iclr-2027,more_in_iclr-2026,a large language,995,500,2.431,44.36
+iclr-2026 vs iclr-2027,more_in_iclr-2026,limited to,1021,588,2.295,44.34
+iclr-2026 vs iclr-2027,more_in_iclr-2026,involved,964,468,2.466,43.77
+iclr-2026 vs iclr-2027,more_in_iclr-2026,language model,1297,1377,1.684,43.52
+iclr-2026 vs iclr-2027,more_in_iclr-2027,ai,414,75872,-3.46,-70.73
+iclr-2026 vs iclr-2027,more_in_iclr-2027,tools,1163,52379,-2.065,-69.79
+iclr-2026 vs iclr-2027,more_in_iclr-2027,work,3627,55251,-0.9826,-57.36
+iclr-2026 vs iclr-2027,more_in_iclr-2027,claims,623,35136,-2.288,-56.74
+iclr-2026 vs iclr-2027,more_in_iclr-2027,this work,1830,39852,-1.339,-56.06
+iclr-2026 vs iclr-2027,more_in_iclr-2027,and,29572,234085,-0.3316,-53.75
+iclr-2026 vs iclr-2027,more_in_iclr-2027,final,1050,30688,-1.632,-52.07
+iclr-2026 vs iclr-2027,more_in_iclr-2027,code,1950,36183,-1.179,-50.74
+iclr-2026 vs iclr-2027,more_in_iclr-2027,generative,123,64540,-4.485,-50.73
+iclr-2026 vs iclr-2027,more_in_iclr-2027,the final,768,27758,-1.844,-50.48
+iclr-2026 vs iclr-2027,more_in_iclr-2027,responsibility for the,1304,30179,-1.399,-49.51
+iclr-2026 vs iclr-2027,more_in_iclr-2027,reviewed,1383,30610,-1.355,-49.32
+iclr-2026 vs iclr-2027,more_in_iclr-2027,take,1471,30503,-1.289,-48.34
+iclr-2026 vs iclr-2027,more_in_iclr-2027,for the,2225,36128,-1.045,-47.89
+iclr-2026 vs iclr-2027,more_in_iclr-2027,for the final,352,25115,-2.521,-47.11
+iclr-2026 vs iclr-2027,more_in_iclr-2027,responsibility for,1888,31813,-1.082,-45.71
+iclr-2026 vs iclr-2027,more_in_iclr-2027,ai tools,103,48424,-4.377,-45.21
+iclr-2026 vs iclr-2027,more_in_iclr-2027,content of,732,21147,-1.62,-43.14
+iclr-2026 vs iclr-2027,more_in_iclr-2027,responsibility,2161,32125,-0.9568,-43.08
+iclr-2026 vs iclr-2027,more_in_iclr-2027,final content,262,21183,-2.645,-42.69
+iclr-2026 vs iclr-2027,more_in_iclr-2027,generative ai,66,63137,-5.052,-42.58
+iclr-2026 vs iclr-2027,more_in_iclr-2027,content of this,367,18774,-2.189,-41.62
+iclr-2026 vs iclr-2027,more_in_iclr-2027,the final content,228,20617,-2.756,-41.54
+iclr-2026 vs iclr-2027,more_in_iclr-2027,of this work,562,18294,-1.739,-40.65
+iclr-2026 vs iclr-2027,more_in_iclr-2027,mathematical,267,17039,-2.409,-39.17
+iclr-2026 vs iclr-2027,more_in_iclr-2027,tools to,206,18069,-2.726,-39.04
+iclr-2026 vs iclr-2027,more_in_iclr-2027,we have,386,15233,-1.931,-37.52
+iclr-2026 vs iclr-2027,more_in_iclr-2027,produced,193,15222,-2.62,-36.28
+iclr-2026 vs iclr-2027,more_in_iclr-2027,with,4612,45871,-0.5553,-35.96
+iclr-2026 vs iclr-2027,more_in_iclr-2027,final content of,115,18712,-3.338,-35.92
+iclr-2026 vs iclr-2027,more_in_iclr-2027,tools for,228,14207,-2.385,-35.82
+iclr-2026 vs iclr-2027,more_in_iclr-2027,literature,570,14795,-1.513,-35.47
+iclr-2026 vs iclr-2027,more_in_iclr-2027,this work we,306,12482,-1.963,-33.99
+iclr-2026 vs iclr-2027,more_in_iclr-2027,work we,337,12524,-1.87,-33.93
+iclr-2026 vs iclr-2027,more_in_iclr-2027,we take,165,13373,-2.647,-33.9
+iclr-2026 vs iclr-2027,more_in_iclr-2027,including,1968,24714,-0.7877,-33.65
+iclr-2026 vs iclr-2027,more_in_iclr-2027,have,881,16109,-1.163,-33.63
+iclr-2026 vs iclr-2027,more_in_iclr-2027,verified,933,16048,-1.102,-32.74
+iclr-2026 vs iclr-2027,more_in_iclr-2027,or,5926,52722,-0.4439,-32.41
+iclr-2026 vs iclr-2027,more_in_iclr-2027,ai-assisted,45,28911,-4.675,-32.14
+colm-2026 vs iclr-2027,more_in_colm-2026,llms,179,3761,2.416,31.61
+colm-2026 vs iclr-2027,more_in_colm-2026,<num>,402,26860,1.266,25.28
+colm-2026 vs iclr-2027,more_in_colm-2026,llms were,74,1010,2.845,23.64
+colm-2026 vs iclr-2027,more_in_colm-2026,llms were used,45,542,2.969,19.15
+colm-2026 vs iclr-2027,more_in_colm-2026,llm,90,3122,1.914,17.93
+colm-2026 vs iclr-2027,more_in_colm-2026,you,16,35,4.673,15.49
+colm-2026 vs iclr-2027,more_in_colm-2026,your,12,25,4.722,13.45
+colm-2026 vs iclr-2027,more_in_colm-2026,session,12,36,4.358,13.07
+colm-2026 vs iclr-2027,more_in_colm-2026,claude,64,2914,1.643,13.03
+colm-2026 vs iclr-2027,more_in_colm-2026,originate research,10,16,4.986,12.37
+colm-2026 vs iclr-2027,more_in_colm-2026,invariants,10,13,5.194,12.35
+colm-2026 vs iclr-2027,more_in_colm-2026,originate research ideas,10,11,5.361,12.27
+colm-2026 vs iclr-2027,more_in_colm-2026,plots,24,453,2.52,12.04
+colm-2026 vs iclr-2027,more_in_colm-2026,as,155,14257,0.9448,11.75
+colm-2026 vs iclr-2027,more_in_colm-2026,to originate research,9,13,5.088,11.74
+colm-2026 vs iclr-2027,more_in_colm-2026,llm usage,10,35,4.203,11.72
+colm-2026 vs iclr-2027,more_in_colm-2026,gemini,30,819,2.152,11.59
+colm-2026 vs iclr-2027,more_in_colm-2026,large language models,61,3249,1.486,11.53
+colm-2026 vs iclr-2027,more_in_colm-2026,conversational,9,26,4.395,11.37
+colm-2026 vs iclr-2027,more_in_colm-2026,usage,16,219,2.841,10.98
+colm-2026 vs iclr-2027,more_in_colm-2026,partner,8,21,4.491,10.81
+colm-2026 vs iclr-2027,more_in_colm-2026,disclose,19,350,2.544,10.81
+colm-2026 vs iclr-2027,more_in_colm-2026,collaboration,9,41,3.94,10.71
+colm-2026 vs iclr-2027,more_in_colm-2026,we disclose,17,278,2.663,10.67
+colm-2026 vs iclr-2027,more_in_colm-2026,used llms,25,676,2.161,10.63
+colm-2026 vs iclr-2027,more_in_colm-2026,large language,66,4226,1.303,10.54
+colm-2026 vs iclr-2027,more_in_colm-2026,large,67,4348,1.29,10.51
+colm-2026 vs iclr-2027,more_in_colm-2026,llm-based,29,950,1.97,10.47
+colm-2026 vs iclr-2027,more_in_colm-2026,<num> m,9,47,3.803,10.46
+colm-2026 vs iclr-2027,more_in_colm-2026,used to originate,11,92,3.333,10.45
+colm-2026 vs iclr-2027,more_in_colm-2026,gpt <num>,46,2331,1.536,10.34
+colm-2026 vs iclr-2027,more_in_colm-2026,gpt,49,2609,1.487,10.34
+colm-2026 vs iclr-2027,more_in_colm-2026,to originate,13,167,2.904,10.09
+colm-2026 vs iclr-2027,more_in_colm-2026,no llms were,7,19,4.457,10.08
+colm-2026 vs iclr-2027,more_in_colm-2026,accordance,14,205,2.773,10.05
+colm-2026 vs iclr-2027,more_in_colm-2026,in accordance,14,205,2.773,10.05
+colm-2026 vs iclr-2027,more_in_colm-2026,accordance with,14,205,2.773,10.05
+colm-2026 vs iclr-2027,more_in_colm-2026,in accordance with,14,205,2.773,10.05
+colm-2026 vs iclr-2027,more_in_colm-2026,language models,64,4280,1.26,10.04
+colm-2026 vs iclr-2027,more_in_colm-2026,llms to,22,591,2.168,9.996
+colm-2026 vs iclr-2027,more_in_iclr-2027,ai,41,75872,-1.913,-13.27
+colm-2026 vs iclr-2027,more_in_iclr-2027,tools,40,52379,-1.609,-10.78
+colm-2026 vs iclr-2027,more_in_iclr-2027,generative,5,64540,-3.219,-10.72
+colm-2026 vs iclr-2027,more_in_iclr-2027,generative ai,4,63137,-3.305,-10.43
+colm-2026 vs iclr-2027,more_in_iclr-2027,work,64,55251,-1.231,-10.23
+colm-2026 vs iclr-2027,more_in_iclr-2027,ai tools,9,48424,-2.729,-10.05
+colm-2026 vs iclr-2027,more_in_iclr-2027,generative ai tools,4,44581,-3.148,-9.019
+colm-2026 vs iclr-2027,more_in_iclr-2027,this work,44,39852,-1.274,-8.798
+colm-2026 vs iclr-2027,more_in_iclr-2027,or,86,52722,-0.9096,-8.668
+colm-2026 vs iclr-2027,more_in_iclr-2027,claims,37,35136,-1.317,-8.358
+colm-2026 vs iclr-2027,more_in_iclr-2027,the final,19,27758,-1.704,-7.921
+colm-2026 vs iclr-2027,more_in_iclr-2027,responsibility for the,29,30179,-1.4,-7.9
+colm-2026 vs iclr-2027,more_in_iclr-2027,final,32,30688,-1.326,-7.828
+colm-2026 vs iclr-2027,more_in_iclr-2027,take,33,30503,-1.292,-7.734
+colm-2026 vs iclr-2027,more_in_iclr-2027,for the,52,36128,-1.027,-7.637
+colm-2026 vs iclr-2027,more_in_iclr-2027,for the final,8,25115,-2.339,-7.53
+colm-2026 vs iclr-2027,more_in_iclr-2027,responsibility for,42,31813,-1.107,-7.423
+colm-2026 vs iclr-2027,more_in_iclr-2027,responsibility,44,32125,-1.073,-7.353
+colm-2026 vs iclr-2027,more_in_iclr-2027,content of,12,21147,-1.867,-6.981
+colm-2026 vs iclr-2027,more_in_iclr-2027,used generative,1,30780,-3.52,-6.955
+colm-2026 vs iclr-2027,more_in_iclr-2027,used generative ai,1,30695,-3.519,-6.946
+colm-2026 vs iclr-2027,more_in_iclr-2027,text,52,32076,-0.9142,-6.776
+colm-2026 vs iclr-2027,more_in_iclr-2027,final content,5,21183,-2.561,-6.776
+colm-2026 vs iclr-2027,more_in_iclr-2027,ai-assisted,1,28911,-3.503,-6.764
+colm-2026 vs iclr-2027,more_in_iclr-2027,content of this,8,18774,-2.107,-6.584
+colm-2026 vs iclr-2027,more_in_iclr-2027,the final content,4,20617,-2.697,-6.577
+colm-2026 vs iclr-2027,more_in_iclr-2027,take responsibility,8,17731,-2.06,-6.404
+colm-2026 vs iclr-2027,more_in_iclr-2027,take responsibility for,8,17722,-2.059,-6.403
+colm-2026 vs iclr-2027,more_in_iclr-2027,we,199,74776,-0.441,-6.322
+colm-2026 vs iclr-2027,more_in_iclr-2027,of this work,15,18294,-1.543,-6.308
+colm-2026 vs iclr-2027,more_in_iclr-2027,tools to,4,18069,-2.607,-6.225
+colm-2026 vs iclr-2027,more_in_iclr-2027,including,37,24714,-0.9889,-6.197
+colm-2026 vs iclr-2027,more_in_iclr-2027,mathematical,5,17039,-2.401,-6.171
+colm-2026 vs iclr-2027,more_in_iclr-2027,artifacts,6,16556,-2.237,-6.151
+colm-2026 vs iclr-2027,more_in_iclr-2027,we used generative,1,22487,-3.429,-6.058
+colm-2026 vs iclr-2027,more_in_iclr-2027,all ai-assisted,1,21814,-3.419,-5.979
+colm-2026 vs iclr-2027,more_in_iclr-2027,produced,7,15222,-2.044,-5.934
+colm-2026 vs iclr-2027,more_in_iclr-2027,we have,8,15233,-1.932,-5.934
+colm-2026 vs iclr-2027,more_in_iclr-2027,reviewed,60,30610,-0.7336,-5.812
+colm-2026 vs iclr-2027,more_in_iclr-2027,tools for,6,14207,-2.114,-5.725
+icml-2026 vs iclr-2027,more_in_icml-2026,<num>,1376,26860,1.604,58.09
+icml-2026 vs iclr-2027,more_in_icml-2026,a,613,13899,1.449,35.15
+icml-2026 vs iclr-2027,more_in_icml-2026,k,128,356,3.542,34.38
+icml-2026 vs iclr-2027,more_in_icml-2026,x,94,122,4.304,31.36
+icml-2026 vs iclr-2027,more_in_icml-2026,is,337,6228,1.651,29.55
+icml-2026 vs iclr-2027,more_in_icml-2026,t,83,192,3.726,28.37
+icml-2026 vs iclr-2027,more_in_icml-2026,n,77,159,3.84,27.66
+icml-2026 vs iclr-2027,more_in_icml-2026,p,75,134,3.984,27.63
+icml-2026 vs iclr-2027,more_in_icml-2026,z,72,56,4.816,27.03
+icml-2026 vs iclr-2027,more_in_icml-2026,llms,200,3761,1.633,22.52
+icml-2026 vs iclr-2027,more_in_icml-2026,table <num>,65,318,2.977,21.88
+icml-2026 vs iclr-2027,more_in_icml-2026,s,60,268,3.068,21.49
+icml-2026 vs iclr-2027,more_in_icml-2026,i,83,724,2.399,20.71
+icml-2026 vs iclr-2027,more_in_icml-2026,r,49,185,3.236,20.15
+icml-2026 vs iclr-2027,more_in_icml-2026,if,45,140,3.429,20.02
+icml-2026 vs iclr-2027,more_in_icml-2026,that,242,6329,1.304,19.93
+icml-2026 vs iclr-2027,more_in_icml-2026,tokens,38,89,3.713,19.16
+icml-2026 vs iclr-2027,more_in_icml-2026,y,36,77,3.804,18.84
+icml-2026 vs iclr-2027,more_in_icml-2026,you,34,35,4.535,18.84
+icml-2026 vs iclr-2027,more_in_icml-2026,be,78,811,2.224,18.77
+icml-2026 vs iclr-2027,more_in_icml-2026,c,90,1161,2.008,18.37
+icml-2026 vs iclr-2027,more_in_icml-2026,q,32,51,4.098,18.17
+icml-2026 vs iclr-2027,more_in_icml-2026,b,121,2200,1.666,17.86
+icml-2026 vs iclr-2027,more_in_icml-2026,while,73,793,2.18,17.83
+icml-2026 vs iclr-2027,more_in_icml-2026,d,86,1130,1.99,17.8
+icml-2026 vs iclr-2027,more_in_icml-2026,m,42,233,2.851,17.01
+icml-2026 vs iclr-2027,more_in_icml-2026,h,45,287,2.712,16.92
+icml-2026 vs iclr-2027,more_in_icml-2026,response,42,238,2.83,16.91
+icml-2026 vs iclr-2027,more_in_icml-2026,let,27,27,4.564,16.77
+icml-2026 vs iclr-2027,more_in_icml-2026,number of,31,92,3.477,16.74
+icml-2026 vs iclr-2027,more_in_icml-2026,in table,30,82,3.559,16.68
+icml-2026 vs iclr-2027,more_in_icml-2026,f,56,529,2.319,16.51
+icml-2026 vs iclr-2027,more_in_icml-2026,performance,40,243,2.761,16.18
+icml-2026 vs iclr-2027,more_in_icml-2026,your,25,25,4.564,16.14
+icml-2026 vs iclr-2027,more_in_icml-2026,in table <num>,28,80,3.514,16.01
+icml-2026 vs iclr-2027,more_in_icml-2026,size,26,60,3.728,15.88
+icml-2026 vs iclr-2027,more_in_icml-2026,prompt,53,540,2.244,15.6
+icml-2026 vs iclr-2027,more_in_icml-2026,to <num>,29,107,3.259,15.57
+icml-2026 vs iclr-2027,more_in_icml-2026,refusal,23,29,4.332,15.52
+icml-2026 vs iclr-2027,more_in_icml-2026,each,81,1377,1.733,15.17
+icml-2026 vs iclr-2027,more_in_iclr-2027,ai,60,75872,-2.473,-20.25
+icml-2026 vs iclr-2027,more_in_iclr-2027,and,1473,234085,-0.4985,-19.22
+icml-2026 vs iclr-2027,more_in_iclr-2027,tools,59,52379,-2.149,-17.17
+icml-2026 vs iclr-2027,more_in_iclr-2027,work,126,55251,-1.483,-16.97
+icml-2026 vs iclr-2027,more_in_iclr-2027,generative,14,64540,-3.519,-15.76
+icml-2026 vs iclr-2027,more_in_iclr-2027,this work,45,39852,-2.146,-14.97
+icml-2026 vs iclr-2027,more_in_iclr-2027,authors,174,51293,-1.098,-14.66
+icml-2026 vs iclr-2027,more_in_iclr-2027,the authors,157,48835,-1.151,-14.6
+icml-2026 vs iclr-2027,more_in_iclr-2027,used,288,64608,-0.832,-14.24
+icml-2026 vs iclr-2027,more_in_iclr-2027,generative ai,6,63137,-4.017,-13.87
+icml-2026 vs iclr-2027,more_in_iclr-2027,ai tools,11,48424,-3.485,-13.74
+icml-2026 vs iclr-2027,more_in_iclr-2027,for the,82,36128,-1.486,-13.72
+icml-2026 vs iclr-2027,more_in_iclr-2027,or,216,52722,-0.9141,-13.56
+icml-2026 vs iclr-2027,more_in_iclr-2027,responsibility,43,32125,-1.987,-13.47
+icml-2026 vs iclr-2027,more_in_iclr-2027,responsibility for,39,31813,-2.069,-13.4
+icml-2026 vs iclr-2027,more_in_iclr-2027,claims,21,35136,-2.716,-13.38
+icml-2026 vs iclr-2027,more_in_iclr-2027,reviewed,41,30610,-1.987,-13.15
+icml-2026 vs iclr-2027,more_in_iclr-2027,final,45,30688,-1.902,-13.15
+icml-2026 vs iclr-2027,more_in_iclr-2027,take,36,30503,-2.104,-13.11
+icml-2026 vs iclr-2027,more_in_iclr-2027,code,105,36183,-1.249,-12.99
+icml-2026 vs iclr-2027,more_in_iclr-2027,responsibility for the,31,30179,-2.232,-12.98
+icml-2026 vs iclr-2027,more_in_iclr-2027,the final,31,27758,-2.155,-12.49
+icml-2026 vs iclr-2027,more_in_iclr-2027,we used,86,28556,-1.213,-11.4
+icml-2026 vs iclr-2027,more_in_iclr-2027,text,113,32076,-1.06,-11.4
+icml-2026 vs iclr-2027,more_in_iclr-2027,manuscript,100,30137,-1.119,-11.32
+icml-2026 vs iclr-2027,more_in_iclr-2027,for,563,87432,-0.4702,-11.2
+icml-2026 vs iclr-2027,more_in_iclr-2027,all,204,42929,-0.768,-11.05
+icml-2026 vs iclr-2027,more_in_iclr-2027,for the final,11,25115,-2.978,-10.88
+icml-2026 vs iclr-2027,more_in_iclr-2027,including,69,24714,-1.286,-10.84
+icml-2026 vs iclr-2027,more_in_iclr-2027,content of,19,21147,-2.354,-10.78
+icml-2026 vs iclr-2027,more_in_iclr-2027,generative ai tools,2,44581,-4.324,-10.75
+icml-2026 vs iclr-2027,more_in_iclr-2027,content,133,32421,-0.9117,-10.61
+icml-2026 vs iclr-2027,more_in_iclr-2027,experimental,92,26847,-1.087,-10.55
+icml-2026 vs iclr-2027,more_in_iclr-2027,content of this,12,18774,-2.656,-9.85
+icml-2026 vs iclr-2027,more_in_iclr-2027,of this,82,23488,-1.069,-9.789
+icml-2026 vs iclr-2027,more_in_iclr-2027,of this work,12,18294,-2.634,-9.75
+icml-2026 vs iclr-2027,more_in_iclr-2027,ai-assisted,3,28911,-3.968,-9.484
+icml-2026 vs iclr-2027,more_in_iclr-2027,mathematical,11,17039,-2.647,-9.394
+icml-2026 vs iclr-2027,more_in_iclr-2027,final content,6,21183,-3.321,-9.385
+icml-2026 vs iclr-2027,more_in_iclr-2027,were,221,40007,-0.6198,-9.266
+colm-2026 vs iclr-2026,more_in_colm-2026,claude,64,282,2.233,16.15
+colm-2026 vs iclr-2026,more_in_colm-2026,evaluation,62,574,1.493,11.2
+colm-2026 vs iclr-2026,more_in_colm-2026,judge,21,45,2.952,11.18
+colm-2026 vs iclr-2026,more_in_colm-2026,code,129,1950,1.007,11.12
+colm-2026 vs iclr-2026,more_in_colm-2026,claude code,18,20,3.608,11.11
+colm-2026 vs iclr-2026,more_in_colm-2026,plots,24,76,2.562,10.95
+colm-2026 vs iclr-2026,more_in_colm-2026,llm-based,29,137,2.163,10.6
+colm-2026 vs iclr-2026,more_in_colm-2026,appendix,48,402,1.593,10.45
+colm-2026 vs iclr-2026,more_in_colm-2026,as described in,18,54,2.616,9.62
+colm-2026 vs iclr-2026,more_in_colm-2026,as described,18,57,2.562,9.484
+colm-2026 vs iclr-2026,more_in_colm-2026,opus <num>,13,17,3.445,9.355
+colm-2026 vs iclr-2026,more_in_colm-2026,originate,17,54,2.559,9.209
+colm-2026 vs iclr-2026,more_in_colm-2026,opus,13,23,3.143,9.064
+colm-2026 vs iclr-2026,more_in_colm-2026,claude opus <num>,12,15,3.49,9.016
+colm-2026 vs iclr-2026,more_in_colm-2026,claude opus,12,16,3.426,8.975
+colm-2026 vs iclr-2026,more_in_colm-2026,described in,22,122,2.003,8.661
+colm-2026 vs iclr-2026,more_in_colm-2026,ai,41,414,1.406,8.613
+colm-2026 vs iclr-2026,more_in_colm-2026,section <num>,27,216,1.638,8.041
+colm-2026 vs iclr-2026,more_in_colm-2026,described,22,147,1.817,7.964
+colm-2026 vs iclr-2026,more_in_colm-2026,conversational,9,11,3.512,7.819
+colm-2026 vs iclr-2026,more_in_colm-2026,used to,94,1707,0.8242,7.817
+colm-2026 vs iclr-2026,more_in_colm-2026,collaboration,9,13,3.346,7.72
+colm-2026 vs iclr-2026,more_in_colm-2026,used,311,8531,0.4178,7.29
+colm-2026 vs iclr-2026,more_in_colm-2026,bibtex,8,12,3.308,7.251
+colm-2026 vs iclr-2026,more_in_colm-2026,code implementation,15,81,2.029,7.23
+colm-2026 vs iclr-2026,more_in_colm-2026,drafting and,13,59,2.203,7.198
+colm-2026 vs iclr-2026,more_in_colm-2026,skill,8,13,3.228,7.188
+colm-2026 vs iclr-2026,more_in_colm-2026,used claude,10,30,2.616,7.17
+colm-2026 vs iclr-2026,more_in_colm-2026,was used in,9,23,2.776,7.065
+colm-2026 vs iclr-2026,more_in_colm-2026,disclose the following,8,15,3.085,7.051
+colm-2026 vs iclr-2026,more_in_colm-2026,was used,49,726,1.025,6.975
+colm-2026 vs iclr-2026,more_in_colm-2026,were also used,14,76,2.024,6.97
+colm-2026 vs iclr-2026,more_in_colm-2026,coding,34,407,1.237,6.952
+colm-2026 vs iclr-2026,more_in_colm-2026,also used,25,248,1.424,6.803
+colm-2026 vs iclr-2026,more_in_colm-2026,and claude,12,59,2.123,6.712
+colm-2026 vs iclr-2026,more_in_colm-2026,prose,17,126,1.714,6.646
+colm-2026 vs iclr-2026,more_in_colm-2026,scripts,20,173,1.56,6.62
+colm-2026 vs iclr-2026,more_in_colm-2026,judges,9,30,2.511,6.612
+colm-2026 vs iclr-2026,more_in_colm-2026,plotting,16,116,1.736,6.521
+colm-2026 vs iclr-2026,more_in_colm-2026,annotators,9,34,2.386,6.371
+colm-2026 vs iclr-2026,more_in_iclr-2026,language,103,8294,-0.6363,-6.553
+colm-2026 vs iclr-2026,more_in_iclr-2026,of,330,19503,-0.3388,-6.198
+colm-2026 vs iclr-2026,more_in_iclr-2026,the,850,43797,-0.2069,-6.057
+colm-2026 vs iclr-2026,more_in_iclr-2026,grammar,41,4239,-0.8739,-5.719
+colm-2026 vs iclr-2026,more_in_iclr-2026,solely,14,2591,-1.416,-5.535
+colm-2026 vs iclr-2026,more_in_iclr-2026,large,67,5500,-0.654,-5.436
+colm-2026 vs iclr-2026,more_in_iclr-2026,large language,66,5394,-0.6498,-5.359
+colm-2026 vs iclr-2026,more_in_iclr-2026,clarity,32,3414,-0.9034,-5.228
+colm-2026 vs iclr-2026,more_in_iclr-2026,the llm,13,2215,-1.34,-5.03
+colm-2026 vs iclr-2026,more_in_iclr-2026,polishing,32,3260,-0.8596,-4.968
+colm-2026 vs iclr-2026,more_in_iclr-2026,employed,11,1967,-1.384,-4.789
+colm-2026 vs iclr-2026,more_in_iclr-2026,readability,14,2014,-1.184,-4.578
+colm-2026 vs iclr-2026,more_in_iclr-2026,or,86,5926,-0.4855,-4.551
+colm-2026 vs iclr-2026,more_in_iclr-2026,improving,17,2055,-1.021,-4.324
+colm-2026 vs iclr-2026,more_in_iclr-2026,ideation,7,1506,-1.551,-4.322
+colm-2026 vs iclr-2026,more_in_iclr-2026,model,33,2867,-0.7077,-4.134
+colm-2026 vs iclr-2026,more_in_iclr-2026,large language model,5,1254,-1.688,-4.009
+colm-2026 vs iclr-2026,more_in_iclr-2026,language model,7,1297,-1.416,-3.916
+colm-2026 vs iclr-2026,more_in_iclr-2026,did,10,1413,-1.167,-3.811
+colm-2026 vs iclr-2026,more_in_iclr-2026,content,74,4848,-0.4364,-3.79
+colm-2026 vs iclr-2026,more_in_iclr-2026,any,11,1438,-1.094,-3.738
+colm-2026 vs iclr-2026,more_in_iclr-2026,of the,115,6861,-0.346,-3.737
+colm-2026 vs iclr-2026,more_in_iclr-2026,large language models,61,4138,-0.47,-3.709
+colm-2026 vs iclr-2026,more_in_iclr-2026,did not,10,1353,-1.126,-3.673
+colm-2026 vs iclr-2026,more_in_iclr-2026,contributions,19,1855,-0.8187,-3.641
+colm-2026 vs iclr-2026,more_in_iclr-2026,a large,3,1006,-1.94,-3.64
+colm-2026 vs iclr-2026,more_in_iclr-2026,a large language,3,995,-1.93,-3.619
+colm-2026 vs iclr-2026,more_in_iclr-2026,language models,64,4229,-0.4446,-3.591
+colm-2026 vs iclr-2026,more_in_iclr-2026,research ideation,6,1088,-1.396,-3.571
+colm-2026 vs iclr-2026,more_in_iclr-2026,solely for,2,935,-2.214,-3.493
+colm-2026 vs iclr-2026,more_in_iclr-2026,entirely,9,1209,-1.119,-3.463
+colm-2026 vs iclr-2026,more_in_iclr-2026,contribute,4,938,-1.628,-3.445
+colm-2026 vs iclr-2026,more_in_iclr-2026,only,18,1705,-0.7899,-3.416
+colm-2026 vs iclr-2026,more_in_iclr-2026,to the,10,1236,-1.041,-3.386
+colm-2026 vs iclr-2026,more_in_iclr-2026,presented,3,852,-1.797,-3.332
+colm-2026 vs iclr-2026,more_in_iclr-2026,this,143,7946,-0.277,-3.33
+colm-2026 vs iclr-2026,more_in_iclr-2026,not contribute,4,886,-1.577,-3.327
+colm-2026 vs iclr-2026,more_in_iclr-2026,grammatical,8,1096,-1.138,-3.32
+colm-2026 vs iclr-2026,more_in_iclr-2026,contribute to,4,881,-1.572,-3.315
+colm-2026 vs iclr-2026,more_in_iclr-2026,sentence,5,917,-1.407,-3.286

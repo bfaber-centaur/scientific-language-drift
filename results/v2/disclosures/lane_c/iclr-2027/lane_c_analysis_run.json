@@ -1,0 +1,18 @@
+{
+ "scan": {
+  "words_tested": 5000,
+  "bh_hits_q05": 3116,
+  "bh_hits_up_in_drafting": 1803,
+  "shuffled_label_bh_hits_5_runs": [
+   1,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "boot": 1000,
+ "perm": 2000,
+ "seed": 20271015,
+ "papers": 39297
+}

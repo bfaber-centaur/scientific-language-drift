@@ -1,0 +1,26 @@
+{
+ "revision": "2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27",
+ "config": "omissions",
+ "scan_version": "v1",
+ "tokenizer": "v1.3",
+ "venues": [
+  "iclr",
+  "icml",
+  "neurips",
+  "tmlr",
+  "colm",
+  "corl",
+  "emnlp"
+ ],
+ "years": null,
+ "analysis": "scripts/v2/appendix_analyze_v2.py v1 (definitions from scripts/appendix_analyze.py v1)",
+ "seed": 20261015,
+ "version_labels": "data/v2/version/2c0dd19 (scripts/v2/version_mix.py)",
+ "population": "not short, not template; ICLR 2024+ forum-id records only; strata all/submission/published",
+ "in_pdf_notes": {
+  "neurips-2021": "separate file",
+  "neurips-2022": "optional in PDF",
+  "corl-2021": "separate file",
+  "corl-2022": "unverified"
+ }
+}

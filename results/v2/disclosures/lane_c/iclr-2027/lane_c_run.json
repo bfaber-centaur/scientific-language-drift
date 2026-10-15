@@ -1,0 +1,23 @@
+{
+ "papers_clean_tier": 39343,
+ "bodies_kept": 39297,
+ "min_tokens": 1000,
+ "classifier_version": "v2",
+ "disclosure_cut_from_body": 1133,
+ "groups": {
+  "other_use": 21418,
+  "drafting": 11758,
+  "polish_only": 5354,
+  "unknown": 514,
+  "none": 253
+ },
+ "groups2": {
+  "polish_plus": 18244,
+  "drafting": 11758,
+  "polish_only": 5354,
+  "nonwriting": 3174,
+  "unknown": 514,
+  "none": 253
+ },
+ "seed": 20271015
+}

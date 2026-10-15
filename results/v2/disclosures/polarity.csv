@@ -1,0 +1,8 @@
+cohort,statements,sentences,sent_affirmative_pct,sent_denial_pct,sent_mixed_pct,sent_hypothetical_pct,sent_placeholder_pct,sent_attestation_pct,sent_other_pct,paper_use_only_pct,paper_use_and_denial_pct,paper_denial_only_pct,paper_placeholder_only_pct,paper_hypothetical_only_pct,paper_no_claim_pct,paper_any_denial_pct,paper_any_attestation_pct
+colm-2026,213,790,47.34,7.215,0.7595,0.5063,0,14.18,30,72.3,25.35,1.408,0,0.4695,0.4695,26.76,43.19
+iclr-2025,52,636,19.03,2.516,0.1572,2.044,0,0.1572,76.1,50,21.15,3.846,0,1.923,23.08,25,1.923
+iclr-2026,10069,35635,37.19,13.37,0.4406,0.4574,0,10.96,37.58,53.08,37.74,3.168,0,0.2681,5.74,40.91,31.91
+iclr-2027,39893,178084,34.65,11.43,1.245,0.2252,0.2504,36,16.2,52.66,46,0.8021,0.04011,0.01003,0.4863,46.81,90.91
+icml-2026,292,2197,19.89,5.644,0.3641,0.5917,0,4.643,68.87,55.82,36.64,1.712,0,0,5.822,38.36,28.77
+neurips-2025,68,313,26.52,9.265,0,0.9585,0,1.917,61.34,45.59,19.12,17.65,0,0,17.65,36.76,8.824
+tmlr-2026,142,500,39.8,8,0.6,0.4,0,10.8,40.4,68.31,26.06,2.113,0,0.7042,2.817,28.17,33.8
