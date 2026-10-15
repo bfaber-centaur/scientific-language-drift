@@ -1,0 +1,6 @@
+group,support,predicted,tp,precision,precision_ci,recall,recall_ci
+none,2,2,2,1.0,"(0.342, 1.0)",1.0,"(0.342, 1.0)"
+polish_only,4,5,4,0.8,"(0.376, 0.964)",1.0,"(0.51, 1.0)"
+drafting,20,19,19,1.0,"(0.832, 1.0)",0.95,"(0.764, 0.991)"
+other_use,34,34,33,0.971,"(0.851, 0.995)",0.971,"(0.851, 0.995)"
+unknown,0,0,0,,"(nan, nan)",,"(nan, nan)"
