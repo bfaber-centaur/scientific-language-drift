@@ -1,0 +1,11 @@
+move,papers,paper_pct,sentences
+use_declaration,37286,94.8,55201
+nonuse_declaration,16358,41.6,17340
+not_applicable,5743,14.6,5769
+scope_limit,5920,15.0,6426
+human_oversight,28459,72.3,35607
+responsibility,34058,86.5,34501
+author_ownership,2085,5.3,2170
+tool_named,5588,14.2,7256
+ai_as_subject,567,1.4,578
+placement_meta,793,2.0,841

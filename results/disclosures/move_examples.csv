@@ -1,0 +1,21 @@
+move,doc_id,excerpt
+use_declaration,0APuPzSXV2,"In preparing it, the authors used LLM-based assistants for language editing and for checking parts of the text, and reviewed all such output."
+use_declaration,0MiTxo4j9d,We used generative AI tools to assist with code implementation and to correct grammar and improve the clarity and readability of the manuscript.
+nonuse_declaration,0GCxw4jqE5,"We did not use generative AI tools to generate synthetic data, develop the capability taxonomy, propose or refine hypotheses, or conduct the qualitative failure analysis."
+nonuse_declaration,0cb6zfwHm7,"We did not use generative AI tools to formulate or prove mathematical claims (the paper makes none), and synthetic-data generation is not applicable beyond the ..."
+not_applicable,07om1gaWpv,"We have not used generative AI tools to generate data sets (Cornell-C images are produced by deterministic image transformations in our code), to develop theoretical ..."
+not_applicable,2eoMtzq03h,"We did not use generative AI to generate synthetic datasets, develop theoretical models, or formulate or prove mathematical claims, and the remaining requireddisclosure tasks do ..."
+scope_limit,2BshioL4kN,"In this work, we used generative AI tools solely for language polishing and improving the readability of the manuscript."
+scope_limit,02mas0JKeN,"Large language models were used for writing assistance, such as improving language clarity, correcting grammar, generating illustrations, and for code generation, limited to implementing specified ..."
+human_oversight,0D0ZMwJFJ7,"All scientific ideas, methodological designs, experimental implementations, results, analyses, and conclusions were produced and verified by the authors."
+human_oversight,0THBONJE24,All AI-generated or AI-modified code was reviewed by the authors.
+responsibility,0GCxw4jqE5,"We take full responsibility for the final content of this paper, including its text, claims, code, and released artifacts."
+responsibility,0Xyi8wCTv4,"The authors reviewed all AI-assisted material and take full responsibility for the content of this paper, including the validity of its claims, the accuracy of ..."
+author_ownership,9Xbi0b1Dg7,"All scientific ideas, theoretical formulations, experimental design, and data analysis were solely conceived and conducted by the authors."
+author_ownership,AAuBpcpEei,"The authors checked all text and analyses that LLMs produced for the paper, and all claims, experimental designs, analyses, and conclusions are the authors’ own."
+tool_named,0yk2k2LvaI,"In this work, we used generative AI tools for coding tasks, specifically Claude Code and Codex coding agents."
+tool_named,11yORdzOt1,GPT-5.5 provided rubric-based scores for open responses; three human experts independently rated a stratified subset.
+ai_as_subject,LEJgdrUKxo,"In this work, large language models are the primary subject of study, and all experiments involve multi-domain RL post-training of LRMs with rule-based verifiers, including ..."
+ai_as_subject,fVCXW5rm7C,"We additionally use VLMs to generate labels for data in this work and as a planner for navigation tasks, as part of our method described ..."
+placement_meta,67TYXrYPBb,"(This section is required and does not count toward the page limit.) In this work, we used generative AI tools for the implementation of methods ..."
+placement_meta,KG8HVheDgb,"In accordance with the ICLR 2027 policy on the use of large language models, we disclose the following."
