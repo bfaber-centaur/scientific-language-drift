@@ -1,0 +1,15 @@
+{
+ "tier": "clean",
+ "papers": 39351,
+ "tokenizer": "v1.3",
+ "stock_df": 50,
+ "seed": 20271015,
+ "template_n": 4,
+ "stock_n": 6,
+ "minhash": {
+  "k": 64,
+  "bands": 16,
+  "thresh": 0.8,
+  "shingle": 5
+ }
+}

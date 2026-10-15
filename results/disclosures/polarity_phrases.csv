@@ -1,0 +1,361 @@
+ngram,count_use,count_nonuse,log_odds,z,n,side
+and,211716,19545,0.991,132.714,1,use
+the,212349,30372,0.538,87.835,1,use
+authors,47992,2603,1.487,74.088,1,use
+all,40612,1827,1.672,70.117,1,use
+of,79501,9429,0.709,65.142,1,use
+code,34108,1695,1.571,63.296,1,use
+content,30978,1046,1.954,62.425,1,use
+text,30840,915,2.083,62.378,1,use
+manuscript,28909,815,2.133,60.344,1,use
+reviewed,29699,603,2.458,60.16,1,use
+ai-assisted,27943,723,2.218,59.187,1,use
+final,29909,460,2.732,58.663,1,use
+with,41362,3987,0.91,54.966,1,use
+including,23793,661,2.146,54.691,1,use
+responsibility,31514,229,3.463,53.198,1,use
+take,30002,168,3.712,49.153,1,use
+<num>,24577,2038,1.057,45.943,1,use
+language,17053,673,1.795,45.847,1,use
+verified,15328,529,1.928,43.778,1,use
+artifacts,16194,236,2.78,42.804,1,use
+produced,14430,635,1.686,41.724,1,use
+editing,13860,265,2.512,40.804,1,use
+literature,13921,737,1.502,39.851,1,use
+by,28602,3338,0.716,39.195,1,use
+full,13479,195,2.786,39.002,1,use
+aid,13483,96,3.476,34.596,1,use
+for,73675,12737,0.326,33.985,1,use
+checked,9539,482,1.548,33.241,1,use
+against,9652,552,1.424,32.626,1,use
+readability,8546,177,2.432,32.236,1,use
+polishing,8437,172,2.447,31.99,1,use
+also,8254,330,1.78,31.82,1,use
+drafting,7661,406,1.5,29.525,1,use
+in,38760,6261,0.391,28.728,1,use
+clarity,6731,104,2.72,27.771,1,use
+work,46764,8004,0.333,27.586,1,use
+improve,6172,140,2.341,27.56,1,use
+additionally,5851,154,2.194,27.017,1,use
+assisted,6082,105,2.61,26.733,1,use
+grammar,5714,140,2.265,26.625,1,use
+edit,5468,159,2.095,26.168,1,use
+paper,15540,2026,0.603,25.555,1,use
+formatting,5024,141,2.13,25.071,1,use
+polish,5106,108,2.41,24.946,1,use
+tested,4981,105,2.413,24.632,1,use
+preparation,4767,162,1.94,24.388,1,use
+figures,7933,752,0.92,24.15,1,use
+implementation,7653,732,0.911,23.584,1,use
+correctness,4263,144,1.946,23.065,1,use
+revised,4368,77,2.589,22.7,1,use
+checking,4092,109,2.182,22.597,1,use
+large,4062,153,1.838,22.403,1,use
+search,4255,203,1.603,22.383,1,use
+assist,16123,2358,0.488,22.156,1,use
+parts,3911,120,2.042,22.128,1,use
+appendix,5149,395,1.131,21.694,1,use
+presentation,3837,85,2.364,21.691,1,use
+relevant,3842,164,1.714,21.564,1,use
+debugging,3987,63,2.697,21.424,1,use
+manually,4129,237,1.419,21.3,1,use
+or,15567,36668,-2.339,-244.574,1,nonuse
+data,7386,10812,-1.828,-121.155,1,nonuse
+generate,2694,6744,-2.36,-103.602,1,nonuse
+mathematical,7950,8941,-1.562,-101.361,1,nonuse
+datasets,1758,5193,-2.524,-91.506,1,nonuse
+use,3018,5614,-2.062,-91.379,1,nonuse
+theoretical,2318,5230,-2.254,-90.386,1,nonuse
+synthetic,3011,5511,-2.046,-90.293,1,nonuse
+hypotheses,1650,4919,-2.533,-89.065,1,nonuse
+develop,774,4324,-3.159,-81.014,1,nonuse
+conceptual,1254,3998,-2.599,-80.324,1,nonuse
+qualitative,1012,4005,-2.815,-80.045,1,nonuse
+formulate,661,4022,-3.244,-77.366,1,nonuse
+tasks,2521,3997,-1.9,-74.731,1,nonuse
+have,9015,6949,-1.181,-74.023,1,nonuse
+research,14341,9088,-0.987,-73.623,1,nonuse
+interpret,1224,3220,-2.405,-71.664,1,nonuse
+design,7532,6080,-1.227,-71.171,1,nonuse
+thematic,569,3332,-3.205,-70.716,1,nonuse
+to,55237,22603,-0.555,-70.361,1,nonuse
+propose,829,2910,-2.693,-68.447,1,nonuse
+applicable,221,5628,-4.673,-68.383,1,nonuse
+disclosure,1533,3074,-2.134,-68.269,1,nonuse
+frameworks,384,3506,-3.649,-67.963,1,nonuse
+proving,595,2929,-3.031,-67.455,1,nonuse
+are,8986,6382,-1.099,-67.135,1,nonuse
+methodology,4961,4505,-1.343,-65.274,1,nonuse
+analysis,7477,5562,-1.144,-64.643,1,nonuse
+generating,1295,2689,-2.168,-64.125,1,nonuse
+experiments,9187,6204,-1.048,-63.793,1,nonuse
+ingredients,498,2656,-3.111,-63.753,1,nonuse
+translation,2959,3395,-1.576,-62.676,1,nonuse
+critical,610,2461,-2.832,-62.646,1,nonuse
+proofs,5607,4509,-1.221,-61.074,1,nonuse
+required,623,2100,-2.652,-58.153,1,nonuse
+clean,700,2041,-2.507,-57.255,1,nonuse
+refine,1835,2520,-1.755,-57.192,1,nonuse
+provide,2571,2857,-1.543,-56.786,1,nonuse
+any,1685,2390,-1.787,-56.187,1,nonuse
+results,18407,8954,-0.721,-55.976,1,nonuse
+formulating,393,2003,-3.065,-55.588,1,nonuse
+sets,491,1933,-2.807,-55.567,1,nonuse
+reformat,670,1895,-2.476,-55.114,1,nonuse
+cleaning,584,1695,-2.502,-52.161,1,nonuse
+models,6845,4400,-0.997,-51.609,1,nonuse
+providing,1005,1771,-2.003,-50.735,1,nonuse
+other,1436,1928,-1.731,-49.683,1,nonuse
+did,65,6384,-6.004,-48.813,1,nonuse
+designing,568,1480,-2.394,-48.515,1,nonuse
+proposing,444,1307,-2.515,-45.811,1,nonuse
+ideas,2775,2359,-1.275,-45.531,1,nonuse
+reformatting,505,1298,-2.38,-45.393,1,nonuse
+assisting,1568,1756,-1.55,-44.616,1,nonuse
+developing,716,1280,-2.017,-43.23,1,nonuse
+claims,25038,9789,-0.502,-42.094,1,nonuse
+ideation,1286,1472,-1.571,-41.177,1,nonuse
+interpreting,1095,1375,-1.664,-41.09,1,nonuse
+dataset,1721,1613,-1.372,-39.588,1,nonuse
+core,1065,1226,-1.577,-37.652,1,nonuse
+they,2758,1979,-1.105,-37.512,1,nonuse
+the authors,45888,2305,1.574,73.996,2,use
+for the,34746,967,2.157,66.573,2,use
+we used,27652,622,2.365,58.778,2,use
+of this,22478,717,2.018,53.486,2,use
+responsibility for,31233,215,3.517,52.678,2,use
+the final,27262,237,3.292,51.465,2,use
+all ai-assisted,21267,378,2.594,50.487,2,use
+by the,22160,1675,1.16,45.885,2,use
+content of,20780,151,3.461,43.389,2,use
+with the,16049,229,2.808,42.701,2,use
+to assist,13365,330,2.268,40.993,2,use
+the manuscript,12618,398,2.026,40.017,2,use
+of generative,12443,151,2.964,36.724,2,use
+reviewed all,11264,200,2.592,36.692,2,use
+were used,10841,493,1.663,36.247,2,use
+full responsibility,12982,116,3.26,35.639,2,use
+final content,20942,58,4.354,35.146,2,use
+take full,12391,107,3.293,34.599,2,use
+work we,11616,814,1.233,34.089,2,use
+take responsibility,17559,54,4.259,32.984,2,use
+reviewed and,10138,116,3.02,32.838,2,use
+assist with,13470,1263,0.943,32.103,2,use
+in this,15424,1603,0.841,32.086,2,use
+ai-assisted work,8923,118,2.879,31.481,2,use
+and verified,7745,223,2.115,31.323,2,use
+work including,13741,57,3.986,31.27,2,use
+code and,7440,173,2.326,30.465,2,use
+have reviewed,7775,122,2.712,30.052,2,use
+of the,23069,3285,0.527,28.285,2,use
+we take,13253,36,4.369,27.812,2,use
+verified by,6069,193,2.016,27.723,2,use
+and to,6412,113,2.598,27.645,2,use
+authors take,7291,77,3.097,27.48,2,use
+produced with,12729,32,4.437,26.755,2,use
+against the,5923,295,1.571,26.428,2,use
+text claims,13319,25,4.688,25.512,2,use
+additionally we,4954,113,2.344,24.823,2,use
+claims and,7631,697,0.968,24.505,2,use
+authors reviewed,5398,71,2.883,24.457,2,use
+to improve,4666,120,2.225,24.232,2,use
+were reviewed,4522,97,2.404,23.617,2,use
+code was,4368,133,2.058,23.519,2,use
+also used,4799,69,2.796,23.342,2,use
+language editing,4824,65,2.86,23.197,2,use
+text and,4411,81,2.557,23.018,2,use
+and take,6829,34,3.814,22.949,2,use
+was reviewed,4275,82,2.514,22.754,2,use
+ai-assisted text,4875,50,3.125,22.354,2,use
+large language,3954,140,1.909,22.307,2,use
+parts of,3832,111,2.108,22.021,2,use
+aid of,11356,16,4.924,21.991,2,use
+the aid,11353,16,4.923,21.99,2,use
+language polishing,4108,66,2.688,21.895,2,use
+clarity and,3922,60,2.735,21.268,2,use
+language models,3930,225,1.432,20.954,2,use
+ai-assisted code,3497,76,2.391,20.785,2,use
+and editing,3932,48,2.955,20.642,2,use
+assisted with,4119,41,3.153,20.442,2,use
+drafting and,4534,34,3.426,20.36,2,use
+we also,3248,114,1.917,20.222,2,use
+mathematical claims,2672,7931,-2.521,-112.778,2,nonuse
+to generate,1904,5085,-2.412,-89.81,2,nonuse
+data analysis,1101,4103,-2.743,-80.881,2,nonuse
+we have,8270,6844,-1.241,-75.994,2,nonuse
+methodology or,675,3116,-2.956,-69.679,2,nonuse
+thematic data,532,3078,-3.181,-67.821,2,nonuse
+or experiments,687,2848,-2.848,-67.053,2,nonuse
+theoretical models,321,3691,-3.867,-66.586,2,nonuse
+generate synthetic,714,2714,-2.761,-65.694,2,nonuse
+synthetic data,1004,2712,-2.42,-65.538,2,nonuse
+conceptual frameworks,331,3413,-3.758,-65.396,2,nonuse
+proving mathematical,462,2781,-3.22,-64.165,2,nonuse
+use generative,233,4129,-4.298,-64.027,2,nonuse
+ingredients for,435,2593,-3.21,-62.024,2,nonuse
+synthetic datasets,502,2387,-2.984,-60.83,2,nonuse
+tools for,8451,5669,-1.03,-60.003,2,nonuse
+critical ingredients,385,2420,-3.263,-59.533,2,nonuse
+or conceptual,208,3463,-4.235,-59.495,2,nonuse
+refine hypotheses,536,2216,-2.844,-59.137,2,nonuse
+for proving,414,2274,-3.128,-58.599,2,nonuse
+models or,204,3301,-4.206,-58.47,2,nonuse
+develop theoretical,243,2836,-3.88,-58.173,2,nonuse
+formulate mathematical,404,2234,-3.135,-58.04,2,nonuse
+interpret results,881,2137,-2.312,-57.763,2,nonuse
+research methodology,2078,2692,-1.685,-57.732,2,nonuse
+design or,445,1997,-2.926,-55.862,2,nonuse
+and thematic,550,1932,-2.681,-55.514,2,nonuse
+qualitative and,555,1928,-2.67,-55.466,2,nonuse
+or refine,222,2451,-3.825,-54.674,2,nonuse
+generating synthetic,444,1880,-2.868,-54.391,2,nonuse
+data sets,389,1912,-3.017,-54.284,2,nonuse
+propose or,199,2370,-3.9,-52.952,2,nonuse
+required disclosure,390,1710,-2.902,-51.763,2,nonuse
+with translation,1297,1925,-1.82,-50.69,2,nonuse
+of proofs,857,1701,-2.111,-50.405,2,nonuse
+research ideas,1615,1936,-1.607,-47.694,2,nonuse
+provide critical,276,1361,-3.019,-45.775,2,nonuse
+to this,57,5500,-5.968,-45.574,2,nonuse
+or provide,434,1288,-2.512,-45.284,2,nonuse
+they were,745,1397,-2.053,-45.28,2,nonuse
+design the,200,1439,-3.396,-45.062,2,nonuse
+formulating mathematical,207,1411,-3.342,-44.961,2,nonuse
+support qualitative,465,1258,-2.419,-44.603,2,nonuse
+on research,1499,1690,-1.545,-43.564,2,nonuse
+hypotheses design,160,1421,-3.606,-43.314,2,nonuse
+help develop,389,1150,-2.508,-42.782,2,nonuse
+develop the,239,1177,-3.018,-42.57,2,nonuse
+to formulate,169,1312,-3.472,-42.54,2,nonuse
+for research,505,1135,-2.234,-41.784,2,nonuse
+interpreting results,625,1171,-2.052,-41.444,2,nonuse
+reformat datasets,277,1061,-2.766,-41.03,2,nonuse
+refining hypotheses,268,1036,-2.776,-40.53,2,nonuse
+writing of,1930,1762,-1.334,-40.506,2,nonuse
+for generating,434,1034,-2.292,-40.095,2,nonuse
+to develop,92,1552,-4.245,-39.68,2,nonuse
+cleaning and,427,1007,-2.282,-39.533,2,nonuse
+claims provide,151,1095,-3.404,-39.259,2,nonuse
+we did,36,5002,-6.317,-38.676,2,nonuse
+supporting qualitative,186,908,-3.008,-37.412,2,nonuse
+to design,284,867,-2.54,-37.166,2,nonuse
+we used generative,21812,500,2.35,52.508,3,use
+responsibility for the,29689,166,3.702,49.599,3,use
+of this work,17669,470,2.203,47.56,3,use
+by the authors,20667,1325,1.333,47.23,3,use
+for the final,24805,100,3.996,42.236,3,use
+work we used,11340,331,2.109,38.141,3,use
+to assist with,11573,241,2.44,37.936,3,use
+of generative ai,12427,150,2.97,36.88,3,use
+content of this,18523,73,4.014,36.294,3,use
+full responsibility for,12943,116,3.254,35.834,3,use
+in this work,13718,1082,1.125,35.747,3,use
+reviewed all ai-assisted,10350,177,2.632,35.215,3,use
+the final content,20392,56,4.329,35.119,3,use
+take full responsibility,12354,105,3.304,34.674,3,use
+this work we,11578,810,1.244,34.348,3,use
+take responsibility for,17553,52,4.263,33.139,3,use
+tools were used,7670,307,1.797,31.054,3,use
+all ai-assisted work,8571,106,2.945,30.725,3,use
+final content of,18519,34,4.659,30.546,3,use
+this work including,13376,50,4.059,30.468,3,use
+of the manuscript,7100,162,2.349,29.884,3,use
+we have reviewed,7586,118,2.723,29.811,3,use
+have reviewed all,7442,118,2.704,29.594,3,use
+the authors take,7249,77,3.09,27.59,3,use
+verified by the,5699,169,2.092,27.018,3,use
+were used to,5612,136,2.29,26.652,3,use
+and verified by,4878,123,2.251,24.891,3,use
+tools to assist,5071,74,2.784,24.172,3,use
+the authors reviewed,5290,66,2.935,24.16,3,use
+additionally we used,4861,77,2.704,23.907,3,use
+authors take full,4673,59,2.924,22.745,3,use
+the aid of,11353,16,4.859,22.545,3,use
+we take responsibility,10892,15,4.876,21.971,3,use
+aid of generative,11254,14,4.95,21.851,3,use
+reviewed and verified,4333,51,2.991,21.673,3,use
+produced with the,12090,12,5.107,21.608,3,use
+with the aid,11352,10,5.185,20.443,3,use
+parts of the,3103,75,2.292,19.808,3,use
+of this paper,3075,119,1.828,19.693,3,use
+all ai-assisted text,3873,35,3.243,19.611,3,use
+large language models,3029,111,1.882,19.606,3,use
+reviewed by the,2987,117,1.816,19.394,3,use
+artifacts produced with,11571,7,5.41,19.248,3,use
+work including text,9601,9,5.144,19.032,3,use
+including text claims,9551,9,5.14,19.002,3,use
+used to assist,3836,25,3.55,18.347,3,use
+the authors who,2996,35,2.998,17.998,3,use
+we also used,2875,32,3.044,17.497,3,use
+the final manuscript,3249,21,3.558,16.856,3,use
+text claims or,6893,8,4.997,16.846,3,use
+content of the,2217,74,1.974,16.827,3,use
+claims or artifacts,6848,8,4.993,16.814,3,use
+were reviewed and,2600,30,3.009,16.733,3,use
+was reviewed and,2704,27,3.148,16.67,3,use
+and take responsibility,3521,17,3.826,16.516,3,use
+and take full,3294,17,3.765,16.203,3,use
+the manuscript and,2095,44,2.429,16.129,3,use
+or artifacts produced,6974,6,5.198,15.944,3,use
+to improve readability,1977,48,2.287,15.812,3,use
+the authors and,2803,231,1.079,15.807,3,use
+thematic data analysis,532,3067,-3.166,-67.503,3,nonuse
+methodology or experiments,669,2659,-2.794,-64.663,3,nonuse
+proving mathematical claims,460,2772,-3.209,-63.844,3,nonuse
+use generative ai,220,4122,-4.34,-63.005,3,nonuse
+research methodology or,664,2338,-2.673,-60.833,3,nonuse
+ai tools for,8048,5609,-1.057,-60.804,3,nonuse
+tools to generate,466,2306,-3.012,-59.382,3,nonuse
+critical ingredients for,373,2398,-3.273,-58.905,3,nonuse
+or conceptual frameworks,203,3270,-4.189,-58.136,3,nonuse
+theoretical models or,201,3265,-4.197,-57.98,3,nonuse
+models or conceptual,201,3192,-4.174,-57.625,3,nonuse
+formulate mathematical claims,397,2218,-3.133,-57.574,3,nonuse
+to generate synthetic,526,2098,-2.797,-57.413,3,nonuse
+develop theoretical models,236,2709,-3.851,-56.902,3,nonuse
+for proving mathematical,358,2214,-3.234,-56.868,3,nonuse
+ingredients for proving,373,2184,-3.18,-56.841,3,nonuse
+qualitative and thematic,547,1925,-2.671,-55.187,3,nonuse
+and thematic data,522,1906,-2.708,-54.875,3,nonuse
+used to generate,423,1824,-2.874,-53.317,3,nonuse
+propose or refine,199,2359,-3.883,-52.75,3,nonuse
+synthetic data sets,353,1744,-3.01,-51.634,3,nonuse
+or refine hypotheses,200,2190,-3.803,-51.627,3,nonuse
+writing of proofs,732,1677,-2.242,-50.654,3,nonuse
+in the writing,861,1664,-2.072,-49.397,3,nonuse
+generate synthetic data,309,1411,-2.931,-46.715,3,nonuse
+provide critical ingredients,254,1349,-3.081,-45.11,3,nonuse
+formulating mathematical claims,200,1398,-3.355,-44.459,3,nonuse
+or provide feedback,433,1231,-2.457,-44.016,3,nonuse
+on research methodology,1393,1668,-1.594,-43.941,3,nonuse
+design or provide,432,1212,-2.444,-43.652,3,nonuse
+feedback on research,1477,1688,-1.547,-43.454,3,nonuse
+generate synthetic datasets,195,1236,-3.257,-42.343,3,nonuse
+help develop theoretical,179,1133,-3.256,-40.545,3,nonuse
+the writing of,1851,1703,-1.331,-39.651,3,nonuse
+mathematical claims provide,150,1092,-3.395,-39.063,3,nonuse
+support qualitative and,371,949,-2.351,-38.432,3,nonuse
+for research ideation,256,932,-2.704,-38.355,3,nonuse
+generating synthetic datasets,179,979,-3.11,-38.311,3,nonuse
+refine hypotheses design,145,1004,-3.345,-37.72,3,nonuse
+tools for generating,269,878,-2.595,-37.267,3,nonuse
+generating synthetic data,189,882,-2.952,-36.868,3,nonuse
+claims provide critical,123,984,-3.489,-36.555,3,nonuse
+to this work,28,5422,-6.596,-36.426,3,nonuse
+clean and reformat,578,955,-1.915,-36.357,3,nonuse
+conceptual frameworks formulate,83,1214,-4.09,-36.176,3,nonuse
+frameworks formulate mathematical,84,1127,-4.004,-35.516,3,nonuse
+assisting in the,284,802,-2.45,-35.51,3,nonuse
+assist with translation,921,1085,-1.577,-35.216,3,nonuse
+cleaning and reformatting,350,805,-2.245,-35.089,3,nonuse
+providing critical ingredients,93,1006,-3.789,-35.057,3,nonuse
+assisting with translation,303,752,-2.321,-34.135,3,nonuse
+mathematical claims assist,211,736,-2.661,-34.106,3,nonuse
+proposing or refining,76,1041,-4.024,-33.981,3,nonuse
+supporting qualitative and,146,752,-3.05,-33.767,3,nonuse
+with required disclosure,334,746,-2.216,-33.677,3,nonuse
+or refining hypotheses,73,1007,-4.031,-33.37,3,nonuse
+hypotheses design or,89,875,-3.694,-33.284,3,nonuse
+generative ai to,486,797,-1.907,-33.157,3,nonuse
+claims assist in,193,681,-2.672,-32.801,3,nonuse
+generative ai was,966,1021,-1.469,-32.735,3,nonuse

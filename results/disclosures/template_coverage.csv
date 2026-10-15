@@ -1,0 +1,13 @@
+measure,p10,p25,p50,p75,p90,mean
+template_share,0.0,0.0,0.125,0.298,0.5,0.192
+stock_share,0.027,0.094,0.19,0.319,0.466,0.224
+author_share,0.244,0.403,0.595,0.776,0.905,0.584
+papers,,,,,,39351.0
+token_total,,,,,,3685163.0
+template_token_pct,,,,,,21.93
+stock_token_pct,,,,,,18.55
+docs_template_ge_90pct,,,,,,168.0
+docs_template_ge_50pct,,,,,,4032.0
+docs_template_zero,,,,,,10592.0
+sentences_use,,,,,,156346.0
+sentences_nonuse,,,,,,27201.0
