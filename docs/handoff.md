@@ -66,6 +66,33 @@ regions, 154 headings. Open: the 2026–27 drop in main-body prose per page; sep
 jump from the doubled submitter cohort; a version check for non-ICLR venues. The per-paper scan
 (`data/appendix/`, ~45 min) is git-ignored.
 
+### Lanes B and C: AI-use disclosures and body language (2026-10-15, done through Gate 4)
+
+**Docs:** `docs/ai-disclosures.md` (Lane B) and `docs/disclosure-body-analysis.md` (Lane C).
+**Scripts:** `scripts/disclosures/` (extract, phrases, taxonomy, sample_labels, evaluate,
+eval_groups, lane_c_features, lane_c_analysis, lane_c_review_checks).
+**Classifier:** `src/mlngrams/disclosure_classify.py`, v2, frozen at 5c955d0.
+**Labels:** `results/disclosures/labels/`.
+
+State:
+- Extractor v1 recovers 96.8% of 2027 disclosures.
+- Classifier v2 passes Gate 3 narrowly on test2. The drafting group is roughly 75–86% true drafting.
+- Lane C finds drafting-disclosure papers carry the 2027 register (`docs/findings.md` §6), and the
+  result survives every Lane D check.
+
+Git-ignored intermediates (regenerate with the scripts):
+- `data/disclosures/iclr2027.parquet`, which contains disclosure text;
+- `data/disclosures/lane_c_*`, about 25 minutes to rebuild.
+
+Open:
+- A human spot check of about 30 labels, since all labellers so far are Claude.
+- Separate affirmed task-list items from template frame wording (Lane D B2).
+- Regenerate the polarity table with the `.)` split and an attestation class (B3).
+- Fix the end detection in extractor v1 for bibliography and ethics overruns (B1, 3.3%).
+- Statement removal v2 misses about 4% of 2027 disclosures in the n-gram tables (N14). Decide
+  whether to bump to v3 and rerun.
+- Test the authorship-population alternative on camera-ready versions.
+
 ## Blockers and risks
 
 - The dataset keeps growing. Never move the revision pin without rerunning recon and updating

@@ -125,7 +125,7 @@ resubmissions (title + first page) to enlarge the paired sample, including heavi
 (d) Self-reported AI use: a first keyword classifier of 2027 AI-use statements agreed with hand labels on
 only ~50% of 40 statements (it reads disclaimer lists as positive use), so its gradient is not reported
 (`docs/negative-results.md` N13). A negation-aware classifier validated on ~100 hand-labelled statements
-would make the comparison usable; it would still be self-report and associational.
+would make the comparison usable; it would still be self-report and associational. *Done (2026-10-15): see §6.*
 
 ## 4. Function words are thinning out, across venues, since well before LLMs
 
@@ -166,6 +166,43 @@ partly a phrasing fashion ("across diverse" behaves like the words in finding 2 
 **Partial test.** The two uses already separate in 2027: "across diverse" falls (34.1% → 13.8%) while
 "across three/four/five" keep rising (15.3 → 19.4%, 9.7 → 14.0%, 6.7 → 11.1%, 2026 → 2027). Next: relate
 "across <number>" to the number of benchmarks reported per paper.
+
+## 6. Within 2027, self-reported AI drafting goes with the new register (Lanes B–C, 2026-10-15)
+
+**Facts.** ICLR 2027 papers were grouped by their own AI-use disclosure, using a negation-aware
+classifier validated on 150 held-out hand-labelled statements (drafting P = R = 0.86, a narrow pass;
+`docs/ai-disclosures.md` §6). Papers reporting help with *drafting* (11,751) differ from papers
+reporting *language polishing only* (5,354). The differences below hold within 40 topic clusters
+and body-length deciles, against within-stratum shuffled labels, and in the robustness subsets
+(`docs/disclosure-body-analysis.md`):
+
+| share of papers | drafting | polish only | 2023–2026 (all papers, §3) |
+|---|---:|---:|---:|
+| "we propose" | 40% | 66% | 80–82% |
+| "a novel" | 5% | 12% | 48–61% |
+| "test whether" | 26% | 18% | 2–5% |
+| "held fixed" | 16% | 10% | 0.1–0.8% |
+
+Drafting papers also use the stereotyped "AI words" (delve, showcasing, ...) *less* (0.14 vs 0.29
+per 10k tokens), use shorter words, more function words, more varied vocabulary and fewer repeated
+4-grams. Adjusted standardized differences range from 0.07 to 0.41.
+
+**Interpretation (tentative).** The 2027 break in §3 is concentrated in, but not confined to, papers
+whose authors report AI drafting help. The polish-only group stays closest to the 2023–2026
+register, yet it too has far fewer novelty formulas than earlier years. This is self-report and
+association. It does not show that AI drafting produced the register.
+
+**Alternatives.**
+1. Who the authors are: polish-only is the typical disclosure of second-language writers, whose
+   academic English leans on formulas such as "extensive experiments demonstrate the effectiveness".
+2. When the text was written: among the 48 matched 2026→2027 resubmissions, polish-only is over-
+   represented (23% vs 14%) and drafting under-represented (15% vs 30%).
+3. Residual topic confounding, since 40 clusters are coarse.
+
+**Tests.**
+1. Repeat with camera-ready versions, which carry affiliations.
+2. Compare within the same authors' papers.
+3. Repeat at a venue whose disclosure form separates drafting from editing.
 
 ## Sensitivity: appendices included
 
