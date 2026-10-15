@@ -1,0 +1,11 @@
+{
+  "data": "paper_metrics.csv.gz",
+  "sha256": "b8323a5df98cb0472e005810dbcd6475deff9ec50aa0deb74825d942817487b9",
+  "sampling_seed": 20261014,
+  "bootstrap_seed": 20261014,
+  "bootstrap_replicates": 2000,
+  "interval": "pointwise 95% percentile paper bootstrap; no finite-population correction or multiplicity adjustment",
+  "matplotlib": "3.10.8",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3"
+}

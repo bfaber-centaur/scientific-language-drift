@@ -1,0 +1,8 @@
+{
+  "test": "original_loader_revision_cache_collision",
+  "requested_revision": "revision-B",
+  "returned_bytes": "cached bytes from revision A",
+  "network_required": false,
+  "reproduced": true,
+  "implication": "Existing cache bypasses revision; no evidence this caused published shift. Independent cache is revision-keyed."
+}

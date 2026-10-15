@@ -1,0 +1,516 @@
+{
+  "mupdf": "1.26.6",
+  "poppler": "pdftotext version 24.02.0\nCopyright 2005-2024 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n",
+  "receipts": [
+    {
+      "year": 2024,
+      "paper_id": "jKTUlxo5zy",
+      "pdf_sha256": "a2a497e7fcef694f702c75f77a69df8e0a7fb83afa86a444e809d946aa9f2a6a",
+      "sample_order": 0,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=jKTUlxo5zy",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/a2a497e7fcef694f702c75f7/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "RzV7QRowUl",
+      "pdf_sha256": "c978567a6025a547139a119ec7d921bed2a826dd83dd5ffbfd9098557178dc8f",
+      "sample_order": 1,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=RzV7QRowUl",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/c978567a6025a547139a119e/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "OhTzuWzO6Q",
+      "pdf_sha256": "dee3b653389ced73483d16371b218cd693932f9056c3e64ce9570b916bdd5778",
+      "sample_order": 2,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=OhTzuWzO6Q",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/dee3b653389ced73483d1637/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "4bLXfRd0CX",
+      "pdf_sha256": "ce931a8157f44981b69ae93b3e9e285ad33371a90a2ab22d23d3bb6f74a7b8b2",
+      "sample_order": 3,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=4bLXfRd0CX",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/ce931a8157f44981b69ae93b/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "2Q8TZWAHv4",
+      "pdf_sha256": "cad0b59ec27b876af1e7c0f8890c8873c6bc75562b696ed364bb2f7e49cd60dc",
+      "sample_order": 4,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=2Q8TZWAHv4",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/cad0b59ec27b876af1e7c0f8/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "eG9AkHtYYH",
+      "pdf_sha256": "a5ca03d194cc8af6af1b53288c230df3f0204c466d256ed386d541d41230a28b",
+      "sample_order": 5,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=eG9AkHtYYH",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/a5ca03d194cc8af6af1b5328/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "Dtxc7mlKRg",
+      "pdf_sha256": "749c143df235248a2c9c5386b7f8ea703e3135b33c85356a3709cb4933611ebd",
+      "sample_order": 6,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=Dtxc7mlKRg",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/749c143df235248a2c9c5386/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "YVuS6Pza3A",
+      "pdf_sha256": "d6a630d0a5929f162c67416c3728764089d393b6aed9acaa7bed0f46e8ef78d3",
+      "sample_order": 7,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=YVuS6Pza3A",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/d6a630d0a5929f162c67416c/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "ZlQRiFmq7Y",
+      "pdf_sha256": "1aa91ccabf2574a90791b7b5ad9b9bf74e7773497960b0e3c50004957b8e0826",
+      "sample_order": 8,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=ZlQRiFmq7Y",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/1aa91ccabf2574a90791b7b5/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2024,
+      "paper_id": "3ARfhjGfdF",
+      "pdf_sha256": "04a7dc06758528dd348a4b4fdfa611f26f3e1aa66f1a5e45cc5ebfbe1c137179",
+      "sample_order": 9,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=3ARfhjGfdF",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/04a7dc06758528dd348a4b4f/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "BFb4ACHayj",
+      "pdf_sha256": "b6168f71cc6cfeaa70c4e10d1527d38f31f96f484b3b5112db470c4737339807",
+      "sample_order": 0,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=BFb4ACHayj",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/b6168f71cc6cfeaa70c4e10d/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "D9bLUj7wUW",
+      "pdf_sha256": "13e7928ed384e1e4970167df00de4491dbb89cd9c3e10943460ce69f27a0386d",
+      "sample_order": 1,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=D9bLUj7wUW",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/13e7928ed384e1e4970167df/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "7saU0zPkpZ",
+      "pdf_sha256": "1893e3e1d7d1b155dc5dd39bf6b67293654a26fb4145c754b23e3308c1c2e7f1",
+      "sample_order": 2,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=7saU0zPkpZ",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/1893e3e1d7d1b155dc5dd39b/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "Au1UC2lgGR",
+      "pdf_sha256": "eef441b6d98bb1d5111b2eabd0976921e0c8f3a43e3c06dd982d9183bedfdbe3",
+      "sample_order": 3,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=Au1UC2lgGR",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/eef441b6d98bb1d5111b2eab/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "5XfxEQ2SCt",
+      "pdf_sha256": "93d934b038c6c7042680fd9520271e134057b576e8b598e4de9a18371abe31b8",
+      "sample_order": 4,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=5XfxEQ2SCt",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/93d934b038c6c7042680fd95/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "2ius36JQUJ",
+      "pdf_sha256": "062710010483900055f7c567ea186a84256623a3baea0cc3e7b5d53ec941e02a",
+      "sample_order": 5,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=2ius36JQUJ",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/062710010483900055f7c567/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "8Zt6OsDzij",
+      "pdf_sha256": "4402576688b99bf713cfb8dce9ff612fbacfda37b6a2b6401117a625ad043056",
+      "sample_order": 6,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=8Zt6OsDzij",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/4402576688b99bf713cfb8dc/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "0sCyk9Tr5J",
+      "pdf_sha256": "7b98ae22b602314cdd97cba7270fbc742bdefdd23e40d9050db98f9b27eb04d6",
+      "sample_order": 7,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=0sCyk9Tr5J",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/7b98ae22b602314cdd97cba7/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "10JEfJtiJM",
+      "pdf_sha256": "a8fe85749d3a05bd6d688cb364756442103bd90938b55041036611ac4470b3b1",
+      "sample_order": 8,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=10JEfJtiJM",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/a8fe85749d3a05bd6d688cb3/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2026,
+      "paper_id": "BUUfUcIcfE",
+      "pdf_sha256": "1b7bfcf55226dad548543fcc23601ed57026c85afc89bec85255ec9c940400f9",
+      "sample_order": 9,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=BUUfUcIcfE",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/1b7bfcf55226dad548543fcc/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "9BrRmvQPwf",
+      "pdf_sha256": "34479f2b69c71b20a54cb7cbadd1ca5125ce0faa90fc9d3fe5a8676ce49e368d",
+      "sample_order": 0,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=9BrRmvQPwf",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/34479f2b69c71b20a54cb7cb/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "eK0PbGvky6",
+      "pdf_sha256": "98263c15b80ca27f5c0afa35fa554e07312f7dda0c939b1e1db8a8efdd1dc158",
+      "sample_order": 1,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=eK0PbGvky6",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/98263c15b80ca27f5c0afa35/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "qmn19MKk7e",
+      "pdf_sha256": "34dc7b9346a80bd8b0cec66025c7c4126ca4b8e6dd0b62e92c03896c49e348fa",
+      "sample_order": 2,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=qmn19MKk7e",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/34dc7b9346a80bd8b0cec660/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "K6NFBKjxUN",
+      "pdf_sha256": "9adafa0bfc993b75045f21e08093b1b14de8b7cf714ff60da566892ebf1658b9",
+      "sample_order": 3,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=K6NFBKjxUN",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/9adafa0bfc993b75045f21e0/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "pvyftXrd32",
+      "pdf_sha256": "181892eaeab0810bbed791cb1ef2fd381802edd4c179e71f4c84343b456fb3e4",
+      "sample_order": 4,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=pvyftXrd32",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/181892eaeab0810bbed791cb/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "PukeDiG9L5",
+      "pdf_sha256": "c3997a2dc65ec67be10e0994024c61dbdbf2df859947d26a2dba368111c97512",
+      "sample_order": 5,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=PukeDiG9L5",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/c3997a2dc65ec67be10e0994/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "L3QQ4lUH6I",
+      "pdf_sha256": "82b49427c78e8352e6826cbd1620ee019370ba147c25c778ce1fb729622f81f4",
+      "sample_order": 6,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=L3QQ4lUH6I",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/82b49427c78e8352e6826cbd/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "MLm03UHRyi",
+      "pdf_sha256": "897651d3ef670bb50c7c2b03146a1a9f6d4dbfc9bba5e68ef8f8d37948468f5b",
+      "sample_order": 7,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=MLm03UHRyi",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/897651d3ef670bb50c7c2b03/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "UFs13Yhrbs",
+      "pdf_sha256": "8fce790138e9de6539c0d02c1d4391ce5003f71b48c3f975b7782accf70c61b6",
+      "sample_order": 8,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=UFs13Yhrbs",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/8fce790138e9de6539c0d02c/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    },
+    {
+      "year": 2027,
+      "paper_id": "3kKbnibuAz",
+      "pdf_sha256": "10e3455ffe4063ceca83af0757776a81fd4d4204384b4d072fc01316f1c391f6",
+      "sample_order": 9,
+      "attempts": [
+        {
+          "url": "https://openreview.net/pdf?id=3kKbnibuAz",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://opentextdetector.com/backend/v1/pdf-reader/10e3455ffe4063ceca83af07/file",
+          "error": "HTTP Error 403: Forbidden"
+        }
+      ],
+      "matched": false
+    }
+  ]
+}

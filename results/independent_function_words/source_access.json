@@ -1,0 +1,16 @@
+{
+  "dataset_access": "Successful fresh pinned parquet downloads",
+  "dataset_revision_used": "cb5553e0c192c31c562a2822668c7f4ebbb9437a",
+  "dataset_head_observed": "bb454da057d027b9d4405d5f923beb12488f885a",
+  "extractor_repository": "https://github.com/woog97/open-text-detector",
+  "extractor_source_revision": "e7b1bbeb4cea1e4099d4dff7e7b6a0889cf9120b",
+  "historical_extractor_binary_versions": "Unknown; not supplied",
+  "openreview_api_probes": "notes and pdf endpoints: HTTP 403",
+  "openreview_browser_probe": {
+    "paper_id": "9BrRmvQPwf",
+    "result": "Verifying your browser; one reload remained blocked; no CAPTCHA attempted"
+  },
+  "pdf_archive_probe": "HTTP 403, Cloudflare error code 1010",
+  "independently_extracted_pdfs": 0,
+  "code_credit": "Scientific Agent Skills arXiv:2609.00065; current metadata verified v2"
+}
