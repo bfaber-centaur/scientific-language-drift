@@ -1,0 +1,9 @@
+stratum,from,to,mean_total_from,mean_total_to,delta_mean_main,delta_mean_appx,share_of_growth_from_appendix,median_main_from,median_main_to,median_appx_from,median_appx_to,median_pages_from,median_pages_to,median_body_pages_from,median_body_pages_to,median_post_pages_from,median_post_pages_to,median_main_pages_from,median_main_pages_to,median_appx_pages_from,median_appx_pages_to
+all,2017,2027,5535,9812,-423.9,4700,1.099,4612,4289,371.5,4151,13,24,8.5,9.5,1.5,12,8.5,9.5,1.5,12
+all,2017,2026,5535,8487,-96.85,3049,1.033,4612,4622,371.5,2961,13,23,8.5,9.5,1.5,10,8.5,9.5,1.5,10
+all,2018,2024,5862,7654,67.55,1724,0.9623,4712,4823,573,2045,14,20,9,9,2.5,7,9,9,2.5,7
+all,2024,2027,7654,9812,-541.5,2700,1.251,4823,4289,2045,4151,20,24,9,9.5,7,12,9,9.5,7,12
+under_review,2017,2027,5217,9812,-287.4,4882,1.063,4448,4287,137,4158,12,24,8.5,9.5,1,12,8.5,9.5,1,12
+under_review,2017,2026,5217,7906,-69.91,2759,1.026,4448,4513,137,2516,12,22,8.5,9.5,1,9,8.5,9.5,1,9
+under_review,2018,2024,5273,6946,223.2,1450,0.8666,4467,4761,276,1514,13,18,8.5,9,1.5,5.5,8.5,9,1.5,5.5
+under_review,2024,2027,6946,9812,-447,3312,1.156,4761,4287,1514,4158,18,24,9,9.5,5.5,12,9,9.5,5.5,12

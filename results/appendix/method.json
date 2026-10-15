@@ -1,0 +1,53 @@
+{
+ "revision": "cb5553e0c192c31c562a2822668c7f4ebbb9437a",
+ "config": "omissions",
+ "scan_version": "v1",
+ "tokenizer": "v1.3",
+ "venues": [
+  "iclr",
+  "neurips",
+  "tmlr",
+  "colm",
+  "corl",
+  "icml",
+  "emnlp"
+ ],
+ "years": null,
+ "analysis": "scripts/appendix_analyze.py v1",
+ "seed": 20261015,
+ "population": "ICLR: paper_flags exclude=='' and in_sample; venues: chars>=2000",
+ "early": [
+  2017,
+  2018,
+  2019
+ ],
+ "recent": [
+  2025,
+  2026,
+  2027
+ ],
+ "resubmission_pairs": {
+  "n_pairs": 305,
+  "median_main_change": 24.0,
+  "median_appx_change": 253.0,
+  "share_appx_grew": 0.6557377049180327,
+  "share_main_grew": 0.5606557377049181,
+  "median_main_ratio": 1.006904487917146,
+  "median_appx_ratio_where_a_pos": 1.2006622516556291
+ },
+ "taxonomy": {
+  "statement": "\\b(llms?|large language models?|ai|generative ai)\\b.*\\b(use|usage|assist|disclos|statement)|ethic|reproducibility statement|broader impact|societal impact|impact statement|acknowledg|author contribution|usage of llm|use of llm",
+  "checklist": "checklist",
+  "container": "^(technical |online |supplementary |supplemental )?(appendix|appendices)( for .*)?$|^supplementa(ry|l)( materials?| information)?$|^appendix:?\\s*$|^table of contents",
+  "proofs_theory": "complexity|proof|theorem|lemma|proposition|corollar|derivation|theoretical|theory|deferred|omitted (details|proofs)|convergence|regret|bound|technical (details|results)|auxiliary results|mathematical",
+  "ablation": "ablation|sensitivity|effect of|impact of|influence of|robustness",
+  "examples_prompts": "prompt|example|qualitative|case stud|visuali[sz]|samples|generated|generation results|failure (case|mode)|showcase|illustrat|demonstration|transcript|conversation",
+  "related_work": "related work|literature|prior work|previous work|comparison (to|with) (prior|existing|related)",
+  "background_notation": "notation|preliminar|background|definition|glossary|symbols|problem (setup|formulation)",
+  "limitations_discussion": "limitation|future work|discussion|broader|conclusion",
+  "algorithm": "algorithm|pseudo|pseudocode",
+  "data_benchmarks": "dataset|data|benchmark|task|environment|metric|annotation|human (eval|study)|user study|baseline",
+  "implementation": "implementation|hyper-?parameter|training|experiment(al)? (details|setup|settings?|protocol|configuration)|setup|setting|architecture|model details|configuration|compute|computational|resource|runtime|run time|cost|efficiency|reproduc|code|details",
+  "additional_results": "additional|more|further|extra|supplementary|extended|full|complete|detailed|results|experiment|evaluation|comparison|performance|analysis|analyses|study|plots|tables|figures|curves"
+ }
+}

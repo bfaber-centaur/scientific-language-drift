@@ -108,3 +108,25 @@ fixed" more. Hand-labelling 40 statements gave ~50% agreement; only 5 of 12 "dra
 because the rule fires on the standard ICLR 2027 disclaimer lists ("we have not used ... to assist in the
 writing of proofs"), and the "none" class held 42 of 12,000 papers. The gradient is not reported as a
 finding; `scripts/ai_disclosure_strata.py` and its output are kept as a record of the failed attempt.
+
+## Lane A (appendix growth): corrections made during the analysis
+
+Recorded in `docs/appendix-growth.md` ("Defects found and corrected") and `results/appendix/post_region_audit.csv`.
+
+- **A1. "Text after the references" is not "appendix" for NeurIPS.** In NeurIPS 2021–22 the paper checklist
+  is 50–75% of post-reference characters (appendices were separate files), so the raw share shows a
+  7% "appendix" in 2022 that is pure checklist. Checklist headings are often not extracted; detection now
+  anchors on the first checklist question or on "Answer: [Yes]" lines.
+- **A2. Cutting the checklist "to the end of the PDF" deleted NeurIPS 2025 appendices.** NeurIPS 2025
+  places the checklist between the references and the appendix; the first version reported a median
+  2025 appendix of 0 tokens. The checklist now ends after its last answer.
+- **A3. Removing every bibliography-like line over-cleaned appendices.** The first residue rule also
+  matched in-text citations and removed 7–12% of appendix characters; only the leading block of
+  unmasked reference entries is removed now (0.3–1.5%).
+- **A4. Main-body subsections titled "A ..." looked like appendices placed before the references.** A
+  rule accepting two lettered headings flagged ordinary papers; it now needs sections A, B, C of
+  ≥ 200 characters each (0–0.3% of ICLR papers have a pre-reference appendix).
+- **A5. Failed expectation: the main body did not stay exactly constant.** Prose tokens rose ~10% to
+  2025 (10-page limit) and then fell 16% by 2027 at an unchanged 9.5-page median. Not explained by
+  tables, figures, equations or reference residue; unexplained.
+

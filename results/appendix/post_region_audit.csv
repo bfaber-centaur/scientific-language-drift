@@ -1,0 +1,64 @@
+venue,year,doc_id,sample_seed,post_region_verdict,issue_found,note
+iclr,2017,B1jnyXXJx,101,empty,,no post-reference text
+iclr,2017,ByBwSPcex,101,empty,,
+iclr,2017,ByW2Avqgg,101,appendix,,lettered A-C: sampling procedure; network details; qualitative results
+iclr,2017,HJy_5Mcll,101,empty,,
+iclr,2017,HyTqHL5xg,101,appendix,,derivation + implementation details
+iclr,2017,S1Bb3D5gg,101,appendix,,implementation; prediction examples; hyperparameters; results tables
+iclr,2017,S1j4RqYxg,101,empty,,6-page paper
+iclr,2017,SJQNqLFgl,101,appendix,,
+iclr,2017,SkwSJ99ex,101,appendix,,one figure and caption only (136 chars)
+iclr,2017,rJzaDdYxx,101,appendix,,
+iclr,2017,ryT4pvqll,101,appendix,,derivation + experiment details
+iclr,2017,ry_sjFqgx,101,appendix,,formal semantics; synthesis details
+iclr,2020,B1xMEerYvB,303,appendix,,proofs + background
+iclr,2020,BkelnhNFwB,303,empty,appendix_before_references,appendix A-L placed before the reference list: 26 of 34 pages counted as main body by the marker split (fixed: body_appx)
+iclr,2020,H1lxeRNYvB,303,appendix,,figure-heavy
+iclr,2020,HJxp9kBFDS,303,appendix,,architecture tables + results
+iclr,2020,HkgtJRVFPS,303,appendix,,proofs + extended tables
+iclr,2020,SJxjanVKDH,303,appendix,,architecture tables + timing
+iclr,2020,rJehVyrKwH,303,empty,,
+iclr,2020,rkgg6xBYDH,303,appendix,,proofs
+iclr,2020,rkgiURVFDS,303,appendix,,algorithm + extensions + plots
+iclr,2020,ryxnJlSKvr,303,appendix,,implementation heuristic
+iclr,2023,2SXIFDczAJG,303,appendix,,derivation
+iclr,2023,8OFAtZzIf7T,303,empty,,
+iclr,2023,GC5MsCxrU-,303,appendix,reference_residue,post region opens with ~2.0k chars of unmasked bibliography entries (fixed: post_refres_chars)
+iclr,2023,KQ-ipHOmBc,303,empty,,
+iclr,2023,PLUXnnxUdr4,303,appendix,unlettered_headings,appendix numbered 6.1 instead of lettered: no sections detected
+iclr,2023,RIcaT3C0wP,303,appendix,,
+iclr,2023,f9eHl5mKx5i,303,appendix,generic_heading,single section titled APPENDIX
+iclr,2023,rzrqh85f4Sc,303,appendix,,related work + additional experiments
+iclr,2023,xYNOuQh1Z7Y,303,appendix,,
+iclr,2023,xYy2l4tiOe,303,appendix,,ends with a licence statement
+iclr,2027,3VEnlOtR4l,202,appendix,,discussion; notation; proofs; additional experiments
+iclr,2027,5VV3kIBnXr,202,appendix,,experimental details; additional results
+iclr,2027,IiRCcZEFWu,202,appendix,,limitations; implementation; diagnostics
+iclr,2027,ItiWkoK5j9,202,appendix,statement_in_appendix,theory; related work; experiments; reproducibility statement at end
+iclr,2027,JHgkJufiiG,202,appendix,,experiments; benchmark design; prompts
+iclr,2027,V85HiwBLlj,202,appendix,appendix_toc,contents page at start (fixed: TOC skip)
+iclr,2027,axCkvgjF57,202,appendix,,
+iclr,2027,c8rA6VkBV6,202,appendix,appendix_toc,contents table with descriptions: headings largely missed
+iclr,2027,dE3NY0Rjyk,202,appendix,generic_heading,single section titled APPENDIX
+iclr,2027,ewSGxWnGny,202,appendix,,
+iclr,2027,gOhgX9lVFA,202,appendix,appendix_toc,contents page (fixed: TOC skip)
+iclr,2027,hGZ7BnQ3jB,202,appendix,,
+iclr,2027,izxfdTw9bv,202,appendix,body_tail_reference_residue,bibliography entries before the first marker are counted in the main body
+iclr,2027,oi2oL84SGS,202,appendix,statement_in_appendix,LLM-usage statement inside appendix
+iclr,2027,zs4PN8EHpg,202,appendix,body_tail_reference_residue,bibliography entries before the first marker are counted in the main body
+neurips,2022,-KPNRZ8i0ag,404,appendix+checklist,reference_residue,numbered bibliography not masked; checklist at end (fixed)
+neurips,2022,6pC5OtP7eBx,404,checklist,checklist_not_detected,whole post region is the NeurIPS checklist (fixed: question anchor)
+neurips,2022,7KKL3Z5sod,404,checklist,checklist_not_detected,(fixed)
+neurips,2022,ZPyKSBaKkiO,404,checklist,checklist_not_detected,(fixed)
+neurips,2022,ijzm0EhAY_w,404,checklist,checklist_not_detected,(fixed)
+neurips,2022,wlEOsQ917F,404,checklist,checklist_not_detected,(fixed)
+neurips,2024,02r24A8doi,404,appendix+checklist,checklist_not_detected,checklist questions not extracted; only Answer/Justification lines (fixed: answer anchor)
+neurips,2024,2wlNnIqCb7,404,appendix+checklist,checklist_not_detected,(fixed)
+neurips,2024,36tMV15dPO,404,appendix+checklist,checklist_not_detected,(fixed)
+neurips,2024,3ACXaFxjTy,404,appendix+checklist,checklist_not_detected,(fixed)
+neurips,2024,CgGjT8EG8A,404,appendix+checklist,checklist_not_detected,7.5 of 25 post-reference pages are checklist (fixed)
+neurips,2024,GVgRbz8MvG,404,appendix+checklist,checklist_not_detected,(fixed)
+tmlr,2024,0Hm01Vc8zT,404,appendix,,proofs; ILP; experiments
+tmlr,2024,64HdQKnyTc,404,appendix,appendix_toc,contents page (handled)
+tmlr,2024,RYtJmFDAxv,404,appendix,,
+tmlr,2024,zOJ846BXhl,404,appendix,,

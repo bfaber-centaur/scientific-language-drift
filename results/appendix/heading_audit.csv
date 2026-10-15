@@ -1,0 +1,155 @@
+doc_id,year,letter,title,rule_label,manual_label
+S1JG13oee,2017,D,EXPLANATION OF HEURISTICS USING RADEMACHER COMPLEXITY,proofs_theory,proofs_theory
+BkSmc8qll,2017,E,TRAINING,implementation,implementation
+HJ0UKP9ge,2017,A,ERROR ANALYSIS,additional_results,additional_results
+HkNRsU5ge,2017,D,TEMPORAL MNIST,other_prose,data_benchmarks
+BkfiXiUlg,2017,A,EXAMPLE: HAM SORTING,examples_prompts,examples_prompts
+HJKkY35le,2017,D,APPENDIX: COMPARISON WITH VAEGAN,additional_results,additional_results
+By5e2L9gl,2017,D,SVM Formulation & Dual Derivation,proofs_theory,proofs_theory
+H1wgawqxl,2017,A,GENERALIZATION BOUND FOR FULLY CONNECTED NETWORKS WITH,proofs_theory,proofs_theory
+HJeqWztlg,2017,B,COMBINING WITH GRAYSCALE PREPROCESSING,other_prose,additional_results
+B1vRTeqxg,2017,C,MODEL HYPERPARAMETERS,implementation,implementation
+HkE0Nvqlg,2017,B,FORWARD/BACKWARD THROUGH THE INSIDE-OUTSIDE ALGORITHM,algorithm,algorithm
+SJMGPrcle,2017,B,NETWORK ARCHITECTURE AND TRAINING,implementation,implementation
+HyEeMu_xx,2017,B,NETWORK ARCHITECTURES ON VISUAL GENOME,implementation,implementation
+S1JG13oee,2017,A,CIFAR-10 DATASET,data_benchmarks,data_benchmarks
+H1q-TM-AW,2018,D,INSTANCE NORMALIZATION FOR DOMAIN ADAPTATION,other_prose,topic_only
+SkZxCk-0Z,2018,A,THE DATASET,data_benchmarks,data_benchmarks
+B12Js_yRb,2018,B,BASELINE ARCHITECTURE,data_benchmarks,implementation
+H1eJxngCW,2018,A,EXAMPLES,examples_prompts,examples_prompts
+H1q-TM-AW,2018,F,NON-VISUAL DOMAIN ADAPTATION TASK,data_benchmarks,data_benchmarks
+HyZoi-WRb,2018,D,Proposition 5 (Bias of L̂ D,proofs_theory,proofs_theory
+B1NOXfWR-,2018,F,DETAILS OF TASK GENERATION,data_benchmarks,data_benchmarks
+SyjsLqxR-,2018,C,SHAREDNESS RATIO,other_tables_figures,topic_only
+BJij4yg0Z,2018,A,BAYESIAN POSTERIOR SAMPLING AND LANGEVIN DYNAMICS,other_math,topic_only
+r1HhRfWRZ,2018,A,DERIVING THE R ÉNYI ENTROPY OF A MIXTURE OF GAUSSIANS,other_math,proofs_theory
+Skj8Kag0Z,2018,A,DETAILED DERIVATION OF THE HARMONIC OSCILLATOR EQUATION,proofs_theory,proofs_theory
+H1VGkIxRZ,2018,H,ADDITIONAL DISCUSSIONS,limitations_discussion,limitations_discussion
+B1nZ1weCZ,2018,F,DEMONSTRATIVE VISUALIZATION OF OUR METHODS,examples_prompts,examples_prompts
+Sy21R9JAW,2018,A,PROOF OF PROPOSITIONS,proofs_theory,proofs_theory
+ryxxCiRqYX,2019,H,PROOF OF PROPOSITION 2,proofs_theory,proofs_theory
+rJG8asRqKX,2019,A,HYPER-PARAMETER OPTIMIZATION,implementation,implementation
+HyNbtiR9YX,2019,I,PROOF SKETCH: DERIVATION OF OUR EMBEDDING,proofs_theory,proofs_theory
+HJlLKjR9FQ,2019,C,PROOF OF RESULTS,proofs_theory,proofs_theory
+rkl42iA5t7,2019,A,SIMPLECNN ARCHITECTURE,implementation,implementation
+ByMVTsR5KQ,2019,E,TRAINING HYPERPARAMETERS,implementation,implementation
+H1xAH2RqK7,2019,D,GAPF FOR GAUSSIAN MIXTURE MODELS,other_math,topic_only
+Bylmkh05KX,2019,A,DERIVATION OF THE MAP ESTIMATE FOR THE SEGMENTATION,proofs_theory,proofs_theory
+H1gL-2A9Ym,2019,E,F1 SCORE,other_tables_figures,additional_results
+rkGcYi09Km,2019,A,APPENDIX 1 : ADDITIONAL DETAILS AND EXAMPLES,examples_prompts,examples_prompts
+HyNA5iRcFQ,2019,D,PERFORMANCE ANALYSIS FOR GIBSS-ENUM ALGORITHM,algorithm,additional_results
+r1zOg309tX,2019,E,ON THE IMPLEMENTATION OF K-LIPSCHITZ FOR GANS,implementation,implementation
+SyxaYsAqY7,2019,C,PROOF OF THEOREM 2,proofs_theory,proofs_theory
+SkxxIs0qY7,2019,A,DETAILED DERIVATION OF THE ALGORITHM,proofs_theory,proofs_theory
+B1xgWpEKvH,2020,B,SAMPLING PIPELINE,other_prose,topic_only
+Skx5ua4twS,2020,A,APPENDIX,container,container
+rJgzzJHtDB,2020,A,LEARNING DETAILS OF RDI-NETS,implementation,implementation
+SJgdpxHFvH,2020,C,FP-K EXPERIMENTAL DETAILS,implementation,implementation
+HJxDugSFDB,2020,C,TRAINING AND EVALUATION DETAILS,implementation,implementation
+HJlU-AVtvS,2020,I,OMITTED PROOFS,proofs_theory,proofs_theory
+ByePEC4KDS,2020,A,APPENDIX: IMPLEMENTATION DETAILS,implementation,implementation
+rylVTTVtvH,2020,D,ADDITIONAL RESULTS AND PROOFS,proofs_theory,proofs_theory
+Sye57xStvB,2020,C,ABLATIONS FOR NGU(N=32),ablation,ablation
+r1l7E1HFPH,2020,A,DQN IMPLEMENTATION OF κ-PI AND κ-VI,implementation,implementation
+B1eXvyHKwS,2020,B,ORDER OF NORM,other_math,topic_only
+rJxbJeHFPS,2020,G,EXPERIMENTS: DATA AND TRAINING DETAILS,data_benchmarks,data_benchmarks
+BylWYC4KwH,2020,A,PROOF,proofs_theory,proofs_theory
+HklJdaNYPH,2020,A,ATTENTION MAPS,other_prose,examples_prompts
+H8hgu4XsTXi,2021,G,COMPARISON TO INVERSE PROBABILITY WEIGHTED ESTIMATOR,additional_results,additional_results
+0LlujmaN0R_,2021,B,COMPLEXITY ANALYSIS,proofs_theory,proofs_theory
+BIIwfP55pp,2021,A,APPENDIX,container,container
+aLtty4sUo0o,2021,D,PROOFS OF TECHNICAL RESULTS,proofs_theory,proofs_theory
+jPSYH47QSZL,2021,D,ANALYSIS ON THE EFFECTS OF OCCO PRE-TRAINING DATASETS,data_benchmarks,ablation
+L2LEB4vd9Qw,2021,D,Table 8: Analogies. We demonstrate lin-,other_tables_figures,not_a_heading
+P6_q1BRxY8Q,2021,B,GENERALIZATION ERROR BOUND OF THE DECENTRALIZED CBF,proofs_theory,proofs_theory
+OGg9XnKxFAH,2021,D,ADDITIONAL IMAGENET OOD RESULTS,additional_results,additional_results
+q_S44KLQ_Aa,2021,B,COMPARISON OF WALL CLOCK RUNTIMES,implementation,implementation
+UFGEelJkLu5,2021,B,VARIANCE ANALYSIS,additional_results,additional_results
+wU1yJ-n4et,2021,A,APPENDIX,container,container
+dpuLRRQ7zC,2021,B,ALGORITHMS,algorithm,algorithm
+OEgDatKuz2O,2021,A,APPENDIX,container,container
+zdrls6LIX4W,2021,A,DERIVATION OF META-MULTIAGENT POLICY GRADIENT THEOREM,proofs_theory,proofs_theory
+P7FLfMLTSEX,2022,A,A PRIMER ON POLYNOMIAL NEURAL NETWORKS (Π-NETS ),other_math,background_notation
+Jt8FYFnyTLR,2022,B,ADDITIONAL DETAILS ON DEVIATION MAXIMIZATION FOR SPECIFIC,implementation,implementation
+o9DnX55PEAo,2022,B,DISCUSSION OF HYPERPARAMETERS AND LOSS FUNCTIONS FOR,limitations_discussion,implementation
+hl9ePdHO4_s,2022,A,FURTHER EXPERIMENT DETAILS,implementation,implementation
+q58E59ZPLp,2022,B,VAES ARCHITECTURE ON MNIST AND CIFAR-10 EXPERIMENTS,implementation,implementation
+mk0HzdqY7i1,2022,D,DETAILS ON USING GUROBI AS A M(W)IS SOLVER,implementation,implementation
+GUrhfTuf_3,2022,D,ERRATUM,other_prose,topic_only
+aBsCjcPu_tE,2022,E,EXTRA EXPERIMENTAL RESULTS,additional_results,additional_results
+f3QTgKQW0TD,2022,A,EXPERIMENT,additional_results,additional_results
+hkXZKTAH5g-,2022,C,EXPERIMENT,additional_results,additional_results
+wqD6TfbYkrn,2022,B,EXPERIMENT,additional_results,additional_results
+PVJ6j87gOHz,2022,F,FURTHER USE CASES,additional_results,additional_results
+zrW-LVXj2k1,2022,H,COMPETITIVENESS FOR PARETO REGRESSION,other_math,topic_only
+qnQN4yr6FJz,2022,C,DATASETS,data_benchmarks,data_benchmarks
+zAxuIJLb38,2023,F,MORE EXAMPLES OF PERFORMING EXTRACTION ATTACKS,examples_prompts,examples_prompts
+SDHSQuBpf2,2023,E,NUMERICAL RESULTS,additional_results,additional_results
+OXP9Ns0gnIq,2023,J,MISCELLANEOUS TOPICS,other_math,topic_only
+9-umxtNPx5E,2023,A,MORE ABLATIONS,ablation,ablation
+dGzgbdQbgwm,2023,D,LEARNING ON SIMULATED CROWDSOURCED DATASETS,data_benchmarks,data_benchmarks
+NVZvalzCLg,2023,D,COMPARISON OF MODEL COMPRESSION WITH ENTROPY CODING AND,additional_results,additional_results
+zYWtq_HUCoi,2023,E,TIMINGS,other_tables_figures,implementation
+b9tUk-f_aG,2023,G,ADDITIONAL EXAMPLES,examples_prompts,examples_prompts
+AGLG_ncNp0X,2023,C,MORE FUTURE WORKS,limitations_discussion,limitations_discussion
+ZLvwIqjMJtO,2023,J,TRAINING DETAILS,implementation,implementation
+uyqks-LILZX,2023,C,CACM ALGORITHM,algorithm,algorithm
+fxjzKOdw9wb,2023,A,IMPLEMENTATION DETAILS,implementation,implementation
+LIV7-_7pYPl,2023,C,DETAILS ON SKILL MODEL TRAINING AND PLANNING,implementation,implementation
+OE4uriQtuDJ,2023,F,FULL MULTI-VIEW EXPERIMENTAL RESULTS,additional_results,additional_results
+Howb7fXB4V,2024,E,INFERENCE LATENCY,other_prose,implementation
+BdPvGRvoBC,2024,A,Technicalities,other_math,proofs_theory
+Jk6gGj0kQm,2024,A,APPENDIX,container,container
+zSxpnKh1yS,2024,I,EMPIRICAL VALIDATION,other_prose,additional_results
+qDdSRaOiyb,2024,A,REGULARIZATION TERM,other_prose,topic_only
+SkF7NZGVr5,2024,C,ADDITIONAL RESULTS,additional_results,additional_results
+Bpcgcr8E8Z,2024,B,ANALYTICAL SOLUTION OF CONDITIONAL PROBABILITY CURVATURE,other_math,proofs_theory
+U6Mb3CRuj8,2024,G,EFFECTNESS OF TADA ON VARIOUS DATASETS,data_benchmarks,additional_results
+wMWZ78ulsK,2024,B,OVERFITTING WITHOUT REGULARIZATION,other_prose,topic_only
+HrRKc9ei7h,2024,F,EFFECT OF ADDING AN ALWAYS ACTIVE EXPERT OR NOT ON OUR,ablation,ablation
+XkLMGx60aZ,2024,C,MEAN RADIANT TEMPERATURE MODELING WITH SOLWEIG,other_prose,topic_only
+kB4yBiNmXX,2024,J,ARCHITECTURE DETAILS,implementation,implementation
+7AB077M4TY,2024,A,Appendix,container,container
+9m02ib92Wz,2024,C,EXISTING METHODS,other_math,related_work
+G5sPv4KSjR,2025,B,DISCUSSION ON SINGLE-LOOP ALGORITHM,limitations_discussion,limitations_discussion
+7xCSK9BLPy,2025,C,PROMETHEUS SCORING RUBRICS,other_prose,data_benchmarks
+1KvYxcAihR,2025,F,ABOUT COMPLEX FORM GAME,other_prose,topic_only
+9nUBh4V6SA,2025,A,ADDITIONAL REMARKS,additional_results,limitations_discussion
+7MYu2xO4pp,2025,D,OOD DETECTION,other_tables_figures,topic_only
+KNkalZnq3f,2025,A,MULTI-DOCUMENT REASONING SKILLS DEMONSTRATIONS,examples_prompts,examples_prompts
+OclHGmt2ZM,2025,C,MORE EVALUATION,additional_results,additional_results
+B8aHIDSi7E,2025,C,COMPARED WITH UNIVERSAL SOURCE CODING,other_prose,additional_results
+0sary0UZn5,2025,C,FURTHER DETAILS OF ABLATION STUDIES,ablation,ablation
+EbOhZyxIzQ,2025,J,ADDITIONAL EXPERIMENTS,additional_results,additional_results
+KX5hd1RhYP,2025,B,ADDITIONAL ABLATION STUDIES,ablation,ablation
+IULlNTZZel,2025,A,EXTENDED DISCUSSION OF RELATED WORK,related_work,related_work
+OCpxDSn0G4,2025,D,RESOLUTION-REDUCED SEQUENTIAL OPTIMIZATION,other_tables_figures,topic_only
+ORxjH9kTp8,2025,D,CASE STUDIES,examples_prompts,examples_prompts
+0OxJ4mzaHB,2026,A,GLOSSARY,background_notation,background_notation
+8LAc5kzjhz,2026,C,SPATIAL-CAPTCHA: INVARIANT-SPECIFIED TASK MANIFESTS AND,data_benchmarks,data_benchmarks
+0A2rXt5SAy,2026,C,MATHEMATICAL MODELS,proofs_theory,background_notation
+Ccflf8sqjF,2026,C,PROOFS FOR SECTION 4.1,proofs_theory,proofs_theory
+9u375F60RU,2026,A,APPENDIX,container,container
+EdkQ14FiiO,2026,A,RELATED WORK,related_work,related_work
+9cFT6u82uh,2026,F,EXAMPLES,examples_prompts,examples_prompts
+8QdA8mUfYF,2026,C,More Experimental Results,additional_results,additional_results
+EUu8TILWpR,2026,B,PROOF OF THEOREM 4.1,proofs_theory,proofs_theory
+3IaP48VUes,2026,D,MORE EXPERIMENTAL RESULTS OF TTS,additional_results,additional_results
+BPVPOtzoOz,2026,A,EXTEND NETARENA TO NEW APPLICATIONS,other_tables_figures,topic_only
+40TvCwYSau,2026,E,MORE EXPERIMENTS,additional_results,additional_results
+4vbGn46Bg5,2026,A,ALGORITHM,algorithm,algorithm
+3YKeB9R1g9,2026,C,CELERITY MODELS: FURTHER DETAILS,implementation,implementation
+2uR5iWYYSG,2027,E,PHYSICAL EGO OCCUPANCY,other_prose,topic_only
+Ud1hAtc3Og,2027,G,FAILURE-MODE ANALYSIS,additional_results,additional_results
+9pUhrLwSYh,2027,B,EXPERIMENTAL DETAILS,implementation,implementation
+ZiN944dXz2,2027,A,LIMITATIONS AND BROADER IMPACTS,statement,limitations_discussion
+s4POLYW1P7,2027,D,ADDITIONAL ABLATION STUDIES,ablation,ablation
+1QjSmJ1dVO,2027,D,DOWNSTREAM APPLICATIONS,other_tables_figures,topic_only
+kCmgJGFCWb,2027,G,ADDITIONAL ANALYSES,additional_results,additional_results
+tymz0c9DV6,2027,H,EXTENDED DISCUSSION,limitations_discussion,limitations_discussion
+o0lMKg1IfB,2027,A,REASONING PATHS AT AN EARLY TOKEN FORK,other_prose,topic_only
+Dz5eZ0Kjjg,2027,C,"MODELS, SCORING, AND INTERNAL LOCATIONS",other_prose,topic_only
+aqVMf1SyfA,2027,C,RELATED WORK,related_work,related_work
+85mwmrCJlA,2027,B,ADDITIONAL ANALYSIS,additional_results,additional_results
+yWvpR5Olu0,2027,B,HOLDOUT EVALUATION AND BIOLOGICAL INTERPRETATION,additional_results,additional_results
+d6oWhbOVL0,2027,G,PROMPTS,examples_prompts,examples_prompts

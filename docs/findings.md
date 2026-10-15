@@ -184,6 +184,37 @@ rarely co-occur (finding 3); it holds within submission versions; resubmitted pa
 (finding 3). Not yet split: by research area beyond LLM/non-LLM, by paper length, or by first-time vs
 returning authors (author identities are anonymous in 2027).
 
+## Appendix growth (Lane A, 2026-10-15)
+
+_Full write-up: [`docs/appendix-growth.md`](appendix-growth.md); tables `results/appendix/`. Descriptive._
+
+**Fact.** The growth of ICLR papers is appendix growth. Median PDF length went from 13 pages (2017) to 24
+(2027); the main body stayed at 8.5–10 pages and ~4,300–5,100 prose tokens, tracking the page limit; the
+reference list grew by about half a page; the appendix went from 1.5 to 12 pages (median 372 → 4,151
+tokens, P25 0 → 2,195). The appendix accounts for more than all of the growth in mean prose per paper,
+because main-body prose fell slightly. It holds within submissions only (137 → 4,158 tokens), within 305
+resubmitted papers (appendix +20%, main body +0.7% per resubmission), and in NeurIPS, TMLR, COLM and CoRL
+wherever appendices are inside the PDF. Growth is broad, not driven by a few huge papers: the top decile's
+share of appendix tokens fell from 41% to 32%.
+
+**Fact.** In ICLR, ≥ 97% of post-reference text is appendix (63 hand-checked papers; bibliography residue
+0.3–1.5%, statements ≤ 1.2% of characters). The earlier study's "text after the references" share
+(7.4% → 47.2%) is a good proxy for ICLR, but not for NeurIPS 2021–22, where it is mostly the paper
+checklist.
+
+**Fact.** Every kind of appendix material grew, roughly in proportion: implementation/experimental details
+and additional results are a third of the growth, proofs a tenth; examples/prompts doubled in 2024;
+extended related work and limitations moved into appendices from ~2020 (heading rules agree with hand
+labels on 85% of 154 headings).
+
+**Fact.** Growth compounds at ~18% a year after a fast 2017–19 start, with the largest jump in 2026→2027
+(+65% in submissions). Page-limit changes explain main-body length but not ICLR appendix growth: ICLR has
+allowed unlimited same-PDF appendices since 2017, and TMLR, which has no page limit, also grows.
+
+**Hypotheses (untested).** Reviewer expectations (camera-ready appendices are ~2× the same year's
+submissions); cheaper production of supplementary material; and for 2027 a changed submitter population
+(the cohort doubled). Main-body prose per page fell 7–9% in 2026–27 at an unchanged page count; open.
+
 ## Limitations
 
 - Observational; no claims about authorship of any paper. Papers are not verified human-only text.

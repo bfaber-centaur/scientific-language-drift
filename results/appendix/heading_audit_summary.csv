@@ -1,0 +1,16 @@
+class,n_manual,n_rule,agreement,precision,recall
+ALL,154,154,0.851,,
+ablation,7,6,,1,0.857
+additional_results,29,24,,0.958,0.793
+algorithm,4,5,,0.8,1
+background_notation,3,1,,1,0.333
+container,7,7,,1,1
+data_benchmarks,10,11,,0.727,0.8
+examples_prompts,11,10,,1,0.909
+implementation,28,24,,1,0.857
+limitations_discussion,6,5,,0.8,0.667
+not_a_heading,1,0,,0,0
+proofs_theory,24,22,,0.955,0.875
+related_work,4,3,,1,0.75
+statement,0,1,,0,0
+topic_only,20,35,,0.571,1

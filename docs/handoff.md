@@ -56,6 +56,16 @@ Work happens in the project's research thread ("N-gram study, continued"), which
 copy at `/mnt/project-files/ml-ngrams` (branch `main`, tracking this repository). Nothing is running
 now; remaining work is the next steps below (P3, comparison with AI-generated prose, is still out of scope).
 
+### Lane A: appendix growth (2026-10-15, done through Gate 1)
+
+`docs/appendix-growth.md`; `scripts/appendix_scan.py` → `scripts/appendix_analyze.py`
+(+ `appendix_checks.py`); tables and figures in `results/appendix/`. Result: the growth is appendix growth
+(main body flat at ~9 pages, appendix 1.5 → 12 pages), broad across papers, in every kind of appendix
+material, within submissions and resubmissions, and in other venues. Hand audits: 63 post-reference
+regions, 154 headings. Open: the 2026–27 drop in main-body prose per page; separating the 2027 appendix
+jump from the doubled submitter cohort; a version check for non-ICLR venues. The per-paper scan
+(`data/appendix/`, ~45 min) is git-ignored.
+
 ## Blockers and risks
 
 - The dataset keeps growing. Never move the revision pin without rerunning recon and updating
