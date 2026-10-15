@@ -152,7 +152,10 @@ validation, and a human spot check of about 30 labels is the cheapest remaining 
 | test2 (150) | 0.960 | 0.96–1.00 (`agreement_test2.csv`) |
 | Lane D reviewer vs coder 1, 30 items per set | 27/30 (test), 29/30 (test2) | `results/review/blind_labels_laneb_test*.csv` |
 
-The Lane D labels are the only ones produced outside this lane's sessions.
+The Lane D labels are the only ones produced outside this lane's sessions. Coder 2 matched coder 1 on 177/180 test items, and on all three items where the reviewer
+differed it made coder 1's choice. That looks like two runs of the same model rather than
+independent coders. Treat 96–98% as an upper bound, and the reviewer's 90% (27/30) and 97% (29/30)
+as the estimate of label noise.
 
 **Classifier.** `mlngrams.disclosure_classify` is rule-based and works at clause level. It is
 negation-aware: negation must be tied to a use verb, relative-clause and parenthetical negations are
@@ -232,4 +235,4 @@ Near-copies are common (4,566 papers in clusters), and most of them carry no tem
 | 2026-10-15 | Lane D review, B2 | §2: "template" share noted to include affirmed task names; not separated. |
 | 2026-10-15 | Lane D review, D2 / B4 | §6: misclassification of the drafting group given as a range (1 in 7 to 1 in 4), with the stratification caveat. |
 | 2026-10-15 | Lane D review, D3 | §3: "multiple submissions by the same authors" marked as inferred. |
-| 2026-10-15 | Lane D review, D4 | §6: the reviewer's cross-context label agreement added. |
+| 2026-10-15 | Lane D review, D4 | §6: the reviewer's cross-context label agreement added; coder 1/coder 2 agreement presented as an upper bound. |
