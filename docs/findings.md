@@ -187,17 +187,21 @@ Drafting papers also use the stereotyped "AI words" (delve, showcasing, ...) *le
 per 10k tokens), use shorter words, more function words, more varied vocabulary and fewer repeated
 4-grams. Adjusted standardized differences range from 0.07 to 0.41.
 
-**Interpretation (tentative).** The 2027 break in §3 is concentrated in, but not confined to, papers
-whose authors report AI drafting help. The polish-only group stays closest to the 2023–2026
-register, yet it too has far fewer novelty formulas than earlier years. This is self-report and
-association. It does not show that AI drafting produced the register.
+**Interpretation (tentative).** The 2027 break in §3 runs through every disclosure group, including
+the 253 papers that declare no AI use ("a novel": 54% in 2026, then 12–22% in polish-only and none
+papers in 2027; Lane D, `docs/v1.5-review.md` L1). Within that field-wide shift, papers reporting AI
+drafting help sit furthest along. This is self-report and association. It does not show that AI
+drafting produced the register.
 
 **Alternatives.**
 1. Who the authors are: polish-only is the typical disclosure of second-language writers, whose
    academic English leans on formulas such as "extensive experiments demonstrate the effectiveness".
-2. When the text was written: among the 48 matched 2026→2027 resubmissions, polish-only is over-
-   represented (23% vs 14%) and drafting under-represented (15% vs 30%).
-3. Residual topic confounding, since 40 clusters are coarse.
+2. When the text was written: among the 48 matched 2026→2027 resubmissions, polish-only is 11/48
+   (CI 13–37%, against a 14% base rate) and drafting 7/48 (CI 7–27%, against 30%). This is
+   anecdotal.
+3. The "AI words" list describes 2023–24 model output. If current models write in the 2027
+   register, fewer old AI words in drafting papers is the expected result.
+4. Residual topic confounding, since 40 clusters are coarse.
 
 **Tests.**
 1. Repeat with camera-ready versions, which carry affiliations.

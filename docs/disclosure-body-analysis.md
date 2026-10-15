@@ -36,7 +36,7 @@ python3 scripts/disclosures/lane_c_analysis.py    # contrasts, controls, overlap
   p-values come from 2,000 within-stratum label permutations, which also serve as the
   shuffled-label negative control. BH correction is applied per contrast.
 
-## Result 1: drafting-disclosure papers are written in the "2027 register", polish-only papers are not
+## Result 1: drafting-disclosure papers carry more of the 2027 register than polish-only papers
 
 Primary contrast, drafting vs polish_only (`results/disclosures/lane_c_contrasts.csv`,
 `fig_lane_c_heatmap.png`). Raw means are shown, with topic- and length-adjusted d and 95% CI:
@@ -76,12 +76,19 @@ Primary contrast, drafting vs polish_only (`results/disclosures/lane_c_contrasts
   between the two groups, so they attenuate the contrasts rather than create them. Check C2 below
   gives the corrected range.
 
-**The direction is the opposite of the "AI words" intuition.** Papers whose authors report AI
-*drafting* use the stereotyped AI vocabulary *less*. They also use fewer novelty formulas, shorter
-words, more function words, more varied vocabulary and fewer repeated bundles. Polish-only papers
-look like the 2023–2026 ICLR register. Drafting papers carry the 2027 break described in
-`docs/findings.md` §3: "we propose" at 40% against 80% in 2023–2026, and "test whether" at 26%
-against 2–5%.
+**A gradient within a field-wide shift.** Papers whose authors report AI *drafting* use the
+2023–24 stereotyped AI vocabulary *less*. They also use fewer novelty formulas, shorter words, more
+function words, more varied vocabulary and fewer repeated bundles.
+
+The 2027 break described in `docs/findings.md` §3 is present in *every* group, including the 253
+papers that declare no AI use. Lane D's recount (`docs/v1.5-review.md`, L1) gives the share of
+papers using "a novel": 54% in ICLR 2026, then 12% for polish-only and 22% for none in 2027.
+"Held fixed" goes from 0.8% to about 10% in both groups. For "a novel", the change between years is
+about five times the gap between groups.
+
+So drafting papers carry *more* of the 2027 break, not the break itself, and the break cannot be
+attributed to disclosed drafting assistance. (An earlier version of this paragraph said polish-only
+papers "look like the 2023–2026 register"; that was wrong and is corrected per Lane D L1.)
 
 ### Exploratory word scan
 
@@ -139,12 +146,18 @@ effectiveness") is a documented register of such writing. Drafting-assistance pa
 agentic, verification-heavy workflows. This alternative could not be tested directly, because 2027
 submissions are anonymous.
 
-**When.** Among the 48 matched 2026→2027 resubmissions, whose text was largely written in 2026:
-- polish_only is over-represented: 23% vs 14% in 2027 overall;
-- drafting is under-represented: 15% vs 30%
-(`results/disclosures/lane_c_resubmission_groups.csv`). Papers written before the 2027 cohort carry
-the older register and tend to report polishing only. This is a small sample, but it points the
-same way.
+**When (anecdotal).** Among the 48 matched 2026→2027 resubmissions, whose text was largely
+written in 2026:
+- polish_only is 11/48 (23%, 95% CI 13–37%) against 14% in 2027 overall;
+- drafting is 7/48 (15%, CI 7–27%) against 30%.
+
+(`results/disclosures/lane_c_resubmission_groups.csv`.) Both intervals nearly or fully include the
+base rates, so this is suggestive at most (Lane D L3).
+
+**The stereotype list may simply be outdated (Lane D L2).** Delve, intricate, showcasing and the
+like mark 2023–24 model output. If the 2027 register is the register of *current* models, then
+drafting papers using fewer of the old words is the expected result, not a reversal. These data
+cannot separate this from the population explanation above.
 
 **What would separate the explanations:**
 - repeat the contrast within de-anonymized camera-ready versions with author affiliations;
@@ -181,3 +194,12 @@ Gate 3 verdict (c) come from `docs/v1.5-review.md`. Nothing changed the conclusi
 - **Removal quality.** Section and disclosure removal are imperfect: 1,133 disclosures were cut by
   this lane, and more text could remain.
 - **Multiple comparisons.** The scan's 3,167 hits are not independent findings.
+
+## Corrections log
+
+| date | source | change |
+|---|---|---|
+| 2026-10-15 | Lane D C1–C4, Gate 3 (c) | Checks added (section above); conclusions unchanged. |
+| 2026-10-15 | Lane D L1 | Result 1 retitled and reworded: the 2027 break is present in every group, including declared non-users; drafting papers carry more of it. The claim "polish-only looks like 2023–2026" is withdrawn. |
+| 2026-10-15 | Lane D L2 | Added the outdated-stereotype-list alternative. |
+| 2026-10-15 | Lane D L3 | Resubmission evidence now given with Wilson intervals and marked anecdotal. |
