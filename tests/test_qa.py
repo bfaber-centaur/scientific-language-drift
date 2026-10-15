@@ -17,6 +17,7 @@ import pytest
 from mlngrams.count import GroupAccumulator, doc_counts
 from mlngrams.filters import is_content
 from mlngrams.tokenize import tokenize
+from mlngrams.load import REVISION, sha256_file
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -111,9 +112,12 @@ def _write_cache(tmp_path):
         }
 
     rows = [row("A", DOC_A), row("B", DOC_B), row("C", DOC_A), row("D", "   "), row("E", DOC_E)]
-    d = tmp_path / "cache" / "omissions"
+    # Revision-keyed cache layout with its hash sidecar (mlngrams.load.fetch).
+    d = tmp_path / "cache" / REVISION / "omissions"
     d.mkdir(parents=True)
-    pd.DataFrame(rows).to_parquet(d / "iclr-9999.parquet", index=False)
+    f = d / "iclr-9999.parquet"
+    pd.DataFrame(rows).to_parquet(f, index=False)
+    (d / "iclr-9999.parquet.sha256").write_text(f"{sha256_file(str(f))} {f.stat().st_size}\n")
     return tmp_path / "cache"
 
 

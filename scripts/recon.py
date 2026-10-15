@@ -40,7 +40,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 import pandas as pd  # noqa: E402
 import pyarrow.parquet as pq  # noqa: E402
 
-from mlngrams.load import CACHE_DIR, REVISION, fetch, file_name, text_hash  # noqa: E402
+from mlngrams.load import REVISION, cache_path, fetch, resolve_revision, text_hash  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 ICLR_YEARS = [2013, 2014] + list(range(2017, 2028))
@@ -148,7 +148,7 @@ def scan_omissions(venue: str, year: int, keep_keys: bool):
 
 def scan_direct(venue: str, year: int, allow_fetch: bool):
     """Header/version signals from the raw text layer. Returns {pdf_sha256: dict} or None."""
-    path = os.path.join(CACHE_DIR, "direct", file_name(venue, year))
+    path = cache_path("direct", venue, year, resolve_revision(REVISION))
     if not os.path.exists(path):
         if not allow_fetch:
             return None

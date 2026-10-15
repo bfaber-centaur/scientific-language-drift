@@ -93,6 +93,22 @@ Open:
   whether to bump to v3 and rerun.
 - Test the authorship-population alternative on camera-ready versions.
 
+### V2 Agent A: corpus inventory and provenance (2026-10-15, Gate 0 done)
+
+**Doc:** `docs/v2-corpus-inventory.md`. **Scripts:** `scripts/v2/` (collect_metadata, version_mix,
+corpus_diff, inventory_extras, plot_inventory). **Tables:** `results/v2/inventory/`.
+
+- V2 pin `2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27` (`mlngrams.load.V2_REVISION`). The default
+  `REVISION` stays the V1 pin, so V1 scripts reproduce V1.
+- The update only adds records: all 93,249 V1 records are byte-identical in V2, and 52,128 were added.
+  `results/v2/inventory/membership.csv.gz` says which records were in V1.
+- Cache is now revision-keyed and hash-verified (`src/mlngrams/load.py`, `tests/test_cache.py`). Old
+  caches in `~/.cache/mlngrams/<config>/` are ignored, so the first V2 run re-downloads.
+- Stratify every V2 venue by version (`data/v2/version/`, `version_mix.csv`). V1's non-ICLR samples were
+  accepted papers only.
+- Open: Gate 1 report (`docs/v2-corpus-diff.md`); hand audit of the header-based version labels;
+  TMLR year semantics.
+
 ## Blockers and risks
 
 - The dataset keeps growing. Never move the revision pin without rerunning recon and updating
