@@ -1,5 +1,6 @@
 stratum,year,measure,n,mean,p10,p25,p50,p75,p90
 all,2017,main_tokens,486,4763,3546,4072,4612,5284,6004
+all,2017,main_tokens_with_statements,486,4788,3570,4088,4623,5336,6049
 all,2017,appx_tokens,486,772.2,0,0,371.5,1203,2078
 all,2017,total_tokens,486,5535,3692,4405,5259,6284,7557
 all,2017,raw_body_tokens,486,4793,3570,4088,4623,5336,6049
@@ -22,6 +23,7 @@ all,2017,body_equations,486,12.59,2,5,11,17,25.5
 all,2017,post_equations,486,7.298,0,0,0,5,20
 all,2017,post_n_sections,486,1.23,0,0,0,2,4
 all,2018,main_tokens,983,4813,3626,4172,4712,5406,6055
+all,2018,main_tokens_with_statements,983,4824,3626,4186,4721,5422,6077
 all,2018,appx_tokens,983,1049,0,0,573,1519,2564
 all,2018,total_tokens,983,5862,3789,4526,5484,6717,8029
 all,2018,raw_body_tokens,983,4827,3626,4186,4722,5426,6085
@@ -44,6 +46,7 @@ all,2018,body_equations,983,14.26,2,5,11,19,29.8
 all,2018,post_equations,983,14.16,0,0,0,12,40
 all,2018,post_n_sections,983,1.655,0,0,1,3,5
 all,2019,main_tokens,1549,4777,3769,4197,4678,5249,5826
+all,2019,main_tokens_with_statements,1549,4787,3774,4201,4689,5264,5849
 all,2019,appx_tokens,1549,1445,0,236,943,2014,3479
 all,2019,total_tokens,1549,6222,4067,4719,5762,7128,8790
 all,2019,raw_body_tokens,1549,4787,3774,4201,4689,5264,5849
@@ -66,6 +69,7 @@ all,2019,body_equations,1549,14.01,2,6,11,19,28.2
 all,2019,post_equations,1549,19.78,0,0,2,17,55.2
 all,2019,post_n_sections,1549,2.23,0,0,1,4,6
 all,2020,main_tokens,2545,4724,3761,4161,4647,5216,5715
+all,2020,main_tokens_with_statements,2545,4733,3765,4174,4660,5221,5724
 all,2020,appx_tokens,2545,1627,0,415,1122,2195,3815
 all,2020,total_tokens,2545,6351,4106,4799,5855,7275,9192
 all,2020,raw_body_tokens,2545,4736,3770,4175,4661,5222,5727
@@ -88,6 +92,7 @@ all,2020,body_equations,2545,14.1,2,6,12,19,29
 all,2020,post_equations,2545,22.23,0,0,3,20,65
 all,2020,post_n_sections,2545,2.524,0,1,2,4,6
 all,2021,main_tokens,2965,4754,3894,4288,4719,5144,5568
+all,2021,main_tokens_with_statements,2965,4764,3895,4295,4728,5157,5585
 all,2021,appx_tokens,2965,2148,0,449,1527,2853,4820
 all,2021,total_tokens,2965,6902,4248,5008,6240,7881,1.01e+04
 all,2021,raw_body_tokens,2965,4766,3896,4295,4729,5158,5587
@@ -110,6 +115,7 @@ all,2021,body_equations,2965,14.15,2,6,12,19,28
 all,2021,post_equations,2965,27.93,0,0,4,24,75.6
 all,2021,post_n_sections,2965,2.788,0,1,2,4,7
 all,2022,main_tokens,3362,4986,4181,4562,4967,5382,5739
+all,2022,main_tokens_with_statements,3362,5038,4202,4591,5019,5443,5830
 all,2022,appx_tokens,3362,2488,0,637.2,1820,3547,5557
 all,2022,total_tokens,3362,7475,4638,5407,6812,8772,1.103e+04
 all,2022,raw_body_tokens,3362,5044,4202,4591,5020,5444,5834
@@ -132,6 +138,7 @@ all,2022,body_equations,3362,15.38,2,6,13,21,31
 all,2022,post_equations,3362,33.44,0,0,6,31,96.9
 all,2022,post_n_sections,3362,3.013,0,1,2,5,7
 all,2023,main_tokens,4820,4954,4201,4548,4932,5306,5685
+all,2023,main_tokens_with_statements,4820,4989,4221,4578,4964,5362,5733
 all,2023,appx_tokens,4820,2552,0,665.5,1846,3532,5747
 all,2023,total_tokens,4820,7506,4670,5448,6782,8674,1.121e+04
 all,2023,raw_body_tokens,4820,4990,4221,4578,4964,5362,5733
@@ -154,6 +161,7 @@ all,2023,body_equations,4820,14.78,2,6,12,20,31
 all,2023,post_equations,4820,33.18,0,0,5,29,91
 all,2023,post_n_sections,4820,3.206,0,1,2,5,7
 all,2024,main_tokens,6145,4881,4131,4476,4823,5227,5616
+all,2024,main_tokens_with_statements,6145,4910,4147,4499,4855,5262,5659
 all,2024,appx_tokens,6145,2773,0,682,2045,3869,6233
 all,2024,total_tokens,6145,7654,4609,5424,6841,8938,1.152e+04
 all,2024,raw_body_tokens,6145,4910,4147,4499,4855,5262,5659
@@ -176,6 +184,7 @@ all,2024,body_equations,6145,13.65,1,5,11,19,29
 all,2024,post_equations,6145,30.28,0,0,3,24,84
 all,2024,post_n_sections,6145,3.355,0,1,3,5,8
 all,2025,main_tokens,4781,5134,4263,4677,5090,5551,5986
+all,2025,main_tokens_with_statements,4781,5164,4274,4693,5119,5584,6027
 all,2025,appx_tokens,4781,3134,39,1049,2354,4240,6613
 all,2025,total_tokens,4781,8268,4867,5923,7509,9622,1.225e+04
 all,2025,raw_body_tokens,4781,5168,4274,4693,5119,5584,6028
@@ -198,6 +207,7 @@ all,2025,body_equations,4781,13.61,0,4,10,19,30
 all,2025,post_equations,4781,31.19,0,0,4,24,85
 all,2025,post_n_sections,4781,3.201,0,1,2,5,7
 all,2026,main_tokens,5160,4666,3862,4216,4622,5059,5491
+all,2026,main_tokens_with_statements,5160,4736,3906,4273,4696,5141,5587
 all,2026,appx_tokens,5160,3821,433,1463,2961,5072,7846
 all,2026,total_tokens,5160,8487,4748,5899,7636,9976,1.304e+04
 all,2026,raw_body_tokens,5160,4739,3907,4273,4696,5142,5587
@@ -220,6 +230,7 @@ all,2026,body_equations,5160,13.08,1,5,11,19,28
 all,2026,post_equations,5160,32.02,0,0,6,30,83
 all,2026,post_n_sections,5160,3.915,0,1,3,6,8
 all,2027,main_tokens,42323,4339,3595,3910,4289,4721,5178
+all,2027,main_tokens_with_statements,42323,4515,3725,4055,4454,4918,5408
 all,2027,appx_tokens,42323,5473,931,2195,4151,7097,1.126e+04
 all,2027,total_tokens,42323,9812,4994,6376,8467,1.16e+04,1.59e+04
 all,2027,raw_body_tokens,42323,4517,3725,4055,4454,4918,5408
@@ -242,6 +253,7 @@ all,2027,body_equations,42323,12.75,1,5,11,18,26
 all,2027,post_equations,42323,34.98,0,1,10,34,88
 all,2027,post_n_sections,42323,4.109,0,1,4,6,8
 published,2017,main_tokens,194,4922,3721,4281,4838,5530,6132
+published,2017,main_tokens_with_statements,194,4958,3775,4306,4858,5536,6167
 published,2017,appx_tokens,194,1041,0,168.8,711.5,1499,2320
 published,2017,total_tokens,194,5963,4053,4854,5613,6829,8102
 published,2017,raw_body_tokens,194,4970,3775,4306,4858,5536,6170
@@ -264,6 +276,7 @@ published,2017,body_equations,194,13.12,3,5.25,11,18,26
 published,2017,post_equations,194,10.51,0,0,0.5,8.75,26.4
 published,2017,post_n_sections,194,1.763,0,0,1,3,4
 published,2018,main_tokens,323,5218,4153,4572,5032,5742,6397
+published,2018,main_tokens_with_statements,323,5247,4190,4606,5066,5780,6428
 published,2018,appx_tokens,323,1602,0,520.5,1224,2125,3491
 published,2018,total_tokens,323,6820,4762,5430,6380,7348,9400
 published,2018,raw_body_tokens,323,5249,4190,4606,5066,5798,6428
@@ -286,6 +299,7 @@ published,2018,body_equations,323,14.62,3,6,12,19.5,27.8
 published,2018,post_equations,323,18.97,0,0,3,22,52.6
 published,2018,post_n_sections,323,2.489,0,0,2,4,6
 published,2019,main_tokens,484,5110,4160,4536,4988,5492,6050
+published,2019,main_tokens_with_statements,484,5138,4207,4557,5008,5518,6072
 published,2019,appx_tokens,484,2125,321.8,849.2,1643,2897,4282
 published,2019,total_tokens,484,7235,4862,5619,6718,8213,9755
 published,2019,raw_body_tokens,484,5138,4207,4557,5008,5518,6072
@@ -308,6 +322,7 @@ published,2019,body_equations,484,14.31,2,6,11,19,31
 published,2019,post_equations,484,29.44,0,0,7,28.25,80.4
 published,2019,post_n_sections,484,3.012,0,1,3,5,7
 published,2020,main_tokens,669,5059,4170,4543,5006,5469,5900
+published,2020,main_tokens_with_statements,669,5090,4181,4576,5032,5501,5960
 published,2020,appx_tokens,669,2340,370.4,905,1758,3032,5043
 published,2020,total_tokens,669,7400,4934,5700,6837,8496,1.061e+04
 published,2020,raw_body_tokens,669,5090,4181,4576,5032,5501,5960
@@ -330,6 +345,7 @@ published,2020,body_equations,669,15.32,3,6,12,21,32
 published,2020,post_equations,669,31.9,0,0,9,31,94.4
 published,2020,post_n_sections,669,3.271,0,1,3,5,7
 published,2021,main_tokens,845,5068,4304,4600,4949,5361,5789
+published,2021,main_tokens_with_statements,845,5103,4325,4633,4978,5400,5841
 published,2021,appx_tokens,845,3066,348.6,1170,2281,3835,6029
 published,2021,total_tokens,845,8134,5166,5955,7262,8987,1.146e+04
 published,2021,raw_body_tokens,845,5103,4325,4633,4978,5400,5841
@@ -352,6 +368,7 @@ published,2021,body_equations,845,14.09,2,6,12,20,28
 published,2021,post_equations,845,39.22,0,0,9,38,103.6
 published,2021,post_n_sections,845,3.533,0,1,3,5,7
 published,2022,main_tokens,1045,5234,4439,4755,5135,5503,5914
+published,2022,main_tokens_with_statements,1045,5320,4493,4843,5216,5627,6032
 published,2022,appx_tokens,1045,3695,826.6,1731,3068,4784,6883
 published,2022,total_tokens,1045,8929,5596,6690,8304,1.026e+04,1.254e+04
 published,2022,raw_body_tokens,1045,5330,4493,4843,5218,5628,6036
@@ -374,6 +391,7 @@ published,2022,body_equations,1045,16.5,3,7,14,22,32
 published,2022,post_equations,1045,49.78,0,2,15,53,130.6
 published,2022,post_n_sections,1045,3.934,0,1,4,6,8
 published,2023,main_tokens,1478,5138,4436,4716,5066,5450,5788
+published,2023,main_tokens_with_statements,1478,5207,4498,4767,5139,5520,5874
 published,2023,appx_tokens,1478,3627,407.6,1469,2831,4799,7213
 published,2023,total_tokens,1478,8765,5365,6385,7915,1.018e+04,1.276e+04
 published,2023,raw_body_tokens,1478,5207,4498,4767,5139,5520,5874
@@ -396,6 +414,7 @@ published,2023,body_equations,1478,15.45,2,6,13,21,33
 published,2023,post_equations,1478,48.69,0,0,10,48,146.3
 published,2023,post_n_sections,1478,4.066,0,1,4,6,9
 published,2024,main_tokens,1877,5064,4328,4618,4951,5345,5817
+published,2024,main_tokens_with_statements,1877,5127,4378,4674,5025,5425,5872
 published,2024,appx_tokens,1877,4093,875.8,1839,3337,5395,8126
 published,2024,total_tokens,1877,9157,5559,6626,8306,1.069e+04,1.374e+04
 published,2024,raw_body_tokens,1877,5127,4378,4674,5025,5425,5872
@@ -418,6 +437,7 @@ published,2024,body_equations,1877,14.35,1,5,12,20,31
 published,2024,post_equations,1877,47.52,0,0,9,46,132.4
 published,2024,post_n_sections,1877,4.418,0,1,4,6,9
 published,2025,main_tokens,1446,5383,4560,4895,5288,5711,6144
+published,2025,main_tokens_with_statements,1446,5449,4607,4955,5358,5802,6228
 published,2025,appx_tokens,1446,4157,951.5,1981,3444,5392,8006
 published,2025,total_tokens,1446,9539,6005,7035,8732,1.098e+04,1.382e+04
 published,2025,raw_body_tokens,1446,5458,4607,4955,5358,5802,6236
@@ -440,6 +460,7 @@ published,2025,body_equations,1446,14.55,0,4,11,20,32
 published,2025,post_equations,1446,41.61,0,0,8,37.75,114.5
 published,2025,post_n_sections,1446,4.463,0,1,4,6.75,9
 published,2026,main_tokens,1416,4954,4182,4514,4846,5286,5748
+published,2026,main_tokens_with_statements,1416,5057,4280,4599,4959,5393,5860
 published,2026,appx_tokens,1416,5045,1342,2545,4066,6510,9426
 published,2026,total_tokens,1416,9999,5908,7196,8941,1.164e+04,1.493e+04
 published,2026,raw_body_tokens,1416,5057,4280,4599,4959,5393,5860
@@ -462,6 +483,7 @@ published,2026,body_equations,1416,14.31,1,5,12,21,30
 published,2026,post_equations,1416,46.06,0,0,12,46,121.5
 published,2026,post_n_sections,1416,5.181,1,2,5,7,10
 published,2027,main_tokens,21,4289,3483,3606,4256,4826,5256
+published,2027,main_tokens_with_statements,21,4438,3555,3908,4306,5063,5380
 published,2027,appx_tokens,21,3765,30,1013,2370,6281,8818
 published,2027,total_tokens,21,8054,3854,5039,6327,1.054e+04,1.411e+04
 published,2027,raw_body_tokens,21,4438,3555,3908,4306,5063,5380
@@ -484,6 +506,7 @@ published,2027,body_equations,21,10.76,0,4,8,15,22
 published,2027,post_equations,21,11.86,0,1,4,10,30
 published,2027,post_n_sections,21,3.381,1,1,3,5,8
 under_review,2017,main_tokens,286,4627,3517,3987,4448,5185,5816
+under_review,2017,main_tokens_with_statements,286,4644,3528,4006,4472,5190,5850
 under_review,2017,appx_tokens,286,590.1,0,0,137,885.2,1732
 under_review,2017,total_tokens,286,5217,3562,4266,4985,5972,6988
 under_review,2017,raw_body_tokens,286,4644,3528,4006,4472,5190,5850
@@ -506,6 +529,7 @@ under_review,2017,body_equations,286,12.18,1,5,10.5,17,25
 under_review,2017,post_equations,286,5.273,0,0,0,2,16
 under_review,2017,post_n_sections,286,0.8846,0,0,0,1,3
 under_review,2018,main_tokens,617,4563,3448,3983,4467,5079,5823
+under_review,2018,main_tokens_with_statements,617,4565,3449,3986,4467,5087,5823
 under_review,2018,appx_tokens,617,710.2,0,0,276,1022,1916
 under_review,2018,total_tokens,617,5273,3517,4186,5075,6046,7311
 under_review,2018,raw_body_tokens,617,4568,3449,3986,4468,5088,5826
@@ -528,6 +552,7 @@ under_review,2018,body_equations,617,14,2,5,10,18,29
 under_review,2018,post_equations,617,10.58,0,0,0,6,28.4
 under_review,2018,post_n_sections,617,1.186,0,0,0,2,4
 under_review,2019,main_tokens,1050,4626,3628,4069,4520,5088,5693
+under_review,2019,main_tokens_with_statements,1050,4627,3630,4069,4522,5090,5693
 under_review,2019,appx_tokens,1050,1127,0,0,663.5,1568,2720
 under_review,2019,total_tokens,1050,5752,3847,4428,5347,6551,7998
 under_review,2019,raw_body_tokens,1050,4627,3630,4069,4522,5090,5693
@@ -550,6 +575,7 @@ under_review,2019,body_equations,1050,13.91,2,6,11,19,28
 under_review,2019,post_equations,1050,15.36,0,0,0,12,45.1
 under_review,2019,post_n_sections,1050,1.868,0,0,1,3,5
 under_review,2020,main_tokens,1838,4604,3675,4068,4526,5083,5626
+under_review,2020,main_tokens_with_statements,1838,4605,3677,4068,4526,5083,5626
 under_review,2020,appx_tokens,1838,1368,0,283.8,899.5,1911,3152
 under_review,2020,total_tokens,1838,5973,3976,4602,5544,6852,8444
 under_review,2020,raw_body_tokens,1838,4610,3681,4072,4528,5087,5631
@@ -572,6 +598,7 @@ under_review,2020,body_equations,1838,13.65,2,6,11,18,27
 under_review,2020,post_equations,1838,18.85,0,0,1,16,55
 under_review,2020,post_n_sections,1838,2.261,0,0,1,4,6
 under_review,2021,main_tokens,2084,4618,3798,4180,4583,5029,5475
+under_review,2021,main_tokens_with_statements,2084,4619,3799,4180,4583,5032,5475
 under_review,2021,appx_tokens,2084,1770,0,213.8,1234,2432,4249
 under_review,2021,total_tokens,2084,6388,4096,4732,5860,7341,9369
 under_review,2021,raw_body_tokens,2084,4620,3799,4180,4583,5033,5476
@@ -594,6 +621,7 @@ under_review,2021,body_equations,2084,13.81,2,6,12,19,28
 under_review,2021,post_equations,2084,23.18,0,0,3,19,63
 under_review,2021,post_n_sections,2084,2.494,0,0,1,4,6
 under_review,2022,main_tokens,2261,4872,4033,4480,4879,5295,5657
+under_review,2022,main_tokens_with_statements,2261,4909,4060,4502,4919,5346,5710
 under_review,2022,appx_tokens,2261,1928,0,346,1317,2774,4657
 under_review,2022,total_tokens,2261,6801,4420,5107,6239,7928,9858
 under_review,2022,raw_body_tokens,2261,4912,4060,4502,4919,5346,5711
@@ -616,6 +644,7 @@ under_review,2022,body_equations,2261,14.84,2,6,12,20,31
 under_review,2022,post_equations,2261,25.69,0,0,3,22,74
 under_review,2022,post_n_sections,2261,2.59,0,1,2,4,6
 under_review,2023,main_tokens,3168,4865,4092,4471,4846,5229,5608
+under_review,2023,main_tokens_with_statements,3168,4885,4096,4481,4873,5254,5640
 under_review,2023,appx_tokens,3168,2034,0,452.8,1480,2780,4667
 under_review,2023,total_tokens,3168,6900,4481,5176,6297,7900,9973
 under_review,2023,raw_body_tokens,3168,4887,4097,4481,4873,5254,5640
@@ -638,6 +667,7 @@ under_review,2023,body_equations,3168,14.42,2,6,12,19,30
 under_review,2023,post_equations,3168,25.91,0,0,3,21,70.3
 under_review,2023,post_n_sections,3168,2.805,0,1,2,5,7
 under_review,2024,main_tokens,4068,4786,4048,4401,4761,5153,5526
+under_review,2024,main_tokens_with_statements,4068,4801,4054,4411,4774,5175,5536
 under_review,2024,appx_tokens,4068,2160,0,284.8,1514,3105,5021
 under_review,2024,total_tokens,4068,6946,4412,5072,6274,8082,1.008e+04
 under_review,2024,raw_body_tokens,4068,4801,4054,4411,4774,5175,5536
@@ -660,6 +690,7 @@ under_review,2024,body_equations,4068,13.31,1,5,11,19,28
 under_review,2024,post_equations,4068,21.93,0,0,1,17,61
 under_review,2024,post_n_sections,4068,2.88,0,0,2,5,7
 under_review,2025,main_tokens,3196,5020,4176,4583,5004,5446,5892
+under_review,2025,main_tokens_with_statements,3196,5035,4186,4595,5020,5465,5921
 under_review,2025,appx_tokens,3196,2696,0,732,1935,3699,5890
 under_review,2025,total_tokens,3196,7715,4711,5514,6959,8984,1.145e+04
 under_review,2025,raw_body_tokens,3196,5036,4186,4595,5020,5465,5921
@@ -682,6 +713,7 @@ under_review,2025,body_equations,3196,13.1,0,4,10,18,29
 under_review,2025,post_equations,3196,26.63,0,0,2,19,70
 under_review,2025,post_n_sections,3196,2.651,0,1,2,4,6
 under_review,2026,main_tokens,3550,4557,3792,4125,4513,4951,5347
+under_review,2026,main_tokens_with_statements,3550,4614,3825,4179,4570,5022,5425
 under_review,2026,appx_tokens,3550,3349,301,1181,2516,4496,7062
 under_review,2026,total_tokens,3550,7906,4522,5528,7072,9283,1.194e+04
 under_review,2026,raw_body_tokens,3550,4615,3825,4179,4570,5022,5427
@@ -704,6 +736,7 @@ under_review,2026,body_equations,3550,12.68,1,5,10,18,27
 under_review,2026,post_equations,3550,26.51,0,0,5,25,68
 under_review,2026,post_n_sections,3550,3.441,0,1,3,5,8
 under_review,2027,main_tokens,39883,4339,3601,3913,4287,4716,5170
+under_review,2027,main_tokens_with_statements,39883,4517,3732,4059,4454,4914,5401
 under_review,2027,appx_tokens,39883,5472,961.2,2213,4158,7084,1.124e+04
 under_review,2027,total_tokens,39883,9812,5023,6396,8471,1.158e+04,1.587e+04
 under_review,2027,raw_body_tokens,39883,4518,3732,4059,4454,4915,5401

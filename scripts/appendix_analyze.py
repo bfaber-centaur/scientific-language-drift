@@ -113,6 +113,8 @@ def derive(p: pd.DataFrame) -> pd.DataFrame:
     removed_chars = (p.post_stmt_chars + p.post_checklist_chars + p.post_refres_chars).clip(upper=p.post_chars)
     p["post_removed_tokens"] = (removed_chars * tpc).round()
     p["main_tokens"] = p.body_tokens_nostmt - p.body_appx_tokens
+    # with statement sections kept: main pages include them, and ICLR 2027 requires one in the main text
+    p["main_tokens_with_statements"] = p.body_tokens - p.body_appx_tokens
     p["appx_tokens"] = (p.post_tokens - p.post_removed_tokens).clip(lower=0) + p.body_appx_tokens
     p["main_chars"] = p.body_chars - p.body_stmt_chars - p.body_appx_chars
     p["appx_chars"] = (p.post_chars - removed_chars).clip(lower=0) + p.body_appx_chars
@@ -222,7 +224,7 @@ def main():
     strat = pd.concat([iclr, iclr[iclr.version == "under_review"].assign(stratum="under_review"),
                        iclr[iclr.version == "published"].assign(stratum="published")])
 
-    measures = ["main_tokens", "appx_tokens", "total_tokens", "raw_body_tokens", "raw_post_tokens",
+    measures = ["main_tokens", "main_tokens_with_statements", "appx_tokens", "total_tokens", "raw_body_tokens", "raw_post_tokens",
                 "appx_ratio", "raw_post_ratio", "main_chars", "appx_chars", "pages", "body_pages",
                 "ref_pages", "post_pages", "main_pages", "appx_pages", "body_tables", "post_tables", "body_figures", "post_figures",
                 "body_equations", "post_equations", "post_n_sections"]

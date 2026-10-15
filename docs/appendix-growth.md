@@ -18,7 +18,7 @@ and in NeurIPS, TMLR, COLM and CoRL wherever the appendix is inside the PDF.
 
 | Question (directive) | Answer | Evidence |
 |---|---|---|
-| Has the main body stayed roughly constant? | **Yes in pages, nearly in tokens.** Median 8.5–9 pages (2017–2024), 10 in 2025 (10-page limit), 9.5 in 2026–27; tokens 4,612 (2017) → 4,967 (2022) → 5,090 (2025) → 4,289 (2027). | `length_quantiles_iclr.csv`, fig 1 |
+| Has the main body stayed roughly constant? | **Yes in pages, nearly in tokens.** Median 8.5–9 pages (2017–2024), 10 in 2025 (10-page limit), 9.5 in 2026–27; tokens 4,612 (2017) → 4,967 (2022) → 5,090 (2025) → 4,289 (2027), or 4,454 in 2027 counting the now-mandatory statement sections. | `length_quantiles_iclr.csv`, fig 1 |
 | Few enormous papers, or everyone? | **Everyone.** P25 of appendix tokens went 0 → 2,195, P10 0 → 931. The top decile's share of all appendix tokens fell from 41% to 32% and the Gini coefficient from 0.65 to 0.45: growth became *less* concentrated. | `prevalence_iclr.csv`, fig 2, fig 3 |
 | Is post-reference text really appendix? | **Yes, ≥ 97% of it in ICLR.** 63 hand-checked papers; bibliography residue 0.3–1.5% of post-reference characters, statements 0–1.2%, checklists ≈ 0. NeurIPS is the exception: its checklist is 50–75% of post-reference text in 2021–22. | `post_region_audit.csv`, `prevalence_iclr.csv`, `diagnostics_venues.csv` |
 | What grew inside appendices? | **Everything, roughly in proportion.** Implementation/experimental details (19% of 2017→2027 growth), additional results (17%), proofs/theory (10%), data/benchmark descriptions (8%), examples/prompts (6%), ablations (3%); related work, limitations and notation went from ~0 to 1–2% each. | `composition_iclr.csv`, fig 4 |
@@ -66,9 +66,9 @@ ICLR 2026 allowed the new LLM-usage section to sit in the appendix, and 46% of 2
 statement after the references; ICLR 2027 asked for it in the main text and only 7.7% did. Both are
 removed from the appendix measure. The earlier study's raw measure (share of characters after the first
 marker) and the cleaned appendix ratio agree to within 2.5 points in every year (median 7.2% vs 7.1% in
-2017, 46.9% vs 49.3% in 2027; `raw_post_ratio` vs `appx_ratio`). Lane D's independent baseline
-(`docs/v1.5-review.md` §0) reached the same conclusion (bibliography residue ~1%,
-statements first after the references in 2–3% of 2026–27 papers).
+2017, 46.9% vs 49.3% in 2027; `raw_post_ratio` vs `appx_ratio`). Lane D's independent recount
+(`docs/v1.5-review.md`) reached the same conclusion (bibliography residue ~1%; a statement after the
+references in 45% of 2026 papers).
 
 **The other direction, main body contaminated by references.** Bibliography entries that the
 omissions config left *before* its first marker are counted as main body. A trailing-block check on 500
@@ -138,9 +138,14 @@ On log yearly medians (11 points, so this is description, not inference; `change
   (submissions ~3,000); observed 4,151 (4,158).
 - 2022 → 2023 and 2023 → 2024 are flat in submissions (+83, +34 tokens, CIs include 0).
 - Main-body tokens: flat to 2024, +5% in 2025 (the 10-page limit), then −9% (2026) and −7% (2027) at an
-  unchanged 9.5-page median. Fewer prose tokens on the same number of pages: not explained by more
-  tables, figures or equations (median counts per main body unchanged); bibliography residue explains
-  ~1.5 points. Open.
+  unchanged 9.5-page median. Part of this is measurement: `main_tokens` excludes statement sections, but
+  main pages contain them, and ICLR 2027 made the AI-use statement mandatory in the main text (papers
+  with a statement section in the body: 34% in 2025, 56% in 2026, 92% in 2027; mean 31 / 70 / 176
+  tokens). With statements kept (`main_tokens_with_statements`) the medians are 5,119 / 4,696 / 4,454
+  (2025 / 2026 / 2027): statements account for about a quarter to a third of the 2026→27 drop and none
+  of the 2025→26 drop (the 2025 10-page limit). Lane D found the same independently (`docs/v1.5-review.md`).
+  The rest is not explained by more tables, figures or equations (median counts per main body
+  unchanged); bibliography residue explains ~1.5 points. Open.
 
 Caveats: 2025 and 2026 are partial extractions (2025 restricted to its unbiased stratum, 2026 a
 prefix-truncated but plausibly random 26%), and the 2027 cohort doubled to 42k submissions, so the
@@ -208,7 +213,7 @@ are gone are marked unverified.
 | ICLR 2027 | 9, over-length = desk reject (+1 camera-ready) | yes | code | **required AI use statement**; ethics, reproducibility optional | `2027/AuthorGuidelines` |
 | NeurIPS 2019–2021 | 8 (2019–20), 9 (2021) | **no**: appendix "must be submitted in a separate file" | yes | 2021: checklist in the PDF after the references | `2019`–`2021/CallForPapers`, `/PaperInformation/NeurIPS-FAQ` |
 | NeurIPS 2022 | 9 | allowed (optional) | yes | checklist in the PDF after the references | `2022/CallForPapers`, `2022/PaperInformation/NeurIPS-FAQ` |
-| NeurIPS 2023 | 9 | **no at submission**, yes at camera-ready | yes | checklist in OpenReview, not in the PDF | `2023/PaperInformation/NeurIPS-FAQ`, `/StyleFiles` |
+| NeurIPS 2023 | 9 | at submission the FAQ says authors "may include an appendix in a separate document" (whether the main PDF could also carry one is not stated there); yes at camera-ready | yes | checklist in OpenReview, not in the PDF | `2023/PaperInformation/NeurIPS-FAQ`, `/StyleFiles` |
 | NeurIPS 2024–2025 | 9 | **expected** in the main PDF (2025: optional) | ZIP for code/data | checklist in the PDF (2024 after the appendix; 2025 usually right after the references) | `2024`–`2025/CallForPapers`, `2024/PaperInformation/NeurIPS-FAQ` |
 | TMLR | no page limit | yes | up to 100 MB | broader-impact statement if needed | jmlr.org/tmlr/author-guide.html |
 | COLM 2024–2025 | strict 9 | yes, unlimited | not mentioned | ethics, reproducibility, acknowledgments optional | colmweb.org/2024/cfp.html, colmweb.org/2025/cfp.html |
@@ -227,8 +232,8 @@ jump (2026 and 2027 have the same limit). The NeurIPS and CoRL step from ~0 to t
 ## Other venues
 
 Medians (`length_quantiles_venues.csv`, `diagnostics_venues.csv`, fig 5). Version mix was not checked
-for these venues; NeurIPS 2023 shows in-PDF appendices although submissions could not include them,
-so its file is probably camera-ready versions.
+for these venues; NeurIPS 2023 shows in-PDF appendices although the submission FAQ pointed authors
+to a separate document, so its file is probably camera-ready versions.
 
 | venue | years | main pages | main tokens | appendix pages | appendix tokens | note |
 |---|---|---|---|---|---|---|
@@ -277,7 +282,8 @@ Found by hand checks before the final run; each is fixed in `appendix_scan.py` v
 - Heading categories are coarse (85% agreement with hand labels); 16–26% of appendix text is outside any
   detected lettered heading (numbered or untitled appendices).
 - Version strata exist only for ICLR. Other venues' files are partial samples of unknown version mix.
-- Why ICLR 2026–27 main bodies carry fewer prose tokens on the same number of pages is open.
+- Why ICLR 2026–27 main bodies carry fewer prose tokens on the same number of pages is partly open:
+  the newly mandatory AI-use statement explains about a quarter to a third of the 2026→27 drop.
 - The 2027 appendix jump coincides with a doubled submission cohort, the new AI-use statement and the
   2027 phrasing shift (findings §3). This analysis cannot separate a new population of submitters from
   a change in how papers are written or assembled.

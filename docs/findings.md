@@ -213,7 +213,8 @@ allowed unlimited same-PDF appendices since 2017, and TMLR, which has no page li
 
 **Hypotheses (untested).** Reviewer expectations (camera-ready appendices are ~2× the same year's
 submissions); cheaper production of supplementary material; and for 2027 a changed submitter population
-(the cohort doubled). Main-body prose per page fell 7–9% in 2026–27 at an unchanged page count; open.
+(the cohort doubled). Main-body prose per page fell 7–9% in 2026–27 at an unchanged page count; the mandatory 2027 AI-use
+statement explains about a quarter to a third of the 2026→27 step, the rest is open.
 
 ## Limitations
 

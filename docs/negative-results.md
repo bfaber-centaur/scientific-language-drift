@@ -127,6 +127,9 @@ Recorded in `docs/appendix-growth.md` ("Defects found and corrected") and `resul
   rule accepting two lettered headings flagged ordinary papers; it now needs sections A, B, C of
   ≥ 200 characters each (0–0.3% of ICLR papers have a pre-reference appendix).
 - **A5. Failed expectation: the main body did not stay exactly constant.** Prose tokens rose ~10% to
-  2025 (10-page limit) and then fell 16% by 2027 at an unchanged 9.5-page median. Not explained by
-  tables, figures, equations or reference residue; unexplained.
+  2025 (10-page limit) and then fell 16% by 2027 at an unchanged 9.5-page median. Partly measurement
+  (flagged by Lane D): main-body tokens exclude statement sections that still occupy main pages, and the
+  2027 AI-use statement is mandatory (in 92% of 2027 bodies). Counting statements, the fall is 13%
+  (5,119 → 4,454); about a quarter to a third of the 2026→27 step. The rest is not explained by tables,
+  figures, equations or reference residue.
 
