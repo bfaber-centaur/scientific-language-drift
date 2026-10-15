@@ -9,7 +9,8 @@ Groups (rubric v1 labels -> one group per statement):
   other_use     everything else with a use claim (no drafting, not polish-only)
   unknown       {ambiguous}, or empty labels (writing_unspecified only)
 Decision rule, written before this script was run (docs/ai-disclosures.md, Gate 3):
-  Lane C may compare drafting vs polish_only only if, on the held-out test set,
+  Lane C may compare drafting vs polish_only only if, on the held-out set (v1: test;
+  v2: test2, the same rule unchanged),
   both groups reach precision >= 0.85 and recall >= 0.80. "none" is reported
   but cannot pass with the support available.
 Writes results/disclosures/labels/eval_groups_{set}.csv and confusion_groups_{set}.csv.
