@@ -99,7 +99,7 @@ def body_features(text: str) -> dict | None:
         "mattr500": mattr(toks),
         "bundle_rep": sum(c for c in grams4.values() if c >= 3) / max(1, n4),
         "fw_profile": fw,
-        "types": sorted({w for w in toks if WORD.match(w)}),
+        "types": " ".join(sorted({w for w in toks if WORD.match(w)})),
         "topic_text": body[:3000],
     }
     return out
@@ -163,22 +163,32 @@ def main() -> None:
     meta["group2"] = meta.group2.fillna(meta.group)
     print(meta.group.value_counts().to_string(), "\n", meta.group2.value_counts().to_string(), flush=True)
 
-    # Bodies
+    # Bodies (streamed in bounded chunks; word types are mapped to int ids as they arrive).
+    del docs, shingles
     want = set(meta.doc_id)
     pf = pq.ParquetFile(fetch("omissions", "iclr", 2027))
-    batches = []
-    for b in pf.iter_batches(batch_size=200, columns=["paper_id", "text"]):
-        rs = [r for r in b.to_pylist() if r["paper_id"] in want]
-        if rs:
-            batches.append(rs)
+    vocab: dict[str, int] = {}
     res = {}
+
+    def take(out):
+        for pid, f in out:
+            if f is not None:
+                f["types"] = np.array([vocab.setdefault(w, len(vocab)) for w in f["types"].split()], dtype=np.int32)
+                res[pid] = f
+
     with ProcessPoolExecutor(args.workers) as ex:
-        for k, out in enumerate(ex.map(work, batches)):
-            for pid, f in out:
-                if f is not None:
-                    res[pid] = f
-            if k % 20 == 0:
-                print(f"batch {k}/{len(batches)}: {len(res)} bodies", flush=True)
+        pending, k = [], 0
+        for b in pf.iter_batches(batch_size=200, columns=["paper_id", "text"]):
+            rs = [r for r in b.to_pylist() if r["paper_id"] in want]
+            if rs:
+                pending.append(ex.submit(work, rs))
+            while len(pending) >= 2 * args.workers:
+                take(pending.pop(0).result())
+                k += 1
+                if k % 20 == 0:
+                    print(f"batch {k}: {len(res)} bodies", flush=True)
+        for fut in pending:
+            take(fut.result())
     keep = meta.doc_id.isin(res).to_numpy()
     print(f"bodies kept: {keep.sum()} of {len(meta)} (dropped < {MIN_TOKENS} tokens or missing)", flush=True)
     meta = meta[keep].reset_index(drop=True)
@@ -206,10 +216,9 @@ def main() -> None:
                            "top_terms": [" ".join(terms[order[k, :10]]) for k in range(40)]})
     topics.to_csv(os.path.join(ROOT, "results", "disclosures", "lane_c_topics.csv"), index=False)
 
-    vocab: dict[str, int] = {}
     def ids(ws):
         return np.array([vocab.setdefault(w, len(vocab)) for w in ws], dtype=np.int32)
-    body_ids = [ids(res[d]["types"]) for d in meta.doc_id]
+    body_ids = [res[d]["types"] for d in meta.doc_id]
     auth_ids = [ids(a) for a in auth_types]
     np.savez_compressed(
         os.path.join(DATA, "lane_c_types.npz"),

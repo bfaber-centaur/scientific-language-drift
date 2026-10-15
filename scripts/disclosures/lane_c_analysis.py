@@ -276,8 +276,8 @@ def main() -> None:
             var += n1 * n0 * mk * (N - mk) / (N * N * (N - 1))
             b, cc = n1 - a, mk - a
             dd = n0 - cc
-            mh_n += a * dd / N
-            mh_d += b * cc / N
+            mh_n += (a + 0.5) * (dd + 0.5) / (N + 2)  # Haldane correction for empty cells
+            mh_d += (b + 0.5) * (cc + 0.5) / (N + 2)
         chi = num ** 2 / np.maximum(var, 1e-12)
         return chi, stats.chi2.sf(chi, 1), mh_n / np.maximum(mh_d, 1e-12), num
 
