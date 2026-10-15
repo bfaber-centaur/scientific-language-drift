@@ -1,0 +1,6 @@
+venue,year,checklist_heading,checklist_answers,checklist_share_of_post_mean,checklist_share_of_post_median,post_share_excl_checklist_median
+neurips,2022,0.784,0.000,0.715,0.964,0.002
+neurips,2024,0.011,0.998,0.234,0.160,0.315
+tmlr,2024,0.000,0.000,0.000,0.000,0.246
+colm,2025,0.000,0.002,0.002,0.000,0.370
+iclr,2027,0.001,0.000,0.001,0.000,0.472

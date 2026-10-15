@@ -1,0 +1,3 @@
+venue,year,n,has_ref,share_first_med,share_last_med,mid_chars_med,mid_share_of_postfirst,multi_block,app_before_refs,refish_mid_med,refish_post_med,refish_post_gt30,refish_chars_share_of_post,head_appendix,head_checklist,head_statement,head_other,head_none,ref_page_med,pages_med
+neurips,2022,500,0.994,0.067,0.064,6.000,0.002,0.000,0.000,,0.000,0.030,0.072,0.006,0.700,0.000,0.115,0.179,11.000,14.000
+neurips,2024,500,0.998,0.385,0.383,9.000,0.002,0.002,0.000,0.000,0.000,0.014,0.004,0.876,0.004,0.008,0.110,0.002,11.000,30.000
