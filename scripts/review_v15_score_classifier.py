@@ -11,7 +11,7 @@ import pandas as pd
 sys.path.insert(0, sys.argv[1])
 from mlngrams.disclosure_classify import CATEGORIES, CLASSIFIER_VERSION, classify  # noqa: E402
 
-rev = pd.read_csv("results/review/blind_labels_laneb_test30.csv")
+rev = pd.read_csv(sys.argv[3] if len(sys.argv) > 3 else "results/review/blind_labels_laneb_test30.csv")
 txt = pd.read_parquet(sys.argv[2]).set_index("doc_id").text_clean
 rows = []
 for _, r in rev.iterrows():
@@ -30,3 +30,4 @@ print(f"exact match {ex}/{len(rows)}")
 for d, g, p, s in rows:
     if g != p:
         print(f"  {d} ({s}) reviewer={sorted(g)} classifier={sorted(p)}")
+# Round 2: python3 scripts/review_v15_score_classifier.py <lane-b>/src <extract> results/review/blind_labels_laneb_test2_30.csv
