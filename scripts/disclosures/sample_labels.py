@@ -1,6 +1,8 @@
 """Draw the stratified labelling sample (dev and held-out test sets), fixed seed.
 
-Usage: python3 scripts/disclosures/sample_labels.py
+Usage: python3 scripts/disclosures/sample_labels.py [--round 2]
+Round 2 draws a fresh held-out set ("test2", 150 statements, seed + 2) excluding
+every round-1 id; it validates classifier v2, which was developed on round 1.
 Writes results/disclosures/labels/sample.csv (doc_id, set, stratum; no text) and
 data/disclosures/label_sheet_{dev,test}.csv (with text, git-ignored) for reading.
 Strata are defined by surface features only (no classifier output), so the sample
@@ -22,7 +24,18 @@ STRATA = {  # stratum: (test n, dev n)
 }
 
 
+ROUND2 = {  # stratum: test2 n
+    "template_heavy": 12, "negation_heavy": 16, "short": 12, "long": 12, "drafting_cue": 18, "coding_cue": 12,
+    "literature_cue": 12, "global_none": 15, "tool_named": 8, "suspect_tier": 8, "random": 25,
+}
+
+
 def main() -> None:
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--round", type=int, default=1)
+    rnd = ap.parse_args().round
     df = pd.read_parquet(os.path.join(ROOT, "data", "disclosures", "iclr2027.parquet"))
     df = df[df.found == True].reset_index(drop=True)  # noqa: E712
     att = pd.read_parquet(os.path.join(ROOT, "data", "disclosures", "attribution.parquet"))
@@ -43,6 +56,20 @@ def main() -> None:
         "suspect_tier": df.tier == "suspect",
         "random": clean,
     }
+    if rnd == 2:
+        prev = pd.read_csv(os.path.join(ROOT, "results", "disclosures", "labels", "sample.csv"))
+        taken = set(prev.doc_id)
+        rows = []
+        for k, n in ROUND2.items():
+            pick = df[masks[k] & ~df.doc_id.isin(taken)].sample(n, random_state=SEED + 2)
+            taken.update(pick.doc_id)
+            rows += [{"doc_id": d, "set": "test2", "stratum": k} for d in pick.doc_id]
+        s = pd.DataFrame(rows)
+        s.to_csv(os.path.join(ROOT, "results", "disclosures", "labels", "sample_round2.csv"), index=False)
+        full = s.merge(df[["doc_id", "text_clean", "n_words", "tier"]], on="doc_id").sample(frac=1, random_state=5)
+        full.to_csv(os.path.join(ROOT, "data", "disclosures", "label_sheet_test2.csv"), index=False)
+        print(s.stratum.value_counts())
+        return
     taken: set[str] = set()
     rows = []
     for which, idx in (("test", 0), ("dev", 1)):
