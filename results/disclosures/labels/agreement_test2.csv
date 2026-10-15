@@ -1,0 +1,9 @@
+category,coder1,coder2,agree,kappa
+none,2.0,2.0,1.0,1.0
+polish,115.0,114.0,0.993,0.982
+drafting,51.0,52.0,0.993,0.985
+coding,98.0,99.0,0.993,0.985
+literature,55.0,55.0,1.0,1.0
+other,77.0,76.0,0.98,0.96
+ambiguous,3.0,3.0,1.0,1.0
+ALL exact,,,0.96,

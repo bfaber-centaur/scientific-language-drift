@@ -1,0 +1,151 @@
+doc_id,labels,flags,note
+XLXTYlzcFF,polish;coding,,
+nndExuEEk7,polish;other,,organization assistance read as suggestions
+wcJotvOM5x,polish,negated_list,
+SXTGDKLDdB,polish;drafting;coding;other,negated_list,appendix drafted; experiment feedback other; interpretation coding
+yU0Po8rdrX,polish;coding,,
+h1CI7whx6E,drafting;coding,,LLMs as object of study excluded; draft and edit
+u8jHx14OGr,polish,,
+xlkpNzCkS9,polish;coding,,
+jaqGtu22DF,literature;polish,negated_list,
+GF1WSiuInJ,other;coding;polish;literature,negated_list,"hypotheses, methodology feedback, figure formatting as other"
+DiuI6HgBZQ,drafting;polish;literature;coding,,LLM judges count as coding
+zc99CgRy2Z,polish;literature;coding,,
+vaA64XGTas,other;coding;literature,negated_list,proof writing as other
+SINEkkrkqC,coding;literature;other;polish,negated_list,
+KIKKv2h7jx,polish;literature,negated_list,
+sbBIVo7VmK,other;coding;polish;drafting;literature,negated_list,translation as polish; figures without code other
+u7wNpVJxrX,polish;coding,negated_list,
+rd7cTsr2iI,coding;polish;other,negated_list,organization suggestions as other
+4pw2hIrq0U,other;coding,negated_list,LLM survey pipeline as method component
+1YnIM9GCzq,ambiguous,template_only,unfilled template placeholders
+LQo7Gpcyy3,literature;coding;polish;other,negated_list,manuscript feedback other
+tOqvS2p0aK,polish;other,,consistency checking
+DfeZKCs4Ga,other;coding;polish;literature;drafting,negated_list,translation polish; LaTeX and audits other
+vW2hr4Awpk,none,negated_list,
+Unn7fnrNH0,other;coding;literature;drafting,,figures without code other
+U0rmNv9uFo,polish;literature,,
+cbrxK6YSH9,literature;drafting;polish;coding;other,negated_list,consistency checks other
+OL06nnqKc6,polish;coding,negated_list,
+UKzQzXjTDf,literature;coding;other;drafting;polish,,
+Q4Iyl2xyt4,other;coding;polish,writing_unspecified,helping to write unspecified; sentence formulation polish
+iczD09Gtn4,other;polish,,organization and consistency checks other
+Ih6tr9124T,drafting;polish;other;coding,,interpretation of results coding
+GDOwa6MlnV,,writing_unspecified,revising manuscript unspecified
+B89z3BkMJN,other;coding,,reformatting other; interpreting results coding
+w96SWObJ0S,drafting;other;coding;literature,negated_list,
+R037hmmME4,coding;other;drafting;polish;literature,negated_list,BibTeX formatting other
+BvWqxUZfnY,ambiguous,,not a disclosure; abstract text
+OidXUN3er9,polish;other,,LaTeX restructuring as formatting
+5veBIdxzEH,polish;drafting;other;coding,writing_unspecified;negated_list,aid and polish writing; revised descriptions drafting
+Iyb45uOTdE,polish;other,,proof development conversations other
+3pjI2Lrj50,polish;other;coding,,
+bQRrUu8i0q,polish;literature;other;coding,negated_list,
+KMwOmfu3bA,coding;other,negated_list,derivation writing as proofs
+22SdyxW5en,other;coding;drafting;literature,negated_list,draft and edit rule 1
+4CEPgQbOb1,drafting;other;literature,,
+4dWaBKsu4S,polish;coding,negated_list,LLMs as object of study excluded
+6FK9XHOcEN,polish,writing_unspecified;negated_list,aid and polish writing
+RSrMFBhcuQ,polish,,organization of presentation treated as clarity
+kt10CPIoL3,polish;other;coding;drafting,,translation polish; reorganizing sections drafting
+tvy8Z0EaED,polish;coding,,GPT-4.1 grader as evaluation judge
+o8BZ6upf3P,coding;polish,,evaluation support coding
+QVudSYUo68,coding;drafting,,
+VTjJm3gLLz,coding;literature;polish,negated_list,
+Kg48gwt1R1,other;coding;polish;drafting;literature,negated_list,
+fc4f45XBhL,coding;polish,,
+YBpRwXl1Lg,polish,negated_list,
+Xpbbetf285,coding;polish,,research unspecified; question drafting is data generation
+yi5aExrSf1,polish;coding,,
+AntULOl2TP,coding;polish;drafting,negated_list,
+jkEm19Q87o,polish;coding,,
+54FPrnjjFZ,coding;polish,negated_list,figures from plotting code
+1kra24wZCJ,coding,,"synthetic data, monitors, coding assistant"
+j0oRBdn4tW,coding;other;literature;polish,negated_list,
+fzpgFHD2Eo,literature;other;drafting,,figure preparation without code other
+t0fWMa4Bof,literature;drafting;polish;other;coding,negated_list,VLM method components coding
+g6S5IoHHjq,other;drafting;polish,,
+dHFSDBYnaw,polish;drafting;coding,,restructuring drafting; trace review analysis
+FTIdb9ZSZa,polish;coding;other,writing_unspecified;negated_list,aid or polish writing; LaTeX fixes other
+D35YSHKg2w,coding;other;polish,writing_unspecified;negated_list,help write and polish
+6yfM5cYb6I,literature;polish;coding,negated_list,
+NfCDm6EcSd,drafting;polish;other,negated_list,
+tj6MpVTUHZ,coding;polish,negated_list,preference elicitation as method component
+hjXLR2mpce,polish;literature,writing_unspecified,polishing and writing
+NH98Pcbbwd,coding;other;literature;drafting,,derivations other
+AYT3Kmxq8y,polish;literature,writing_unspecified,aid and polish writing; trailing reference junk
+04isDMfMHi,drafting;polish;coding,negated_list,
+BIdyM8kh5L,polish;other,,proof checking other
+v5cppBvyPe,coding;literature,,LLMs as method components and evaluators
+4qjMqbIPB7,polish;coding,,
+QSRqqUwqTX,polish,,
+Qlg1VwKwMA,polish;coding,,organizing experiment reports as analysis; VLM diagnostic component
+m4csF1UzT4,other;coding;polish;drafting;literature,negated_list,
+s5YLl1VTc7,polish;drafting;other,writing_unspecified,aid and polish writing
+v6NPLqdZiA,coding;polish;other,negated_list,data generation and labeling components; LaTeX other
+xiaccTalhi,polish,,
+Ma4QXzlwl0,polish,negated_list,
+96UDhXfENi,literature;polish,,
+CHXn6ljCHV,other;coding;drafting;literature,negated_list,
+jd8luqTdQW,other;drafting,negated_list,tightening prose for length as condensing
+DWxCJ9CV5U,polish,,
+z5rJIBKibk,coding,writing_unspecified;negated_list,writing aid unspecified
+M04ghgZd3v,other;coding;polish,,organize treated as suggestions
+Hdwn4xkEHp,coding;polish,,LLM-generated artifacts are method components
+iZt2VkZdq4,drafting;polish;other,negated_list,only for X makes X claims
+0xBPSYXCwQ,polish;other,,LaTeX presentation other
+KroxTlqk1k,coding;polish;literature;other,negated_list,figure creation without code other
+E7azog9Nvq,drafting;coding;literature,negated_list,LLM-judge scoring coding
+AeW8zDu5nu,other;polish,,
+AVuTydEF9R,polish,,
+adLpWqcybD,other;coding;literature;drafting;polish,negated_list,
+sFn69FwjiL,coding;drafting,,
+2FGz1AYWPQ,coding;polish;drafting;literature,,
+yKnS1pX5M8,polish;literature;coding,,
+fj04UAIPU9,coding;literature;other;drafting;polish,negated_list,
+vAks0COLov,coding;polish,,coherence check read as polishing
+IhfNgJXxTT,literature;other;coding;drafting;polish,,
+xEivtipBlw,coding;polish,negated_list,
+8ZvMNxVCgp,other;coding;literature;drafting,,
+ULMWrc9N0h,other;coding;drafting,,figure production without code other
+7kMWT9ZjZE,polish,negated_list,
+1cYh01go7K,polish;drafting;other,negated_list,condensing passages drafting; figures other
+pBThM9DLtd,polish;coding,writing_unspecified,synthetic variants and judge coding
+or5ksAWHUt,coding;polish;other,,consistency checks other; AI auditors coding
+d5sYlJxHoh,ambiguous,,not a disclosure; results text
+MkXiBDC5Ws,literature;other;coding;polish,,restructuring sentences polish
+E4wPTaIAh0,polish,negated_list,
+apSB9KyjuI,polish,,
+hMhoJMXnrl,coding;literature;polish;drafting;other,,figure styling other
+l8MYnB4KYf,coding;other;polish,negated_list,translation polish
+DyISalG7RN,polish;drafting;other,,rewriting tool drafting; visualization without code other
+lin9oXsbXJ,polish;drafting,writing_unspecified,aid and polish writing
+Wghj9sx3zT,other;coding;polish;drafting,negated_list,manage length as condensing
+OXlmc3TfGY,polish;other;drafting,negated_list,summarizing records into text drafting
+wEXgi16GVJ,polish;other;literature,,
+QX7meMUla9,coding;polish;other,,dataset construction coding
+xYjEMy1Mvg,coding;polish,negated_list,
+N0wT3CcZUQ,other;drafting;coding,,research organization other
+2zSlAp7EN8,polish;coding,,AI-assisted code implied
+GLClRoAihe,coding;other;drafting;literature,,synthetic items coding
+zLbnx9Cx5b,coding;other;literature,writing_unspecified;negated_list,writing improvement unspecified; proof formulation other
+skorOYrYml,none,,
+vZbAbuTNOf,coding;polish,negated_list,
+wM1dZBYGqT,coding;literature;drafting;other,,LLMs as object of study excluded
+08Ou6kpitu,polish;literature,writing_unspecified;negated_list,aid and polish writing
+n3AelQxx19,polish,,
+ZmdiOWEtmf,other;coding;literature;drafting,,
+xPG6qX3jO9,polish,negated_list,
+E6GPe5KvzJ,coding;literature;drafting,,
+9s26jh2HRS,coding;other;literature;drafting;polish,negated_list,
+RzGbuiRiBv,coding;literature;polish,negated_list,
+5jViQBGVQx,coding;other;polish,negated_list,manuscript review and proof formatting other
+xLVLx8uB3m,polish,,trailing reference junk ignored
+CL8XnQXdJ2,drafting;literature;other;coding,,reference checking other
+apWpDNjPdO,other;coding,negated_list,
+btB6Cx4HsN,coding;other;drafting,,
+nGjdwrBva0,polish,negated_list,translation polish
+sQDCtXm8X0,literature;other;coding;polish,,
+dAMG7n2cPR,polish;literature;other;coding,,trailing reference junk ignored
+HdeuL9qztS,polish,,
+Pgh3sGyW8M,coding;literature;polish,negated_list,
