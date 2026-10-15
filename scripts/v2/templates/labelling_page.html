@@ -1,0 +1,206 @@
+<title>Disclosure Labelling Sheet</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow coding column; a sticky tally bar; each statement is a coding card with two answer rows. */
+:root {
+  --paper: #f5f6f8; --sheet: #ffffff; --ink: #18202b; --ink-2: #566173; --rule: #dde1e8;
+  --accent: #2448a8; --accent-soft: #e6ecfa; --done: #1d7a4f; --done-soft: #e3f3ea;
+  --f-text: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --f-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #11151c; --sheet: #181e27; --ink: #e6e9ef; --ink-2: #9aa5b6; --rule: #2b3340;
+  --accent: #8fa9f0; --accent-soft: #232f4d; --done: #6fcf9c; --done-soft: #1b3326; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #11151c; --sheet: #181e27; --ink: #e6e9ef; --ink-2: #9aa5b6; --rule: #2b3340;
+  --accent: #8fa9f0; --accent-soft: #232f4d; --done: #6fcf9c; --done-soft: #1b3326; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font-family: var(--f-ui); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 760px; margin: 0 auto; padding-block: 24px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1 { font-size: 1.5rem; font-weight: 600; margin: 0 0 6px; text-wrap: balance; }
+.lede { color: var(--ink-2); margin: 0 0 16px; max-width: 65ch; }
+details.guide { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 14px; margin-bottom: 16px; }
+details.guide summary { cursor: pointer; font-weight: 500; }
+details.guide dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 10px 0 2px; }
+details.guide dt { font-weight: 600; } details.guide dd { margin: 0; color: var(--ink-2); }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--paper); display: flex; flex-wrap: wrap; gap: 10px 16px;
+  align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule); margin-bottom: 16px; }
+.tally { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.meter { flex: 1 1 160px; height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.meter i { display: block; height: 100%; width: 0; background: var(--done); transition: width .3s; }
+.status { color: var(--ink-2); font-size: .85rem; min-width: 0; }
+label.toggle { display: flex; gap: 6px; align-items: center; font-size: .9rem; cursor: pointer; }
+.list { display: flex; flex-direction: column; gap: 14px; }
+.card { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+.card.done { border-color: var(--done); }
+.head { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-family: var(--f-mono); font-size: .8rem; color: var(--ink-2); letter-spacing: .02em; }
+.head .ok { color: var(--done); }
+blockquote { margin: 0; font-family: var(--f-text); font-size: 1rem; line-height: 1.6; max-width: 65ch; overflow-wrap: anywhere; }
+.kind { font-size: .8rem; color: var(--ink-2); font-style: italic; }
+.q { display: flex; flex-direction: column; gap: 6px; }
+.q > span { font-size: .75rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips input { position: absolute; opacity: 0; pointer-events: none; }
+.chips label { border: 1px solid var(--rule); border-radius: 999px; padding: 5px 12px; font-size: .88rem; cursor: pointer; user-select: none; }
+.chips input:checked + label { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 500; }
+.chips input:focus-visible + label { outline: 2px solid var(--accent); outline-offset: 2px; }
+.uses.off { opacity: .45; }
+textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: .9rem; color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 4px; padding: 6px 8px; resize: vertical; min-height: 36px; }
+textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.empty { color: var(--ink-2); padding: 24px 0; text-align: center; }
+@media (prefers-reduced-motion: reduce) { .meter i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <h1>Disclosure labelling sheet</h1>
+  <p class="lede">45 AI-use statements from ICLR 2026–2027, COLM 2026 and ICML 2026, in random order. Your labels are the first human check of the study's classifier, so label what the text says, not what you think the authors did. Answers save as you click.</p>
+  <details class="guide">
+    <summary>How to label (one minute)</summary>
+    <dl>
+      <dt>Claims use</dt><dd>The authors say AI was used for at least one thing, and deny nothing.</dd>
+      <dt>Use + denial</dt><dd>Says AI was used for some tasks and not for others ("only for grammar; not for ideas").</dd>
+      <dt>Denies all</dt><dd>Says no AI was used at all.</dd>
+      <dt>No claim</dt><dd>Only boilerplate, unfilled placeholders, or responsibility wording; no actual statement of use or non-use.</dd>
+      <dt>Not a disclosure</dt><dd>The text is not the authors describing their own AI use (for example, AI as the research subject, or extraction junk).</dd>
+      <dt>Used for</dt><dd>Tick every task the authors say AI did. <b>Polishing</b>: grammar, wording, readability, translation. <b>Drafting</b>: writing or rewriting text, condensing, generating paragraphs. <b>Coding</b>: code, scripts, figures code. <b>Literature</b>: finding or summarising papers. <b>Other</b>: ideas, proofs, experiment design, data, anything else. Tick <b>Can't tell</b> for "helped with writing" that does not say how.</dd>
+    </dl>
+  </details>
+  <div class="bar">
+    <span class="tally" id="tally">0 / 45 labelled</span>
+    <span class="meter" aria-hidden="true"><i id="meter"></i></span>
+    <label class="toggle"><input type="checkbox" id="only-open"> Unlabelled only</label>
+    <span class="status" id="status">Connecting…</span>
+  </div>
+  <div class="list" id="list"></div>
+</div>
+
+<script>
+const ITEMS = /*ITEMS*/[];
+const STANCES = [["use", "Claims use"], ["mixed", "Use + denial"], ["deny", "Denies all"], ["noclaim", "No claim"], ["notdisc", "Not a disclosure"]];
+const USES = [["polish", "Polishing"], ["drafting", "Drafting"], ["coding", "Coding"], ["literature", "Literature"], ["other", "Other"], ["unclear", "Can't tell"]];
+const state = {};      // item -> {stance, uses: [], note}
+let db = null, onlyOpen = false;
+const $ = (id) => document.getElementById(id);
+
+function isDone(s) { return !!(s && s.stance && (["deny", "noclaim", "notdisc"].includes(s.stance) || (s.uses && s.uses.length))); }
+
+function render() {
+  const list = $("list");
+  list.textContent = "";
+  let shown = 0;
+  for (const it of ITEMS) {
+    const s = state[it.item] || {};
+    if (onlyOpen && isDone(s)) continue;
+    shown++;
+    const card = document.createElement("article");
+    card.className = "card" + (isDone(s) ? " done" : "");
+    const head = document.createElement("div");
+    head.className = "head";
+    const left = document.createElement("span");
+    left.textContent = `${it.item} · ${it.venue} ${it.year}`;
+    const right = document.createElement("span");
+    right.textContent = isDone(s) ? "labelled" : "open";
+    if (isDone(s)) right.className = "ok";
+    head.append(left, right);
+    card.append(head);
+    if (it.kind === "sentence") {
+      const k = document.createElement("div");
+      k.className = "kind";
+      k.textContent = "A single sentence found in a paper with no AI-use section. Is it an author disclosure?";
+      card.append(k);
+    }
+    const q = document.createElement("blockquote");
+    q.textContent = it.text;
+    card.append(q);
+    card.append(chipRow(it.item, "What does it say?", "stance", STANCES, s.stance ? [s.stance] : [], "radio"));
+    const usesRow = chipRow(it.item, "Used for (tick all)", "uses", USES, s.uses || [], "checkbox");
+    usesRow.classList.add("uses");
+    if (["deny", "noclaim", "notdisc"].includes(s.stance)) usesRow.classList.add("off");
+    card.append(usesRow);
+    const ta = document.createElement("textarea");
+    ta.id = `note-${it.item}`;
+    ta.placeholder = "Note (optional)";
+    ta.value = s.note || "";
+    ta.addEventListener("change", () => update(it.item, { note: ta.value.slice(0, 500) }));
+    card.append(ta);
+    list.append(card);
+  }
+  if (!shown) {
+    const e = document.createElement("p");
+    e.className = "empty";
+    e.textContent = "Everything is labelled. Thank you.";
+    list.append(e);
+  }
+  const done = ITEMS.filter((it) => isDone(state[it.item])).length;
+  $("tally").textContent = `${done} / ${ITEMS.length} labelled`;
+  $("meter").style.width = `${(100 * done) / ITEMS.length}%`;
+}
+
+function chipRow(item, title, field, opts, selected, type) {
+  const wrap = document.createElement("div");
+  wrap.className = "q";
+  const t = document.createElement("span");
+  t.textContent = title;
+  const chips = document.createElement("div");
+  chips.className = "chips";
+  for (const [val, lab] of opts) {
+    const id = `${field}-${item}-${val}`;
+    const inp = document.createElement("input");
+    inp.type = type; inp.id = id; inp.name = `${field}-${item}`; inp.value = val;
+    inp.checked = selected.includes(val);
+    inp.addEventListener("change", () => {
+      if (field === "stance") update(item, { stance: val });
+      else {
+        const cur = new Set((state[item] && state[item].uses) || []);
+        inp.checked ? cur.add(val) : cur.delete(val);
+        update(item, { uses: [...cur] });
+      }
+    });
+    const l = document.createElement("label");
+    l.htmlFor = id; l.textContent = lab;
+    chips.append(inp, l);
+  }
+  wrap.append(t, chips);
+  return wrap;
+}
+
+const pending = {};
+function update(item, patch) {
+  state[item] = { ...(state[item] || {}), ...patch };
+  render();
+  clearTimeout(pending[item]);
+  pending[item] = setTimeout(() => save(item), 400);
+}
+
+async function save(item) {
+  if (!db) { $("status").textContent = "Not saved: this view cannot reach the label store. Open the page signed in to claude.ai."; return; }
+  const s = state[item];
+  try {
+    await db.collection("labels").doc(item).set({ stance: s.stance || null, uses: s.uses || [], note: s.note || "", savedAt: new Date().toISOString() });
+    $("status").textContent = `Saved ${item}`;
+  } catch (e) {
+    $("status").textContent = `Could not save ${item} (${(e && e.code) || "error"}). Your choice is still on screen; click it again to retry.`;
+  }
+}
+
+$("only-open").addEventListener("change", (e) => { onlyOpen = e.target.checked; render(); });
+render();
+
+(async () => {
+  try { db = window.claude ? await window.claude.use("db") : null; } catch (e) { db = null; }
+  if (!db) { $("status").textContent = "Read-only here: labels will not be saved in this view."; return; }
+  $("status").textContent = "Saved labels load here";
+  db.collection("labels").onSnapshot((snap) => {
+    for (const d of snap.docs) {
+      const v = d.data();
+      if (v && !pending[d.id + "_busy"]) state[d.id] = { stance: v.stance || undefined, uses: v.uses || [], note: v.note || "" };
+    }
+    $("status").textContent = "Connected; answers save as you click";
+    render();
+  }, (e) => { $("status").textContent = `Label store unavailable (${(e && e.code) || "error"}).`; });
+})();
+</script>

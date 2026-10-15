@@ -42,10 +42,12 @@ def main():
     ap.add_argument("--boot", type=int, default=1000)
     ap.add_argument("--perm", type=int, default=2000)
     ap.add_argument("--workers", type=int, default=4)
+    ap.add_argument("--tier", choices=["v15", "v2"], default="v15",
+                    help="v2: accept statements that end at the end of the text (disclosures_analyze_v2.tier_v2)")
     a = ap.parse_args()
     venue, year = a.cohort.rsplit("-", 1)
     year = int(year)
-    name = a.cohort + (f"-{a.version}" if a.version else "")
+    name = a.cohort + (f"-{a.version}" if a.version else "") + ("-tierv2" if a.tier == "v2" else "")
     data = os.path.join(ROOT, "data", "v2", "lane_c", name)
     fake = os.path.join(data, "root")
     out = os.path.join(ROOT, "results", "v2", "disclosures", "lane_c", name)
@@ -58,6 +60,10 @@ def main():
                               columns=["paper_id", "version"]).rename(columns={"paper_id": "doc_id"})
         disc = disc.merge(ver.drop_duplicates("doc_id"), on="doc_id", how="left")
         disc = disc[disc.version == a.version]
+    if a.tier == "v2":
+        sys.path.insert(0, HERE)
+        from disclosures_analyze_v2 import tier_v2
+        disc["tier"] = tier_v2(disc)
     disc.to_parquet(os.path.join(data, "iclr2027.parquet"), index=False)  # file name the Lane C script expects
     n_clean = int(((disc.found == True) & (disc.tier == "clean")).sum())  # noqa: E712
 
