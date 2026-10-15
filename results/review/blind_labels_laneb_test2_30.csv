@@ -1,0 +1,31 @@
+doc_id,set,stratum,reviewer_labels,note
+0xBPSYXCwQ,test2,tool_named,polish other,
+08Ou6kpitu,test2,global_none,polish literature,
+E6GPe5KvzJ,test2,short,coding drafting literature,
+n3AelQxx19,test2,suspect_tier,polish,
+OXlmc3TfGY,test2,global_none,polish drafting other,'summarizing experiment records ... for presentation in the manuscript' read as drafting
+l8MYnB4KYf,test2,template_heavy,polish coding other,affirms nearly the whole required list; taken literally
+lin9oXsbXJ,test2,random,polish drafting,
+CHXn6ljCHV,test2,long,drafting coding literature other,
+XLXTYlzcFF,test2,literature_cue,polish coding,
+YBpRwXl1Lg,test2,global_none,polish,
+9s26jh2HRS,test2,drafting_cue,polish drafting coding literature other,
+Kg48gwt1R1,test2,negation_heavy,polish drafting coding literature other,
+yU0Po8rdrX,test2,tool_named,polish coding,
+QVudSYUo68,test2,short,coding drafting,
+sbBIVo7VmK,test2,negation_heavy,polish drafting coding literature other,
+SXTGDKLDdB,test2,long,polish drafting coding other,
+fc4f45XBhL,test2,short,polish coding,
+xlkpNzCkS9,test2,coding_cue,polish coding,
+GF1WSiuInJ,test2,literature_cue,polish coding literature other,
+CL8XnQXdJ2,test2,tool_named,drafting coding literature other,
+kt10CPIoL3,test2,suspect_tier,polish drafting coding other,
+Q4Iyl2xyt4,test2,random,polish coding other,'helping to write this manuscript' is writing_unspecified; 'sentence formulation' read as polish
+tOqvS2p0aK,test2,random,polish other,
+5veBIdxzEH,test2,long,polish drafting coding other,'paraphrase paragraphs' read as drafting (rule 2)
+z5rJIBKibk,test2,suspect_tier,coding,"'writing aid' only: writing_unspecified flag, no polish/drafting"
+m4csF1UzT4,test2,negation_heavy,polish drafting coding literature other,
+FTIdb9ZSZa,test2,coding_cue,polish coding,
+E7azog9Nvq,test2,literature_cue,drafting coding literature,
+2zSlAp7EN8,test2,template_heavy,polish,code mentioned only in an oversight sentence: not a use claim
+hMhoJMXnrl,test2,drafting_cue,polish drafting coding literature other,
