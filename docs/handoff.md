@@ -93,7 +93,7 @@ Open:
   whether to bump to v3 and rerun.
 - Test the authorship-population alternative on camera-ready versions.
 
-### V2 Agent A: corpus inventory and provenance (2026-10-15, Gate 0 done)
+### Lane A (V2): corpus inventory and provenance (2026-10-15, Gates 0 and 1 done)
 
 **Doc:** `docs/v2-corpus-inventory.md`. **Scripts:** `scripts/v2/` (collect_metadata, version_mix,
 corpus_diff, inventory_extras, plot_inventory). **Tables:** `results/v2/inventory/`.
@@ -106,8 +106,10 @@ corpus_diff, inventory_extras, plot_inventory). **Tables:** `results/v2/inventor
   caches in `~/.cache/mlngrams/<config>/` are ignored, so the first V2 run re-downloads.
 - Stratify every V2 venue by version (`data/v2/version/`, `version_mix.csv`). V1's non-ICLR samples were
   accepted papers only.
-- Open: Gate 1 report (`docs/v2-corpus-diff.md`); hand audit of the header-based version labels;
-  TMLR year semantics.
+- Gate 1 (`docs/v2-corpus-diff.md`, `results/v2/diff/`): the added ICLR and accepted-paper records are
+  structurally like V1's; TMLR shifts only because of submission versions. Per-record structure for
+  all V2 files is in `data/v2/structure/` (git-ignored; `scripts/v2/structure_scan.py`, ~20 min).
+- Open: hand audit of the header-based version labels; TMLR year semantics; NeurIPS 2021 coverage.
 
 ## Blockers and risks
 
