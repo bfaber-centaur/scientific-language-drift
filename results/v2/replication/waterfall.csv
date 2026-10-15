@@ -1,0 +1,51 @@
+revision_v2,item,year,measure,step,view,value,delta
+2c0dd19,delve,2024,% of papers,V1 records at V2 pin,v1repro,10.74,
+2c0dd19,delve,2024,% of papers,+ records added to 2024,add2024,10.813,0.072223
+2c0dd19,delve,2024,% of papers,+ records added to 2026,add2026,10.813,0
+2c0dd19,delve,2024,% of papers,+ records added to 2025 (0-P: none),v2def,10.813,0
+2c0dd19,delve,2024,% of papers,methodology: whole 2025 minus slug ids,v2main,10.813,0
+2c0dd19,underscores,2025,% of papers,V1 records at V2 pin,v1repro,14.913,
+2c0dd19,underscores,2025,% of papers,+ records added to 2024,add2024,14.913,0
+2c0dd19,underscores,2025,% of papers,+ records added to 2026,add2026,14.913,0
+2c0dd19,underscores,2025,% of papers,+ records added to 2025 (0-P: none),v2def,14.913,0
+2c0dd19,underscores,2025,% of papers,methodology: whole 2025 minus slug ids,v2main,14.243,-0.66985
+2c0dd19,test whether,2026,% of papers,V1 records at V2 pin,v1repro,4.7868,
+2c0dd19,test whether,2026,% of papers,+ records added to 2024,add2024,4.7868,0
+2c0dd19,test whether,2026,% of papers,+ records added to 2026,add2026,5.9758,1.1889
+2c0dd19,test whether,2026,% of papers,+ records added to 2025 (0-P: none),v2def,5.9758,0
+2c0dd19,test whether,2026,% of papers,methodology: whole 2025 minus slug ids,v2main,5.9758,0
+2c0dd19,of the,2026,per million positions,V1 records at V2 pin,v1repro,4172.5,
+2c0dd19,of the,2026,per million positions,+ records added to 2024,add2024,4172.5,0
+2c0dd19,of the,2026,per million positions,+ records added to 2026,add2026,4154.9,-17.584
+2c0dd19,of the,2026,per million positions,+ records added to 2025 (0-P: none),v2def,4154.9,0
+2c0dd19,of the,2026,per million positions,methodology: whole 2025 minus slug ids,v2main,4154.9,0
+2c0dd19,<stopword share>,2026,percent of tokens,V1 records at V2 pin,v1repro,33.168,
+2c0dd19,<stopword share>,2026,percent of tokens,+ records added to 2024,add2024,33.168,0
+2c0dd19,<stopword share>,2026,percent of tokens,+ records added to 2026,add2026,33.215,0.046965
+2c0dd19,<stopword share>,2026,percent of tokens,+ records added to 2025 (0-P: none),v2def,33.215,0
+2c0dd19,<stopword share>,2026,percent of tokens,methodology: whole 2025 minus slug ids,v2main,33.215,0
+2c0dd19,a novel,main,log2_cw 2017-21 -> 2025-27,V1 records at V2 pin,v1repro,-1.0412,
+2c0dd19,a novel,main,log2_cw 2017-21 -> 2025-27,+ records added to 2024,add2024,-1.0412,0
+2c0dd19,a novel,main,log2_cw 2017-21 -> 2025-27,+ records added to 2026,add2026,-0.48741,0.55374
+2c0dd19,a novel,main,log2_cw 2017-21 -> 2025-27,+ records added to 2025 (0-P: none),v2def,-0.48741,0
+2c0dd19,a novel,main,log2_cw 2017-21 -> 2025-27,methodology: whole 2025 minus slug ids,v2main,-0.29279,0.19463
+2c0dd19,we propose,main,log2_cw 2017-21 -> 2025-27,V1 records at V2 pin,v1repro,-0.51182,
+2c0dd19,we propose,main,log2_cw 2017-21 -> 2025-27,+ records added to 2024,add2024,-0.51182,0
+2c0dd19,we propose,main,log2_cw 2017-21 -> 2025-27,+ records added to 2026,add2026,-0.32516,0.18666
+2c0dd19,we propose,main,log2_cw 2017-21 -> 2025-27,+ records added to 2025 (0-P: none),v2def,-0.32516,0
+2c0dd19,we propose,main,log2_cw 2017-21 -> 2025-27,methodology: whole 2025 minus slug ids,v2main,-0.2598,0.065359
+2c0dd19,leverage,main,log2_cw 2017-21 -> 2025-27,V1 records at V2 pin,v1repro,-0.38431,
+2c0dd19,leverage,main,log2_cw 2017-21 -> 2025-27,+ records added to 2024,add2024,-0.38431,0
+2c0dd19,leverage,main,log2_cw 2017-21 -> 2025-27,+ records added to 2026,add2026,0.050593,0.4349
+2c0dd19,leverage,main,log2_cw 2017-21 -> 2025-27,+ records added to 2025 (0-P: none),v2def,0.050593,0
+2c0dd19,leverage,main,log2_cw 2017-21 -> 2025-27,methodology: whole 2025 minus slug ids,v2main,0.18542,0.13483
+2c0dd19,intricate,main,log2_cw 2017-21 -> 2025-27,V1 records at V2 pin,v1repro,1.3251,
+2c0dd19,intricate,main,log2_cw 2017-21 -> 2025-27,+ records added to 2024,add2024,1.3251,0
+2c0dd19,intricate,main,log2_cw 2017-21 -> 2025-27,+ records added to 2026,add2026,1.7655,0.4404
+2c0dd19,intricate,main,log2_cw 2017-21 -> 2025-27,+ records added to 2025 (0-P: none),v2def,1.7655,0
+2c0dd19,intricate,main,log2_cw 2017-21 -> 2025-27,methodology: whole 2025 minus slug ids,v2main,2.074,0.30852
+2c0dd19,of the,main,log2_cw 2017-21 -> 2025-27,V1 records at V2 pin,v1repro,-1.0479,
+2c0dd19,of the,main,log2_cw 2017-21 -> 2025-27,+ records added to 2024,add2024,-1.0479,0
+2c0dd19,of the,main,log2_cw 2017-21 -> 2025-27,+ records added to 2026,add2026,-1.0076,0.040311
+2c0dd19,of the,main,log2_cw 2017-21 -> 2025-27,+ records added to 2025 (0-P: none),v2def,-1.0076,0
+2c0dd19,of the,main,log2_cw 2017-21 -> 2025-27,methodology: whole 2025 minus slug ids,v2main,-0.9296,0.077982

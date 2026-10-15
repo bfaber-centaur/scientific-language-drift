@@ -21,3 +21,23 @@ _Source: `docs/v2-function-words.md`, tables and figures in `results/v2/function
   rise by half. ICLR 2027 also differs in kind: "to" −32% and ", and" +65% in one year, shorter
   sentences, and the em dash halves after rising everywhere through 2026.
 - No cause is identified, and none of this is evidence about writing tools.
+
+## Lane B (replication)
+
+_Source: `docs/v2-replication.md`; tables and figures in `results/v2/replication/`._
+
+- **Every per-year V1 finding survives on the complete corpus** (75 of 75 effects within the
+  pre-specified ±25%): the 2024 burst and fade, the 2027 break (all versions and submissions only),
+  function words, stopword share, "across". The 21k papers added to ICLR 2024–2026 match V1's records
+  in the same year. V1's records reproduce V1's tables exactly, except one 2027 paper now deduplicated
+  against an identical added 2026 paper.
+- **V1's pooled corpus-weighted contrasts were mostly 2027.** ICLR 2027 was 81% of V1's 2025–27
+  cohort and is 58% of V2's. Corpus-weighted log2 changes move by a median 0.5 bits; year-balanced ones
+  by 0.02. Seven watchlist verdicts flip (pre-registered hits 17 → 24 of 36), e.g. *a novel* and
+  *we propose* change from "down" to the predicted "flat".
+- **The 2027 register appears in other venues' 2026-written cohorts**: *a novel* 59 → 33% (ICML
+  2025 → 2026, ICLR-overlap papers removed), 41 → 18% (COLM), 53 → 25% (TMLR submissions); *test
+  whether* 3 → 10%, 9 → 30%, 6 → 21%. Smaller than ICLR 2027 (62 → 9%, 2 → 23%) and larger the later
+  the text was written. Hypothesis: the ICLR 2027 step is partly a calendar effect. Descriptive only.
+- **The 2024 vocabulary burst and its staggered reversal replicate** in complete ICML, NeurIPS, COLM and
+  TMLR published cohorts, with NeurIPS a year early on several words.

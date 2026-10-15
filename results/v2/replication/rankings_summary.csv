@@ -1,0 +1,4 @@
+list,measure,spearman_top100,sign_flips_top25,top25_in_v2_top100,top100_overlap,median_abs_diff,revision_v2
+riser_log2_cw,log2_cw,0.863,0,25,85,0.228,2c0dd19
+faller_log2_cw,log2_cw,0.882,0,25,87,0.4575,2c0dd19
+riser_pp_cw,pp_cw,0.7644,0,25,85,1.35,2c0dd19

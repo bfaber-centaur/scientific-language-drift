@@ -1,0 +1,107 @@
+{
+ "src": "/root/work/views/v2def",
+ "years": [
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026,
+  2027
+ ],
+ "tiny_years": [],
+ "k_pseudocounts": 5.0,
+ "min_prevalence_higher_cohort": 0.01,
+ "min_df_higher_cohort": 20,
+ "contrasts": {
+  "main": [
+   [
+    2017,
+    2021
+   ],
+   [
+    2025,
+    2027
+   ]
+  ],
+  "sens_24_26": [
+   [
+    2017,
+    2021
+   ],
+   [
+    2024,
+    2026
+   ]
+  ],
+  "sens_27": [
+   [
+    2017,
+    2021
+   ],
+   [
+    2027,
+    2027
+   ]
+  ]
+ },
+ "min_df_input": 3,
+ "missing_row_is_true_zero": true,
+ "input_run": {
+  "venue": "iclr",
+  "years": [
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026,
+   2027
+  ],
+  "config": "omissions",
+  "body_only": true,
+  "keep_statements": false,
+  "sections": "v2",
+  "min_df": 3,
+  "ns": [
+   1,
+   2,
+   3
+  ],
+  "flags": "/home/user/scientific-language-drift/results/v2/replication/flags_v2.csv.gz",
+  "revision": "2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27",
+  "tokenizer": "v1.3",
+  "filter": "v1.2",
+  "docs": 90822,
+  "docs_in_sample": 90822,
+  "skipped": 97,
+  "seconds": 221,
+  "view": "v2def",
+  "view_predicate": "(year <> 2025 OR idg = '0-P')",
+  "view_source": "/root/work/v2_body"
+ },
+ "sens_src": "/root/work/views_all/v2def",
+ "sens_label": "alltext",
+ "under_review_sensitivity": true,
+ "filter": "v1.2",
+ "coverage_annotation_only": {
+  "2017": 0.98,
+  "2018": 0.98,
+  "2019": 0.98,
+  "2020": 0.98,
+  "2021": 0.98,
+  "2022": 0.98,
+  "2023": 0.97,
+  "2024": 0.83,
+  "2026": 0.26,
+  "2027": 0.998
+ }
+}

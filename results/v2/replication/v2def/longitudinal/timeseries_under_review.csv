@@ -1,0 +1,1057 @@
+set,stratum,ngram,n,year,count,df,docs,positions,per_million,prevalence,absent_row,tiny_year
+watchlist,under_review,transformer,1,2017,37,7,286,1.32324e+06,27.9616,0.0244755,False,False
+watchlist,under_review,transformer,1,2018,150,16,617,2.81732e+06,53.2421,0.0259319,False,False
+watchlist,under_review,transformer,1,2019,418,54,1050,4.85692e+06,86.0627,0.0514286,False,False
+watchlist,under_review,transformer,1,2020,2145,204,1838,8.47093e+06,253.219,0.11099,False,False
+watchlist,under_review,transformer,1,2021,2615,284,2084,9.626e+06,271.66,0.136276,False,False
+watchlist,under_review,transformer,1,2022,4054,407,2261,1.10234e+07,367.762,0.180009,False,False
+watchlist,under_review,transformer,1,2023,7184,887,3168,1.54173e+07,465.97,0.279987,False,False
+watchlist,under_review,transformer,1,2024,9216,1497,4881,2.34037e+07,393.784,0.306699,False,False
+watchlist,under_review,transformer,1,2025,6350,1131,3196,1.60465e+07,395.724,0.35388,False,False
+watchlist,under_review,transformer,1,2026,20929,4564,13684,6.23346e+07,335.753,0.333528,False,False
+watchlist,under_review,transformer,1,2027,36019,10182,39881,1.73117e+08,208.062,0.25531,False,False
+watchlist,under_review,state-of-the-art,1,2017,413,142,286,1.32324e+06,312.112,0.496503,False,False
+watchlist,under_review,state-of-the-art,1,2018,851,286,617,2.81732e+06,302.06,0.463533,False,False
+watchlist,under_review,state-of-the-art,1,2019,1571,520,1050,4.85692e+06,323.456,0.495238,False,False
+watchlist,under_review,state-of-the-art,1,2020,3322,1040,1838,8.47093e+06,392.165,0.565832,False,False
+watchlist,under_review,state-of-the-art,1,2021,3667,1164,2084,9.626e+06,380.947,0.558541,False,False
+watchlist,under_review,state-of-the-art,1,2022,4093,1286,2261,1.10234e+07,371.3,0.568775,False,False
+watchlist,under_review,state-of-the-art,1,2023,5936,1804,3168,1.54173e+07,385.022,0.569444,False,False
+watchlist,under_review,state-of-the-art,1,2024,8228,2765,4881,2.34037e+07,351.569,0.566482,False,False
+watchlist,under_review,state-of-the-art,1,2025,4773,1709,3196,1.60465e+07,297.447,0.534731,False,False
+watchlist,under_review,state-of-the-art,1,2026,21605,7943,13684,6.23346e+07,346.597,0.580459,False,False
+watchlist,under_review,state-of-the-art,1,2027,14938,7253,39881,1.73117e+08,86.2887,0.181866,False,False
+watchlist,under_review,notably,1,2017,28,26,286,1.32324e+06,21.1602,0.0909091,False,False
+watchlist,under_review,notably,1,2018,80,56,617,2.81732e+06,28.3958,0.0907618,False,False
+watchlist,under_review,notably,1,2019,168,121,1050,4.85692e+06,34.5898,0.115238,False,False
+watchlist,under_review,notably,1,2020,311,230,1838,8.47093e+06,36.7138,0.125136,False,False
+watchlist,under_review,notably,1,2021,490,341,2084,9.626e+06,50.9038,0.163628,False,False
+watchlist,under_review,notably,1,2022,579,373,2261,1.10234e+07,52.5244,0.164971,False,False
+watchlist,under_review,notably,1,2023,865,569,3168,1.54173e+07,56.1059,0.179609,False,False
+watchlist,under_review,notably,1,2024,3893,2036,4881,2.34037e+07,166.341,0.417128,False,False
+watchlist,under_review,notably,1,2025,3184,1667,3196,1.60465e+07,198.423,0.521589,False,False
+watchlist,under_review,notably,1,2026,12345,7160,13684,6.23346e+07,198.044,0.523239,False,False
+watchlist,under_review,notably,1,2027,9327,6570,39881,1.73117e+08,53.877,0.16474,False,False
+watchlist,under_review,furthermore,1,2017,267,126,286,1.32324e+06,201.777,0.440559,False,False
+watchlist,under_review,furthermore,1,2018,588,278,617,2.81732e+06,208.709,0.450567,False,False
+watchlist,under_review,furthermore,1,2019,968,462,1050,4.85692e+06,199.303,0.44,False,False
+watchlist,under_review,furthermore,1,2020,1766,866,1838,8.47093e+06,208.478,0.471164,False,False
+watchlist,under_review,furthermore,1,2021,2073,977,2084,9.626e+06,215.354,0.46881,False,False
+watchlist,under_review,furthermore,1,2022,2357,1102,2261,1.10234e+07,213.817,0.487395,False,False
+watchlist,under_review,furthermore,1,2023,3279,1558,3168,1.54173e+07,212.683,0.491793,False,False
+watchlist,under_review,furthermore,1,2024,7288,3159,4881,2.34037e+07,311.404,0.647203,False,False
+watchlist,under_review,furthermore,1,2025,5002,2187,3196,1.60465e+07,311.718,0.684293,False,False
+watchlist,under_review,furthermore,1,2026,14930,7675,13684,6.23346e+07,239.514,0.560874,False,False
+watchlist,under_review,furthermore,1,2027,10603,6420,39881,1.73117e+08,61.2477,0.160979,False,False
+watchlist,under_review,additionally,1,2017,188,90,286,1.32324e+06,142.075,0.314685,False,False
+watchlist,under_review,additionally,1,2018,326,180,617,2.81732e+06,115.713,0.291734,False,False
+watchlist,under_review,additionally,1,2019,590,319,1050,4.85692e+06,121.476,0.30381,False,False
+watchlist,under_review,additionally,1,2020,1159,600,1838,8.47093e+06,136.821,0.326442,False,False
+watchlist,under_review,additionally,1,2021,1335,719,2084,9.626e+06,138.687,0.34501,False,False
+watchlist,under_review,additionally,1,2022,1451,770,2261,1.10234e+07,131.629,0.340557,False,False
+watchlist,under_review,additionally,1,2023,2149,1134,3168,1.54173e+07,139.389,0.357955,False,False
+watchlist,under_review,additionally,1,2024,6557,3012,4881,2.34037e+07,280.17,0.617087,False,False
+watchlist,under_review,additionally,1,2025,7402,2509,3196,1.60465e+07,461.283,0.785044,False,False
+watchlist,under_review,additionally,1,2026,13502,7120,13684,6.23346e+07,216.605,0.520316,False,False
+watchlist,under_review,additionally,1,2027,28972,17959,39881,1.73117e+08,167.355,0.450315,False,False
+watchlist,under_review,moreover,1,2017,271,122,286,1.32324e+06,204.8,0.426573,False,False
+watchlist,under_review,moreover,1,2018,544,244,617,2.81732e+06,193.091,0.395462,False,False
+watchlist,under_review,moreover,1,2019,999,440,1050,4.85692e+06,205.686,0.419048,False,False
+watchlist,under_review,moreover,1,2020,1917,870,1838,8.47093e+06,226.303,0.473341,False,False
+watchlist,under_review,moreover,1,2021,2287,996,2084,9.626e+06,237.586,0.477927,False,False
+watchlist,under_review,moreover,1,2022,2877,1165,2261,1.10234e+07,260.989,0.515259,False,False
+watchlist,under_review,moreover,1,2023,4314,1696,3168,1.54173e+07,279.816,0.535354,False,False
+watchlist,under_review,moreover,1,2024,6861,2955,4881,2.34037e+07,293.159,0.605409,False,False
+watchlist,under_review,moreover,1,2025,4452,1963,3196,1.60465e+07,277.443,0.614205,False,False
+watchlist,under_review,moreover,1,2026,14594,7525,13684,6.23346e+07,234.124,0.549912,False,False
+watchlist,under_review,moreover,1,2027,18030,11426,39881,1.73117e+08,104.149,0.286502,False,False
+watchlist,under_review,leverage,1,2017,95,52,286,1.32324e+06,71.7934,0.181818,False,False
+watchlist,under_review,leverage,1,2018,224,125,617,2.81732e+06,79.5082,0.202593,False,False
+watchlist,under_review,leverage,1,2019,390,217,1050,4.85692e+06,80.2978,0.206667,False,False
+watchlist,under_review,leverage,1,2020,778,443,1838,8.47093e+06,91.8435,0.241023,False,False
+watchlist,under_review,leverage,1,2021,1278,617,2084,9.626e+06,132.765,0.296065,False,False
+watchlist,under_review,leverage,1,2022,1408,721,2261,1.10234e+07,127.728,0.318885,False,False
+watchlist,under_review,leverage,1,2023,2300,1099,3168,1.54173e+07,149.183,0.346907,False,False
+watchlist,under_review,leverage,1,2024,4243,2160,4881,2.34037e+07,181.296,0.442532,False,False
+watchlist,under_review,leverage,1,2025,3173,1617,3196,1.60465e+07,197.737,0.505945,False,False
+watchlist,under_review,leverage,1,2026,12406,6811,13684,6.23346e+07,199.023,0.497735,False,False
+watchlist,under_review,leverage,1,2027,7540,4720,39881,1.73117e+08,43.5545,0.118352,False,False
+watchlist,under_review,seamlessly,1,2017,11,7,286,1.32324e+06,8.31292,0.0244755,False,False
+watchlist,under_review,seamlessly,1,2018,26,17,617,2.81732e+06,9.22864,0.0275527,False,False
+watchlist,under_review,seamlessly,1,2019,21,17,1050,4.85692e+06,4.32373,0.0161905,False,False
+watchlist,under_review,seamlessly,1,2020,50,37,1838,8.47093e+06,5.90254,0.0201306,False,False
+watchlist,under_review,seamlessly,1,2021,54,43,2084,9.626e+06,5.60981,0.0206334,False,False
+watchlist,under_review,seamlessly,1,2022,77,57,2261,1.10234e+07,6.98511,0.0252101,False,False
+watchlist,under_review,seamlessly,1,2023,130,99,3168,1.54173e+07,8.43209,0.03125,False,False
+watchlist,under_review,seamlessly,1,2024,733,489,4881,2.34037e+07,31.3199,0.100184,False,False
+watchlist,under_review,seamlessly,1,2025,571,379,3196,1.60465e+07,35.584,0.118586,False,False
+watchlist,under_review,seamlessly,1,2026,1985,1434,13684,6.23346e+07,31.8443,0.104794,False,False
+watchlist,under_review,seamlessly,1,2027,1081,811,39881,1.73117e+08,6.24435,0.0203355,False,False
+watchlist,under_review,robust,1,2017,184,79,286,1.32324e+06,139.052,0.276224,False,False
+watchlist,under_review,robust,1,2018,633,199,617,2.81732e+06,224.682,0.322528,False,False
+watchlist,under_review,robust,1,2019,1436,388,1050,4.85692e+06,295.661,0.369524,False,False
+watchlist,under_review,robust,1,2020,3162,670,1838,8.47093e+06,373.277,0.364527,False,False
+watchlist,under_review,robust,1,2021,4102,811,2084,9.626e+06,426.138,0.389155,False,False
+watchlist,under_review,robust,1,2022,5611,971,2261,1.10234e+07,509.006,0.429456,False,False
+watchlist,under_review,robust,1,2023,7514,1309,3168,1.54173e+07,487.375,0.413194,False,False
+watchlist,under_review,robust,1,2024,8320,2099,4881,2.34037e+07,355.5,0.430035,False,False
+watchlist,under_review,robust,1,2025,5215,1686,3196,1.60465e+07,324.992,0.527534,False,False
+watchlist,under_review,robust,1,2026,27928,8813,13684,6.23346e+07,448.034,0.644037,False,False
+watchlist,under_review,robust,1,2027,28103,10857,39881,1.73117e+08,162.336,0.272235,False,False
+watchlist,under_review,pivotal,1,2017,0,0,286,1.32324e+06,0,0,True,False
+watchlist,under_review,pivotal,1,2018,2,2,617,2.81732e+06,0.709895,0.00324149,False,False
+watchlist,under_review,pivotal,1,2019,12,7,1050,4.85692e+06,2.4707,0.00666667,False,False
+watchlist,under_review,pivotal,1,2020,16,12,1838,8.47093e+06,1.88881,0.00652884,False,False
+watchlist,under_review,pivotal,1,2021,26,24,2084,9.626e+06,2.70102,0.0115163,False,False
+watchlist,under_review,pivotal,1,2022,38,32,2261,1.10234e+07,3.4472,0.014153,False,False
+watchlist,under_review,pivotal,1,2023,46,32,3168,1.54173e+07,2.98366,0.010101,False,False
+watchlist,under_review,pivotal,1,2024,923,613,4881,2.34037e+07,39.4383,0.125589,False,False
+watchlist,under_review,pivotal,1,2025,394,320,3196,1.60465e+07,24.5536,0.100125,False,False
+watchlist,under_review,pivotal,1,2026,944,768,13684,6.23346e+07,15.1441,0.0561239,False,False
+watchlist,under_review,pivotal,1,2027,766,392,39881,1.73117e+08,4.42476,0.00982924,False,False
+watchlist,under_review,underscores,1,2017,1,1,286,1.32324e+06,0.75572,0.0034965,False,False
+watchlist,under_review,underscores,1,2018,3,3,617,2.81732e+06,1.06484,0.00486224,False,False
+watchlist,under_review,underscores,1,2019,0,0,1050,4.85692e+06,0,0,True,False
+watchlist,under_review,underscores,1,2020,3,3,1838,8.47093e+06,0.354153,0.00163221,False,False
+watchlist,under_review,underscores,1,2021,11,11,2084,9.626e+06,1.14274,0.00527831,False,False
+watchlist,under_review,underscores,1,2022,9,9,2261,1.10234e+07,0.816442,0.00398054,False,False
+watchlist,under_review,underscores,1,2023,6,6,3168,1.54173e+07,0.389174,0.00189394,False,False
+watchlist,under_review,underscores,1,2024,726,556,4881,2.34037e+07,31.0208,0.113911,False,False
+watchlist,under_review,underscores,1,2025,670,518,3196,1.60465e+07,41.7536,0.162078,False,False
+watchlist,under_review,underscores,1,2026,1872,1624,13684,6.23346e+07,30.0315,0.118679,False,False
+watchlist,under_review,underscores,1,2027,340,319,39881,1.73117e+08,1.96399,0.0079988,False,False
+watchlist,under_review,intricate,1,2017,3,3,286,1.32324e+06,2.26716,0.0104895,False,False
+watchlist,under_review,intricate,1,2018,9,8,617,2.81732e+06,3.19453,0.012966,False,False
+watchlist,under_review,intricate,1,2019,10,9,1050,4.85692e+06,2.05892,0.00857143,False,False
+watchlist,under_review,intricate,1,2020,32,28,1838,8.47093e+06,3.77763,0.0152339,False,False
+watchlist,under_review,intricate,1,2021,29,25,2084,9.626e+06,3.01267,0.0119962,False,False
+watchlist,under_review,intricate,1,2022,27,22,2261,1.10234e+07,2.44933,0.00973021,False,False
+watchlist,under_review,intricate,1,2023,71,53,3168,1.54173e+07,4.60522,0.0167298,False,False
+watchlist,under_review,intricate,1,2024,1363,784,4881,2.34037e+07,58.2387,0.160623,False,False
+watchlist,under_review,intricate,1,2025,703,490,3196,1.60465e+07,43.8101,0.153317,False,False
+watchlist,under_review,intricate,1,2026,1466,1105,13684,6.23346e+07,23.5182,0.0807512,False,False
+watchlist,under_review,intricate,1,2027,532,430,39881,1.73117e+08,3.07307,0.0107821,False,False
+watchlist,under_review,neural network,2,2017,1081,230,286,1.21835e+06,887.266,0.804196,False,False
+watchlist,under_review,neural network,2,2018,2116,460,617,2.59179e+06,816.424,0.745543,False,False
+watchlist,under_review,neural network,2,2019,3090,703,1050,4.45912e+06,692.961,0.669524,False,False
+watchlist,under_review,neural network,2,2020,5073,1239,1838,7.75979e+06,653.755,0.674102,False,False
+watchlist,under_review,neural network,2,2021,4770,1278,2084,8.8048e+06,541.75,0.613244,False,False
+watchlist,under_review,neural network,2,2022,5109,1339,2261,1.00833e+07,506.679,0.592216,False,False
+watchlist,under_review,neural network,2,2023,5787,1648,3168,1.40902e+07,410.71,0.520202,False,False
+watchlist,under_review,neural network,2,2024,7183,2186,4881,2.13928e+07,335.767,0.447859,False,False
+watchlist,under_review,neural network,2,2025,3606,1160,3196,1.46783e+07,245.669,0.362954,False,False
+watchlist,under_review,neural network,2,2026,7695,3097,13684,5.6727e+07,135.65,0.226323,False,False
+watchlist,under_review,neural network,2,2027,5788,2908,39881,1.5675e+08,36.9251,0.0729169,False,False
+watchlist,under_review,neural networks,2,2017,1170,236,286,1.21835e+06,960.315,0.825175,False,False
+watchlist,under_review,neural networks,2,2018,2386,481,617,2.59179e+06,920.6,0.779579,False,False
+watchlist,under_review,neural networks,2,2019,3143,742,1050,4.45912e+06,704.847,0.706667,False,False
+watchlist,under_review,neural networks,2,2020,5643,1272,1838,7.75979e+06,727.211,0.692057,False,False
+watchlist,under_review,neural networks,2,2021,5811,1411,2084,8.8048e+06,659.981,0.677063,False,False
+watchlist,under_review,neural networks,2,2022,5856,1470,2261,1.00833e+07,580.762,0.650155,False,False
+watchlist,under_review,neural networks,2,2023,6431,1835,3168,1.40902e+07,456.415,0.57923,False,False
+watchlist,under_review,neural networks,2,2024,8634,2475,4881,2.13928e+07,403.594,0.507068,False,False
+watchlist,under_review,neural networks,2,2025,4399,1304,3196,1.46783e+07,299.695,0.40801,False,False
+watchlist,under_review,neural networks,2,2026,10181,3768,13684,5.6727e+07,179.474,0.275358,False,False
+watchlist,under_review,neural networks,2,2027,8682,4040,39881,1.5675e+08,55.3876,0.101301,False,False
+watchlist,under_review,deep learning,2,2017,512,136,286,1.21835e+06,420.24,0.475524,False,False
+watchlist,under_review,deep learning,2,2018,921,300,617,2.59179e+06,355.353,0.486224,False,False
+watchlist,under_review,deep learning,2,2019,1220,433,1050,4.45912e+06,273.596,0.412381,False,False
+watchlist,under_review,deep learning,2,2020,1957,734,1838,7.75979e+06,252.198,0.399347,False,False
+watchlist,under_review,deep learning,2,2021,2250,811,2084,8.8048e+06,255.542,0.389155,False,False
+watchlist,under_review,deep learning,2,2022,2519,865,2261,1.00833e+07,249.819,0.382574,False,False
+watchlist,under_review,deep learning,2,2023,2826,1139,3168,1.40902e+07,200.564,0.359533,False,False
+watchlist,under_review,deep learning,2,2024,3787,1499,4881,2.13928e+07,177.022,0.307109,False,False
+watchlist,under_review,deep learning,2,2025,2129,853,3196,1.46783e+07,145.044,0.266896,False,False
+watchlist,under_review,deep learning,2,2026,5827,2678,13684,5.6727e+07,102.72,0.195703,False,False
+watchlist,under_review,deep learning,2,2027,3367,1998,39881,1.5675e+08,21.4801,0.050099,False,False
+watchlist,under_review,convolutional neural,2,2017,256,111,286,1.21835e+06,210.12,0.388112,False,False
+watchlist,under_review,convolutional neural,2,2018,472,229,617,2.59179e+06,182.114,0.371151,False,False
+watchlist,under_review,convolutional neural,2,2019,610,314,1050,4.45912e+06,136.798,0.299048,False,False
+watchlist,under_review,convolutional neural,2,2020,777,486,1838,7.75979e+06,100.132,0.264418,False,False
+watchlist,under_review,convolutional neural,2,2021,682,420,2084,8.8048e+06,77.4577,0.201536,False,False
+watchlist,under_review,convolutional neural,2,2022,582,381,2261,1.00833e+07,57.7191,0.16851,False,False
+watchlist,under_review,convolutional neural,2,2023,775,482,3168,1.40902e+07,55.0026,0.152146,False,False
+watchlist,under_review,convolutional neural,2,2024,870,600,4881,2.13928e+07,40.6679,0.122926,False,False
+watchlist,under_review,convolutional neural,2,2025,515,330,3196,1.46783e+07,35.0859,0.103254,False,False
+watchlist,under_review,convolutional neural,2,2026,885,675,13684,5.6727e+07,15.601,0.0493277,False,False
+watchlist,under_review,convolutional neural,2,2027,493,397,39881,1.5675e+08,3.14514,0.00995461,False,False
+watchlist,under_review,generative adversarial,2,2017,107,32,286,1.21835e+06,87.8237,0.111888,False,False
+watchlist,under_review,generative adversarial,2,2018,306,119,617,2.59179e+06,118.065,0.192869,False,False
+watchlist,under_review,generative adversarial,2,2019,476,204,1050,4.45912e+06,106.747,0.194286,False,False
+watchlist,under_review,generative adversarial,2,2020,547,289,1838,7.75979e+06,70.4916,0.157236,False,False
+watchlist,under_review,generative adversarial,2,2021,463,247,2084,8.8048e+06,52.5849,0.118522,False,False
+watchlist,under_review,generative adversarial,2,2022,366,221,2261,1.00833e+07,36.2976,0.0977444,False,False
+watchlist,under_review,generative adversarial,2,2023,393,239,3168,1.40902e+07,27.8917,0.0754419,False,False
+watchlist,under_review,generative adversarial,2,2024,555,351,4881,2.13928e+07,25.9433,0.0719115,False,False
+watchlist,under_review,generative adversarial,2,2025,250,176,3196,1.46783e+07,17.032,0.0550688,False,False
+watchlist,under_review,generative adversarial,2,2026,551,417,13684,5.6727e+07,9.71319,0.0304735,False,False
+watchlist,under_review,generative adversarial,2,2027,311,243,39881,1.5675e+08,1.98405,0.00609313,False,False
+watchlist,under_review,reinforcement learning,2,2017,228,49,286,1.21835e+06,187.138,0.171329,False,False
+watchlist,under_review,reinforcement learning,2,2018,873,157,617,2.59179e+06,336.833,0.254457,False,False
+watchlist,under_review,reinforcement learning,2,2019,1451,287,1050,4.45912e+06,325.4,0.273333,False,False
+watchlist,under_review,reinforcement learning,2,2020,2314,488,1838,7.75979e+06,298.204,0.265506,False,False
+watchlist,under_review,reinforcement learning,2,2021,2159,546,2084,8.8048e+06,245.207,0.261996,False,False
+watchlist,under_review,reinforcement learning,2,2022,2509,557,2261,1.00833e+07,248.827,0.246351,False,False
+watchlist,under_review,reinforcement learning,2,2023,2691,638,3168,1.40902e+07,190.983,0.201389,False,False
+watchlist,under_review,reinforcement learning,2,2024,4286,988,4881,2.13928e+07,200.348,0.202418,False,False
+watchlist,under_review,reinforcement learning,2,2025,2575,651,3196,1.46783e+07,175.429,0.203692,False,False
+watchlist,under_review,reinforcement learning,2,2026,15592,3562,13684,5.6727e+07,274.86,0.260304,False,False
+watchlist,under_review,reinforcement learning,2,2027,23455,7954,39881,1.5675e+08,149.633,0.199443,False,False
+watchlist,under_review,graph neural,2,2017,4,4,286,1.21835e+06,3.28313,0.013986,False,False
+watchlist,under_review,graph neural,2,2018,48,7,617,2.59179e+06,18.52,0.0113452,False,False
+watchlist,under_review,graph neural,2,2019,118,31,1050,4.45912e+06,26.4626,0.0295238,False,False
+watchlist,under_review,graph neural,2,2020,540,119,1838,7.75979e+06,69.5895,0.0647443,False,False
+watchlist,under_review,graph neural,2,2021,789,206,2084,8.8048e+06,89.6102,0.0988484,False,False
+watchlist,under_review,graph neural,2,2022,762,225,2261,1.00833e+07,75.5704,0.0995135,False,False
+watchlist,under_review,graph neural,2,2023,1064,352,3168,1.40902e+07,75.5133,0.111111,False,False
+watchlist,under_review,graph neural,2,2024,1639,560,4881,2.13928e+07,76.6145,0.114731,False,False
+watchlist,under_review,graph neural,2,2025,755,280,3196,1.46783e+07,51.4366,0.0876095,False,False
+watchlist,under_review,graph neural,2,2026,2286,982,13684,5.6727e+07,40.2983,0.0717626,False,False
+watchlist,under_review,graph neural,2,2027,2149,1168,39881,1.5675e+08,13.7097,0.0292871,False,False
+watchlist,under_review,language models,2,2017,86,25,286,1.21835e+06,70.5873,0.0874126,False,False
+watchlist,under_review,language models,2,2018,102,38,617,2.59179e+06,39.3551,0.0615883,False,False
+watchlist,under_review,language models,2,2019,200,58,1050,4.45912e+06,44.8519,0.0552381,False,False
+watchlist,under_review,language models,2,2020,345,104,1838,7.75979e+06,44.46,0.0565832,False,False
+watchlist,under_review,language models,2,2021,458,139,2084,8.8048e+06,52.0171,0.0666987,False,False
+watchlist,under_review,language models,2,2022,650,192,2261,1.00833e+07,64.463,0.0849182,False,False
+watchlist,under_review,language models,2,2023,1516,364,3168,1.40902e+07,107.592,0.114899,False,False
+watchlist,under_review,language models,2,2024,5967,1281,4881,2.13928e+07,278.925,0.262446,False,False
+watchlist,under_review,language models,2,2025,5574,1398,3196,1.46783e+07,379.745,0.437422,False,False
+watchlist,under_review,language models,2,2026,21599,7207,13684,5.6727e+07,380.753,0.526673,False,False
+watchlist,under_review,language models,2,2027,32316,14481,39881,1.5675e+08,206.163,0.363105,False,False
+watchlist,under_review,large language,2,2017,0,0,286,1.21835e+06,0,0,True,False
+watchlist,under_review,large language,2,2018,2,1,617,2.59179e+06,0.771668,0.00162075,False,False
+watchlist,under_review,large language,2,2019,1,1,1050,4.45912e+06,0.224259,0.000952381,False,False
+watchlist,under_review,large language,2,2020,10,7,1838,7.75979e+06,1.2887,0.00380849,False,False
+watchlist,under_review,large language,2,2021,10,8,2084,8.8048e+06,1.13574,0.00383877,False,False
+watchlist,under_review,large language,2,2022,48,26,2261,1.00833e+07,4.76034,0.0114993,False,False
+watchlist,under_review,large language,2,2023,314,122,3168,1.40902e+07,22.2849,0.0385101,False,False
+watchlist,under_review,large language,2,2024,3454,1063,4881,2.13928e+07,161.456,0.217783,False,False
+watchlist,under_review,large language,2,2025,3853,1280,3196,1.46783e+07,262.497,0.400501,False,False
+watchlist,under_review,large language,2,2026,16854,6749,13684,5.6727e+07,297.107,0.493204,False,False
+watchlist,under_review,large language,2,2027,19727,11325,39881,1.5675e+08,125.85,0.28397,False,False
+watchlist,under_review,diffusion models,2,2017,0,0,286,1.21835e+06,0,0,True,False
+watchlist,under_review,diffusion models,2,2018,0,0,617,2.59179e+06,0,0,True,False
+watchlist,under_review,diffusion models,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+watchlist,under_review,diffusion models,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+watchlist,under_review,diffusion models,2,2021,24,3,2084,8.8048e+06,2.72579,0.00143954,False,False
+watchlist,under_review,diffusion models,2,2022,120,17,2261,1.00833e+07,11.9009,0.0075188,False,False
+watchlist,under_review,diffusion models,2,2023,810,121,3168,1.40902e+07,57.4866,0.0381944,False,False
+watchlist,under_review,diffusion models,2,2024,5271,582,4881,2.13928e+07,246.391,0.119238,False,False
+watchlist,under_review,diffusion models,2,2025,4104,507,3196,1.46783e+07,279.597,0.158636,False,False
+watchlist,under_review,diffusion models,2,2026,11885,2160,13684,5.6727e+07,209.512,0.157849,False,False
+watchlist,under_review,diffusion models,2,2027,11433,3731,39881,1.5675e+08,72.9379,0.0935533,False,False
+watchlist,under_review,we propose,2,2017,470,195,286,1.21835e+06,385.768,0.681818,False,False
+watchlist,under_review,we propose,2,2018,1241,451,617,2.59179e+06,478.82,0.730956,False,False
+watchlist,under_review,we propose,2,2019,2326,782,1050,4.45912e+06,521.627,0.744762,False,False
+watchlist,under_review,we propose,2,2020,4185,1428,1838,7.75979e+06,539.319,0.776931,False,False
+watchlist,under_review,we propose,2,2021,5168,1612,2084,8.8048e+06,586.952,0.773512,False,False
+watchlist,under_review,we propose,2,2022,5987,1794,2261,1.00833e+07,593.753,0.793454,False,False
+watchlist,under_review,we propose,2,2023,9548,2602,3168,1.40902e+07,677.632,0.821338,False,False
+watchlist,under_review,we propose,2,2024,13386,4020,4881,2.13928e+07,625.724,0.823602,False,False
+watchlist,under_review,we propose,2,2025,8954,2632,3196,1.46783e+07,610.017,0.823529,False,False
+watchlist,under_review,we propose,2,2026,33607,10980,13684,5.6727e+07,592.434,0.802397,False,False
+watchlist,under_review,we propose,2,2027,47168,20462,39881,1.5675e+08,300.913,0.513076,False,False
+watchlist,under_review,crucial role,2,2017,3,3,286,1.21835e+06,2.46235,0.0104895,False,False
+watchlist,under_review,crucial role,2,2018,6,6,617,2.59179e+06,2.315,0.00972447,False,False
+watchlist,under_review,crucial role,2,2019,14,13,1050,4.45912e+06,3.13963,0.012381,False,False
+watchlist,under_review,crucial role,2,2020,42,39,1838,7.75979e+06,5.41252,0.0212187,False,False
+watchlist,under_review,crucial role,2,2021,40,38,2084,8.8048e+06,4.54298,0.0182342,False,False
+watchlist,under_review,crucial role,2,2022,56,51,2261,1.00833e+07,5.55373,0.0225564,False,False
+watchlist,under_review,crucial role,2,2023,85,80,3168,1.40902e+07,6.03255,0.0252525,False,False
+watchlist,under_review,crucial role,2,2024,433,374,4881,2.13928e+07,20.2404,0.0766236,False,False
+watchlist,under_review,crucial role,2,2025,422,366,3196,1.46783e+07,28.75,0.114518,False,False
+watchlist,under_review,crucial role,2,2026,883,810,13684,5.6727e+07,15.5658,0.0591932,False,False
+watchlist,under_review,crucial role,2,2027,211,202,39881,1.5675e+08,1.34609,0.00506507,False,False
+watchlist,under_review,across diverse,2,2017,0,0,286,1.21835e+06,0,0,True,False
+watchlist,under_review,across diverse,2,2018,5,4,617,2.59179e+06,1.92917,0.00648298,False,False
+watchlist,under_review,across diverse,2,2019,3,2,1050,4.45912e+06,0.672778,0.00190476,False,False
+watchlist,under_review,across diverse,2,2020,6,6,1838,7.75979e+06,0.773217,0.00326442,False,False
+watchlist,under_review,across diverse,2,2021,13,11,2084,8.8048e+06,1.47647,0.00527831,False,False
+watchlist,under_review,across diverse,2,2022,15,15,2261,1.00833e+07,1.48761,0.00663423,False,False
+watchlist,under_review,across diverse,2,2023,31,26,3168,1.40902e+07,2.20011,0.00820707,False,False
+watchlist,under_review,across diverse,2,2024,574,455,4881,2.13928e+07,26.8314,0.0932186,False,False
+watchlist,under_review,across diverse,2,2025,764,536,3196,1.46783e+07,52.0497,0.16771,False,False
+watchlist,under_review,across diverse,2,2026,7742,4709,13684,5.6727e+07,136.478,0.344125,False,False
+watchlist,under_review,across diverse,2,2027,8811,5603,39881,1.5675e+08,56.2106,0.140493,False,False
+watchlist,under_review,comprehensive analysis,2,2017,5,4,286,1.21835e+06,4.10391,0.013986,False,False
+watchlist,under_review,comprehensive analysis,2,2018,4,4,617,2.59179e+06,1.54334,0.00648298,False,False
+watchlist,under_review,comprehensive analysis,2,2019,4,3,1050,4.45912e+06,0.897037,0.00285714,False,False
+watchlist,under_review,comprehensive analysis,2,2020,14,13,1838,7.75979e+06,1.80417,0.00707291,False,False
+watchlist,under_review,comprehensive analysis,2,2021,15,15,2084,8.8048e+06,1.70362,0.0071977,False,False
+watchlist,under_review,comprehensive analysis,2,2022,20,18,2261,1.00833e+07,1.98348,0.00796108,False,False
+watchlist,under_review,comprehensive analysis,2,2023,26,22,3168,1.40902e+07,1.84525,0.00694444,False,False
+watchlist,under_review,comprehensive analysis,2,2024,226,199,4881,2.13928e+07,10.5643,0.0407703,False,False
+watchlist,under_review,comprehensive analysis,2,2025,211,174,3196,1.46783e+07,14.375,0.0544431,False,False
+watchlist,under_review,comprehensive analysis,2,2026,593,523,13684,5.6727e+07,10.4536,0.0382198,False,False
+watchlist,under_review,comprehensive analysis,2,2027,147,138,39881,1.5675e+08,0.9378,0.00346029,False,False
+watchlist,under_review,extensive experiments,2,2017,28,18,286,1.21835e+06,22.9819,0.0629371,False,False
+watchlist,under_review,extensive experiments,2,2018,39,32,617,2.59179e+06,15.0475,0.0518639,False,False
+watchlist,under_review,extensive experiments,2,2019,124,89,1050,4.45912e+06,27.8082,0.0847619,False,False
+watchlist,under_review,extensive experiments,2,2020,350,230,1838,7.75979e+06,45.1043,0.125136,False,False
+watchlist,under_review,extensive experiments,2,2021,510,324,2084,8.8048e+06,57.9229,0.15547,False,False
+watchlist,under_review,extensive experiments,2,2022,708,442,2261,1.00833e+07,70.215,0.195489,False,False
+watchlist,under_review,extensive experiments,2,2023,1351,790,3168,1.40902e+07,95.882,0.249369,False,False
+watchlist,under_review,extensive experiments,2,2024,1999,1198,4881,2.13928e+07,93.4426,0.245442,False,False
+watchlist,under_review,extensive experiments,2,2025,1679,987,3196,1.46783e+07,114.387,0.308824,False,False
+watchlist,under_review,extensive experiments,2,2026,8334,4974,13684,5.6727e+07,146.914,0.36349,False,False
+watchlist,under_review,extensive experiments,2,2027,9270,5678,39881,1.5675e+08,59.1388,0.142374,False,False
+watchlist,under_review,novel approach,2,2017,13,11,286,1.21835e+06,10.6702,0.0384615,False,False
+watchlist,under_review,novel approach,2,2018,30,26,617,2.59179e+06,11.575,0.0421394,False,False
+watchlist,under_review,novel approach,2,2019,71,60,1050,4.45912e+06,15.9224,0.0571429,False,False
+watchlist,under_review,novel approach,2,2020,103,86,1838,7.75979e+06,13.2736,0.04679,False,False
+watchlist,under_review,novel approach,2,2021,107,89,2084,8.8048e+06,12.1525,0.0427063,False,False
+watchlist,under_review,novel approach,2,2022,130,111,2261,1.00833e+07,12.8926,0.0490933,False,False
+watchlist,under_review,novel approach,2,2023,161,119,3168,1.40902e+07,11.4264,0.0375631,False,False
+watchlist,under_review,novel approach,2,2024,712,540,4881,2.13928e+07,33.2822,0.110633,False,False
+watchlist,under_review,novel approach,2,2025,566,442,3196,1.46783e+07,38.5604,0.138298,False,False
+watchlist,under_review,novel approach,2,2026,806,689,13684,5.6727e+07,14.2084,0.0503508,False,False
+watchlist,under_review,novel approach,2,2027,153,135,39881,1.5675e+08,0.976078,0.00338507,False,False
+watchlist,under_review,delve into,2,2017,2,2,286,1.21835e+06,1.64156,0.00699301,False,False
+watchlist,under_review,delve into,2,2018,1,1,617,2.59179e+06,0.385834,0.00162075,False,False
+watchlist,under_review,delve into,2,2019,2,2,1050,4.45912e+06,0.448519,0.00190476,False,False
+watchlist,under_review,delve into,2,2020,12,11,1838,7.75979e+06,1.54643,0.00598477,False,False
+watchlist,under_review,delve into,2,2021,9,9,2084,8.8048e+06,1.02217,0.00431862,False,False
+watchlist,under_review,delve into,2,2022,22,17,2261,1.00833e+07,2.18182,0.0075188,False,False
+watchlist,under_review,delve into,2,2023,31,29,3168,1.40902e+07,2.20011,0.00915404,False,False
+watchlist,under_review,delve into,2,2024,543,444,4881,2.13928e+07,25.3824,0.090965,False,False
+watchlist,under_review,delve into,2,2025,184,168,3196,1.46783e+07,12.5355,0.0525657,False,False
+watchlist,under_review,delve into,2,2026,145,136,13684,5.6727e+07,2.5561,0.00993861,False,False
+watchlist,under_review,delve into,2,2027,39,39,39881,1.5675e+08,0.248804,0.000977909,False,False
+watchlist,under_review,shed light,2,2017,5,5,286,1.21835e+06,4.10391,0.0174825,False,False
+watchlist,under_review,shed light,2,2018,18,17,617,2.59179e+06,6.94501,0.0275527,False,False
+watchlist,under_review,shed light,2,2019,32,28,1050,4.45912e+06,7.1763,0.0266667,False,False
+watchlist,under_review,shed light,2,2020,49,47,1838,7.75979e+06,6.31461,0.0255713,False,False
+watchlist,under_review,shed light,2,2021,66,63,2084,8.8048e+06,7.49591,0.0302303,False,False
+watchlist,under_review,shed light,2,2022,88,75,2261,1.00833e+07,8.72729,0.0331712,False,False
+watchlist,under_review,shed light,2,2023,132,114,3168,1.40902e+07,9.36819,0.0359848,False,False
+watchlist,under_review,shed light,2,2024,257,225,4881,2.13928e+07,12.0134,0.0460971,False,False
+watchlist,under_review,shed light,2,2025,102,92,3196,1.46783e+07,6.94904,0.028786,False,False
+watchlist,under_review,shed light,2,2026,170,160,13684,5.6727e+07,2.99681,0.0116925,False,False
+watchlist,under_review,shed light,2,2027,102,97,39881,1.5675e+08,0.650719,0.00243224,False,False
+watchlist,under_review,a novel,2,2017,170,89,286,1.21835e+06,139.533,0.311189,False,False
+watchlist,under_review,a novel,2,2018,449,223,617,2.59179e+06,173.239,0.361426,False,False
+watchlist,under_review,a novel,2,2019,778,391,1050,4.45912e+06,174.474,0.372381,False,False
+watchlist,under_review,a novel,2,2020,1617,748,1838,7.75979e+06,208.382,0.406964,False,False
+watchlist,under_review,a novel,2,2021,2048,904,2084,8.8048e+06,232.6,0.433781,False,False
+watchlist,under_review,a novel,2,2022,2294,1025,2261,1.00833e+07,227.505,0.453339,False,False
+watchlist,under_review,a novel,2,2023,3720,1539,3168,1.40902e+07,264.013,0.485795,False,False
+watchlist,under_review,a novel,2,2024,6761,2798,4881,2.13928e+07,316.041,0.573243,False,False
+watchlist,under_review,a novel,2,2025,4972,1960,3196,1.46783e+07,338.732,0.613267,False,False
+watchlist,under_review,a novel,2,2026,17029,7453,13684,5.6727e+07,300.192,0.544651,False,False
+watchlist,under_review,a novel,2,2027,5862,3470,39881,1.5675e+08,37.3972,0.0870089,False,False
+watchlist,under_review,of the,2,2017,10595,286,286,1.21835e+06,8696.19,1,False,False
+watchlist,under_review,of the,2,2018,22171,617,617,2.59179e+06,8554.32,1,False,False
+watchlist,under_review,of the,2,2019,36027,1050,1050,4.45912e+06,8079.39,1,False,False
+watchlist,under_review,of the,2,2020,59677,1837,1838,7.75979e+06,7690.55,0.999456,False,False
+watchlist,under_review,of the,2,2021,63012,2084,2084,8.8048e+06,7156.55,1,False,False
+watchlist,under_review,of the,2,2022,71681,2261,2261,1.00833e+07,7108.88,1,False,False
+watchlist,under_review,of the,2,2023,96532,3168,3168,1.40902e+07,6850.99,1,False,False
+watchlist,under_review,of the,2,2024,139921,4878,4881,2.13928e+07,6540.56,0.999385,False,False
+watchlist,under_review,of the,2,2025,87762,3196,3196,1.46783e+07,5979.04,1,False,False
+watchlist,under_review,of the,2,2026,236509,13634,13684,5.6727e+07,4169.25,0.996346,False,False
+watchlist,under_review,of the,2,2027,521888,39651,39881,1.5675e+08,3329.43,0.994233,False,False
+watchlist,under_review,in this paper,3,2017,495,203,286,1.1264e+06,439.452,0.70979,False,False
+watchlist,under_review,in this paper,3,2018,1085,436,617,2.3949e+06,453.047,0.706645,False,False
+watchlist,under_review,in this paper,3,2019,1899,748,1050,4.11231e+06,461.784,0.712381,False,False
+watchlist,under_review,in this paper,3,2020,3137,1272,1838,7.14264e+06,439.194,0.692057,False,False
+watchlist,under_review,in this paper,3,2021,3542,1462,2084,8.09266e+06,437.681,0.701536,False,False
+watchlist,under_review,in this paper,3,2022,3946,1579,2261,9.27054e+06,425.649,0.698364,False,False
+watchlist,under_review,in this paper,3,2023,5466,2182,3168,1.29422e+07,422.339,0.688763,False,False
+watchlist,under_review,in this paper,3,2024,7082,3198,4881,1.96557e+07,360.302,0.655194,False,False
+watchlist,under_review,in this paper,3,2025,4073,1986,3196,1.34945e+07,301.826,0.621402,False,False
+watchlist,under_review,in this paper,3,2026,9943,5934,13684,5.1894e+07,191.602,0.433645,False,False
+watchlist,under_review,in this paper,3,2027,11031,7813,39881,1.42563e+08,77.3763,0.195908,False,False
+watchlist,under_review,to the best,3,2017,73,58,286,1.1264e+06,64.8081,0.202797,False,False
+watchlist,under_review,to the best,3,2018,170,135,617,2.3949e+06,70.9843,0.218801,False,False
+watchlist,under_review,to the best,3,2019,287,222,1050,4.11231e+06,69.7904,0.211429,False,False
+watchlist,under_review,to the best,3,2020,529,405,1838,7.14264e+06,74.0623,0.220348,False,False
+watchlist,under_review,to the best,3,2021,637,467,2084,8.09266e+06,78.7133,0.224088,False,False
+watchlist,under_review,to the best,3,2022,777,567,2261,9.27054e+06,83.8139,0.250774,False,False
+watchlist,under_review,to the best,3,2023,1051,785,3168,1.29422e+07,81.2072,0.24779,False,False
+watchlist,under_review,to the best,3,2024,1441,1100,4881,1.96557e+07,73.312,0.225364,False,False
+watchlist,under_review,to the best,3,2025,840,648,3196,1.34945e+07,62.2474,0.202753,False,False
+watchlist,under_review,to the best,3,2026,2605,2054,13684,5.1894e+07,50.1985,0.150102,False,False
+watchlist,under_review,to the best,3,2027,3372,2688,39881,1.42563e+08,23.6527,0.0674005,False,False
+watchlist,under_review,it is worth,3,2017,39,31,286,1.1264e+06,34.6235,0.108392,False,False
+watchlist,under_review,it is worth,3,2018,79,63,617,2.3949e+06,32.9868,0.102107,False,False
+watchlist,under_review,it is worth,3,2019,161,116,1050,4.11231e+06,39.1507,0.110476,False,False
+watchlist,under_review,it is worth,3,2020,242,188,1838,7.14264e+06,33.881,0.102285,False,False
+watchlist,under_review,it is worth,3,2021,325,238,2084,8.09266e+06,40.1598,0.114203,False,False
+watchlist,under_review,it is worth,3,2022,397,274,2261,9.27054e+06,42.8238,0.121185,False,False
+watchlist,under_review,it is worth,3,2023,517,382,3168,1.29422e+07,39.9468,0.120581,False,False
+watchlist,under_review,it is worth,3,2024,1222,924,4881,1.96557e+07,62.1702,0.189305,False,False
+watchlist,under_review,it is worth,3,2025,474,367,3196,1.34945e+07,35.1253,0.114831,False,False
+watchlist,under_review,it is worth,3,2026,1113,936,13684,5.1894e+07,21.4476,0.0684011,False,False
+watchlist,under_review,it is worth,3,2027,674,596,39881,1.42563e+08,4.72774,0.0149445,False,False
+watchlist,under_review,plays a crucial,3,2017,3,3,286,1.1264e+06,2.66335,0.0104895,False,False
+watchlist,under_review,plays a crucial,3,2018,2,2,617,2.3949e+06,0.835109,0.00324149,False,False
+watchlist,under_review,plays a crucial,3,2019,8,7,1050,4.11231e+06,1.94538,0.00666667,False,False
+watchlist,under_review,plays a crucial,3,2020,20,20,1838,7.14264e+06,2.80009,0.0108814,False,False
+watchlist,under_review,plays a crucial,3,2021,21,20,2084,8.09266e+06,2.59494,0.00959693,False,False
+watchlist,under_review,plays a crucial,3,2022,32,29,2261,9.27054e+06,3.45179,0.0128262,False,False
+watchlist,under_review,plays a crucial,3,2023,48,46,3168,1.29422e+07,3.7088,0.0145202,False,False
+watchlist,under_review,plays a crucial,3,2024,243,222,4881,1.96557e+07,12.3628,0.0454825,False,False
+watchlist,under_review,plays a crucial,3,2025,229,210,3196,1.34945e+07,16.9698,0.0657071,False,False
+watchlist,under_review,plays a crucial,3,2026,472,450,13684,5.1894e+07,9.09546,0.0328851,False,False
+watchlist,under_review,plays a crucial,3,2027,117,111,39881,1.42563e+08,0.82069,0.00278328,False,False
+top30_content_risers_main,under_review,foundation models,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation models,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation models,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation models,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation models,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation models,2,2022,7,4,2261,1.00833e+07,0.694216,0.00176913,False,False
+top30_content_risers_main,under_review,foundation models,2,2023,130,35,3168,1.40902e+07,9.22625,0.011048,False,False
+top30_content_risers_main,under_review,foundation models,2,2024,1094,259,4881,2.13928e+07,51.1387,0.0530629,False,False
+top30_content_risers_main,under_review,foundation models,2,2025,1178,282,3196,1.46783e+07,80.2546,0.0882353,False,False
+top30_content_risers_main,under_review,foundation models,2,2026,4784,1431,13684,5.6727e+07,84.3337,0.104575,False,False
+top30_content_risers_main,under_review,foundation models,2,2027,10599,3563,39881,1.5675e+08,67.6173,0.0893408,False,False
+top30_content_risers_main,under_review,flow matching,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,flow matching,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,flow matching,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,flow matching,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,flow matching,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,flow matching,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,flow matching,2,2023,12,4,3168,1.40902e+07,0.851654,0.00126263,False,False
+top30_content_risers_main,under_review,flow matching,2,2024,129,23,4881,2.13928e+07,6.03006,0.00471215,False,False
+top30_content_risers_main,under_review,flow matching,2,2025,639,50,3196,1.46783e+07,43.5337,0.0156446,False,False
+top30_content_risers_main,under_review,flow matching,2,2026,3389,534,13684,5.6727e+07,59.7423,0.0390237,False,False
+top30_content_risers_main,under_review,flow matching,2,2027,10763,2607,39881,1.5675e+08,68.6636,0.0653695,False,False
+top30_content_risers_main,under_review,kv cache,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,kv cache,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,kv cache,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,kv cache,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,kv cache,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,kv cache,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,kv cache,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,kv cache,2,2024,186,10,4881,2.13928e+07,8.69451,0.00204876,False,False
+top30_content_risers_main,under_review,kv cache,2,2025,750,43,3196,1.46783e+07,51.0959,0.0134543,False,False
+top30_content_risers_main,under_review,kv cache,2,2026,3451,291,13684,5.6727e+07,60.8352,0.0212657,False,False
+top30_content_risers_main,under_review,kv cache,2,2027,7070,1368,39881,1.5675e+08,45.1037,0.034302,False,False
+top30_content_risers_main,under_review,llm agents,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,llm agents,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,llm agents,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,llm agents,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,llm agents,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,llm agents,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,llm agents,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,llm agents,2,2024,152,30,4881,2.13928e+07,7.10519,0.00614628,False,False
+top30_content_risers_main,under_review,llm agents,2,2025,301,62,3196,1.46783e+07,20.5065,0.0193992,False,False
+top30_content_risers_main,under_review,llm agents,2,2026,2039,558,13684,5.6727e+07,35.9441,0.0407776,False,False
+top30_content_risers_main,under_review,llm agents,2,2027,5285,2237,39881,1.5675e+08,33.7162,0.0560919,False,False
+top30_content_risers_main,under_review,preference optimization,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,preference optimization,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,preference optimization,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,preference optimization,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,preference optimization,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,preference optimization,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,preference optimization,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,preference optimization,2,2024,55,14,4881,2.13928e+07,2.57096,0.00286826,False,False
+top30_content_risers_main,under_review,preference optimization,2,2025,658,123,3196,1.46783e+07,44.8281,0.0384856,False,False
+top30_content_risers_main,under_review,preference optimization,2,2026,2696,701,13684,5.6727e+07,47.5259,0.0512277,False,False
+top30_content_risers_main,under_review,preference optimization,2,2027,3518,1273,39881,1.5675e+08,22.4434,0.03192,False,False
+top30_content_risers_main,under_review,visual tokens,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,visual tokens,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,visual tokens,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,visual tokens,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,visual tokens,2,2021,3,2,2084,8.8048e+06,0.340723,0.000959693,False,False
+top30_content_risers_main,under_review,visual tokens,2,2022,20,4,2261,1.00833e+07,1.98348,0.00176913,False,False
+top30_content_risers_main,under_review,visual tokens,2,2023,72,32,3168,1.40902e+07,5.10992,0.010101,False,False
+top30_content_risers_main,under_review,visual tokens,2,2024,224,56,4881,2.13928e+07,10.4708,0.0114731,False,False
+top30_content_risers_main,under_review,visual tokens,2,2025,563,68,3196,1.46783e+07,38.356,0.0212766,False,False
+top30_content_risers_main,under_review,visual tokens,2,2026,2406,439,13684,5.6727e+07,42.4137,0.0320813,False,False
+top30_content_risers_main,under_review,visual tokens,2,2027,8188,1792,39881,1.5675e+08,52.2361,0.0449337,False,False
+top30_content_risers_main,under_review,vision-language models,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,vision-language models,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,vision-language models,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,vision-language models,2,2020,1,1,1838,7.75979e+06,0.12887,0.00054407,False,False
+top30_content_risers_main,under_review,vision-language models,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,vision-language models,2,2022,15,4,2261,1.00833e+07,1.48761,0.00176913,False,False
+top30_content_risers_main,under_review,vision-language models,2,2023,143,35,3168,1.40902e+07,10.1489,0.011048,False,False
+top30_content_risers_main,under_review,vision-language models,2,2024,546,187,4881,2.13928e+07,25.5226,0.0383118,False,False
+top30_content_risers_main,under_review,vision-language models,2,2025,450,179,3196,1.46783e+07,30.6575,0.0560075,False,False
+top30_content_risers_main,under_review,vision-language models,2,2026,2613,1171,13684,5.6727e+07,46.0627,0.0855744,False,False
+top30_content_risers_main,under_review,vision-language models,2,2027,4884,2561,39881,1.5675e+08,31.1579,0.064216,False,False
+top30_content_risers_main,under_review,foundation model,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation model,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation model,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation model,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation model,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,foundation model,2,2022,4,4,2261,1.00833e+07,0.396695,0.00176913,False,False
+top30_content_risers_main,under_review,foundation model,2,2023,49,18,3168,1.40902e+07,3.47759,0.00568182,False,False
+top30_content_risers_main,under_review,foundation model,2,2024,520,155,4881,2.13928e+07,24.3072,0.0317558,False,False
+top30_content_risers_main,under_review,foundation model,2,2025,452,128,3196,1.46783e+07,30.7938,0.0400501,False,False
+top30_content_risers_main,under_review,foundation model,2,2026,1716,715,13684,5.6727e+07,30.2501,0.0522508,False,False
+top30_content_risers_main,under_review,foundation model,2,2027,3932,1575,39881,1.5675e+08,25.0846,0.0394925,False,False
+top30_content_risers_main,under_review,in-context learning,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,in-context learning,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,in-context learning,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,in-context learning,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,in-context learning,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,in-context learning,2,2022,3,3,2261,1.00833e+07,0.297521,0.00132685,False,False
+top30_content_risers_main,under_review,in-context learning,2,2023,86,25,3168,1.40902e+07,6.10352,0.00789141,False,False
+top30_content_risers_main,under_review,in-context learning,2,2024,1662,304,4881,2.13928e+07,77.6896,0.0622823,False,False
+top30_content_risers_main,under_review,in-context learning,2,2025,893,260,3196,1.46783e+07,60.8382,0.0813517,False,False
+top30_content_risers_main,under_review,in-context learning,2,2026,2397,802,13684,5.6727e+07,42.255,0.0586086,False,False
+top30_content_risers_main,under_review,in-context learning,2,2027,2501,995,39881,1.5675e+08,15.9554,0.0249492,False,False
+top30_content_risers_main,under_review,reasoning traces,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,reasoning traces,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,reasoning traces,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,reasoning traces,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,reasoning traces,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,reasoning traces,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,reasoning traces,2,2023,11,1,3168,1.40902e+07,0.780683,0.000315657,False,False
+top30_content_risers_main,under_review,reasoning traces,2,2024,18,12,4881,2.13928e+07,0.841404,0.00245851,False,False
+top30_content_risers_main,under_review,reasoning traces,2,2025,32,14,3196,1.46783e+07,2.18009,0.00438048,False,False
+top30_content_risers_main,under_review,reasoning traces,2,2026,2212,639,13684,5.6727e+07,38.9938,0.0466969,False,False
+top30_content_risers_main,under_review,reasoning traces,2,2027,3442,1505,39881,1.5675e+08,21.9586,0.0377373,False,False
+top30_content_risers_main,under_review,tool calls,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,tool calls,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,tool calls,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,tool calls,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,tool calls,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,tool calls,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,tool calls,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,tool calls,2,2024,51,4,4881,2.13928e+07,2.38398,0.000819504,False,False
+top30_content_risers_main,under_review,tool calls,2,2025,30,10,3196,1.46783e+07,2.04384,0.00312891,False,False
+top30_content_risers_main,under_review,tool calls,2,2026,991,250,13684,5.6727e+07,17.4696,0.0182695,False,False
+top30_content_risers_main,under_review,tool calls,2,2027,4934,2001,39881,1.5675e+08,31.4769,0.0501743,False,False
+top30_content_risers_main,under_review,large language,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,large language,2,2018,2,1,617,2.59179e+06,0.771668,0.00162075,False,False
+top30_content_risers_main,under_review,large language,2,2019,1,1,1050,4.45912e+06,0.224259,0.000952381,False,False
+top30_content_risers_main,under_review,large language,2,2020,10,7,1838,7.75979e+06,1.2887,0.00380849,False,False
+top30_content_risers_main,under_review,large language,2,2021,10,8,2084,8.8048e+06,1.13574,0.00383877,False,False
+top30_content_risers_main,under_review,large language,2,2022,48,26,2261,1.00833e+07,4.76034,0.0114993,False,False
+top30_content_risers_main,under_review,large language,2,2023,314,122,3168,1.40902e+07,22.2849,0.0385101,False,False
+top30_content_risers_main,under_review,large language,2,2024,3454,1063,4881,2.13928e+07,161.456,0.217783,False,False
+top30_content_risers_main,under_review,large language,2,2025,3853,1280,3196,1.46783e+07,262.497,0.400501,False,False
+top30_content_risers_main,under_review,large language,2,2026,16854,6749,13684,5.6727e+07,297.107,0.493204,False,False
+top30_content_risers_main,under_review,large language,2,2027,19727,11325,39881,1.5675e+08,125.85,0.28397,False,False
+top30_content_risers_main,under_review,instruction tuning,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,instruction tuning,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,instruction tuning,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,instruction tuning,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,instruction tuning,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,instruction tuning,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,instruction tuning,2,2023,1,1,3168,1.40902e+07,0.0709711,0.000315657,False,False
+top30_content_risers_main,under_review,instruction tuning,2,2024,858,160,4881,2.13928e+07,40.1069,0.0327802,False,False
+top30_content_risers_main,under_review,instruction tuning,2,2025,865,169,3196,1.46783e+07,58.9306,0.0528786,False,False
+top30_content_risers_main,under_review,instruction tuning,2,2026,1592,615,13684,5.6727e+07,28.0642,0.044943,False,False
+top30_content_risers_main,under_review,instruction tuning,2,2027,2217,1138,39881,1.5675e+08,14.1436,0.0285349,False,False
+top30_content_risers_main,under_review,multimodal large,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,multimodal large,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,multimodal large,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,multimodal large,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,multimodal large,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,multimodal large,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,multimodal large,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,multimodal large,2,2024,69,26,4881,2.13928e+07,3.22538,0.00532678,False,False
+top30_content_risers_main,under_review,multimodal large,2,2025,264,100,3196,1.46783e+07,17.9858,0.0312891,False,False
+top30_content_risers_main,under_review,multimodal large,2,2026,1657,668,13684,5.6727e+07,29.2101,0.0488161,False,False
+top30_content_risers_main,under_review,multimodal large,2,2027,2789,1462,39881,1.5675e+08,17.7927,0.0366591,False,False
+top30_content_risers_main,under_review,open-source models,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,open-source models,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,open-source models,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,open-source models,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,open-source models,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,open-source models,2,2022,1,1,2261,1.00833e+07,0.0991738,0.000442282,False,False
+top30_content_risers_main,under_review,open-source models,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,open-source models,2,2024,131,62,4881,2.13928e+07,6.12355,0.0127023,False,False
+top30_content_risers_main,under_review,open-source models,2,2025,356,163,3196,1.46783e+07,24.2535,0.0510013,False,False
+top30_content_risers_main,under_review,open-source models,2,2026,2074,1022,13684,5.6727e+07,36.5611,0.0746858,False,False
+top30_content_risers_main,under_review,open-source models,2,2027,1820,871,39881,1.5675e+08,11.6109,0.02184,False,False
+top30_content_risers_main,under_review,video diffusion,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,video diffusion,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,video diffusion,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,video diffusion,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,video diffusion,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,video diffusion,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,video diffusion,2,2023,1,1,3168,1.40902e+07,0.0709711,0.000315657,False,False
+top30_content_risers_main,under_review,video diffusion,2,2024,68,22,4881,2.13928e+07,3.17864,0.00450727,False,False
+top30_content_risers_main,under_review,video diffusion,2,2025,249,41,3196,1.46783e+07,16.9638,0.0128285,False,False
+top30_content_risers_main,under_review,video diffusion,2,2026,1017,244,13684,5.6727e+07,17.928,0.017831,False,False
+top30_content_risers_main,under_review,video diffusion,2,2027,3065,887,39881,1.5675e+08,19.5535,0.0222412,False,False
+top30_content_risers_main,under_review,on-policy distillation,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2024,0,0,4881,2.13928e+07,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2025,0,0,3196,1.46783e+07,0,0,True,False
+top30_content_risers_main,under_review,on-policy distillation,2,2026,33,7,13684,5.6727e+07,0.581733,0.000511546,False,False
+top30_content_risers_main,under_review,on-policy distillation,2,2027,5087,1071,39881,1.5675e+08,32.453,0.0268549,False,False
+top30_content_risers_main,under_review,test-time scaling,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,test-time scaling,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,test-time scaling,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,test-time scaling,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,test-time scaling,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,test-time scaling,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,test-time scaling,2,2023,1,1,3168,1.40902e+07,0.0709711,0.000315657,False,False
+top30_content_risers_main,under_review,test-time scaling,2,2024,0,0,4881,2.13928e+07,0,0,True,False
+top30_content_risers_main,under_review,test-time scaling,2,2025,1,1,3196,1.46783e+07,0.0681279,0.000312891,False,False
+top30_content_risers_main,under_review,test-time scaling,2,2026,1692,378,13684,5.6727e+07,29.8271,0.0276235,False,False
+top30_content_risers_main,under_review,test-time scaling,2,2027,2160,703,39881,1.5675e+08,13.7799,0.0176274,False,False
+top30_content_risers_main,under_review,stable diffusion,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,stable diffusion,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,stable diffusion,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,stable diffusion,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,stable diffusion,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,stable diffusion,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,stable diffusion,2,2023,91,17,3168,1.40902e+07,6.45837,0.00536616,False,False
+top30_content_risers_main,under_review,stable diffusion,2,2024,1089,238,4881,2.13928e+07,50.9049,0.0487605,False,False
+top30_content_risers_main,under_review,stable diffusion,2,2025,825,220,3196,1.46783e+07,56.2055,0.068836,False,False
+top30_content_risers_main,under_review,stable diffusion,2,2026,1740,635,13684,5.6727e+07,30.6732,0.0464046,False,False
+top30_content_risers_main,under_review,stable diffusion,2,2027,1486,675,39881,1.5675e+08,9.48008,0.0169254,False,False
+top30_content_risers_main,under_review,speculative decoding,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,speculative decoding,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,speculative decoding,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,speculative decoding,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,speculative decoding,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,speculative decoding,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,speculative decoding,2,2023,10,1,3168,1.40902e+07,0.709711,0.000315657,False,False
+top30_content_risers_main,under_review,speculative decoding,2,2024,74,9,4881,2.13928e+07,3.45911,0.00184388,False,False
+top30_content_risers_main,under_review,speculative decoding,2,2025,199,26,3196,1.46783e+07,13.5574,0.00813517,False,False
+top30_content_risers_main,under_review,speculative decoding,2,2026,1187,145,13684,5.6727e+07,20.9248,0.0105963,False,False
+top30_content_risers_main,under_review,speculative decoding,2,2027,2759,460,39881,1.5675e+08,17.6013,0.0115343,False,False
+top30_content_risers_main,under_review,diffusion model,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,diffusion model,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,diffusion model,2,2019,4,2,1050,4.45912e+06,0.897037,0.00190476,False,False
+top30_content_risers_main,under_review,diffusion model,2,2020,1,1,1838,7.75979e+06,0.12887,0.00054407,False,False
+top30_content_risers_main,under_review,diffusion model,2,2021,3,3,2084,8.8048e+06,0.340723,0.00143954,False,False
+top30_content_risers_main,under_review,diffusion model,2,2022,121,12,2261,1.00833e+07,12,0.00530739,False,False
+top30_content_risers_main,under_review,diffusion model,2,2023,482,86,3168,1.40902e+07,34.2081,0.0271465,False,False
+top30_content_risers_main,under_review,diffusion model,2,2024,3625,470,4881,2.13928e+07,169.449,0.0962917,False,False
+top30_content_risers_main,under_review,diffusion model,2,2025,2838,405,3196,1.46783e+07,193.347,0.126721,False,False
+top30_content_risers_main,under_review,diffusion model,2,2026,6050,1381,13684,5.6727e+07,106.651,0.100921,False,False
+top30_content_risers_main,under_review,diffusion model,2,2027,5607,2165,39881,1.5675e+08,35.7704,0.0542865,False,False
+top30_content_risers_main,under_review,token budget,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,token budget,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,token budget,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,token budget,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,token budget,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,token budget,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,token budget,2,2023,4,1,3168,1.40902e+07,0.283885,0.000315657,False,False
+top30_content_risers_main,under_review,token budget,2,2024,7,6,4881,2.13928e+07,0.327213,0.00122926,False,False
+top30_content_risers_main,under_review,token budget,2,2025,34,4,3196,1.46783e+07,2.31635,0.00125156,False,False
+top30_content_risers_main,under_review,token budget,2,2026,692,260,13684,5.6727e+07,12.1988,0.0190003,False,False
+top30_content_risers_main,under_review,token budget,2,2027,3558,1593,39881,1.5675e+08,22.6986,0.0399438,False,False
+top30_content_risers_main,under_review,system prompt,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,system prompt,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,system prompt,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,system prompt,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,system prompt,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,system prompt,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,system prompt,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,system prompt,2,2024,157,38,4881,2.13928e+07,7.33891,0.00778529,False,False
+top30_content_risers_main,under_review,system prompt,2,2025,336,65,3196,1.46783e+07,22.891,0.0203379,False,False
+top30_content_risers_main,under_review,system prompt,2,2026,1312,429,13684,5.6727e+07,23.1283,0.0313505,False,False
+top30_content_risers_main,under_review,system prompt,2,2027,2268,1092,39881,1.5675e+08,14.4689,0.0273815,False,False
+top30_content_risers_main,under_review,frontier models,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,frontier models,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,frontier models,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,frontier models,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,frontier models,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,frontier models,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,frontier models,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,frontier models,2,2024,1,1,4881,2.13928e+07,0.0467447,0.000204876,False,False
+top30_content_risers_main,under_review,frontier models,2,2025,54,22,3196,1.46783e+07,3.67891,0.0068836,False,False
+top30_content_risers_main,under_review,frontier models,2,2026,519,246,13684,5.6727e+07,9.14908,0.0179772,False,False
+top30_content_risers_main,under_review,frontier models,2,2027,3321,1362,39881,1.5675e+08,21.1866,0.0341516,False,False
+top30_content_risers_main,under_review,claude opus,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2024,0,0,4881,2.13928e+07,0,0,True,False
+top30_content_risers_main,under_review,claude opus,2,2025,4,3,3196,1.46783e+07,0.272512,0.000938673,False,False
+top30_content_risers_main,under_review,claude opus,2,2026,138,58,13684,5.6727e+07,2.4327,0.00423853,False,False
+top30_content_risers_main,under_review,claude opus,2,2027,3988,1327,39881,1.5675e+08,25.4418,0.033274,False,False
+top30_content_risers_main,under_review,gaussian splatting,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,gaussian splatting,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,gaussian splatting,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,gaussian splatting,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,gaussian splatting,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,gaussian splatting,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,gaussian splatting,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,gaussian splatting,2,2024,23,3,4881,2.13928e+07,1.07513,0.000614628,False,False
+top30_content_risers_main,under_review,gaussian splatting,2,2025,368,47,3196,1.46783e+07,25.0711,0.0147059,False,False
+top30_content_risers_main,under_review,gaussian splatting,2,2026,1153,252,13684,5.6727e+07,20.3254,0.0184157,False,False
+top30_content_risers_main,under_review,gaussian splatting,2,2027,1959,615,39881,1.5675e+08,12.4976,0.0154209,False,False
+top30_content_risers_main,under_review,diffusion models,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,diffusion models,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,diffusion models,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,diffusion models,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,diffusion models,2,2021,24,3,2084,8.8048e+06,2.72579,0.00143954,False,False
+top30_content_risers_main,under_review,diffusion models,2,2022,120,17,2261,1.00833e+07,11.9009,0.0075188,False,False
+top30_content_risers_main,under_review,diffusion models,2,2023,810,121,3168,1.40902e+07,57.4866,0.0381944,False,False
+top30_content_risers_main,under_review,diffusion models,2,2024,5271,582,4881,2.13928e+07,246.391,0.119238,False,False
+top30_content_risers_main,under_review,diffusion models,2,2025,4104,507,3196,1.46783e+07,279.597,0.158636,False,False
+top30_content_risers_main,under_review,diffusion models,2,2026,11885,2160,13684,5.6727e+07,209.512,0.157849,False,False
+top30_content_risers_main,under_review,diffusion models,2,2027,11433,3731,39881,1.5675e+08,72.9379,0.0935533,False,False
+top30_content_risers_main,under_review,text prompt,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,text prompt,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,text prompt,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,text prompt,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,text prompt,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,text prompt,2,2022,16,2,2261,1.00833e+07,1.58678,0.000884564,False,False
+top30_content_risers_main,under_review,text prompt,2,2023,134,23,3168,1.40902e+07,9.51013,0.0072601,False,False
+top30_content_risers_main,under_review,text prompt,2,2024,580,188,4881,2.13928e+07,27.1119,0.0385167,False,False
+top30_content_risers_main,under_review,text prompt,2,2025,493,171,3196,1.46783e+07,33.587,0.0535044,False,False
+top30_content_risers_main,under_review,text prompt,2,2026,1393,616,13684,5.6727e+07,24.5562,0.0450161,False,False
+top30_content_risers_main,under_review,text prompt,2,2027,1678,967,39881,1.5675e+08,10.705,0.0242471,False,False
+top30_content_risers_main,under_review,safety alignment,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,safety alignment,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,safety alignment,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,safety alignment,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,safety alignment,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,safety alignment,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_risers_main,under_review,safety alignment,2,2023,0,0,3168,1.40902e+07,0,0,True,False
+top30_content_risers_main,under_review,safety alignment,2,2024,68,12,4881,2.13928e+07,3.17864,0.00245851,False,False
+top30_content_risers_main,under_review,safety alignment,2,2025,297,41,3196,1.46783e+07,20.234,0.0128285,False,False
+top30_content_risers_main,under_review,safety alignment,2,2026,1273,246,13684,5.6727e+07,22.4408,0.0179772,False,False
+top30_content_risers_main,under_review,safety alignment,2,2027,1734,455,39881,1.5675e+08,11.0622,0.0114089,False,False
+top30_content_risers_main,under_review,discrete diffusion,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_risers_main,under_review,discrete diffusion,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_risers_main,under_review,discrete diffusion,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_risers_main,under_review,discrete diffusion,2,2020,0,0,1838,7.75979e+06,0,0,True,False
+top30_content_risers_main,under_review,discrete diffusion,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_risers_main,under_review,discrete diffusion,2,2022,1,1,2261,1.00833e+07,0.0991738,0.000442282,False,False
+top30_content_risers_main,under_review,discrete diffusion,2,2023,14,8,3168,1.40902e+07,0.993596,0.00252525,False,False
+top30_content_risers_main,under_review,discrete diffusion,2,2024,190,30,4881,2.13928e+07,8.88149,0.00614628,False,False
+top30_content_risers_main,under_review,discrete diffusion,2,2025,117,24,3196,1.46783e+07,7.97096,0.00750939,False,False
+top30_content_risers_main,under_review,discrete diffusion,2,2026,1037,172,13684,5.6727e+07,18.2805,0.0125694,False,False
+top30_content_risers_main,under_review,discrete diffusion,2,2027,1830,514,39881,1.5675e+08,11.6747,0.0128883,False,False
+top30_content_fallers_main,under_review,google brain,2,2017,37,18,286,1.21835e+06,30.3689,0.0629371,False,False
+top30_content_fallers_main,under_review,google brain,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_fallers_main,under_review,google brain,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_fallers_main,under_review,google brain,2,2020,1,1,1838,7.75979e+06,0.12887,0.00054407,False,False
+top30_content_fallers_main,under_review,google brain,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_fallers_main,under_review,google brain,2,2022,2,2,2261,1.00833e+07,0.198348,0.000884564,False,False
+top30_content_fallers_main,under_review,google brain,2,2023,2,2,3168,1.40902e+07,0.141942,0.000631313,False,False
+top30_content_fallers_main,under_review,google brain,2,2024,1,1,4881,2.13928e+07,0.0467447,0.000204876,False,False
+top30_content_fallers_main,under_review,google brain,2,2025,0,0,3196,1.46783e+07,0,0,True,False
+top30_content_fallers_main,under_review,google brain,2,2026,2,2,13684,5.6727e+07,0.0352566,0.000146156,False,False
+top30_content_fallers_main,under_review,google brain,2,2027,0,0,39881,1.5675e+08,0,0,True,False
+top30_content_fallers_main,under_review,original gan,2,2017,6,4,286,1.21835e+06,4.92469,0.013986,False,False
+top30_content_fallers_main,under_review,original gan,2,2018,41,20,617,2.59179e+06,15.8192,0.0324149,False,False
+top30_content_fallers_main,under_review,original gan,2,2019,62,29,1050,4.45912e+06,13.9041,0.027619,False,False
+top30_content_fallers_main,under_review,original gan,2,2020,53,25,1838,7.75979e+06,6.83008,0.0136017,False,False
+top30_content_fallers_main,under_review,original gan,2,2021,18,12,2084,8.8048e+06,2.04434,0.00575816,False,False
+top30_content_fallers_main,under_review,original gan,2,2022,6,4,2261,1.00833e+07,0.595043,0.00176913,False,False
+top30_content_fallers_main,under_review,original gan,2,2023,11,8,3168,1.40902e+07,0.780683,0.00252525,False,False
+top30_content_fallers_main,under_review,original gan,2,2024,17,6,4881,2.13928e+07,0.794659,0.00122926,False,False
+top30_content_fallers_main,under_review,original gan,2,2025,4,4,3196,1.46783e+07,0.272512,0.00125156,False,False
+top30_content_fallers_main,under_review,original gan,2,2026,1,1,13684,5.6727e+07,0.0176283,7.3078e-05,False,False
+top30_content_fallers_main,under_review,original gan,2,2027,1,1,39881,1.5675e+08,0.00637959,2.50746e-05,False,False
+top30_content_fallers_main,under_review,facebook ai,2,2017,17,11,286,1.21835e+06,13.9533,0.0384615,False,False
+top30_content_fallers_main,under_review,facebook ai,2,2018,0,0,617,2.59179e+06,0,0,True,False
+top30_content_fallers_main,under_review,facebook ai,2,2019,0,0,1050,4.45912e+06,0,0,True,False
+top30_content_fallers_main,under_review,facebook ai,2,2020,3,3,1838,7.75979e+06,0.386609,0.00163221,False,False
+top30_content_fallers_main,under_review,facebook ai,2,2021,0,0,2084,8.8048e+06,0,0,True,False
+top30_content_fallers_main,under_review,facebook ai,2,2022,0,0,2261,1.00833e+07,0,0,True,False
+top30_content_fallers_main,under_review,facebook ai,2,2023,1,1,3168,1.40902e+07,0.0709711,0.000315657,False,False
+top30_content_fallers_main,under_review,facebook ai,2,2024,0,0,4881,2.13928e+07,0,0,True,False
+top30_content_fallers_main,under_review,facebook ai,2,2025,1,1,3196,1.46783e+07,0.0681279,0.000312891,False,False
+top30_content_fallers_main,under_review,facebook ai,2,2026,9,8,13684,5.6727e+07,0.158655,0.000584624,False,False
+top30_content_fallers_main,under_review,facebook ai,2,2027,3,3,39881,1.5675e+08,0.0191388,7.52238e-05,False,False
+top30_content_fallers_main,under_review,seq model,2,2017,18,7,286,1.21835e+06,14.7741,0.0244755,False,False
+top30_content_fallers_main,under_review,seq model,2,2018,61,14,617,2.59179e+06,23.5359,0.0226904,False,False
+top30_content_fallers_main,under_review,seq model,2,2019,71,19,1050,4.45912e+06,15.9224,0.0180952,False,False
+top30_content_fallers_main,under_review,seq model,2,2020,104,38,1838,7.75979e+06,13.4024,0.0206746,False,False
+top30_content_fallers_main,under_review,seq model,2,2021,28,15,2084,8.8048e+06,3.18008,0.0071977,False,False
+top30_content_fallers_main,under_review,seq model,2,2022,28,16,2261,1.00833e+07,2.77687,0.00707651,False,False
+top30_content_fallers_main,under_review,seq model,2,2023,31,20,3168,1.40902e+07,2.20011,0.00631313,False,False
+top30_content_fallers_main,under_review,seq model,2,2024,20,12,4881,2.13928e+07,0.934893,0.00245851,False,False
+top30_content_fallers_main,under_review,seq model,2,2025,2,1,3196,1.46783e+07,0.136256,0.000312891,False,False
+top30_content_fallers_main,under_review,seq model,2,2026,20,11,13684,5.6727e+07,0.352566,0.000803859,False,False
+top30_content_fallers_main,under_review,seq model,2,2027,8,7,39881,1.5675e+08,0.0510368,0.000175522,False,False
+top30_content_fallers_main,under_review,seq models,2,2017,8,4,286,1.21835e+06,6.56626,0.013986,False,False
+top30_content_fallers_main,under_review,seq models,2,2018,13,7,617,2.59179e+06,5.01584,0.0113452,False,False
+top30_content_fallers_main,under_review,seq models,2,2019,65,20,1050,4.45912e+06,14.5769,0.0190476,False,False
+top30_content_fallers_main,under_review,seq models,2,2020,44,21,1838,7.75979e+06,5.67026,0.0114255,False,False
+top30_content_fallers_main,under_review,seq models,2,2021,18,12,2084,8.8048e+06,2.04434,0.00575816,False,False
+top30_content_fallers_main,under_review,seq models,2,2022,26,13,2261,1.00833e+07,2.57852,0.00574967,False,False
+top30_content_fallers_main,under_review,seq models,2,2023,20,11,3168,1.40902e+07,1.41942,0.00347222,False,False
+top30_content_fallers_main,under_review,seq models,2,2024,46,7,4881,2.13928e+07,2.15025,0.00143413,False,False
+top30_content_fallers_main,under_review,seq models,2,2025,4,3,3196,1.46783e+07,0.272512,0.000938673,False,False
+top30_content_fallers_main,under_review,seq models,2,2026,6,5,13684,5.6727e+07,0.10577,0.00036539,False,False
+top30_content_fallers_main,under_review,seq models,2,2027,9,3,39881,1.5675e+08,0.0574164,7.52238e-05,False,False
+top30_content_fallers_main,under_review,titan xp,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_fallers_main,under_review,titan xp,2,2018,11,7,617,2.59179e+06,4.24417,0.0113452,False,False
+top30_content_fallers_main,under_review,titan xp,2,2019,20,18,1050,4.45912e+06,4.48519,0.0171429,False,False
+top30_content_fallers_main,under_review,titan xp,2,2020,26,21,1838,7.75979e+06,3.35061,0.0114255,False,False
+top30_content_fallers_main,under_review,titan xp,2,2021,17,12,2084,8.8048e+06,1.93076,0.00575816,False,False
+top30_content_fallers_main,under_review,titan xp,2,2022,14,13,2261,1.00833e+07,1.38843,0.00574967,False,False
+top30_content_fallers_main,under_review,titan xp,2,2023,15,15,3168,1.40902e+07,1.06457,0.00473485,False,False
+top30_content_fallers_main,under_review,titan xp,2,2024,11,10,4881,2.13928e+07,0.514191,0.00204876,False,False
+top30_content_fallers_main,under_review,titan xp,2,2025,0,0,3196,1.46783e+07,0,0,True,False
+top30_content_fallers_main,under_review,titan xp,2,2026,5,5,13684,5.6727e+07,0.0881414,0.00036539,False,False
+top30_content_fallers_main,under_review,titan xp,2,2027,0,0,39881,1.5675e+08,0,0,True,False
+top30_content_fallers_main,under_review,lstm cells,2,2017,18,11,286,1.21835e+06,14.7741,0.0384615,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2018,21,13,617,2.59179e+06,8.10251,0.0210697,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2019,31,16,1050,4.45912e+06,6.95204,0.0152381,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2020,32,23,1838,7.75979e+06,4.12382,0.0125136,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2021,19,6,2084,8.8048e+06,2.15791,0.00287908,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2022,10,7,2261,1.00833e+07,0.991738,0.00309598,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2023,3,3,3168,1.40902e+07,0.212913,0.00094697,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2024,0,0,4881,2.13928e+07,0,0,True,False
+top30_content_fallers_main,under_review,lstm cells,2,2025,2,2,3196,1.46783e+07,0.136256,0.000625782,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2026,3,3,13684,5.6727e+07,0.0528849,0.000219234,False,False
+top30_content_fallers_main,under_review,lstm cells,2,2027,3,2,39881,1.5675e+08,0.0191388,5.01492e-05,False,False
+top30_content_fallers_main,under_review,training gans,2,2017,4,3,286,1.21835e+06,3.28313,0.0104895,False,False
+top30_content_fallers_main,under_review,training gans,2,2018,20,14,617,2.59179e+06,7.71668,0.0226904,False,False
+top30_content_fallers_main,under_review,training gans,2,2019,26,19,1050,4.45912e+06,5.83074,0.0180952,False,False
+top30_content_fallers_main,under_review,training gans,2,2020,30,18,1838,7.75979e+06,3.86609,0.00979325,False,False
+top30_content_fallers_main,under_review,training gans,2,2021,34,20,2084,8.8048e+06,3.86153,0.00959693,False,False
+top30_content_fallers_main,under_review,training gans,2,2022,23,12,2261,1.00833e+07,2.281,0.00530739,False,False
+top30_content_fallers_main,under_review,training gans,2,2023,18,13,3168,1.40902e+07,1.27748,0.00410354,False,False
+top30_content_fallers_main,under_review,training gans,2,2024,12,11,4881,2.13928e+07,0.560936,0.00225364,False,False
+top30_content_fallers_main,under_review,training gans,2,2025,8,6,3196,1.46783e+07,0.545023,0.00187735,False,False
+top30_content_fallers_main,under_review,training gans,2,2026,4,4,13684,5.6727e+07,0.0705131,0.000292312,False,False
+top30_content_fallers_main,under_review,training gans,2,2027,2,2,39881,1.5675e+08,0.0127592,5.01492e-05,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2017,8,3,286,1.21835e+06,6.56626,0.0104895,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2018,43,20,617,2.59179e+06,16.5909,0.0324149,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2019,38,15,1050,4.45912e+06,8.52185,0.0142857,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2020,42,25,1838,7.75979e+06,5.41252,0.0136017,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2021,9,8,2084,8.8048e+06,1.02217,0.00383877,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2022,14,12,2261,1.00833e+07,1.38843,0.00530739,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2023,9,7,3168,1.40902e+07,0.63874,0.0022096,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2024,23,10,4881,2.13928e+07,1.07513,0.00204876,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2025,2,2,3196,1.46783e+07,0.136256,0.000625782,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2026,8,8,13684,5.6727e+07,0.141026,0.000584624,False,False
+top30_content_fallers_main,under_review,pre-trained word,2,2027,2,1,39881,1.5675e+08,0.0127592,2.50746e-05,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2017,17,8,286,1.21835e+06,13.9533,0.027972,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2018,30,15,617,2.59179e+06,11.575,0.0243112,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2019,45,20,1050,4.45912e+06,10.0917,0.0190476,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2020,38,26,1838,7.75979e+06,4.89704,0.0141458,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2021,25,11,2084,8.8048e+06,2.83936,0.00527831,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2022,21,7,2261,1.00833e+07,2.08265,0.00309598,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2023,6,5,3168,1.40902e+07,0.425827,0.00157828,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2024,9,6,4881,2.13928e+07,0.420702,0.00122926,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2025,1,1,3196,1.46783e+07,0.0681279,0.000312891,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2026,5,5,13684,5.6727e+07,0.0881414,0.00036539,False,False
+top30_content_fallers_main,under_review,lstm cell,2,2027,5,5,39881,1.5675e+08,0.031898,0.000125373,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2017,3,3,286,1.21835e+06,2.46235,0.0104895,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2018,33,21,617,2.59179e+06,12.7325,0.0340357,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2019,41,21,1050,4.45912e+06,9.19463,0.02,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2020,46,18,1838,7.75979e+06,5.928,0.00979325,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2021,34,21,2084,8.8048e+06,3.86153,0.0100768,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2022,18,17,2261,1.00833e+07,1.78513,0.0075188,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2023,18,13,3168,1.40902e+07,1.27748,0.00410354,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2024,27,8,4881,2.13928e+07,1.26211,0.00163901,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2025,2,2,3196,1.46783e+07,0.136256,0.000625782,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2026,5,5,13684,5.6727e+07,0.0881414,0.00036539,False,False
+top30_content_fallers_main,under_review,deep cnn,2,2027,6,6,39881,1.5675e+08,0.0382776,0.000150448,False,False
+top30_content_fallers_main,under_review,kx yk,2,2017,2,2,286,1.21835e+06,1.64156,0.00699301,False,False
+top30_content_fallers_main,under_review,kx yk,2,2018,10,8,617,2.59179e+06,3.85834,0.012966,False,False
+top30_content_fallers_main,under_review,kx yk,2,2019,24,10,1050,4.45912e+06,5.38222,0.00952381,False,False
+top30_content_fallers_main,under_review,kx yk,2,2020,27,20,1838,7.75979e+06,3.47948,0.0108814,False,False
+top30_content_fallers_main,under_review,kx yk,2,2021,34,22,2084,8.8048e+06,3.86153,0.0105566,False,False
+top30_content_fallers_main,under_review,kx yk,2,2022,28,18,2261,1.00833e+07,2.77687,0.00796108,False,False
+top30_content_fallers_main,under_review,kx yk,2,2023,16,10,3168,1.40902e+07,1.13554,0.00315657,False,False
+top30_content_fallers_main,under_review,kx yk,2,2024,4,3,4881,2.13928e+07,0.186979,0.000614628,False,False
+top30_content_fallers_main,under_review,kx yk,2,2025,3,1,3196,1.46783e+07,0.204384,0.000312891,False,False
+top30_content_fallers_main,under_review,kx yk,2,2026,3,3,13684,5.6727e+07,0.0528849,0.000219234,False,False
+top30_content_fallers_main,under_review,kx yk,2,2027,9,6,39881,1.5675e+08,0.0574164,0.000150448,False,False
+top30_content_fallers_main,under_review,neural machine,2,2017,66,12,286,1.21835e+06,54.1716,0.041958,False,False
+top30_content_fallers_main,under_review,neural machine,2,2018,74,30,617,2.59179e+06,28.5517,0.0486224,False,False
+top30_content_fallers_main,under_review,neural machine,2,2019,128,45,1050,4.45912e+06,28.7052,0.0428571,False,False
+top30_content_fallers_main,under_review,neural machine,2,2020,117,56,1838,7.75979e+06,15.0777,0.0304679,False,False
+top30_content_fallers_main,under_review,neural machine,2,2021,132,55,2084,8.8048e+06,14.9918,0.0263916,False,False
+top30_content_fallers_main,under_review,neural machine,2,2022,92,42,2261,1.00833e+07,9.12399,0.0185759,False,False
+top30_content_fallers_main,under_review,neural machine,2,2023,68,38,3168,1.40902e+07,4.82604,0.0119949,False,False
+top30_content_fallers_main,under_review,neural machine,2,2024,32,21,4881,2.13928e+07,1.49583,0.0043024,False,False
+top30_content_fallers_main,under_review,neural machine,2,2025,13,10,3196,1.46783e+07,0.885662,0.00312891,False,False
+top30_content_fallers_main,under_review,neural machine,2,2026,31,27,13684,5.6727e+07,0.546477,0.00197311,False,False
+top30_content_fallers_main,under_review,neural machine,2,2027,31,24,39881,1.5675e+08,0.197767,0.00060179,False,False
+top30_content_fallers_main,under_review,word vector,2,2017,18,10,286,1.21835e+06,14.7741,0.034965,False,False
+top30_content_fallers_main,under_review,word vector,2,2018,40,22,617,2.59179e+06,15.4334,0.0356564,False,False
+top30_content_fallers_main,under_review,word vector,2,2019,64,21,1050,4.45912e+06,14.3526,0.02,False,False
+top30_content_fallers_main,under_review,word vector,2,2020,53,21,1838,7.75979e+06,6.83008,0.0114255,False,False
+top30_content_fallers_main,under_review,word vector,2,2021,39,13,2084,8.8048e+06,4.4294,0.006238,False,False
+top30_content_fallers_main,under_review,word vector,2,2022,25,9,2261,1.00833e+07,2.47934,0.00398054,False,False
+top30_content_fallers_main,under_review,word vector,2,2023,49,12,3168,1.40902e+07,3.47759,0.00378788,False,False
+top30_content_fallers_main,under_review,word vector,2,2024,27,8,4881,2.13928e+07,1.26211,0.00163901,False,False
+top30_content_fallers_main,under_review,word vector,2,2025,9,7,3196,1.46783e+07,0.613151,0.00219024,False,False
+top30_content_fallers_main,under_review,word vector,2,2026,9,9,13684,5.6727e+07,0.158655,0.000657702,False,False
+top30_content_fallers_main,under_review,word vector,2,2027,3,3,39881,1.5675e+08,0.0191388,7.52238e-05,False,False
+top30_content_fallers_main,under_review,gan model,2,2017,3,3,286,1.21835e+06,2.46235,0.0104895,False,False
+top30_content_fallers_main,under_review,gan model,2,2018,21,15,617,2.59179e+06,8.10251,0.0243112,False,False
+top30_content_fallers_main,under_review,gan model,2,2019,88,31,1050,4.45912e+06,19.7348,0.0295238,False,False
+top30_content_fallers_main,under_review,gan model,2,2020,86,35,1838,7.75979e+06,11.0828,0.0190424,False,False
+top30_content_fallers_main,under_review,gan model,2,2021,32,22,2084,8.8048e+06,3.63438,0.0105566,False,False
+top30_content_fallers_main,under_review,gan model,2,2022,30,17,2261,1.00833e+07,2.97521,0.0075188,False,False
+top30_content_fallers_main,under_review,gan model,2,2023,35,18,3168,1.40902e+07,2.48399,0.00568182,False,False
+top30_content_fallers_main,under_review,gan model,2,2024,48,22,4881,2.13928e+07,2.24374,0.00450727,False,False
+top30_content_fallers_main,under_review,gan model,2,2025,11,10,3196,1.46783e+07,0.749407,0.00312891,False,False
+top30_content_fallers_main,under_review,gan model,2,2026,16,11,13684,5.6727e+07,0.282053,0.000803859,False,False
+top30_content_fallers_main,under_review,gan model,2,2027,2,2,39881,1.5675e+08,0.0127592,5.01492e-05,False,False
+top30_content_fallers_main,under_review,word vectors,2,2017,55,14,286,1.21835e+06,45.143,0.048951,False,False
+top30_content_fallers_main,under_review,word vectors,2,2018,113,35,617,2.59179e+06,43.5992,0.0567261,False,False
+top30_content_fallers_main,under_review,word vectors,2,2019,141,33,1050,4.45912e+06,31.6206,0.0314286,False,False
+top30_content_fallers_main,under_review,word vectors,2,2020,124,36,1838,7.75979e+06,15.9798,0.0195865,False,False
+top30_content_fallers_main,under_review,word vectors,2,2021,77,26,2084,8.8048e+06,8.74523,0.012476,False,False
+top30_content_fallers_main,under_review,word vectors,2,2022,22,12,2261,1.00833e+07,2.18182,0.00530739,False,False
+top30_content_fallers_main,under_review,word vectors,2,2023,62,17,3168,1.40902e+07,4.40021,0.00536616,False,False
+top30_content_fallers_main,under_review,word vectors,2,2024,56,19,4881,2.13928e+07,2.6177,0.00389264,False,False
+top30_content_fallers_main,under_review,word vectors,2,2025,18,7,3196,1.46783e+07,1.2263,0.00219024,False,False
+top30_content_fallers_main,under_review,word vectors,2,2026,21,15,13684,5.6727e+07,0.370194,0.00109617,False,False
+top30_content_fallers_main,under_review,word vectors,2,2027,27,18,39881,1.5675e+08,0.172249,0.000451343,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2017,51,17,286,1.21835e+06,41.8599,0.0594406,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2018,85,30,617,2.59179e+06,32.7959,0.0486224,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2019,58,22,1050,4.45912e+06,13.007,0.0209524,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2020,56,29,1838,7.75979e+06,7.21669,0.015778,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2021,62,25,2084,8.8048e+06,7.04161,0.0119962,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2022,31,12,2261,1.00833e+07,3.07439,0.00530739,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2023,25,13,3168,1.40902e+07,1.77428,0.00410354,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2024,14,9,4881,2.13928e+07,0.654425,0.00184388,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2025,13,6,3196,1.46783e+07,0.885662,0.00187735,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2026,19,16,13684,5.6727e+07,0.334937,0.00116925,False,False
+top30_content_fallers_main,under_review,penn treebank,2,2027,35,28,39881,1.5675e+08,0.223286,0.000702089,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2018,66,27,617,2.59179e+06,25.465,0.0437601,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2019,78,36,1050,4.45912e+06,17.4922,0.0342857,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2020,47,34,1838,7.75979e+06,6.05687,0.0184984,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2021,32,24,2084,8.8048e+06,3.63438,0.0115163,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2022,22,17,2261,1.00833e+07,2.18182,0.0075188,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2023,17,13,3168,1.40902e+07,1.20651,0.00410354,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2024,14,12,4881,2.13928e+07,0.654425,0.00245851,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2025,1,1,3196,1.46783e+07,0.0681279,0.000312891,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2026,16,14,13684,5.6727e+07,0.282053,0.00102309,False,False
+top30_content_fallers_main,under_review,wasserstein gan,2,2027,14,9,39881,1.5675e+08,0.0893143,0.000225671,False,False
+top30_content_fallers_main,under_review,bad local,2,2017,10,6,286,1.21835e+06,8.20782,0.020979,False,False
+top30_content_fallers_main,under_review,bad local,2,2018,13,7,617,2.59179e+06,5.01584,0.0113452,False,False
+top30_content_fallers_main,under_review,bad local,2,2019,15,11,1050,4.45912e+06,3.36389,0.0104762,False,False
+top30_content_fallers_main,under_review,bad local,2,2020,62,19,1838,7.75979e+06,7.98991,0.0103373,False,False
+top30_content_fallers_main,under_review,bad local,2,2021,34,20,2084,8.8048e+06,3.86153,0.00959693,False,False
+top30_content_fallers_main,under_review,bad local,2,2022,25,14,2261,1.00833e+07,2.47934,0.00619195,False,False
+top30_content_fallers_main,under_review,bad local,2,2023,80,21,3168,1.40902e+07,5.67769,0.00662879,False,False
+top30_content_fallers_main,under_review,bad local,2,2024,22,10,4881,2.13928e+07,1.02838,0.00204876,False,False
+top30_content_fallers_main,under_review,bad local,2,2025,3,3,3196,1.46783e+07,0.204384,0.000938673,False,False
+top30_content_fallers_main,under_review,bad local,2,2026,5,5,13684,5.6727e+07,0.0881414,0.00036539,False,False
+top30_content_fallers_main,under_review,bad local,2,2027,18,12,39881,1.5675e+08,0.114833,0.000300895,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2017,0,0,286,1.21835e+06,0,0,True,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2018,2,2,617,2.59179e+06,0.771668,0.00324149,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2019,21,7,1050,4.45912e+06,4.70945,0.00666667,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2020,90,27,1838,7.75979e+06,11.5983,0.0146899,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2021,104,37,2084,8.8048e+06,11.8117,0.0177543,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2022,64,18,2261,1.00833e+07,6.34712,0.00796108,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2023,40,22,3168,1.40902e+07,2.83885,0.00694444,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2024,74,26,4881,2.13928e+07,3.45911,0.00532678,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2025,7,5,3196,1.46783e+07,0.476895,0.00156446,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2026,13,9,13684,5.6727e+07,0.229168,0.000657702,False,False
+top30_content_fallers_main,under_review,meta-learning algorithms,2,2027,14,4,39881,1.5675e+08,0.0893143,0.000100298,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2017,10,7,286,1.21835e+06,8.20782,0.0244755,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2018,17,13,617,2.59179e+06,6.55918,0.0210697,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2019,27,14,1050,4.45912e+06,6.055,0.0133333,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2020,31,16,1838,7.75979e+06,3.99496,0.00870511,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2021,9,9,2084,8.8048e+06,1.02217,0.00431862,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2022,16,7,2261,1.00833e+07,1.58678,0.00309598,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2023,3,3,3168,1.40902e+07,0.212913,0.00094697,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2024,0,0,4881,2.13928e+07,0,0,True,False
+top30_content_fallers_main,under_review,standard lstm,2,2025,3,3,3196,1.46783e+07,0.204384,0.000938673,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2026,8,8,13684,5.6727e+07,0.141026,0.000584624,False,False
+top30_content_fallers_main,under_review,standard lstm,2,2027,5,4,39881,1.5675e+08,0.031898,0.000100298,False,False
+top30_content_fallers_main,under_review,gan objective,2,2017,10,5,286,1.21835e+06,8.20782,0.0174825,False,False
+top30_content_fallers_main,under_review,gan objective,2,2018,33,15,617,2.59179e+06,12.7325,0.0243112,False,False
+top30_content_fallers_main,under_review,gan objective,2,2019,36,24,1050,4.45912e+06,8.07333,0.0228571,False,False
+top30_content_fallers_main,under_review,gan objective,2,2020,15,13,1838,7.75979e+06,1.93304,0.00707291,False,False
+top30_content_fallers_main,under_review,gan objective,2,2021,23,11,2084,8.8048e+06,2.61221,0.00527831,False,False
+top30_content_fallers_main,under_review,gan objective,2,2022,11,7,2261,1.00833e+07,1.09091,0.00309598,False,False
+top30_content_fallers_main,under_review,gan objective,2,2023,9,6,3168,1.40902e+07,0.63874,0.00189394,False,False
+top30_content_fallers_main,under_review,gan objective,2,2024,4,3,4881,2.13928e+07,0.186979,0.000614628,False,False
+top30_content_fallers_main,under_review,gan objective,2,2025,0,0,3196,1.46783e+07,0,0,True,False
+top30_content_fallers_main,under_review,gan objective,2,2026,7,4,13684,5.6727e+07,0.123398,0.000292312,False,False
+top30_content_fallers_main,under_review,gan objective,2,2027,9,8,39881,1.5675e+08,0.0574164,0.000200597,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2017,6,6,286,1.21835e+06,4.92469,0.020979,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2018,11,11,617,2.59179e+06,4.24417,0.0178282,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2019,22,20,1050,4.45912e+06,4.9337,0.0190476,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2020,25,23,1838,7.75979e+06,3.22174,0.0125136,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2021,28,25,2084,8.8048e+06,3.18008,0.0119962,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2022,23,20,2261,1.00833e+07,2.281,0.00884564,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2023,28,22,3168,1.40902e+07,1.98719,0.00694444,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2024,23,17,4881,2.13928e+07,1.07513,0.00348289,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2025,2,2,3196,1.46783e+07,0.136256,0.000625782,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2026,8,8,13684,5.6727e+07,0.141026,0.000584624,False,False
+top30_content_fallers_main,under_review,two fully-connected,2,2027,1,1,39881,1.5675e+08,0.00637959,2.50746e-05,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2017,5,5,286,1.21835e+06,4.10391,0.0174825,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2018,73,17,617,2.59179e+06,28.1659,0.0275527,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2019,27,15,1050,4.45912e+06,6.055,0.0142857,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2020,51,24,1838,7.75979e+06,6.57235,0.0130577,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2021,32,19,2084,8.8048e+06,3.63438,0.00911708,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2022,19,14,2261,1.00833e+07,1.8843,0.00619195,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2023,53,16,3168,1.40902e+07,3.76147,0.00505051,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2024,11,11,4881,2.13928e+07,0.514191,0.00225364,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2025,5,4,3196,1.46783e+07,0.340639,0.00125156,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2026,9,9,13684,5.6727e+07,0.158655,0.000657702,False,False
+top30_content_fallers_main,under_review,deep cnns,2,2027,3,3,39881,1.5675e+08,0.0191388,7.52238e-05,False,False
+top30_content_fallers_main,under_review,gan models,2,2017,1,1,286,1.21835e+06,0.820782,0.0034965,False,False
+top30_content_fallers_main,under_review,gan models,2,2018,28,10,617,2.59179e+06,10.8033,0.0162075,False,False
+top30_content_fallers_main,under_review,gan models,2,2019,69,25,1050,4.45912e+06,15.4739,0.0238095,False,False
+top30_content_fallers_main,under_review,gan models,2,2020,75,36,1838,7.75979e+06,9.66521,0.0195865,False,False
+top30_content_fallers_main,under_review,gan models,2,2021,67,29,2084,8.8048e+06,7.60948,0.0139155,False,False
+top30_content_fallers_main,under_review,gan models,2,2022,47,22,2261,1.00833e+07,4.66117,0.00973021,False,False
+top30_content_fallers_main,under_review,gan models,2,2023,27,18,3168,1.40902e+07,1.91622,0.00568182,False,False
+top30_content_fallers_main,under_review,gan models,2,2024,39,25,4881,2.13928e+07,1.82304,0.0051219,False,False
+top30_content_fallers_main,under_review,gan models,2,2025,23,15,3196,1.46783e+07,1.56694,0.00469337,False,False
+top30_content_fallers_main,under_review,gan models,2,2026,17,14,13684,5.6727e+07,0.299681,0.00102309,False,False
+top30_content_fallers_main,under_review,gan models,2,2027,6,6,39881,1.5675e+08,0.0382776,0.000150448,False,False
+top30_content_fallers_main,under_review,art results,2,2017,21,16,286,1.21835e+06,17.2364,0.0559441,False,False
+top30_content_fallers_main,under_review,art results,2,2018,28,22,617,2.59179e+06,10.8033,0.0356564,False,False
+top30_content_fallers_main,under_review,art results,2,2019,35,25,1050,4.45912e+06,7.84908,0.0238095,False,False
+top30_content_fallers_main,under_review,art results,2,2020,54,43,1838,7.75979e+06,6.95895,0.023395,False,False
+top30_content_fallers_main,under_review,art results,2,2021,28,23,2084,8.8048e+06,3.18008,0.0110365,False,False
+top30_content_fallers_main,under_review,art results,2,2022,21,17,2261,1.00833e+07,2.08265,0.0075188,False,False
+top30_content_fallers_main,under_review,art results,2,2023,13,12,3168,1.40902e+07,0.922625,0.00378788,False,False
+top30_content_fallers_main,under_review,art results,2,2024,14,14,4881,2.13928e+07,0.654425,0.00286826,False,False
+top30_content_fallers_main,under_review,art results,2,2025,7,6,3196,1.46783e+07,0.476895,0.00187735,False,False
+top30_content_fallers_main,under_review,art results,2,2026,21,18,13684,5.6727e+07,0.370194,0.0013154,False,False
+top30_content_fallers_main,under_review,art results,2,2027,5,5,39881,1.5675e+08,0.031898,0.000125373,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2017,24,13,286,1.21835e+06,19.6988,0.0454545,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2018,40,19,617,2.59179e+06,15.4334,0.0307942,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2019,63,20,1050,4.45912e+06,14.1283,0.0190476,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2020,29,18,1838,7.75979e+06,3.73722,0.00979325,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2021,18,14,2084,8.8048e+06,2.04434,0.00671785,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2022,15,8,2261,1.00833e+07,1.48761,0.00353826,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2023,4,3,3168,1.40902e+07,0.283885,0.00094697,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2024,35,15,4881,2.13928e+07,1.63606,0.00307314,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2025,4,2,3196,1.46783e+07,0.272512,0.000625782,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2026,17,9,13684,5.6727e+07,0.299681,0.000657702,False,False
+top30_content_fallers_main,under_review,lstm layer,2,2027,4,4,39881,1.5675e+08,0.0255184,0.000100298,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2017,15,8,286,1.21835e+06,12.3117,0.027972,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2018,51,23,617,2.59179e+06,19.6775,0.0372771,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2019,76,37,1050,4.45912e+06,17.0437,0.0352381,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2020,71,42,1838,7.75979e+06,9.14974,0.0228509,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2021,43,26,2084,8.8048e+06,4.8837,0.012476,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2022,48,24,2261,1.00833e+07,4.76034,0.0106148,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2023,39,20,3168,1.40902e+07,2.76787,0.00631313,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2024,25,18,4881,2.13928e+07,1.16862,0.00368777,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2025,17,9,3196,1.46783e+07,1.15817,0.00281602,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2026,20,19,13684,5.6727e+07,0.352566,0.00138848,False,False
+top30_content_fallers_main,under_review,discriminator network,2,2027,7,3,39881,1.5675e+08,0.0446572,7.52238e-05,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2017,79,43,286,1.21835e+06,64.8418,0.15035,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2018,143,80,617,2.59179e+06,55.1742,0.12966,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2019,153,104,1050,4.45912e+06,34.3117,0.0990476,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2020,127,103,1838,7.75979e+06,16.3664,0.0560392,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2021,95,56,2084,8.8048e+06,10.7896,0.0268714,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2022,85,59,2261,1.00833e+07,8.42977,0.0260946,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2023,87,56,3168,1.40902e+07,6.17449,0.0176768,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2024,63,52,4881,2.13928e+07,2.94491,0.0106536,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2025,33,19,3196,1.46783e+07,2.24822,0.00594493,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2026,58,46,13684,5.6727e+07,1.02244,0.00336159,False,False
+top30_content_fallers_main,under_review,deep convolutional,2,2027,36,33,39881,1.5675e+08,0.229665,0.000827462,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2017,30,16,286,1.21835e+06,24.6235,0.0559441,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2018,90,52,617,2.59179e+06,34.725,0.0842788,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2019,77,57,1050,4.45912e+06,17.268,0.0542857,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2020,170,97,1838,7.75979e+06,21.9078,0.0527748,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2021,137,96,2084,8.8048e+06,15.5597,0.0460653,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2022,104,73,2261,1.00833e+07,10.3141,0.0322866,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2023,167,90,3168,1.40902e+07,11.8522,0.0284091,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2024,94,66,4881,2.13928e+07,4.394,0.0135218,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2025,26,17,3196,1.46783e+07,1.77132,0.00531915,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2026,55,41,13684,5.6727e+07,0.969556,0.0029962,False,False
+top30_content_fallers_main,under_review,fully-connected layer,2,2027,12,11,39881,1.5675e+08,0.0765551,0.000275821,False,False

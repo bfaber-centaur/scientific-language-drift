@@ -126,6 +126,21 @@ corpus_diff, inventory_extras, plot_inventory). **Tables:** `results/v2/inventor
   ICML↔ICLR overlap (≥ 16.3%, not 13.3%); D4 the directive's MuPDF result has no record in the repo.
 - Next: review Lanes B, C, D docs as they land.
 
+### Lane B (V2): longitudinal replication (2026-10-15, Gate 2 done)
+
+**Doc:** `docs/v2-replication.md` (comparison rules frozen in d3511aa before any V2 estimate).
+**Scripts:** `scripts/v2/run_replication.sh` runs everything: `replication_flags.py` →
+`count_ngrams.py --revision 2c0dd19 --merge-by-year` → `replication_views.py` → `make_tables.py` /
+`longitudinal.py` → `paper_features.py` → `venue_replication.py` → `replication_compare.py`.
+**Outputs:** `results/v2/replication/` (v2main = primary V2 view; v2def = V1 definitions; figures 2, 6, 7).
+
+State: all per-year V1 findings survive; corpus-weighted pooled contrasts shift because 2025–26 are now
+complete (negative result B-N1); the 2027 markers move in ICML/COLM/TMLR 2026 cohorts.
+Git-ignored intermediates: `~/work/v2_body`, `~/work/v2_all`, `~/work/views*`, `~/work/features`
+(≈ 1.5 h to rebuild; needs ~25 GB disk; the direct config can be deleted after the flags step).
+Open: date TMLR 2026 records by OpenReview submission month (calendar test in `docs/v2-replication.md`);
+check whether OpenReview id order tracks submission time (explains *test whether* 2026, V1 vs added).
+
 ## Blockers and risks
 
 - The dataset keeps growing. Never move the revision pin without rerunning recon and updating

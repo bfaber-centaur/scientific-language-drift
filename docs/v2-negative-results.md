@@ -39,3 +39,16 @@ _Shared by the V2 lanes. Each lane edits only its own labeled section._
   shell. The log simply stopped. It now streams record batches, and every run ends with an explicit
   exit line. The first counter run was also stopped and restarted from scratch to add construction
   measures; nothing from the partial run was used.
+
+## Lane B (replication)
+
+- **B-N1. V1's corpus-weighted 2017–21 → 2025–27 contrasts are not stable under complete data.**
+  They weight years by paper count, so V1's recent cohort was 81% ICLR 2027. Phrases whose 2027 value
+  differs from 2025–26 (*a novel*, *we propose*, *leverage*, *delve into*, *crucial role*) change
+  verdict when 2025–26 become complete. Quote year-balanced contrasts or per-year values; V1's
+  corpus-weighted watchlist verdicts (17/36 held) are superseded by V2's (24/36), with no change in any
+  year's data. `docs/v2-replication.md`, figure 2b.
+- **B-N2. The V2 trigram merge failed twice for lack of disk** (DuckDB spill > 20 GB with composite
+  strata). Fixed with `count_ngrams.py --merge-by-year`, value-identical on a test venue.
+- **B-N3. One V1 2027 record is an exact duplicate of a record added to 2026**, so "V1 reproduces
+  exactly" holds for 2017–2026 and to within one paper for 2027.

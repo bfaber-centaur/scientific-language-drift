@@ -140,6 +140,10 @@ def main():
     ap.add_argument("--workers", type=int, default=os.cpu_count())
     ap.add_argument("--out", required=True)
     ap.add_argument("--ns", type=int, nargs="+", default=list(NS), help="n-gram orders to merge and write")
+    ap.add_argument("--revision", default=REVISION,
+                    help="dataset commit (default: MLNGRAMS_REVISION or the V1 pin); recorded in run.json")
+    ap.add_argument("--merge-by-year", action="store_true",
+                    help="aggregate one year at a time (identical output, bounded DuckDB spill)")
     ap.add_argument("--merge-only", action="store_true",
                     help="skip counting; merge existing --out/_parts and docs.parquet (after a failed merge)")
     ap.add_argument("--flags", default=os.path.join(os.path.dirname(__file__), "..", "results", "paper_flags_iclr.csv"))
@@ -173,7 +177,7 @@ def main():
     t0 = time.time()
 
     def unique_docs(year):
-        for d in iter_docs(a.config, a.venue, year):
+        for d in iter_docs(a.config, a.venue, year, revision=a.revision):
             h = d["text_sha256"]
             fl = flags.get((year, d["doc_id"]))
             if fl is not None and fl.exclude:
@@ -202,7 +206,7 @@ def main():
             jobs = ((c, a.body_only, a.keep_statements) for c in chunks_by_stratum(unique_docs(year), a.chunk))
             for rows, counts, dfs in bounded_map(ex, count_chunk, jobs, 2 * a.workers):
                 doc_rows += rows
-                for n in NS:
+                for n in a.ns:  # only the orders that will be merged (all-text trigram parts exceed the disk)
                     pd.DataFrame(
                         {
                             "year": year,
@@ -229,27 +233,53 @@ def main():
 
     con = duckdb.connect()
     con.execute(f"SET temp_directory='{os.path.join(a.out, '_duck')}'")
-    con.execute("SET memory_limit='8GB'")
+    con.execute(f"SET memory_limit='{os.environ.get("MLNGRAMS_DUCK_MEM", "8GB")}'")
     con.execute("SET preserve_insertion_order=false")
     con.register("docs_all", docs)
     con.execute("CREATE TABLE docs AS SELECT * FROM docs_all WHERE stratum NOT LIKE '%|offsample'")
     tot_rows, strat_rows = [], []
+    years_present = [int(y) for y in docs["year"].unique()]
     for n in a.ns:
-        con.execute(
-            f"""
-            CREATE OR REPLACE TABLE gs AS
-            SELECT year, stratum, ngram, SUM(count)::BIGINT AS count, SUM(df)::BIGINT AS df
-            FROM read_parquet('{part_dir}/n{n}_*.parquet') GROUP BY year, stratum, ngram
-            """
-        )
-        con.execute(
-            """
-            CREATE OR REPLACE TABLE g AS
-            SELECT year, ngram, SUM(count)::BIGINT AS count, SUM(df)::BIGINT AS df
-            FROM gs WHERE stratum NOT LIKE '%|offsample' GROUP BY year, ngram
-            """
-        )
-        con.execute(f"CREATE OR REPLACE TABLE keep AS SELECT DISTINCT ngram FROM g WHERE df >= {a.min_df}")
+        if a.merge_by_year:
+            # Same result, bounded spill: the keep set is the union of per-year keep sets, then only
+            # kept n-grams are aggregated, one year at a time (V2 trigrams exceeded the disk otherwise).
+            parts = f"read_parquet('{part_dir}/n{n}_*.parquet')"
+            con.execute("CREATE OR REPLACE TABLE keep_y (ngram VARCHAR)")
+            con.execute("CREATE OR REPLACE TABLE dist (year INTEGER, distinct_ngrams BIGINT)")
+            for y in sorted(years_present):
+                con.execute(f"""CREATE OR REPLACE TEMP TABLE agg AS SELECT ngram, SUM(df)::BIGINT AS df
+                    FROM {parts} WHERE year = {y} AND stratum NOT LIKE '%|offsample' GROUP BY ngram""")
+                con.execute(f"INSERT INTO dist SELECT {y}, COUNT(*) FROM agg")
+                con.execute(f"INSERT INTO keep_y SELECT ngram FROM agg WHERE df >= {a.min_df}")
+            con.execute("DROP TABLE IF EXISTS agg")
+            con.execute("CREATE OR REPLACE TABLE keep AS SELECT DISTINCT ngram FROM keep_y")
+            con.execute("DROP TABLE keep_y")
+            con.execute("""CREATE OR REPLACE TABLE gs (year BIGINT, stratum VARCHAR, ngram VARCHAR,
+                           count BIGINT, df BIGINT)""")
+            for y in sorted(years_present):
+                con.execute(f"""INSERT INTO gs SELECT year, stratum, ngram, SUM(count)::BIGINT, SUM(df)::BIGINT
+                    FROM {parts} WHERE year = {y} AND ngram IN (SELECT ngram FROM keep)
+                    GROUP BY year, stratum, ngram""")
+            con.execute("""CREATE OR REPLACE TABLE g AS
+                SELECT year, ngram, SUM(count)::BIGINT AS count, SUM(df)::BIGINT AS df
+                FROM gs WHERE stratum NOT LIKE '%|offsample' GROUP BY year, ngram""")
+        else:
+            con.execute(
+                f"""
+                CREATE OR REPLACE TABLE gs AS
+                SELECT year, stratum, ngram, SUM(count)::BIGINT AS count, SUM(df)::BIGINT AS df
+                FROM read_parquet('{part_dir}/n{n}_*.parquet') GROUP BY year, stratum, ngram
+                """
+            )
+            con.execute(
+                """
+                CREATE OR REPLACE TABLE g AS
+                SELECT year, ngram, SUM(count)::BIGINT AS count, SUM(df)::BIGINT AS df
+                FROM gs WHERE stratum NOT LIKE '%|offsample' GROUP BY year, ngram
+                """
+            )
+            con.execute(f"CREATE OR REPLACE TABLE keep AS SELECT DISTINCT ngram FROM g WHERE df >= {a.min_df}")
+            con.execute("CREATE OR REPLACE TABLE dist AS SELECT year, COUNT(*) AS distinct_ngrams FROM g GROUP BY year")
         strat_rows.append(
             con.execute(
                 f"""
@@ -274,7 +304,7 @@ def main():
             f"""
             SELECT d.year, {n} AS n, COUNT(*) AS docs, SUM(d.tokens) AS tokens,
                    SUM(d.positions_{n}) AS positions,
-                   (SELECT COUNT(*) FROM g WHERE g.year = d.year) AS distinct_ngrams
+                   (SELECT dist.distinct_ngrams FROM dist WHERE dist.year = d.year) AS distinct_ngrams
             FROM docs d GROUP BY d.year ORDER BY d.year
             """
         ).df()
@@ -307,7 +337,7 @@ def main():
             "min_df": a.min_df,
             "ns": a.ns,
             "flags": a.flags if flags else "none",
-            "revision": REVISION,
+            "revision": a.revision,
             "tokenizer": tokenize.TOKENIZER_VERSION,
             "filter": filters.FILTER_VERSION,
             "docs": len(docs),

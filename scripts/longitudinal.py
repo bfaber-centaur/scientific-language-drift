@@ -201,9 +201,11 @@ CONTRASTS = {
 }
 TINY_DOCS = 200
 PARTIAL_YEARS = (2025, 2026)  # 2025: id-stratum subset only; 2026: ~26% extraction
+SHADE_YEARS = PARTIAL_YEARS  # figure shading only; --coverage v2 clears it
 SUBMISSION_YEAR = 2027  # under review, written in 2026
 # Approximate extraction coverage reported by the corpus agent; annotation only.
 # 2025: year-level tables hold only the unbiased id stratum (4,781 papers).
+LABEL_2025 = "\nid stratum"
 COVERAGE = {2017: 0.98, 2018: 0.98, 2019: 0.98, 2020: 0.98, 2021: 0.98, 2022: 0.98,
             2023: 0.97, 2024: 0.83, 2026: 0.26, 2027: 0.998}
 MIN_PREV, MIN_DF = 0.01, 20
@@ -428,7 +430,7 @@ def set_year_ticks(ax, years):
 
 
 def mark_years(ax, years, label=False):
-    lo = [y for y in PARTIAL_YEARS if y in years]
+    lo = [y for y in SHADE_YEARS if y in years]
     if lo:
         ax.axvspan(min(lo) - 0.5, max(lo) + 0.5, color="#ecebe6", zorder=0, lw=0)
     if SUBMISSION_YEAR in years:
@@ -495,7 +497,13 @@ def main():
     ap.add_argument("--sens-label", default="alltext")
     ap.add_argument("--outroot", default=None, help="default: <repo>/results")
     ap.add_argument("--tmp", default=os.path.expanduser("~/work/agent-c"))
+    ap.add_argument("--coverage", choices=("v1", "v2"), default="v1",
+                    help="figure annotations only: v2 = complete 2024-2026 (V2 pin, docs/v2-corpus-inventory.md)")
     a = ap.parse_args()
+    global SHADE_YEARS, LABEL_2025
+    if a.coverage == "v2":
+        COVERAGE.update({2024: 0.986, 2025: 0.995, 2026: 0.996})
+        SHADE_YEARS, LABEL_2025 = (), ""
     out = os.path.join(a.outroot or os.path.join(REPO, "results"), a.name, "longitudinal")
     figdir = os.path.join(out, "figures")
     os.makedirs(figdir, exist_ok=True)
@@ -843,10 +851,10 @@ def main():
     # fig6: corpus size context
     t1 = d.tot(1)
     fig, ax = plt.subplots(figsize=(8, 3.2))
-    cols = [C_GRAY if y in d.tiny else ("#9fc3ef" if y in PARTIAL_YEARS else C_BLUE) for y in t1.index]
+    cols = [C_GRAY if y in d.tiny else ("#9fc3ef" if y in SHADE_YEARS else C_BLUE) for y in t1.index]
     ax.bar(t1.index, t1.docs, color=cols, width=0.7)
     for y, v in t1.docs.items():
-        lab = f"{v:,}" + ("\nid stratum" if y == 2025 else f"\n{COVERAGE[y]:.0%}" if y in COVERAGE else "")
+        lab = f"{v:,}" + (LABEL_2025 if y == 2025 and LABEL_2025 else f"\n{COVERAGE[y]:.0%}" if y in COVERAGE else "")
         ax.text(y, v, lab, ha="center", va="bottom", fontsize=6.5, color=C_INK2)
     ax.set_yscale("log")
     ax.set_ylabel("papers counted (log scale)", fontsize=8)

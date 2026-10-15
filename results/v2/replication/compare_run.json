@@ -1,0 +1,22 @@
+{
+ "v1_revision": "cb5553e0c192c31c562a2822668c7f4ebbb9437a",
+ "v2_revision": "2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27",
+ "views": {
+  "v1repro": "/root/work/views/v1repro",
+  "add2024": "/root/work/views/add2024",
+  "add2026": "/root/work/views/add2026",
+  "v2def": "/root/work/views/v2def",
+  "v2main": "/root/work/views/v2main",
+  "member_v1": "/root/work/views/member_v1",
+  "member_added": "/root/work/views/member_added"
+ },
+ "k_pseudocounts": 5.0,
+ "early": [
+  2017,
+  2021
+ ],
+ "recent": [
+  2025,
+  2027
+ ]
+}
