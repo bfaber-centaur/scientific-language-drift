@@ -126,47 +126,8 @@ def rank_resid(D, v):
     return resid(D, r[:, None])[:, 0]
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--boot", type=int, default=1000)
-    ap.add_argument("--perm", type=int, default=2000)
-    args = ap.parse_args()
-    rng = np.random.default_rng(SEED)
-    df = pd.read_parquet(os.path.join(DATA, "lane_c_papers.parquet"))
-    for f in FEATURES:
-        df[f] = df[f].astype(float)
-    z = np.load(os.path.join(DATA, "lane_c_types.npz"))
-    summary = {}
-
-    g = pd.concat([df.group.value_counts().rename("papers"), df.group2.value_counts().rename("papers")]).reset_index()
-    g.columns = ["group", "papers"]
-    g = g.drop_duplicates("group")
-    g.to_csv(os.path.join(OUT, "lane_c_groups.csv"), index=False)
-    print(g.to_string(), flush=True)
-
-    res = pd.concat([contrast(df, col, a, b, args.boot, args.perm, rng, lab) for lab, col, a, b in CONTRASTS])
-    res.round(5).to_csv(os.path.join(OUT, "lane_c_contrasts.csv"), index=False)
-    print(res[["contrast", "feature", "n_a", "n_b", "mean_a", "mean_b", "d_raw", "d_adj", "d_adj_lo", "d_adj_hi", "p_perm", "q_bh", "robust_d_adj"]].round(4).to_string(), flush=True)
-
-    # Disclosure length and specificity vs body features (rank-transformed, topic/length adjusted).
-    D = dummies(df)
-    spec = (df.n_cats.rank() + df.tool_named.astype(float).rank() + df.author_types_n.rank()) / 3
-    rows = []
-    for name, v in [("disc_words", df.disc_words), ("specificity", spec)]:
-        rv = rank_resid(D, v.to_numpy(float))
-        for f in ["ai_words_p10k", "func_share", "mean_tok_len", "mattr500", "bundle_rep"]:
-            rf = rank_resid(D, df[f].to_numpy())
-            r = float(np.corrcoef(rv, rf)[0, 1])
-            n = len(df)
-            t = r * np.sqrt((n - 2) / (1 - r * r))
-            from scipy import stats
-            rows.append({"disclosure_measure": name, "feature": f, "n": n, "rho_adj": r, "p": 2 * stats.t.sf(abs(t), n - 2)})
-    corr = pd.DataFrame(rows)
-    corr["q_bh"] = bh(corr.p.to_numpy())
-    corr.round(5).to_csv(os.path.join(OUT, "lane_c_disclosure_corr.csv"), index=False)
-    print(corr.round(4).to_string(), flush=True)
-
-    # Disclosure/body overlap.
+def overlap(df, z, rng, keep=None) -> pd.DataFrame:
+    """Disclosure/body vocabulary overlap: own body vs 20 topic/length-matched bodies vs 20 random bodies."""
     bptr, body, aptr, auth = z["body_ptr"], z["body"], z["auth_ptr"], z["auth"]
     n = len(df)
     B = [np.sort(body[bptr[i] : bptr[i + 1]]) for i in range(n)]
@@ -192,7 +153,7 @@ def main() -> None:
     recs = []
     K = 20
     for i in range(n):
-        if len(A[i]) < 3:
+        if len(A[i]) < 3 or (keep is not None and not keep[i]):
             continue
         pool = by_s[strata[i]]
         if len(pool) < K + 1:
@@ -237,6 +198,56 @@ def main() -> None:
                       "group": "drafting minus polish_only", "papers": len(ea) + len(eb),
                       "enrichment_own_minus_matched": ea.mean() - eb.mean(), "ci_lo": np.percentile(diffs, 2.5), "ci_hi": np.percentile(diffs, 97.5)})
     ovr = pd.DataFrame(orows)
+    return ovr
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--boot", type=int, default=1000)
+    ap.add_argument("--perm", type=int, default=2000)
+    args = ap.parse_args()
+    rng = np.random.default_rng(SEED)
+    df = pd.read_parquet(os.path.join(DATA, "lane_c_papers.parquet"))
+    for f in FEATURES:
+        df[f] = df[f].astype(float)
+    z = np.load(os.path.join(DATA, "lane_c_types.npz"))
+    summary = {}
+
+    g = pd.concat([df.group.value_counts().rename("papers"), df.group2.value_counts().rename("papers")]).reset_index()
+    g.columns = ["group", "papers"]
+    g = g.drop_duplicates("group")
+    g.to_csv(os.path.join(OUT, "lane_c_groups.csv"), index=False)
+    print(g.to_string(), flush=True)
+
+    res = pd.concat([contrast(df, col, a, b, args.boot, args.perm, rng, lab) for lab, col, a, b in CONTRASTS])
+    res.round(5).to_csv(os.path.join(OUT, "lane_c_contrasts.csv"), index=False)
+    print(res[["contrast", "feature", "n_a", "n_b", "mean_a", "mean_b", "d_raw", "d_adj", "d_adj_lo", "d_adj_hi", "p_perm", "q_bh", "robust_d_adj"]].round(4).to_string(), flush=True)
+
+    # Disclosure length and specificity vs body features (rank-transformed, topic/length adjusted).
+    D = dummies(df)
+    spec = (df.n_cats.rank() + df.tool_named.astype(float).rank() + df.author_types_n.rank()) / 3
+    rows = []
+    for name, v in [("disc_words", df.disc_words), ("specificity", spec)]:
+        rv = rank_resid(D, v.to_numpy(float))
+        for f in ["ai_words_p10k", "func_share", "mean_tok_len", "mattr500", "bundle_rep"]:
+            rf = rank_resid(D, df[f].to_numpy())
+            r = float(np.corrcoef(rv, rf)[0, 1])
+            n = len(df)
+            t = r * np.sqrt((n - 2) / (1 - r * r))
+            from scipy import stats
+            rows.append({"disclosure_measure": name, "feature": f, "n": n, "rho_adj": r, "p": 2 * stats.t.sf(abs(t), n - 2)})
+    corr = pd.DataFrame(rows)
+    corr["q_bh"] = bh(corr.p.to_numpy())
+    corr.round(5).to_csv(os.path.join(OUT, "lane_c_disclosure_corr.csv"), index=False)
+    print(corr.round(4).to_string(), flush=True)
+
+    # Disclosure/body overlap.
+    ovr = overlap(df, z, rng)
+    bptr, body = z["body_ptr"], z["body"]
+    n = len(df)
+    V = len(z["vocab"])
+    dfv = np.bincount(body, minlength=V)
+    by_t = {t: np.flatnonzero(df.topic.to_numpy() == t) for t in np.unique(df.topic)}
     ovr.round(5).to_csv(os.path.join(OUT, "lane_c_overlap.csv"), index=False)
     print(ovr.round(4).to_string(), flush=True)
 

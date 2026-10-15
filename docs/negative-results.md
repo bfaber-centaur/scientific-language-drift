@@ -133,3 +133,31 @@ Recorded in `docs/appendix-growth.md` ("Defects found and corrected") and `resul
   (5,119 → 4,454); about a quarter to a third of the 2026→27 step. The rest is not explained by tables,
   figures, equations or reference residue.
 
+
+## N14. Statement removal v2 left ~1,700 AI-use disclosures in ICLR 2027 main bodies (Lane B)
+
+The Lane B extractor found 1,700 disclosures (4.0% of 2027 papers) inside the main body that
+`sections.strip_statements` (v2) did not remove. In 583 of them the PDF reading order put the
+heading *after* the body. In 360 the heading was run-in ("AI use statement. We used ..."). Of the rest,
+736 were stand-alone heading lines that v2's name list or its 5,000-character window missed, and 21
+had no heading
+(`results/disclosures/extraction_leakage.csv`).
+
+The main-body n-gram tables for 2027 therefore still contain some disclosure wording. This is
+small next to the 2027 shifts in `docs/findings.md` §3: a typical disclosure is 78 words in a
+roughly 4,300-token body. It was not fixed in the earlier tables, which keep statement removal v2.
+Lane C cuts the extractor's span from each body before measuring, which removed 1,133 more spans
+from the papers it analysed. Lane D independently found that ~3.5–5% of extracted disclosures also
+run on past their end into bibliography or ethics text (B1, `docs/ai-disclosures.md` §1).
+
+## N15. Disclosure classifier v1 failed its held-out test (Lane B)
+
+The negation-aware rule classifier v1 (commit 26e8539) replaced N13's keyword rules, but on 180
+held-out statements it missed the Gate 3 bar. Drafting precision was 0.843 against a required 0.85
+(95% CI 0.74–0.91), and exact label-set match was 0.667 (`results/disclosures/labels/eval_test.csv`,
+commit a44b60c).
+
+On a second, fresh set (test2) v1 did worse: drafting precision 0.786 and exact match 0.567. The
+threshold was written after v1's per-category scores were seen, though before its group scores. v2
+was then built on all 240 round-1 labels, frozen, and tested on test2; it passed narrowly (drafting
+P = R = 0.863). No v1 labels are used anywhere downstream.

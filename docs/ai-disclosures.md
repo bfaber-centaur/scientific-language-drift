@@ -45,6 +45,13 @@ the heading was run-in or placed after its body (`results/disclosures/extraction
 Earlier main-body n-gram results for 2027 therefore contain some disclosure text. See
 `docs/negative-results.md` N14. Lane C cuts these spans itself.
 
+**Defect found by Lane D (B1, preserved):** the end of a disclosure is not always found. About
+3.5–5% of clean-tier disclosures run on into one or two bibliography entries or a following
+ethics or impact paragraph. The bibliography flag needs three entry lines, so shorter overruns pass
+as clean. The effect on the phrase tables is small (bibliography tails are 0.3% of clean words),
+but it matters for disclosure/body overlap. Lane C reports overlap with and without these papers
+(`docs/disclosure-body-analysis.md`, check C1).
+
 ## 2. Template versus author wording
 
 The ICLR 2027 policy page (`results/disclosures/iclr2027_ai_policy.txt`, retrieved 2026-10-15)
@@ -55,7 +62,10 @@ attributed to:
   community wording);
 - **author** otherwise.
 
-Mean shares per disclosure are 19% template, 22% stock and 58% author. Pooled over tokens they are
+Mean shares per disclosure are 19% template, 22% stock and 58% author. *Limitation (Lane D, B2):*
+"template" mixes ICLR's frame wording with task names that an author placed in the *used* slot.
+The second is an assertion made in template words, so the template share overstates how much of a
+disclosure is non-assertive boilerplate. The two were not separated. Pooled over tokens they are
 21.9% template and 18.6% stock. 10,592 disclosures (27%) contain no template 4-gram at all, 4,032
 are at least half template, and 168 are at least 90% template. The most frequent trigrams are
 almost all template: "used generative ai" (99% template), "the final content" (99.6%), "take
@@ -71,7 +81,9 @@ final 97%, then paper's, scientific, entire); `template_coverage.csv`.
 ## 3. Copies and formulations
 
 - 37,096 distinct exact texts across 39,351 papers. 3,789 papers fall in 1,534 exact-duplicate
-  groups (largest 21), mostly multiple submissions by the same authors.
+  groups (largest 21). *Inferred, not checked*: submissions are anonymous. Lane D found that the
+  four largest groups span unrelated topics, which fits either one prolific group or shared lab
+  boilerplate.
 - MinHash near-duplicates (5-gram Jaccard ≥ 0.8): 1,818 clusters containing 4,566 papers (largest
   24). That leaves 36,603 distinct formulations.
 - Several large clusters have zero template share, so the copying is of a lab's or group's own
@@ -79,9 +91,18 @@ final 97%, then paper's, scientific, entire); `template_coverage.csv`.
 
 ## 4. Admission versus disclaimer phrases
 
-Sentences were split into use (156,346) and non-use (27,201) by a negation cue, and compared with
-Monroe log-odds (`polarity_phrases.csv`). Use sentences are marked by *reviewed, final, take,
-responsibility, ai-assisted, manuscript, text, code, verified*. Non-use sentences are dominated by
+Sentences were split into "no negation cue" (156,346) and non-use (27,201) by a negation cue, and
+compared with Monroe log-odds (`polarity_phrases.csv`). The no-cue side is dominated by
+*attestations*, not admissions of use: *reviewed, final, take, responsibility, verified*. The
+admission vocabulary on that side is *ai-assisted, manuscript, text, code*.
+
+Two known misfires (Lane D, B3) mean roughly 1–4% of non-use sentences are actually use claims,
+so the table is directionally right but not exact:
+- The template instruction "(This section is required ... page limit.)", left in 231 statements,
+  is glued to the next sentence because the split ignores `.)`.
+- In 802 non-use sentences, "without" is the only cue.
+
+The table was not regenerated; the classifier (§6) handles both cases. Non-use sentences are dominated by
 the policy's Required list, which authors negate ("formulate mathematical claims", "thematic data
 analysis", "conceptual frameworks"). This list is why the earlier keyword classifier (N13) failed:
 "we have not used ... to assist in the writing of proofs" contains "writing".
@@ -129,6 +150,9 @@ validation, and a human spot check of about 30 labels is the cheapest remaining 
 |---|---:|---|
 | test (180) | 0.983 | 0.97–1.00 |
 | test2 (150) | 0.960 | 0.96–1.00 (`agreement_test2.csv`) |
+| Lane D reviewer vs coder 1, 30 items per set | 27/30 (test), 29/30 (test2) | `results/review/blind_labels_laneb_test*.csv` |
+
+The Lane D labels are the only ones produced outside this lane's sessions.
 
 **Classifier.** `mlngrams.disclosure_classify` is rule-based and works at clause level. It is
 negation-aware: negation must be tied to a use verb, relative-clause and parenthetical negations are
@@ -177,8 +201,10 @@ Remaining error types (from `--show-errors`):
 - unknown 537 (1.4%)
 - none 253 (0.6%)
 
-Explicit non-use is too rare to serve as a comparison group. About 1 in 7 papers claiming drafting
-is expected to be misclassified, mostly from other_use.
+Explicit non-use is too rare to serve as a comparison group. Somewhere between 1 in 7 and 1 in 4
+papers labelled drafting are expected to be misclassified, mostly from other_use. Precision is 0.86
+over all test2 items but only 8/11 and 5/7 on the simple-random strata of test and test2 (Lane D).
+The cue-heavy strata flatter precision, and the sample is not reweighted to the population (B4).
 
 ## 7. What researchers say beyond the template (summary)
 
@@ -196,3 +222,14 @@ at all. What authors add beyond the template:
   per-track activity logs").
 
 Near-copies are common (4,566 papers in clusters), and most of them carry no template wording.
+
+## Corrections log
+
+| date | source | change |
+|---|---|---|
+| 2026-10-15 | Lane D review, D1 / B1 | §1: documented disclosure overruns into bibliography or ethics text (about 3.5–5% of the clean tier); not fixed in extractor v1; Lane C reports overlap without them (1,303 flagged). |
+| 2026-10-15 | Lane D review, D1 / B3 | §4: the no-negation-cue side relabelled as mostly attestations; the two polarity misfires documented; table not regenerated. |
+| 2026-10-15 | Lane D review, B2 | §2: "template" share noted to include affirmed task names; not separated. |
+| 2026-10-15 | Lane D review, D2 / B4 | §6: misclassification of the drafting group given as a range (1 in 7 to 1 in 4), with the stratification caveat. |
+| 2026-10-15 | Lane D review, D3 | §3: "multiple submissions by the same authors" marked as inferred. |
+| 2026-10-15 | Lane D review, D4 | §6: the reviewer's cross-context label agreement added. |

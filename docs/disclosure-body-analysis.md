@@ -71,9 +71,10 @@ Primary contrast, drafting vs polish_only (`results/disclosures/lane_c_contrasts
   Drafting vs polish_plus, which holds non-writing AI use roughly constant, keeps the same signs at
   about half the size (we propose −0.20, a novel −0.12, held fixed +0.08). So the pattern is not
   only "more AI use of any kind".
-- **Effect of classifier error.** Drafting precision is about 0.86, and most errors come from
-  other_use, which itself lies between the two groups. These errors attenuate the contrasts rather
-  than create them.
+- **Effect of classifier error.** Drafting precision is about 0.86 on the full test2 set but may be
+  as low as 0.71 (Lane D: simple-random strata). Most errors come from other_use, which itself lies
+  between the two groups, so they attenuate the contrasts rather than create them. Check C2 below
+  gives the corrected range.
 
 **The direction is the opposite of the "AI words" intuition.** Papers whose authors report AI
 *drafting* use the stereotyped AI vocabulary *less*. They also use fewer novelty formulas, shorter
@@ -149,6 +150,19 @@ same way.
 - repeat the contrast within de-anonymized camera-ready versions with author affiliations;
 - check whether the drafting/polish gap appears within the same authors' papers;
 - check whether the gap holds among papers that newly mention AI coding agents.
+
+## Checks requested by the Lane D review (added after results; not preregistered)
+
+Run with `python3 scripts/disclosures/lane_c_review_checks.py` (seed 20271016). Requests C1–C4 and
+Gate 3 verdict (c) come from `docs/v1.5-review.md`. Nothing changed the conclusions.
+
+| check | result | file |
+|---|---|---|
+| C1: overlap without the 1,303 disclosures (3.3%) that overran into bibliography or ethics text | Enrichment for all author words drops from +0.057 to +0.055; for general vocabulary from +0.056 to +0.053. The drafting minus polish_only gap grows slightly, from +0.026 to +0.028. | `lane_c_overlap_c1.csv` |
+| C2: drafting precision anywhere from 0.71 to 0.86, assuming the false drafting labels come from other_use | Corrected effects are larger than observed. For "we propose", d is −0.44 at P = 0.86 and −0.49 at P = 0.71; "results support" stays near 0. | `lane_c_label_error.csv` |
+| C3: group sizes per topic cluster | No cluster has fewer than 30 papers in either group (smallest: 66 drafting, 41 polish_only), so nothing was dropped and the estimates are unchanged. | `lane_c_topic_cells.csv` |
+| C4: cluster bootstrap with 15,856 near-duplicate disclosure clusters as units | CIs widen by at most about 0.01 (for example "we propose" [−0.447, −0.373]). | `lane_c_robustness.csv` |
+| (c): only papers where the surface wording agrees with the classifier (drafting cue in the drafting group; polish cue and no drafting cue in polish_only) | n = 10,966 vs 4,891. Every effect is within 0.02 of the main estimate (we propose −0.43, a novel −0.23, test whether +0.17). | `lane_c_robustness.csv` |
 
 ## Weak or null results (reported prominently)
 
