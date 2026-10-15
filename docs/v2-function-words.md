@@ -21,9 +21,11 @@ text is stored in the repository. Facts, interpretation and hypotheses are label
    approximate submission deadline, the venues fall on top of each other (figure 3b). Every venue's
    per-paper distribution shifts as a whole: 46% of ICML 2026 papers and 80% of ICLR 2027 papers fall
    below the 5th percentile of ICLR 2023.
-4. **The ICLR 2027 step cannot yet be tested outside ICLR.** No other cohort in the dataset was drafted
-   in mid-2026 (COLM 2026, drafted around March 2026, is the latest). ICLR 2027 also differs in kind
-   from the earlier decline: "the", "to", "and" and the em dash change direction or jump (below).
+4. **The ICLR 2027 step has no direct non-ICLR test, but its markers are already moving in 2026.** No
+   other cohort was drafted in mid-2026 (COLM 2026, around March, is the latest). ICLR 2027 differs in
+   kind from the earlier decline ("the", "to", "and" and the em dash change direction or jump), and
+   those same markers shift in 2026-drafted ICML, COLM and TMLR cohorts, more so the later the deadline
+   (§5, within-2026 gradient).
 5. **Within the same paper, the rates are set when the paper is drafted, not when it is polished.**
    868 papers appear as an ICLR 2026 submission (drafted by September 2025) and an ICML 2026 camera-ready
    (finalised mid-2026); with Lane E's text matches, 1,047 pairs. Their main-body prose keeps its "of"
@@ -172,6 +174,32 @@ abstracts are fluent prose dense with compound modifiers, not garbled or truncat
 dash rises in every venue. In ICLR 2027, "to" falls a further 32% in one year, ", and" rises 65%,
 sentences shorten by two tokens, "the" rises slightly and the em dash halves. The 2027 cohort is not
 simply further along the 2024–2026 trajectory.
+
+### Within-2026 writing-date gradient (added after Lane B's Gate 2)
+
+Does the 2027 step have the same calendar shape as Lane B's rhetorical shift? Each cohort is compared with
+its own venue's previous year (prose, `within_2026_gradient.csv`), ordered by approximate deadline:
+
+| cohort (deadline) | n | "of" | "to" | "the" | ", and" | em dash | tokens/sentence |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| ICLR 2026 submissions vs 2025 (Sep 2025) | 14,201 | −20% | −10% | −18% | +23% | +170% | −1% |
+| ICML 2026 vs 2025 (Jan 2026) | 6,276 | −25% | −11% | −15% | +15% | +16% | −2% |
+| COLM 2026 vs 2025 (Mar 2026) | 855 | −26% | −20% | −9% | +33% | −16% | −2% |
+| TMLR 2026 submissions vs 2025 (rolling) | 1,469 | −25% | −23% | −6% | +48% | +55% | −0% |
+| ICLR 2027 vs 2026 (Sep 2026) | 42,025 | −32% | −32% | +5% | +65% | −52% | −9% |
+
+**Facts.** The markers that set ICLR 2027 apart are already moving in 2026-drafted cohorts, more so the
+later the deadline: the fall in "to" deepens (−10% → −11% → −20% → −32%), the fall in "the" shrinks and
+then reverses (−18% → −15% → −9% → +5%), the em dash's rise turns into a fall (+170% → +16% → −16% →
+−52%), and ", and" grows fastest in the latest cohorts. Sentence shortening does not show this gradient
+and appears only in ICLR 2027.
+
+**Caveats.** Each row uses its own venue's previous year as baseline, and those baselines were drafted at
+different times; ICML and COLM are camera-ready versions finalised months after their deadlines; TMLR
+dates are rolling and its year field is unresolved; COLM is small. Four non-ICLR points do not make a
+time series. **Interpretation (tentative):** the 2027 function-word step looks like the continuation of a
+change that was already under way through 2026 at other venues, with the same calendar shape Lane B
+reports for rhetorical phrases, rather than something specific to ICLR 2027.
 
 ## 6. Same-paper pairs
 
