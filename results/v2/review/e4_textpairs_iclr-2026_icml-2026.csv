@@ -1,0 +1,669 @@
+a_id,b_id,jaccard,title_match,a_title,b_title
+l852J55j9n,jB7dvOzr1a,0.5546875,True,Demystifying Scientific Problem-Solving in LLMs by Probing Knowledge and Reasoning,Demystifying Scientific Problem-Solving in LLMs by Probing Knowledge and Reasoning
+JfNkiril3c,dkcdYllv9f,0.65625,True,Learning Hamiltonian Dynamics at Scale:  A Differential-Geometric Approach,Learning Hamiltonian Dynamics at Scale: A Differential-Geometric Approach
+G14LfMzf1w,ifjUMvvY05,0.421875,True,Normality Calibration in Semi-supervised Graph Anomaly Detection,Normality Calibration in Semi-supervised Graph Anomaly Detection
+1pTzWVvwEd,rWQ5PqlROI,0.734375,True,Incremental Learning in Transformers for In-Context Associative Recall,Incremental Learning in Transformers for In-Context Associative Recall
+hm2EcwFm2Q,cyIUoRizkW,0.5234375,True,Contrastive Representation Regularization for Vision-Language-Action Models,Contrastive Representation Regularization for Vision-Language-Action Models
+EG97ljS2uT,lpa6hHaukP,0.6640625,False,Stealthy Jailbreaking Attacks via Hyperbolic Hamiltonian Dynamics and Möbius Fusion,Structured Multi-step Jailbreaking under a Hamiltonian Generative Formulation
+xBJXnorMJ7,aIFgQusnPy,0.4921875,True,Diffusion Bridge or Flow Matching? A Unifying Framework and Comparative Analysis,Diffusion Bridge or Flow Matching? A Unifying Framework and Comparative Analysis
+IlEQ1u4CJl,utRSxIkoSJ,0.3125,True,Concept-Guided Tokenization: Closing the Gap Between Reconstruction and Generation,Concept-Guided Tokenization: Closing the Gap Between Reconstruction and Generation
+25B8Se2kH1,ykdc70h1ND,0.671875,True,LFQ: Logit-aware Final-block Quantization for Boosting the Generation Quality of Low-Bit Quantized LLMs,LFQ: Logit-aware Final-block Quantization for Boosting the Generation Quality of Low-Bit Quantized LLMs
+HVSaxqPN3f,mZd4u9d7pQ,0.7109375,True,Once-for-All: Scalable Simultaneous Forecasting via Equilibrium State Estimation,Once-for-All: Scalable Simultaneous Forecasting via Equilibrium State Estimation
+YCoUgpYqGP,jSSBKgH86z,0.4765625,True,Open-o3 Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence,Open-o3-Video: Grounded Video Reasoning with Explicit Spatio-Temporal Evidence
+NuzRgYrBXo,6xeSRifGeL,0.4609375,False,Property-Oriented and Structurally Minimal Feedback for Effective LLM-based Code Refinement,PGS: Effective LLM Code Refinement via Property-Oriented and Structurally Minimal Feedback
+gra9XQLf2i,VFCf4CSfzw,0.359375,False,Dynamics-Informed Weight Diffusion for Generalizable Prediction of  Complex Systems,Generative Adaptation of Dynamics to Environmental Shifts via Weight-space Diffusion
+W4915ssZ3c,zEg7sA2VBv,0.6328125,False,Provably Learning Task-Relevant World Representation,From Generalist to Specialist Representation
+uDQiyW5C1X,jn7gGAya5h,0.6640625,True,A Direct Second-Order Method for Solving Two-Player Zero-Sum Games,A Direct Second-Order Method for Solving Two-Player Zero-Sum Games
+EUTmFIQ9Jv,pm52OUEAW6,0.703125,False,Negative Sampling From the Ground Up: A Redesign for Graph-based Recommendations,Negative Sampling From the Ground Up: A Redesign for Recommendations
+jbGGPSI9aO,iXPK0rsCE9,0.6875,True,AdaSCALE: Adaptive Scaling for OOD detection,AdaSCALE: Adaptive Scaling for OOD Detection
+irr8jw79Uv,dc0WdvWSnB,0.671875,True,Verbalized Bayesian Persuasion,Verbalized Bayesian Persuasion
+NpkI32QYTI,oSuKfnbPFB,0.46875,False,A Step towards Efficient Waste Segmentation for Automated Waste Recycling in Cluttered Background,Towards Effective Waste Segmentation for Automated Waste Recycling in Cluttered Background
+ubaQqVuBnE,oP3gus0Sl3,0.640625,True,Nonparametric Data Attribution for Diffusion Models,Nonparametric Data Attribution for Diffusion Models
+qwsCjNSHMz,Icj19tWHI1,0.59375,True,Learning 3D-Gaussian Simulators from RGB Videos,Learning 3D-Gaussian Simulators from RGB Videos
+tRgXKJqMPg,1RQIaGQV8v,0.671875,True,OpenHA: A Series of Open-Source Hierarchical Agentic Models in Minecraft,OpenHA: A Series of Open-Source Hierarchical Agentic Models in Minecraft
+nCZH28rKQ9,4i4K7wVYUW,0.5078125,True,SpaceVista: All-Scale Visual Spatial Reasoning from mm to km,SpaceVista: All-Scale Visual Spatial Reasoning from mm to km
+k2Ffo12MWl,V3DCFHEC5C,0.6484375,True,Value-as-Return: A Two-Stage Framework to Align on the Optimal Score Function,Value-as-Return: A Two-Stage Framework to Align on the Optimal Score Function
+XFNMmznPTj,QpgIOT06k3,0.6640625,True,Adaptive Reinforcement Learning for Unobservable Random Delays,Adaptive Reinforcement Learning for Unobservable Random Delays
+u1lUbEDQsU,uynAkGdnmj,0.5625,True,SORA: Free Second Order Attacks in Fast Adversarial Training,SORA: Free Second-Order Attacks in Fast Adversarial Training
+UtxvBiujPB,Q1twBCjpUt,0.4921875,True,Vulnerable Agent Identification in Large-Scale Multi-Agent Reinforcement Learning,Vulnerable Agent Identification in Large-Scale Multi-Agent Reinforcement Learning
+jJ0Xc6sY9d,7X5GcRLHhx,0.6484375,False,TimeSAE: Sparse Decoding for Faithful Explanations of Black-Box Time Series Models,TimeSAE: Causal Sparse Decoding for Faithful Explanations of Black-Box Time Series Models
+zOgvgw5sia,66l0POQkge,0.359375,False,Efficient Compression of Time-Series Foundation Models via Consensus Subspace Distillation,From Teacher Pathways to Invariant Manifolds: Consensus Subspace Distillation for TSFMs
+jKGvmZixqc,PL8qP67p6E,0.46875,True,DIVER: Diving Deeper into Distilled Data via Expressive Semantic Recovery,DIVER: Diving Deeper into Distilled Data via Expressive Semantic Recovery
+BTJmEqVUDF,A93BskpqCP,0.640625,True,PhysHandi: Physics-Based Reconstruction of Hand-Deformable Object Interactions,PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions
+TlTygHKvRt,FJZiatEiCG,0.5625,True,Universal Learning of Nonlinear Dynamics,Universal Learning of Nonlinear Dynamics
+Yso3MCJM0e,Clh5CRZpjD,0.6640625,True,Statistically Undetectable Backdoors in Deep Neural Networks,Statistically Undetectable Backdoors in Deep Neural Networks
+PcjvI4OlED,3LA6VvtC22,0.59375,False,Multi-Integration of Labels across Categories for Component Identification (MILCCI),Multi-Integration of Labels Across Categories for Component Identification in Multi-trial Time Series
+jxsjRTXVud,B1yOdZOACl,0.640625,True,ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind,ToMAP: Training Opponent-Aware LLM Persuaders with Theory of Mind
+ha7Cj9fKOM,oREpq5grNl,0.390625,False,SUMMR: Self-supervised Joint Representation Learning for Symmetric Multimodal Retrieval,SOLAR: Self-supervised Joint Learning for Symmetric Multimodal Retrieval
+OhndOnT4Ih,gLRqqQOM9K,0.609375,True,Constrained Adaptive Rejection Sampling,Constrained Adaptive Rejection Sampling
+rc6LgDMlPW,npsWK8rgYO,0.703125,True,TreePO: Enhancing Policy Efficacy and Inference Efficiency with Tree Modeling,TreePO: Enhancing Policy Efficacy and Inference Efficiency with Tree Modeling
+Np9HKxRMcG,9DAX4oLVhy,0.6875,True,SelfJudge: Faster Speculative Decoding via Self-Supervised Judge Verification,SelfJudge: Faster Speculative Decoding via Self-Supervised Judge Verification
+Z29e9WM0FY,uQiVJ2vKhL,0.5234375,False,MME-Reasoning: A Comprehensive Benchmark for Logical Reasoning in MLLMs,MME-Reasoning: A Broad-Spectrum Benchmark for Evaluating Logical Reasoning in MLLMs
+e6EqSq2goJ,BQPtGzdE5T,0.59375,False,MINT: Minimal Information Neuro-Symbolic Tree for Objective-Driven Knowledge-Gap Reasoning and Active Human Elicitation,MINT: Minimal Information Neuro-Symbolic Tree for Objective-Driven Knowledge-Gap Reasoning and Active Elicitation
+lGfnvZsE2F,ErZRlWv8kZ,0.3671875,False,DocRobust: Enhancing Robustness of Multi-modal LLMs in Low-Quality Document Image Scenarios,Uni-DocRobust: Universal Plug-and-Play Robustness Enhancement for Multi-modal LLMs via Feature Restoration
+OaijL8iG5G,UhhC4z84r6,0.484375,True,CMDPO: Centered Mirror Descent Policy Optimization for Stable and Efficient Reinforcement Learning,CMDPO: Centered Mirror Descent Policy Optimization for Stable and Efficient Reinforcement Learning
+YM6KIpl6aR,sii2wX0bVt,0.578125,True,Fundamental bounds on efficiency-confidence trade-off for transductive conformal prediction,Fundamental bounds on efficiency-confidence trade-off for transductive conformal prediction
+pV7hqI1fN4,5o7U03RThY,0.40625,True,Causes and Consequences of Representational Similarity in Machine Learning Models,Causes and Consequences of Representational Similarity in Machine Learning Models
+uDgDuVMpfW,kGSwStubjL,0.515625,True,MultiHal: MultiLingual Dataset for Knowledge-Graph Grounded Evaluation of LLM Hallucinations,MultiHal: Multilingual Dataset for Knowledge-Graph Grounded Evaluation of LLM Hallucinations
+SCCbnM6H3z,FhCu8IlO2e,0.3203125,False,Bridging the Gap Between Preference Alignment and Machine Unlearning,Leveraging Machine Unlearning for Cost-Efficient Preference Alignment
+EgPqKZHfVY,4HDRkXxqNs,0.65625,True,SLAE:  Strictly Local All-atom Environment for Protein Representation,SLAE: Strictly Local All-atom Environment for Protein Representation
+vSBACt34gS,2taaKYQR7h,0.515625,False,The data-quality illusion: Rethinking Classifier-based Quality Filtering for LLM Pretraining,"Removing Noise, not Finding Gold: Quality Filtering for Large-Scale Pretraining"
+fejDLlOKCl,byZ7DoyDNd,0.7109375,True,Learning to Reason for Factuality,Learning to Reason for Factuality
+MtsmJZXIu5,s8AbIVtmUg,0.5,False,Can In-Context Reinforcement Learning Recover From Reward Poisoning Attacks?,Robust In-Context Reinforcement Learning Under Reward Poisoning Attacks
+IfyaPN8rwX,gJy2pIp7gt,0.4375,True,Beyond Next-Token Alignment: Distilling Multimodal Large Language Models via Token Interactions,Beyond Next-Token Alignment: Distilling Multimodal Large Language Models via Token Interactions
+7r9Af7OakN,Ig36S9zALV,0.4375,True,DeepBlip: Estimating Conditional Average Treatment Effects Over Time,DeepBlip: Estimating Conditional Average Treatment Effects Over Time
+pCSx1ZjYcn,7BpcmBjQL0,0.5859375,True,SpikeNet: Sparse Spike-Driven Mask Vector Transformer for Energy-Efficient and Stable Spiking Point Cloud Processing,SpikeNet: Sparse Spike-Driven Mask Vector Transformer for Energy-Efficient and Stable Spiking Point Cloud Processing
+evfQpBoI8s,Lp8gwhhUfU,0.359375,True,Random Scaling of Emergent Capabilities,Random Scaling of Emergent Capabilities
+X4KsowemNB,R9AUrEgZEq,0.5234375,True,SF-Mamba: Rethinking State Space Model for Vision,SF-Mamba: Rethinking State Space Model for Vision
+2Aj7sA2vbb,oXxf72fqb6,0.34375,False,MADGen:Minority Attribute Discovery in Text-to-Image Generative Models,RAIGen: Rare Attribute Identification in Text-to-Image Generative Models
+t7lJ2OEGbJ,0OevIlRMYN,0.4765625,True,Learning to Evict from Key-Value Cache,Learning to Evict from Key-Value Cache
+EvhNNKR47z,qsPISbO6ri,0.53125,False,GeoFlow: Geo-Aware Modeling of Inter-Area Relationships in OD Flow Prediction and Generation,GeoFlow: Geo-Aware Modeling of Inter-Area Relationships in Origin-Destination Flow Prediction and Generation
+ZrP2evfmhq,CL6Byu4aIA,0.703125,True,MAD: Manifold Attracted Diffusion,MAD: Manifold Attracted Diffusion
+l3lneCvc0K,K81F2RyfVm,0.7734375,False,"Sequential Emergence of Phonemic, Syntactic, and Semantic Representations in Neural Networks","Emergence of Phonemic, Syntactic, and Semantic Representations in Neural Networks"
+4qzHEswjzv,DDNQOnaRQk,0.4609375,True,Trajectory Seriation via Spectral Tangent Alignment and Global Embedding,Trajectory Seriation via Spectral Tangent Alignment and Global Embedding
+HMkwfZl61l,ZptT82VZ4E,0.671875,True,Data Selection for Fine-tuning Vision Language Models via Cross Modal Alignment Trajectories,Data Selection for Fine-tuning Vision Language Models via Cross Modal Alignment Trajectories
+t85Ni0LwjC,MjE62ZnpRH,0.4609375,True,SpecPrune-VLA: Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning,SpecPrune-VLA: Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning
+KkT3f2N4oF,Y3tTG28OO9,0.6328125,True,T-POP: Test-Time Personalization with Online Preference Feedback,T-POP: Test-Time Personalization with Online Preference Feedback
+lQxSGO2kBa,G1M4rBPtlP,0.5703125,False,Learnable Kernel Density Estimation for Graphs,Learnable Kernel Density Estimation for Graphs and Its Application to Graph-Level Anomaly Detection
+AE98vmT1HJ,jn2nRjwbFP,0.3828125,True,Unveiling the Role of Data Uncertainty in Tabular Deep Learning,Unveiling the Role of Data Uncertainty in Tabular Deep Learning
+2NKqRpyT83,IzJ0S1VJol,0.515625,True,Byte Pair Encoding for Efficient Time Series Forecasting,Byte Pair Encoding for Efficient Time Series Forecasting
+TqjmCEjrEa,i2SGjD0kIj,0.4921875,False,Data Selection and Active Learning via Low-Rank Approximation,Active Learning with Low-Rank Structure for Data Selection
+aIAU5vkRXJ,wb97oR78OX,0.4765625,True,"SAD-Flower: Flow Matching for Safe, Admissible, and Dynamically Consistent Planning","SAD-Flower: Flow Matching for Safe, Admissible, and Dynamically Consistent Planning"
+r3ot6ElBMq,kaOPDyq5sv,0.65625,True,Semantic Editing with Coupled Stochastic Differential Equations,Semantic Editing with Coupled Stochastic Differential Equations
+QzCOeNN3vJ,lquDiBCgNJ,0.4609375,False,Memory-Augmented Functional Koopmanism for Interpretable Learning of Spatiotemporal Dynamics,Interpretable Functional Koopman Learning with Non-Markovian Closure for Spatiotemporal Systems
+K9j6iggdGX,4fX2DEypNL,0.5546875,False,A$^2$SG: Adaptive and Asymmetric Surrogate Gradients for Training Deep Spiking Neural Network,A$^2$SG: Adaptive and Asymmetric Surrogate Gradients for Training Deep Spiking Neural Networks
+pIyADlhQsp,patSLwOEG9,0.65625,True,CausNVS: Autoregressive Multi-view Diffusion for Flexible 3D Novel View Synthesis,CausNVS: Autoregressive Multi-view Diffusion for Flexible 3D Novel View Synthesis
+k5h29Qv7GN,znV8JHv8b8,0.671875,True,ForesightKV: Optimizing KV Cache Eviction for Reasoning Models by Learning Long-Term Contribution,ForesightKV: Optimizing KV Cache Eviction for Reasoning Models by Learning Long-Term Contribution
+gwysQdBY1q,coJqVkqb03,0.3984375,False,Incentivizing Tool-augmented Thinking with Images for Medical Image Analysis,"Ophiuchus: Incentivizing Tool-augmented ''Think with Images'' for Joint Medical Segmentation, Understanding and Reasoning"
+zcniV3DRZJ,qBMqN2ZyVH,0.3828125,True,Distribution-Calibrated Inference Time Compute for Thinking LLM-as-a-Judge,Distribution-Calibrated Inference Time Compute for Thinking LLM-as-a-Judge
+qqwx1hGwSE,s8i2EYzmxt,0.4296875,True,Saving Foundation Flow-Matching Priors for Inverse Problems,Saving Foundation Flow-Matching Priors for Inverse Problems
+ktWReicPI0,zYeCwBTtVt,0.3125,False,Gradient Rectification for Robust Calibration under Distribution Shift,Target-Agnostic Calibration under Distribution Shift with Frequency-Aware Gradient Rectification
+pNpnqsn0Si,Lc6I5LvHGw,0.34375,True,Thoughtbubbles: an Unsupervised Method for Parallel Thinking in Latent Space,Thoughtbubbles: an Unsupervised Method for Parallel Thinking in Latent Space
+UrwARBO2RV,MDfCV0UHSb,0.578125,True,Linguistic Nepotism: Trading-off Quality for Language Preference in Multilingual RAG,Linguistic Nepotism: Trading-off Quality for Language Preference in Multilingual RAG
+CdJwNTisx1,fNI8617Hfb,0.5625,True,Masks Can Be Distracting: On Context Comprehension in Diffusion Language Models,Masks Can Be Distracting: On Context Comprehension in Diffusion Language Models
+PehKfXxOXI,pYI0WjV5iM,0.5390625,False,Revisiting the Effect of Topologies on Decentralized SGD,Improved Convergence Analysis of Topology Dependence in Decentralized SGD
+unNPxqbrGx,jqpLZEK3Zc,0.484375,True,Safeguarded Stochastic Polyak Step-Sizes for Non-smooth Optimization: Robust Performance Without Small (Sub)Gradients,Safeguarded Stochastic Polyak Step Sizes for Non-smooth Optimization: Robust Performance Without Small (Sub)Gradients
+5qu1Sr7tdC,KayAcDnAXW,0.765625,True,SFedPO: Streaming Federated Learning with a Prediction Oracle under Temporal Shifts,SFedPO: Streaming Federated Learning with a Prediction Oracle under Temporal Shifts
+RYwtJyOP3k,Yhv4d8wfbi,0.6875,True,Probably Approximately Correct Labels,Probably Approximately Correct Labels
+nzEf4dAsEw,cYpoB1KvWb,0.4921875,False,DICT: Uncertainty-Constrained Trustworthiness for Graph Learning,Uncertainty-Constrained Trustworthiness for Graph Learning
+pz3WCd3HtG,2iC5H9k8am,0.4921875,True,SARSteer: Safeguarding Large Audio Language Models via Safe-Ablated Refusal Steering,SARSteer: Safeguarding Large Audio Language Models via Safe-Ablated Refusal Steering
+TJbfURjxyL,GNgjw18LRq,0.4140625,False,SAISA: Towards Multimodal Large Language Models with Both Training and Inference Efficiency,Towards Multimodal Large Language Models with Both Training and Inference Efficiency
+frqrywj6Tv,ANVPCRmZQQ,0.5625,True,GeoDM: Geometry-aware Distribution Matching for Dataset Distillation,GeoDM: Geometry-aware Distribution Matching for Dataset Distillation
+BQMED6tayx,dWCG53oQWc,0.578125,True,Representation Learning for Equivariant Inference with Guarantees,Representation Learning for Equivariant Inference with Guarantees
+hYIyTXJXOj,08tW615mgI,0.546875,True,Protein Autoregressive Modeling via Multiscale Structure Generation,Protein Autoregressive Modeling via Multiscale Structure Generation
+qYhYrj91l2,C0WnTbVSEs,0.5078125,True,VividCam: Learning Unconventional Camera Motions from Virtual Synthetic Videos,VividCam: Learning Unconventional Camera Motions from Virtual Synthetic Videos
+PyqP125nbI,EzpJxPDqXB,0.3515625,False,Fidelity Breeds Complexity: Simulating Stock Markets with Large-Scale Generative Agents,MarketSim: Simulating Stock Markets with Large-Scale Generative Agents
+CYgn0GEtR2,ySwE6xymYR,0.7265625,True,Neural-HSS: Hierarchical Semi-Separable Neural PDE Solver,Neural-HSS: Hierarchical Semi-Separable Neural PDE Solver
+7EYYMXYDkL,wFThVGzmvq,0.5,True,PLaID++: A Preference Aligned Language Model for Targeted Inorganic Materials Design,PLaID++: A Preference Aligned Language Model for Targeted Inorganic Materials Design
+kpwGlSY1He,RVPqygyGRu,0.53125,True,A Diffusive Classification Loss for Learning Energy-based Generative Models,A Diffusive Classification Loss for Learning Energy-based Generative Models
+qQW9Dp9rWB,tQaBS1vS3N,0.5390625,True,SciVideoBench: Benchmarking Scientific Video Reasoning in Large Multimodal Models,SciVideoBench: Benchmarking Scientific Video Reasoning in Large Multimodal Models
+S34xHgo3LC,jwLSuhDyDc,0.3515625,True,Temporal  Difference Learning for Diffusion Models,Temporal Difference Learning for Diffusion Models
+ebgsbC4x5W,BjypaSs3sS,0.484375,True,Online Rubrics Elicitation from Pairwise Comparisons,Online Rubrics Elicitation from Pairwise Comparisons
+dgvx86qybJ,yLytuQFgeK,0.484375,True,Hierarchical Representations for Cross-task Automated Heuristic Design using LLMs,Hierarchical Representations for Cross-task Automated Heuristic Design using LLMs
+gj8Dw4hhDA,zO8vzSGgTn,0.375,True,A KL-regularization framework for learning to plan with adaptive priors,A KL-regularization framework for learning to plan with adaptive priors
+RmUy70TbFv,fjUUmUCy9m,0.4453125,True,Privacy-Aware Video Anomaly Detection through Orthogonal Subspace Projection,Privacy-Aware Video Anomaly Detection through Orthogonal Subspace Projection
+OQf4ZnPizX,w65t2ZDF3A,0.5234375,True,Zeroth-Order Forward-Only SNN Training Inspiring Neuromorphic On-Chip Learning,Zeroth-Order Forward-Only SNN Training Inspiring Neuromorphic On-Chip Learning
+7zuhQWJIqX,y3niyCNvAp,0.3515625,False,Towards Policy-Compliant Agents: Learning Efficient Guardrails for Policy Violation Detection,Learning Efficient Guardrails for Compliance
+G6scrBvQCL,WP5q6Hn3Cv,0.5,False,Deep Progressive Training: scaling up depth capacity of zero-layer model,Scaling depth capacity via zero/one-layer model expansion
+xQIvTUL1Tf,Hn81xuLaXY,0.59375,True,Efficient Reasoning with Hidden Thinking,Efficient Reasoning with Hidden Thinking
+XjWkC8bG1D,lNoaqrOXti,0.46875,False,Unlocking Time Series Foundation Models with Channel Descriptions,Giving Sensors a Voice: Multimodal JEPA for Semantic Time-Series Embeddings
+NteaYNay7g,ftM5GTQAh1,0.453125,True,RobuQ: Pushing DiTs to W1.58A2 via Robust Activation Quantization,RobuQ: Pushing DiTs to W1.58A2 via Robust Activation Quantization
+fENEDBJAV3,alkWXGgvYP,0.5625,True,Graph Alignment for Benchmarking Graph Neural Networks and Learning Positional Encodings,Graph Alignment for Benchmarking Graph Neural Networks and Learning Positional Encodings
+vcdMBXeiet,NUDNFusCDu,0.65625,False,Training-Free Defense Against Adversarial Attacks In Deep Learning MRI Reconstruction,Training-Free Adversarial Robustness in Computational MRI
+CDwLWmVl9O,blan7cedXX,0.59375,False,C$^2$-AFCL: Cross-task Calibration for Asynchronous Federated Continual Learning,Cross-task Calibration for Asynchronous Federated Continual Learning
+yjTzxo96D8,DG4wLaRnAN,0.40625,True,Revisiting Spectral Representations in Generative Diffusion Models,Revisiting Spectral Representations in Generative Diffusion Models
+YPNDGGgByQ,ELiOhFJIPh,0.34375,True,Prototype Transformer: Towards Language Model Architectures Interpretable by Design,Prototype Transformer: Towards Language Model Architectures Interpretable by Design
+z62rRFnNaX,h7WBYYJF1Q,0.546875,True,Efficient Parallel Samplers for Recurrent-Depth Models and Their Connection to Diffusion Language Models,Efficient Parallel Samplers for Recurrent-Depth Models and Their Connection to Diffusion Language Models
+xdvlzO7LZ0,xhZP2hihUq,0.4609375,True,Physics-informed Residual Flows,Physics-Informed Residual Flows
+TNIFLLzOTo,vvke6mnh3Z,0.6953125,False,Differentially Private Conditional Text Generation with RL-Boosted Control,ACTG-ARL: Differentially Private Conditional Text Generation with RL-Boosted Control
+8wcLQlfWdz,XIHBvLayrp,0.5078125,False,UniCoD: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning,UniJEPA: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning
+jNEdA3ZpGI,DmeFAFUO6f,0.484375,True,Autoregressive Direct Preference Optimization,Autoregressive Direct Preference Optimization
+KXAJtW8Bib,l0LA4SUA50,0.640625,True,Imitation Learning for Multi-turn LM Agents via On-policy Expert Corrections,Imitation Learning for Multi-turn LM Agents via On-policy Expert Corrections
+oLl4zjx6rz,TOAT4Va5VH,0.328125,True,Adaptive node feature selection for graph neural networks,Adaptive Node Feature Selection for Graph Neural Networks
+lNcc1TypMd,2hQBG2ZlFb,0.3203125,True,Beyond Log Likelihood: Probability-Based Objectives for Supervised Fine-Tuning across the Model Capability Continuum,Beyond Log Likelihood: Probability-Based Objectives for Supervised Fine-Tuning across the Model Capability Continuum
+A4koL4Zqam,HeLa76rJuD,0.421875,True,TOM-SWE: User Mental Modeling For Software Engineering Agents,TOM-SWE: User Mental Modeling For Software Engineering Agents
+5ZSfNAvyzB,DQKoxCegwH,0.65625,False,CREDIT: Certified Defense of Deep Neural Networks against Model Extraction Attacks,CREDIT: Certified Ownership Verification of Deep Neural Networks Against Model Extraction Attacks
+7a95PGL0Up,ea4sx1kxDz,0.3046875,False,MC-SJD : Maximal Coupling Speculative Jacobi Decoding for Autoregressive Visual Generation Acceleration,Speculative Coupled Decoding for Training-Free Lossless Acceleration of Autoregressive Visual Generation
+CaqVssw7rN,nVAU1aVLtY,0.390625,True,Particles Don’t Care About Z: Towards Scaling Entropy Estimation of Unnormalized Densities,Particles Don’t Care About Z: Towards Scaling Entropy Estimation of Unnormalized Densities
+uLdGZhxlxV,RNDJpm1kUW,0.4375,True,Gradient Inversion Attacks Beyond SGD,Gradient Inversion Attacks Beyond SGD
+NJUmKny4ZI,Smk4fl6Q9E,0.40625,True,It's a TRAP! Task-Redirecting Agent Persuasion Benchmark for Web Agents,It's a TRAP! Task-Redirecting Agent Persuasion Benchmark for Web Agents
+sooLoD9VSf,BamDfCP5R3,0.6484375,False,EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle,From Interactions to Principles: Experience-Driven Self-Distillation for Evolving LLM Agents
+3c6bnSJwDg,YScdQhxHgS,0.578125,True,DexMachina: Functional Retargeting for Bimanual Dexterous Manipulation,DexMachina: Functional Retargeting for Bimanual Dexterous Manipulation
+ioGQhr1lhZ,mLR6OD6kKR,0.4921875,False,Model-aware Counterfactual Data based Contrastive Decoding for Video-LLM,MACD: Model-Aware Contrastive Decoding via Counterfactual Data for Video-LLMs
+nhcz0uni55,yU6X1XZl8t,0.359375,True,QuArch: A Benchmark for Evaluating LLM Reasoning in Computer Architecture,QuArch: A Benchmark for Evaluating LLM Reasoning in Computer Architecture
+s0Ve6wLJqT,maOM1OWNZ6,0.640625,True,Contrastive Weak-to-Strong Generalization,Contrastive Weak-to-Strong Generalization
+aQP5gMb0sc,sfWgUkh5Zj,0.484375,False,Reasoning over Boundaries: Enhancing Specification Alignment via Test-time Delibration,Reasoning over Boundaries: Enhancing Specification Alignment via Test-time Deliberation
+Oboo6f5dQl,NiHC3GlPQU,0.4296875,True,EDCO: Dynamic Curriculum Orchestration for Domain-specific Large Language Model Fine-tuning,EDCO: Dynamic Curriculum Orchestration for Domain-specific Large Language Model Fine-tuning
+4isapZx9j0,rR97qOfb7W,0.5859375,True,Identifying and Correcting Label Noise for Robust GNNs via Influence Contradiction,Identifying and Correcting Label Noise for Robust GNNs via Influence Contradiction
+Nyjvjgh6jW,NN4DoPVYT2,0.71875,True,Test-time Offline Reinforcement Learning on Goal-related Experience,Test-time Offline Reinforcement Learning on Goal-related Experience
+apDaK255Ma,f9i6VLHT5v,0.4609375,True,Efficient Prediction of SO(3)-Equivariant Hamiltonian Matrices via SO(2) Local Frames,Efficient Prediction of SO(3)-Equivariant Hamiltonian Matrices via SO(2) Local Frames
+LRu30T4Vev,Q6Kt8mROxg,0.609375,True,Offline Multi-Agent Reinforcement Learning via Sequential Score Decomposition,Offline Multi-Agent Reinforcement Learning via Sequential Score Decomposition
+W4E09nnp9k,wDFrxk7306,0.3828125,False,From Algebraic Structure to Neural Parameters: A Cyclic Codes Perspective on Transformer-Based Decoders,Drop-in Circulant Structural Priors for Transformer Decoding of Cyclic Codes
+aS1mI0lqWS,Nyn7GCUhLA,0.484375,False,Poisoning LLM-based Code Agents with Styles,Poison with Style: A Practical Poisoning Attack on Code Large Language Models
+EKqBgn6bea,bcRBqG8FFN,0.3359375,True,Black-Box Combinatorial Optimization with Order-Invariant Reinforcement Learning,Black-Box Combinatorial Optimization with Order-Invariant Reinforcement Learning
+b5MhzTufoD,fi4gh4Syka,0.5234375,True,Bimodal masked language modeling for bulk RNA-seq and DNA methylation representation learning,Bimodal masked language modeling for bulk RNA-seq and DNA methylation representation learning
+bEZVJpmXux,tS5raDg2xX,0.515625,True,Ensembling Sparse Autoencoders,Ensembling Sparse Autoencoders
+X5p6k5GSbI,5lIJrDCQll,0.3671875,True,APEX: Approximate-but-exhaustive search for ultra-large combinatorial synthesis libraries,APEX: Approximate-but-exhaustive search for ultra-large combinatorial synthesis libraries
+uM3VAbVs9j,nIJOtyIQsZ,0.546875,True,Looking Locally: Object-Centric Vision Transformers as Foundation Models for Efficient Segmentation,Looking Locally: Object-Centric Vision Transformers as Foundation Models for Efficient Segmentation
+6cous6OGUL,njBsluG3Nn,0.4140625,True,Class-Grouped-Normalized-Momentum and Faster Hyperparameter Exploration to Tackle Class Imbalance in Federated Learning,Class-Grouped Normalized Momentum and Faster Hyperparameter Exploration to Tackle Class Imbalance in Federated Learning
+kL5F9sRssn,fexmo79Kxo,0.515625,True,Landmark-Guided Policy Optimization for Multi-Objective Language Model Selection,Landmark-Guided Policy Optimization for Multi-Objective Language Model Selection
+qBVIaEz6Nc,JTu5Mawn86,0.5859375,True,Platonic Transformers: A Solid Choice for Equivariance,Platonic Transformers: A Solid Choice For Equivariance
+1E2N5xo6kB,xwQytK4Yio,0.4375,False,Unlocking Long-Term Dependencies in Spiking Neural Networks with a Recurrent LIF Memory Module,LIF Recurrent Memory Enables Long-Horizon Spiking Computation
+BDywttV73U,ETBr4m6w4s,0.421875,False,KORE: Enhancing Knowledge Injection for Large Multimodal Models via Knowledge-Oriented Augmentations and Constraints,KORE: Enhancing Knowledge Injection for Large Multimodal Models via Knowledge-Oriented Controls
+AfzjIpcUjD,7Oonij8oLU,0.5078125,True,$\alpha$-PFN: Fast Entropy Search via In-Context Learning,$\alpha$-PFN: Fast Entropy Search via In-Context Learning
+PBIHh6ibal,BGcw0KWStP,0.5703125,True,PRPO: Paragraph-level Policy Optimization for Vision-Language Deepfake Detection,PRPO: Paragraph-level Policy Optimization for Vision-Language Deepfake Detection
+v5qb8BG18G,vqOaUyUeO3,0.4609375,True,Rewiring Experts on the Fly: Continuous Rerouting for Better Online Adaptation in Mixture-of-Expert models,Rewiring Experts on the Fly: Continuous Rerouting for Better Online Adaptation in Mixture-of-Expert Models
+DDaaA4Uldp,S1rq8s4FCA,0.3125,True,XTransfer: Modality-Agnostic Few-Shot Model Transfer for Human Sensing at the Edge,XTransfer: Modality-Agnostic Few-Shot Model Transfer for Human Sensing at the Edge
+4NeiwxQ2Bp,tqTNOpkP5j,0.375,True,Spurious Rewards: Rethinking Training Signals in RLVR,Spurious Rewards: Rethinking Training Signals in RLVR
+WX8uuLUSR4,6eI4YHFyON,0.515625,True,Conflicting Biases at the Edge of Stability: Norm versus Sharpness Regularization,Conflicting Biases at the Edge of Stability: Norm versus Sharpness Regularization
+B92Lzl1b3j,Xhctwvm3O2,0.5859375,True,GSFixer: Improving 3D Gaussian Splatting with Reference-Guided Video Diffusion Priors,GSFixer: Improving 3D Gaussian Splatting with Reference-Guided Video Diffusion Priors
+iX39LhePyd,ItJEC1Mk0V,0.46875,True,Adaptive Testing for LLM Evaluation: A Psychometric Alternative to Static Benchmarks,Adaptive Testing for LLM Evaluation: A Psychometric Alternative to Static Benchmarks
+4KsBX9qxqe,xtWQnuo8YO,0.671875,True,Neural Low-Discrepancy Sequences,Neural Low-Discrepancy Sequences
+GqNgK7LXBn,Ctk4XLaUpl,0.40625,False,Private Data Synthesis for Preference Alignment of Large Language Models,Differentially Private Preference Data Synthesis for Large Language Model Alignment
+RdLSJ5CJsr,4RJrwbGKfL,0.46875,True,MGAL: A Multilingual Granularity-Aware Long-context Benchmark,MGAL: A Multilingual Granularity-Aware Long-Context Benchmark
+6fHZR6uxNa,GsdFM8qnav,0.578125,True,Evaluating and Explaining Prompt Sensitivity of LLMs Using Interactions,Evaluating and Explaining Prompt Sensitivity of LLMs Using Interactions
+BE2GrBKAwD,2jpCo5lnSZ,0.5546875,True,FPTQuant: Function-Preserving Transforms for LLM Quantization,FPTQuant: Function-Preserving Transforms for LLM Quantization
+LxiEOSKyYN,47BMisNtar,0.6484375,True,Conformal Reliability: A New Evaluation Metric for Conditional Generation,Conformal Reliability: A New Evaluation Metric for Conditional Generation
+QSxjtnoRv1,hxNN3xhuS9,0.3046875,False,Unifying Multi-Scale Design in Time-Series Forecasting,Generalizing Multi-Scale Time-Series Modeling with a Single Operator
+A0D9jUo8gm,C2rOTnYowg,0.3359375,False,Leveraging Class Similarity for Enhanced Conformal Prediction,Enhancing Conformal Prediction via Class Similarity
+fAoqLsuy2U,NinueNAODD,0.578125,True,Efficient Bayesian Inference from Noisy Pairwise Comparisons,Efficient Bayesian Inference from Noisy Pairwise Comparisons
+MTdEpFql8U,lu1J2bQqyT,0.453125,True,RePro: Training Language Models to Faithfully Recycle the Web for Pretraining,RePro: Training Language Models to Faithfully Recycle the Web for Pretraining
+DealNNlz94,cgLZYrBHh6,0.3828125,True,Are Object-Centric Representations Better At Compositional Generalization?,Are Object-Centric Representations Better at Compositional Generalization?
+uTPQhBGQ89,DkLQ40hTlt,0.578125,True,Positive Distribution Shift as a Framework for Understanding Tractable Learning,Positive Distribution Shift as a Framework for Understanding Tractable Learning
+cfZNOO6ZHf,phG3K0m7xt,0.4296875,True,AMDP: Asynchronous Multi-Directional Pipeline Parallelism for Large-Scale Models Training,AMDP: Asynchronous Multi-Directional Pipeline Parallelism for Large-Scale Models Training
+GWjvweJDnG,ZxMHQCFYr1,0.3515625,False,Offline Federated Deep Reinforcement Learning with Awareness of Expected Returns and Policy Inconsistency,Expected Returns and Policy Inconsistency-Aware Offline Federated Deep Reinforcement Learning
+ZQcDUhEOg9,uBYlCu8b8Z,0.3984375,False,AdaGC: Improving Training Stability for Large Language Model Pretraining,AdaGC: Enhancing LLM Pretraining Stability via Adaptive Gradient Clipping
+rFAQRmjVMf,1iXWOZYgHF,0.609375,True,Transfer Entropy as a Measure of Information Flow in LLMs and VLMs,Transfer Entropy as a Measure of Information Flow in LLMs and VLMs
+6fibgdyZVI,1KEObQsUKW,0.5390625,True,One-shot Conditional Sampling: MMD meets Nearest Neighbors,One-shot Conditional Sampling: MMD meets Nearest Neighbors
+UatVCvzqGm,g9G7qyAzki,0.421875,False,Self-Knowledge Without a Self? Learning Calibrated and Model-Agnostic Correctness Predictors from Historical Patterns,Generalized Correctness Models: Learning Calibrated and Cross-Model Correctness Predictors from Historical Patterns
+TNARYxc9YF,21J9OI6mhc,0.4296875,True,UniFLoW: Universal Multi-Modal Federated LoRA Fine-Tuning Framework with Analytical Aggregation,UniFLoW: Universal Multi-Modal Federated LoRA Fine-Tuning Framework with Analytical Aggregation
+ksnVJfhj73,j7jawOCTJp,0.5078125,True,Hierarchical Decision Making with Structured Policies: A Principled Design via Inverse Optimization,Hierarchical Decision Making with Structured Policies: A Principled Design via Inverse Optimization
+MyQbpYANZH,4YIY66tpvQ,0.6015625,False,Error Propagation Mechanisms and Compensation Strategies for Quantized Diffusion,Error Propagation Mechanisms and Compensation Strategies for Quantized Diffusion Models
+oGlgHjYKBi,PKFilPWjMI,0.71875,True,Model-Preserving Adaptive Rounding,Model-Preserving Adaptive Rounding
+R975odFtp0,oLmwqIhzqj,0.5390625,True,Exact Unlearning in Reinforcement Learning,Exact Unlearning in Reinforcement Learning
+Ix4WA6AXPe,x2eaMhqfcK,0.421875,True,"Forget to Know, Remember to Use: Context-Aware Unlearning for Large Language Models","Forget to Know, Remember to Use: Context-Aware Unlearning for Large Language Models"
+lp2EtO9A01,8uZlNyR5R3,0.5703125,True,Auto-regressive In-context Demonstration Selection,Auto-regressive In-context Demonstration Selection
+NYUxN6plEh,c11G7lmfhm,0.421875,True,Learn to Merge: Meta-Learning for Adaptive Multi-Task Model Merging,Learn to Merge: Meta-Learning for Adaptive Multi-Task Model Merging
+Wg4KB2JAip,p2RPRTPPMO,0.5234375,True,Scalable Option Learning in High-Throughput Environments,Scalable Option Learning in High-Throughput Environments
+tT7CXL3I9C,dQA4Gjt4KU,0.3125,True,Tilt matching for scalable sampling and fine-tuning,Tilt Matching for Scalable Sampling and Fine-Tuning
+5zrvAOvgAH,Eo5uKnah7q,0.5859375,True,Governing Equation Discovery from Data Based on Differential Invariants,Governing Equation Discovery from Data Based on Differential Invariants
+wvxq3qNzHB,sXRZoMhNFo,0.5,False,PixelThink: Towards Efficient Chain-of-Pixel Reasoning,Don't Overthink with Pixels: Efficient Reasoning for Segmentation
+GM5eCjgJyh,OfxgzjqzeA,0.4765625,False,M$^2$GenCO: Multi-task Meta Learning for Generative Combinatorial Optimization,Problem Distributions as Tasks: Repurposing Meta Learning for Generative Combinatorial Optimization towards Multi-task Pretraining and Adaptation
+yTzFfHOyyU,Smoegnco1C,0.7578125,False,Noise-Guided Transport for Imitation Learning,Noise-Guided Transport: Imitation Learning from Random Priors
+DoF6K8DDyz,XAZdspeB5d,0.59375,True,VIPO: Value Function Inconsistency Penalized Offline Reinforcement Learning,VIPO: Value Function Inconsistency Penalized Offline Reinforcement Learning
+EKxHftIpcB,ky0UzGMuut,0.46875,True,Reasoning to Edit: Hypothetical Instruction-Based Image Editing with Visual Reasoning,Reasoning to Edit: Hypothetical Instruction-Based Image Editing with Visual Reasoning
+nmW77spR1I,d2TFven78P,0.484375,True,Vision-Language-Action Pretraining from Large-Scale Human Videos,Vision-Language-Action Pretraining from Large-Scale Human Videos
+AAqUFCBLn0,5LBH6azyBM,0.3984375,False,Geodesic calculus on latent spaces,Geodesic Calculus on Implicitly Defined Latent Manifolds
+eS1fhZLGAM,On0QXiLaI0,0.3359375,True,How can we assess human-agent interactions? Case studies in software agent design,How can we assess human-agent interactions? Case studies in software agent design
+kBzyIo7Ze6,lUVEQ1JRIL,0.3515625,True,From Poisoned to Aware: Fostering Backdoor Self-Awareness in LLMs,From Poisoned to Aware: Fostering Backdoor Self-Awareness in LLMs
+RcxM3e59ga,Eqm5VEaAom,0.4375,True,Who Said Neural Networks Aren't Linear?,Who Said Neural Networks Aren't Linear?
+zwLpUxiqSE,mLVSIefyWj,0.359375,False,Space Filling Curves as Spatial Priors for Small or Data-Scarce Vision Transformers,Spatial Priors via Space Filling Curves for Small and Limited Data Vision Transformers
+dUwXJTF8kQ,BUFSSOuphA,0.484375,True,In-Context Learning Is Provably Bayesian Inference: A Generalization Theory for Meta-Learning,In-Context Learning Is Provably Bayesian Inference: A Generalization Theory for Meta-Learning
+8dSNMAEaym,g6fTNu8z0f,0.4921875,True,Concept Concentration for Faithful Representation Intervention,Concept Concentration for Faithful Representation Intervention
+ZrsOnkVvM3,GcCBoFM8u9,0.5703125,True,Achieving Logarithmic Regret in KL-Regularized Zero-Sum Markov Games,Achieving Logarithmic Regret in KL-Regularized Zero-Sum Markov Games
+bsoom4qQXF,8d2LLxwU1r,0.4140625,True,Bootstrapped Exploration with Causal Reasoning: A Training Paradigm for Adaptive Forecasting Agent,Bootstrapped Exploration with Causal Reasoning: A Training Paradigm for Adaptive Forecasting Agent
+zOgUQM6uLZ,sbjXtQrAt1,0.453125,True,Identifying and Mitigating Errors in Gradient Aggregation of Distributed Data Parallel Training,Identifying and Mitigating Errors in Gradient Aggregation of Distributed Data Parallel Training
+PLidw19tPf,kS0XU5JUII,0.5859375,True,How does information access affect LLM monitors' ability to detect sabotage?,How does information access affect LLM monitors' ability to detect sabotage?
+JZp0GcNjH8,AY7L7acRtD,0.3671875,False,Towards Reliable Spatiotemporal Epidemic Forecasting via Steering Diffusion Inference,Bridging Dynamics and Data: A Unified Diffusion Framework for Mechanistically-Informed Epidemic Forecasting
+vBZXJzFV6x,Xlte2USTiv,0.453125,True,Rethinking Gating Mechanism in Sparse MoE: Handling Arbitrary Modality Inputs with Confidence-Guided Gate,Rethinking Gating Mechanism in Sparse MoE: Handling Arbitrary Modality Inputs with Confidence-Guided Gate
+kuKFSM94KW,T5Oi5wodZT,0.625,True,Gateways to Tractability for Satisfiability in Pearl's Causal Hierarchy,Gateways to Tractability for Satisfiability in Pearl’s Causal Hierarchy
+YwwGqR3BTa,fbFU9TCjra,0.4765625,False,GraphFLEx: Structure Learning $\underline{\text{F}}$ramework for $\underline{\text{L}}$arge $\underline{\text{Ex}}$panding $\underline{\text{Graph}}$s,GraphFLEx: Unsupervised Structure Learning $\underline{\text{F}}$ramework for $\underline{\text{L}}$arge $\underline{\text{Ex}}$panding $\underline{\text{Graph}}$s
+QxBqTm4B3H,Zwd8DVzaXB,0.5546875,True,Scientific logicality enriched methodology for LLM reasoning: A practice in physics,Scientific logicality enriched methodology for LLM reasoning: A practice in physics
+7Db6Pbrcha,RrZAajAWHr,0.5,True,SHERPA: Fine-tuning Segment Anything Models with Task-relevant Guidance,SHERPA: Fine-tuning Segment Anything Models with Task-relevant Guidance
+YojnxbdVbt,ZPJbTXMYft,0.53125,False,Mixing Expertise with Confidence: A Mixture of Expert Framework for Robust Multi-Modal Continual Learner,Mixing Expertise with Confidence: A Mixture of Experts Framework for Robust Multi-Modal Continual Learning
+FclweDWHYQ,icRbM5ArwW,0.5390625,True,Inconsistency-Aware Minimization: Improving Generalization with Unlabeled Data,Inconsistency-Aware Minimization: Improving Generalization with Unlabeled Data
+DcrtGkprHc,odLc0zNtyX,0.609375,False,Geometric Conformal Outlier Synthesis,Geometrically Constrained Outlier Synthesis
+p9uryyZ5bw,QZlNaWuxO6,0.5546875,False,Unveiling Impact of Frequency Components on Membership Inference Attacks for Diffusion Models,Enhancing Membership Inference Attacks on Diffusion Models from a Frequency-Domain Perspective
+4nNqVpC3td,LvKSVUbXc9,0.65625,True,LoRA-DA: Data-Aware Initialization for Low-Rank Adaptation via Asymptotic Analysis,LoRA-DA: Data-Aware Initialization for Low-Rank Adaptation via Asymptotic Analysis
+Uih66XPzHU,bMsBArF8MT,0.40625,True,CLINIC : Evaluating Multilingual Trustworthiness in Language Models for Healthcare,CLINIC : Evaluating Multilingual Trustworthiness in Language Models for Healthcare
+ZOV3697bZZ,Gb2mqvRRa0,0.546875,False,Towards Generalizable Implicit In-Context Learning with Attention Routing,"Train Once, Reuse Everywhere: Generalizable Implicit In-Context Learning by Routing Attention"
+mjmDFmGue5,NAkeQ3C4tn,0.5390625,True,SURGE: Surrogate Gradient Adaptation in Binary Neural Networks,SURGE: Surrogate Gradient Adaptation in Binary Neural Networks
+K8TEFs6aFn,iPjuUQbkfl,0.5078125,False,A Random Matrix Perspective on the Consistency of Diffusion Models,A Random Matrix Theory Perspective on the Consistency of Diffusion Models
+oFC7fUsGje,ANbnxDfcAD,0.515625,True,On Robustness and Chain-of-Thought Consistency of RL-Finetuned VLMs,On Robustness and Chain-of-Thought Consistency of RL-Finetuned VLMs
+dcPH77OVgN,fXr3uPr1G5,0.5234375,True,Scaling Law for Quantization-Aware Training,Scaling Law for Quantization-Aware Training
+tAM9SGoEmD,uKbD73kfgM,0.5546875,False,SafeMVDrive: Multi-view Safety-Critical Driving Video Generation in the Real World Domain,SMD: Multi-view Safety-Critical Driving Video Generation in the Real-world Domain
+o7avj3PWNC,Y5bEI4cuMd,0.53125,True,BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs,BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs
+9i6iHj2aYN,5Xh1gDJAaX,0.6484375,True,A Close Look at Negative Label Guided Out-of-distribution Detection in Pre-trained Vision-Language Models,A Close Look at Negative Label Guided Out-of-distribution Detection in Pre-trained Vision-Language Models
+ITeWz351rW,Qoh16QHG24,0.4296875,False,Concrete-to-Abstract Goal Embeddings for Self-Supervised Reinforcement Learning,Hierarchical Goal Abstractions via Learned Subset Relations
+QTh3aRcbTt,d9JlreUNVY,0.3046875,False,Improved Regret for Decentralized Online Convex Optimization with Compressed Communication,Decentralized Online Convex Optimization with Efficient Communication: Improved Algorithm and Lower Bounds
+fkCweHWxCs,wjiw02fqir,0.6484375,True,Federated Learning with Unlabeled Clients: Personalization Can Happen in Low Dimensions,Federated Learning with Unlabeled Clients: Personalization Can Happen in Low Dimensions
+7DXEF4xHt3,43Hwj59jZg,0.5078125,True,Adversarial Training for Process Reward Models,Adversarial Training for Process Reward Models
+6YMFsGFabM,B1ISNZQHuI,0.53125,True,Agentic Confidence Calibration,Agentic Confidence Calibration
+wWmhcBXGWc,4PL5wouooK,0.5234375,False,Not All Tokens are Guided Equal: Elucidating Guidance in Autoregressive Modelling,Rethinking Visual Autoregressive Sampling with Information-Grounding Guidance
+6DdkSELUh0,4vfv9HXhXN,0.4375,False,We Generate What You Need: Efficient Data Supplement via Model Prediction Discrepancy for Heterogeneous Federated Learning,FedPDG: Prediction Discrepancy–Guided Data Generation for Heterogeneous Federated Learning
+xCatVTpI4K,0p617sK4Z4,0.3671875,True,Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization,Inverse Entropic Optimal Transport Solves Semi-supervised Learning via Data Likelihood Maximization
+AmKn0wA652,UqfxuIt6hN,0.515625,True,VisualPuzzles: Decoupling Multimodal Reasoning Evaluation from Domain Knowledge,VisualPuzzles: Decoupling Multimodal Reasoning Evaluation from Domain Knowledge
+lqNqKUG2dn,GZRiXE2zBe,0.484375,False,Which LLM Multi-Agent Protocol to Choose?,ProtocolBench: Which LLM MultiAgent Protocol to Choose?
+ilr07ypuYl,HQhVsrLyv9,0.4609375,True,FUSE: Full‑spectrum Unlearnable Examples via Spectral Equalization,FUSE: Full‑spectrum Unlearnable Examples via Spectral Equalization
+DVnK3ZgG9D,SYgaKYKDZl,0.609375,False,Empowering Channel-of-Mobile-Experts with Informative Hybrid-Capabilities Reasoning,CoME: Empowering Channel-of-Mobile-Experts with Informative Hybrid-Capabilities Reasoning
+lqUyAmwbFM,WtgQOtmw9N,0.6328125,True,"What Characterizes Effective Reasoning? Revisiting Length, Review, and Structure of CoT","What Characterizes Effective Reasoning? Revisiting Length, Review, and Structure of CoT"
+hfEVqiJyF6,Sbvawkc7th,0.5546875,False,EAT: Entropy After $\textlangle \tt /Think \textrangle$ for reasoning model early exiting,EAT: Entropy After $\langle \texttt{/Think} \rangle$ for reasoning model early exiting
+LY5DPs9FL7,k1TIw5mdWL,0.5625,True,From Grunts to Lexicons: Emergent Language from Cooperative Foraging,From Grunts to Lexicons: Emergent Language from Cooperative Foraging
+XfAHadp5Tm,xyP0iKZDKo,0.421875,False,Vibe Checker: Aligning Code Evaluation with Human Preference,SWE-IF: Aligning Code Evaluation with Human Preference
+CaUHFOa4X1,jEQQBE30m1,0.4296875,True,Scam2Prompt: A Scalable Framework for Auditing Malicious Scam Endpoints in Production LLMs,Scam2Prompt: A Scalable Framework for Auditing Malicious Scam Endpoints in Production LLMs
+BLJ5DsJ0i6,340Ep8sfJ3,0.46875,True,GraphPFN: A Prior-Data Fitted Graph Foundation Model,GraphPFN: A Prior-Data Fitted Graph Foundation Model
+8dWiSr6G4q,XZPqbzKVN0,0.6171875,True,One-Shot Weighted Ensemble Estimation for Federated Quantile Regression: Optimal Statistical Guarantees under Heterogeneous Structured Data,One-Shot Weighted Ensemble Estimation for Federated Quantile Regression: Optimal Statistical Guarantees under Heterogeneous Structured Data
+mlRWnMN6vE,nGlwpZFZre,0.6328125,True,Differentially Private Geodesic Regression,Differentially Private Geodesic Regression
+y7VeiCT7HG,RS1rsq6gmA,0.4375,False,Probability of Matching for Pareto Coverage,Probability of Matching for Batch Multi-Objective Bayesian Optimization
+jh2Ffu97vS,CHIsZDgdb6,0.6015625,True,Solving Imperfect-Recall Games via Sum-of-Squares Optimization,Solving Imperfect-Recall Games via Sum-of-Squares Optimization
+yTeDQeuKKz,WyGEJKjvJN,0.546875,True,SALE : Low-bit Estimation for Efficient Sparse Attention in Long-context LLM Prefilling,SALE : Low-bit Estimation for Efficient Sparse Attention in Long-context LLM Prefilling
+gwi2T2CsfK,J6amahDTKV,0.7734375,False,FoeGlass: When Simple In-Context Learning Is Enough for Red Teaming Audio Deepfake Detectors,FoeGlass: Simple In-Context Learning Is Enough for Red Teaming Audio Deepfake Detectors
+tuXj7h7hH1,aYe8j2jOmK,0.5546875,True,A Constrained Optimization Perspective of Unrolled Transformers,A Constrained Optimization Perspective of Unrolled Transformers
+o4Blnaaef7,EukKoqZhvW,0.5390625,True,Parameters as Experts: Adapting Vision Models with Dynamic Parameter Routing,Parameters as Experts: Adapting Vision Models with Dynamic Parameter Routing
+UHm5HIo8CO,FA7n9adGKc,0.5859375,True,iTryOn: Mastering Interactive Video Virtual Try-On with Spatial-Semantic Guidance,iTryOn: Mastering Interactive Video Virtual Try-On with Spatial-Semantic Guidance
+JRtldw5Mpw,fVpGsFEgQU,0.359375,True,"Sparse Models, Sparse Safety: Unsafe Routes in Mixture-of-Experts LLMs","Sparse Models, Sparse Safety: Unsafe Routes in Mixture-of-Experts LLMs"
+eCKOvqAEOp,DxvZnTVNfP,0.515625,False,Black-box unadjusted Hamiltonian Monte Carlo,Practical and Scalable Hamiltonian Monte Carlo Without the Metropolis Test
+sGMbneFX2n,n4tTOeRa0a,0.484375,True,PinTok: Tokenizers Deserve Dedicated Pinned CPU-Compute and Memory,PinTok: Tokenizers Deserve Dedicated Pinned CPU-Compute and Memory
+izLvJEBkae,JLNYVGaR6I,0.609375,True,Graph Rewiring based on Flow Alignment for Improving Fluid Simulation,Graph Rewiring based on Flow Alignment for Improving Fluid Simulation
+b38RJbhG2Z,gStbWZnHGQ,0.453125,True,Feature Augmentation of GNNs for ILPs: Local Uniqueness Suffices,Feature Augmentation of GNNs for ILPs: Local Uniqueness Suffices
+YSLFKaVTWL,PnTXyTR2VG,0.4765625,True,Multimodal Latent Language Modeling with Next-Token Diffusion,Multimodal Latent Language Modeling with Next-Token Diffusion
+G9rclU8orB,zC44mTE8Zu,0.4765625,True,Textual Supervision Enhances Geospatial Representations in Vision-Language Models,Textual Supervision Enhances Geospatial Representations in Vision-Language Models
+eVfSdwyOKF,0Cn92msBcW,0.625,True,ForceForget: Reinforcement Concept Removal for Enhancing Safety in Text-to-Image Models,ForceForget: Reinforcement Concept Removal for Enhancing Safety in Text-to-Image Models
+Urt7MPg1u0,xdS18gI4e8,0.65625,True,Rethinking 1-bit Optimization Leveraging Pre-trained Large Language Models,Rethinking 1-bit Optimization Leveraging Pre-trained Large Language Models
+JYke7CIuIa,Ai3a79cTvr,0.625,True,SVL: Empowering Spiking Neural Networks for Efficient 3D Open-World Understanding,SVL: Empowering Spiking Neural Networks for Efficient 3D Open-World Understanding
+TT3gmYaqyc,YRq8IIgDMy,0.421875,False,CameraNoise: Learning Precise Camera Control with Video Diffusion in Noise Space,CameraNoise: Enabling Faithful Camera Control in Video Diffusion through Geometry-Flow-Guided Noise Warping
+AvW39dAR8R,epVORy8H4y,0.4609375,True,RealisMotion: Decomposed Human Motion Control and Video Generation in the World Space,RealisMotion: Decomposed Human Motion Control and Video Generation in the World Space
+O6iPDyUP97,WFdQSjmchK,0.46875,True,Treatment Responder Classification with Abstention,Treatment Responder Classification with Abstention
+RPflMrUF3O,wG7woGoc1b,0.46875,False,Backdoor Attribution: Elucidating and Controlling Backdoor in Language Models,Uncovering Hidden Triggers: Backdoor Attribution in Language Models
+y4yajRJWiS,YqD2yRftiR,0.4921875,True,LaRI: Layered Ray Intersections for Single-view 3D Geometric Reasoning,LaRI: Layered Ray Intersections for Single-view 3D Geometric Reasoning
+Lvbxfawy7Q,QooehkRtN5,0.34375,True,InteractScience: Programmatic and Visually-Grounded Evaluation of Interactive Scientific Demonstration Code Generation,InteractScience: Programmatic and Visually-Grounded Evaluation of Interactive Scientific Demonstration Code Generation
+EhqJWMSElB,OFFHV53icH,0.625,False,Rewards Simplified: Reducing Risk in RL for Cyber Defence,Beyond Rewards in RL for Cyber Defence
+4If1aqKSi8,GbOD25IA88,0.4609375,True,Does Math Reasoning Improve General LLM Capabilities? Understanding Transferability of LLM Reasoning,Does Math Reasoning Improve General LLM Capabilities? Understanding Transferability of LLM Reasoning
+SoHZapVUPE,s3Pssbv7fz,0.578125,True,Coefficients-Preserving Sampling for Reinforcement Learning with Flow Matching,Coefficients-Preserving Sampling for Reinforcement Learning with Flow Matching
+PfIAcdbce2,5D3ZblXmW2,0.5859375,True,AdvEvo-MARL: Shaping Internalized Safety through Adversarial Co-Evolution in Multi-Agent Reinforcement Learning,AdvEvo-MARL: Shaping Internalized Safety through Adversarial Co-Evolution in Multi-Agent Reinforcement Learning
+LVXc2Jvjme,Ja9jo9pDvq,0.5546875,False,Q2D2: A geometry-aware audio codec leveraging two-dimensional quantization,Two-dimensional quantization for geometry-aware audio coding
+UmdmJRGb9u,fl93PQfTT6,0.578125,True,DLLMQuant: A Post-Training Quantization Framework Tailored for Diffusion-Based Large Language Models,DLLMQuant: A Post-Training Quantization Framework Tailored for Diffusion-Based Large Language Models
+eb6D884y8x,vC8wORdy2x,0.578125,True,Emergence of Hierarchical Emotion Organization in Large Language Models,Emergence of Hierarchical Emotion Organization in Large Language Models
+4XIfmxhTaX,Sj8NBI6aV0,0.609375,True,On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models,On the Entropy Dynamics in Reinforcement Fine-Tuning of Large Language Models
+R3dkexJWju,LhGxRnGmGJ,0.6484375,True,Accurate Evaluation of Quickest Changepoint Detectors via Non-parametric Survival Analysis,Accurate Evaluation of Quickest Changepoint Detectors via Non-parametric Survival Analysis
+5IqvMNQaUg,91GdjfPm7f,0.5,False,Sparse Topology Pairwise Scoring for Large-Scale Multi-Agent Reinforcement Learning,Sparse Topology-Aware Pairwise Scoring for Large-Scale Multi-Agent Reinforcement Learning
+1Llo9Uln8P,flo449mncA,0.390625,True,Overclocking Electrostatic Generative Models,Overclocking Electrostatic Generative Models
+aWt2SkfVhq,IBGRi5HkB4,0.453125,True,Active Attacks: Red-teaming LLMs via Adaptive Environments,Active Attacks: Red-teaming LLMs via Adaptive Environments
+m3zLfzjjps,y3qyP3ycQi,0.4921875,True,Federated Causal Inference on Multi-Site Observational Data via Propensity Score Aggregation,Federated Causal Inference on Multi-Site Observational Data via Propensity Score Aggregation
+xtatNQbMdm,iqXzDUd36x,0.421875,False,Rethinking the Flow-based Gradual Domain Adaption: A Semi-Dual Transport Perspective,Rethinking the Flow-based Gradual Domain Adaptation: A Semi-Dual Optimal Transport Perspective
+hnwHlm1PCj,pPCsSseMW5,0.4375,False,Boost the Identity-Preserving Embedding for Consistent Text-to-Image Generation,Boost the Identity-Preserving Embedding for Consistent Visual Generation
+Be72SJOCjJ,xrUgA8PrNN,0.484375,True,On the Sharp Input-Output Analysis of Nonlinear Systems under Adversarial Attacks,On the Sharp Input-Output Analysis of Nonlinear Systems under Adversarial Attacks
+0uiWQTYpzb,UQLGAjV1cf,0.3984375,False,Histogram-Guided Source-Free Domain Adaptive Regression,Discretized Density-Guided Source-Free Domain Adaptation for Regression
+P8klg2CLMG,vT5PBMLBvx,0.53125,False,Neural Logistic Bandits,Neural Logistic Bandits
+tswBfpkwHn,C41aLahRXZ,0.6953125,False,Can Mamba Learn In Context with Outliers? A Theoretical Generalization Analysis,How Can Mamba Learn In Context with Outliers and Generalize Provably?
+lSlXOD2v40,wpKA7G7Cqu,0.59375,True,Explaining Concept Shift with Interpretable Feature Attribution,Explaining Concept Shift with Interpretable Feature Attribution
+Kk08XcQCl2,42cOdUJOhH,0.3828125,True,The data manifold under the microscope,The Data Manifold under the Microscope
+BR6cFSj6zG,iRkJBK0Vol,0.4140625,False,Dynamic Regret Bounds for Online Omniprediction with Long Term Constraints,Stronger Benchmarks for Prediction as a Service with Constraints
+kJKnP1aiGS,ODTM64azGa,0.5078125,True,Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting,Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting
+0psy3EVkT7,j2Ivokp7vs,0.5078125,True,GeoMoLa: Geometry-Aware Motion Latents for Learning Robust Manipulation Policies,GeoMoLa: Geometry-Aware Motion Latents for Learning Robust Manipulation Policies
+88sop0LAIg,99z6N9kXR6,0.359375,False,CACR: Reinforcing Temporal Answer Grounding in Videos via Candidate-Aware  Causal Reasoning,CACR: Reinforcing Temporal Answer Grounding in Instructional Video via Candidate-Aware  Causal Reasoning
+OqMnOSzU78,ndOrsPyW0s,0.3984375,True,What is Missing? Explaining Neurons Activated by Absent Concepts,What is Missing? Explaining Neurons Activated by Absent Concepts
+FdaUyJLlzM,H9IIK4ySRD,0.5,True,rePIRL: Learn PRM with Inverse RL for LLM Reasoning,rePIRL: Learn PRM with Inverse RL for LLM Reasoning
+vnEuxLVFmN,9Zz6xQVMkr,0.3984375,True,WebOperator: Action-Aware Tree Search for Autonomous Agents in Web Environment,WebOperator: Action-Aware Tree Search for Autonomous Agents in Web Environment
+NUlgvkG1bf,bNL5b87dVr,0.3828125,True,CRAMER: Control via Request-Aware Masking for Editing Recommenders,CRAMER: Control via Request-Aware Masking for Editing Recommenders
+chLlLbI7de,PRfEvn1UHp,0.5078125,True,Beyond the Final Answer: Evaluating the Reasoning Trajectories of Tool-Augmented Agents,Beyond the Final Answer: Evaluating the Reasoning Trajectories of Tool-Augmented Agents
+AVCAUmb1aK,6C4YQcq8YX,0.578125,False,OMAC: A Broad Optimization Framework for LLM-Based Multi-Agent Collaboration,OMAC: A Holistic Optimization Framework for LLM-Based Multi-Agent Collaboration
+aC2ku2uKcB,LptCWUvaP9,0.4921875,True,On the Limits of Test-Time Compute: Sequential Reward Filtering for Better Inference,On the Limits of Test-Time Compute: Sequential Reward Filtering for Better Inference
+QOloPYGG2c,hlUgEwl3Du,0.3359375,True,ReJump: A Tree-Jump Representation for Analyzing and Improving LLM Reasoning,ReJump: A Tree-Jump Representation for Analyzing and Improving LLM Reasoning
+pKTNBrnwpF,X4OakhiSzp,0.3203125,True,Optimal Stopping in Latent Diffusion Models,Optimal Stopping in Latent Diffusion Models
+gyXfJUcR72,prvGhNz39e,0.5234375,True,Memory-Efficient LLM Pretraining via Minimalist Optimizer Design,Memory-Efficient LLM Pretraining via Minimalist Optimizer Design
+br8nm3CzR0,p6VlvdOky9,0.359375,True,TimeSeed: Effective Time Series Forecasting with Sparse  Endogenous Variables,TimeSeed: Effective Time Series Forecasting with Sparse Endogenous Variables
+CgQvm7TDz5,hBqL2ugd1M,0.5234375,True,This State Looks Like That: Self-Interpretable Reinforcement Learning Agents using Prototype Soft Actor-Critic,This State Looks Like That: Self-Interpretable Reinforcement Learning Agents using Prototype Soft Actor-Critic
+AEgyitdRWf,kcPPWaoegr,0.5625,True,ML-Agent: Reinforcing LLM Agents for Autonomous Machine Learning Engineering,ML-Agent: Reinforcing LLM Agents for Autonomous Machine Learning Engineering
+oIFlxgfhOR,T3zBDurA4R,0.4375,False,MNO: Multiscale Neural Operator for Computational Fluid Dynamics with 3D Point Cloud Data,MNO: Multiscale Neural Operator for 3D Computational Fluid Dynamics
+8JgaMrEw52,BbxYfjeT5b,0.3671875,True,Fine-grained Analysis of Brain-LLM Alignment through Input Attribution,Fine-grained Analysis of Brain-LLM Alignment through Input Attribution
+wWl4AE7KXS,jPVGiAUlNa,0.34375,False,IPOD:Inverse-Problem-Driven Meta-Learning for Fast Generalizable Neural Representations in MRI Reconstruction,Reference-Free Meta-Learning for Generalized Implicit Neural Representation in Efficient MRI Reconstruction
+y4y7fvcR8W,z9Bo4eXSpW,0.578125,True,"Reinforcement Learning with Verifiable Rewards: GRPO's Loss, Dynamics, and Success Amplification","Reinforcement Learning with Verifiable Rewards: GRPO's Loss, Dynamics, and Success Amplification"
+ezWEGpMmmK,otHlsN1pvk,0.578125,True,Every Step Counts: Decoding Trajectories as Authorship Fingerprints of dLLMs,Every Step Counts: Decoding Trajectories as Authorship Fingerprints of dLLMs
+0pRvnSBNGx,1CQZbl24wp,0.4296875,False,Ensuring Functional Correctness of Large Code Models with Selective Generation,Towards Functional Correctness of Code Models with Selective Generation
+uhoCh3pViS,Ym6ud8Psx1,0.5078125,True,Dream-MPC: Gradient-Based Model Predictive Control with Latent Imagination,Dream-MPC: Gradient-Based Model Predictive Control with Latent Imagination
+BViZkEr0IA,51914Feknq,0.578125,True,The Mechanistic Emergence of Symbol Grounding in Language Models,The Mechanistic Emergence of Symbol Grounding in Language Models
+iCT5xdOlJH,z0m3EhzhOH,0.3203125,True,IO-Adam: Rethinking Memory-Efficient Adaptive Optimizers from Gradient Computation,IO-Adam: Rethinking Memory-Efficient Adaptive Optimizers from Gradient Computation
+pKqt8psClA,GR335S9IgZ,0.4140625,False,HAI-Eval: Measuring Human-AI Synergy in Collaborative Coding,CentaurEval: Benchmarking Human-in-the-Loop Value in Agentic Coding
+ICANwnoGgN,wuWRCajFj8,0.453125,True,Model soups need only one ingredient,MODEL SOUPS NEED ONLY ONE INGREDIENT
+yLYJbI8vdw,KBvnXHCIch,0.3984375,False,Multimodal Function Vectors for Spatial Relations,Multimodal Function Vectors for Visual Relations
+GJnatqABL8,IRwg87oeJo,0.4453125,True,Scalable Single-Cell Gene Expression Generation with Latent Diffusion Models,Scalable Single-Cell Gene Expression Generation with Latent Diffusion Models
+xWOTN66DQm,oVS7o5jKJF,0.578125,True,ScaleMoE: Mixture-of-Experts for Scalable Continuous Control in Actor–Critic Reinforcement Learning,ScaleMoE: Mixture-of-Experts for Scalable Continuous Control in Actor-Critic Reinforcement Learning
+dZ0VHfBjxn,XsfjvLhKAP,0.6328125,True,Local Mechanisms of Compositional Generalization in Conditional Diffusion,Local Mechanisms of Compositional Generalization in Conditional Diffusion
+DkgGu5AzRD,MyBVUgacQ9,0.65625,True,Last-iterate Convergence of ADMM on Multi-affine Quadratic Equality Constrained Problem,Last-iterate Convergence of ADMM on Multi-affine Quadratic Equality Constrained Problem
+89Cafo48YM,yJGGL39ZmI,0.4609375,True,Mitigating Error Propagation in Low-Rank Approximation of Large Models via Distribution-Aware Whitening,Mitigating Error Propagation in Low-Rank Approximation of Large Models via Distribution-Aware Whitening
+kEzy6TAV0x,si8F5lk6Kg,0.4296875,True,Causal-Adapter: Taming Text-to-Image Diffusion for Faithful Counterfactual Generation,Causal-Adapter: Taming Text-to-Image Diffusion for Faithful Counterfactual Generation
+W2ygWV2Fdn,R0eRg4p4Uj,0.625,True,Mitigating Premature Exploitation in Particle-based Monte Carlo for Inference-Time Scaling,Mitigating Premature Exploitation in Particle-based Monte Carlo for Inference-Time Scaling
+wekWtzTbUP,nLY2pOYBrJ,0.40625,True,Advantage Weighted Matching: Aligning RL with Pretraining in Diffusion Models,Advantage Weighted Matching: Aligning RL with Pretraining in Diffusion Models
+RT5SlprCmc,ZnOnnJJghs,0.421875,True,Learning the Minimum Action Distance,Learning the Minimum Action Distance
+un9AWl7llG,O5xoqSmNzc,0.4375,True,An Exploration of Non-Euclidean Gradient Descent: Muon and its Many Variants,An Exploration of Non-Euclidean Gradient Descent: Muon and its Many Variants
+O62Fgxb0kd,ZXYcM3QuAR,0.71875,True,Density-Aware Translation of Spurious Correlations in Zero-Shot VLMs,Density-Aware Translation of Spurious Correlations in Zero-Shot VLMs
+zZ2uCL4Ixt,Vbj1jSaqTo,0.4765625,True,Learning the Neighborhood: Contrast-Free Multimodal Self-Supervised Molecular Graph Pretraining,Learning the Neighborhood: Contrast-Free Multimodal Self-Supervised Molecular Graph Pretraining
+zSEThawime,ThxAdzExdS,0.390625,True,Neural Concept Verifier: Scaling Prover-Verifier Games via Concept Encodings,Neural Concept Verifier: Scaling Prover-Verifier Games via Concept Encodings
+AY3QtM0mQ9,0tdnyH7uXp,0.59375,True,Language Bias in LVLMs: From In-Depth Analysis to Simple and Effective Mitigation,Language Bias in LVLMs: From In-Depth Analysis to Simple and Effective Mitigation
+hW7P3x9W8A,t6dA9c3SlJ,0.390625,True,Physics-Informed Distillation of Diffusion Models for PDE-Constrained Generation,Physics-Informed Distillation of Diffusion Models for PDE-Constrained Generation
+KQiJDlPFJN,QiDicUd6PB,0.40625,True,"Fast kernel methods: Sobolev, physics-informed, and additive models","Fast kernel methods: Sobolev, physics-informed, and additive models"
+PRHNKeaZpP,svT8c2GPJK,0.6328125,True,Human-in-the-Loop Policy Optimization for Preference-Based Multi-Objective Reinforcement Learning,Human-in-the-Loop Policy Optimization for Preference-Based Multi-Objective Reinforcement Learning
+Dm6lP9YEsM,d5rd1zlHTf,0.5,False,Pay-Per-Search Models Are Abstention Models,MASH: Modeling Abstention via Selective Help-Seeking
+CsCL9T2PDk,qbVjY6v6Bi,0.375,True,Newton-PINet: A fast physics-informed neural network with Newton linearization for meta-learning nonlinear PDEs,Newton-PINet: A fast physics-informed neural network with Newton linearization for meta-learning nonlinear PDEs
+2Je9Brp0pF,TK2ae5Vwwz,0.5859375,True,Expressive Graph Neural Networks via Equivariant Use of Noise,Expressive Graph Neural Networks via Equivariant Use of Noise
+TVrSkWHh03,f3q85c5wkg,0.625,True,Privacy-Aware Data Integration for Enhanced Quantile Inference under Heterogeneity,Privacy-Aware Data Integration for Enhanced Quantile Inference under Heterogeneity
+kf2mzS6xfk,I3Z9za1EkO,0.5234375,True,"Decoupling The ""What"" and ""Where"" With Polar Coordinate Positional Embedding","Decoupling The ""What"" and ""Where"" With Polar Coordinate Positional Embedding"
+gCGjyDsQmC,L20yY9trcq,0.5546875,True,"Less Diverse, Less Safe: The Indirect But Pervasive Risk of Test-Time Scaling in Large Language Models","Less Diverse, Less Safe: The Indirect But Pervasive Risk of Test-Time Scaling in Large Language Models"
+vSXIEbTVhE,N1xLII8u6o,0.5703125,True,Censoring with Plausible Deniability: Asymmetric Local Privacy for Multi-Category CDF Estimation,Censoring with Plausible Deniability: Asymmetric Local Privacy for Multi-Category CDF Estimation
+lU09YerXOb,NDM1ltvBOf,0.4140625,False,Arboreal Neural Network,Arboreal Neural Network
+K5NCPjdUtN,ozu9ZRETYE,0.5,True,ABSINT-AI: Agentic Heap Abstractions for Abstract Interpretation,ABSINT-AI: Agentic Heap Abstractions for Abstract Interpretation
+de4bbZedv3,GUu3Bi41Fm,0.390625,True,InertialAR: Autoregressive 3D Molecule Generation with Inertial Frames,InertialAR: Autoregressive 3D Molecule Generation with Inertial Frames
+AAxoilVBgp,fOpKd5S9Bw,0.59375,True,Graph Neural Dynamics via Learned Energy and Tangential Flows,Graph Neural Dynamics via Learned Energy and Tangential Flows
+yh8Ri9QeWv,MBk6Pur6RX,0.328125,True,When Distance Distracts: Representation Distance Bias in BT-Loss for Reward Models,When Distance Distracts: Representation Distance Bias in BT-Loss for Reward Models
+qbtHYeUjfz,8atKBiXm7u,0.375,True,Scaling Multi-Agent Environment Co-Design with Diffusion Models,Scaling Multi-Agent Environment Co-Design with Diffusion Models
+qIF2t8scgb,ClBpWdkPZd,0.5,True,Beyond Softmax: A Natural Parameterization for Categorical Random Variables,Beyond Softmax: A Natural Parameterization for Categorical Random Variables
+TfpcJt3LBV,a8kD1LcwZf,0.5390625,True,Quantifying Cross-Domain Knowledge Distillation in the Presence of Domain shift,Quantifying Cross-Domain Knowledge Distillation in the Presence of Domain Shift
+aHAvupzNAH,ZcnZ6vs4yX,0.3125,True,Distributional Inverse Reinforcement Learning,Distributional Inverse Reinforcement Learning
+xEsJW4xqQC,H6PagZKyil,0.375,True,FlatLand: Personalized Graph Federated Learning via Tailored Lorentz Space,FlatLand: Personalized Graph Federated Learning via Tailored Lorentz Space
+4AjBMTsMK7,JBEt767Naf,0.453125,False,Go with Your Gut: Scaling Confidence for Autoregressive Image Generation,ScalingAR: Scaling Confidence for Autoregressive Image Generation
+hqnGfzQQfa,ZX2lOgKOTm,0.46875,True,Stratified GRPO: Handling Structural Heterogeneity in Reinforcement Learning of LLM Search Agents,Stratified GRPO: Handling Structural Heterogeneity in Reinforcement Learning of LLM Search Agents
+lVpWNivXEU,dxVnCJRSm8,0.53125,True,LaTtE-Flow: Layerwise Timestep-Expert Flow-based Transformer,LaTtE-Flow: Layerwise Timestep-Expert Flow-based Transformer
+D4EDVWKIcI,ryO12fv5bJ,0.3203125,True,Controllable Molecule Generation via Sparse Representation Editing: An Interpretability-Driven Perspective,Controllable Molecule Generation via Sparse Representation Editing: An Interpretability-Driven Perspective
+9vW73ypnsU,LnDNFS8Lea,0.46875,False,Multi-marginal temporal Schrödinger Bridge Matching for video generation from unpaired data,Multi-marginal temporal Schrödinger Bridge Matching from unpaired data
+4msXyRezc2,4xjq3iR4aK,0.5,True,Adaptive Code Watermarking Through Reinforcement Learning,Adaptive Code Watermarking Through Reinforcement Learning
+nLVmi5OKql,O5wCHXOEug,0.5390625,False,TiMi: Empowering Time Series Transformers with Multimodal Mixture of Experts,TiMi: Empower Time Series Transformers with Multimodal Mixture of Experts
+MAB0rl5k9M,o1Tn2ie0Wy,0.4921875,True,Cost-aware Stopping for Bayesian Optimization,Cost-aware Stopping for Bayesian Optimization
+z5A8jZ5vWE,qhFEKDeBsO,0.4921875,False,Measuring Intent Comprehension in LLMs: A Variance Decomposition Framework,Measuring Intent Comprehension in LLMs
+lauHjCZ772,QPRQHxrFLQ,0.4609375,False,References Indeed Matter? Reference-Free Preference Optimization for Conversational Query Reformulation,Breaking the Reference Bottleneck via Learning to Rewrite Conversational Queries without Gold Reference Passages
+bvnuXYMgjg,6rRs6PpPmg,0.515625,False,Unintended Harmful Knowledge Elicitation Issue in Large Reasoning Models and a RL Solution,More Sail than Ballast: Addressing Harmful Knowledge Leakage in the Expansive Reasoning Space of LRMs
+BOFzC3xndr,6NDxn4R4JT,0.6328125,True,Video-in-the-Loop: Span-Grounded Long Video QA with Interleaved Reasoning,Video-in-the-Loop: Span-Grounded Long Video QA with Interleaved Reasoning
+6vS1lNjPTa,dDVla2lLTA,0.5078125,True,ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration,ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration
+k3F29Z2azs,sWW6lvti8X,0.3359375,False,Evaluating and Steering Modality Preference in Multimodal Large Language Model,Evaluating and Steering Modality Preferences in Multi-modal LLMs
+JodVUecxdF,viOFFYQPgL,0.5390625,True,MAFE: Enabling Equitable Algorithm Design in Multi-Agent Multi-Stage Decision-Making Systems,MAFE: Enabling Equitable Algorithm Design in Multi-Agent Multi-Stage Decision-Making Systems
+FaZf5rSkWy,bz66grGgjI,0.3671875,True,Dynamic Relational Priming Improves Transformer in Multivariate Time Series,Dynamic Relational Priming Improves Transformer in Multivariate Time Series
+4jECZ8epaB,QO64QUEXdV,0.5859375,False,A Tale of Two Problems: Multi-Objective Bilevel Learning Meets Equality Constrained Multi-Objective Optimization,A Tale of Two Problems: Multi-Task Bilevel Learning Meets Equality Constrained Multi-Objective Optimization
+sTXCoxide9,Eeo0uBd5mt,0.3828125,False,OneTrackerV2: Unified Multimodal Visual Object Tracking with Mixture of Experts,Unified Multimodal Visual Tracking with Dual Mixture-of-Experts
+KUmGzZo9am,TnJMJm3Fbi,0.6484375,True,TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning,TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning
+KmAQFT5F3Y,FIq3e9ffEZ,0.40625,True,Hard Labels In! Rethinking the Role of Hard Labels in Mitigating Local Semantic Drift,Hard Labels In! Rethinking the Role of Hard Labels in Mitigating Local Semantic Drift
+hj6iaGDHB9,C0NCLB6ZGY,0.4765625,True,UrbanFusion: Stochastic Multimodal Fusion for Contrastive Learning of Robust Spatial Representations,UrbanFusion: Stochastic Multimodal Fusion for Contrastive Learning of Robust Spatial Representations
+TfwePIKzXJ,GPrlMiGg2w,0.4375,False,Scaling up Multi-Turn Off-Policy RL and Multi-Agent Tree Search for LLM Step-Provers,BFS-Prover-V2: Scaling up Multi-Turn Off-Policy RL and Multi-Agent Tree Search for LLM Step-Provers
+vdDtiQ1w8B,LD9mlgF5WU,0.359375,False,VideoSearch Reasoner: Boosting Multimodal Reward Models through Think with Image Reasoning,VR-Thinker: Boosting Video Reward Models through Think-with-Image Reasoning
+F6DzptrpGI,CbXjg2h6F6,0.5625,True,At the Edge of Understanding: Sparse Autoencoders Trace The Limits of Transformer Generalization,At the Edge of Understanding: Sparse Autoencoders Trace The Limits of Transformer Generalization
+iZnJYZQnqf,JBFB2pUOCA,0.4375,False,TuneAhead: Predicting Fine-tuning Performance Before Training Begins,TuneAhead: Predicting Fine-tuning Performance Before Full Training Begins
+rpblsD3eXG,QmiKRq3e4N,0.4375,False,Communication-Efficient Multi-Device Inference Acceleration for Transformer Models,ASTRA: Communication-Efficient Acceleration for Multi-Device Transformer Inference
+7s68UdT65x,2eKOeHaNZG,0.625,False,Quality-Preserving Auto-Regressive Mesh Generation Acceleration via Multi-Head Speculative Decoding,XSpecMesh: Quality-Preserving Auto-Regressive Mesh Generation Acceleration via Multi-Head Speculative Decoding
+Jl0QHFcyCl,IGW4mVoDSs,0.625,True,AnomSeer: Reinforcing Multimodal LLMs to Reason for Time-Series Anomaly Detection,AnomSeer: Reinforcing Multimodal LLMs to Reason for Time-Series Anomaly Detection
+cZ74yWoKYr,vMwlcLyI4b,0.453125,False,Identify Critical KV Cache in LLM Inference from an Output Perturbation Perspective,CriticalKV: Optimizing KV Cache Eviction from an Output Perturbation Perspective
+Lmqs7qBpzk,Z15BvlGl1S,0.5625,False,Constrained Linear Best Arm Identification with Covariate Selection,Learning the Best Under Constraints: A Duality-Based Framework
+BkyInhnNtp,OGQJsUUtEB,0.3828125,True,Causal Attention with Lookahead Keys,Causal Attention with Lookahead Keys
+dupltP2A1T,gvroXZ0HS8,0.6484375,False,Lions and Muons: Optimization via Stochastic Frank-Wolfe,Lions and Muons: Optimization via Stochastic Frank-Wolfe under Heavy-Tailed Noise
+sdBXVZkodr,QvIbmX9jBr,0.484375,False,A Disentangled Low-Rank RNN Framework For Uncovering Neural Connectivity and Dynamics,A Factorized Low-Rank RNN Framework for Uncovering Independent Neural Latent Dynamics and Connectivity
+ksxocXsFVh,UAJehyOPTS,0.640625,True,Context Tuning for In-Context Optimization,Context Tuning for In-Context Optimization
+7CyXgo9tys,okWAqiCEQD,0.46875,True,Bioacoustic Geolocation: Species Sounds as Geographic Signals,Bioacoustic Geolocation: Species Sounds as Geographic Signals
+RCVwpJEhpc,KBpIlcUIx1,0.5703125,False,Constrained Generative Optimization via Progressive Flow Adaptation,Constrained Flow Optimization via Sequential Fine-Tuning for Molecular Design
+L2kWjJ3a1W,jqLPUccarO,0.59375,True,Decision Transformers As Zero-Shot Learners via Text-Behavior Alignment,Decision Transformers As Zero-Shot Learners via Text-Behavior Alignment
+eDh0K9YNoL,JKGgHY9FKa,0.3671875,True,OneSearch: A Preliminary Exploration of the Unified End-to-End Generative Framework for E-commerce Search,OneSearch: A Preliminary Exploration of the Unified End-to-End Generative Framework for E-commerce Search
+Rt43IyPVib,cmTjoiRyyr,0.328125,True,Softplus Attention with Re-weighting Boosts Length Extrapolation in Large Language Models,Softplus Attention with Re-weighting Boosts Length Extrapolation in Large Language Models
+rWzdEvakRi,hCAEcqig2C,0.4296875,True,Learning Randomized Reductions,Learning Randomized Reductions
+SPgqHr2jiK,WB0hLRRlcj,0.4140625,True,Differentially Private Synthetic Data via APIs 4: Tabular Data,Differentially Private Synthetic Data via APIs 4: Tabular Data
+swMl2frgUM,IStByBJdjR,0.5390625,True,Watermarking Graph Neural Networks via Explanations for Ownership Protection,Watermarking Graph Neural Networks via Explanations for Ownership Protection
+ah4o7n1ABR,o2H3TE1F0g,0.3828125,True,Contrastive Diffusion Alignment: Learning Structured Latents for Controllable Generation,Contrastive Diffusion Alignment: Learning Structured Latents for Controllable Generation
+UUW0DHqs4f,FlJnOeuN8C,0.6484375,True,Artificial Hippocampus Networks for Efficient Long-Context Modeling,Artificial Hippocampus Networks for Efficient Long-Context Modeling
+R2FH4wrVk2,YVk8EDxBWx,0.5234375,True,Rethinking LLM Ensembling from the Perspective of Mixture Models,Rethinking LLM Ensembling from the Perspective of Mixture Models
+vvyVDF4Xf4,BJUEgspMUt,0.3046875,True,Provably Efficient Policy-Reward Co-Pretraining for Adversarial Imitation Learning,Provably Efficient Policy-Reward Co-Pretraining for Adversarial Imitation Learning
+AKXeom7KH5,M7chcXSqjZ,0.640625,True,Unrestrained Simplex Denoising for Discrete Data. A Non-Markovian Approach Applied to Graph Generation,Unrestrained Simplex Denoising for Discrete Data. A Non-Markovian Approach Applied to Graph Generation
+W63sPIQPz4,5BXMlmjt43,0.703125,True,Learn to change the world: Multi-level reinforcement learning with model-changing actions,Learn to change the world: Multi-level reinforcement learning with model-changing actions
+KUXeiU7eNR,IHST9i1wP4,0.5390625,True,Absorbing Quantization Error by Deformable Noise Scheduler for Diffusion Models,Absorbing Quantization Error by Deformable Noise Scheduler for Diffusion Models
+XOp5HTG76Y,FzP6XZGG4d,0.5859375,True,Human-AI Collaborative Uncertainty Quantification,Human-AI Collaborative Uncertainty Quantification
+57D4Uaiiyi,WxmL5UjtNm,0.453125,False,Generalization and Scaling Laws for Mixture-of-Experts Transformers,Generalization and Scaling Laws for Mixture-of-ExpertsTransformers
+aeexHSFefN,WTgOxAio8a,0.6953125,False,Training-Free Distribution Adaptation for Diffusion Models via Maximum Mean Discrepancy Guidance,MMD Guidance: Training-Free Distribution Adaptation for Diffusion Models via Maximum Mean Discrepancy Guidance
+aiM6bRd6bG,JRsQDPWFCC,0.453125,True,PPI Candidate Ranking: Large-Scale Evaluation of a Domain Knowledge–Guided Pipeline,PPI Candidate Ranking: Large-Scale Evaluation of a Domain Knowledge–Guided Pipeline
+1B7tAhrzT1,A8rmJlSET9,0.5390625,True,Minibatch Optimal Transport and Perplexity Bound Estimation in Discrete Flow Matching,Minibatch Optimal Transport and Perplexity Bound Estimation in Discrete Flow Matching
+OTaUT4J1d4,5RMsiXvUqS,0.6171875,True,SpecExit: Accelerating Large Reasoning Model via Speculative Exit,SpecExit: Accelerating Large Reasoning Model via Speculative Exit
+Hh9zmxskfT,e0wfMUiZnY,0.578125,True,Fantastic Reasoning Behaviors and Where to Find Them: Unsupervised Discovery of the Reasoning Process,Fantastic Reasoning Behaviors and Where to Find Them: Unsupervised Discovery of the Reasoning Process
+N4syb99uBu,hASSCnNDOl,0.484375,True,Safe Autoregressive Image Generation with Iterative Self-Improving Codebooks,Safe Autoregressive Image Generation with Iterative Self-Improving Codebooks
+601vEMLqie,JfjYFLHqus,0.4609375,True,DyPE: Dynamic Position Extrapolation for Ultra High Resolution Diffusion,DyPE: Dynamic Position Extrapolation for Ultra High Resolution Diffusion
+XklgQBPw1x,k5xsXvNYQS,0.6328125,True,Latent Guided Sampling for Combinatorial Optimization,Latent Guided Sampling for Combinatorial Optimization
+30I17s8gjs,eB5i7caric,0.453125,True,Policy-Driven World Model Adaptation for Robust Offline Model-based Reinforcement Learning,Policy-Driven World Model Adaptation for Robust Offline Model-based Reinforcement Learning
+7cEMkTu7Lf,E5SVowO13b,0.359375,True,Unlearning Isn't Deletion: Investigating Reversibility of Machine Unlearning in LLMs,Unlearning Isn't Deletion: Investigating Reversibility of Machine Unlearning in LLMs
+FTZfVHWAIq,qRNtMWrTvo,0.53125,False,UltraHorizon: Benchmarking LLM-Agent Capabilities in Ultra Long-Horizon Scenarios,UltraHorizon: Benchmarking Agent Capabilities in Ultra Long-Horizon Scenarios
+YKOMMh2pSg,6rTth6ujE2,0.390625,False,QRIM: Quantum Robust Inner Minimization for Reinforcement Learning,Quantum Robust Inner Minimization for Reinforcement Learning with Quadratic Speed-Up in Query Complexity
+qzgro4i3sg,Bh4Ubk80M8,0.6328125,False,Efficient numeracy in language models through single-token number embeddings,Efficient Numeracy in Language Models through Single-Token Number Encodings
+DZzD7ddK60,PLQ7Yq2IzQ,0.359375,True,Segmented Operations using Matrix Multiplications,Segmented Operations using Matrix Multiplications
+EYUG4Su6ZU,nHrneI6jw5,0.4296875,False,A Rigorous Benchmark with Multidimensional Evaluation for Deep Research Agents: From Answers to Reports,"Dr. Bench: A Multidimensional Evaluation for Deep Research Agents, from Answers to Reports"
+FQ2dMjf88y,XsvJN3v4Hi,0.65625,True,Fully Dynamic Coreset Spectral Clustering,Fully Dynamic Coreset Spectral Clustering
+8yJyEKHkB8,5vufrrbi4N,0.3828125,False,TextAtlas5M: A Large-Scale Dataset for Long and Structured Text Image Generation,TextAtlas5M: A Large-scale Dataset for Dense Text Image Generation
+DztuuQCn13,VbQg7jQnpL,0.3984375,True,Mitigating Visual Hallucinations via Semantic Curriculum Preference Optimization in MLLMs,Mitigating Visual Hallucinations via Semantic Curriculum Preference Optimization in MLLMs
+ZmGfCj1n2P,JF4045xnhl,0.4140625,True,A robust PPG foundation model using multimodal physiological supervision,A robust PPG foundation model using multimodal physiological supervision
+uCBpiZdKML,3sx2WRBSSO,0.4375,False,"Genome-Factory: A Library for Tuning, Deploying, and Interpreting Genomic Models","Genome-Factory: A Library for Tuning, Deploying, and Interpreting Genomic Foundation Models"
+eQxVeNZcYT,q33S4QMuay,0.4765625,False,Quantifying biases in LLM-as-Judge evals,Quantifying Biases in LLM-as-a-Judge Evaluations
+9I1G8PjEnA,cNSHGzvmIT,0.3203125,False,Representation Drift Compensation: A Zero-Cost Enhancement for LLM Decomposition,Representation Drift Compensation: A Near-Zero Inference Cost Enhancement for LLM Decomposition
+j9mSh3TdZW,dbxeH4D8db,0.453125,True,Channel-Imposed Fusion: A Simple yet Effective Method for Medical Time Series Classification,Channel-Imposed Fusion: A Simple yet Effective Method for Medical Time Series Classification
+dgZBENfrMu,lFaF1Hq2kP,0.5,False,Mind the budget: Accelerating Deep Reinforcement Learning using Early Exit Neural Networks,Mind the Budget: Accelerating Deep Reinforcement Learning using Constrained Early Exit Neural Networks
+RVmjA3u4PQ,fvfJWiTrfF,0.5234375,False,A Dynamic Multiscale Anti-Aliasing Network for Time Series Forecasting,Anti-Aliasing Matters: A Dynamic Network for Time Series Forecasting
+PS43wqCSME,sSOxhXwzUi,0.359375,True,Through the Stealth Lens: Attention-Aware Defenses Against Poisoning in RAG,Through the Stealth Lens: Attention-Aware Defenses Against Poisoning in RAG
+hLioTiMs3B,RZ5uhiNAbx,0.6171875,False,Contrastive CFG: Guiding Diffusion Sampling by Contrasting Positive and Negative Concepts,ContrastiveCFG: Guiding Diffusion Sampling by Contrasting Positive and Negative Concepts
+v6WrkzScHC,8k4om4zj5E,0.4609375,True,Riemannian Networks over Full-Rank Correlation Matrices,Riemannian Networks over Full-Rank Correlation Matrices
+XuvhmSMbCE,hzYEWSTOEA,0.421875,True,UniRTL: Unifying Code and Graph for Robust RTL Representation Learning,UniRTL: Unifying Code and Graph for Robust RTL Representation Learning
+XoRApddgFG,63o9EmYHXt,0.515625,True,UNIVERSAL REPRESENTATION OF GENERALIZED CONVEX FUNCTIONS AND THEIR GRADIENTS,Universal Representation of Generalized Convex Functions and their Gradients
+MCb0u5GpLj,TM7PjLDZTr,0.515625,True,Self-Calibrated Consistency can Fight Back for Adversarial Robustness in Vision-Language Models,Self-Calibrated Consistency can Fight Back for Adversarial Robustness in Vision-Language Models
+pHuo7e9GBb,jqlNq5JpJ4,0.3359375,True,Exposing Hidden Biases in Text-to-Image Models via Automated Prompt Search,Exposing Hidden Biases in Text-to-Image Models via Automated Prompt Search
+nokbt6AbcM,3ZFvXHJwmB,0.453125,False,HDFlow: Hierarchical Diffusion-Flow Planning for Long-horizon Robotic Assembly,HDFlow: Hierarchical Diffusion-Flow Planning for Long-horizon Tasks
+7aO0YLtXb6,IelAHU5MVz,0.5625,True,From Muon to Gluon: Bridging Theory and Practice of LMO-based Optimizers for LLMs,From Muon to Gluon: Bridging Theory and Practice of LMO-based Optimizers for LLMs
+w696Vhv5B2,L7NsVVUm9H,0.4765625,False,OptiVer: Unleashing the Power of LLMs for Optimization Modeling via Dual-Side Verification,Opt-Verifier: Unleashing the Power of LLMs for Optimization Modeling via Dual-Side Verification
+1uJVKLOc8u,HvBHq4Ycvn,0.609375,True,QTALE: Quantization-Robust Token-Adaptive Layer Execution for LLMs,QTALE: Quantization-Robust Token-Adaptive Layer Execution for LLMs
+3YUL5LJ3s4,HbopJMswYa,0.5390625,False,DC-LLM: HARDWARE-FRIENDLY LLM WEIGHT COMPRESSION VIA DYNAMIC LINEAR COMBINATION,S-Quant: Rethinking Weight Quantization with Seed-Based Generation
+k0iFX2vTT4,VmY6aQZNhW,0.53125,False,Sharp Statistical Limits and Algorithm for Attributed Graph Alignment,Attributed Network Alignment: Statistical Limits and Efficient Algorithm
+OjcM4jL1dN,6Qu03WGp6x,0.5078125,False,Learning Global Representaion from Queries for Vectorized HD Map Construction,Learning Global Representation from Queries for Vectorized HD Map Construction
+UwtPOWp3NI,NMn3qzg6hQ,0.578125,True,GePBench: Evaluating Fundamental Geometric Perception for Multimodal Large Language Models,GePBench: Evaluating Fundamental Geometric Perception for Multimodal Large Language Models
+DdYBGUySAK,watVfFbZGF,0.578125,True,LaGEA: Language Guided Embodied Agents for Robotic Manipulation,LAGEA: Language Guided Embodied Agents for Robotic Manipulation
+1PCpLJH2IG,YIOVZ7Xmoo,0.6640625,True,Curriculum-Guided Layer Scaling for Language Model Pretraining,Curriculum-Guided Layer Scaling for Language Model Pretraining
+PeI4a4qeLY,C6kxImRizt,0.5,False,StageVAR: Stage-Aware Acceleration for Visual Autoregressive Models,FasterVAR: Plug-and-Play Acceleration for Visual Autoregressive Models
+znDmHZbvY6,Li5ki5Dopo,0.7109375,True,Ambient Dataloops: Generative Models for Dataset Refinement,Ambient Dataloops: Generative Models for Dataset Refinement
+ChfIF8UZ6X,rF1oJAhAZA,0.625,True,Eyes-on-Me: Scalable RAG Poisoning through Transferable Attention-Steering Attractors,Eyes-on-Me: Scalable RAG Poisoning through Transferable Attention-Steering Attractors
+3n4uUq30ei,fhoIsmyGGi,0.3828125,False,Modular and Adaptive Conformal Prediction for Sequential Models via Residual Decomposition,Decomposition-Based Modular Conformal Prediction for Two-Stage Modeling
+Wuy631kHwH,3uXAGWqCny,0.5,False,$\mu$P for RL: Mitigating Feature Inconsistencies During Reinforcement Learning,CompleteP for RL: Maintaining Feature Learning When Scaling Deep Reinforcement Learning
+4xal4WSkQt,UCLLoBmv6s,0.453125,False,Lightweight and Interpretable Transformer via Unrolling of Mixed Graph Algorithms for Traffic Forecast,Lightweight and Interpretable Transformer via Mixed Graph Algorithm Unrolling for Traffic Forecast
+QPg2Fm9bnl,Wb6hWu2jDB,0.5546875,False,Unlocking Noise-Resistant Vision: Key Architectural Secrets for Robust Models,Unlocking Noise-Resistant Vision: Key Architectural Secrets for Robust Models Against Gaussian Noise
+k2nsulWyQ8,2xvgJvxPvp,0.7109375,True,BiRQA: Bidirectional Robust Quality Assessment for Images,BiRQA: Bidirectional Robust Quality Assessment for Images
+BS0PhDOaJ7,Xj7V0wKlE5,0.4609375,False,CUARewardBench: Benchmark for Evaluating Reward Models on Computer-using Agent Trajectories,CUARewardBench: A Benchmark for Evaluating Reward Models for Computer-Using Agents
+r9NMVtrJGj,iW1oBBO72S,0.6328125,True,Doc-to-LoRA: Learning to Instantly Internalize Contexts,Doc-to-LoRA: Learning to Instantly Internalize Contexts
+yF17OOCRO4,EHUzWqzBL4,0.7421875,True,SliceFine: The Universal Winning-Slice Hypothesis for Pretrained Networks,SliceFine: The Universal Winning-Slice Hypothesis for Pretrained Networks
+s3Fqy0BeVY,b0Z5xWy23m,0.6015625,False,Bridging Interpretability and Optimization: Provably Attribution-Weighted Actor–Critic in Reproducing-Kernel Hilbert Spaces,SHAP-Guided Kernel Actor-Critic for Explainable Reinforcement Learning
+vff4htYMrO,ZlDndRDMHm,0.5625,True,Reviving Error Correction in Modern Deep Time-Series Forecasting,Reviving Error Correction in Modern Deep Time-Series Forecasting
+XmpEzCzn5U,rUtcXHYnrN,0.328125,False,Contrastive Order Learning for Ordinal Regression,Contrastive Order Learning: A General Framework for Ordinal Regression
+tNsrshOGDa,9ydYaIe1Qj,0.6171875,False,Provable Guarantees from Practical Regularization for Alignment with Human Preferences,The Axiomatic Value of Regularization in AI Alignment from Human Preferences
+h1XLREoCPf,ihXTK8a1Tw,0.65625,True,Efficient Prediction of pass@$k$ Scaling\\in Large Language Models,Efficient Prediction of Pass@k Scaling in Large Language Models
+CZQJl1bUf7,gXTtBRI1yj,0.5234375,False,NeurIPS: Neuro-anatomical Inductive Priors for Sphere-based Vision Brain Decoding,NeurIPS: Neuro-anatomical Inductive Priors for Sphere-based Brain Decoding
+uikLSN1yot,NW8KKXg46Y,0.578125,True,The SMeL Test: A simple benchmark for media literacy in language models,The SMeL Test: A simple benchmark for media literacy in language models
+kFcP5facrQ,DXnLu7qu75,0.53125,False,Charting the Frontier: How Optimizing Performance Yields Accurate Scaling Laws on a Shoestring,Active Budget Allocation for Efficient Scaling Law Estimation via Surrogate-Guided Pruning
+9jQkmGunGo,zloIrd77G5,0.390625,True,Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity,Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity
+u1hR5eP98V,xLnzdfOS6r,0.6171875,True,gp2Scale: A Class of Compactly-Supported Non-Stationary Kernels and Distributed Computing for Exact Gaussian Processes on 10 Million Data Points,gp2Scale: A Class of Compactly Supported Non-Stationary Kernels and Distributed Computing for Exact Gaussian Processes on 10 Million Data Points
+zLtG2yfRKA,CxcHPeXYWB,0.4453125,True,3DPoV: Improving 3D understanding via Patch Ordering on Videos,3DPoV: Improving 3D understanding via Patch Ordering on Videos
+J2Dfap524c,uyjhZkN9ZA,0.40625,False,Optimal Attention Temperature Enhances In-Context Learning under Distribution Shift,Optimal Attention Temperature Improves the Robustness of In-Context Learning under Distribution Shift in High Dimensions
+4blGqgStVr,Z6dCaMpiqV,0.59375,True,PDFBench: A Benchmark for De novo Protein Design from Function,PDFBench: A Benchmark for De Novo Protein Design from Function
+Dofaulr5RE,r8vdDUZ4s3,0.640625,True,Plug-and-Play Label Map Diffusion for Universal Goal-Oriented Navigation,Plug-and-Play Label Map Diffusion for Universal Goal-Oriented Navigation
+emjPKK11Oo,NUyt4uxzx0,0.5,True,Chain-of-Thought Reasoning In The Wild Is Not Always Faithful,Chain-of-Thought Reasoning In The Wild Is Not Always Faithful
+pWi3tvhhmx,AXtUl2KiQU,0.5625,True,UGround: Towards Unified Visual Grounding with Unrolled Transformers,UGround: Towards Unified Visual Grounding with Unrolled Transformers
+HOBJO7w8C2,boeY2syj2r,0.5859375,True,SurvDiff: A Diffusion Model for Generating Synthetic Data in Survival Analysis,SurvDiff: A Diffusion Model for Generating Synthetic Data in Survival Analysis
+rm6rHG7p9n,EGV34JT1Lc,0.5390625,True,GAUSS: Graph-Assisted Uncertainty Quantification using Structure and Semantics for Long-Form Generation in LLMs,GAUSS: Graph-Assisted Uncertainty Quantification using Structure and Semantics for Long-Form Generation in LLMs
+XyQ5ui62mm,Tl3ErdWAJf,0.4921875,False,Belief Dynamics Unify In-Context Learning and Activation Steering,Belief Dynamics Reveal the Dual Nature of In-Context Learning and Activation Steering
+DqAeSBQckF,cFWgTYm1hW,0.5859375,True,BLISS: A Lightweight Bilevel Influence Scoring Method for Data Selection in Language Model Pretraining,BLISS: A Lightweight Bilevel Influence Scoring Method for Data Selection in Language Model Pretraining
+dFRMbEEPBv,wSfc8mDEjM,0.40625,False,PISCES: Annotation-free Text-to-Video Post-Training via Bi-objective OT-aligned Rewards,PISCES: Annotation-free Text-to-Video Post-Training via Optimal Transport-Aligned Rewards
+YwEh20x8ud,KmS7pdFBEh,0.453125,True,BroRL: Scaling Reinforcement Learning via Broadened Exploration,BroRL: Scaling Reinforcement Learning via Broadened Exploration
+V3412jhu1x,Nyk5TF8H5x,0.40625,True,Capturing Gaze Shifts for Guidance: Cross-Modal Fusion Enhancement for VLM Hallucination Mitigation,Capturing Gaze Shifts for Guidance: Cross-Modal Fusion Enhancement for VLM Hallucination Mitigation
+80YSL3oy7z,igKogILa1h,0.3984375,False,MASC: Boosting Autoregressive Image Generation with a Manifold-Aligned Semantic Clustering,A Flat Vocabulary or a Rich Hierarchy? Re-introducing Intrinsic Structure Transforms the Autoregressive Image Generation
+qIUR54yyro,dSRLxMgwxd,0.5390625,True,PEARL: Differentially Private and Entropy-Aware Regulated Language Generation,PEARL: Differentially Private and Entropy-Aware Regulated Language Generation
+oSk9tP5Mgs,kz7n1D8Y1o,0.4140625,True,FAFO: Lossy KV Cache Compression for Lossless Inference Acceleration via Draftless Fumble Decoding,FAFO: Lossy KV Cache Compression for Lossless Inference Acceleration via Draftless Fumble Decoding
+qIFFC9RTwf,dxi8kGgKMM,0.4375,False,Optimizing Visual Generative Models with Distribution-wise Rewards,Optimizing Visual Generative Models via Distribution-wise Rewards
+fbrmmokJiU,nApMHaYSM6,0.3359375,False,"DecAEvolve: Decompose, Adapt, and Evolve, or Three Pillars of Effective LLM-based Scientific Equation Discovery","DecAEvolve: Decompose, Adapt, and Evolve for Effective LLM-based Scientific Equation Discovery"
+p6YqLhrdhJ,cvlPAWSeo3,0.484375,True,CountsDiff: A diffusion model on the natural numbers for generation and imputation of count-based data,CountsDiff: A diffusion model on the natural numbers for generation and imputation of count-based data
+ngwbYGykrW,Dl8vXnJJQi,0.40625,True,FG-CLIP 2: A Bilingual Fine-grained Vision-language Alignment Model,FG-CLIP 2: A Bilingual Fine-grained Vision-Language Alignment Model
+LGmO9VvuP5,OC2z7iSQKa,0.59375,True,$\tau^2$-bench: : Evaluating Conversational Agents in a Dual-Control Environment,$\tau^2$-Bench: Evaluating Conversational Agents in a Dual-Control Environment
+q5TSIEE7WM,3qYdflAp56,0.6875,True,Gradients with Respect to Semantics Preserving Embeddings Tell the Uncertainty of Large Language Models,Gradients with Respect to Semantics Preserving Embeddings Tell the Uncertainty of Large Language Models
+aLt5FJvJCZ,kBzzertldC,0.6796875,True,A Bi-metric Framework for Efficient Nearest Neighbor Search,A Bi-metric Framework for Efficient Nearest Neighbor Search
+49vuDYftSb,WbfRe0cheB,0.5859375,True,Temporal Score Rescaling for Temperature Sampling in Diffusion and Flow Models,Temporal Score Rescaling for Temperature Sampling in Diffusion and Flow Models
+oaKd1fVgWc,Htq2loTQTL,0.5625,True,TritonGym: A Benchmark for Agentic LLM Workflows in Triton GPU Code Generation,TritonGym: A Benchmark for Agentic LLM Workflows in Triton GPU Code Generation
+kFHg8YIi2M,kQuvO5gaNr,0.5,True,Certifying Graph Neural Networks Against Label and Structure Poisoning,Certifying Graph Neural Networks Against Label and Structure Poisoning
+fN676M9BM7,K9rWNmHhkD,0.3984375,False,Attention Layers Add Into Low-Dimensional Residual Subspaces,Dimensional Collapse in Transformer Attention Outputs: A Challenge for Sparse Dictionary Learning
+3FcjKYmNY5,akfapJ7Uuf,0.578125,True,SALSA-V: Shortcut-Augmented Long-form Synchronized Audio from Videos,SALSA-V: Shortcut-Augmented Long-form Synchronized Audio from Videos
+Z1TMV4bGuu,auG2Cr76ed,0.6015625,True,Rethinking Multimodal Time-Series Forecasting Evaluation,Rethinking Multimodal Time-Series Forecasting Evaluation
+FRp8cu1aKF,cJ5fSpXvSW,0.3984375,False,On the (In)Significance of Feature Selection in High-Dimensional Datasets,Predictive Performance is Often Insensitive to Feature Selection in High-Dimensional Biological Classification
+tP09UYGOTk,iE0m4NE5qb,0.71875,True,Emergent Alignment Via Competition,Emergent Alignment via Competition
+lqCvR0BDss,4yzY0GFIJj,0.4375,True,Q-Sched: Pushing the Boundaries of Few-Step Diffusion Models with Quantization-Aware Scheduling,Q-Sched: Pushing the Boundaries of Few-Step Diffusion Models with Quantization-Aware Scheduling
+BC1UkDlbB7,iJDJCO4mji,0.46875,True,mmBERT: A Modern Multilingual Encoder with Annealed Language Learning,mmBERT: A Modern Multilingual Encoder with Annealed Language Learning
+pEGnJbmSUy,N3dXUHY5dD,0.5078125,True,Agent Learning via Early Experience,Agent Learning via Early Experience
+85vAL51Gmu,LHCQSx0cQV,0.4453125,True,Design Linear Constrained Neural Layers with Implicit Convex Optimization,Design Linear Constrained Neural Layers with Implicit Convex Optimization
+S15Oo2hSlj,BUxrIaf7Zc,0.625,False,Entropy Never Lies: Signed Entropy Integral Unmasks Mislabeled Data,On Revisiting Entropy for Identifying Mislabeled Images
+AWLJJRgvbA,7X91AAKL5B,0.6484375,True,A Queueing-Theoretic Framework for Stability Analysis of LLM Inference with KV Cache Memory Constraints,A Queueing-Theoretic Framework for Stability Analysis of LLM Inference with KV Cache Memory Constraints
+8cj7ydwaaK,GoW78qJ3qM,0.640625,True,Universal Approximation with Softmax Attention,Universal Approximation with Softmax Attention
+gnJWVJSc3V,aBosytnQ6f,0.546875,True,CaliDist: Calibrating Large Language Models via Behavioral Robustness to Distraction,CaliDist: Calibrating Large Language Models via Behavioral Robustness to Distraction
+k88augulOL,GNieZ8Z5V5,0.484375,False,How Can LLMs Serve as Experts in Malicious Code Detection? A Graph Representation Learning Based Approach,Efficient Code Analysis via Graph Representation Learning-Guided Large Language Models
+U6JCsZJqCF,Tq5dFAGeBL,0.4296875,True,Improving ML attacks on LWE with data repetition and stepwise regression,Improving ML Attacks on LWE with Data Repetition and Stepwise Regression
+duQJWXvUu8,Z22XwUno20,0.4765625,False,Uncertainty-Aware Scheduling: State-Dependent Training-Free Diffusion Alignment,Uncertainty-Aware Scheduling: State-Dependent Test-Time Diffusion Alignment
+Pg7V0VGS3p,2OtY6CfcFs,0.359375,True,Target-Driven Policy Optimization for Sequential Counterfactual Outcome Control,Target-Driven Policy Optimization for Sequential Counterfactual Outcome Control
+lUdkSdCJYy,ldCiNVFt8O,0.3359375,False,d2: Improved Techniques for Training Reasoning Diffusion Language Models,d2: Improving Reasoning in Diffusion Language Models via Trajectory Likelihood Estimation
+PmYX0XiQQ0,i7mfaYYLDf,0.390625,False,VLAC: A Generalist Action-Critic Model via Pair-wise Progress Understanding,A Generalist Pair-wise Progress Critic Model for Vision-Language-Action Robots
+wAc718O8UM,5Q4ts0pr9T,0.515625,False,Towards Global Expert-Level Mixed-Precision Quantization for Mixture-of-Experts LLMs,GEMQ: Global Expert-Level Mixed-Precision Quantization for MoE LLMs
+hrd1qQ0kf6,pNxw4i5Dp2,0.5078125,True,SWE-Perf: Can Language Models Optimize Code Performance on Real-World Repositories?,SWE-Perf: Can Language Models Optimize Code Performance on Real-World Repositories?
+RCUZVHXlkj,Ykdbje3SDK,0.65625,True,Long-term Fairness with Selective Labels,Long-term Fairness with Selective Labels
+VSNmchfjgB,YVNn8t1XMX,0.6171875,True,Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents,Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents
+uIW1z0cA4Y,juGAf5Y7V2,0.6171875,True,OpenGPT-4o-Image: A Comprehensive Dataset for Advanced  Image Generation and Editing,OpenGPT-4o-Image: A Comprehensive Dataset for Advanced Image Generation and Editing
+bzb9OJVfCP,NX0uokLuv7,0.421875,True,SparseSSM: Efficient Selective Structured State Space Models Can Be Pruned in One-Shot,SparseSSM: Efficient Selective Structured State Space Models Can Be Pruned in One-Shot
+no8Ooy0vaH,aeeo8ZAftQ,0.5546875,True,A3 : an Analytical Low-Rank Approximation Framework for Attention,A3: an Analytical Low-Rank Approximation Framework for Attention
+uUghQYGVKO,vGnsSTcebc,0.390625,True,Symbal: Detecting Systematic Misalignments in Model-Generated Captions,Symbal: Detecting Systematic Misalignments in Model-Generated Captions
+W9oGZd4B8R,oOiQF3Ocl3,0.59375,True,Training LLM Agents to Empower Humans,Training LLM Agents to Empower Humans
+NRO8xMzCVm,G0Mw5MaPcR,0.5390625,True,EAGER: Entropy-Aware GEneRation for Adaptive Inference-Time Scaling,EAGer: Entropy-Aware GEneRation for Adaptive Inference-Time Scaling
+SEfqoI235G,WbVcAbHsCZ,0.625,True,Rethinking Visual Intelligence: Insights From Video Pretraining,Rethinking Visual Intelligence: Insights from Video Pretraining
+FafH4GM4uc,JheeAwquCb,0.375,True,"Universal Reasoner: A Single, Composable Plug-and-Play Reasoner for Frozen LLMs","Universal Reasoner: A Single, Composable Plug-and-Play Reasoner for Frozen LLMs"
+ku9JbhPmov,rICubRjsBf,0.46875,False,Caterpillar GNN: Replacing Message Passing with Efficient Aggregation,Caterpillar GNN: Replacing Message Passing with Graph-Level Aggregation
+5xOh6xNY8z,LXZcSgqldO,0.6171875,True,MePo: Meta Post-Refinement for Rehearsal-Free General Continual Learning,MePo: Meta Post-Refinement for Rehearsal-Free General Continual Learning
+jLItllJ5xm,KB9z4bnrbD,0.375,True,Is Graph Mixup Beneficial? Investigating Interpolation And Empirical Performance of Graph Mixup Methods,Is Graph Mixup Beneficial? Investigating Interpolation And Empirical Performance of Graph Mixup Methods
+KiWcaQaf3n,JWvRxvcmn3,0.4140625,True,SpeedCP: Fast Kernel-based Conditional Conformal Prediction,SpeedCP: Fast Kernel-based Conditional Conformal Prediction
+J7D10YouCM,RLNfZ407i8,0.6171875,True,DB-KSVD: Scalable Alternating Optimization for Disentangling High-Dimensional Embedding Spaces,DB-KSVD: Scalable Alternating Optimization for Disentangling High-Dimensional Embedding Spaces
+LsMvAGGjGc,grSvnNlEUU,0.578125,True,Benign Overfitting in Adversarial Training for Vision Transformers,Benign Overfitting in Adversarial Training for Vision Transformers
+DuFNAlQ8Lw,HDBpda5Vih,0.53125,False,Efficient computation of the privacy loss distribution for random allocation,Efficient privacy loss accounting for subsampling and random allocation
+GKvOJ8HStp,G4ve69pimc,0.484375,True,Optimal Regularization for Performative Learning,Optimal Regularization for Performative Learning
+SeqQdBV6YP,fwWvqAOXMT,0.375,False,InstEmb: Instruction-Following Embeddings through Look-Ahead Token Distillation,InstEmb: Instruction-Following Embeddings through Glimpses of the Future
+tM34PZf8W9,tbz8ixrEKd,0.625,True,Reinforcement Learning with Discrete Diffusion Policies for Combinatorial Action Spaces,Reinforcement Learning with Discrete Diffusion Policies for Combinatorial Action Spaces
+oR3bm1AXOn,MgjXTLpmgf,0.5546875,True,MECAT: A Multi-Experts Constructed  Benchmark for Fine-Grained Audio Understanding Tasks,MECAT: A Multi-Experts Constructed Benchmark for Fine-Grained Audio Understanding Tasks
+RBdSRJtpjk,E9SXR70XyN,0.5546875,True,SAC-Opt: Semantic Anchors for Iterative Correction in Optimization Modeling,SAC-Opt: Semantic Anchors for Iterative Correction in Optimization Modeling
+4FLes8q73Y,cVDeFGyb5z,0.421875,True,scCBGM: Single-Cell Editing via Concept Bottlenecks,scCBGM: Single-Cell Editing via Concept Bottlenecks
+ZQ9uqllSts,o3gN27ITWV,0.3203125,False,Long-Context Modeling with Dynamic Hierarchical Sparse Attention for On-Device LLMs,Long-Context Modeling with Dynamic Hierarchical Sparse Attention for Memory-Constrained LLM Inference
+hQqHuukRZ2,8mGDNFoJOD,0.5546875,True,Conditional KRR: Injecting Unpenalized Features into Kernel Methods with Applications to Kernel Thresholding,Conditional KRR: Injecting Unpenalized Features into Kernel Methods with Applications to Kernel Thresholding
+kIpCoJNULS,DDQX97Xi1Z,0.578125,False,Tensor Train Diffusion: A Fast Solver for High-Dimensional Sampling,Tensor Train Diffusion: Leveraging Low-Rank Structures for High-Dimensional Score-Based Sampling
+dpPW15y3n8,HV1R5bMSpa,0.6953125,True,ATLAS: Learning to Optimally Memorize the Context at Test Time,ATLAS: Learning to Optimally Memorize the Context at Test Time
+kNAQMZf53k,dqmt0Yd4rc,0.53125,True,Learning GUI Grounding with Spatial Reasoning from Visual Feedback,Learning GUI Grounding with Spatial Reasoning from Visual Feedback
+MCeM7uRH9U,1dfBRJVswL,0.3828125,True,An Interactive Paradigm for Deep Research,An Interactive Paradigm for Deep Research
+7TeJXgr7L6,m1IRWFAMsa,0.53125,True,NorMuon: Making Muon more efficient and scalable,NorMuon: Making Muon more efficient and scalable
+fdpB9RBFv5,Zlw4Kl5HEF,0.6953125,True,Probabilistic Bisection Algorithm Provably Achieves Exponential Convergence,Probabilistic Bisection Algorithm Provably Achieves Exponential Convergence
+NFxsP6PadP,jyOgpu5wfC,0.484375,True,Enhancing Multi-Modal LLMs Reasoning via Difficulty-Aware Group Normalization,Enhancing Multi-Modal LLMs Reasoning via Difficulty-Aware Group Normalization
+Jd6lHzaIYU,IP6W8i7XPG,0.609375,True,Understanding Private Learning From Feature Perspective,Understanding Private Learning From Feature Perspective
+GCZH9CNhPK,R64DZyalyn,0.5703125,True,PlugGuard: A Streaming Safeguard for Large Models via Latent Dynamics-Guided Risk Detection,PlugGuard: A Streaming Safeguard for Large Models via Latent Dynamics-Guided Risk Detection
+IysKdBVQ6y,WoxvGO1Vcv,0.625,False,Improving Complex SQL Generation for Text-to-SQL by Addressing Semantic Blind Spots in Pending SQL Components,Addressing Semantic Blind Spots in Text-to-SQL via Component Pre-generation and AST Matching Rewards
+Ujtc06M1zU,aWfk16EvfM,0.4375,True,Merge to Remember: Sharpness-Aware Isotropic Merging for Continual Learning,Merge to Remember: Sharpness-Aware Isotropic Merging for Continual Learning
+KTIBoIq7Zo,a6fo32UnpU,0.34375,True,Why Do We Need Warm-up? A Theoretical Perspective,Why Do We Need Warm-up? A Theoretical Perspective
+5y8R8XSHkG,IPAeknfo2x,0.5234375,True,Smoothie: Smoothing Diffusion on Token Embeddings for Text Generation,Smoothie: Smoothing Diffusion on Token Embeddings for Text Generation
+fVxfCEv8xG,udqe7UZUZ6,0.5859375,True,A-MemGuard: A Proactive Defense Framework for LLM-Based Agent Memory,A-MemGuard: A Proactive Defense Framework For LLM-Based Agent Memory
+yB4imIAR0J,E98OvY1Syv,0.4921875,True,Interpretable Embeddings with Sparse Autoencoders: A Data Analysis Toolkit,Interpretable Embeddings with Sparse Autoencoders: A Data Analysis Toolkit
+e1JW30momq,0JDzkrKzaA,0.5625,True,Mixtures Closest To A Given Measure: A Semidefinite Programming Approach,Mixtures Closest To A Given Measure: A Semidefinite Programming Approach
+rkfbUc3kO4,ihmX2vrcOf,0.4609375,False,TraceFlow: Dynamic 3D Reconstruction of Specular Scenes Driven by Ray Tracing,ReflFlow: Learning Geometry-Guided Ray Tracing for Dynamic Specular Reconstruction
+foWHXC8MeT,KpaQc72q7m,0.4609375,True,One-step Optimal Transport via Regularized Distribution Matching Distillation,One-step Optimal Transport via Regularized Distribution Matching Distillation
+NpreoXT7O7,KDDI2gDadL,0.484375,True,Identifying Partially Observed Causal Models from Heterogeneous/Nonstationary Data,Identifying Partially Observed Causal Models from Heterogeneous/Nonstationary Data
+BsEYEXjkVO,L3fJXwaFdx,0.578125,True,From Shortcuts to Reasoning: Robust Post-Training of Theory of Mind with Reinforcement Learning,From Shortcuts to Reasoning: Robust Post-Training of Theory of Mind with Reinforcement Learning
+BlbLPArfCD,32jYxFTcNX,0.6953125,True,MoST: Mixing Speech and Text with Modality-Aware Mixture of Experts,MoST: Mixing Speech and Text with Modality-Aware Mixture of Experts
+fMdJAcQNSD,BfkrQiC0Ss,0.375,True,Dirichlet-Prior Shaping: Guiding Expert Specialization in Upcycled MoEs,Dirichlet-Prior Shaping: Guiding Expert Specialization in Upcycled MoEs
+zL9wxlDExi,Skxb4UgTWU,0.640625,True,ScaLoRA: Optimally Scaled Low-Rank Adaptation for Efficient High-Rank Fine-Tuning,ScaLoRA: Optimally Scaled Low-Rank Adaptation for Efficient High-Rank Fine-Tuning
+nukmGP904w,1p67QsYnbv,0.5859375,True,EngiAgent: Fully Connected Coordination of LLM Agents for Solving Open-ended Engineering Problems with Feasible Solutions,EngiAgent: Fully Connected Coordination of LLM Agents for Solving Open-ended Engineering Problems with Feasible Solutions
+Rr8gAjB1dX,p8vZ7TuyKm,0.625,True,AdaNav: Adaptive Reasoning with Uncertainty for Vision-Language Navigation,AdaNav: Adaptive Reasoning with Uncertainty for Vision-Language Navigation
+GwHtOZsBRV,xBKbXgaPwr,0.5625,True,LAVA: A UNIFIED FRAMEWORK FOR FINETUNING LANGUAGE AND VISION MODELS,LAVA: A Unified Framework for Finetuning Language and Vision Models
+wnhwQp8Umq,DzvMz3I5HV,0.359375,False,EpiCache: Episodic KV Cache Management for Long Conversational Question Answering,EpiCache: Episodic KV Cache Management for Long-Term Conversation on Resource-Constrained Environments
+La7HVjveBA,5W0ezwAurK,0.6328125,True,DeepHA: Scaling Action Chains Elicits Deep Hierarchical Agents,DeepHA: Scaling Action Chains Elicits Deep Hierarchical Agents
+ichO81Ezt8,ES14qDqVB4,0.5859375,True,CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning,CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning
+caDjycqDY2,ssUgzVTtkB,0.515625,False,LLaVA-CMoE: Towards Continual Mixture of Experts for Large Vision-Language Models,CoPE: Continual Probe-guided Expansion for Large Vision-Language Models
+Vz2aYqvydx,B5umYh4CGr,0.5703125,False,Cooperative variance estimation and Bayesian neural networks disentangle aleatoric and epistemic uncertainties,Cooperative Variance Estimation and Bayesian Neural Networks for Disentangling Aleatoric and Epistemic Uncertainties
+2H2aNzDeYX,TBSyYj4VV6,0.5078125,True,Accelerating Regression Tasks with Quantum Algorithms,Accelerating Regression Tasks with Quantum Algorithms
+J5Bpbtxvjh,Hw9EsvumTM,0.625,True,RoCA: Robust Cross-Domain End-to-End Autonomous Driving,RoCA: Robust Cross-Domain End-to-End Autonomous Driving
+vhhwY0AVgu,fs9KaJyhRO,0.375,False,Layerwise Learning Rate in the Era of Large Language Models,One LR Doesn’t Fit All: Heavy-Tail Guided Layerwise Learning Rates for LLMs
+CWy1EyUons,AMIV24ianZ,0.390625,False,Model Diffusion for Certifiable Few-shot Transfer Learning,Weight-Space Learning for Certifiable Few-shot Transfer Learning
+MQ5gqRRHVN,MF39WUbcmx,0.5078125,True,Facts in Stats: Impacts of Pretraining Diversity on Language Model Generalization,Facts in Stats: Impacts of Pretraining Diversity on Language Model Generalization
+0JYtXNl7ns,euF1o9OgHr,0.5234375,False,Building Reliable Long-Form Generation via Step-Wise Hallucination Rejection Sampling,Building Reliable Long-Form Generation via Hallucination Rejection Sampling
+zZL7HdfKuU,5HURZw5XM5,0.671875,True,RAD: Retrieval High-quality Demonstrations to Enhance Decision-making,RAD: Retrieval High-quality Demonstrations to Enhance Decision-making
+rEjWBDtxoK,NvJPE1oiKd,0.4609375,False,Computationally Efficient Graph Modelling with Refined Graph Random Features,Computationally-efficient Graph Modeling with Refined Graph Random Features
+FRXNMF0to7,6OMZEKarO7,0.5078125,True,The Personality Illusion: Revealing Dissociation Between Self-Reports & Behavior in LLMs,The Personality Illusion: Revealing Dissociation Between Self-Reports & Behavior in LLMs
+P1KhPUTceF,n3Rj1wRtlE,0.7109375,False,S4NN: Scalable Self-Supervised Spiking Neural Networks,SpikeCLR: Self-Supervised Contrastive Learning for Visual Representations with Spiking Neural Networks
+9naNy1zpwj,klUTVUyqw7,0.6484375,True,Towards the Training of Deeper Predictive Coding Neural Networks,Towards the Training of Deeper Predictive Coding Neural Networks
+ftANj24sfU,cNplXlpf7r,0.4921875,True,Large-Scale Molecular Dynamics Simulation: Direct Interatomic Modeling with Dilated Message Passing,Large-Scale Molecular Dynamics Simulation: Direct Interatomic Modeling with Dilated Message Passing
+aOjy0qREsu,9wnNpCD8E9,0.578125,True,Norm$\times$Direction: Restoring the Missing Query Norm in Vision Linear Attention,Norm$\times$Direction: Restoring the Missing Query Norm in Vision Linear Attention
+3V8EhJpSOX,7j2eMymTTP,0.390625,False,Causal-EPIG: A Prediction-Oriented Active Learning Framework for CATE Estimation,Causal-EPIG: Causally Aligned Active CATE Estimation
+NhU661EZ9C,bA6BgSbaUi,0.6171875,True,How much can language models memorize?,How much can language models memorize?
+vBFVaVf8aj,4XHiXa48fA,0.578125,True,ReLAM: Learning Anticipation Model for Rewarding Visual Robotic Manipulation,ReLAM: Learning Anticipation Model for Rewarding Visual Robotic Manipulation
+UVpLVGFYS2,nIGsv6u4yU,0.6796875,False,CondiQuant: Condition Number Based Low-Bit Quantization for Image Super-Resolution,Condition Number Based Low-Bit Quantization for Image Super-Resolution
+3bofUSPhNF,thuyfHsRIu,0.5703125,False,DiffGED: Computing Graph Edit Distance via Diffusion-based Graph Matching,Towards Generative Graph Matching for Graph Edit Distance Computation
+svxlmwLGEc,UfiLIUtbSO,0.578125,True,ECA: Efficient Continual Alignment for Open-Ended Image-to-Text Generation,ECA: Efficient Continual Alignment for Open-Ended Image-to-Text Generation
+9R2iUHhVfr,uEVTdoAbnK,0.640625,True,SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?,SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?
+gUzdPLGq0y,Cez36tiWXz,0.5390625,True,Negatives-Dominant Contrastive Learning for Generalization in Imbalanced Domains,Negatives-Dominant Contrastive Learning for Generalization in Imbalanced Domains
+ROTJZgRp7Q,OrcJhUqdNG,0.4921875,True,Embedding Trust: Semantic Isotropy Predicts Nonfactuality in Long-Form Text Generation,Embedding Trust: Semantic Isotropy Predicts Nonfactuality in Long-Form Text Generation
+bNRXwUDsQ1,FK2SZbz1YE,0.359375,False,EquiCAD: A Geometric Equivariant Neural Network for 3D Shape Classification,EquiCAD: A Geometric Equivariant Neural Network for 3D Shape Classiﬁcation
+mwAkJJ4NBD,80nuPd5Gvb,0.6875,True,Coevolutionary Continuous Discrete Diffusion: Make Your Diffusion Language Model a Latent Reasoner,Coevolutionary Continuous Discrete Diffusion: Make Your Diffusion Language Model a Latent Reasoner
+MHA8oTxoei,vSKK7ffkfv,0.7109375,False,Investigating the Link Between Representational Similarity and Model Interactions,Representational Similarity and Model Behavior in Multi-Agent Interaction
+azXOzJFwuf,9bLiqb6Vec,0.4453125,False,FuseNorm: Achieving the Best of Both Worlds from PreNorm and PostNorm,SpanNorm: Reconciling Training Stability and Performance in Deep Transformers
+2KjMQGOm4b,tCXxWWBjxQ,0.484375,True,The Differences Between Direct Alignment Algorithms are a Blur,The Differences Between Direct Alignment Algorithms are a Blur
+9Vb7WnS6LB,xFbdOV2Ma7,0.4296875,False,Normalized Rewards for Preference Learning,Normalized Rewards for Preference Optimization
+9vBLF1mU3z,GK89Mi6ZRf,0.5078125,True,Inverting Data Transformations via Diffusion Sampling,Inverting Data Transformations via Diffusion Sampling
+APgSIyWZT7,bG4ZzflPCt,0.359375,True,Functional Equivalence in Attention: A Comprehensive Study with Applications to  Linear Mode Connectivity,Functional Equivalence in Attention: A Comprehensive Study with Applications to Linear Mode Connectivity
+cQV1uWcBfl,uIsdcoSD3G,0.3046875,True,Moving Out: Physically-grounded Human-AI Collaboration,Moving Out: Physically-grounded Human-AI Collaboration
+eZcJZliYws,0RctDxxCDs,0.6328125,True,CLoVE: Personalized Federated Learning through Clustering of Loss Vector Embeddings,CLoVE: Personalized Federated Learning through Clustering of Loss Vector Embeddings
+qepfd7N6W6,nvnkuqWuu3,0.484375,True,Reinforcement Fine-Tuning Naturally Mitigates Forgetting in Continual Post-Training,Reinforcement Fine-Tuning Naturally Mitigates Forgetting in Continual Post-Training
+yV1Cqypc1A,1XJqPy2LhA,0.4375,False,TAG: Tangential Amplifying Guidance for Hallucination-Resistant Diffusion Sampling,TAG: Tangential Amplifying Guidance for Hallucination-Resistant Sampling
+4tLbk1Qs7m,ETPsJre8pn,0.421875,False,RISE: A Statistical Perspective for Adversarial Attacks against Closed-Source MLLMs,DART: Distribution-Aware Adaptive Relational Transfer for Adversarial Attacks against Closed-Source MLLMs
+RLazI3aMBY,GzunaSZ8jC,0.53125,True,Local MAP Sampling for Diffusion Models,Local MAP Sampling for Diffusion Models
+iB9qx28gv4,aXAgpGfHGc,0.40625,False,4D Latent World Model for Robot Planning,Structured 4D Latent Predictive Model for Robot Planning
+mbJTryiKSz,YPH5yCKzYr,0.625,True,Neural Feature Geometry Evolves as Discrete Ricci Flow,Neural Feature Geometry Evolves as Discrete Ricci Flow
+e26MPyczN9,nLc5wTYX1p,0.328125,False,Do Programmatic Policies Really Generalize Better? A Re-Evaluation Study,Revisiting OOD Generalization in Programmatic RL
+A8JuOtpAUM,gSZhNPp103,0.3828125,True,Fixed Aggregation Features Can Rival GNNs,Fixed Aggregation Features Can Rival GNNs
+j9TdFswuZ3,uiyDqAVhr9,0.5078125,True,MMClima: A Framework for Multimodal Climate Science Data and Evaluation,MMClima: A Framework for Multimodal Climate Science Data and Evaluation
+lxCiSrPwAN,7g23tYAIDC,0.484375,True,Turning Bias into Bugs: Bandit-Guided Style Manipulation Attacks on LLM Judges,Turning Bias into Bugs: Bandit-Guided Style Manipulation Attacks on LLM Judges
+bYJvSlfaS0,Xwxz41eYE6,0.5,True,Normalization-equivariant Diffusion Models: Learning Posterior Samplers From Noisy And Partial Measurements,Normalization-equivariant Diffusion Models: Learning Posterior Samplers From Noisy And Partial Measurements
+YSkby14i2v,RdbSgk61V0,0.640625,False,MR.PEA: The Meta-Reasoning Prompt Engineering Agent,Prompt Optimization with Minimal Unlabeled Input via Meta-Reasoning
+NNqi3tBcZr,B5RiXueKqb,0.5390625,False,Conformal Risk-Averse Decision Making with Action Conditional Guarantees,Conformal Risk-Averse Decision Making with Action Conditional Guarantee
+wJgaHyJaDD,W6FvMHPVez,0.3984375,False,TPOUR: Temporal Preference Optimization for Unsupervised Retrieval,Temporal Preference Optimization for Unsupervised Retrieval
+P9I4oRTsOU,wjc6oz63WL,0.5625,True,CoFrGeNet: Continued Fraction Architectures for Language Generation,CoFrGeNet: Continued Fraction Architectures for Language Generation
+EkTm1JCUEH,t3PXkjuTqe,0.703125,True,Extending Prediction-Powered Inference through Conformal Prediction,Extending Prediction-Powered Inference through Conformal Prediction
+uGLGPCatwh,c4abksRFwY,0.5,False,Confounding Robust Meta-Reinforcement Learning: A Causal Approach,Counterfactual Bootstrap for Robust Meta-Reinforcement Learning
+Rg8UvwAvKQ,Qr8Zvwoi88,0.4453125,True,BESPOKE: Benchmark for Search-Augmented Large Language Model Personalization via Diagnostic Feedback,BESPOKE: Benchmark for Search-Augmented Large Language Model Personalization via Diagnostic Feedback
+81mxnkcW43,fyM0jbe5DK,0.6484375,True,SPARD: Defending Harmful Fine-Tuning Attack via Safety Projection with Relevance–Diversity Data Selection,SPARD: Defending Harmful Fine-Tuning Attack via Safety Projection with Relevance–Diversity Data Selection
+vaAKfYJR5R,NWZZmXRIH5,0.59375,True,Utility-Diversity Aware Online Batch Selection for LLM Supervised Fine-tuning,Utility-Diversity Aware Online Batch Selection for LLM Supervised Fine-tuning
+kj93nhq6Fl,JiXnhlVhly,0.6171875,True,PICACO: Pluralistic In-Context Value Alignment via Total Correlation Optimization,PICACO: Pluralistic In-Context Value Alignment via Total Correlation Optimization
+ZMQAGxMmE2,2ulI4uqGRG,0.5703125,False,Being More Lightweight and Practical: Mini-sized Contrastive Learning Pre-trained Models for Fine-grained Traffic Tasks,Being More Lightweight and Practical: Mini-sized Contrastive Learning Pre-trained Models for Fine-grained Traffic Task
+wU4Tjlzg3h,If4X4W2HWx,0.703125,True,MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems,MemoryBench: A Benchmark for Memory and Continual Learning in LLM Systems
+MmYiosUoay,843GQudig7,0.5546875,True,Seeing is Understanding: Unlocking Causal Attention into Modality-Mutual Attention for Multimodal LLMs,Seeing is Understanding: Unlocking Causal Attention into Modality-Mutual Attention for Multimodal LLMs
+rxJP0jWqX4,LKhv9aVR0W,0.546875,True,QuadSentinel: Sequent Safety for Machine-Checkable Control in Multi-agent Systems,QuadSentinel: Sequent Safety for Machine-Checkable Control in Multi-agent Systems
+LVvBvvqoL3,n86vBxkWIt,0.734375,True,Beyond Tokens: Enhancing RTL Quality Estimation via Structural Graph Learning,Beyond Tokens: Enhancing RTL Quality Estimation via Structural Graph Learning
+h7qdCvhMdb,D2evvc90tF,0.3828125,True,Can Microcanonical Langevin Dynamics Leverage Mini-Batch Gradient Noise?,Can Microcanonical Langevin Dynamics Leverage Mini-Batch Gradient Noise?
+5cgu0UWtRR,yuJehN4oMW,0.515625,True,Steering Out-of-Distribution Generalization with Concept Ablation Fine-Tuning,Steering Out-of-Distribution Generalization with Concept Ablation Fine-Tuning
+xOIYHbTb31,cRs6HUUUay,0.546875,True,ExpertWeaver: Unlocking the Inherent MoE in Dense LLMs with GLU Activation Patterns,ExpertWeaver: Unlocking the Inherent MoE in Dense LLMs with GLU Activation Patterns
+fJYsE7Kq7o,mh2eIxPKMm,0.3515625,True,Quantifying the noise sensitivity of the Wasserstein metric for images,Quantifying the noise sensitivity of the Wasserstein metric for images
+Kika6AFz6Q,GdyuWMAH8P,0.4921875,False,GFMate: Empowering Graph Foundation Models with Pre-training-agnostic Test-time Prompt Tuning,GFMate: Empowering Graph Foundation Models with Test-time Prompt Tuning
+rXKR2rTDHr,khMSeuLLhh,0.59375,True,Adversarial Attack and Defense for Denoising Diffusion Sampling,Adversarial Attack and Defense for Denoising Diffusion Sampling
+XdLgOm5giq,sfVahQ4EWP,0.5078125,True,Can vision language models learn intuitive physics from interaction?,Can Vision Language Models Learn Intuitive Physics from Interaction?
+bKoZoUk0Th,MrFOCA1U5P,0.515625,True,Geometric Embedding Alignment via Curvature Matching in Transfer Learning,Geometric Embedding Alignment via Curvature Matching in Transfer Learning
+9OKxaCRPjD,TFCjR5gSuX,0.5390625,True,Mitigating Surgical Data Imbalance with Dual-Prediction Video Diffusion Model,Mitigating Surgical Data Imbalance with Dual-Prediction Video Diffusion Model
+QTXUAsN7oO,zmAMq09bFs,0.4609375,True,Q-CLIP: Unleashing the Power of Vision-Language Models for Video Quality Assessment through Unified Cross-Modal Adaptation,Q-CLIP: Unleashing the Power of Vision-Language Models for Video Quality Assessment through Unified Cross-Modal Adaptation
+wUzBBsrdB1,aYqF2Cv6Cr,0.515625,True,Sparse but Wrong: Incorrect L0 Leads to Incorrect Features in Sparse Autoencoders,Sparse but Wrong: Incorrect L0 Leads to Incorrect Features in Sparse Autoencoders
+eCftYujQkK,Z3xgDd5B2L,0.4296875,True,SimGFM: Simplifying Discrete Flow Matching for Graph Generation,SimGFM: Simplifying Discrete Flow Matching for Graph Generation
+ASzmchacx7,6wQKBHi0qO,0.4296875,True,Reward Learning through Ranking Mean Squared Error,Reward Learning through Ranking Mean Squared Error
+rI2Fa13fUL,LpqtiYpHzn,0.6953125,True,Offline Reinforcement Learning with Generative Trajectory Policies,Offline Reinforcement Learning with Generative Trajectory Policies
+NnCe27xT8O,U80aF9bwQZ,0.4453125,True,MoVie: Multimodal Video Compression with Text Guidance,MoVie: Multimodal Video Compression with Text Guidance
+Lvkbe0CgmZ,dIUrE5eR00,0.609375,True,Mirror Mean-Field Langevin Dynamics,Mirror Mean-Field Langevin Dynamics
+u9gE59Ib8J,QZa5zaj2oP,0.484375,False,ProMoS: Prototype-Guided Distillation for Generalist Graph Anomaly Detection,Generalist Graph Anomaly Detection via Prototype-Based Distillation
+NCxjfPjd3z,SqegQxm1ya,0.4609375,True,NoiseSDF2NoiseSDF: Learning Clean Neural Fields from Noisy Supervision,NoiseSDF2NoiseSDF: Learning Clean Neural Fields from Noisy Supervision
+7Izu4XMELq,91wS6c5Yfd,0.515625,False,Anti-Backdoor Coreset Selection via the Cumulative Entropy Criterion,Anti-Backdoor Coreset Selection via Cumulative Entropy
+DHqbT1xbL7,Jyxd9ywmyA,0.5703125,True,Anon: Exploring the Adaptivity of Optimizers and Beyond,Anon: Exploring the Adaptivity of Optimizers and Beyond
+BUzE5v17xN,4pfxoYPQSY,0.390625,True,Deep Coupling Learning for Solving PDEs,Deep Coupling Learning for Solving PDEs
+j60dWQaYbH,lQmnZqVwSG,0.4375,False,Alignment-Aware Decoding,Alignment-Aware Decoding
+cEDngMukJp,PysPgClt8e,0.6796875,True,RSPO: Regularized Self-Play Alignment of Large Language Models,RSPO: Regularized Self-Play Alignment of Large Language Models
+9chqEmpIZT,4BGl1dY83o,0.578125,True,Mitigating Reward Hacking in LLM-based Recommendation: A Preference Optimization Approach,Mitigating Reward Hacking in LLM-based Recommendation: A Preference Optimization Approach
+zvvZl0N3Sm,IAE5vKJUeY,0.5078125,False,Paying More Attention to Images in Large-scale Dataset Compression,Unifying Dataset Pruning and Distillation for Efficient Large-scale Compression
+mhalNLINnn,LsqeBp4JsV,0.6015625,True,Dynamic Optimizations of LLM Ensembles with Two-Stage Reinforcement Learning Agents,Dynamic Optimizations of LLM Ensembles with Two-Stage Reinforcement Learning Agents
+UAarpRAiVN,cyR2FtZzY1,0.4453125,True,Block Rotation is All You Need for MXFP4 Quantization,Block Rotation is All You Need for MXFP4 Quantization
+5gjZh86sRa,7sIDvIywHQ,0.5390625,True,UOTIP: Unbalanced Optimal Transport Map for Unpaired Inverse Problems,UOTIP: Unbalanced Optimal Transport Map for Unpaired Inverse Problems
+dBTlT566pE,AAWlum38oE,0.546875,False,Align Your Tangent: Training Better Consistency Models via Manifold-Aligned Tangents,Align Your Trajectory Tangent: Training Better Consistency Models via Manifold-Aligned Tangents
+iuebm4vXuI,SRuY51jkii,0.5625,False,RLCracker: Exposing the Vulnerability of LLM Watermarks with Adaptive RL Attacks,RLCracker: Evaluating the Worst-Case Vulnerability of LLM Watermarks with Adaptive RL Attacks
+hQElhp8NWW,AyrNR1ExN5,0.4921875,False,Discontinuities in Sparse Mixture-of-Experts: A Measure-Stochastic Analysis,Geometric and Stochastic Analysis of Discontinuities in Sparse Mixture-of-Experts
+6nDLYtvaxu,LtHNTRg73G,0.453125,False,OSCAR: Orthogonal Stochastic Control for Alignment-Respecting Diversity in Flow Matching,Letting Trajectories Spread: Quality-Preserving Control for Diverse Flow Matching
+3Xaw5iEvh9,yUDykwou3c,0.4921875,True,When LLMs Encounter Open-world Graph Learning: A Fresh View on Unlabeled Data Uncertainty,When LLMs Encounter Open-world Graph Learning: A Fresh View on Unlabeled Data Uncertainty
+c6IRL2mdDR,lK1El77o4Q,0.78125,True,Improving the Sensitivity of Backdoor Detectors via Class Subspace Orthogonalization,Improving the Sensitivity of Backdoor Detectors via Class Subspace Orthogonalization
+6rvpzYGNOn,CVDEc0doW8,0.578125,True,Accuracy-First Rényi Differential Privacy and Post-Processing Immunity,Accuracy-First Rényi Differential Privacy and Post-Processing Immunity
+cenRAFpuS4,jxdjDmWpNX,0.4609375,True,Offline Reinforcement Learning of High-Quality Behaviors Under Robust Style Alignment,Offline Reinforcement Learning of High-Quality Behaviors Under Robust Style Alignment
+0dnSbhNoTB,zAl9heLw4q,0.4609375,False,Where is Motion From? Scalable Motion Attribution for Video Generation Models,Motion Attribution for Video Generation
+BAwXV3Y0cc,XztRm216YS,0.4453125,True,TimeRewarder: Learning Dense Reward from Passive Videos via Frame-wise Temporal Distance,TimeRewarder: Learning Dense Reward from Passive Videos via Frame-wise Temporal Distance
+xfwlgpe6st,QhNO3qmXST,0.4453125,True,Unitary Convolutions for Message-passing and Positional Encodings on Directed Graphs,Unitary Convolutions for Message-passing and Positional Encodings on Directed Graphs
+qYVa1obqTZ,f7PUjzI60h,0.578125,True,Neural Modular Physics for Elastic Simulation,Neural Modular Physics for Elastic Simulation
+SuJOXXd2fn,QIwQdRmZAr,0.5625,True,Learning Generalized Label Distributions,Learning Generalized Label Distributions

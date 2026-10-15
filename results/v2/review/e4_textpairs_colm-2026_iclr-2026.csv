@@ -1,0 +1,58 @@
+a_id,b_id,jaccard,title_match,a_title,b_title
+5iN02I9xeZ,BkYlCIfaBB,0.5546875,False,DeepScholar-Bench: A Live Benchmark for Automated Evaluation of Generative Research Synthesis,DeepScholarBench: A Live Benchmark and Automated Evaluation for Generative Research Synthesis
+czMqPLU6JU,ubH1fM34sV,0.4609375,True,Improving GUI Grounding with Explicit Position-to-Coordinate Mapping,Improving GUI Grounding with Explicit Position-to-Coordinate Mapping
+SC7liryuqr,gqbD7gJVcV,0.6640625,True,BiomedSQL: Text-to-SQL for Scientific Reasoning on Biomedical Knowledge Bases,BiomedSQL: Text-to-SQL for Scientific Reasoning on Biomedical Knowledge Bases
+1asLboEDEK,24joLkfM76,0.609375,True,Boosting Process-Correct CoT Reasoning by Modeling Solvability of Multiple-Choice QA,Boosting Process-Correct CoT Reasoning by Modeling Solvability of Multiple-Choice QA
+IYCfYFt9LL,kNz4TjY7oq,0.515625,True,Quality of Rejections Matters: Preference Data Construction for Faithful Summarization,Quality of Rejections Matters: Preference Data Construction for Faithful Summarization
+c6wouZavsS,WGOj26QIlR,0.5,False,Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harmful Behaviors,Benchmarking the Robustness of Agentic Systems to Adversarially-Induced Harms
+LXZnaJLeB2,qgMvotqkXd,0.859375,True,RefCritic: Training Long Chain-of-Thought Critic Models with Refinement Feedback,RefCritic: Training Long Chain-of-Thought Critic Models with Refinement Feedback
+ZSeKA0LrJg,22ptQ2QoFn,0.4609375,True,"Think Right: Learning to Mitigate Under-Over Thinking via Adaptive, Attentive Compression","Think Right: Learning to Mitigate Under-Over Thinking via Adaptive, Attentive Compression"
+inTQgPxkjw,pi9m9SZKtd,0.453125,True,Latent Structure of Affective Representations in Large Language Models,Latent Structure of Affective Representations in Large Language Models
+G8FZpJtBw3,DQuWpKLNwd,0.6015625,True,Reasoning on a Spectrum: Aligning LLMs to System 1 and System 2 Thinking,Reasoning on a Spectrum: Aligning LLMs to System 1 and System 2 Thinking
+sr6xTPBZ5b,Twcq83ljWz,0.6015625,False,Investigating Social Bias Changes in Quantized Large Language Models,Uncertainty Drives Social Bias Changes in Quantized Large Language Models
+REuRJNxk05,trBEiQFkxw,0.4609375,True,"Language Models That Think, Chat Better","Language Models That Think, Chat Better"
+7NSlEHiCiV,gMajoi2xsq,0.6640625,True,HieraSuite: A Holistic Toolkit for Building Versatile System-User Instruction Hierarchy,HieraSuite: A Holistic Toolkit for Building Versatile System-User Instruction Hierarchy
+c7Emf7tVqT,vUrZaERt8b,0.671875,True,Resa: Efficient Reasoning Models via SAEs,Resa: Efficient Reasoning Models via SAEs
+WBSf3T7vTt,lNgSdqKFmU,0.8203125,True,Self-Evolving Curriculum for LLM Reasoning,Self-Evolving Curriculum for LLM Reasoning
+oenmsPGLM9,Xc1t0S4xtD,0.375,False,Private-RAG: Answering Multiple Queries with LLMs while Keeping Your Data Differentially Private,Private-RAG: Answering Multiple Queries with LLMs while Keeping Your Data Private
+VsaeinNuM7,30iarHLvCS,0.3515625,True,SuperCoder: Assembly Program Superoptimization with Large Language Models,SuperCoder: Assembly Program Superoptimization with Large Language Models
+wcHY1ggWZI,9by7KLtxtq,0.6640625,True,Vocabulary embeddings organize linguistic structure early in language model training,Vocabulary embeddings organize linguistic structure early in language model training
+LhsPiQYoe2,DOLF9TUBfa,0.609375,False,DarwinLM: Evolutionary Structured Pruning of Large Language Models,DarwinLM: Evolutionary Structured Pruning of Large Language Model
+XP13quuYXS,V3cF6G9muN,0.65625,True,"Sample, Align, Synthesize: Graph-Based Response Synthesis with ConGrs","Sample, Align, Synthesize: Graph-Based Response Synthesis with ConGrs"
+WcJN5D82ZV,aHA6Gbwwan,0.609375,True,LLM Knowledge is Brittle: Truthfulness Representations Rely on Superficial Resemblance,LLM knowledge is brittle: truthfulness representations rely on superficial resemblance
+aGdVGrI8dD,Eo2OSOQL1P,0.453125,True,MMMG: A Comprehensive and Reliable Benchmark for Multitask Multimodal Generation,MMMG: A Comprehensive and Reliable Benchmark for Multitask Multimodal Generation
+6EJ27eMSBB,L49qTH31Bq,0.3828125,True,Decoupled Alignment for Robust Plug-and-Play Adaptation,Decoupled Alignment for Robust Plug-and-Play Adaptation
+DbuvNZNUc9,pD2xQxYMhE,0.7890625,True,Learning Human-Perceived Fakeness in AI-Generated Videos via Multimodal LLMs,Learning Human-Perceived Fakeness in AI-Generated Videos via Multimodal LLMs
+UMipfwK6Ar,2Ba7lELgja,0.65625,True,"Measuring AI ""Slop"" in Text","Measuring AI ""Slop"" In Text"
+PCopXh8epf,2bPyuL6Cda,0.7421875,True,Inference Scaling of LLM Ensembling: Bridging Token Spaces with Token Translation,Inference Scaling of LLM Ensembling: Bridging Token Spaces with Token Translation
+sh9vZr0NaP,8YlFBmNYVV,0.703125,True,Round-trip Reinforcement Learning: Self-Consistent Training for Better Chemical LLMs,Round-trip Reinforcement Learning: Self-Consistent Training for Better Chemical LLMs
+c2pJvSu6Qo,U0I590wrsm,0.6015625,True,Towards Active Synthetic Data Generation for Finetuning Language Models,Towards Active Synthetic Data Generation for Finetuning Language Models
+Y089dOJOwf,zNqc0li5Dl,0.4765625,False,Reinforcement Routing for Mixtures of LoRAs in Parameter-Efficient LLM Finetuning,ReMix: Reinforcement Routing for Mixtures of LoRAs in LLM Finetuning
+htK903ACtP,r6Z3BXDrzO,0.34375,True,On the Impossibility of Retrain Equivalence in Machine Unlearning,On the Impossibility of Retrain Equivalence in Machine Unlearning
+zqmS3yzV85,RpX0k5RR6q,0.6875,True,Relative Scaling Laws for LLMs,Relative Scaling Laws for LLMs
+BfIYz9e9Rg,va4FWa5TDN,0.4453125,True,Cylon: Asynchronous Linear Attention,Cylon: Asynchronous Linear Attention
+hZ5XPW7jaD,AaMB3SFmBy,0.5390625,False,Budget-Aware Tool Use Enables Effective Agent Scaling,Cost-effective Agent Test-time Scaling via Budget-Aware Thinking
+dEFE6lIpFG,ZCLoMDVHBw,0.734375,True,Risk Profiling and Modulation for LLMs,Risk Profiling and Modulation for LLMs
+7772fyI1RQ,ikmBOPAozE,0.8125,True,Refusal Falls off a Cliff: How Safety Alignment Fails in Reasoning?,Refusal Falls off a Cliff: How Safety Alignment Fails in Reasoning?
+kyByX4OnSJ,OA3BXWKG9Q,0.71875,True,TemMed-Bench: Evaluating Temporal Medical Image Reasoning in Vision-Language Models,TemMed-Bench: Evaluating Temporal Medical Image Reasoning in Vision-Language Models
+3YtIdxXzhi,Mw6TUZer5l,0.6015625,False,Studying the Soupability of Documents in State Space Models,The Surprising Soupability of Documents in State Space Models
+wIeRDYrSeg,KPw0kG7WIl,0.3671875,False,Understanding Machine Unlearning Through the Lens of Mode Connectivity,Mode Connectivity in Unlearning: A Loss Landscape Analysis of Machine Unlearning
+LvSWCy30Yz,v92Nlpj1kf,0.46875,False,Asymmetric Idiosyncrasies in Multimodal Models,Lost in Translation: On the Idiosyncratic Gap between Image Captioning and Generation Models
+Jze7WxJ0rp,Fj7adDEWm4,0.8515625,True,"TRIDENT: Benchmarking LLM Safety in Finance, Medicine, and Law","TRIDENT: Benchmarking LLM Safety in Finance, Medicine, and Law"
+HALgBdKfMS,qrhod4eC16,0.453125,True,Fractured Chain-of-Thought Reasoning,Fractured Chain-of-Thought Reasoning
+PjASVmQVg4,HZRz9R1Xjo,0.59375,True,Do Depth-Grown Models Overcome The Curse Of Depth? An In-Depth Analysis,Do Depth-Grown Models Overcome The Curse Of Depth? An In-Depth Analysis
+HmhG2Hl8G8,lrDr6dmXOX,0.4921875,True,Oolong: Evaluating Long Context Reasoning and Aggregation Capabilities,Oolong: Evaluating Long Context Reasoning and Aggregation Capabilities
+LwuYQhaMla,d0xqdsR41U,0.5859375,True,WebChoreArena: Evaluating Web Browsing Agents on Realistic Tedious Web Tasks,WebChoreArena: Evaluating Web Browsing Agents on Realistic Tedious Web Tasks
+0j55bwYO0c,VS9fKe0bLn,0.703125,True,Guard Vector: Beyond English LLM Guardrails with Task-Vector Composition and Streaming-Aware Prefix SFT,Guard Vector: Beyond English LLM Guardrails with Task-Vector Composition and Streaming-Aware Prefix SFT
+dF9RuCA2ed,vv6pZQAc5S,0.515625,True,Polar probe linearly decodes semantic structures from LLMs,Polar probe linearly decodes semantic structures from LLMs
+HkbLTLiJDK,kkNr2niHtT,0.6796875,True,Evaluating steering techniques using human similarity judgments,Evaluating steering techniques using human similarity judgments
+7bLM4IJf6T,DU5eTaQSHT,0.53125,True,OpenStamp: A Watermark for Open-Source Language Models,OpenStamp: A Watermark for Open-Source Language Models
+r8HaixF48z,0694m9ixnv,0.5078125,True,LM-mixup: Text Data Augmentation via Language Model based Mixup,LM-mixup: Text Data Augmentation via Language Model based Mixup
+6oO7WDHjgS,BzeVZ63hh4,0.4609375,True,Overton Pluralistic Reinforcement Learning for Large Language Models,Overton Pluralistic Reinforcement Learning for Large Language Models
+lR8EXpIdp9,LF9bRCLHMW,0.359375,False,v1: Learning to Point Visual Tokens for Multimodal Mathematical Grounded Reasoning,v1: Learning to Point Visual Tokens for Multimodal Grounded Reasoning
+jDR27vNHp6,w4pJDaRrjk,0.3828125,True,MegaScience: Pushing the Frontiers of Open Post-Training Datasets for Science Reasoning,MegaScience: Pushing the Frontiers of Open Post-Training Datasets for Science Reasoning
+PXVQTHYwgt,eC85h3y4pG,0.5546875,True,Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence,Teaching Pretrained Language Models to Think Deeper with Retrofitted Recurrence
+k4FBtSjHa4,YA4IaLOaHH,0.578125,False,Lost in the Maze: Overcoming Context Limitations in Long-Horizon Agentic Search,Lost in the Maze: Overcoming Context Limitations in Long-Horizon Information-Seeking
+91IMavSRkc,nCgMpMDgR2,0.7734375,True,"ReFIne: A Framework for Trustworthy Large Reasoning Models with Reliability, Faithfulness, and Interpretability","ReFIne: A Framework for Trustworthy Large Reasoning Models with Reliability, Faithfulness, and Interpretability"
+QPHGIKoJKC,OG9LMd64xo,0.40625,True,When Do LLMs Admit Their Mistakes? Understanding The Role Of Model Belief In Retraction,When Do LLMs Admit Their Mistakes? Understanding the Role of Model Belief in Retraction
+tSembTKZ2E,ybqL3FSOgG,0.65625,True,Judge a Book by its Cover: Investigating Multi-Modal LLMs for Multi-Page Handwritten Document Transcription,Judge a Book by its Cover: Investigating Multi-Modal LLMs for Multi-Page Handwritten Document Transcription

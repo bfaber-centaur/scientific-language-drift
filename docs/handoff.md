@@ -111,6 +111,21 @@ corpus_diff, inventory_extras, plot_inventory). **Tables:** `results/v2/inventor
   all V2 files is in `data/v2/structure/` (git-ignored; `scripts/v2/structure_scan.py`, ~20 min).
 - Open: hand audit of the header-based version labels; TMLR year semantics; NeurIPS 2021 coverage.
 
+### Lane E (V2): adversarial review (2026-10-15, first pass done)
+
+**Doc:** `docs/v2-adversarial-review.md`. **Scripts:** `scripts/v2/review/` (none imports `mlngrams`).
+**Tables:** `results/v2/review/`.
+
+- Confirmed on our own SHA-256 of every text: all V1 records unchanged, 52,128 added. Version labels
+  reproduce exactly and agree with the printed headers. TMLR published-stratum year = publication year
+  (95.5%) or one year earlier.
+- Function words reproduced with a separate counter (2024→2027: of −47.6%, and +39.4%). Every venue's
+  latest cohort shows the largest step; ICLR→ICML revision barely moves "of".
+- Defects: D1 unverified downloaders exposed to silent transfer corruption (10 of ~157 downloads here);
+  D2 `count_ngrams.py` silently reads V1 without `MLNGRAMS_REVISION`; D3 title matching undercounts
+  ICML↔ICLR overlap (≥ 16.3%, not 13.3%); D4 the directive's MuPDF result has no record in the repo.
+- Next: review Lanes B, C, D docs as they land.
+
 ## Blockers and risks
 
 - The dataset keeps growing. Never move the revision pin without rerunning recon and updating
