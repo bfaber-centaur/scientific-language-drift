@@ -3,6 +3,8 @@
 Input: per-paper counts from scripts/v2/lane_c_count.py (data/v2/lane_c/counts/*.csv.gz), Gate 0's
 membership table and version labels (data/v2/version/2c0dd19/*.parquet, scripts/v2/version_mix.py),
 and titles read from the clean parquet files. Output: results/v2/function_words/*.csv.
+The ICLR-overlap flag (non-ICLR papers that also appear at ICLR) is the union of exact normalized-title
+matches and Lane E's text-matched pairs (docs/v2-adversarial-review.md D3).
 
 Exclusions (V1 rules, docs/corpus.md): texts under 2,000 characters, exact duplicate text_sha256
 (first paper_id kept), and the ICLR 2025 title-slug stratum (paper_id containing "-" or longer than 12
@@ -70,6 +72,18 @@ def load() -> pd.DataFrame:
     iclr_titles = set(t[t.venue == "iclr"].ntitle)
     df.loc[(df.venue != "iclr") & df.ntitle.isin(iclr_titles), "iclr_overlap"] = True
     df["cross_overlap"] = df.ntitle.isin(shared)
+    # Lane E D3: exact titles miss about a fifth of the overlap; add Lane E's text-matched pairs
+    # (results/v2/review/e4_textpairs_*.csv) so the exclusion is the union of title and text matches.
+    text_ids = set()
+    for f in glob.glob(os.path.join(ROOT, "results/v2/review/e4_textpairs_*.csv")):
+        a, b = os.path.basename(f)[len("e4_textpairs_"):-4].split("_")
+        e = pd.read_csv(f)
+        for stem, col in ((a, "a_id"), (b, "b_id")):
+            if not stem.startswith("iclr"):
+                v, y = stem.split("-")
+                text_ids |= {(v, int(y), i) for i in e[col]}
+    key = list(zip(df.venue, df.year, df.paper_id))
+    df.loc[[k in text_ids for k in key], "iclr_overlap"] = True
     return df
 
 

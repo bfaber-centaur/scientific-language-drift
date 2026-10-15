@@ -26,10 +26,15 @@ text is stored in the repository. Facts, interpretation and hypotheses are label
    from the earlier decline: "the", "to", "and" and the em dash change direction or jump (below).
 5. **Within the same paper, the rates are set when the paper is drafted, not when it is polished.**
    868 papers appear as an ICLR 2026 submission (drafted by September 2025) and an ICML 2026 camera-ready
-   (finalised mid-2026). Their main-body prose keeps its "of" rate: −0.8% [−1.7, +0.1] (ICML cohort vs
-   ICLR 2026 cohort: −7%). Resubmissions to ICLR 2027 move −12% [−14, −10], and the movement is
-   concentrated in papers whose abstracts were rewritten (−22%) rather than lightly edited (−5%).
-6. **Extraction check outside the PDF pipeline:** see "arXiv abstracts" below.
+   (finalised mid-2026); with Lane E's text matches, 1,047 pairs. Their main-body prose keeps its "of"
+   rate: −0.5% [−1.2, +0.3] (ICML cohort vs ICLR 2026 cohort: −7%). Resubmissions to ICLR 2027 move
+   −10% [−12, −8], concentrated in papers whose abstracts were rewritten (−20%) rather than lightly
+   edited (−4%).
+6. **It is not an extraction artifact, at least in abstracts.** For papers also posted on arXiv, the
+   abstract the authors typed into arXiv's metadata form, which never passes through a PDF text layer,
+   shows the same collapse: arXiv-abstract "of" 24,262 per million for ICLR 2024 papers, 20,996 for 2026
+   and 12,587 for 2027 (dataset abstracts of the same papers: 25,933 / 20,885 / 12,270). Where the two
+   abstracts are worded near-identically, their rates agree within 2%.
 
 Nothing here identifies a cause. In particular these are linguistic correlations; they say nothing
 about who or what wrote the text.
@@ -49,6 +54,7 @@ about who or what wrote the text.
   and EMNLP (94%) (`region_coverage.csv`).
 - **Downloader** (`scripts/v2/lane_c_fetch.py`). huggingface_hub's blob cache at the pinned sha, each
   file then checked against the LFS SHA-256 recorded by Gate 0 (`results/v2/inventory/files.csv`).
+  All 36 `clean` files passed (Lane E found silent download corruption in this environment, D1).
 - **Exclusions** (V1 rules): texts under 2,000 characters, exact duplicate text hashes (first id
   kept), the ICLR 2025 title-slug stratum. **Version** labels are Gate 0's first-page header rule
   (`scripts/v2/version_mix.py`); I re-ran it and reproduced `version_mix.csv` byte for byte.
@@ -95,8 +101,9 @@ cohorts with ≥ 100 papers. Data: `fig3_trajectories.csv`._
   layout effect), so only trajectories are compared, as Gate 0 advised.
 - **ICML is the main independent venue.** ICML camera-ready prose "of": 29,413 (2023), 29,069 (2024),
   26,508 (2025), 19,860 (2026). Removing the 833 papers whose title also appears at ICLR changes 2026 to
-  19,659 (`nonclr_overlap_sensitivity.csv`). The ICLR-overlap papers themselves sit higher (21,139),
-  as expected if they were drafted earlier, for the ICLR deadline.
+  19,578 (`nonclr_overlap_sensitivity.csv`; the 1,022 excluded papers are the union of exact-title
+  matches and Lane E's text matches, `docs/v2-adversarial-review.md` D3). The ICLR-overlap papers
+  themselves sit higher (21,273), as expected if they were drafted earlier, for the ICLR deadline.
 - **TMLR** moves in both strata: published prose "of" 29,568 (2023) → 21,229 (2026), submissions
   30,388 → 19,108. TMLR's year field is still unresolved (Gate 0 item 7), so its timing is provisional.
 - **COLM** (camera-ready, drafted around March 2026) falls furthest among non-ICLR cohorts: 26,654 (2024)
@@ -168,29 +175,32 @@ simply further along the 2024–2026 trajectory.
 ## 6. Same-paper pairs
 
 `pairs_summary.csv`, `pairs_by_similarity.csv`, `pairs.csv.gz` (ids, versions and abstract similarity
-only). Pairs are exact normalized-title matches (≥ 25 characters, titles unique in both cohorts).
+only). Pairs are exact normalized-title matches (≥ 25 characters, titles unique in both cohorts) plus
+Lane E's text-matched pairs under different titles (`results/v2/review/e4_textpairs_*.csv`, D3), where
+Lane E computed them (all designs below except the 2024→2025 and 2025→2026 resubmissions and
+ICLR 2025 → TMLR 2025).
 "Similarity" is the difflib ratio between the two abstracts' word sequences. It is a rough revision
 measure; ICML's two-column layout sometimes interleaves introduction text into the abstract region,
 which lowers it.
 
 | design | pairs (prose) | "of" in A | "of" in B | pair change | cohort change |
 |---|---:|---:|---:|---:|---:|
-| ICLR 2026 → ICML 2026 | 851 | 21,287 | 21,121 | −0.8% [−1.7, +0.1] | −7.1% |
-| ICLR 2025 → ICML 2025 | 415 | 27,231 | 26,979 | −0.9% [−1.8, −0.1] | +0.3% |
-| ICLR 2024 → ICML 2024 | 253 | 27,798 | 28,268 | +1.7% [+0.6, +2.8] | +4.5% |
-| ICLR 2026 → ICLR 2027 | 233 | 23,293 | 20,502 | −12.0% [−14.3, −9.6] | −32.2% |
-| ICLR 2025 → ICLR 2026 | 150 | 27,047 | 24,347 | −10.0% [−12.5, −7.7] | −19.1% |
-| ICLR 2024 → ICLR 2025 | 72 | 27,263 | 26,557 | −2.6% [−5.2, +0.2] | −4.9% |
-| ICLR 2026 → TMLR 2026 | 315 | 22,729 | 21,306 | −6.3% [−7.5, −4.9] | −5.8% |
-| ICLR 2026 → COLM 2026 | 81 | 20,932 | 19,060 | −8.9% [−11.5, −6.4] | −20.1% |
+| ICLR 2026 → ICML 2026 | 1,047 | 21,388 | 21,287 | −0.5% [−1.2, +0.3] | −7.1% |
+| ICLR 2025 → ICML 2025 | 531 | 27,145 | 27,003 | −0.5% [−1.3, +0.2] | +0.3% |
+| ICLR 2024 → ICML 2024 | 330 | 27,881 | 28,501 | +2.2% [+1.3, +3.2] | +4.5% |
+| ICLR 2026 → ICLR 2027 | 295 | 23,030 | 20,659 | −10.3% [−12.3, −8.2] | −32.2% |
+| ICLR 2025 → ICLR 2026 | 150 | 27,047 | 24,347 | −10.0% [−12.6, −7.5] | −19.1% |
+| ICLR 2024 → ICLR 2025 | 72 | 27,263 | 26,557 | −2.6% [−5.1, +0.1] | −4.9% |
+| ICLR 2026 → TMLR 2026 | 411 | 22,698 | 21,427 | −5.6% [−6.8, −4.5] | −5.8% |
+| ICLR 2026 → COLM 2026 | 93 | 21,340 | 19,526 | −8.5% [−10.7, −6.1] | −20.1% |
 
 - **ICLR → ICML: revision for a 2026 camera-ready leaves the prose rates where they were.** The same
-  holds for "in", "we" and "and" (all within ±2%), and in the two earlier years. The abstracts are
+  holds for "in", "we" and "and" (+0.6%, −2.2%, −0.1%), and in the two earlier years. The abstracts are
   heavily edited (median similarity 0.47) and their "of" falls about 8% in every year, 2024 included,
   so that abstract change belongs to the ICLR→ICML revision cycle, not to 2026.
 - **Resubmissions move in proportion to how much they were rewritten.** ICLR 2026 → 2027 prose "of":
-  −22% for pairs with abstract similarity below 0.5, −8% for 0.5–0.95, −5% at ≥ 0.95. The 2025 → 2026
-  control pairs show the same gradient (−19%, −11%/−6%, −3%). Rewritten papers take on the newer
+  −20% for pairs with abstract similarity below 0.5 (n 100), −7% for 0.5–0.95 (n 131), −4% at ≥ 0.95
+  (n 64). The 2025 → 2026 control pairs show the same gradient (−19%, −11%/−6%, −3%). Rewritten papers take on the newer
   cohort's rates; lightly edited papers keep their old ones.
 - **Interpretation (tentative).** The function-word profile behaves like a property of the drafting
   of a text: it changes when text is (re)drafted, not when a finished paper is revised, re-typeset or
@@ -200,7 +210,36 @@ which lowers it.
 
 ## 7. arXiv abstracts (extraction-independent check)
 
-_Pending: written when `scripts/v2/lane_c_arxiv.py` finishes._
+`scripts/v2/lane_c_arxiv.py`, `lane_c_arxiv_summary.py`; `arxiv_abstracts.csv` (ids, dates, similarity and
+counts only) and `arxiv_summary.csv`.
+
+**Design.** A seeded sample of 120 papers per cohort (seed `20261015-<cohort>`, papers with a title of
+≥ 20 characters). Each title is searched on the arXiv API and kept only on an exact normalized-title
+match. The arXiv abstract is metadata the authors type in when posting; it is not extracted from a PDF.
+It is the latest arXiv version's abstract, so it can differ from the dataset's PDF version; the
+word-sequence similarity of the two abstracts is recorded for each pair. This is a version comparison,
+not a hash-matched one.
+
+| ICLR cohort | matched | median arXiv v1 date | similarity (median) | "of": dataset | "of": arXiv [95% CI] | "in": dataset / arXiv | "we": dataset / arXiv | "and": dataset / arXiv |
+|---|---:|---|---:|---:|---:|---|---|---|
+| 2024 | 54 | 2023-10-16 | 0.96 | 25,933 | 24,262 [21,055, 27,516] | 17,200 / 17,679 | 14,642 / 15,234 | 28,050 / 27,365 |
+| 2025 | 57 | 2024-10-13 | 0.97 | 26,456 | 25,803 [23,082, 28,435] | 17,860 / 17,924 | 15,774 / 16,538 | 26,874 / 27,102 |
+| 2026 | 55 | 2025-10-02 | 0.97 | 20,885 | 20,996 [17,938, 24,170] | 16,653 / 14,782 | 12,789 / 12,805 | 27,693 / 28,999 |
+| 2027 | 32 | 2026-09-25 | 0.97 | 12,270 | 12,587 [10,176, 15,023] | 8,784 / 10,312 | 11,573 / 12,436 | 28,723 / 28,207 |
+
+Restricting to pairs with similarity ≥ 0.9 (37 / 43 / 43 / 23 papers), "of" is 24,172 vs 24,181 (2024),
+21,119 vs 21,339 (2026) and 12,656 vs 12,595 (2027).
+
+**Facts.** The abstracts authors posted to arXiv carry the same low function-word rates as the dataset's
+extracted abstracts, year by year. The arXiv-posted 2027 papers are a minority (32 of 120 sampled) and
+were posted around the ICLR deadline.
+
+**Interpretation.** In abstracts, the decline is in the text the authors wrote, not in the dataset's PDF
+extraction. This closes the extraction explanation (H2 of the V1 investigation) for abstracts. Main-body
+prose was not checked against an extraction-independent source; its decline matches the abstracts'
+in size and timing, and it survives re-typesetting into ICML's format (§6). Two limits: arXiv posting
+is selective, and the arXiv abstract is a different version.
+
 
 ## 8. Hypotheses after V2
 
@@ -211,11 +250,11 @@ _Pending: written when `scripts/v2/lane_c_arxiv.py` finishes._
 | Something specific to ICLR (guidance, OpenReview, population) | ICML, TMLR, COLM, NeurIPS, CoRL show the 2024–2026 decline in step | Rejected for 2024–2026; untestable for the 2027 step |
 | Version mix (submission vs camera-ready) | Both ICLR strata and both TMLR strata decline; camera-ready revision leaves paired prose unchanged | Rejected |
 | Statements and boilerplate | Abstracts and intro600 show the full shift; cutting statements moves 2027 prose by 1% | Rejected |
-| Extraction artifact tied to recent PDFs | Same rates after re-typesetting into ICML format; see §7 | See §7 |
+| Extraction artifact tied to recent PDFs | arXiv metadata abstracts (no PDF) show the same rates; same-paper rates survive re-typesetting into ICML format | Rejected for abstracts; body prose not checked against sources |
 | A change in how text is drafted, from 2024 on, across ML venues | Timing by drafting date across venues; the *the X of* → compound shift; rates change only when text is rewritten | Consistent with everything here; cause not identified |
 
-What would separate the remaining explanations: (a) hash-matched source PDFs or LaTeX sources for a
-seeded sample (arXiv e-prints are reachable from this environment; OpenReview is not); (b) a
+What would separate the remaining explanations: (a) LaTeX sources (arXiv e-prints are reachable from
+this environment; OpenReview is not) for body prose; (b) a
 non-ICLR cohort drafted in mid-2026 (NeurIPS 2026 when released) for the 2027 step; (c) a corpus
 outside ML, or outside this dataset, to see whether the change is field-specific.
 

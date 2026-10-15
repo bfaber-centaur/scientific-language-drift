@@ -1,7 +1,8 @@
 """Lane C (V2): same-paper paired contrasts for the function-word shift.
 
 Pairs are exact normalized-title matches (titles >= 25 characters) between two venue-years, one pair per
-title (titles that occur twice in either cohort are dropped). For each pair and region the per-paper
+title (titles that occur twice in either cohort are dropped), plus Lane E's text-matched pairs under other
+titles (results/v2/review/e4_textpairs_*.csv; docs/v2-adversarial-review.md D3) where those exist. For each pair and region the per-paper
 counts come from data/v2/lane_c/merged.pkl (scripts/v2/lane_c_analyze.py). The abstract word-sequence
 similarity of each pair is computed from the clean text (difflib ratio over lowercase letter tokens) so
 lightly edited and rewritten pairs can be separated. Paper text is not written out.
@@ -69,15 +70,33 @@ def main():
         b = allr[(allr.vy == Bc) & allr.ntitle.notna() & (allr.ntitle.str.len() >= 25)]
         a = a[~a.ntitle.duplicated(keep=False)]
         b = b[~b.ntitle.duplicated(keep=False)]
+        a_all, b_all = allr[allr.vy == A], allr[allr.vy == Bc]
         m = a[["ntitle", "paper_id", "version"]].merge(b[["ntitle", "paper_id", "version"]], on="ntitle",
                                                        suffixes=("_a", "_b"))
         m = m[m.paper_id_a != m.paper_id_b]
+        m["source"] = "title"
+        # Lane E D3: add text-matched pairs (other titles) from results/v2/review/e4_textpairs_*.csv
+        for f, flip in ((f"e4_textpairs_{A}_{Bc}.csv", False), (f"e4_textpairs_{Bc}_{A}.csv", True)):
+            fp = os.path.join(ROOT, "results/v2/review", f)
+            if os.path.exists(fp):
+                e = pd.read_csv(fp)
+                e = e.rename(columns={"a_id": "paper_id_b", "b_id": "paper_id_a"} if flip else
+                             {"a_id": "paper_id_a", "b_id": "paper_id_b"})
+                e = e[~e.paper_id_a.isin(m.paper_id_a) & ~e.paper_id_b.isin(m.paper_id_b)]
+                va = a_all.set_index("paper_id").version
+                vb = b_all.set_index("paper_id").version
+                e = e[e.paper_id_a.isin(va.index) & e.paper_id_b.isin(vb.index)]
+                m = pd.concat([m, pd.DataFrame({"ntitle": None, "paper_id_a": e.paper_id_a,
+                                                "version_a": va.loc[e.paper_id_a].values,
+                                                "paper_id_b": e.paper_id_b,
+                                                "version_b": vb.loc[e.paper_id_b].values, "source": "text"})],
+                              ignore_index=True)
         sa, sb = abstracts(A, set(m.paper_id_a)), abstracts(Bc, set(m.paper_id_b))
         m["abs_sim"] = [sim(sa.get(x), sb.get(y)) for x, y in zip(m.paper_id_a, m.paper_id_b)]
         m["sim_band"] = pd.cut(m.abs_sim, [-0.01, 0.5, 0.8, 0.95, 1.01], labels=["<0.5", "0.5-0.8", "0.8-0.95", ">=0.95"])
         for _, r in m.iterrows():
             pair_rows.append(dict(design=design, a=A, b=Bc, paper_id_a=r.paper_id_a, paper_id_b=r.paper_id_b,
-                                  version_a=r.version_a, version_b=r.version_b, abs_sim=round(r.abs_sim, 4)
+                                  version_a=r.version_a, version_b=r.version_b, source=r.source, abs_sim=round(r.abs_sim, 4)
                                   if r.abs_sim == r.abs_sim else None))
         for reg in REGIONS:
             ra = df[(df.vy == A) & (df.region == reg)].set_index("paper_id")
