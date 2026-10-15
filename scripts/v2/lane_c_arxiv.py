@@ -83,11 +83,23 @@ def main() -> None:
     a = ap.parse_args()
     rows = []
     for stem in a.cohorts:
-        t = pq.read_table(fetch(f"clean/{stem}.parquet"), columns=["paper_id", "title", "text"]).to_pylist()
-        t = [r for r in t if r["title"] and len(norm(r["title"])) >= 20 and len(r["text"] or "") >= 2000]
-        t.sort(key=lambda r: r["paper_id"])
+        pf = pq.ParquetFile(fetch(f"clean/{stem}.parquet"))  # streamed: ICLR 2027 text does not fit in memory
+        meta = []
+        for b in pf.iter_batches(batch_size=1024, columns=["paper_id", "title", "text"]):
+            for pid, title, text in zip(*(b.column(i).to_pylist() for i in range(3))):
+                if title and len(norm(title)) >= 20 and len(text or "") >= 2000:
+                    meta.append({"paper_id": pid, "title": title})
+        meta.sort(key=lambda r: r["paper_id"])
         rng = random.Random(f"{a.seed}-{stem}")
-        sample = rng.sample(t, min(a.n, len(t)))
+        sample = rng.sample(meta, min(a.n, len(meta)))
+        want = {r["paper_id"] for r in sample}
+        texts = {}
+        for b in pf.iter_batches(batch_size=1024, columns=["paper_id", "text"]):
+            for pid, text in zip(b.column(0).to_pylist(), b.column(1).to_pylist()):
+                if pid in want:
+                    texts[pid] = text
+        for r in sample:
+            r["text"] = texts[r["paper_id"]]
         for i, r in enumerate(sample):
             ds_abs = regions(r["text"])["abstract"]
             hits = [h for h in query(r["title"]) if norm(h["arxiv_title"]) == norm(r["title"])]
