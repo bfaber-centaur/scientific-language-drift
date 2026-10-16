@@ -23,6 +23,7 @@ fact suggests; **hypothesis** = untested.
 | E6 | Same-paper pairs | Lane C | ICLR 2026→2027 resubmissions move only part of the way; ICLR→ICML camera-ready revision barely moves "of" |
 | E7 | Could an extraction artifact be deleting "of"? | Lane C | **No evidence** in obligatory-"of" frames; not decisive |
 | E8 | Directive's statement that a 2027 PDF was re-extracted with MuPDF | Coordinator | **Not in the repository record** (D4) |
+| R | Lane docs B, C, D (second pass) | Lanes B, C, D | Numbers reproduce; D2 fixed, D3 adopted by B and C but not D; TMLR "of" declines smoothly by publication quarter (see "Review of the lane docs") |
 
 ## Defects found
 
@@ -117,6 +118,91 @@ extraction artifact.
   `README.md`.
 - Gate 0's overlap shares use titles ≥ 25 characters as the denominator, not all records. The difference
   is small for ICML (titles present for all records).
+
+## Review of the lane docs (second pass, 2026-10-16)
+
+Reviewed on main at `90f33b5`: Lane B `docs/v2-replication.md` (713b3db), Lane C
+`docs/v2-function-words.md` (through ac0d4c0), Lane D `docs/v2-appendices-disclosures.md` (90f33b5).
+New tables: `e9_lane_d_checks.csv`, `e10_tmlr_by_publication_quarter.csv`.
+
+### Status of D1–D4
+
+| defect | status | evidence |
+|---|---|---|
+| D1 unverified downloaders | **Addressed where it matters.** Lane C's new downloader checks each file against Gate 0's LFS hashes; Lanes B and D use `load.fetch`. `scripts/independent_function_words.py` is unchanged but no V2 result uses it | `scripts/v2/lane_c_fetch.py` |
+| D2 `count_ngrams.py` revision | **Fixed.** `--revision` exists and is written to `run.json`; `scripts/v2/run_replication.sh` passes `2c0dd19` to every count. The committed outputs are V2 data: `v2main/body/corpus_totals.csv` has 19,713 ICLR 2026 documents (V1 file: 5,167) and 7,297 for 2024. **Residual:** the `run.json` files themselves live in `~/work` and are not committed, so "all V2 runs name 2c0dd19" can be checked only through such counts; the default is still the V1 pin, with no guard against V2 flags plus a V1 revision | `scripts/count_ngrams.py:143`, `run_replication.sh:7–18` |
+| D3 overlap undercount | **Adopted by Lanes B and C** (union of title and text matches: Lane B drops 16% of ICML 2026; Lane C excludes 1,022 papers and uses 1,047 ICLR→ICML pairs). **Not adopted by Lane D**, whose pairs and cohorts are exact-title only. **Residual:** Lane E's text matches cover same-year ICLR→ICML only; Lane B's rule also drops previous-year ICLR titles, but ICLR 2025 → ICML 2026 text matches were never computed | `docs/v2-replication.md` amendment; `docs/v2-function-words.md` §3, §6 |
+| D4 MuPDF claim | **Still unrecorded.** No lane cites it. Lane C's arXiv-abstract check (below) is the extraction-independent evidence the study now has | — |
+
+### Lane B (replication)
+
+- **Numbers agree with Lane E's independent counter.** ICLR "of" per million, V1 vs added records:
+  2026 20.3k / 20.4k (Lane E 20,396 / 20,453); ICLR 2027 submissions 13.8k (Lane E 13,905, all
+  versions); ICML 2026 18.2k ex-overlap (Lane E 18,700 including overlap papers, which sit higher).
+- **B1 (fix the text; TMLR year).** The doc calls the TMLR year "undocumented" and leaves the
+  calendar reading untested. E3 settled the year for the published stratum (it is the printed
+  publication year in 95.5% of records). The test Lane B proposes, markers by month, can be run on
+  published TMLR papers with the month printed in their header. **We ran it for "of"**
+  (`e10_tmlr_by_publication_quarter.csv`, body, per million, 95% paper bootstrap):
+
+  | published | 2024 Q1–Q4 | 2025 Q1 | 2025 Q2 | 2025 Q3 | 2025 Q4 | 2026 Q1 | 2026 Q2 | 2026 Q3 | 2026 Q4 (Oct) |
+  |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+  | n | 184–275 | 311 | 360 | 345 | 362 | 419 | 524 | 579 | 94 |
+  | "of" | 27.5k–28.1k | 27.4k | 26.4k | 25.2k | 24.4k | 23.0k | 21.3k | 19.3k | 17.0k (16.0–18.1k) |
+
+  **Fact:** flat through 2024, then a decline in every quarter from 2025 Q2 on, with no single step.
+  "and" rises and "we" falls over the same quarters. **Interpretation:** this supports the smooth
+  calendar reading over a step at one date, within one venue. Two limits: the publication month lags
+  the writing by months, and camera-ready TMLR text is not version-matched to ICLR submissions.
+  **Hypothesis worth stating, not tested:** after allowing for TMLR's ~5% higher 2023 level, the
+  October 2026 TMLR rate (≈ 16.1k ICLR-equivalent) is still above ICLR 2027 (13.9k), so ICLR 2027 may
+  sit below the common trend rather than on it.
+- **B2 (minor).** The "2027 register outside ICLR" table mixes ICML ex-overlap with other venues that
+  include ICLR overlap papers (TMLR 2026 ≥ 13.9% and COLM 2026 ≥ 9.5% overlap, D3). Their amplitudes
+  are therefore slightly understated relative to ICML's; say which rows exclude overlap.
+- Nothing else found: the verdict rule was frozen before the estimates (d3511aa precedes 713b3db), and
+  the large corpus-weighted moves are correctly attributed to cohort reweighting, with year-balanced
+  values stable.
+
+### Lane C (function words)
+
+- **Consistent with Lane E's reconstruction** on every number we both computed (E5, E6): ICLR 2024→2027
+  "of" −48% vs −47.6%; latest-cohort steps within 1 point at every venue; ICLR 2026→2027 pair change
+  −10.3% vs our median −9%; ICLR→ICML 2026 pair −0.5% vs our −1.4%.
+- **C1 (fix the claim or the figure).** Answer 3 says that, placed at their drafting dates, "the venues
+  fall on top of each other", and figure 3b plots **levels** across venues. §3 of the same doc, Gate 0
+  item 9 and Lane D all say cross-venue levels are not comparable (two-column ICML, CoRL's lower
+  level). Either plot each venue indexed to its own 2023 rate, or reword to "trace parallel declines".
+- **C2 (fix the text).** §3 and §5 call the TMLR year "unresolved". For the published stratum it is
+  resolved (E3), and the quarterly series above gives TMLR a within-venue time axis.
+- **C3 (scope, already stated by Lane C).** The arXiv check is the strongest new evidence against an
+  extraction artifact, but it covers abstracts only, is title-matched to the latest arXiv version, and
+  has 32 papers for 2027 (posted around the deadline). The body-prose claim still rests on the
+  re-typesetting argument (ICLR→ICML pairs keep their rates) and on Lane E's weak E7 test. The
+  decisive body test (LaTeX sources from arXiv, which Lane C notes are reachable) has not been run.
+- No defect in the counter: it does not import `mlngrams`, verifies downloads, and its exclusions and
+  version labels reproduce Gate 0.
+
+### Lane D (appendices and disclosures)
+
+- **Two headline numbers reproduce with Lane E code** (`e9_lane_d_checks.csv`, papers ≥ 2,000
+  characters): median share of `omissions` characters after the first references marker 7.4% (ICLR
+  2017) → 47.2% (2027), against Lane D's 7.2% → 46.9%; ICML 2026 0.42, COLM 2026 0.45. A crude heading
+  rule (a line of ≤ 10 words naming an LLM/AI tool and a use/disclosure word) finds a statement
+  heading in 56.8% of ICLR 2026 papers (Lane D 57.8%) and 25.1% of COLM 2026 (Lane D 26.3%). It finds
+  only 6.2% in ICLR 2027, where the template statement is not set as a short heading line, and 8.0%
+  in ICML 2026 (Lane D 4.8%), where our rule also catches section titles about LLM use; those two
+  values are not comparable checks.
+- **D-1 (D3 not applied).** Within-paper appendix pairs and the ICML cohort step use exact titles only.
+  Because ICLR→ICML revision itself adds +637 appendix tokens (Lane D's own pair table), the ~16% of
+  ICML 2026 that are ICLR 2026 manuscripts contribute to ICML's +710 step. Report the ICML step without
+  the union of title and text matches before using it as independent evidence.
+- **D-2 (pairs).** The 237 ICLR 2026→2027 title pairs include 1 identical-text pair (Gate 0
+  `duplicates_new.csv`), and 22% of the pairs share < 10% of 6-grams (E4). The within-paper appendix
+  gain is a mixture of rewritten and lightly edited papers; Lane C's similarity split would make the
+  comparison with 2025→2026 sharper.
+- **D-3 (validation, already stated).** All disclosure category shares remain provisional until the
+  45 human labels are scored. Nothing found that contradicts the doc's own caveats.
 
 ## E1. V1 records unchanged (fact)
 
@@ -267,6 +353,7 @@ python3 -I scripts/v2/review/title_pairs.py $S/rec $S/store results/v2/review ic
     iclr-2024:icml-2024 iclr-2026:iclr-2027 iclr-2026:tmlr-2026 colm-2026:iclr-2026
 python3 scripts/v2/review/title_pairs_low.py $S/rec $S/store $S/out/title_pairs_detail.csv iclr-2026:icml-2026 iclr-2026:iclr-2027 iclr-2025:icml-2025
 python3 -I scripts/v2/review/of_deletion_test.py $S/rec $S/store results/v2/review/e7_of_deletion_test.csv iclr-2023 iclr-2025 iclr-2026 iclr-2027
+python3 -I scripts/v2/review/lane_d_checks.py $S/rec $S/store results/v2/review/e9_lane_d_checks.csv iclr-2017 iclr-2025 iclr-2026 iclr-2027 colm-2026 icml-2026
 ```
-`e6_paired_function_words.csv` was computed from the outputs of `fw_recount.py` and `title_pairs_low.py`
+`e10_tmlr_by_publication_quarter.csv` joins `fw_recount.py` body counts with the `header_audit.py` publication month (published TMLR records, 400 bootstrap resamples). `e6_paired_function_words.csv` was computed from the outputs of `fw_recount.py` and `title_pairs_low.py`
 (median of per-pair differences, 1,000 bootstrap resamples, seed 0).

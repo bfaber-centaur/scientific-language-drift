@@ -1,0 +1,7 @@
+file,n,median_share_after_first_ref,median_share_after_last_ref,pct_with_llm_use_heading
+iclr-2017,486,0.074,0.072,0.0
+iclr-2025,11609,0.316,0.313,2.3
+iclr-2026,19730,0.375,0.372,56.8
+iclr-2027,42334,0.472,0.469,6.2
+colm-2026,856,0.452,0.45,25.1
+icml-2026,6555,0.42,0.418,8.0

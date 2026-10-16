@@ -124,7 +124,11 @@ corpus_diff, inventory_extras, plot_inventory). **Tables:** `results/v2/inventor
 - Defects: D1 unverified downloaders exposed to silent transfer corruption (10 of ~157 downloads here);
   D2 `count_ngrams.py` silently reads V1 without `MLNGRAMS_REVISION`; D3 title matching undercounts
   ICML↔ICLR overlap (≥ 16.3%, not 13.3%); D4 the directive's MuPDF result has no record in the repo.
-- Next: review Lanes B, C, D docs as they land.
+- Second pass (2026-10-16) on Lanes B, C, D: their numbers reproduce with Lane E code. D2 fixed;
+  D3 adopted by B and C, not D. Open asks: Lane C fig 3b compares levels across venues (C1); Lanes B/C
+  still call TMLR year unresolved (E3 settles it for published papers); Lane D's ICML appendix step
+  should drop ICLR-overlap papers (D-1). New: published TMLR "of" falls smoothly every quarter from
+  2025 Q2 (`results/v2/review/e10_tmlr_by_publication_quarter.csv`).
 
 ### Lane B (V2): longitudinal replication (2026-10-15, Gate 2 done)
 
