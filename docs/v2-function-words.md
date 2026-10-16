@@ -18,7 +18,8 @@ text is stored in the repository. Facts, interpretation and hypotheses are label
 3. **It is not ICLR-only. Every venue shows the 2024–2026 decline, timed by when papers were written.**
    Prose "of", change since 2023: ICML camera-ready 2026 −32%, TMLR published 2026 −28%, COLM 2026 −36%
    (since 2024), NeurIPS 2025 −18%, CoRL 2025 −18%, ICLR 2026 submissions −24%. Placed at each cohort's
-   approximate submission deadline, the venues fall on top of each other (figure 3b). Every venue's
+   approximate submission deadline and indexed to their own 2024 rate, the venues trace parallel
+   declines (figure 3b; levels are not compared across venues). Every venue's
    per-paper distribution shifts as a whole: 46% of ICML 2026 papers and 80% of ICLR 2027 papers fall
    below the 5th percentile of ICLR 2023.
 4. **The ICLR 2027 step has no direct non-ICLR test, but its markers are already moving in 2026.** No
@@ -108,7 +109,14 @@ cohorts with ≥ 100 papers. Data: `fig3_trajectories.csv`._
   matches and Lane E's text matches, `docs/v2-adversarial-review.md` D3). The ICLR-overlap papers
   themselves sit higher (21,273), as expected if they were drafted earlier, for the ICLR deadline.
 - **TMLR** moves in both strata: published prose "of" 29,568 (2023) → 21,229 (2026), submissions
-  30,388 → 19,108. TMLR's year field is still unresolved (Gate 0 item 7), so its timing is provisional.
+  30,388 → 19,108. For published papers the TMLR year is the printed publication year in 95.5% of
+  records and one year earlier otherwise (Lane E's header audit, `docs/v2-adversarial-review.md` E3);
+  for submissions it remains unresolved. Lane E's quarterly series for published TMLR papers
+  (`results/v2/review/e10_tmlr_by_publication_quarter.csv`) shows body "of" flat through 2024
+  (27.5k–28.1k per million), then falling in every quarter from 2025 Q2 (27.4k in Q1, 26.4k in Q2) to
+  October 2026 (17.0k), with no single step. Lane E notes, as an untested hypothesis, that October 2026 TMLR (about 16.1k
+  in ICLR-equivalent terms) is still above ICLR 2027 (13.9k), so ICLR 2027 may sit below the common trend
+  rather than on it.
 - **COLM** (camera-ready, drafted around March 2026) falls furthest among non-ICLR cohorts: 26,654 (2024)
   → 17,098 (2026).
 - **NeurIPS 2025 and CoRL 2025** (drafted spring 2025) already show −18%.
@@ -120,9 +128,12 @@ _Figure 4 (visualization 4). Percent change in main-body running prose relative 
 rate (COLM: 2024). Data: `fig4_heatmap.csv`._
 
 **By drafting date.** Figure 3b places each cohort at its venue's approximate submission deadline
-(ICLR Y: late September Y−1; ICML Y: late January; COLM: late March; CoRL and NeurIPS: spring). These
-dates come from the usual calendars and are not checked per paper. On this axis the venues trace one
-decline that starts in 2024 and steepens through 2025–2026, and ICLR 2027 continues it.
+(ICLR Y: late September Y−1; ICML Y: late January; COLM: late March; CoRL and NeurIPS: spring) and
+indexes each venue to its own 2024 rate, because levels differ by format (Gate 0 item 9). These dates
+come from the usual calendars and are not checked per paper. On this axis the venues trace parallel
+declines that start in 2024 and steepen through 2025–2026, and ICLR 2027 continues the ICLR series.
+(The first version of this figure plotted levels and said the venues "fall on top of each other";
+corrected after Lane E's review C1.)
 
 ![By drafting date](../results/v2/function_words/fig3b_by_drafting_date.png)
 
@@ -196,7 +207,8 @@ and appears only in ICLR 2027.
 
 **Caveats.** Each row uses its own venue's previous year as baseline, and those baselines were drafted at
 different times; ICML and COLM are camera-ready versions finalised months after their deadlines; TMLR
-dates are rolling and its year field is unresolved; COLM is small. Four non-ICLR points do not make a
+deadlines are rolling, and the year of TMLR submissions is unresolved (for published papers it is the
+publication year, E3); COLM is small. Four non-ICLR points do not make a
 time series. **Interpretation (tentative):** the 2027 function-word step looks like the continuation of a
 change that was already under way through 2026 at other venues, with the same calendar shape Lane B
 reports for rhetorical phrases, rather than something specific to ICLR 2027.

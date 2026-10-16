@@ -10,8 +10,9 @@ _Source: `docs/v2-function-words.md`, tables and figures in `results/v2/function
   "of" −48%, "in" −42%, "we" −45%, "and" +39% from 2023 to 2027; abstract "of" −52% from 2024. The
   52k added ICLR 2024–2026 papers have the same rates as V1's records.
 - **It is not ICLR-only.** ICML 2026 −32%, TMLR 2026 −28%, COLM 2026 −36% (since 2024), NeurIPS 2025
-  and CoRL 2025 −18% in prose "of" since 2023. Placed at their submission deadlines, the venues follow
-  one decline that starts in 2024 (figure 3b). The ICLR 2027 step has no mid-2026 non-ICLR cohort,
+  and CoRL 2025 −18% in prose "of" since 2023. Placed at their submission deadlines, each venue,
+  indexed to its own 2024 rate, declines in parallel from 2024 (figure 3b); published TMLR papers
+  decline quarter by quarter from 2025 Q2 to October 2026 with no single step (Lane E, E10). The ICLR 2027 step has no mid-2026 non-ICLR cohort,
   but its distinctive markers ("to" falling, "the" reversing, em dash falling) already move in 2026-drafted
   ICML, COLM and TMLR cohorts, more so the later the deadline.
 - **It is in the authors' text.** Abstracts posted to arXiv (no PDF extraction) show the same rates as

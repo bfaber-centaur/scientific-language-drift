@@ -114,17 +114,22 @@ def drafting_figure():
         for lab, v, ver, col, mk in sel:
             s = r[(r.venue == v) & (r.version == ver) & (r.region == "prose") & (r.n_papers >= MIN_N) & (r.year >= 2019)]
             s = s.assign(x=s.year.map(DEADLINE[v])).sort_values("x")
-            ax.plot(s.x, s[w] / 1000, color=col, marker=mk, ms=4.5, lw=1.4, label=lab.replace(" camera-ready", ""))
+            if 2024 not in set(s.year):
+                continue
+            base = s.loc[s.year == 2024, w].iloc[0]  # each venue indexed to its own 2024 rate (Lane E C1)
+            s = s.assign(index=s[w] / base * 100)
+            ax.plot(s.x, s["index"], color=col, marker=mk, ms=4.5, lw=1.4, label=lab.replace(" camera-ready", ""))
             for _, x in s.iterrows():
                 rows.append(dict(word=w, cohort=lab, year=x.year, approx_deadline=round(x.x, 2), n_papers=x.n_papers,
-                                 rate_per_million=x[w]))
+                                 rate_per_million=x[w], index_2024_eq_100=round(x["index"], 1)))
         ax.set_title(f"“{w}” · main-body running prose", fontsize=10)
+        ax.axhline(100, color="#888", lw=0.8)
         ax.grid(alpha=0.25)
         ax.spines[["top", "right"]].set_visible(False)
         ax.set_xlabel("approximate submission deadline")
-    axes[0].set_ylabel("per thousand letter tokens")
+    axes[0].set_ylabel("rate, own 2024 = 100")
     axes[0].legend(fontsize=7.5, frameon=False, loc="lower left")
-    fig.suptitle("The same rates placed at each cohort's approximate drafting date: the decline follows drafting date across venues",
+    fig.suptitle("Each venue's rate relative to its own 2024 cohort, placed at the approximate submission deadline (levels are not compared across venues)",
                  fontsize=10.5)
     fig.text(0.01, 0.005, f"woog/open-text-detector-papers @ {REV} · Lane C · results/v2/function_words/fig3b_by_drafting_date.csv",
              fontsize=7, color="#555")

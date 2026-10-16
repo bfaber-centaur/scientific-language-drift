@@ -39,6 +39,11 @@ _Shared by the V2 lanes. Each lane edits only its own labeled section._
   shell. The log simply stopped. It now streams record batches, and every run ends with an explicit
   exit line. The first counter run was also stopped and restarted from scratch to add construction
   measures; nothing from the partial run was used.
+- **C-N6. Overclaim corrected: "the venues fall on top of each other."** The first figure 3b plotted
+  levels across venues at their drafting dates, which §3 itself says not to compare (format differences,
+  Gate 0 item 9). Lane E review C1. Figure 3b now indexes each venue to its own 2024 rate, and the claim
+  reads "parallel declines". The TMLR year was also still called unresolved after Lane E's header audit
+  had settled it for published papers (C2); corrected.
 
 ## Lane B (replication)
 
