@@ -141,6 +141,19 @@ Git-ignored intermediates: `~/work/v2_body`, `~/work/v2_all`, `~/work/views*`, `
 Open: date TMLR 2026 records by OpenReview submission month (calendar test in `docs/v2-replication.md`);
 check whether OpenReview id order tracks submission time (explains *test whether* 2026, V1 vs added).
 
+### Lane D (V2): appendices and disclosures (2026-10-15, analysis done; labels pending)
+
+**Doc:** `docs/v2-appendices-disclosures.md`. **Scripts:** `scripts/v2/appendix_scan_v2.py` →
+`appendix_analyze_v2.py`; `disclosures_extract_v2.py` → `disclosures_analyze_v2.py`; `lane_c_v2.py`
+(prereg `results/v2/disclosures/lane_c_v2_prereg.md`); `labelling_sample.py`, `score_labels.py`.
+**Outputs:** `results/v2/appendices/` (fig 5 + table), `results/v2/disclosures/`.
+
+State: appendix decomposition, disclosure inventory, stance, templates and Lane C on ICLR 2027
+(reproduces) and ICLR 2026 done. Open: Bobby's 45 hand labels on the labelling page (export with
+ArtifactData `list` on collection `labels`, then `score_labels.py`); same-author 2026 vs 2027
+statements; NeurIPS 2025 checklist LLM answers. Lane C needs `scikit-learn`/`scipy` (not in
+requirements). Git-ignored intermediates in `data/v2/{appendix,disclosures,lane_c,labelling}`.
+
 ## Blockers and risks
 
 - The dataset keeps growing. Never move the revision pin without rerunning recon and updating

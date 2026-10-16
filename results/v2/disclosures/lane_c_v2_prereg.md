@@ -36,6 +36,14 @@ omissions file read for bodies, and the stock-wording threshold, scaled to cohor
 - Overlap: own-body enrichment over matched controls stays positive (2027: +0.057 of types) and the
   stopword fingerprint stays near zero.
 
+## Amendment (2026-10-15, before the ICLR 2026 run)
+
+The V1.5 clean tier rejects statements that end at the end of the text. 87% of ICLR 2026 statements
+are the paper's last section, so the 2026 run uses the V2 tier (`tier_v2` in
+`scripts/v2/disclosures_analyze_v2.py`: end-of-text statements accepted when line or run-in form, no
+omission marker, ≤ 3,000 characters, no bibliography residue). Fixed before any 2026 body feature
+was computed; the ICLR 2027 reproduction keeps the V1.5 tier. Predictions unchanged.
+
 ## Status of the labels
 
 Classifier v2 was validated only on ICLR 2027 statements, and only against Claude labels. On other

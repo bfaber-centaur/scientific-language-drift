@@ -1,0 +1,11 @@
+disclosure_measure,feature,n,rho_adj,p,q_bh
+disc_words,ai_words_p10k,10066,0.0294,0.00318,0.00353
+disc_words,func_share,10066,-0.11075,0.0,0.0
+disc_words,mean_tok_len,10066,0.11296,0.0,0.0
+disc_words,mattr500,10066,0.12593,0.0,0.0
+disc_words,bundle_rep,10066,-0.06606,0.0,0.0
+specificity,ai_words_p10k,10066,-0.00376,0.70583,0.70583
+specificity,func_share,10066,-0.07727,0.0,0.0
+specificity,mean_tok_len,10066,0.07542,0.0,0.0
+specificity,mattr500,10066,0.13097,0.0,0.0
+specificity,bundle_rep,10066,-0.10104,0.0,0.0

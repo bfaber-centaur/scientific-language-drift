@@ -52,3 +52,19 @@ _Shared by the V2 lanes. Each lane edits only its own labeled section._
   strata). Fixed with `count_ngrams.py --merge-by-year`, value-identical on a test venue.
 - **B-N3. One V1 2027 record is an exact duplicate of a record added to 2026**, so "V1 reproduces
   exactly" holds for 2017–2026 and to within one paper for 2027.
+
+## Lane D (appendices and disclosures)
+
+- **D-N1. V1.5's clean-statement tier does not transfer to ICLR 2026**: 87% of 2026 statements are the
+  last section of the paper, and V1.5 treated end-of-text statements as suspect. A V2 tier (sensitivity
+  definition) keeps 10,069 instead of 6,607.
+- **D-N2. The section-heading extractor misses statements** under headings without a use word ("WRITING
+  DETAILS", "LLM DISCLAIMER") and in-text sentences: about 9% of ICLR 2026 papers without a section.
+  Prevalence figures are lower bounds.
+- **D-N3. The ICLR 2027 appendix jump is not a resubmission effect**: within-paper gain +913 (2027)
+  vs +1,120 (2026).
+- **D-N4. Pre-2026 "statements" (0.06–0.8% of papers) are mostly extractor false positives.**
+- **D-N5. ICML statement extraction overruns into math more often**; the ICML keyness list is not
+  interpreted.
+- **D-N6. The V1.5 review file `docs/v1.5-review.md` and `results/review/blind_labels_*` are cited but
+  absent from the repository.** Part A of the V2 labelling sample replaces that check.

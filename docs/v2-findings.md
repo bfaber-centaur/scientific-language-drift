@@ -42,3 +42,25 @@ _Source: `docs/v2-replication.md`; tables and figures in `results/v2/replication
   the text was written. Hypothesis: the ICLR 2027 step is partly a calendar effect. Descriptive only.
 - **The 2024 vocabulary burst and its staggered reversal replicate** in complete ICML, NeurIPS, COLM and
   TMLR published cohorts, with NeurIPS a year early on several words.
+
+## Lane D (appendices and disclosures)
+
+_Source: `docs/v2-appendices-disclosures.md`; tables in `results/v2/appendices/` and `results/v2/disclosures/`._
+
+- **The 7% → 47% rise is verified** (median raw post-reference share, ICLR 2017 → 2027). V1.5's
+  appendix tables reproduce exactly on V1 records (297/297 rows); the completed ICLR 2024–2026 years
+  match V1's partial samples.
+- **Every 2026-written cohort shows its venue's largest one-year appendix step with a flat or falling
+  main body:** ICLR submissions 2026 → 2027 +1,672 median tokens, ICML +710, COLM +975, TMLR +780
+  (TMLR with an unchanged cohort size, so cohort doubling is not the whole story for ICLR 2027).
+- **Within the same paper the step is not larger:** ICLR resubmissions gain +913 appendix tokens into
+  2027 and +1,120 into 2026, so the 2027 jump is mostly between papers.
+- **Growth is experimental material** (implementation details, additional results, data, ablations);
+  proofs plateau, and examples/prompts rise to about a quarter of ICLR and ICML papers.
+- **ICLR 2026 is a new disclosure corpus:** 58% of papers (about 62% with in-text statements) carry an
+  LLM section although the policy required one only for "significant" use; 87% sit after the
+  references; provisional groups are polish-centred (46% polish-only, 7% drafting vs 14% / 30% in
+  2027). COLM 2026 26%, ICML 2026 5%, TMLR 2026 5%.
+- **Shared wording in 2027 is mostly the template** (22% of 2027 tokens vs 0.5% in 2026); denials
+  appear in 38–41% of ICML and ICLR 2026 statements with no template slot.
+- All category shares are provisional until Bobby's 45 labels are scored.
