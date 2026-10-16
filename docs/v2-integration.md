@@ -1,6 +1,6 @@
 # V2 integration: expanded corpus, independent replication (Gate 5)
 
-_2026-10-16. Integrates Gate 0/1 (Lane A: `docs/v2-corpus-inventory.md`, `docs/v2-corpus-diff.md`),
+_2026-10-16, draft 2. Integrates Gate 0/1 (Lane A: `docs/v2-corpus-inventory.md`, `docs/v2-corpus-diff.md`),
 Lane B (`docs/v2-replication.md`), Lane C (`docs/v2-function-words.md`), Lane D
 (`docs/v2-appendices-disclosures.md`) and Lane E (`docs/v2-adversarial-review.md`). Dataset
 `woog/open-text-detector-papers`, V2 pin `2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27`; V1 pin
@@ -16,10 +16,10 @@ is made from linguistic correlations._
 |---|---|---|---|
 | 0. Corpus discovery | Lane A | done (`e91d134`) | confirmed (E1–E3), minor count fixes |
 | 1. Provenance and cache | Lane A | done (`df37fbe`) | confirmed; latent defects D1, D2 found elsewhere |
-| 2. Replication | Lane B | done (`713b3db`) | D2 fixed (`count_ngrams.py --revision`), D3 applied; review of the doc **pending** |
-| 3. Function words | Lane C | done (`6b80821` … `ac0d4c0`) | headline reproduced independently (E5, E6); D3 applied; review of the doc **pending** |
-| 3–4. Appendices, disclosures | Lane D | done (`90f33b5`) | review **pending**; category shares **provisional** until Bobby's 45 labels are scored |
-| 5. Integration | this document | draft 1 | to be updated when Lane E's verdicts on B, C, D land |
+| 2. Replication | Lane B | done (`713b3db`) | numbers reproduce; D2 fixed, D3 adopted. Open: B1 TMLR year text, B2 say which rows exclude ICLR overlap |
+| 3. Function words | Lane C | done (`6b80821` … `ac0d4c0`) | numbers reproduce (E5, E6); D3 adopted. Open: C1 figure 3b compares levels across venues, C2 TMLR year text |
+| 3–4. Appendices, disclosures | Lane D | done (`90f33b5`) | 7% → 47% and ICLR 2026 statement rate reproduce with Lane E code (E9). Open: D-1 D3 not applied (ICML step and pairs are title-only); category shares **provisional** until Bobby's 45 labels are scored |
+| 5. Integration | this document | draft 2: Lane E's second pass (`ee1cb5f`) folded in | no result-changing defect found in B, C or D; fixes C1, C2, B1, B2, D-1 routed to their lanes and open until their docs show them |
 
 Every directive figure exists, each with its table and revision:
 
@@ -177,12 +177,19 @@ visualization 4 is Lane C's `fig4_heatmap.png`._
 - **Function words: one decline across ML venues, timed by writing date.** Prose "of" since 2023:
   ICML 2026 −32%, COLM 2026 −36% (since 2024), TMLR published 2026 −28%, NeurIPS 2025 −18%, CoRL 2025
   −18%, ICLR 2026 −24% (Lane C). Lane E's counter agrees on every venue's latest step within one
-  point. Placed at each venue's submission deadline, the series lie on top of one another (Lane C
-  figure 3b).
+  point. Placed at each venue's submission deadline, the venues trace parallel declines starting in
+  2024 (Lane C figure 3b; that figure plots levels across venues, which are not comparable, so read
+  its slopes, not its overlap; Lane E C1, fix routed to Lane C).
+- **Within one venue, the decline is smooth by month.** Published TMLR papers, dated by the month
+  printed in their header, hold "of" at 27.5–28.1k per million through 2024, then fall in every
+  quarter from 2025 Q2: 26.4k, 25.2k, 24.4k, 23.0k, 21.3k, 19.3k, and 17.0k (16.0–18.1k) in October
+  2026, with no single step. "and" rises and "we" falls over the same quarters (Lane E,
+  `e10_tmlr_by_publication_quarter.csv`). Publication month lags writing by months.
 - **The 2027 rhetorical register appears in every 2026-written cohort** (Lane B; % of papers):
   *a novel* ICML 59.0 → 32.9 (2025 → 2026, ICLR overlap removed), COLM 41.1 → 17.6, TMLR submissions
   53.4 → 25.2; *test whether* 3.1 → 10.3, 9.4 → 29.9, 5.9 → 21.2. ICLR 2027 itself: 54.5 → 8.7 and
-  5.9 → 22.7. Amplitude orders TMLR submissions ≈ COLM > TMLR published > ICML, and NeurIPS 2025
+  5.9 → 22.7. Only the ICML rows exclude ICLR-overlap papers; COLM and TMLR keep theirs (≥ 9.5% and
+  ≥ 13.9%), which slightly understates their movement (Lane E B2). Amplitude orders TMLR submissions ≈ COLM > TMLR published > ICML, and NeurIPS 2025
   (written a year earlier) barely moves.
 - **The within-2026 gradient** (Lane C): the markers that make ICLR 2027 different move more the later
   a 2026 cohort's deadline. "to" falls −10% (ICLR 2026, Sep 2025) → −11% (ICML, Jan 2026) → −20%
@@ -190,7 +197,10 @@ visualization 4 is Lane C's `fig4_heatmap.png`._
   +170% → +16% → −16% → −52%.
 - **The appendix step is in every 2026-written cohort**, with the main body flat or falling: ICLR
   submissions 2026 → 27 +1,672 median tokens, ICML 2025 → 26 +710, COLM +975, TMLR published +780,
-  against +85 and +124 for ICML's earlier years (Lane D).
+  against +85 and +124 for ICML's earlier years (Lane D). The ICML figure still includes the ≥ 16% of
+  ICML 2026 that are ICLR 2026 manuscripts, and ICLR → ICML revision itself adds about +637 appendix
+  tokens, so ICML's step is not yet independent evidence (Lane E D-1, fix routed to Lane D). TMLR's
+  step, with an unchanged cohort size, does not have this problem.
 - **The 2024 vocabulary burst and fade replicate** in ICML, NeurIPS, COLM and TMLR, with NeurIPS a
   year early on several words, as its earlier calendar predicts (Lane B figure 6).
 - **Disclosure practice differs by venue.** Dedicated AI-use statements outside ICLR are a 2026
@@ -212,9 +222,13 @@ visualization 4 is Lane C's `fig4_heatmap.png`._
 
 **Interpretation (tentative).** The ICLR 2027 "discontinuity" looks like the far end of a change that
 was under way across ML venues through 2025–2026 and whose size in a cohort tracks how late its text
-was written. That makes the 2027 step at least partly a **calendar effect** (a whole cohort written in
-summer 2026) rather than something about ICLR. It is not yet tested, because no non-ICLR cohort was
-written as late as ICLR 2027, and none is version- and time-matched to it.
+was written. The smooth quarterly TMLR series supports that reading within one venue. That makes the
+2027 step at least partly a **calendar effect** (a whole cohort written in summer 2026) rather than
+something about ICLR. **But it may not be the whole step.** Allowing for TMLR's higher baseline,
+October 2026 TMLR sits at about 16.1k ICLR-equivalent against ICLR 2027's 13.9k, so ICLR 2027 may sit
+below the common trend rather than on it (Lane E hypothesis, untested). Its sentence shortening also
+appears nowhere else. No non-ICLR cohort was written as late as ICLR 2027, and none is version- and
+time-matched to it.
 
 ### 6. What new observation most deserves investigation?
 
@@ -251,9 +265,10 @@ with Lane C's existing counter (`scripts/v2/lane_c_arxiv.py` already handles the
 and the letter-token rates). Pre-register the predictions before counting.
 
 Why it is decisive for the questions that remain:
-- **Calendar effect vs ICLR event.** A smooth month-by-month decline through 2026 supports a field
-  drift; a step at a date (e.g. around a model release or the ICLR 2027 deadline) supports a shared
-  trigger. No venue cohort has monthly resolution; arXiv does.
+- **Calendar effect vs ICLR event.** Lane E's TMLR series already shows a smooth quarterly decline
+  within one venue, but dated by publication, which lags writing. arXiv v1 dates sit close to the
+  writing, so the series can test whether ICLR 2027 lies on the common trend or below it (question 5),
+  and whether there is a step at any date.
 - **ML-specific or broader.** The directive's first research question. If math and physics abstracts
   show the same *the X of Y* → compound shift on the same schedule, it is not an ML phenomenon. If
   they are flat, it is.
@@ -269,8 +284,8 @@ an inference), arXiv posting is selective, and it says nothing about cause.
 Runners-up, in order:
 1. **LaTeX sources of about 100 arXiv e-prints** from ICLR 2024 and 2027 papers: closes the extraction
    question for main-body prose.
-2. **TMLR published papers by month of publication**: the header's "(MM/YYYY)" is already parsed (Lane
-   E E3), so a month series of the 2027 markers costs one script run on existing data.
+2. **Extend Lane E's TMLR quarterly series to the 2027 markers** (*a novel*, *test whether*, "to",
+   em dash): one script run on existing data; "of" is already done.
 3. **Same authors under two policies:** the 237 ICLR 2026 → 2027 resubmission pairs' disclosures,
    to separate "the template prompted fuller reporting" from "practice changed".
 4. **NeurIPS 2026** when woog adds it: the first non-ICLR cohort written in mid-2026.
@@ -279,8 +294,10 @@ Runners-up, in order:
 
 - **Pairing definitions differ by lane.** Lane C's and Lane B's ICLR-overlap exclusions use the union
   of exact titles and Lane E's text matches (D3). Lane D's pair tables (appendix, 237 / 868 / 152 /
-  423 pairs) are title-only, so they cover about a fifth fewer pairs. The within-pair conclusions are
-  unlikely to change, but the pair counts are not comparable across lanes.
+  423 pairs) are title-only, so they cover about a fifth fewer pairs, and the 237 ICLR 2026 → 2027
+  pairs include one identical text and many near-total rewrites (Lane E D-2). The pair counts are not
+  comparable across lanes. Text matches were computed for same-year ICLR → ICML only, not ICLR 2025 →
+  ICML 2026.
 - **"Lane C" means two things.** In Lane D's doc, "Lane C" is the V1.5 disclosure/body pipeline rerun
   on V2 (`results/v2/disclosures/lane_c/`), not V2 Lane C's function-word work.
 - **ICLR 2026 statement prevalence** is 57.8% by heading, about 61–62% with in-text sentences (Lane D;
@@ -292,11 +309,12 @@ Runners-up, in order:
 
 1. **Bobby's 45 disclosure labels.** Until `scripts/v2/score_labels.py` runs on them, every drafting /
    polish-only / stance share in Lane D and above is a machine label.
-2. **Lane E's review of the Lane B, C and D docs.** Any defect it reports stays open here until the
-   owning lane's doc shows the fix.
+2. **Lane E's routed fixes** (C1, C2, B1, B2, D-1). None changes a result, but the ICML appendix step
+   stays out of the "independent evidence" column until D-1 lands.
 3. **The MuPDF observation in the directive** stays uncited unless the PDF, its hash and the extraction
    output are committed.
-4. **Data questions:** hand audit of first-page version labels; TMLR year for the submission stratum;
+4. **Data questions:** hand audit of first-page version labels; TMLR year for the submission stratum
+   (the published stratum is settled: the printed publication year in 95.5% of records, E3);
    NeurIPS 2021's 89% coverage; why ICLR 2026 *test whether* differs between V1's id-prefix crawl and
    the added records (4.8% vs 6.4%; does OpenReview id order track submission time?).
 5. **Code hygiene:** `scripts/independent_function_words.py` (V1) still caches downloads without
