@@ -37,8 +37,9 @@ _Source: `docs/v2-replication.md`; tables and figures in `results/v2/replication
   by 0.02. Seven watchlist verdicts flip (pre-registered hits 17 → 24 of 36), e.g. *a novel* and
   *we propose* change from "down" to the predicted "flat".
 - **The 2027 register appears in other venues' 2026-written cohorts**: *a novel* 59 → 33% (ICML
-  2025 → 2026, ICLR-overlap papers removed), 41 → 18% (COLM), 53 → 25% (TMLR submissions); *test
-  whether* 3 → 10%, 9 → 30%, 6 → 21%. Smaller than ICLR 2027 (62 → 9%, 2 → 23%) and larger the later
+  2025 → 2026), 41 → 17% (COLM), 53 → 23% (TMLR submissions), ICLR-overlap papers removed in all
+  three; *test whether* 3 → 10%, 9 → 30%, 6 → 22%. Lane E's quarterly series for published TMLR shows
+  "of" falling every quarter from 2025 Q2 with no single step. Smaller than ICLR 2027 (62 → 9%, 2 → 23%) and larger the later
   the text was written. Hypothesis: the ICLR 2027 step is partly a calendar effect. Descriptive only.
 - **The 2024 vocabulary burst and its staggered reversal replicate** in complete ICML, NeurIPS, COLM and
   TMLR published cohorts, with NeurIPS a year early on several words.

@@ -49,7 +49,7 @@ year, which are disjoint; those differences carry paper-level bootstrap interval
 of V1 records, which were accepted camera-ready papers only. They are compared with V2 **published-only**
 cohorts, and ICML additionally without the papers whose title matches an ICLR submission of the same or
 previous year (`iclr_overlap`, ~13% of ICML 2026). TMLR is split by version, and its year is treated as
-provisional (Gate 1). Venue trajectories are compared within venue, not as cross-venue levels.
+provisional (Gate 1; since settled for the published stratum, see "The 2027 register outside ICLR"). Venue trajectories are compared within venue, not as cross-venue levels.
 
 _Amendment after the rules were frozen (not a change of criteria): Agent E found that exact-title
 matching misses about a fifth of the ICLR overlap (`docs/v2-adversarial-review.md` D3). The ICML
@@ -161,8 +161,10 @@ where V1's sample was the whole V1 set, match to four digits).
 
 ### The 2027 register outside ICLR
 
-Main body, % of papers (95% paper bootstrap) or per million. ICML excludes papers with an ICLR
-counterpart (title or text match). Venue levels are not comparable across formats; read within rows
+Main body, % of papers (95% paper bootstrap) or per million. ICML, COLM and TMLR rows exclude papers
+with an ICLR counterpart (title or text match; groups `*_no_overlap`). The ICLR and NeurIPS rows have no
+exclusion. _Corrected after Lane E's review (B2): COLM and TMLR first appeared with overlap papers
+included; excluding them makes their shifts slightly larger, e.g. TMLR submissions' *a novel* 25.2 → 23.0%._ Venue levels are not comparable across formats; read within rows
 of one venue.
 
 | cohort (final text written) | papers | a novel | we propose | test whether | held fixed | percentage points | notably | "of" | stopword share |
@@ -172,11 +174,11 @@ of one venue.
 | ICLR 2027 submissions (2026) | 39,881 | 8.7 | 51.3 | 22.7 | 12.9 | 24.7 | 16.5 | 13.8k | 32.0 |
 | ICML 2025 camera-ready (2025) | 2,736 | 59.0 | 79.6 | 3.1 | 0.4 | 1.4 | 56.9 | 24.4k | 35.5 |
 | ICML 2026 camera-ready (2026) | 5,293 | 32.9 (31.6–34.0) | 77.4 | 10.3 (9.6–11.2) | 2.1 | 4.5 | 57.9 | 18.2k | 32.3 |
-| COLM 2025 camera-ready | 414 | 41.1 | 71.3 | 9.4 | 0.2 | 6.0 | 63.8 | 21.9k | 34.0 |
-| COLM 2026 camera-ready | 856 | 17.6 (15.3–20.0) | 57.0 | 29.9 (26.9–32.9) | 4.4 | 13.4 | 45.3 | 16.3k | 31.8 |
-| TMLR 2025 submissions | 700 | 53.4 | 69.1 | 5.9 | 1.0 | 3.3 | 54.7 | 24.5k | 35.7 |
-| TMLR 2026 submissions | 1,492 | 25.2 (23.1–27.6) | 58.8 | 21.2 (19.2–23.3) | 11.9 | 13.2 | 36.5 | 18.2k | 33.7 |
-| TMLR 2026 published | 1,507 | 39.9 | 66.9 | 13.2 | 5.0 | 7.0 | 56.8 | 20.6k | 33.9 |
+| COLM 2025 camera-ready | 393 | 41.0 | 70.5 | 9.4 | 0.3 | 6.4 | 64.4 | 21.8k | 34.0 |
+| COLM 2026 camera-ready | 763 | 17.2 (14.5–19.5) | 56.0 | 30.1 (26.9–33.2) | 4.8 | 13.9 | 44.3 | 16.0k | 31.7 |
+| TMLR 2025 submissions | 640 | 53.0 | 68.8 | 5.6 | 1.1 | 3.6 | 54.8 | 24.4k | 35.6 |
+| TMLR 2026 submissions | 1,302 | 23.0 (20.8–25.3) | 55.2 | 21.8 (19.6–24.1) | 13.3 | 13.7 | 34.0 | 17.9k | 33.6 |
+| TMLR 2026 published | 1,228 | 37.9 | 64.1 | 14.1 | 5.5 | 7.1 | 55.4 | 20.5k | 33.8 |
 | NeurIPS 2025 camera-ready (2025) | 5,783 | 57.8 | 78.7 | 3.5 | 0.4 | 2.4 | 60.9 | 22.2k | 34.1 |
 
 Facts: every 2026-written cohort moves in the 2027 direction on all four 2027 markers (*a novel* down,
@@ -188,12 +190,22 @@ revised by June; COLM 2026 papers were drafted around January–March 2026.
 Interpretation (tentative): the ICLR 2027 "break" looks like the far end of a shift that was under way
 across ML venues through 2026, and its size in each cohort tracks how late in 2026 the text was
 written. That would make the ICLR 2027 step partly a calendar effect (a whole cohort written in
-summer 2026) rather than something about ICLR. Not tested: TMLR year semantics are undocumented
-(Gate 1), and none of these cohorts is version- and time-matched to ICLR 2027.
+summer 2026) rather than something about ICLR. None of these cohorts is version- and time-matched to
+ICLR 2027.
 
-Test: date each TMLR 2026 record by its OpenReview submission or revision date and plot the markers
-by month. A smooth rise through 2026 supports the calendar reading; a step at a fixed date supports a
-shared external trigger.
+**TMLR year (corrected after Lane E's review, B1).** For published TMLR records the dataset year is the
+printed publication year in 95.5% of cases and one year earlier otherwise (Lane E E3,
+`docs/v2-adversarial-review.md`). The excess over the card total is in the submission stratum. So the
+published TMLR series is dated, and only the submission stratum's year stays approximate.
+
+**Calendar test, run by Lane E** on published TMLR papers by printed publication quarter
+(`results/v2/review/e10_tmlr_by_publication_quarter.csv`): "of" per million is flat through 2024
+(27.5–28.1k), then falls in every quarter from 2025 Q2 (26.4k) to October 2026 (17.0k), with no single
+step. This supports a gradual shift over a step at one date, within one venue. Two limits: the
+publication month lags writing by months, and TMLR camera-ready text is not version-matched to ICLR
+submissions. Lane E also notes that, adjusted for TMLR's higher baseline, October 2026 TMLR still sits
+above ICLR 2027, so ICLR 2027 may lie below the common trend rather than on it. The four 2027 markers
+have not yet been run by quarter.
 
 ## Methodological notes
 
