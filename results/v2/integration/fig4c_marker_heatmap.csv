@@ -1,0 +1,235 @@
+series,venue,group,year,papers,marker,metric,level,level_unit,baseline_year,change,change_unit,revision
+ICLR submissions,iclr,under_review,2023,3168,delve,prev:delve,1.105,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,underscores,prev:underscores,0.1894,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,a novel,prev:a novel,48.58,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,we propose,prev:we propose,82.13,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,notably,prev:notably,17.96,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,test whether,prev:test whether,2.683,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,held fixed,prev:held fixed,0.4104,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,percentage points,prev:percentage points,1.294,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2023,3168,"""of"" per million",pm:of,2.683e+04,per million,2023,0,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,delve,prev:delve,11.6,% of papers,2023,10.49,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,underscores,prev:underscores,11.39,% of papers,2023,11.2,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,a novel,prev:a novel,57.32,% of papers,2023,8.745,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,we propose,prev:we propose,82.36,% of papers,2023,0.2264,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,notably,prev:notably,41.71,% of papers,2023,23.75,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,test whether,prev:test whether,2.438,% of papers,2023,-0.2451,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,held fixed,prev:held fixed,0.1844,% of papers,2023,-0.226,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,percentage points,prev:percentage points,1.065,% of papers,2023,-0.2288,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2024,4881,"""of"" per million",pm:of,2.694e+04,per million,2023,0.4197,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,delve,prev:delve,6.171,% of papers,2023,5.066,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,underscores,prev:underscores,15.21,% of papers,2023,15.03,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,a novel,prev:a novel,62.22,% of papers,2023,13.64,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,we propose,prev:we propose,82.19,% of papers,2023,0.0563,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,notably,prev:notably,52.03,% of papers,2023,34.07,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,test whether,prev:test whether,2.317,% of papers,2023,-0.3658,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,held fixed,prev:held fixed,0.1059,% of papers,2023,-0.3044,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,percentage points,prev:percentage points,1.443,% of papers,2023,0.1491,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2025,7552,"""of"" per million",pm:of,2.559e+04,per million,2023,-4.634,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,delve,prev:delve,1.33,% of papers,2023,0.2252,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,underscores,prev:underscores,11.87,% of papers,2023,11.68,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,a novel,prev:a novel,54.47,% of papers,2023,5.886,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,we propose,prev:we propose,80.24,% of papers,2023,-1.894,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,notably,prev:notably,52.32,% of papers,2023,34.36,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,test whether,prev:test whether,5.861,% of papers,2023,3.178,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,held fixed,prev:held fixed,0.6942,% of papers,2023,0.2839,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,percentage points,prev:percentage points,3.961,% of papers,2023,2.667,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2026,13684,"""of"" per million",pm:of,2.033e+04,per million,2023,-24.24,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,delve,prev:delve,0.1479,% of papers,2023,-0.9569,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,underscores,prev:underscores,0.7999,% of papers,2023,0.6105,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,a novel,prev:a novel,8.701,% of papers,2023,-39.88,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,we propose,prev:we propose,51.31,% of papers,2023,-30.83,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,notably,prev:notably,16.47,% of papers,2023,-1.487,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,test whether,prev:test whether,22.71,% of papers,2023,20.03,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,held fixed,prev:held fixed,12.9,% of papers,2023,12.49,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,percentage points,prev:percentage points,24.66,% of papers,2023,23.36,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+ICLR submissions,iclr,under_review,2027,39881,"""of"" per million",pm:of,1.377e+04,per million,2023,-48.68,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,delve,prev:delve,2.301,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,underscores,prev:underscores,0.5479,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,a novel,prev:a novel,42.58,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,we propose,prev:we propose,73.64,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,notably,prev:notably,26.08,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,test whether,prev:test whether,3.123,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,held fixed,prev:held fixed,0.5479,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,percentage points,prev:percentage points,0.6027,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2023,1825,"""of"" per million",pm:of,2.71e+04,per million,2023,0,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,delve,prev:delve,9.295,% of papers,2023,6.994,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,underscores,prev:underscores,11.98,% of papers,2023,11.43,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,a novel,prev:a novel,50.09,% of papers,2023,7.513,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,we propose,prev:we propose,73.17,% of papers,2023,-0.472,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,notably,prev:notably,46.12,% of papers,2023,20.04,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,test whether,prev:test whether,2.555,% of papers,2023,-0.5682,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,held fixed,prev:held fixed,0.1762,% of papers,2023,-0.3717,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,percentage points,prev:percentage points,0.6608,% of papers,2023,0.05805,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2024,2270,"""of"" per million",pm:of,2.692e+04,per million,2023,-0.6598,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,delve,prev:delve,3.399,% of papers,2023,1.098,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,underscores,prev:underscores,12.17,% of papers,2023,11.62,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,a novel,prev:a novel,58.99,% of papers,2023,16.42,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,we propose,prev:we propose,79.64,% of papers,2023,5.998,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,notably,prev:notably,56.91,% of papers,2023,30.83,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,test whether,prev:test whether,3.143,% of papers,2023,0.01998,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,held fixed,prev:held fixed,0.4386,% of papers,2023,-0.1093,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,percentage points,prev:percentage points,1.352,% of papers,2023,0.7496,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2025,2736,"""of"" per million",pm:of,2.441e+04,per million,2023,-9.929,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,delve,prev:delve,0.7179,% of papers,2023,-1.583,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,underscores,prev:underscores,6.631,% of papers,2023,6.083,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,a novel,prev:a novel,32.85,% of papers,2023,-9.721,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,we propose,prev:we propose,77.44,% of papers,2023,3.798,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,notably,prev:notably,57.85,% of papers,2023,31.77,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,test whether,prev:test whether,10.33,% of papers,2023,7.211,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,held fixed,prev:held fixed,2.078,% of papers,2023,1.53,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,percentage points,prev:percentage points,4.459,% of papers,2023,3.856,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+"ICML camera-ready, no ICLR overlap",icml,published_no_overlap,2026,5293,"""of"" per million",pm:of,1.822e+04,per million,2023,-32.78,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,delve,prev:delve,5.294,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,underscores,prev:underscores,4.785,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,a novel,prev:a novel,51.36,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,we propose,prev:we propose,73.05,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,notably,prev:notably,38.34,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,test whether,prev:test whether,2.52,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,held fixed,prev:held fixed,0.3114,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,percentage points,prev:percentage points,0.8211,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2023,3532,"""of"" per million",pm:of,2.667e+04,per million,2023,0,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,delve,prev:delve,7.382,% of papers,2023,2.087,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,underscores,prev:underscores,11.17,% of papers,2023,6.388,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,a novel,prev:a novel,56.47,% of papers,2023,5.108,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,we propose,prev:we propose,74.84,% of papers,2023,1.797,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,notably,prev:notably,48.86,% of papers,2023,10.53,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,test whether,prev:test whether,2.342,% of papers,2023,-0.1782,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,held fixed,prev:held fixed,0.3345,% of papers,2023,0.02308,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,percentage points,prev:percentage points,1.004,% of papers,2023,0.1825,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2024,4484,"""of"" per million",pm:of,2.611e+04,per million,2023,-2.103,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,delve,prev:delve,1.902,% of papers,2023,-3.392,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,underscores,prev:underscores,12.61,% of papers,2023,7.821,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,a novel,prev:a novel,57.77,% of papers,2023,6.414,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,we propose,prev:we propose,78.66,% of papers,2023,5.615,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,notably,prev:notably,60.85,% of papers,2023,22.52,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,test whether,prev:test whether,3.458,% of papers,2023,0.9386,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,held fixed,prev:held fixed,0.4323,% of papers,2023,0.1209,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,percentage points,prev:percentage points,2.438,% of papers,2023,1.617,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+NeurIPS camera-ready,neurips,published,2025,5783,"""of"" per million",pm:of,2.216e+04,per million,2023,-16.89,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,delve,prev:delve,11.74,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,underscores,prev:underscores,14.43,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,a novel,prev:a novel,34.23,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,we propose,prev:we propose,62.75,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,notably,prev:notably,50,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,test whether,prev:test whether,6.376,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,held fixed,prev:held fixed,0,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,percentage points,prev:percentage points,2.685,% of papers,2024,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2024,298,"""of"" per million",pm:of,2.592e+04,per million,2024,0,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,delve,prev:delve,1.932,% of papers,2024,-9.813,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,underscores,prev:underscores,15.7,% of papers,2024,1.271,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,a novel,prev:a novel,41.06,% of papers,2024,6.835,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,we propose,prev:we propose,71.26,% of papers,2024,8.504,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,notably,prev:notably,63.77,% of papers,2024,13.77,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,test whether,prev:test whether,9.42,% of papers,2024,3.044,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,held fixed,prev:held fixed,0.2415,% of papers,2024,0.2415,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,percentage points,prev:percentage points,6.039,% of papers,2024,3.354,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2025,414,"""of"" per million",pm:of,2.193e+04,per million,2024,-15.41,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,delve,prev:delve,0.3505,% of papers,2024,-11.39,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,underscores,prev:underscores,4.673,% of papers,2024,-9.757,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,a novel,prev:a novel,17.64,% of papers,2024,-16.59,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,we propose,prev:we propose,57.01,% of papers,2024,-5.742,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,notably,prev:notably,45.33,% of papers,2024,-4.673,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,test whether,prev:test whether,29.91,% of papers,2024,23.53,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,held fixed,prev:held fixed,4.439,% of papers,2024,4.439,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,percentage points,prev:percentage points,13.43,% of papers,2024,10.75,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+COLM camera-ready,colm,published,2026,856,"""of"" per million",pm:of,1.629e+04,per million,2024,-37.16,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,delve,prev:delve,3.967,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,underscores,prev:underscores,2.81,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,a novel,prev:a novel,43.14,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,we propose,prev:we propose,73.06,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,notably,prev:notably,25.45,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,test whether,prev:test whether,3.636,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,held fixed,prev:held fixed,0.6612,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,percentage points,prev:percentage points,1.983,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2023,605,"""of"" per million",pm:of,2.788e+04,per million,2023,0,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,delve,prev:delve,9.467,% of papers,2023,5.501,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,underscores,prev:underscores,10.75,% of papers,2023,7.94,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,a novel,prev:a novel,52.96,% of papers,2023,9.818,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,we propose,prev:we propose,72.68,% of papers,2023,-0.3755,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,notably,prev:notably,47.14,% of papers,2023,21.69,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,test whether,prev:test whether,3.55,% of papers,2023,-0.08606,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,held fixed,prev:held fixed,0.5917,% of papers,2023,-0.06944,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,percentage points,prev:percentage points,1.677,% of papers,2023,-0.3069,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2024,1014,"""of"" per million",pm:of,2.77e+04,per million,2023,-0.6267,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,delve,prev:delve,4.847,% of papers,2023,0.8803,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,underscores,prev:underscores,14.34,% of papers,2023,11.53,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,a novel,prev:a novel,52.86,% of papers,2023,9.715,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,we propose,prev:we propose,73.77,% of papers,2023,0.7137,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,notably,prev:notably,57.3,% of papers,2023,31.85,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,test whether,prev:test whether,4.781,% of papers,2023,1.145,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,held fixed,prev:held fixed,0.8632,% of papers,2023,0.2021,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,percentage points,prev:percentage points,3.187,% of papers,2023,1.204,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2025,1506,"""of"" per million",pm:of,2.542e+04,per million,2023,-8.825,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,delve,prev:delve,1.593,% of papers,2023,-2.374,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,underscores,prev:underscores,10.35,% of papers,2023,7.542,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,a novel,prev:a novel,39.95,% of papers,2023,-3.194,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,we propose,prev:we propose,66.89,% of papers,2023,-6.17,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,notably,prev:notably,56.8,% of papers,2023,31.35,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,test whether,prev:test whether,13.21,% of papers,2023,9.569,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,held fixed,prev:held fixed,4.977,% of papers,2023,4.316,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,percentage points,prev:percentage points,6.967,% of papers,2023,4.984,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR published,tmlr,published,2026,1507,"""of"" per million",pm:of,2.065e+04,per million,2023,-25.94,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,delve,prev:delve,6.169,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,underscores,prev:underscores,5.844,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,a novel,prev:a novel,47.73,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,we propose,prev:we propose,70.78,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,notably,prev:notably,31.49,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,test whether,prev:test whether,3.896,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,held fixed,prev:held fixed,0.974,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,percentage points,prev:percentage points,1.623,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2023,308,"""of"" per million",pm:of,2.895e+04,per million,2023,0,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,delve,prev:delve,10.65,% of papers,2023,4.483,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,underscores,prev:underscores,13.91,% of papers,2023,8.069,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,a novel,prev:a novel,51.74,% of papers,2023,4.012,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,we propose,prev:we propose,69.57,% of papers,2023,-1.214,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,notably,prev:notably,46.74,% of papers,2023,15.25,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,test whether,prev:test whether,3.696,% of papers,2023,-0.2004,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,held fixed,prev:held fixed,0.2174,% of papers,2023,-0.7566,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,percentage points,prev:percentage points,1.522,% of papers,2023,-0.1016,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2024,460,"""of"" per million",pm:of,2.783e+04,per million,2023,-3.888,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,delve,prev:delve,3.571,% of papers,2023,-2.597,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,underscores,prev:underscores,13.43,% of papers,2023,7.584,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,a novel,prev:a novel,53.43,% of papers,2023,5.701,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,we propose,prev:we propose,69.14,% of papers,2023,-1.636,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,notably,prev:notably,54.71,% of papers,2023,23.22,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,test whether,prev:test whether,5.857,% of papers,2023,1.961,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,held fixed,prev:held fixed,1,% of papers,2023,0.02597,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,percentage points,prev:percentage points,3.286,% of papers,2023,1.662,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2025,700,"""of"" per million",pm:of,2.445e+04,per million,2023,-15.55,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,delve,prev:delve,0.6702,% of papers,2023,-5.499,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,underscores,prev:underscores,5.094,% of papers,2023,-0.7503,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,a novel,prev:a novel,25.2,% of papers,2023,-22.53,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,we propose,prev:we propose,58.85,% of papers,2023,-11.93,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,notably,prev:notably,36.46,% of papers,2023,4.968,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,test whether,prev:test whether,21.18,% of papers,2023,17.28,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,held fixed,prev:held fixed,11.93,% of papers,2023,10.96,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,percentage points,prev:percentage points,13.2,% of papers,2023,11.58,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+TMLR submissions,tmlr,under_review,2026,1492,"""of"" per million",pm:of,1.82e+04,per million,2023,-37.13,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,delve,prev:delve,1.515,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,underscores,prev:underscores,4.04,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,a novel,prev:a novel,54.04,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,we propose,prev:we propose,78.79,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,notably,prev:notably,38.38,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,test whether,prev:test whether,1.515,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,held fixed,prev:held fixed,0.5051,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,percentage points,prev:percentage points,1.01,% of papers,2023,0,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2023,198,"""of"" per million",pm:of,2.316e+04,per million,2023,0,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,delve,prev:delve,2.672,% of papers,2023,1.157,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,underscores,prev:underscores,9.542,% of papers,2023,5.502,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,a novel,prev:a novel,51.91,% of papers,2023,-2.132,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,we propose,prev:we propose,81.3,% of papers,2023,2.51,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,notably,prev:notably,40.08,% of papers,2023,1.692,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,test whether,prev:test whether,3.817,% of papers,2023,2.302,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,held fixed,prev:held fixed,0,% of papers,2023,-0.5051,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,percentage points,prev:percentage points,0.7634,% of papers,2023,-0.2467,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2024,262,"""of"" per million",pm:of,2.188e+04,per million,2023,-5.531,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,delve,prev:delve,0.3861,% of papers,2023,-1.129,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,underscores,prev:underscores,5.792,% of papers,2023,1.751,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,a novel,prev:a novel,54.44,% of papers,2023,0.3998,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,we propose,prev:we propose,83.4,% of papers,2023,4.61,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,notably,prev:notably,44.02,% of papers,2023,5.632,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,test whether,prev:test whether,4.633,% of papers,2023,3.118,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,held fixed,prev:held fixed,0.7722,% of papers,2023,0.2671,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,percentage points,prev:percentage points,1.158,% of papers,2023,0.1482,pp,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27
+CoRL camera-ready,corl,published,2025,259,"""of"" per million",pm:of,1.882e+04,per million,2023,-18.74,% change,2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27

@@ -194,3 +194,11 @@ committed 2018 rows of `results/full/body/corpus_totals.csv` and the top content
 `data/v2/lane_c/` (git-ignored, ~40 min). Open items: LaTeX-source check of body prose via arXiv
 e-prints; NeurIPS 2026 (when released) is the first non-ICLR cohort that could test the ICLR 2027
 step; arXiv rate-limits this environment's IP (HTTP 429), so lookups need ≥ 4 s spacing and long backoff.
+
+## Gate 5 (V2): integration (2026-10-16, draft 1)
+
+`docs/v2-integration.md` answers the directive's seven questions from the Gate 0/1 and Lane B–E docs and
+adds one figure (`results/v2/integration/fig4c_marker_heatmap.png`, `scripts/v2/integration_marker_heatmap.py`,
+from Lane B's `venue_metrics.csv`). Open before it is final: Lane E's verdicts on the B, C and D docs;
+Bobby's 45 disclosure labels (category shares are provisional until scored). Recommended next experiment:
+a monthly arXiv-abstract series 2023–2026, ML and non-ML categories, with Lane C's counter.
