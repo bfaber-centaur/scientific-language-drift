@@ -1,0 +1,13 @@
+subset,group,n,we_propose,a_novel,test_whether,held_fixed,extensive_exp
+all,drafting,11755,0.4,0.054,0.334,0.16,0.073
+all,none,253,0.656,0.217,0.158,0.095,0.296
+all,other_use,21416,0.516,0.091,0.291,0.125,0.127
+all,polish_only,5354,0.666,0.118,0.226,0.097,0.264
+all,unknown,535,0.488,0.086,0.292,0.101,0.14
+short_disclosure_lt400,drafting,2156,0.39,0.042,0.348,0.169,0.069
+short_disclosure_lt400,none,187,0.658,0.235,0.118,0.091,0.332
+short_disclosure_lt400,other_use,6388,0.467,0.063,0.32,0.143,0.105
+short_disclosure_lt400,polish_only,2888,0.619,0.102,0.242,0.111,0.216
+short_disclosure_lt400,unknown,258,0.434,0.093,0.298,0.112,0.112
+iclr2026_all,all,5162,0.801,0.536,0.059,0.008,0.358
+iclr2027_all,all,39313,0.502,0.084,0.294,0.131,0.131

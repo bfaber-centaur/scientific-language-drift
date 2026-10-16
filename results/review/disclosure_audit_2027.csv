@@ -1,0 +1,2 @@
+year,papers,any_ai_heading,v2_matched_any,broad_only_no_v2,multi_ai_heads,where_body,where_post,stmt_chars_med,stmt_chars_p90,capped,overrun_into_figs_tables,template_sig_any,template_sig_left_in_body,template_sig_body_share_of_sig_papers,leak_body_any,inline_nohead
+2027,42344,0.9598,0.9405,0.0193,0.0474,0.9134,0.0463,537.0000,1168.0000,0.0008,0.0025,0.5726,0.0193,0.0337,0.0273,0.0045
