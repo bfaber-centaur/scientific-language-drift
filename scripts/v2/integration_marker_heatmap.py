@@ -25,9 +25,9 @@ SERIES = [
     ("ICLR submissions", "iclr", "under_review", [2023, 2024, 2025, 2026, 2027], 2023),
     ("ICML camera-ready, no ICLR overlap", "icml", "published_no_overlap", [2023, 2024, 2025, 2026], 2023),
     ("NeurIPS camera-ready", "neurips", "published", [2023, 2024, 2025], 2023),
-    ("COLM camera-ready", "colm", "published", [2024, 2025, 2026], 2024),
-    ("TMLR published", "tmlr", "published", [2023, 2024, 2025, 2026], 2023),
-    ("TMLR submissions", "tmlr", "under_review", [2023, 2024, 2025, 2026], 2023),
+    ("COLM camera-ready, no ICLR overlap", "colm", "published_no_overlap", [2024, 2025, 2026], 2024),
+    ("TMLR published, no ICLR overlap", "tmlr", "published_no_overlap", [2023, 2024, 2025, 2026], 2023),
+    ("TMLR submissions, no ICLR overlap", "tmlr", "under_review_no_overlap", [2023, 2024, 2025, 2026], 2023),
     ("CoRL camera-ready", "corl", "published", [2023, 2024, 2025], 2023),
 ]
 MARKERS = [  # (column label, metric, kind)

@@ -16,7 +16,7 @@ is made from linguistic correlations._
 |---|---|---|---|
 | 0. Corpus discovery | Lane A | done (`e91d134`) | confirmed (E1–E3), minor count fixes |
 | 1. Provenance and cache | Lane A | done (`df37fbe`) | confirmed; latent defects D1, D2 found elsewhere |
-| 2. Replication | Lane B | done (`713b3db`) | numbers reproduce; D2 fixed, D3 adopted. Open: B1 TMLR year text, B2 say which rows exclude ICLR overlap |
+| 2. Replication | Lane B | done (`713b3db`) | numbers reproduce; D2 fixed, D3 adopted; B1 and B2 fixed (`50f5d19`), no result changed |
 | 3. Function words | Lane C | done (`6b80821` … `ac0d4c0`) | numbers reproduce (E5, E6); D3 adopted. Open: C1 figure 3b compares levels across venues, C2 TMLR year text |
 | 3–4. Appendices, disclosures | Lane D | done (`90f33b5`) | 7% → 47% and ICLR 2026 statement rate reproduce with Lane E code (E9). Open: D-1 D3 not applied (ICML step and pairs are title-only); category shares **provisional** until Bobby's 45 labels are scored |
 | 5. Integration | this document | draft 2: Lane E's second pass (`ee1cb5f`) folded in | no result-changing defect found in B, C or D; fixes C1, C2, B1, B2, D-1 routed to their lanes and open until their docs show them |
@@ -169,7 +169,7 @@ compared, never cross-venue levels**, and ICML is analysed without its ICLR-over
 ![Stylistic markers by venue and year](../results/v2/integration/fig4c_marker_heatmap.png)
 
 _Figure 4c (new; `scripts/v2/integration_marker_heatmap.py`, table `fig4c_marker_heatmap.csv`).
-Lane B's main-body estimates, revision `2c0dd19`. Number = level; colour = change from the series'
+Lane B's main-body estimates, revision `2c0dd19`; ICML, COLM and TMLR rows exclude ICLR-overlap papers. Number = level; colour = change from the series'
 first year, each column on its own scale. Read along one venue only. The function-word half of
 visualization 4 is Lane C's `fig4_heatmap.png`._
 
@@ -186,10 +186,9 @@ visualization 4 is Lane C's `fig4_heatmap.png`._
   2026, with no single step. "and" rises and "we" falls over the same quarters (Lane E,
   `e10_tmlr_by_publication_quarter.csv`). Publication month lags writing by months.
 - **The 2027 rhetorical register appears in every 2026-written cohort** (Lane B; % of papers):
-  *a novel* ICML 59.0 → 32.9 (2025 → 2026, ICLR overlap removed), COLM 41.1 → 17.6, TMLR submissions
-  53.4 → 25.2; *test whether* 3.1 → 10.3, 9.4 → 29.9, 5.9 → 21.2. ICLR 2027 itself: 54.5 → 8.7 and
-  5.9 → 22.7. Only the ICML rows exclude ICLR-overlap papers; COLM and TMLR keep theirs (≥ 9.5% and
-  ≥ 13.9%), which slightly understates their movement (Lane E B2). Amplitude orders TMLR submissions ≈ COLM > TMLR published > ICML, and NeurIPS 2025
+  *a novel* ICML 59.0 → 32.9 (2025 → 2026), COLM 41.0 → 17.2, TMLR submissions 53.0 → 23.0;
+  *test whether* 3.1 → 10.3, 9.4 → 30.1, 5.6 → 21.8, all with ICLR-overlap papers removed (Lane B,
+  corrected after Lane E B2). ICLR 2027 itself: 54.5 → 8.7 and 5.9 → 22.7. Amplitude orders TMLR submissions ≈ COLM > TMLR published > ICML, and NeurIPS 2025
   (written a year earlier) barely moves.
 - **The within-2026 gradient** (Lane C): the markers that make ICLR 2027 different move more the later
   a 2026 cohort's deadline. "to" falls −10% (ICLR 2026, Sep 2025) → −11% (ICML, Jan 2026) → −20%
@@ -309,7 +308,7 @@ Runners-up, in order:
 
 1. **Bobby's 45 disclosure labels.** Until `scripts/v2/score_labels.py` runs on them, every drafting /
    polish-only / stance share in Lane D and above is a machine label.
-2. **Lane E's routed fixes** (C1, C2, B1, B2, D-1). None changes a result, but the ICML appendix step
+2. **Lane E's routed fixes** (C1, C2 to Lane C; D-1 to Lane D; B1, B2 done). None changes a result, but the ICML appendix step
    stays out of the "independent evidence" column until D-1 lands.
 3. **The MuPDF observation in the directive** stays uncited unless the PDF, its hash and the extraction
    output are committed.
