@@ -36,12 +36,26 @@ marked as such. Nothing here is evidence about who or what wrote any text._
    | ICLR 2025 → 2026 (camera-ready, revised early 2026) | +478 (342–621) | 5,279 → 4,884 | 3,571 → 5,344 |
    | *controls:* ICML 2023 → 24, 2024 → 25 | +85 (−121–256), +124 (−76–284) | | |
 
+   **ICLR-overlap papers excluded** (Lane E review; `yoy_overlap_excluded.csv`,
+   `scripts/v2/appendix_overlap_exclusion.py`). A paper revised from ICLR for ICML gains about 640
+   appendix tokens by itself, so the non-ICLR steps are recomputed without every paper matched to ICLR
+   by exact title (this lane's pairs) or by text (Lane E's `e4_textpairs_*`), in every year with a match
+   file. That drops 1,027 of 6,328 ICML 2026 papers, 520 ICML 2025, 184 TMLR 2026 and 57 COLM 2026.
+   - ICML 2025 → 2026: **+818** (621–980). This is larger, not smaller, because the excluded ICML 2025
+     overlap papers had longer appendices too. Without the overlap, the ICML controls are +27 (2023 → 24)
+     and +2 (2024 → 25). Main body −253.
+   - COLM 2025 → 2026: +942 (614–1,345).
+   - TMLR 2025 → 2026: **+584** (358–835), down from +780. TMLR overlap papers carry part of the step,
+     but it stays well above zero.
+   - The match files cover ICLR 2024–2026 only. Overlap with earlier ICLR years or with other venues
+     (NeurIPS rejections) is not removed.
+
    Interpretation: V1.5's strongest alternative for the ICLR 2027 jump was the doubled submission
-   cohort. TMLR 2026 shows a step of similar relative size with an unchanged cohort size (1,506 →
-   1,507 published papers), so cohort doubling cannot be the whole explanation. These venues are not
-   independent, though: 13% of ICML 2026 titles were ICLR 2026 submissions (Gate 0). This is a
-   descriptive coincidence in time. What drives it (writing tools, reviewer expectations, venue rules)
-   is not tested here.
+   cohort. TMLR 2026 shows a step of similar relative size with an unchanged cohort size, and the step
+   survives removing ICLR-overlap papers in ICML, COLM and TMLR. So cohort doubling cannot be the whole
+   explanation, and the non-ICLR steps are not just ICLR papers moving venue. This is a descriptive
+   coincidence in time. What drives it (writing tools, reviewer expectations, venue rules) is not
+   tested here.
 5. **Within the same paper, the appendix grows and the main body does not.** For ICLR 2026 → 2027
    resubmissions (237 exact-title pairs), the main body changes by −166 tokens (CI −250 to −114) and
    the appendix by +913 (680–1,092). A year earlier, 2025 → 2026 (152 pairs), the figures are −172 and
@@ -394,6 +408,7 @@ not to certify precision.
 python3 scripts/v2/version_mix.py --revision 2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27 --out data/v2/version
 python3 scripts/v2/appendix_scan_v2.py --out data/v2/appendix          # ~2.5 h on 4 cores (145k papers)
 python3 scripts/v2/appendix_analyze_v2.py data/v2/appendix results/v2/appendices
+python3 scripts/v2/appendix_overlap_exclusion.py data/v2/appendix results/v2/appendices
 python3 scripts/v2/disclosures_extract_v2.py --out data/v2/disclosures  # ~1 h on 2 cores
 python3 scripts/v2/disclosures_analyze_v2.py
 python3 scripts/v2/lane_c_v2.py --cohort iclr-2027                      # reproduction
