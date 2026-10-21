@@ -19,7 +19,7 @@ is made from linguistic correlations._
 | 2. Replication | Lane B | done (`713b3db`) | numbers reproduce; D2 fixed, D3 adopted; B1 and B2 fixed (`50f5d19`), no result changed |
 | 3. Function words | Lane C | done (`6b80821` … `ac0d4c0`) | numbers reproduce (E5, E6); D3 adopted; C1 and C2 fixed (`607785e`), no result changed |
 | 3–4. Appendices, disclosures | Lane D | done (`90f33b5`) | 7% → 47% and ICLR 2026 statement rate reproduce with Lane E code (E9). D-1 fixed (`d0146d4`): non-ICLR appendix steps recomputed without ICLR-overlap papers, all survive; pair tables stay title-only. Category shares **provisional** until Bobby's 45 labels are scored |
-| 5. Integration | this document | final, pending only Bobby's labels | Lane E's second pass (`ee1cb5f`) found no result-changing defect in B, C or D; all five routed fixes (B1, B2, C1, C2, D-1) landed |
+| 5. Integration | this document | final; disclosure labels scored 2026-10-21 | Lane E's second pass (`ee1cb5f`) found no result-changing defect in B, C or D; all five routed fixes (B1, B2, C1, C2, D-1) landed |
 
 Every directive figure exists, each with its table and revision:
 
@@ -107,7 +107,8 @@ counters of Lanes C and E.
 - **The AI-word association with drafting disclosures does not replicate in ICLR 2026**: d_adj −0.024
   (CI −0.102 to 0.049), against −0.079 in 2027. "We propose" and "a novel" do replicate (−0.237,
   −0.111). In 2026 the body-language gradient separates **polish-only papers from all others**;
-  drafting vs polish-plus is null on every feature (Lane D). Group labels are provisional.
+  drafting vs polish-plus is null on every feature (Lane D). Group labels are machine labels checked
+  on 45 items (below).
 - **V1.5's clean-statement tier does not transfer to ICLR 2026** (87% of 2026 statements are the last
   section of the paper; D-N1). A V2 tier is reported as a separate sensitivity definition.
 - **The directive's MuPDF re-extraction of a 2027 PDF has no record in the repository.** V1's
@@ -207,8 +208,8 @@ visualization 4 is Lane C's `fig4_heatmap.png`._
   phenomenon and a minority: COLM 26.3%, TMLR 5.1%, ICML 4.8%. ICLR 2026, with no template, already
   had one in 58–62% of papers. Shared stock wording exists without any template ("take full
   responsibility for": 14% of ICLR 2026, 12% of COLM and 10% of ICML statements), and denials are
-  common where no template asks for them (38–41% of ICML and ICLR 2026 statements) (Lane D;
-  provisional rule labels).
+  common where no template asks for them (38–41% of ICML and ICLR 2026 statements; the stance rules
+  miss some denials, so these are probably undercounts) (Lane D).
 
 **Where venues differ** (the directive asked these not be averaged away):
 - ICML's proof appendices shrink (5,618 → 4,321 mean characters, 2023 → 2026) while ICLR's grow; the
@@ -307,8 +308,15 @@ Runners-up, in order:
 
 ## What remains provisional or open
 
-1. **Bobby's 45 disclosure labels.** Until `scripts/v2/score_labels.py` runs on them, every drafting /
-   polish-only / stance share in Lane D and above is a machine label.
+1. **Disclosure categories are checked, not validated.** Bobby labelled the 45-item sample and two
+   blind Claude Opus coders labelled it again (Lane D "Validation"). Classifier v2's groups agree with
+   the Opus coders on 34/40 statements (drafting precision 8/9, polish-only 16/16, κ 0.78) and with
+   Bobby on 25/40 (κ 0.48). Bobby rates himself an inexperienced annotator, and his differences are
+   systematic: he never used "use + denial" and ticked drafting for many editing statements. The two
+   Opus coders agreed on every item, which is V1.5's caveat at full strength: they are one model read
+   twice, not two independent readers. So the drafting / polish-only shares are usable for group-level
+   description; the stance rules miss denials, so the denial shares are probably undercounts. A second
+   human reader, or a reader from a different model family, would be the next check.
 2. **Overlap with earlier ICLR years** (e.g. ICLR 2025 → ICML 2026) and with other venues is not
    removed by text matching anywhere; text matches exist for same-year ICLR → ICML/TMLR/COLM only.
 3. **The MuPDF observation in the directive** stays uncited unless the PDF, its hash and the extraction

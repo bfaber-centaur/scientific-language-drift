@@ -73,3 +73,12 @@ _Shared by the V2 lanes. Each lane edits only its own labeled section._
   interpreted.
 - **D-N6. The V1.5 review file `docs/v1.5-review.md` and `results/review/blind_labels_*` are cited but
   absent from the repository.** Part A of the V2 labelling sample replaces that check.
+- **D-N7. The sentence-stance rules miss denials.** On the 45-item check (2026-10-21), the rules called 8 of
+  the 21 statements that the blind Opus coders read as "use + denial" plain "use", mostly in ICLR 2026
+  (stance agreement 7/15 there). Denial shares are lower bounds. `docs/v2-appendices-disclosures.md`,
+  "Validation".
+- **D-N8. Two blind Claude Opus coders agreed on all 45 items.** That is not two independent readers;
+  it is the V1.5 caveat (two runs of one model) at full strength, and the check counts them as one.
+- **D-N9. The single human labelling is noisy in known directions.** Bobby never chose "use + denial"
+  and ticked drafting for 19 of 40 statements against the Opus coders' 8, mostly editing statements.
+  His labels are reported, not treated as ground truth (he rates himself an inexperienced annotator).

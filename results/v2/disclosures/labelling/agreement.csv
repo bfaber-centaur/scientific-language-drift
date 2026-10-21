@@ -1,0 +1,6 @@
+set,n,classifier_group_agree,stance_rules_agree,drafting_precision,drafting_precision_ci,drafting_recall,drafting_n_true,polish_only_precision,polish_only_precision_ci,polish_only_recall,polish_only_n_true,coder1_group_agree,share_human_says_disclosure
+all statements (A-C),40,0.625,0.550,1.000,"(0.701, 1.0)",0.474,19.000,0.688,"(0.444, 0.858)",0.846,13.000,,
+A: ICLR 2027 test2,15,0.533,0.467,1.000,"(0.566, 1.0)",0.455,11.000,0.250,"(0.046, 0.699)",1.000,1.000,0.600,
+B: ICLR 2026,15,0.600,0.600,1.000,"(0.207, 1.0)",0.250,4.000,0.750,"(0.409, 0.929)",0.857,7.000,,
+C: COLM/ICML 2026,10,0.800,0.600,1.000,"(0.438, 1.0)",0.750,4.000,1.000,"(0.51, 1.0)",0.800,5.000,,
+D: in-text sentences,5,,,,,,,,,,,,1.000

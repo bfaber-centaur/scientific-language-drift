@@ -1,0 +1,40 @@
+subset,measure,pair,n,agree,kappa,x_positive,y_positive
+statements A-C,group,human vs opusA,40,0.700,0.577,,
+statements A-C,group,human vs opusB,40,0.700,0.577,,
+statements A-C,group,human vs classifier,40,0.625,0.478,,
+statements A-C,group,opusA vs opusB,40,1.000,1.000,,
+statements A-C,group,opusA vs classifier,40,0.850,0.781,,
+statements A-C,group,opusB vs classifier,40,0.850,0.781,,
+statements A-C,stance,human vs opusA,40,0.475,0.159,,
+statements A-C,stance,human vs opusB,40,0.475,0.159,,
+statements A-C,stance,human vs rules,40,0.550,0.084,,
+statements A-C,stance,opusA vs opusB,40,1.000,1.000,,
+statements A-C,stance,opusA vs rules,40,0.675,0.416,,
+statements A-C,stance,opusB vs rules,40,0.675,0.416,,
+statements A-C,use tag: polish,human vs opusA,40,0.925,0.625,36.000,35.000
+statements A-C,use tag: polish,human vs opusB,40,0.925,0.625,36.000,35.000
+statements A-C,use tag: polish,opusA vs opusB,40,1.000,1.000,35.000,35.000
+statements A-C,use tag: drafting,human vs opusA,40,0.725,0.433,19.000,8.000
+statements A-C,use tag: drafting,human vs opusB,40,0.725,0.433,19.000,8.000
+statements A-C,use tag: drafting,opusA vs opusB,40,1.000,1.000,8.000,8.000
+statements A-C,use tag: coding,human vs opusA,40,0.950,0.844,8.000,8.000
+statements A-C,use tag: coding,human vs opusB,40,0.950,0.844,8.000,8.000
+statements A-C,use tag: coding,opusA vs opusB,40,1.000,1.000,8.000,8.000
+statements A-C,use tag: literature,human vs opusA,40,0.900,0.448,3.000,5.000
+statements A-C,use tag: literature,human vs opusB,40,0.900,0.448,3.000,5.000
+statements A-C,use tag: literature,opusA vs opusB,40,1.000,1.000,5.000,5.000
+statements A-C,use tag: other,human vs opusA,40,0.825,0.517,9.000,10.000
+statements A-C,use tag: other,human vs opusB,40,0.825,0.517,9.000,10.000
+statements A-C,use tag: other,opusA vs opusB,40,1.000,1.000,10.000,10.000
+statements A-C,use tag: unclear,human vs opusA,40,0.975,0.000,0.000,1.000
+statements A-C,use tag: unclear,human vs opusB,40,0.975,0.000,0.000,1.000
+statements A-C,use tag: unclear,opusA vs opusB,40,1.000,1.000,1.000,1.000
+all 45,group,human vs opusA,45,0.667,0.529,,
+all 45,group,human vs opusB,45,0.667,0.529,,
+all 45,group,opusA vs opusB,45,1.000,1.000,,
+all 45,stance,human vs opusA,45,0.511,0.156,,
+all 45,stance,human vs opusB,45,0.511,0.156,,
+all 45,stance,opusA vs opusB,45,1.000,1.000,,
+A: ICLR 2027 test2,group,human vs V1.5 coder1,15,0.600,0.423,,
+A: ICLR 2027 test2,group,opusA vs V1.5 coder1,15,1.000,1.000,,
+A: ICLR 2027 test2,group,opusB vs V1.5 coder1,15,1.000,1.000,,

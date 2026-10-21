@@ -1,0 +1,4 @@
+reference,n,classifier_group_agree,drafting_precision,drafting_precision_ci,drafting_recall,drafting_recall_ci,drafting_n_true,polish_only_precision,polish_only_precision_ci,polish_only_recall,polish_only_recall_ci,polish_only_n_true
+consensus,40,0.850,0.889,"(0.565, 0.98)",1.000,"(0.676, 1.0)",8,1.000,"(0.806, 1.0)",0.800,"(0.584, 0.919)",20
+opus_pair,40,0.850,0.889,"(0.565, 0.98)",1.000,"(0.676, 1.0)",8,1.000,"(0.806, 1.0)",0.800,"(0.584, 0.919)",20
+human_group,40,0.625,1.000,"(0.701, 1.0)",0.474,"(0.273, 0.683)",19,0.688,"(0.444, 0.858)",0.846,"(0.578, 0.957)",13

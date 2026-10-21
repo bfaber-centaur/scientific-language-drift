@@ -66,4 +66,8 @@ _Source: `docs/v2-appendices-disclosures.md`; tables in `results/v2/appendices/`
   2027). COLM 2026 26%, ICML 2026 5%, TMLR 2026 5%.
 - **Shared wording in 2027 is mostly the template** (22% of 2027 tokens vs 0.5% in 2026); denials
   appear in 38–41% of ICML and ICLR 2026 statements with no template slot.
-- All category shares are provisional until Bobby's 45 labels are scored.
+- **Validation (2026-10-21):** on 45 items labelled by Bobby and two blind Claude Opus coders, the
+  classifier's groups agree with the Opus coders on 34/40 statements (drafting precision 0.89,
+  polish-only 1.0; the two coders agree on every item, so they are one machine reader) and with Bobby
+  on 25/40. Groups are usable for group-level description; stance (denial) shares are probably
+  undercounts. Bobby rates himself an inexperienced annotator.

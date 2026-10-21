@@ -98,8 +98,11 @@ marked as such. Nothing here is evidence about who or what wrote any text._
     as sections, but its paper checklist carries an LLM-use question, so many NeurIPS 2025 papers state
     LLM use in checklist answers ("Answer: [NA] Justification: LLMs are only used to assist writing").
     That is a further 2025 disclosure corpus, not yet extracted.
-12. **Labels are still unvalidated by a human.** A 45-item labelling sheet is with Bobby (see
-    "Validation"). Until those labels are in, every category share above is provisional.
+12. **Validation (2026-10-21; see "Validation").** On 45 items labelled by Bobby and by two blind
+    Claude Opus coders, the classifier's groups agree with the Opus coders on 34/40 statements
+    (drafting precision 0.89, polish-only 1.0) and with Bobby on 25/40; the two Opus coders agree on
+    every item, so they count as one machine reader. Group shares are usable for group-level
+    description. The stance rules miss denials, so denial shares are probably undercounts.
 
 ## Appendices
 
@@ -353,25 +356,67 @@ V1.5 pipeline, reused unchanged.
   in drafting papers include "assistant", "future", "avenues", "style" and "edits"; less frequent,
   "outperforms", "extensive", "thereby" (`lane_c_scan.csv`). Not interpreted beyond existence.
 
-### Validation (pending a human)
+### Validation (one human and two blind Claude coders, 2026-10-21)
 
-`results/v2/disclosures/labelling/sample.csv` lists 45 items (seed 20261015), labelled by Bobby on a
-private labelling page that stores answers per item:
+`results/v2/disclosures/labelling/sample.csv` lists 45 items (seed 20261015):
 - Part A: 15 ICLR 2027 statements from the held-out test2 set that already carry V1.5 Claude
-  coder-1 labels. This is the human spot check V1.5 still owed.
+  coder-1 labels.
 - Part B: 15 ICLR 2026 statements.
 - Part C: 6 COLM 2026 and 4 ICML 2026 statements.
 - Part D: 5 in-text candidate sentences.
 
-`scripts/v2/score_labels.py` computes:
-- classifier-v2 group agreement, and drafting / polish-only precision and recall with Wilson CIs;
-- coder-1 agreement on part A;
-- stance-rule agreement.
+**Readers.**
+- Bobby labelled all 45 on the labelling page. He describes himself as an inexperienced annotator, so
+  his labels are treated as one noisy coder, not as ground truth.
+- Two Claude Opus coders labelled the same 45 items blind (`scripts/v2/compare_coders.py`). Each saw
+  only the item texts and the page's own instructions, and none of the classifier labels, the rule
+  labels, Bobby's labels or each other's. One coder worked through the items in reverse order.
+- **The two Opus coders agree on every item** (stance, group and every use tag, 45/45). Their notes
+  differ in wording, so this is not one file copied, but it is the V1.5 caveat at full strength: two
+  runs of one model are not two independent readers. Read them as one careful machine reader.
 
-**Until it has run on human labels, every category share in this document (drafting, polish-only,
-stance) is provisional**, and no category-level claim should be cited as validated. One human
-labeller on 45 items gives wide intervals; the point is to detect gross failure on the new cohorts,
-not to certify precision.
+**Results** (`agreement.csv` from `score_labels.py`, `coder_agreement.csv`,
+`classifier_vs_consensus.csv`; 40 statements in parts A–C unless stated):
+
+| comparison | group agreement (κ) | stance agreement (κ) |
+|---|---|---|
+| Opus A vs Opus B | 40/40 (1.0) | 40/40 (1.0) |
+| Bobby vs Opus | 28/40 (0.58) | 19/40 (0.16) |
+| classifier v2 / stance rules vs Opus | **34/40 (0.78)** | 27/40 (0.42) |
+| classifier v2 / stance rules vs Bobby | 25/40 (0.48) | 22/40 (0.08) |
+| Opus vs V1.5 coder 1 (part A) | 15/15 | |
+| Bobby vs V1.5 coder 1 (part A) | 9/15 | |
+
+Classifier v2 against the majority of the three readers, which here always equals the Opus pair:
+- drafting precision 8/9 = 0.89 (Wilson 0.57–0.98), recall 8/8;
+- polish-only precision 16/16 = 1.0 (0.81–1.0), recall 16/20 = 0.80 (0.58–0.92);
+- the six group errors: three polish-only statements called "other use", two "unknown" statements
+  called "other use", one polish-only statement called drafting. By part: A 14/15, B (ICLR 2026)
+  11/15, C (COLM/ICML) 9/10.
+
+Where Bobby and the Opus coders differ, the differences are systematic, not random:
+- **Bobby never used "use + denial".** He marked 42 of 45 items "claims use"; the Opus coders called
+  21 of those "use + denial" ("only for grammar; not for ideas"). That accounts for most of the stance
+  gap.
+- **Bobby ticks drafting more often**: 19 of 40 statements, against 8 for the Opus coders, mostly
+  statements about editing or polishing ("refine phrasing", "improve clarity"). The page defined
+  drafting as "writing or rewriting text, condensing", and editing is a borderline case under it.
+- On the 5 in-text sentences (part D), Bobby calls all 5 disclosures, the Opus coders 4 (L30 describes
+  prompting a model in the research, not writing help). On the 3 statements Bobby marked "not a
+  disclosure", the Opus coders agree.
+
+**What this means for the shares in this document.**
+- **Drafting / polish-only / other groups (classifier v2): usable for group-level description**, as
+  in V1.5. Against a careful reader they meet V1.5's bar on point estimates (precision ≥ 0.85, recall
+  ≥ 0.80), with wide intervals at n = 40, and the errors lean toward "other use" rather than toward
+  drafting. Against Bobby's labels drafting recall is 0.47, almost entirely from his broader reading of
+  drafting. ICLR 2026 is the weakest cohort (11/15).
+- **Stance shares (sentence-stance rules): not validated.** The rules miss denials: of 21 statements the
+  Opus coders read as "use + denial", the rules called 8 "use only", most of them ICLR 2026 (part B
+  stance agreement 7/15). The denial shares in this document (41% of ICLR 2026, 38% of ICML 2026) are
+  therefore probably **undercounts**, and the "use only" shares overcounts.
+- No human reader has validated the categories to the standard a category-level claim needs. One
+  noisy human, one model run twice, and 45 items detect gross failure; they do not certify precision.
 
 ## Negative results and corrections (also in `docs/v2-negative-results.md`, Lane D)
 
