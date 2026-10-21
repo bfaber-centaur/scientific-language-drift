@@ -103,6 +103,9 @@ marked as such. Nothing here is evidence about who or what wrote any text._
     (drafting precision 0.89, polish-only 1.0) and with Bobby on 25/40; the two Opus coders agree on
     every item, so they count as one machine reader. Group shares are usable for group-level
     description. The stance rules miss denials, so denial shares are probably undercounts.
+    Opus, Sonnet and Haiku then read 300 new random statements: they agree with each other on 87–92% of
+    groups, with the classifier on 75%. The classifier over-assigns "other use" (ICML 2026 polish-only
+    15% by classifier, 45% by the models) and undercounts ICLR 2027 drafting (28% vs 37%).
 
 ## Appendices
 
@@ -417,6 +420,59 @@ Where Bobby and the Opus coders differ, the differences are systematic, not rand
   therefore probably **undercounts**, and the "use only" shares overcounts.
 - No human reader has validated the categories to the standard a category-level claim needs. One
   noisy human, one model run twice, and 45 items detect gross failure; they do not certify precision.
+
+### Model judges: Opus, Sonnet and Haiku (2026-10-21)
+
+Bobby asked for a wider judging pipeline. Same codebook, same blind setup as above (each reader sees
+only the item texts and `codebook.md`), now with three Claude models.
+
+**On the 45-item sample** (two runs of each model; `labelling/coder_agreement.csv`, 40 statements):
+- Within a model, runs agree on 38–40 of 40 groups (Opus 40, Sonnet 40, Haiku 38).
+- Across models, 38–40 of 40 groups (κ 0.92–1.0) and 36–40 stances agree.
+- Every model agrees with Bobby on 26–28 of 40 groups (κ 0.51–0.58) and 19–20 stances (κ 0.16–0.17).
+  Bobby's differences are the same against every model: no "use + denial", and drafting ticked for
+  editing statements. Model size does not move a model toward or away from his reading.
+- Classifier v2 agrees with each model on 32–34 of 40 groups.
+
+**On 300 new statements** (`scripts/v2/judge_sample.py`, seed 20261021; random clean-tier V2
+statements, not stratified, excluding the 45: ICLR 2027 100, ICLR 2026 100, COLM 2026 40, ICML 2026 40,
+TMLR 2026 20; one run per model; tables in `results/v2/disclosures/judges/`). The re-extraction
+reproduced Lane D's counts exactly (11,412 ICLR 2026 and 41,005 ICLR 2027 statements found).
+
+| pair | group agreement (κ) | stance agreement (κ) |
+|---|---|---|
+| Opus vs Haiku | 284/300 (0.92) | 273/300 (0.84) |
+| Opus vs Sonnet | 279/300 (0.90) | 256/300 (0.74) |
+| Sonnet vs Haiku | 273/300 (0.87) | 269/300 (0.81) |
+| classifier v2 / stance rules vs model majority | **225/300 (0.75)** | 238/300 (0.79) |
+
+Against the majority of the three models (one vote each), classifier v2 has drafting precision 0.80
+and recall 0.64, polish-only precision 0.92 and recall 0.68. These are lower than on the 45 items,
+which were stratified by label and carried fewer borderline statements. The errors are one-sided:
+- 26 of the 103 statements the models read as polish-only, and 18 of the 56 they read as drafting,
+  are "other use" for the classifier. It over-assigns "other use".
+- 30 of the 136 statements the models read as "use + denial" are "use only" for the stance rules.
+
+Shares by cohort (`shares_by_cohort.csv`; classifier v2 → model majority, % of clean statements):
+
+| cohort | n | polish-only | drafting | other use | any denial |
+|---|---:|---|---|---|---|
+| ICLR 2027 | 100 | 11 → 12 | 28 → **37** | 61 → 51 | 50 → 52 |
+| ICLR 2026 | 100 | 48 → **62** | 9 → 8 | 32 → 23 | 42 → 50 |
+| ICML 2026 | 40 | 15 → **45** | 2.5 → 2.5 | 72 → 32 | 42 → 45 |
+| COLM 2026 | 40 | 12 → 18 | 12 → 12 | 65 → 62 | 20 → 30 |
+| TMLR 2026 | 20 | 30 → 20 | 10 → 25 | 55 → 50 | 25 → 35 |
+
+Readings:
+- **Fact:** the three models agree with each other far more than any of them agrees with the
+  classifier or with Bobby. They are one model family reading one codebook, so this is consistency,
+  not validity; it does show the codebook can be applied reproducibly.
+- **The direction of the published contrasts survives and widens:** by model reading, ICLR 2026 is
+  even more polish-centred (62%, Wilson 52–71%) and ICLR 2027 reports drafting more often (37%,
+  28–47%). ICML 2026's polish-only share is about three times the classifier's (45%, 31–60%, n 40).
+- **Denial shares are undercounts** by the rules, by up to 8 points (ICLR 2026, COLM).
+- Category shares in the inventory table above are the classifier's. Where a share matters, quote the
+  model-majority value with its interval, or both.
 
 ## Negative results and corrections (also in `docs/v2-negative-results.md`, Lane D)
 

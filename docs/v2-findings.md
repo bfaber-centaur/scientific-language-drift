@@ -71,3 +71,7 @@ _Source: `docs/v2-appendices-disclosures.md`; tables in `results/v2/appendices/`
   polish-only 1.0; the two coders agree on every item, so they are one machine reader) and with Bobby
   on 25/40. Groups are usable for group-level description; stance (denial) shares are probably
   undercounts. Bobby rates himself an inexperienced annotator.
+- **Model judges (2026-10-21):** Opus, Sonnet and Haiku, blind, on 300 random 2026–27 statements agree
+  with each other on 87–92% of groups and with classifier v2 on 75%. The classifier over-assigns "other
+  use": by model majority ICLR 2026 is 62% polish-only (classifier 48%), ICML 2026 45% (15%), and ICLR
+  2027 37% drafting (28%). Every model agrees with Bobby on about 70% of groups.

@@ -315,8 +315,14 @@ Runners-up, in order:
    systematic: he never used "use + denial" and ticked drafting for many editing statements. The two
    Opus coders agreed on every item, which is V1.5's caveat at full strength: they are one model read
    twice, not two independent readers. So the drafting / polish-only shares are usable for group-level
-   description; the stance rules miss denials, so the denial shares are probably undercounts. A second
-   human reader, or a reader from a different model family, would be the next check.
+   description; the stance rules miss denials, so the denial shares are probably undercounts.
+   **Wider check (same day):** Opus, Sonnet and Haiku read 300 new random statements blind. They agree
+   with each other on 87–92% of groups (κ 0.87–0.92) and with the classifier on 75%. The classifier
+   over-assigns "other use", so by model reading ICLR 2026 is more polish-centred (62% vs 48%), ICML
+   2026 much more (45% vs 15%), and ICLR 2027 reports drafting more often (37% vs 28%): the 2026 vs 2027
+   contrast in question 5 widens. On the 45 items every model agrees with Bobby on about 70% of groups,
+   whatever its size. All of these readers are one model family; a second human reader, or a model from
+   another family, is still the independent check.
 2. **Overlap with earlier ICLR years** (e.g. ICLR 2025 → ICML 2026) and with other venues is not
    removed by text matching anywhere; text matches exist for same-year ICLR → ICML/TMLR/COLM only.
 3. **The MuPDF observation in the directive** stays uncited unless the PDF, its hash and the extraction

@@ -1,16 +1,21 @@
-"""V2 disclosures: Bobby's labels vs two blind Claude Opus coders vs the machine labels.
+"""V2 disclosures: compare human and model readers with each other and with the machine labels.
 
 Usage:
-    python3 scripts/v2/compare_coders.py <human export dir> <coder A labels.json> <coder B labels.json>
+    python3 scripts/v2/compare_coders.py --sample results/v2/disclosures/labelling/sample.csv \
+        --out results/v2/disclosures/labelling --human data/v2/labelling/export \
+        opusA=data/v2/labelling/blind/opusA.json opusB=... sonnetA=... haikuA=...
 
-The coders saw only the item texts (from the labelling page) and the labelling page's own
-instructions, not the classifier labels, Bobby's labels or each other's. Writes, with no text:
-  results/v2/disclosures/labelling/coder_labels.csv   item, part, cohort, each source's stance/uses/group
-  results/v2/disclosures/labelling/coder_agreement.csv  pairwise agreement and Cohen's kappa
-  results/v2/disclosures/labelling/classifier_vs_consensus.csv  classifier v2 against the 2-of-3 majority
+Each model reader saw only the item texts and the labelling page's instructions (`codebook.md`), not
+the classifier labels, the rule labels, the human labels or any other reader's. Reader names are
+<model><run>; the model is the name without its final letter. The sample file needs `item`, `cls_group`
+and `stance_v2`, and optionally `part`, `cohort`. Writes, with no text:
+  <out>/coder_labels.csv               every reader's stance, uses and group per item
+  <out>/coder_agreement.csv            pairwise agreement and Cohen's kappa (group, stance, exact use set)
+  <out>/classifier_vs_consensus.csv    classifier v2 and the stance rules against reference readers
 """
 from __future__ import annotations
 
+import argparse
 import glob
 import itertools
 import json
@@ -27,16 +32,12 @@ import pandas as pd  # noqa: E402
 from evaluate import wilson  # noqa: E402
 from score_labels import STANCE_MAP, human_group  # noqa: E402
 
-OUT = os.path.join(ROOT, "results", "v2", "disclosures", "labelling")
-USES = ["polish", "drafting", "coding", "literature", "other", "unclear"]
-
 
 def kappa(a, b):
     a, b = list(a), list(b)
     n = len(a)
     po = sum(x == y for x, y in zip(a, b)) / n
-    cats = set(a) | set(b)
-    pe = sum((a.count(c) / n) * (b.count(c) / n) for c in cats)
+    pe = sum((a.count(c) / n) * (b.count(c) / n) for c in set(a) | set(b))
     return (po - pe) / (1 - pe) if pe < 1 else 1.0
 
 
@@ -53,77 +54,86 @@ def load_coder(p):
     return {r["item"]: (r["stance"], sorted(r.get("uses") or [])) for r in json.load(open(p))}
 
 
+def majority(values):
+    for g in set(values):
+        if values.count(g) * 2 > len(values):
+            return g
+    return None
+
+
 def main():
-    src = {"human": load_human(sys.argv[1]), "opusA": load_coder(sys.argv[2]), "opusB": load_coder(sys.argv[3])}
-    s = pd.read_csv(os.path.join(OUT, "sample.csv"))
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--sample", required=True)
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--human")
+    ap.add_argument("--statements-only", action="store_true", help="drop part D (single in-text sentences) from agreement")
+    ap.add_argument("readers", nargs="+", help="name=labels.json")
+    a = ap.parse_args()
+
+    src = {}
+    if a.human:
+        src["human"] = load_human(a.human)
+    for spec in a.readers:
+        name, path = spec.split("=", 1)
+        src[name] = load_coder(path)
+    s = pd.read_csv(a.sample)
     for name, lab in src.items():
         missing = set(s.item) - set(lab)
-        assert not missing, (name, sorted(missing))
+        assert not missing, (name, sorted(missing)[:5], len(missing))
         s[f"{name}_stance"] = s.item.map(lambda i: lab[i][0])
         s[f"{name}_uses"] = s.item.map(lambda i: ";".join(lab[i][1]))
         s[f"{name}_group"] = [human_group(lab[i][0], lab[i][1]) for i in s.item]
     s["rules_stance"] = s.stance_v2.map(STANCE_MAP)
-    keep = ["item", "part", "cohort", "cls_group", "cls_labels", "rules_stance", "coder1_group"]
-    keep += [f"{n}_{k}" for n in src for k in ("stance", "uses", "group")]
-    s[keep].to_csv(os.path.join(OUT, "coder_labels.csv"), index=False)
+    models = sorted({n[:-1] for n in src if n != "human"})
+    runs = {m: [n for n in src if n != "human" and n[:-1] == m] for m in models}
+    # one vote per model (its first run), so a model read twice does not count twice
+    first = [runs[m][0] for m in models]
+    s["model_majority_group"] = [majority([r[f"{n}_group"] for n in first]) for _, r in s.iterrows()]
+    s["model_majority_stance"] = [majority([r[f"{n}_stance"] for n in first]) for _, r in s.iterrows()]
+    keep = [c for c in ("item", "part", "cohort", "cls_group", "cls_labels", "rules_stance") if c in s]
+    keep += [f"{n}_{k}" for n in src for k in ("stance", "uses", "group")] + ["model_majority_group", "model_majority_stance"]
+    os.makedirs(a.out, exist_ok=True)
+    s[keep].to_csv(os.path.join(a.out, "coder_labels.csv"), index=False)
 
-    st = s[s.part != "D"]  # statements; part D are single in-text sentences
+    sel = s[s.part != "D"] if (a.statements_only and "part" in s) else s
+    readers = list(src)
     out = []
-    for subset, sel in (("statements A-C", st), ("all 45", s)):
-        groups = {"human": sel.human_group, "opusA": sel.opusA_group, "opusB": sel.opusB_group,
-                  "classifier": sel.cls_group}
-        stances = {"human": sel.human_stance, "opusA": sel.opusA_stance, "opusB": sel.opusB_stance,
-                   "rules": sel.rules_stance}
-        for x, y in itertools.combinations(groups, 2):
-            if subset == "all 45" and "classifier" in (x, y):
-                continue
-            out.append({"subset": subset, "measure": "group", "pair": f"{x} vs {y}", "n": len(sel),
-                        "agree": (groups[x] == groups[y]).mean(), "kappa": kappa(groups[x], groups[y])})
-        for x, y in itertools.combinations(stances, 2):
-            if subset == "all 45" and "rules" in (x, y):
-                continue
-            a, b = stances[x].fillna("none"), stances[y].fillna("none")
-            out.append({"subset": subset, "measure": "stance", "pair": f"{x} vs {y}", "n": len(sel),
-                        "agree": (a == b).mean(), "kappa": kappa(a, b)})
-        if subset == "statements A-C":
-            for u in USES:
-                tags = {n: sel[f"{n}_uses"].fillna("").str.split(";").map(lambda t, u=u: u in t) for n in src}
-                for x, y in itertools.combinations(tags, 2):
-                    out.append({"subset": subset, "measure": f"use tag: {u}", "pair": f"{x} vs {y}", "n": len(sel),
-                                "agree": (tags[x] == tags[y]).mean(), "kappa": kappa(tags[x], tags[y]),
-                                "x_positive": int(tags[x].sum()), "y_positive": int(tags[y].sum())})
-    a = s[s.part == "A"]
-    for n in src:
-        out.append({"subset": "A: ICLR 2027 test2", "measure": "group", "pair": f"{n} vs V1.5 coder1", "n": len(a),
-                    "agree": (a[f"{n}_group"] == a.coder1_group).mean(), "kappa": kappa(a[f"{n}_group"], a.coder1_group)})
-    pd.DataFrame(out).to_csv(os.path.join(OUT, "coder_agreement.csv"), index=False, float_format="%.3f")
+    for x, y in itertools.combinations(readers + ["classifier"], 2):
+        gx = sel.cls_group if x == "classifier" else sel[f"{x}_group"]
+        gy = sel.cls_group if y == "classifier" else sel[f"{y}_group"]
+        r = {"pair": f"{x} vs {y}", "n": len(sel), "group_agree": (gx == gy).mean(), "group_kappa": kappa(gx, gy)}
+        sx = sel.rules_stance if x == "classifier" else sel[f"{x}_stance"]
+        sy = sel.rules_stance if y == "classifier" else sel[f"{y}_stance"]
+        sx, sy = sx.fillna("none"), sy.fillna("none")
+        r.update(stance_agree=(sx == sy).mean(), stance_kappa=kappa(sx, sy))
+        if "classifier" not in (x, y):
+            r["uses_exact"] = (sel[f"{x}_uses"].fillna("") == sel[f"{y}_uses"].fillna("")).mean()
+        r["kind"] = ("same model" if x[:-1] == y[:-1] and "human" not in (x, y) and "classifier" not in (x, y)
+                     else "machine labels" if "classifier" in (x, y) else "human" if "human" in (x, y) else "across models")
+        out.append(r)
+    pd.DataFrame(out).to_csv(os.path.join(a.out, "coder_agreement.csv"), index=False, float_format="%.3f")
 
-    # 2-of-3 majority of the three readers (human, opusA, opusB); ties left out.
-    def maj(r):
-        v = [r.human_group, r.opusA_group, r.opusB_group]
-        for g in set(v):
-            if v.count(g) >= 2:
-                return g
-        return None
-    st = st.assign(consensus=st.apply(maj, axis=1), opus_pair=[a if a == b else None for a, b in zip(st.opusA_group, st.opusB_group)])
+    refs = ["model_majority_group"] + [f"{n}_group" for n in readers]
     res = []
-    for ref in ("consensus", "opus_pair", "human_group"):
-        sel = st[st[ref].notna()]
-        r = {"reference": ref, "n": len(sel), "classifier_group_agree": (sel.cls_group == sel[ref]).mean()}
+    for ref in refs:
+        t = sel[sel[ref].notna()]
+        r = {"reference": ref.removesuffix("_group"), "n": len(t), "classifier_group_agree": (t.cls_group == t[ref]).mean()}
+        rs = ref.replace("_group", "_stance")
+        r["rules_stance_agree"] = (t.rules_stance == t[rs]).mean()
         for g in ("drafting", "polish_only"):
-            tp = int(((sel.cls_group == g) & (sel[ref] == g)).sum())
-            npred, ntrue = int((sel.cls_group == g).sum()), int((sel[ref] == g).sum())
+            tp = int(((t.cls_group == g) & (t[ref] == g)).sum())
+            npred, ntrue = int((t.cls_group == g).sum()), int((t[ref] == g).sum())
             r[f"{g}_precision"] = tp / npred if npred else None
             r[f"{g}_precision_ci"] = wilson(tp, npred) if npred else None
             r[f"{g}_recall"] = tp / ntrue if ntrue else None
             r[f"{g}_recall_ci"] = wilson(tp, ntrue) if ntrue else None
             r[f"{g}_n_true"] = ntrue
         res.append(r)
-    pd.DataFrame(res).to_csv(os.path.join(OUT, "classifier_vs_consensus.csv"), index=False, float_format="%.3f")
-    with pd.option_context("display.width", 200):
-        print(pd.DataFrame(out).query("measure in ['group','stance']").to_string())
-        print(pd.DataFrame(res).to_string())
-        print(pd.crosstab(st.cls_group, st.consensus.fillna("tie")))
+    pd.DataFrame(res).to_csv(os.path.join(a.out, "classifier_vs_consensus.csv"), index=False, float_format="%.3f")
+    with pd.option_context("display.width", 220, "display.max_columns", 30):
+        print(pd.DataFrame(out).to_string())
+        print(pd.DataFrame(res)[["reference", "n", "classifier_group_agree", "rules_stance_agree", "drafting_precision",
+                                 "drafting_recall", "polish_only_precision", "polish_only_recall"]].to_string())
 
 
 if __name__ == "__main__":

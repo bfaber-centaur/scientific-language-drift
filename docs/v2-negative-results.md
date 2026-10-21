@@ -82,3 +82,8 @@ _Shared by the V2 lanes. Each lane edits only its own labeled section._
 - **D-N9. The single human labelling is noisy in known directions.** Bobby never chose "use + denial"
   and ticked drafting for 19 of 40 statements against the Opus coders' 8, mostly editing statements.
   His labels are reported, not treated as ground truth (he rates himself an inexperienced annotator).
+- **D-N10. Classifier v2 over-assigns "other use" on random statements.** Against the majority of
+  blind Opus, Sonnet and Haiku readers on 300 random 2026–27 statements it agrees on 75% of groups
+  (85% on the stratified 45): 26 of 103 polish-only and 18 of 56 drafting statements become "other
+  use". ICML 2026's polish-only share is 15% by classifier and 45% by the models.
+  `results/v2/disclosures/judges/`.

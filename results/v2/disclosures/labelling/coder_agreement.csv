@@ -1,40 +1,29 @@
-subset,measure,pair,n,agree,kappa,x_positive,y_positive
-statements A-C,group,human vs opusA,40,0.700,0.577,,
-statements A-C,group,human vs opusB,40,0.700,0.577,,
-statements A-C,group,human vs classifier,40,0.625,0.478,,
-statements A-C,group,opusA vs opusB,40,1.000,1.000,,
-statements A-C,group,opusA vs classifier,40,0.850,0.781,,
-statements A-C,group,opusB vs classifier,40,0.850,0.781,,
-statements A-C,stance,human vs opusA,40,0.475,0.159,,
-statements A-C,stance,human vs opusB,40,0.475,0.159,,
-statements A-C,stance,human vs rules,40,0.550,0.084,,
-statements A-C,stance,opusA vs opusB,40,1.000,1.000,,
-statements A-C,stance,opusA vs rules,40,0.675,0.416,,
-statements A-C,stance,opusB vs rules,40,0.675,0.416,,
-statements A-C,use tag: polish,human vs opusA,40,0.925,0.625,36.000,35.000
-statements A-C,use tag: polish,human vs opusB,40,0.925,0.625,36.000,35.000
-statements A-C,use tag: polish,opusA vs opusB,40,1.000,1.000,35.000,35.000
-statements A-C,use tag: drafting,human vs opusA,40,0.725,0.433,19.000,8.000
-statements A-C,use tag: drafting,human vs opusB,40,0.725,0.433,19.000,8.000
-statements A-C,use tag: drafting,opusA vs opusB,40,1.000,1.000,8.000,8.000
-statements A-C,use tag: coding,human vs opusA,40,0.950,0.844,8.000,8.000
-statements A-C,use tag: coding,human vs opusB,40,0.950,0.844,8.000,8.000
-statements A-C,use tag: coding,opusA vs opusB,40,1.000,1.000,8.000,8.000
-statements A-C,use tag: literature,human vs opusA,40,0.900,0.448,3.000,5.000
-statements A-C,use tag: literature,human vs opusB,40,0.900,0.448,3.000,5.000
-statements A-C,use tag: literature,opusA vs opusB,40,1.000,1.000,5.000,5.000
-statements A-C,use tag: other,human vs opusA,40,0.825,0.517,9.000,10.000
-statements A-C,use tag: other,human vs opusB,40,0.825,0.517,9.000,10.000
-statements A-C,use tag: other,opusA vs opusB,40,1.000,1.000,10.000,10.000
-statements A-C,use tag: unclear,human vs opusA,40,0.975,0.000,0.000,1.000
-statements A-C,use tag: unclear,human vs opusB,40,0.975,0.000,0.000,1.000
-statements A-C,use tag: unclear,opusA vs opusB,40,1.000,1.000,1.000,1.000
-all 45,group,human vs opusA,45,0.667,0.529,,
-all 45,group,human vs opusB,45,0.667,0.529,,
-all 45,group,opusA vs opusB,45,1.000,1.000,,
-all 45,stance,human vs opusA,45,0.511,0.156,,
-all 45,stance,human vs opusB,45,0.511,0.156,,
-all 45,stance,opusA vs opusB,45,1.000,1.000,,
-A: ICLR 2027 test2,group,human vs V1.5 coder1,15,0.600,0.423,,
-A: ICLR 2027 test2,group,opusA vs V1.5 coder1,15,1.000,1.000,,
-A: ICLR 2027 test2,group,opusB vs V1.5 coder1,15,1.000,1.000,,
+pair,n,group_agree,group_kappa,stance_agree,stance_kappa,uses_exact,kind
+human vs opusA,40,0.700,0.577,0.475,0.159,0.500,human
+human vs opusB,40,0.700,0.577,0.475,0.159,0.500,human
+human vs sonnetA,40,0.650,0.506,0.500,0.168,0.475,human
+human vs sonnetB,40,0.650,0.506,0.475,0.159,0.475,human
+human vs haikuA,40,0.700,0.574,0.475,0.159,0.500,human
+human vs haikuB,40,0.700,0.577,0.475,0.159,0.525,human
+human vs classifier,40,0.625,0.478,0.550,0.084,,machine labels
+opusA vs opusB,40,1.000,1.000,1.000,1.000,1.000,same model
+opusA vs sonnetA,40,0.950,0.922,0.975,0.956,0.875,across models
+opusA vs sonnetB,40,0.950,0.922,0.950,0.911,0.900,across models
+opusA vs haikuA,40,0.950,0.923,1.000,1.000,0.900,across models
+opusA vs haikuB,40,1.000,1.000,0.950,0.911,0.975,across models
+opusA vs classifier,40,0.850,0.781,0.675,0.416,,machine labels
+opusB vs sonnetA,40,0.950,0.922,0.975,0.956,0.875,across models
+opusB vs sonnetB,40,0.950,0.922,0.950,0.911,0.900,across models
+opusB vs haikuA,40,0.950,0.923,1.000,1.000,0.900,across models
+opusB vs haikuB,40,1.000,1.000,0.950,0.911,0.975,across models
+opusB vs classifier,40,0.850,0.781,0.675,0.416,,machine labels
+sonnetA vs sonnetB,40,1.000,1.000,0.975,0.956,0.925,same model
+sonnetA vs haikuA,40,0.950,0.921,0.975,0.956,0.825,across models
+sonnetA vs haikuB,40,0.950,0.922,0.925,0.867,0.850,across models
+sonnetA vs classifier,40,0.800,0.705,0.650,0.368,,machine labels
+sonnetB vs haikuA,40,0.950,0.921,0.950,0.911,0.900,across models
+sonnetB vs haikuB,40,0.950,0.922,0.900,0.821,0.875,across models
+sonnetB vs classifier,40,0.800,0.705,0.625,0.327,,machine labels
+haikuA vs haikuB,40,0.950,0.923,0.950,0.911,0.925,same model
+haikuA vs classifier,40,0.800,0.704,0.675,0.416,,machine labels
+haikuB vs classifier,40,0.850,0.781,0.675,0.416,,machine labels
