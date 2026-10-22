@@ -206,3 +206,9 @@ adds one figure (`results/v2/integration/fig4c_marker_heatmap.png`, `scripts/v2/
 from Lane B's `venue_metrics.csv`). Lane E second pass (ee1cb5f) folded in. All routed review fixes landed. Open:
 Bobby's 45 disclosure labels (category shares are provisional until scored). Recommended next experiment:
 a monthly arXiv-abstract series 2023–2026, ML and non-ML categories, with Lane C's counter.
+
+## V3 (2026-10-22, thread "V3 new data and exploration")
+
+V3 pin `b9bfffba` (+165 records; `docs/v3-corpus-inventory.md`). Team size against ICLR review outcomes and
+a corpus-linguistics style pass: `docs/v3-exploration.md`, tables in `results/v3/`. Per-paper review
+metadata (third-party, names) lives only in `data/v3/` and is rebuilt by `scripts/v3/review_meta.py`.

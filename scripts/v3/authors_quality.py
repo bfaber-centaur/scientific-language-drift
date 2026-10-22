@@ -15,7 +15,7 @@ Specifications, each fitted per year:
 Robust (HC1) standard errors; clustered by the FE author for the FE specs.
 
 Writes results/v3/authors/{bins.csv, slopes.csv, pooled_trend.csv, relative_size.csv, name_collision_check.csv,
-citations_within_decision.csv,
+citations_within_decision.csv, decision_given_rating.csv,
 fig_authors_quality.png}.
 """
 from __future__ import annotations
@@ -140,6 +140,19 @@ def main():
                 nc.append({"year": y, "outcome": outcome, "key": key, "controls_slope": c[0], "controls_se": c[1],
                            "last_fe_slope": f[0], "last_fe_se": f[1], "last_fe_n": f[2]})
     pd.DataFrame(nc).to_csv(os.path.join(OUT, "name_collision_check.csv"), index=False)
+
+    # Decision given ratings: among decided papers, does team size predict acceptance beyond the
+    # reviewers' scores (flexible spline in the mean rating)? ICLR 2026 ratings are pre-rebuttal: ICLR
+    # reset all scores and reassigned area chairs after the 2025-11-27 OpenReview leak.
+    dg = []
+    for y in sorted(dec.year.unique()):
+        d = dec[dec.year == y].dropna(subset=["rating_mean"])
+        m = smf.ols("accepted ~ la + bs(rating_mean, df=5)", d).fit(cov_type="HC1")
+        m2 = smf.ols("accepted ~ la + lmax + bs(rating_mean, df=5)", d.dropna(subset=["lmax"])).fit(cov_type="HC1")
+        dg.append({"year": y, "pp_per_doubling": 100 * m.params["la"], "se_pp": 100 * m.bse["la"],
+                   "pp_per_doubling_with_lmax": 100 * m2.params["la"], "se_pp_with_lmax": 100 * m2.bse["la"],
+                   "n": int(m.nobs)})
+    pd.DataFrame(dg).to_csv(os.path.join(OUT, "decision_given_rating.csv"), index=False)
 
     # Citations within decision group: does team size predict citations among papers with the same
     # outcome (so not via acceptance)? Percentile recomputed within year x decision.
