@@ -1,0 +1,374 @@
+== 2019 llm: 23 of 1579
+   Language Model Pre-training for Hierarchical Document Representations
+   Real-time Neural-based Input Method
+   textTOvec: DEEP CONTEXTUALIZED NEURAL AUTOREGRESSIVE TOPIC MODELS OF LANGUAGE WITH DISTRIBUTED COMPOSITIONAL PRIOR
+   Adaptive Pruning of Neural Language Models for Mobile Devices
+   Unsupervised Speech Recognition via Segmental Empirical Output Distribution Matching
+   Countering Language Drift via Grounding
+== 2019 reasoning: 39 of 1579
+   Analysing Mathematical Reasoning Abilities of Neural Models
+   Guiding Physical Intuition with Neural Stethoscopes
+   Probabilistic Neural-Symbolic Models for Interpretable Visual Question Answering
+   Visual Reasoning by Progressive Module Networks
+   Relational Forward Models for Multi-Agent Learning
+   Scalable Neural Theorem Proving on Knowledge Bases and Natural Language
+== 2019 agents: 2 of 1579
+   Inducing Cooperation via Learning to reshape rewards in semi-cooperative multi-agent reinforcement learning
+   Relational Forward Models for Multi-Agent Learning
+== 2019 multimodal: 42 of 1579
+   Variational Autoencoders for Text Modeling without Weakening the Decoder
+   A Multi-modal one-class generative adversarial network for anomaly detection in manufacturing
+   Multi-Modal Generative Adversarial Networks for Diverse Datasets
+   Towards Metamerism via Foveated Style Transfer
+   Probabilistic Neural-Symbolic Models for Interpretable Visual Question Answering
+   Probabilistic Planning with Sequential Monte Carlo methods
+== 2019 generative: 227 of 1579
+   MisGAN: Learning from Incomplete Data with Generative Adversarial Networks
+   Classifier-agnostic saliency map extraction
+   Model Compression with Generative Adversarial Networks
+   Multi-turn Dialogue Response Generation in an Adversarial Learning Framework
+   Task-GAN for Improved GAN based Image Restoration
+   Augmented Cyclic Adversarial Learning for Low Resource Domain Adaptation
+== 2019 rl: 267 of 1579
+   Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based Control
+   Curiosity-Driven Experience Prioritization via Density Estimation
+   Unsupervised Meta-Learning for Reinforcement Learning
+   DEEP ADVERSARIAL FORWARD MODEL
+   NADPEx: An on-policy temporally consistent exploration method for deep reinforcement learning
+   The Body is not a Given: Joint Agent Policy Learning and Morphology Evolution
+== 2019 alignment_safety: 41 of 1579
+   Overfitting Detection of Deep Neural Networks without a Hold Out Set
+   A comprehensive, application-oriented study of catastrophic forgetting in DNNs
+   NADPEx: An on-policy temporally consistent exploration method for deep reinforcement learning
+   Manifold Alignment via Feature Correspondence
+   Domain Adaptation for Structured Output via Disentangled Patch Representations
+   Visualizing and Discovering Behavioural Weaknesses in Deep Reinforcement Learning
+== 2019 interpretability: 116 of 1579
+   Hierarchical interpretations for neural network predictions
+   Adaptive Neural Trees
+   Explaining Neural Networks Semantically and Quantitatively
+   DON’T JUDGE A BOOK BY ITS COVER - ON THE DYNAMICS OF RECURRENT NEURAL NETWORKS
+   INVASE: Instance-wise Variable Selection using Neural Networks
+   Variation Network: Learning High-level Attributes for Controlled Input Manipulation
+== 2019 graph: 63 of 1579
+   Predict then Propagate: Graph Neural Networks meet Personalized PageRank
+   Graph Learning Network: A Structure Learning Algorithm
+   Graph Neural Networks with Generated Parameters for Relation Extraction
+   A Generative Model For Electron Paths
+   DyRep: Learning Representations over Dynamic Graphs
+   Neural Graph Evolution: Towards Efficient Automatic Robot Design
+== 2019 federated_privacy: 11 of 1579
+   Expanding the Reach of Federated Learning by Reducing Client Resource Requirements
+   Differentially Private Federated Learning: A Client Level Perspective
+   Sparse Binary Compression: Towards Distributed Deep Learning with minimal Communication
+   Efficient Federated Learning via Variational Dropout
+   A PRIVACY-PRESERVING IMAGE CLASSIFICATION FRAMEWORK WITH A LEARNABLE OBFUSCATOR
+   Analyzing Federated Learning through an Adversarial Lens
+== 2019 robustness: 221 of 1579
+   Detecting Adversarial Examples Via Neural Fingerprinting
+   A Variational Dirichlet Framework for Out-of-Distribution Detection
+   Explainable Adversarial Learning: Implicit Generative Modeling of Random Noise during Training for Adversarial Robustness
+   Rigorous Agent Evaluation: An Adversarial Approach to Uncover Catastrophic Failures
+   Rotation Equivariant Networks via Conic Convolution and the DFT
+   A Closer Look at Few-shot Classification
+== 2019 theory_optimization: 250 of 1579
+   Surprising Negative Results for Generative Adversarial Tree Search
+   Rethinking learning rate schedules for stochastic optimization
+   Efficient Dictionary Learning with Gradient Descent
+   A unified theory of adaptive stochastic gradient descent as Bayesian filtering
+   A Convergent Variant of the Boltzmann Softmax Operator in Reinforcement Learning
+   Sequenced-Replacement Sampling for Deep Learning
+== 2019 vision_3d_seg: 92 of 1579
+   Pix2Scene: Learning Implicit 3D Representations from Images
+   On the Computational Inefficiency of Large Batch Sizes for Stochastic Gradient Descent
+   Slimmable Neural Networks
+   Deep Perm-Set Net: Learn to predict sets with unknown permutation and cardinality using deep neural networks
+   Uncovering Surprising Behaviors in Reinforcement Learning via Worst-case Analysis
+   Unsupervised Video-to-Video Translation
+== 2019 video: 75 of 1579
+   Hierarchical Visuomotor Control of Humanoids
+   Reduced-Gate Convolutional LSTM Design Using Predictive Coding for Next-Frame Video Prediction
+   Cutting Down Training Memory by Re-fowarding
+   Interactive Agent Modeling by Learning to Probe
+   Learning to control self-assembling morphologies: a study of generalization via modularity
+   Supervised Policy Update for Deep Reinforcement Learning
+== 2019 speech_audio: 50 of 1579
+   Augmented Cyclic Adversarial Learning for Low Resource Domain Adaptation
+   Learning to Refer to 3D Objects with Natural Language
+   Cosine similarity-based Adversarial process
+   Unsupervised Expectation Learning for Multisensory Binding
+   GANSynth: Adversarial Neural Audio Synthesis
+   A Proposed Hierarchy of Deep Learning Tasks
+== 2019 time_series: 30 of 1579
+   Coupled Recurrent Models for Polyphonic Music Composition
+   HANDLING CONCEPT DRIFT IN WIFI-BASED INDOOR LOCALIZATION USING REPRESENTATION LEARNING
+   Deep Recurrent Gaussian Process with Variational Sparse Spectrum Approximation
+   A fully automated periodicity detection in time series
+   Adversarial Domain Adaptation for Stable Brain-Machine Interfaces
+   Interpolation-Prediction Networks for Irregularly Sampled Time Series
+== 2019 science: 39 of 1579
+   A Generative Model For Electron Paths
+   End-to-end learning of pharmacological assays from high-resolution microscopy images
+   Using Deep Siamese Neural Networks to Speed up Natural Products Research
+   Pyramid Recurrent Neural Networks for Multi-Scale Change-Point Detection
+   Learning protein sequence embeddings using information from structure
+   RETHINKING SELF-DRIVING : MULTI -TASK KNOWLEDGE FOR BETTER GENERALIZATION AND ACCIDENT EXPLANATION ABILITY
+== 2019 medical: 24 of 1579
+   Feature Transformers: A Unified Representation Learning Framework for Lifelong Learning
+   Towards the Latent Transcriptome
+   EDDI: Efficient Dynamic Discovery of High-Value Information with Partial VAE
+   Pearl: Prototype lEArning via Rule Lists
+   Auto-Encoding Knockoff Generator for FDR Controlled Variable Selection
+   Graph Spectral Regularization For Neural Network Interpretability
+== 2019 robotics_driving: 73 of 1579
+   Learning to control self-assembling morphologies: a study of generalization via modularity
+   Deep Reinforcement Learning of Universal Policies with Diverse Environment Summaries
+   PPO-CMA: Proximal Policy Optimization with Covariance Matrix Adaptation
+   Supervised Policy Update for Deep Reinforcement Learning
+   Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids
+   Stochastic Adversarial Video Prediction
+== 2019 efficiency: 93 of 1579
+   KNOWLEDGE DISTILL VIA LEARNING NEURON MANIFOLD
+   Probabilistic Binary Neural Networks
+   Spatial-Winograd Pruning Enabling Sparse Winograd Convolution
+   Adaptive Pruning of Neural Language Models for Mobile Devices
+   Analysis of Quantized Models
+   Globally Soft Filter Pruning For Efficient Convolutional Neural Networks
+== 2019 self_supervised: 109 of 1579
+   Attentive Task-Agnostic Meta-Learning for Few-Shot Text Classification
+   SEGEN: SAMPLE-ENSEMBLE GENETIC EVOLUTIONARY NETWORK MODEL
+   Physiological Signal Embeddings (PHASE) via Interpretable Stacked Models
+   Purchase as Reward : Session-based Recommendation by Imagination Reconstruction
+   D-GAN: Divergent generative adversarial network for positive unlabeled learning and counter-examples generation
+   BEHAVIOR MODULE IN NEURAL NETWORKS
+== 2019 continual_meta_fewshot: 89 of 1579
+   Learning a Meta-Solver for Syntax-Guided Program Synthesis
+   Attentive Task-Agnostic Meta-Learning for Few-Shot Text Classification
+   LEARNING TO PROPAGATE LABELS: TRANSDUCTIVE PROPAGATION NETWORK FOR FEW-SHOT LEARNING
+   Meta-Learning Neural Bloom Filters
+   Projective Subspace Networks For Few-Shot Learning
+   Meta-Learning to Guide Segmentation
+== 2019 retrieval_recsys: 17 of 1579
+   Physiological Signal Embeddings (PHASE) via Interpretable Stacked Models
+   Beyond Greedy Ranking: Slate Optimization via List-CVAE
+   Learning Hash Codes via Hamming Distance Targets
+   textTOvec: DEEP CONTEXTUALIZED NEURAL AUTOREGRESSIVE TOPIC MODELS OF LANGUAGE WITH DISTRIBUTED COMPOSITIONAL PRIOR
+   Neural Model-Based Reinforcement Learning for Recommendation
+   Dissecting an Adversarial framework for Information Retrieval
+== 2019 classic_nlp: 101 of 1579
+   Unsupervised Document Representation using Partition Word-Vectors Averaging
+   Understanding and Improving Sequence-Labeling NER with Self-Attentive LSTMs
+   Area Attention
+   Low-Rank Matrix Factorization of LSTM as Effective Model Compression
+   Zero-shot Dual Machine Translation
+   Pay Less Attention with Lightweight and Dynamic Convolutions
+== 2019 causal: 20 of 1579
+   Causal importance of orientation selectivity for generalization in image recognition
+   Teaching to Teach by Structured Dark Knowledge
+   Learning Information Propagation in the Dynamical Systems via Information Bottleneck Hierarchy
+   GenEval: A Benchmark Suite for Evaluating Generative Models
+   Deconfounding Reinforcement Learning in Observational Settings
+   Woulda, Coulda, Shoulda: Counterfactually-Guided Policy Search
+== 2019 fairness: 13 of 1579
+   Metric-Optimized Example Weights
+   Identifying Bias in AI using Simulation
+   DeepOBS: A Deep Learning Optimizer Benchmark Suite
+   A Closer Look at Few-shot Classification
+   Isolating effects of age with fair representation learning when assessing dementia
+   DiffraNet: Automatic Classification of Serial Crystallography Diffraction Patterns
+== 2019 benchmark_dataset: 180 of 1579
+   Accumulation Bit-Width Scaling For Ultra-Low Precision Training Of Deep Networks
+   Siamese Capsule Networks
+   Heated-Up Softmax Embedding
+   Learning with Little Data: Evaluation of Deep Learning Algorithms
+   Wizard of Wikipedia: Knowledge-Powered Conversational Agents
+   Adaptive Posterior Learning: few-shot learning with a surprise-based memory module
+== 2026 llm: 9689 of 19814
+   Deep Progressive Training: scaling up depth capacity of zero-layer model
+   Are Vision Language Models Blind Thinkers on Zero-Shot Multimodal Planning Tasks?
+   Disentangling Knowledge Representations for Large Language Model Editing
+   MemoPhishAgent: Memory-Augmented Multi-Modal LLM Agent for Phishing URL Detection
+   PIPA: An Agent for Protein Interaction Identification and Perturbation Analysis
+   Goedel-Prover-V2: Scaling Formal Theorem Proving with Scaffolded Data Synthesis and Self-Correction
+== 2026 reasoning: 4309 of 19814
+   CoLD: Counterfactually-Guided Length Debiasing for Process Reward Models in Mathematical Reasoning
+   Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining Levels
+   Micro-Macro Retrieval: Reducing Long-Form Hallucination in Large Language Models
+   DeepHA: Scaling Action Chains Elicits Deep Hierarchical Agents
+   AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?
+   Is Random Attention Sufficient for Sequence Modeling?
+== 2026 agents: 1227 of 19814
+   Agentic Confidence Calibration
+   Beyond Score: A Multi-Agent System to Discover Capability and Behavioral Weaknesses in LLMs
+   Connecting the Dots: A Chain-of-Collaboration Prompting Framework for LLM Agents
+   TalkToAgent: A Human-centric Explanation of Reinforcement Learning Agents with Large Language Models
+   RExBench: Can coding agents autonomously implement AI research extensions?
+   Court Simulation with Multifaceted Agent Judgment for LLM Jailbreak Evaluation
+== 2026 multimodal: 3632 of 19814
+   CoT Referring: Improving Localization with Grounded Reasoning in Referring Expression Tasks
+   LLM2Fx-Tools: Tool Calling for Music Post-Production
+   FRIEDA: Benchmarking Multi-Step Cartographic Reasoning in Vision-Language Models
+   Daily-Omni: Towards Audio-Visual Reasoning with Temporal Alignment across Modalities
+   MobileGuard: Safeguarding Mobile Task Automation
+   CircuitSense: A Hierarchical Circuit System Benchmark Bridging Visual Comprehension and Symbolic Reasoning in Engineering Design Process
+== 2026 generative: 2098 of 19814
+   Balancing Perception and Distortion in Super Resolution via Spatial–Semantic Guidance
+   When Scores Learn Geometry: Rate Separations under the Manifold Hypothesis
+   IgFlow-LM: De Novo Antibody Design via Joint Flow Matching on SE(3) and Protein Language Models Probability Flows
+   Free Lunch for Stabilizing Rectified Flow Inversion
+   A Noise is Worth Diffusion Guidance
+   Effective Test-Time Scaling of Discrete Diffusion through Iterative Refinement
+== 2026 rl: 3112 of 19814
+   Efficient Thinking via Meta Chain-of-Thought Evaluation
+   GNPA-DIL: Unveiling the Vulnerability Genome Through Semantic Graph Distillation and Invariant Neural Reasoning
+   SPARK: Stepwise Process-Aware Rewards for Reference-Free Reinforcement Learning
+   EVO-RAG: Evolving Retrieval-Augmented Agents for Efficient Multi-Hop Query Optimization
+   MedVR: Annotation-Free Medical Visual Reasoning via Agentic Reinforcement Learning
+   Not-a-Bandit: Provably No-Regret Drafter Selection in Speculative Decoding for LLMs
+== 2026 alignment_safety: 3777 of 19814
+   SafeFlowMatcher: Safe and Fast Planning using Flow Matching with Control Barrier Functions
+   SCVO: Addressing Sparse But Critical Variable Overwhelm In VLMs For Advertising Image Preference Prediction Across Multi-Country Markets
+   Beyond Linear Probes: Dynamic Safety Monitoring for Language Models
+   Know Thyself? On the Incapability and Implications of AI Self-Recognition
+   Fake it till You Make it: Reward Modeling as Discriminative Prediction
+   High-Order Matching for One-Step Shortcut Diffusion Models
+== 2026 interpretability: 2344 of 19814
+   NeuMa, Born to Work
+   ReCLLaMA: A Reasoning-Centered LLM Agent for Medical Diagnosis
+   ExPLAIND: Unifying Model, Data, and Training Attribution to Study Model Behavior
+   Revisiting Large Language Model Pruning using Neuron Semantic Attribution
+   Unlocking Out-of-Distribution Generalization in Transformers via Latent Space Reasoning
+   Probing Confidence Regions for Early Exits in Chain-of-Thought
+== 2026 graph: 906 of 19814
+   Synchronous Emotional Dynamics in Human-AI Collaborative Networks: A Temporal Graph Neural Network Approach
+   Language Embedding Meets Dynamic Graph: A New Exploration for Neural Architecture Representation Learning
+   HNMP-EHR: Ontology-aligned Representation Learning on Electronic Health Records for Concurrent Prediction
+   Spatial-Temporal-Decoupled Meta Learning for Dynamic Node Attribute Forecasting
+   Cluster Attention for Graph Machine Learning
+   SUBRead: Clustering Sub-Graphs for Graph-Level Readout
+== 2026 federated_privacy: 700 of 19814
+   Local Distribution-Conditioned Image Synthesis for One-Shot Federated Learning
+   Cooperative TD Learning in Heterogeneous Environments via Joint Linear Approximation
+   Sharpness-Aware Machine Unlearning
+   FedDTW: Federated Digital Twin Weighting for Mitigating Client Heterogeneity and Unreliable Connectivity
+   Mitigating Data Heterogeneity Effect in Client-Reshuffling-Based Federated Learning
+   When Tables Leak: Attacking Digit Memorization in LLM-Based Tabular Data Generation
+== 2026 robustness: 3131 of 19814
+   USE: Uncertainty Structure Estimation for Robust Semi-Supervised Learning
+   Log-Normal Multiplicative Dynamics for Stable Low-Precision Deep Learning
+   DRIK: Distribution-Robust Inductive Kriging without Information Leakage
+   Towards Understanding the Transferability of Adversarial Suffixes in Large Language Models
+   CARL: Camera-Agnostic Representation Learning for Spectral Image Analysis
+   RedSage: A Cybersecurity Generalist LLM
+== 2026 theory_optimization: 1994 of 19814
+   Geometry of Nash Mirror Dynamics: Adaptive $\beta$-Control for Stable and Bias-Robust Self-Improving LLM Agents
+   Contrastive Negative Preference Optimization for Machine Unlearning in LLMs
+   Attention Sinks and Compression Valleys in LLMs are Two Sides of the Same Coin
+   Stealthy World Model Manipulation via Data Poisoning
+   Atlas Matters: Edge Quadratics for Consistent Brain Connectivity Prediction
+   Toward Undetectable AI Text: AIGT detection evasion with representation editing
+== 2026 vision_3d_seg: 1674 of 19814
+   DockedAC: A Dataset with Comprehensive 3D Protein-ligand Complexes for Activity Cliff Analysis
+   Learning More by Seeing Less: Structure-First Learning for Efficient, Transferable, and Human-Aligned Vision
+   UrbanVerse: Scaling Urban Simulation by Watching City-Tour Videos
+   Breaking Down and Building Up: Mixture of Skill-Based Vision-and-Language Navigation Agents
+   Diff-StyGS: 3D Gaussian Splatting Stylization via Tuning-Free Multi-View Sparse Diffusion
+   Joint Learning Between Reference Image and Text Prompt for Fashion Image Editing
+== 2026 video: 1337 of 19814
+   Answer-Consistent Chain-of-thought Reinforcement Learning For Multi-modal Large Langauge Models
+   DC-VideoGen: Efficient Video Generation with Deep Compression Video Autoencoder
+   video-SALMONN S: Streaming Audio-Visual LLMs Beyond Length Limits via Memory
+   WorldTree: Towards 4D Dynamic Worlds from Monocular Video using Tree-Chains
+   MeMoSORT: Memory-Assisted Filtering and Motion-Adaptive Association Metric for Multi-Person Tracking
+   Video Language Models are Human-Aligned Evaluators for Text to Motion Generation
+== 2026 speech_audio: 653 of 19814
+   Jailbreak Connectivity: Towards Diverse, Transferable, and Universal MLLM Jailbreak
+   SyncLipMAE: Contrastive Masked Pretraining for Audio–Visual Talking-Face Representations
+   Languages Differ, Weaknesses Persist: Jailbreaking LLMs Across English and Indian Languages
+   FlowBind: Efficient Any-to-Any Generation with Bidirectional Flows
+   STaR-Attack: A Spatio-Temporal and Narrative Reasoning Attack Framework for Unified Multimodal Understanding and Generation Models
+   Geometric Enhancement in 3D Gaussian Splatting for Sparse-view Scene Reconstruction
+== 2026 time_series: 774 of 19814
+   Frozen Priors, Fluid Forecasts: Prequential Uncertainty for Low-Data Deployment with Pretrained Generative Models
+   Bringing Graphs to the Table: Zero-Shot Node Classification via Tabular Foundation Models
+   Improving Extreme Wind Prediction with Frequency-Informed Learning
+   UrbanFusion: Stochastic Multimodal Fusion for Contrastive Learning of Robust Spatial Representations
+   Learning 3D-Gaussian Simulators from RGB Videos
+   ArtifactGen: Benchmarking WGAN-GP vs Diffusion for Label-Aware EEG Artifact Synthesis
+== 2026 science: 1201 of 19814
+   Quantum-Inspired Structure-Aware Diffusion for Efficient 3D Molecular Generation
+   Evolutionary Profiles for Protein Fitness Prediction
+   Physics-informed Residual Flows
+   Control-Augmented Auto-Regressive Diffusion for Data Assimilation
+   SenseFlow: A Physics-Informed and Self-Ensembling Iterative Framework for Power Flow Estimation
+   Graph-to-Sequence Generation Beyond Autoregressive Models: A Graph-Aware Diffusion Framework
+== 2026 medical: 948 of 19814
+   Hierarchical Cautious Optimization for Semi-Supervised Medical Image Segmentation with Limited Labeled Data
+   SuperMIL: Supervised Multiple Instance Learning for Time Series Classification
+   DexBench: Benchmarking LLMs for Personalized Decision Making in Diabetes Management
+   Contextual Similarity Distillation: Ensemble Uncertainties with a Single Model
+   ST-PPO: Stabilized Off-Policy Proximal Policy Optimization for Multi-Turn Agents
+   Term2Note: Synthesising Differentially Private Clinical Notes from Medical Terms
+== 2026 robotics_driving: 1061 of 19814
+   TopoStreamer: Temporal Lane Segment Topology Reasoning in Autonomous Driving
+   Planning with an Embodied Learnable Memory
+   CVD-STORM: Cross-View Video Diffusion with Spatial-Temporal Reconstruction Model for Autonomous Driving
+   ArtVIP: Articulated Digital Assets of Visual Realism, Modular Interaction, and Physical Fidelity for Robot Learning
+   LEGO-Eval: Towards Fine-grained Evaluation on Synthesizing 3D Embodied Environments with Tool Augmentation
+   Rebenchmarking Unsupervised Monocular 3D Occupancy Prediction
+== 2026 efficiency: 2113 of 19814
+   FOE-RL: Flexible Online Reinforcement Learning for Efficient Inference in Large Language Models
+   Physics-Inspired All-Pair Interaction Learning for 3D Dynamics Modeling
+   Decoupling Primitive with Experts: Dynamic Feature Alignment for Compositional Zero-Shot Learning
+   Editing by Reconstruction: Background Preservation for Instruction-based Autoregressive Image Editing
+   Towards a Unified Theory of Quantization and Sparsity
+   EfficientRefiner: An Efficient Refinement Method over Black-Box Optimization in Macro Placement
+== 2026 self_supervised: 1462 of 19814
+   Bridging Temporal and Semantic Gaps: Prompt Learning on Temporal Interaction Graphs
+   Simplicial Embeddings Improve Sample Efficiency in Actor–Critic Agents
+   SiMAE: Subject-identity Separation Latent Masked Autoencoder for Multi-contrast MRI Synthesis and Uncertainty Estimation
+   No Alignment Needed for Generation: Learning Linearly Separable Representations in Diffusion Models
+   LLM-STAR: Sequence-Teacher-Anchored LLM Recommender with Adaptive Regularization
+   CDG-MAE: Learning Correspondences from Diffusion Generated Views
+== 2026 continual_meta_fewshot: 799 of 19814
+   ORION: Decoupling and Alignment for Unified Autoregressive Understanding and Generation
+   HexMachina: Self-Evolving Multi-Agent System for Continual Learning of Catan
+   M$^2$GenCO: Multi-task Meta Learning for Generative Combinatorial Optimization
+   Systematic Exploration Supervision Enables Scaling Beyond Training Complexity
+   IDSPACE: A Model-Guided Synthetic Identity Document Generation Framework and Dataset
+   SFT Doesn’t Always Hurt General Capabilities: Revisiting Domain-Specific Fine-Tuning in LLMs
+== 2026 retrieval_recsys: 752 of 19814
+   Discourse-Aware Retrieval-Augmented Generation via Rhetorical Structure Modeling
+   Query-Aware Flow Diffusion for Graph-Based RAG with Retrieval Guarantees
+   Signature-Guided Adversarial Attacks On Healthcare LLMs: Exposing PII Leakage In RAG Systems
+   LLmFPCA-detect: LLM-powered Multivariate Functional PCA for Anomaly Detection in Sparse Longitudinal Texts
+   Dynamic Parametric Retrieval Augmented Generation
+   Reinforced Latent Reasoning for LLM-based Recommendation
+== 2026 classic_nlp: 744 of 19814
+   Wiki-R1: Incentivizing Multimodal Reasoning for Knowledge-based VQA via Data and Sampling Curriculum
+   A Bilingual Acupuncture Question Answering System via Lightweight LLMs and Retrieval-Augmented Generation
+   SLaD: Sub-modal Label-aware Disentanglement for Multimodal Sentiment Analysis
+   A.I.R.: Enabling Adaptive, Iterative, and Reasoning-based Frame Selection For Video Question Answering
+   The Power of Order: Fooling LLMs with Adversarial Table Permutation
+   LEAP: Learning Expert Adaptation & Pruning for Task-Specialized MoE Language Models
+== 2026 causal: 654 of 19814
+   Improving Causal Inference Robustness via Reinforcement-guided Diffusion Models
+   Mitigating Context Bias via Foreground-Background Separation and Pooling: A Causal Analysis and Robust Evaluation
+   Improving constraint-based discovery with robust propagation and reliable LLM priors
+   Directed Information $\gamma$-covering: An Information-Theoretic Framework for Context Engineering
+   Hebb Alone Is Enough: Purely Excitatory Networks Self-Decorrelate to Expand Representation
+   CAIFormer: A Causal Informed Transformer for Multivariate Time Series Forecasting
+== 2026 fairness: 374 of 19814
+   SpEmoC: Large-Scale Multimodal Dataset for Speaking Segment Emotion Insights
+   From Fragile to Certified: Wasserstein Audits of Group Fairness Under Distribution Shift
+   Recall-First Moderation via Distribution-Preserving Augmentation and Committee-Diverse Retrieval
+   Stable coresets: Unleashing the power of uniform sampling
+   FACTOR: Fairness-Aligned Conformal Transport for Multivariate Mixed Outcomes
+   A Separable Self-attention Inspired by the State Space Model for Computer Vision
+== 2026 benchmark_dataset: 7577 of 19814
+   AudioCodecBench: A Comprehensive Benchmark for Audio Codecs as Tokenizer and Detokenizer for Multimodal Large Language Models
+   MuSED-FM: A Benchmark for Evaluating Multivariate Time Series Foundation Models
+   Foreground or Background? Visual Interpretability and Robustness Analysis of CLIP
+   MME-Unify: A Comprehensive Benchmark for Unified Multimodal Understanding and Generation Models
+   AutoGraph-R1: End-to-End Reinforcement Learning for Knowledge Graph Construction
+   LifelongAgentBench: Evaluating LLM Agents as Lifelong Learners
