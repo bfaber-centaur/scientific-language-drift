@@ -1,0 +1,8 @@
+file,decision,published,submission,unknown,preprint
+iclr-2019.parquet,accept,482,6,5,0.0
+iclr-2019.parquet,reject,0,909,3,0.0
+iclr-2019.parquet,withdraw,0,145,3,0.0
+iclr-2024.parquet,accept,2169,6,80,4.0
+iclr-2024.parquet,desk_reject,0,38,0,0.0
+iclr-2024.parquet,reject,2,3429,5,1.0
+iclr-2024.parquet,withdraw,3,1562,5,0.0

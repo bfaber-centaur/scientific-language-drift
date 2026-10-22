@@ -10,8 +10,11 @@ results/v3/review_meta/{source_files.csv, coverage.csv}. Derived per-paper colum
     and desk-rejected excluded -> NaN), n_authors, n_reviews, rating_mean, rating_z (within-year z of
     rating_mean), rating_pct (within-year percentile), confidence_mean, gs_citation (NaN when -1),
     cite_pct (within-year percentile among papers with a count), primary_area, industry (any author
-    affiliation domain on a fixed list; 2017-2024 only), max_author_papers (most submissions that year by
-    any one author on the paper, by OpenReview profile id when present else by name), first_author.
+    affiliation domain or name on a fixed list; known 2021-2024 only, affiliations are empty
+    in the 2017-2020 and absent in the 2025-2026 files), max_author_papers (most submissions that year by
+    any one author on the paper, by OpenReview profile id when present else by name), first_author,
+    last_author (names, used only as fixed effects), max_author_papers_name and last_author_id (for the
+    2017-2024 check of how much name collisions matter: 2025-26 have names only, no profile ids).
 
 Usage: python3 scripts/v3/review_meta.py --src ~/ext/paperlists
 """
@@ -21,6 +24,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from collections import Counter
 
 import numpy as np
@@ -37,6 +41,10 @@ INDUSTRY = ("google.com", "deepmind.com", "microsoft.com", "meta.com", "fb.com",
             "huawei.com", "bytedance.com", "samsung.com", "intel.com", "salesforce.com", "adobe.com",
             "sony.com", "qualcomm.com", "anthropic.com", "uber.com", "twitter.com", "naver.com", "kakao.com",
             "sensetime.com", "antgroup.com", "jd.com", "kuaishou.com", "xiaomi.com", "netflix.com")
+
+INDUSTRY_NAMES = re.compile(r"\b(?:google|deepmind|microsoft|facebook|meta ai|meta platforms|nvidia|amazon|apple inc|"
+                            r"openai|ibm|alibaba|baidu|tencent|huawei|bytedance|samsung|intel corp|intel labs|"
+                            r"salesforce|adobe|sony|qualcomm|anthropic|uber|twitter|naver|kakao|sensetime)\b")
 
 
 def sha256(p):
@@ -90,12 +98,14 @@ def main():
                 return a_ids
             return names
         load = Counter(i for r in recs for i in set(ids(r)))
+        load_name = Counter(i.strip() for r in recs for i in set(str(r.get("author") or "").split(";")) if i.strip())
         for r in recs:
             authors = [x.strip() for x in str(r.get("author") or "").split(";") if x.strip()]
             rat = nums(r.get("rating") or r.get("recommendation"))
             conf = nums(r.get("confidence"))
             gs = pd.to_numeric(r.get("gs_citation"), errors="coerce")
             dom = str(r.get("aff_domain") or "").lower().split(";")
+            aff = str(r.get("aff") or "").lower()
             rows.append({
                 "doc_id": r["id"], "year": y, "status": r.get("status"), "decision": decision(r.get("status")),
                 "n_authors": len(authors) or np.nan, "n_reviews": len(rat),
@@ -105,9 +115,13 @@ def main():
                 "gs_citation": gs if gs is not None and gs >= 0 else np.nan,
                 "primary_area": r.get("primary_area") or None,
                 "industry": (any(d.strip().endswith(INDUSTRY) for d in dom if d.strip())
-                             if r.get("aff_domain") else np.nan),
+                             or bool(INDUSTRY_NAMES.search(aff))
+                             if (str(r.get("aff_domain") or "").strip("; ") or aff.strip("; ")) else np.nan),
                 "max_author_papers": max((load[i] for i in set(ids(r))), default=np.nan),
+                "max_author_papers_name": max((load_name[i] for i in set(authors)), default=np.nan),
+                "last_author_id": ids(r)[-1] if r.get("authorids") and ids(r) and ids(r)[-1].startswith("~") else None,
                 "first_author": authors[0] if authors else None,
+                "last_author": authors[-1] if authors else None,
             })
     df = pd.DataFrame(rows).drop_duplicates("doc_id")
     df["accepted"] = np.where(df.decision == "accept", 1.0, np.where(df.decision == "reject", 0.0, np.nan))
