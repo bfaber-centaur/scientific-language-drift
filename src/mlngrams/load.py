@@ -39,6 +39,8 @@ REPO_ID = "woog/open-text-detector-papers"
 V1_REVISION = "cb5553e0c192c31c562a2822668c7f4ebbb9437a"
 # V2 pin (2026-10-15, Gate 0, docs/v2-corpus-inventory.md). V1 analyses keep V1_REVISION.
 V2_REVISION = "2c0dd192a3d3ba6605ed3f5ed5df145dddbdcb27"
+# V3 pin (2026-10-22, docs/v3-corpus-inventory.md): V2 plus 165 added records (ICLR 2026, TMLR 2023/2026).
+V3_REVISION = "b9bfffba0c81927866a747d48c6c259fb42edd76"
 REVISION = os.environ.get("MLNGRAMS_REVISION", V1_REVISION)
 CACHE_DIR = os.environ.get("MLNGRAMS_CACHE", os.path.expanduser("~/.cache/mlngrams"))
 
